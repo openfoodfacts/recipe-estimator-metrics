@@ -53,7 +53,9 @@ for test_set_path in sys.argv[3:]:
 
     print("Running model on test set " + test_set_path)
 
-    # Test set name is the last component of the test set path
+    # Test set name is the last component of the test set path, remove trailing / if any
+    if test_set_path.endswith("/"):
+        test_set_path = test_set_path[:-1]
     test_set_name = test_set_path.split("/")[-1]
 
     # Create the results directory if it does not exist
@@ -94,5 +96,6 @@ for test_set_path in sys.argv[3:]:
 
         # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
         result_path = results_path + "/" + test_set_name + "/" + test_name
+        print("Saving output to " + path)
         with open(result_path, "w") as f:
             json.dump(result, f, indent=4)
