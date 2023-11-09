@@ -73,6 +73,11 @@ for test_set_path in sys.argv[3:]:
 
         with open(path, "r") as f:
             input_product = json.load(f)
+
+        # Check if the product has an ingredients structure
+        if "ingredients" not in input_product:
+            print("Skipping product without ingredients: " + path)
+            continue
         
         # Remove any specified "percent" fields from the ingredients
         input_product["ingredients"] = remove_percent_fields(input_product["ingredients"])
@@ -98,4 +103,4 @@ for test_set_path in sys.argv[3:]:
         result_path = results_path + "/" + test_set_name + "/" + test_name
         print("Saving output to " + path)
         with open(result_path, "w") as f:
-            json.dump(result, f, indent=4)
+            json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)

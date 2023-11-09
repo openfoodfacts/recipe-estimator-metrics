@@ -49,4 +49,4 @@ for test_set_path in sys.argv[1:]:
 
         # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
         with open(path, "w") as f:
-            json.dump(data, f, indent=4)
+            json.dump(data, f,  indent=4, ensure_ascii=False, sort_keys=True)
