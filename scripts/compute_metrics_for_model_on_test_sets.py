@@ -113,7 +113,7 @@ for test_set_path in sys.argv[2:]:
         # Store product level metrics in the resulting product
         with open(result_path, "w") as f:
             print("Saving metrics in result: " + result_path)
-            json.dump(resulting_product, f, indent=4)
+            json.dump(resulting_product, f,  indent=4, ensure_ascii=False, sort_keys=True)
 
         # Aggregate metrics by test set
         test_set_total_difference += resulting_product["ingredients_metrics"]["total_difference"]
@@ -122,6 +122,19 @@ for test_set_path in sys.argv[2:]:
     # Compute average metrics for the test set, if the test set is not empty
     if test_set_number_of_products > 0:
         test_set_average_difference = test_set_total_difference / test_set_number_of_products
+
+        results_summary = {
+            "test_set_name": test_set_name,
+            "total_difference": test_set_total_difference,
+            "number_of_products": test_set_number_of_products,
+            "average_difference": test_set_average_difference
+        }
+
+        # Save the results summary in the test set directory
+        with open(results_path + "/" + test_set_name + "/results_summary.json", "w") as f:
+            print("Saving results summary in test set directory: " + test_set_path)
+            json.dump(results_summary, f,  indent=4, ensure_ascii=False, sort_keys=True)
+
         print("Test set " + test_set_name)
         print("number of products: " +  str(test_set_number_of_products))
         print("total difference:" + str(test_set_total_difference))
