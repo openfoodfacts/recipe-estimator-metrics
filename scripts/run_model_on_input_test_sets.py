@@ -88,7 +88,7 @@ for test_set_path in sys.argv[3:]:
         command = [model]
 
         # Create a Popen object
-        p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
 
         # Pass the input to the command
         stdout, stderr = p.communicate(input=json.dumps(input_product))
@@ -97,10 +97,13 @@ for test_set_path in sys.argv[3:]:
         result_json = stdout.strip()
 
         # convert json to object
-        result = json.loads(result_json)
+        try:
+            result = json.loads(result_json)
 
-        # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
-        result_path = results_path + "/" + test_set_name + "/" + test_name
-        print("Saving output to " + path)
-        with open(result_path, "w") as f:
-            json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
+            # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
+            result_path = results_path + "/" + test_set_name + "/" + test_name
+            print("Saving output to " + path)
+            with open(result_path, "w") as f:
+                json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
+        except:
+            print(result_json, file=sys.stderr)
