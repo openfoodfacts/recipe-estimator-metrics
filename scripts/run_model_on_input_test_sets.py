@@ -23,6 +23,8 @@ import sys
 import os
 import subprocess
 
+from compute_metrics import compute_metrics_for_test_set
+
 # Remove percent fields from ingredients, but keep a copy of percent in percent_hidden
 def remove_percent_fields(ingredients):
     for ingredient in ingredients:
@@ -101,8 +103,10 @@ for test_set_name in test_sets:
 
             # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
             result_path = results_path + "/" + test_set_name + "/" + test_name
-            print("Saving output to " + path)
+            print("Saving output to " + result_path)
             with open(result_path, "w") as f:
                 json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
         except:
             print(result_json, file=sys.stderr)
+
+    compute_metrics_for_test_set(results_path, test_set_name)
