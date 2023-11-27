@@ -37,26 +37,25 @@ def remove_percent_fields(ingredients):
     return ingredients
 
 # Check input parameters (existing model executable, and specified results path + at least 1 input test set), otherwise print usage
-if len(sys.argv) < 4:
-    print("Usage: run_model_input_test_sets.py [path to model executable] [path to store results] [paths of one or more input test sets]")
+if len(sys.argv) < 3:
+    print("Usage: run_model_input_test_sets.py [name of model executable] [name for results] [names of one or more input test sets]")
     sys.exit(1)
 
-model = sys.argv[1]
-results_path = sys.argv[2]
+model = 'models/' + sys.argv[1] + '.py'
+results_path = 'test-sets/results/' + sys.argv[2]
 
 if not os.path.exists(model):
     print("Model executable does not exist")
     sys.exit(1)
 
 # Go through each input test set directory
-for test_set_path in sys.argv[3:]:
+test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
+for test_set_name in test_sets:
 
-    print("Running model on test set " + test_set_path)
+    print("Running model on test set " + test_set_name)
 
     # Test set name is the last component of the test set path, remove trailing / if any
-    if test_set_path.endswith("/"):
-        test_set_path = test_set_path[:-1]
-    test_set_name = test_set_path.split("/")[-1]
+    test_set_path = 'test-sets/input/' + test_set_name 
 
     # Create the results directory if it does not exist
     if not os.path.exists(results_path):
