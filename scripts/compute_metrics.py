@@ -20,7 +20,7 @@ import math
 
 round_to_n = lambda x, n: x if x == 0 else round(x, -int(math.floor(math.log10(abs(x)))) + (n - 1))
 
-def compare_input_ingredients_to_resulting_ingredients(input_ingredients, resulting_ingredients, summary_csv_writer, test_name):
+def compare_input_ingredients_to_resulting_ingredients(input_ingredients, resulting_ingredients, ingredients_stats, details_csv_writer, test_name):
     # Compute difference metrics for each ingredient and nested sub ingredient comparing the input percent to the resulting percent_estimate
 
     total_difference = 0
@@ -48,7 +48,16 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             resulting_ingredient["difference"] = rounded_difference
             total_difference += difference
             # Write to summary CSV file.
-            summary_csv_writer.writerow([test_name, input_ingredient['id'], input_percent, rounded_resulting_percent_estimate, rounded_difference])
+            details_csv_writer.writerow([test_name, input_ingredient['id'], input_percent, rounded_resulting_percent_estimate, rounded_difference])
+            # Aggregate stats for the ingredient
+            if input_ingredient['id'] not in ingredients_stats:
+                ingredients_stats[input_ingredient['id']] = {
+                    "total_difference": 0,
+                    "number_of_products": 0,
+                    "ciqual_food_code": input_ingredient.get("ciqual_food_code")
+                }
+            ingredients_stats[input_ingredient['id']]["total_difference"] += difference
+            ingredients_stats[input_ingredient['id']]["number_of_products"] += 1
         
         # Compare sub ingredients if any
         if "ingredients" in input_ingredients:
@@ -56,16 +65,16 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             resulting_sub_ingredients = resulting_ingredient["ingredients"]
             (total_specified_input_percent, total_difference) = [x + y for x, y in zip(
                 [total_specified_input_percent, total_difference],
-                compare_input_ingredients_to_resulting_ingredients(input_sub_ingredients, resulting_sub_ingredients, summary_csv_writer, test_name))]
+                compare_input_ingredients_to_resulting_ingredients(input_sub_ingredients, resulting_sub_ingredients, details_csv_writer, test_name))]
 
     return (total_specified_input_percent, total_difference)
 
-def compare_input_product_to_resulting_product(input_product, resulting_product, summary_csv_writer, test_name):
+def compare_input_product_to_resulting_product(input_product, resulting_product, ingredients_stats, details_csv_writer, test_name):
     
     if not isinstance(input_product, dict) or not isinstance(resulting_product, dict):
         raise ValueError("Input product and resulting product must be dictionaries")
         
-    (total_specified_input_percent, total_difference) = compare_input_ingredients_to_resulting_ingredients(input_product["ingredients"], resulting_product["ingredients"], summary_csv_writer, test_name)
+    (total_specified_input_percent, total_difference) = compare_input_ingredients_to_resulting_ingredients(input_product["ingredients"], resulting_product["ingredients"], ingredients_stats, details_csv_writer, test_name)
 
     resulting_product["ingredients_metrics"] = {
         "total_specified_input_percent": total_specified_input_percent,
@@ -82,10 +91,14 @@ def compute_metrics_for_test_set(results_path, test_set_name):
     test_set_total_difference = 0
     test_set_number_of_products = 0
 
+    # Compute aggregated stats (number of products and total difference) for each ingredient
+    ingredients_stats = {}
+
+
     result_set_path = results_path + "/" + test_set_name
-    with open(result_set_path + "/results_summary.csv", "w", newline="") as summary_csv:
-        summary_csv_writer = csv.writer(summary_csv)
-        summary_csv_writer.writerow(['test_name','ingredient','percent','percent_estimate','difference'])
+    with open(result_set_path + "/results_details.csv", "w", newline="") as details_csv:
+        details_csv_writer = csv.writer(details_csv)
+        details_csv_writer.writerow(['test_name','ingredient','percent','percent_estimate','difference'])
 
         # Go through each JSON file in the input test set directory. Sort so that summary results order is consistent
 
@@ -107,7 +120,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             # Compute accuracy metrics comparing the estimated "percent_estimate" field in the resulting product
             # to the "percent" field in the input product
             print("Computing metrics for " + result_path)
-            compare_input_product_to_resulting_product(input_product, resulting_product, summary_csv_writer, test_name)
+            compare_input_product_to_resulting_product(input_product, resulting_product, ingredients_stats, details_csv_writer, test_name)
 
             # Store product level metrics in the resulting product
             with open(result_path, "w") as f:
@@ -133,6 +146,14 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         with open(results_path + "/" + test_set_name + "/results_summary.json", "w") as f:
             print("Saving results summary in test set directory: " + test_name)
             json.dump(results_summary, f,  indent=4, ensure_ascii=False, sort_keys=True)
+
+        # Save the ingredients stats as a CSV file in the test set directory
+        with open(results_path + "/" + test_set_name + "/ingredients_stats.csv", "w", newline="") as ingredients_stats_csv:
+            ingredients_stats_csv_writer = csv.writer(ingredients_stats_csv)
+            ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','total_difference','number_of_products'])
+            for ingredient_id in ingredients_stats:
+                ingredient_stats = ingredients_stats[ingredient_id]
+                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"], ingredient_stats["total_difference"], ingredient_stats["number_of_products"]])
 
         print("Test set " + test_set_name)
         print("number of products: " +  str(test_set_number_of_products))
