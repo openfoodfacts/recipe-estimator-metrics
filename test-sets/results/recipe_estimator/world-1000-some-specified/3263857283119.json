@@ -13,6 +13,8 @@
     "ingredients": [
         {
             "ciqual_food_code": "2074",
+            "ciqual_food_code_used": "2074",
+            "difference": 1.5,
             "evaporation": 0.0,
             "id": "en:apple-juice",
             "nutrients": {
@@ -149,15 +151,14 @@
                     "percent_min": 0.0001
                 }
             },
-            "percent_estimate": 50.00000000000001,
+            "percent_estimate": 50.0,
             "percent_hidden": 48.5,
             "quantity_estimate": 49.995,
-            "rank": 1,
-            "text": "Jus de pomme",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "Jus de pomme"
         },
         {
+            "ciqual_food_code_used": null,
+            "difference": 18.0,
             "evaporation": 0.0,
             "id": "en:pineapple-juice",
             "nutrients": {
@@ -301,13 +302,12 @@
             "percent_estimate": 50.0,
             "percent_hidden": 32,
             "quantity_estimate": 49.99499999999999,
-            "rank": 2,
-            "text": "jus d'ananas",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "jus d'ananas"
         },
         {
             "ciqual_food_code": "13025",
+            "ciqual_food_code_used": "13025",
+            "difference": 17.0,
             "evaporation": 0.0,
             "id": "en:mango-puree",
             "nutrients": {
@@ -447,13 +447,12 @@
             "percent_estimate": 0.0,
             "percent_hidden": 17,
             "quantity_estimate": 0.0,
-            "rank": 3,
-            "text": "purée de mangue",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
+            "text": "purée de mangue"
         },
         {
             "ciqual_food_code": "13016",
+            "ciqual_food_code_used": "13016",
+            "difference": 2.5,
             "evaporation": 0.0,
             "id": "en:passionfruit",
             "nutrients": {
@@ -594,13 +593,19 @@
             "percent_hidden": 2.5,
             "processing": "en:juice",
             "quantity_estimate": 0.0,
-            "rank": 4,
-            "text": "fruits de la passion",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "fruits de la passion"
         }
     ],
+    "ingredients_metrics": {
+        "relative_difference": 0.39000000000000007,
+        "total_difference": 39.00000000000001,
+        "total_specified_input_percent": 100.0
+    },
     "ingredients_text": "Jus de pomme 48,5%, jus d'ananas 32%, purée de mangue 17% , jus de fruits de la passion 2,5%.",
+    "ingredients_without_ciqual_codes": [
+        "en:pineapple-juice"
+    ],
+    "ingredients_without_ciqual_codes_n": 1,
     "labels_tags": [
         "en:green-dot",
         "fr:triman"
@@ -838,6 +843,6 @@
             }
         },
         "status": 0,
-        "time": 0.0004041829379275441
+        "time": 0.00047072290908545256
     }
 }

@@ -13,6 +13,8 @@
     "ingredients": [
         {
             "ciqual_food_code": "19402",
+            "ciqual_food_code_used": "19402",
+            "difference": 63.7,
             "evaporation": 0.0,
             "id": "en:light-cream",
             "nutrients": {
@@ -149,15 +151,13 @@
                     "percent_min": 0.00027
                 }
             },
-            "percent_estimate": 33.333333333333336,
+            "percent_estimate": 33.3,
             "percent_hidden": 97,
             "quantity_estimate": 33.33,
-            "rank": 1,
-            "text": "Crème légère",
-            "vegan": "no",
-            "vegetarian": "yes"
+            "text": "Crème légère"
         },
         {
+            "ciqual_food_code_used": null,
             "evaporation": 0.0,
             "id": "en:modified-tapioca-starch",
             "nutrients": {
@@ -300,12 +300,10 @@
             },
             "percent_estimate": 33.333333333333336,
             "quantity_estimate": 33.33,
-            "rank": 2,
-            "text": "amidon de tapioca modifié",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "amidon de tapioca modifié"
         },
         {
+            "ciqual_food_code_used": null,
             "evaporation": 0.0,
             "id": "en:lactic-ferments",
             "nutrients": {
@@ -448,13 +446,20 @@
             },
             "percent_estimate": 33.333333333333336,
             "quantity_estimate": 33.33,
-            "rank": 3,
-            "text": "ferments lactiques",
-            "vegan": "maybe",
-            "vegetarian": "yes"
+            "text": "ferments lactiques"
         }
     ],
+    "ingredients_metrics": {
+        "relative_difference": 0.6563573883161512,
+        "total_difference": 63.666666666666664,
+        "total_specified_input_percent": 97
+    },
     "ingredients_text": "Crème légère 97%, amidon de tapioca modifié, ferments lactiques.",
+    "ingredients_without_ciqual_codes": [
+        "en:lactic-ferments",
+        "en:modified-tapioca-starch"
+    ],
+    "ingredients_without_ciqual_codes_n": 2,
     "labels_tags": [
         "en:french-milk",
         "fr:triman"
@@ -710,6 +715,6 @@
             }
         },
         "status": 0,
-        "time": 0.0004720779834315181
+        "time": 0.000492591061629355
     }
 }
