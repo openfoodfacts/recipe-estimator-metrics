@@ -17,123 +17,87 @@
         {
             "ciqual_food_code": "18066",
             "id": "en:water",
-            "percent_estimate": 50,
-            "rank": 1,
-            "text": "Eau",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "Eau"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:vegetable",
-            "percent_estimate": 25,
-            "rank": 2,
-            "text": "légumes",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "ingredients": [
+                {
+                    "id": "en:giant-squash",
+                    "percent": 25,
+                    "text": "potiron"
+                },
+                {
+                    "ciqual_food_code": "20009",
+                    "id": "en:carrot",
+                    "percent": 14,
+                    "text": "carotte"
+                },
+                {
+                    "ciqual_food_code": "20170",
+                    "id": "fr:puree-de-tomates-reconstituee",
+                    "percent": 1.9,
+                    "text": "pur\u00e9e de tomates reconstitu\u00e9e"
+                },
+                {
+                    "ciqual_food_code": "20034",
+                    "id": "en:onion",
+                    "percent": 1.3,
+                    "text": "oignon"
+                }
+            ],
+            "text": "l\u00e9gumes"
         },
         {
-            "has_sub_ingredients": "yes",
+            "ciqual_food_code": "19402",
             "id": "en:fresh-cream",
-            "percent_estimate": 12.5,
-            "rank": 3,
-            "text": "crème fraîche",
-            "vegan": "no",
-            "vegetarian": "yes"
+            "ingredients": [
+                {
+                    "id": "en:milk",
+                    "text": "dont _lait"
+                }
+            ],
+            "text": "cr\u00e8me fra\u00eeche"
         },
         {
             "id": "fr:",
             "percent": 1.9,
-            "percent_estimate": 1.9,
-            "rank": 4,
             "text": "_"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:modified-corn-starch",
-            "percent_estimate": 5.3,
-            "rank": 5,
-            "text": "amidon transformé de maïs",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "amidon transform\u00e9 de ma\u00efs"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 2.65,
-            "rank": 6,
-            "text": "sel",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sel"
         },
         {
             "id": "en:glucose-syrup",
-            "percent_estimate": 1.325,
-            "rank": 7,
-            "text": "sirop de glucose",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sirop de glucose"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
-            "percent_estimate": 0.662500000000001,
-            "rank": 8,
-            "text": "sucre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sucre"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.662499999999994,
-            "rank": 9,
-            "text": "arômes",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
-        },
-        {
-            "id": "en:giant-squash",
-            "percent": 25,
-            "percent_estimate": 25,
-            "text": "potiron",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "ciqual_food_code": "20009",
-            "id": "en:carrot",
-            "percent": 14,
-            "percent_estimate": 0,
-            "text": "carotte",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "ciqual_food_code": "20170",
-            "id": "fr:puree-de-tomates-reconstituee",
-            "percent": 1.9,
-            "percent_estimate": 0,
-            "text": "purée de tomates reconstituée",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "ciqual_food_code": "20034",
-            "id": "en:onion",
-            "percent": 1.3,
-            "percent_estimate": 0,
-            "text": "oignon",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:milk",
-            "percent_estimate": 12.5,
-            "text": "dont _lait",
-            "vegan": "no",
-            "vegetarian": "yes"
+            "text": "ar\u00f4mes"
         }
     ],
-    "ingredients_text": "Eau, légumes (potiron 25 %, carotte 14 %, purée de tomates reconstituée 1,9 %, oignon 1,3%), crème fraîche (dont _lait)_  1,9 %, amidon transformé de maïs, sel, sirop de glucose, sucre, arômes.",
+    "ingredients_text": "Eau, l\u00e9gumes (potiron 25 %, carotte 14 %, pur\u00e9e de tomates reconstitu\u00e9e 1,9 %, oignon 1,3%), cr\u00e8me fra\u00eeche (dont _lait)_  1,9 %, amidon transform\u00e9 de ma\u00efs, sel, sirop de glucose, sucre, ar\u00f4mes.",
+    "ingredients_without_ciqual_codes": [
+        "en:flavouring",
+        "en:giant-squash",
+        "en:glucose-syrup",
+        "en:milk",
+        "en:vegetable",
+        "fr:"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
     "labels_tags": [
         "en:no-preservatives",
         "en:no-colorings"
@@ -262,7 +226,7 @@
         "vitamin-a_100g": 0.0002,
         "vitamin-a_label": "0",
         "vitamin-a_serving": 0.0006,
-        "vitamin-a_unit": "µg",
+        "vitamin-a_unit": "\u00b5g",
         "vitamin-a_value": 200
     }
 }

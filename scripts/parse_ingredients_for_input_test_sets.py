@@ -26,23 +26,31 @@ for test_set_path in sys.argv[1:]:
             product = json.load(f)
 
         # Call API v3 ingredients_analysis service
+        print("Analyzing ingredients: " + path)
+
         product_opener_api_url = "http://world.openfoodfacts.localhost/api/v3/product_services"
         request_data = {
-            "services": ["parse_ingredients_text"],
+            "services": ["parse_ingredients_text", "extend_ingredients"],
             "fields": ["all"],
             "product": product
         }
         response = requests.post(product_opener_api_url, json=request_data)
+        if response.status_code != 200:
+            print("Error: " + str(response.status_code)  + "\n" + response.text)
+            sys.exit(1)
+        else:
+            # print the response for debugging
+            print(response.text)
 
-        response_json = response.json()
+            response_json = response.json()
 
-        if response_json["status"] != "success":
-            print(response_json)
-            continue
+            if response_json["status"] != "success":
+                print(response_json)
+                continue
 
-        if "product" in response_json:
+            if "product" in response_json:
 
-            # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
-            with open(path, "w") as f:
-                print("Updating with ingredients structure: " + path)
-                json.dump(response_json["product"], f, indent=4)
+                # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
+                with open(path, "w") as f:
+                    print("Updating with ingredients structure: " + path)
+                    json.dump(response_json["product"], f, indent=4)
