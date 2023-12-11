@@ -137,9 +137,9 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
         results_summary = {
             "test_set_name": test_set_name,
-            "total_difference": test_set_total_difference,
+            "total_difference": round_to_n(test_set_total_difference,3),
             "number_of_products": test_set_number_of_products,
-            "average_difference": test_set_average_difference
+            "average_difference": round_to_n(test_set_average_difference,3)
         }
 
         # Save the results summary in the test set directory
@@ -153,7 +153,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','total_difference','number_of_products'])
             for ingredient_id in ingredients_stats:
                 ingredient_stats = ingredients_stats[ingredient_id]
-                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"], ingredient_stats["total_difference"], ingredient_stats["number_of_products"]])
+                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"], round_to_n(ingredient_stats["total_difference"], 3), ingredient_stats["number_of_products"]])
 
         print("Test set " + test_set_name)
         print("number of products: " +  str(test_set_number_of_products))
