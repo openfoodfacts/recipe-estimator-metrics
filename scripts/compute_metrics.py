@@ -77,12 +77,12 @@ def compare_input_product_to_resulting_product(input_product, resulting_product,
     (total_specified_input_percent, total_difference) = compare_input_ingredients_to_resulting_ingredients(input_product["ingredients"], resulting_product["ingredients"], ingredients_stats, details_csv_writer, test_name)
 
     resulting_product["ingredients_metrics"] = {
-        "total_specified_input_percent": total_specified_input_percent,
-        "total_difference": total_difference
+        "total_specified_input_percent": round_to_n(total_specified_input_percent,3),
+        "total_difference": round_to_n(total_difference,3)
     }
     # If we have some specified input percent, compute the relative difference
     if (total_specified_input_percent > 0):
-        resulting_product["ingredients_metrics"]["relative_difference"] = total_difference / total_specified_input_percent
+        resulting_product["ingredients_metrics"]["relative_difference"] = round_to_n(total_difference / total_specified_input_percent,3)
 
     pass
 
