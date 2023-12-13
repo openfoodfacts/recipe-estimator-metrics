@@ -30,6 +30,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
         resulting_ingredient = resulting_ingredients[i]
         # We compute metrics for known percent in the input product
         if "percent" in input_ingredient:
+            input_ingredient_id = input_ingredient['id']
             input_percent = input_ingredient["percent"]
             total_specified_input_percent += input_percent
             # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
@@ -50,14 +51,19 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             # Write to summary CSV file.
             details_csv_writer.writerow([test_name, input_ingredient['id'], input_percent, rounded_resulting_percent_estimate, rounded_difference])
             # Aggregate stats for the ingredient
-            if input_ingredient['id'] not in ingredients_stats:
-                ingredients_stats[input_ingredient['id']] = {
+            if input_ingredient_id not in ingredients_stats:
+                ingredients_stats[input_ingredient_id] = {
+                    "total_input_percent": 0,
+                    "total_percent_estimate": 0,
                     "total_difference": 0,
                     "number_of_products": 0,
-                    "ciqual_food_code": input_ingredient.get("ciqual_food_code")
+                    "ciqual_food_code": input_ingredient.get("ciqual_food_code"),
+                    "ciqual_proxy_food_code": input_ingredient.get("ciqual_proxy_food_code")
                 }
-            ingredients_stats[input_ingredient['id']]["total_difference"] += difference
-            ingredients_stats[input_ingredient['id']]["number_of_products"] += 1
+            ingredients_stats[input_ingredient_id]["total_input_percent"] += input_percent
+            ingredients_stats[input_ingredient_id]["total_percent_estimate"] += resulting_percent_estimate
+            ingredients_stats[input_ingredient_id]["total_difference"] += difference
+            ingredients_stats[input_ingredient_id]["number_of_products"] += 1
         
         # Compare sub ingredients if any
         if "ingredients" in input_ingredients:
@@ -150,10 +156,14 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         # Save the ingredients stats as a CSV file in the test set directory
         with open(results_path + "/" + test_set_name + "/ingredients_stats.csv", "w", newline="") as ingredients_stats_csv:
             ingredients_stats_csv_writer = csv.writer(ingredients_stats_csv)
-            ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','total_difference','number_of_products'])
+            ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','ciqual_proxy_food_code','total_input_percent','total_percent_estimate','total_difference','number_of_products'])
             for ingredient_id in ingredients_stats:
                 ingredient_stats = ingredients_stats[ingredient_id]
-                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"], round_to_n(ingredient_stats["total_difference"], 3), ingredient_stats["number_of_products"]])
+                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"],
+                                                       ingredient_stats["ciqual_proxy_food_code"],
+                                                       round_to_n(ingredient_stats["total_input_percent"], 3),
+                                                       round_to_n(ingredient_stats["total_percent_estimate"], 3),
+                        round_to_n(ingredient_stats["total_difference"], 3), ingredient_stats["number_of_products"]])
 
         print("Test set " + test_set_name)
         print("number of products: " +  str(test_set_number_of_products))
