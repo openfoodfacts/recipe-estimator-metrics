@@ -31,21 +31,24 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
 
         input_ingredient_id = input_ingredient['id']
         input_percent = 0
+        input_percent_is_specified = False
         resulting_percent_estimate = 0
         rounded_resulting_percent_estimate = 0
         difference = 0
 
+        # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
+        if "percent_estimate" in resulting_ingredient:
+            resulting_percent_estimate = resulting_ingredient["percent_estimate"]
+            # Round the computed percent to 3 significant figures so diffs aren't excessive
+            rounded_resulting_percent_estimate = round_to_n(resulting_percent_estimate, 3)
+            resulting_ingredient['percent_estimate'] = rounded_resulting_percent_estimate        
+
         # We compute metrics for known percent in the input product
         if "percent" in input_ingredient:
             input_percent = input_ingredient["percent"]
+            input_percent_is_specified = True
             total_specified_input_percent += input_percent
-            # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
-            if "percent_estimate" in resulting_ingredient:
-                resulting_percent_estimate = resulting_ingredient["percent_estimate"]
-                # Round the computed percent to 3 significant figures so diffs aren't excessive
-                rounded_resulting_percent_estimate = round_to_n(resulting_percent_estimate, 3)
-                resulting_ingredient['percent_estimate'] = rounded_resulting_percent_estimate
-                
+
             difference = abs(resulting_percent_estimate - input_percent)
             rounded_difference = round_to_n(difference, 3)
             # Store the difference at the ingredient level. 
@@ -53,30 +56,32 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             total_difference += difference
             # Write to summary CSV file.
             details_csv_writer.writerow([test_name, input_ingredient['id'], input_percent, rounded_resulting_percent_estimate, rounded_difference])
-
-        # Aggregate stats for the ingredient
-        if input_ingredient_id not in ingredients_stats:
-            ingredients_stats[input_ingredient_id] = {
-                "total_input_percent": 0,
-                "total_percent_estimate": 0,
-                "total_difference": 0,
-                "number_of_products": 0,
-                "ciqual_food_code": input_ingredient.get("ciqual_food_code"),
-                "ciqual_proxy_food_code": input_ingredient.get("ciqual_proxy_food_code")
-            }
-            
-        ingredients_stats[input_ingredient_id]["total_percent_estimate"] += resulting_percent_estimate
-        ingredients_stats[input_ingredient_id]["total_difference"] += difference
-        ingredients_stats[input_ingredient_id]["total_input_percent"] += input_percent
-        ingredients_stats[input_ingredient_id]["number_of_products"] += 1
         
         # Compare sub ingredients if any
-        if "ingredients" in input_ingredients:
+        if "ingredients" in input_ingredient and len(input_ingredient["ingredients"]) > 0:
             input_sub_ingredients = input_ingredient["ingredients"]
             resulting_sub_ingredients = resulting_ingredient["ingredients"]
             (total_specified_input_percent, total_difference) = [x + y for x, y in zip(
                 [total_specified_input_percent, total_difference],
-                compare_input_ingredients_to_resulting_ingredients(input_sub_ingredients, resulting_sub_ingredients, details_csv_writer, test_name))]
+                compare_input_ingredients_to_resulting_ingredients(input_sub_ingredients, resulting_sub_ingredients, ingredients_stats, details_csv_writer, test_name))]
+        else:
+            # Aggregate stats for the ingredient
+            # We only do it for leaf ingredients, as parent ingredients are not used in the linear solving
+            if input_ingredient_id not in ingredients_stats:
+                ingredients_stats[input_ingredient_id] = {
+                    "total_percent_estimate": 0,
+                    "total_difference": 0,
+                    "number_of_products": 0,
+                    "number_of_products_where_specified": 0,
+                    "ciqual_food_code": input_ingredient.get("ciqual_food_code"),
+                    "ciqual_proxy_food_code": input_ingredient.get("ciqual_proxy_food_code")
+                }
+                
+            ingredients_stats[input_ingredient_id]["total_percent_estimate"] += resulting_percent_estimate
+            ingredients_stats[input_ingredient_id]["total_difference"] += difference
+            ingredients_stats[input_ingredient_id]["number_of_products"] += 1
+            if input_percent_is_specified:
+                ingredients_stats[input_ingredient_id]["number_of_products_where_specified"] += 1
 
     return (total_specified_input_percent, total_difference)
 
@@ -135,7 +140,8 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
             # Remove fields that change between runs
             if "recipe_estimator" in resulting_product:
-                del resulting_product["recipe_estimator"]["time"]
+                if "time" in resulting_product["recipe_estimator"]:
+                    del resulting_product["recipe_estimator"]["time"]
 
             # Store product level metrics in the resulting product
             with open(result_path, "w") as f:
@@ -148,35 +154,67 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
     # Compute average metrics for the test set, if the test set is not empty
     if test_set_number_of_products > 0:
+        
+        # Save the ingredients stats as a CSV file in the test set directory
+        with open(results_path + "/" + test_set_name + "/ingredients_stats.csv", "w", newline="") as ingredients_stats_csv:
+            ingredients_stats_csv_writer = csv.writer(ingredients_stats_csv)
+            ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','ciqual_proxy_food_code','total_percent_estimate','total_difference','number_of_products','number_of_products_where_specified'])
+            # sort ingredients by id for easy diffs
+            for ingredient_id in sorted(ingredients_stats.keys()):
+                ingredient_stats = ingredients_stats[ingredient_id]
+                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"],
+                                                       ingredient_stats["ciqual_proxy_food_code"],
+                                                       round_to_n(ingredient_stats["total_percent_estimate"], 3),
+                        round_to_n(ingredient_stats["total_difference"], 3),
+                          ingredient_stats["number_of_products"], 
+                          ingredient_stats["number_of_products_where_specified"]])
+
+        # Compute the % of leaf ingredients that have a ciqual_food_code, a ciqual_proxy_food_code, or one or the other
+        # weighted by percent_estimate.
+        total_percent_estimate = 0
+        total_percent_estimate_with_ciqual_food_code = 0
+        total_percent_estimate_with_ciqual_proxy_food_code = 0
+        total_percent_estimate_with_ciqual_or_ciqual_proxy_food_code = 0
+
+        for ingredient_id in ingredients_stats.keys():
+            ingredient_stats = ingredients_stats[ingredient_id]
+            total_percent_estimate += ingredient_stats["total_percent_estimate"]
+            if ingredient_stats["ciqual_food_code"] is not None:
+                total_percent_estimate_with_ciqual_food_code += ingredient_stats["total_percent_estimate"]
+            if ingredient_stats["ciqual_proxy_food_code"] is not None:
+                total_percent_estimate_with_ciqual_proxy_food_code += ingredient_stats["total_percent_estimate"]
+            if ingredient_stats["ciqual_food_code"] is not None or ingredient_stats["ciqual_proxy_food_code"] is not None:
+                total_percent_estimate_with_ciqual_or_ciqual_proxy_food_code += ingredient_stats["total_percent_estimate"]
+                
+        percent_estimate_with_ciqual_food_code = round_to_n(100 * total_percent_estimate_with_ciqual_food_code / total_percent_estimate, 3)
+        percent_estimate_with_ciqual_proxy_food_code = round_to_n(100 * total_percent_estimate_with_ciqual_proxy_food_code / total_percent_estimate, 3)
+        percent_estimate_with_ciqual_or_ciqual_proxy_food_code = round_to_n(100 * total_percent_estimate_with_ciqual_or_ciqual_proxy_food_code / total_percent_estimate, 3)
+
+        # Save a summary of the results in the test set directory        
         test_set_average_difference = test_set_total_difference / test_set_number_of_products
 
         results_summary = {
             "test_set_name": test_set_name,
             "total_difference": round_to_n(test_set_total_difference,3),
             "number_of_products": test_set_number_of_products,
-            "average_difference": round_to_n(test_set_average_difference,3)
+            "average_difference": round_to_n(test_set_average_difference,3),
+            "percent_estimate_with_ciqual_food_code": percent_estimate_with_ciqual_food_code,
+            "percent_estimate_with_ciqual_proxy_food_code": percent_estimate_with_ciqual_proxy_food_code,
+            "percent_estimate_with_ciqual_or_ciqual_proxy_food_code": percent_estimate_with_ciqual_or_ciqual_proxy_food_code
         }
 
         # Save the results summary in the test set directory
         with open(results_path + "/" + test_set_name + "/results_summary.json", "w") as f:
             print("Saving results summary in test set directory: " + test_name)
-            json.dump(results_summary, f,  indent=4, ensure_ascii=False, sort_keys=True)
+            json.dump(results_summary, f,  indent=4, ensure_ascii=False, sort_keys=True)                
 
-        # Save the ingredients stats as a CSV file in the test set directory
-        with open(results_path + "/" + test_set_name + "/ingredients_stats.csv", "w", newline="") as ingredients_stats_csv:
-            ingredients_stats_csv_writer = csv.writer(ingredients_stats_csv)
-            ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','ciqual_proxy_food_code','total_input_percent','total_percent_estimate','total_difference','number_of_products'])
-            # sort ingredients by id for easy diffs
-            for ingredient_id in sorted(ingredients_stats.keys()):
-                ingredient_stats = ingredients_stats[ingredient_id]
-                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"],
-                                                       ingredient_stats["ciqual_proxy_food_code"],
-                                                       round_to_n(ingredient_stats["total_input_percent"], 3),
-                                                       round_to_n(ingredient_stats["total_percent_estimate"], 3),
-                        round_to_n(ingredient_stats["total_difference"], 3), ingredient_stats["number_of_products"]])
+        # Print the results summary
+        print("Results summary for test set " + test_set_name + ":")
+        print("Total difference: " + str(round_to_n(test_set_total_difference,3)))
+        print("Number of products: " + str(test_set_number_of_products))
+        print("Average difference: " + str(round_to_n(test_set_average_difference,3)))
+        print("Percent estimate with ciqual_food_code: " + str(percent_estimate_with_ciqual_food_code))
+        print("Percent estimate with ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_proxy_food_code))
+        print("Percent estimate with ciqual or ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_or_ciqual_proxy_food_code))
 
-        print("Test set " + test_set_name)
-        print("number of products: " +  str(test_set_number_of_products))
-        print("total difference:" + str(test_set_total_difference))
-        print("average difference: " + str(test_set_average_difference))
 

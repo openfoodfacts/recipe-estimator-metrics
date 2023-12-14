@@ -53,6 +53,9 @@ if not os.path.exists(model):
 # Go through each input test set directory
 test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
 for test_set_name in test_sets:
+    # If we have a test set path instead of a test set name, use the last component of the path as the test set name
+    if "test-sets/input/" in test_set_name:
+        test_set_name = test_set_name.split("test-sets/input/")[-1]
 
     print("Running model on test set " + test_set_name)
 
