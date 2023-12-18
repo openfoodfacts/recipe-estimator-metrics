@@ -195,9 +195,9 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
         results_summary = {
             "test_set_name": test_set_name,
-            "total_difference": round_to_n(test_set_total_difference,3),
+            "total_difference": round_to_n(test_set_total_difference,8),
             "number_of_products": test_set_number_of_products,
-            "average_difference": round_to_n(test_set_average_difference,3),
+            "average_difference": round_to_n(test_set_average_difference,4),
             "percent_estimate_with_ciqual_food_code": percent_estimate_with_ciqual_food_code,
             "percent_estimate_with_ciqual_proxy_food_code": percent_estimate_with_ciqual_proxy_food_code,
             "percent_estimate_with_ciqual_or_ciqual_proxy_food_code": percent_estimate_with_ciqual_or_ciqual_proxy_food_code
@@ -210,9 +210,9 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
         # Print the results summary
         print("Results summary for test set " + test_set_name + ":")
-        print("Total difference: " + str(round_to_n(test_set_total_difference,3)))
+        print("Total difference: " + str(round_to_n(test_set_total_difference,8)))
         print("Number of products: " + str(test_set_number_of_products))
-        print("Average difference: " + str(round_to_n(test_set_average_difference,3)))
+        print("Average difference: " + str(round_to_n(test_set_average_difference,4)))
         print("Percent estimate with ciqual_food_code: " + str(percent_estimate_with_ciqual_food_code))
         print("Percent estimate with ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_proxy_food_code))
         print("Percent estimate with ciqual or ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_or_ciqual_proxy_food_code))
