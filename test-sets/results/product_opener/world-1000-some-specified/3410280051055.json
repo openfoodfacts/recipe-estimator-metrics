@@ -11,54 +11,51 @@
     ],
     "ingredients": [
         {
-            "has_sub_ingredients": "yes",
+            "ciqual_food_code": "24000",
             "id": "en:biscuit",
-            "percent_estimate": 51.5625,
+            "ingredients": [
+                {
+                    "ciqual_proxy_food_code": "9410",
+                    "id": "en:wheat-flour",
+                    "percent_estimate": 52.5,
+                    "percent_max": 100,
+                    "percent_min": 5,
+                    "text": "Farine de _blé_"
+                }
+            ],
+            "percent_estimate": 52.5,
             "percent_max": 100,
-            "percent_min": 3.125,
-            "rank": 1,
+            "percent_min": 5,
             "text": "Biscuits"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "percent_estimate": 11.9,
             "percent_max": 23.8,
             "percent_min": 0,
-            "rank": 2,
-            "text": "sucre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sucre"
         },
         {
-            "from_palm_oil": "yes",
             "id": "en:palm-fat",
             "percent_estimate": 11.9,
             "percent_max": 23.8,
             "percent_min": 0,
-            "rank": 3,
-            "text": "graisse végétale de palme",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "graisse végétale de palme"
         },
         {
             "id": "en:wheat-dextrose",
-            "percent_estimate": 11.9,
+            "percent_estimate": 11.85,
             "percent_max": 23.8,
             "percent_min": 0,
-            "rank": 4,
-            "text": "dextrose de blé",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "dextrose de blé"
         },
         {
             "id": "en:fat-reduced-cocoa",
-            "percent_estimate": 6.36875,
+            "percent_estimate": 5.925,
             "percent_max": 20,
             "percent_min": 0,
-            "rank": 5,
-            "text": "cacao maigre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "cacao maigre"
         },
         {
             "ciqual_food_code": "11058",
@@ -66,18 +63,29 @@
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 6,
-            "text": "sel",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sel"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:raising-agent",
+            "ingredients": [
+                {
+                    "id": "en:e500",
+                    "percent_estimate": 0.13,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "carbonates de sodium"
+                },
+                {
+                    "id": "en:e503",
+                    "percent_estimate": 0.13,
+                    "percent_max": 0.26,
+                    "percent_min": 0,
+                    "text": "carbonates d'ammonium"
+                }
+            ],
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 7,
             "text": "poudre à lever"
         },
         {
@@ -85,29 +93,31 @@
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 8,
-            "text": "arôme",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
+            "text": "arôme"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "fr:couverture-cacao",
+            "ingredients": [
+                {
+                    "id": "en:palm-fat",
+                    "percent_estimate": 0.26,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "graisse végétale de palme"
+                }
+            ],
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 9,
             "text": "Couverture cacao"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 10,
-            "text": "sucre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sucre"
         },
         {
             "difference": 17.7,
@@ -116,18 +126,38 @@
             "percent_hidden": 18,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 11,
-            "text": "cacao maigre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "cacao maigre"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:emulsifier",
+            "ingredients": [
+                {
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "id": "en:soya",
+                            "percent_estimate": 0.13,
+                            "percent_max": 0.52,
+                            "percent_min": 0,
+                            "text": "_soja_"
+                        }
+                    ],
+                    "percent_estimate": 0.13,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "lécithines"
+                },
+                {
+                    "id": "en:coating",
+                    "percent_estimate": 0.13,
+                    "percent_max": 0.26,
+                    "percent_min": 0,
+                    "text": "Nappage"
+                }
+            ],
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 12,
             "text": "émulsifiant"
         },
         {
@@ -135,20 +165,15 @@
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 13,
-            "text": "sirop de glucose",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sirop de glucose"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 14,
-            "text": "sucre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sucre"
         },
         {
             "ciqual_food_code": "31077",
@@ -156,27 +181,45 @@
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 15,
-            "text": "fructose",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "fructose"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:thickener",
+            "ingredients": [
+                {
+                    "id": "en:e440a",
+                    "percent_estimate": 0.26,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "pectines"
+                }
+            ],
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 16,
             "text": "épaississant"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:acidity-regulator",
+            "ingredients": [
+                {
+                    "id": "en:e330",
+                    "percent_estimate": 0.13,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "acide citrique"
+                },
+                {
+                    "id": "en:e332",
+                    "percent_estimate": 0.13,
+                    "percent_max": 0.26,
+                    "percent_min": 0,
+                    "text": "citrates de potassium"
+                }
+            ],
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 17,
             "text": "correcteur d'acidité"
         },
         {
@@ -184,138 +227,39 @@
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 18,
-            "text": "arôme",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
+            "text": "arôme"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:colour",
+            "ingredients": [
+                {
+                    "id": "en:e120",
+                    "percent_estimate": 0.26,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "cochenille"
+                }
+            ],
             "percent_estimate": 0.26,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 19,
             "text": "colorant"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:firming-agent",
-            "percent_estimate": 0.26,
+            "ingredients": [
+                {
+                    "id": "en:e509",
+                    "percent_estimate": 2.28499999999993,
+                    "percent_max": 0.52,
+                    "percent_min": 0,
+                    "text": "chlorure de calcium"
+                }
+            ],
+            "percent_estimate": 2.28499999999993,
             "percent_max": 0.52,
             "percent_min": 0,
-            "rank": 20,
             "text": "affermissant"
-        },
-        {
-            "id": "en:wheat-flour",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "Farine de _blé_",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:e500",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "carbonates de sodium",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:e503",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "carbonates d'ammonium",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "from_palm_oil": "yes",
-            "id": "en:palm-fat",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "graisse végétale de palme",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "has_sub_ingredients": "yes",
-            "id": "en:e322",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "lécithines",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
-        },
-        {
-            "id": "en:filling",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "Nappage",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
-        },
-        {
-            "id": "en:e440a",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "pectines",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:e330",
-            "percent_estimate": 0.26,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "acide citrique",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:e332",
-            "percent_estimate": 0.194374999999944,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "citrates de potassium",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:e120",
-            "percent_estimate": 0.0971874999999756,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "cochenille",
-            "vegan": "no",
-            "vegetarian": "no"
-        },
-        {
-            "id": "en:e509",
-            "percent_estimate": 0.0485937499999878,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "chlorure de calcium",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:soya",
-            "percent_estimate": 0.0485937499999807,
-            "percent_max": 0.52,
-            "percent_min": 0,
-            "text": "_soja_",
-            "vegan": "yes",
-            "vegetarian": "yes"
         }
     ],
     "ingredients_metrics": {
@@ -325,6 +269,31 @@
     },
     "ingredients_percent_analysis": 1,
     "ingredients_text": "Biscuits : Farine de _blé_ , sucre, graisse végétale (palme), dextrose de blé, cacao maigre, sel, poudre à lever: carbonates de sodium et carbonates  d'ammonium,  arôme. Couverture cacao : graisse végétale (palme), sucre, cacao maigre 18%, émulsifiant : lécithines ( _soja_ ) Nappage : sirop de glucose, sucre, fructose, épaississant(pectines), correcteur d'acidité (acide citrique, citrates de potassium), arôme, colorant :cochenille, affermissant: chlorure de calcium.",
+    "ingredients_without_ciqual_codes": [
+        "en:acidity-regulator",
+        "en:coating",
+        "en:colour",
+        "en:e120",
+        "en:e322",
+        "en:e330",
+        "en:e332",
+        "en:e440a",
+        "en:e500",
+        "en:e503",
+        "en:e509",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:firming-agent",
+        "en:flavouring",
+        "en:glucose-syrup",
+        "en:palm-fat",
+        "en:raising-agent",
+        "en:soya",
+        "en:thickener",
+        "en:wheat-dextrose",
+        "fr:couverture-cacao"
+    ],
+    "ingredients_without_ciqual_codes_n": 22,
     "labels_tags": [],
     "lc": "fr",
     "nutriments": {
