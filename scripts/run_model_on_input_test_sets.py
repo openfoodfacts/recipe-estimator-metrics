@@ -40,11 +40,23 @@ def remove_percent_fields(ingredients):
 
 # Check input parameters (existing model executable, and specified results path + at least 1 input test set), otherwise print usage
 if len(sys.argv) < 3:
-    print("Usage: run_model_input_test_sets.py [name of model executable] [name for results] [names of one or more input test sets]")
+    print("Usage: run_model_input_test_sets.py [full path or name of model executable] [full path or name for results] [full paths or names of one or more input test sets]")
     sys.exit(1)
 
-model = 'models/' + sys.argv[1] + '.py'
-results_path = 'test-sets/results/' + sys.argv[2]
+# If we were passed a model name (no path), assume it is in the models directory, and if there is no extension, assume it is a .py file
+if "/" not in sys.argv[1]:
+    if "." not in sys.argv[1]:
+        sys.argv[1] += ".py"
+    sys.argv[1] = "models/" + sys.argv[1]
+
+model = sys.argv[1]
+
+# If we were passed a results name (no path), assume it is in the test-sets/results directory
+if "/" not in sys.argv[2]:
+    sys.argv[2] = "test-sets/results/" + sys.argv[2]
+
+
+results_path = sys.argv[2]
 
 if not os.path.exists(model):
     print("Model executable does not exist")
@@ -53,6 +65,9 @@ if not os.path.exists(model):
 # Go through each input test set directory
 test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
 for test_set_name in test_sets:
+    # If we have a test set path instead of a test set name, use the last component of the path as the test set name
+    if "test-sets/input/" in test_set_name:
+        test_set_name = test_set_name.split("test-sets/input/")[-1]
 
     print("Running model on test set " + test_set_name)
 
