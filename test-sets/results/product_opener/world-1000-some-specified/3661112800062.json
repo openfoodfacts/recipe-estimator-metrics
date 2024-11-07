@@ -12,29 +12,23 @@
     ],
     "ingredients": [
         {
-            "difference": 25.2,
+            "ciqual_proxy_food_code": "28205",
+            "difference": 23.2,
             "id": "en:pork-meat",
             "labels": "en:organic",
-            "origins": "en:france",
-            "percent_estimate": 68.8,
+            "percent_estimate": 70.8,
             "percent_hidden": 94,
             "percent_max": 100,
-            "percent_min": 37.6,
-            "rank": 1,
-            "text": "Viande de porc",
-            "vegan": "no",
-            "vegetarian": "no"
+            "percent_min": 41.6,
+            "text": "Viande de porc"
         },
         {
             "ciqual_food_code": "18066",
             "id": "en:water",
-            "percent_estimate": 15.6,
+            "percent_estimate": 14.6,
             "percent_max": 50,
             "percent_min": 0,
-            "rank": 2,
-            "text": "eau",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "eau"
         },
         {
             "ciqual_food_code": "11058",
@@ -42,31 +36,23 @@
             "percent_estimate": 0.85,
             "percent_max": 1.7,
             "percent_min": 0,
-            "rank": 3,
-            "text": "sel",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sel"
         },
         {
             "id": "en:natural-flavouring",
             "percent_estimate": 0.85,
             "percent_max": 1.7,
             "percent_min": 0,
-            "rank": 4,
-            "text": "aromes naturels",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
+            "text": "aromes naturels"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:cane-sugar",
             "labels": "en:organic",
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
-            "rank": 5,
-            "text": "sucre de canne",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "sucre de canne"
         },
         {
             "id": "en:herbs-and-spices",
@@ -74,79 +60,81 @@
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
-            "rank": 6,
-            "text": "epices et plantes aromatiques",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "epices et plantes aromatiques"
         },
         {
             "id": "en:dextrose",
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
-            "rank": 7,
-            "text": "dextrose",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "dextrose"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:antioxidant",
+            "ingredients": [
+                {
+                    "id": "en:e300",
+                    "percent_estimate": 0.5,
+                    "percent_max": 1,
+                    "percent_min": 0,
+                    "text": "e300"
+                }
+            ],
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
-            "rank": 8,
             "text": "antioxydant"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:preservative",
-            "percent_estimate": 0.5,
+            "ingredients": [
+                {
+                    "id": "en:e325",
+                    "percent_estimate": 0.5,
+                    "percent_max": 1,
+                    "percent_min": 0,
+                    "text": "e325"
+                },
+                {
+                    "id": "en:natural-sheep-casing",
+                    "percent_estimate": 0.25,
+                    "percent_max": 0.5,
+                    "percent_min": 0,
+                    "text": "boyau naturel de mouton"
+                },
+                {
+                    "id": "fr:traces",
+                    "percent_estimate": 10.15,
+                    "percent_max": 0.333333333333333,
+                    "percent_min": 0,
+                    "text": "traces"
+                }
+            ],
+            "percent_estimate": 10.9,
             "percent_max": 1,
             "percent_min": 0,
-            "rank": 9,
             "text": "conservateur"
-        },
-        {
-            "id": "en:e300",
-            "percent_estimate": 0.5,
-            "percent_max": 1,
-            "percent_min": 0,
-            "text": "e300",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:e325",
-            "percent_estimate": 0.5,
-            "percent_max": 1,
-            "percent_min": 0,
-            "text": "e325",
-            "vegan": "yes",
-            "vegetarian": "yes"
-        },
-        {
-            "id": "en:natural-sheep-casing",
-            "percent_estimate": 0.5,
-            "percent_max": 1,
-            "percent_min": 0,
-            "text": "boyau naturel de mouton"
-        },
-        {
-            "id": "fr:traces",
-            "percent_estimate": 9.90000000000001,
-            "percent_max": 1,
-            "percent_min": 0,
-            "text": "traces"
         }
     ],
     "ingredients_metrics": {
-        "relative_difference": 0.268,
-        "total_difference": 25.2,
+        "relative_difference": 0.247,
+        "total_difference": 23.2,
         "total_specified_input_percent": 94
     },
     "ingredients_percent_analysis": 1,
     "ingredients_text": "Viande de porc* (94%) (origine ue), eau, sel, aromes naturels, sucre de canne*, epices* et plantes aromatiques*, dextrose, antioxydant : e300, conservateur : e325. boyau naturel de mouton. {traces}traces de lait, gluten et soja. * ingredients issus de l'agriculture biologique.{/traces}",
+    "ingredients_without_ciqual_codes": [
+        "en:antioxidant",
+        "en:dextrose",
+        "en:e300",
+        "en:e325",
+        "en:herbs-and-spices",
+        "en:natural-flavouring",
+        "en:natural-sheep-casing",
+        "en:preservative",
+        "fr:traces"
+    ],
+    "ingredients_without_ciqual_codes_n": 9,
     "labels_tags": [
         "en:organic",
         "en:eu-organic",

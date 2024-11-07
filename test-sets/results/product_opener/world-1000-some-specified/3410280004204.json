@@ -13,63 +13,60 @@
     ],
     "ingredients": [
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
-            "percent_estimate": 60,
+            "percent_estimate": 62.5,
             "percent_max": 100,
-            "percent_min": 20,
-            "rank": 1,
-            "text": "Sucre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "percent_min": 25,
+            "text": "Sucre"
         },
         {
-            "difference": 0,
+            "difference": 1.25,
             "id": "en:fat-reduced-cocoa-powder",
-            "percent_estimate": 20,
+            "percent_estimate": 18.8,
             "percent_hidden": 20,
             "percent_max": 50,
             "percent_min": 0,
-            "rank": 2,
-            "text": "cacao maigre en poudre",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "cacao maigre en poudre"
         },
         {
-            "has_sub_ingredients": "yes",
             "id": "en:emulsifier",
-            "percent_estimate": 10,
+            "ingredients": [
+                {
+                    "id": "en:sunflower-lecithin",
+                    "percent_estimate": 9.375,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
+                    "text": "lécithine de tournesol"
+                }
+            ],
+            "percent_estimate": 9.375,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
-            "rank": 3,
             "text": "émulsifiant"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 2.5,
+            "percent_estimate": 9.375,
             "percent_max": "5",
             "percent_min": 0,
-            "rank": 4,
-            "text": "arômes",
-            "vegan": "maybe",
-            "vegetarian": "maybe"
-        },
-        {
-            "id": "en:sunflower-lecithin",
-            "percent_estimate": 7.5,
-            "percent_max": "5",
-            "percent_min": 0,
-            "text": "lécithine de tournesol",
-            "vegan": "yes",
-            "vegetarian": "yes"
+            "text": "arômes"
         }
     ],
     "ingredients_metrics": {
-        "relative_difference": 0.0,
-        "total_difference": 0,
+        "relative_difference": 0.0625,
+        "total_difference": 1.25,
         "total_specified_input_percent": 20
     },
     "ingredients_percent_analysis": 1,
     "ingredients_text": "Sucre, cacao maigre en poudre 20%, émulsifiant : lécithine de tournesol, arômes.",
+    "ingredients_without_ciqual_codes": [
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:sunflower-lecithin"
+    ],
+    "ingredients_without_ciqual_codes_n": 4,
     "labels_tags": [
         "en:no-gluten",
         "en:green-dot"
