@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-compute_metrics_for_model_on_test_sets [path of model results] [paths of one or more input test sets]
+function to compute metrics for a model on a test set
 
-This scriptwill go through each product JSON file of the specified input test sets to:
+Used by:
+- run_model_on_input_test_sets.py
+- compute_metrics_for_model_on_test_sets.py
+
+To compute metrics, we go through each product JSON file of the specified input test sets to:
 - Compute accuracy metrics comparing the estimated "percent_estimate" field in the resulting product
 to the "percent" field in the input product
 - Store product level metrics in the resulting product
 - Aggregate metrics by test set
-
-Example:
-
-./scripts/compute_metrics_for_model_on_test_sets.py test-sets/results/product_opener/ test-sets/input/fr-les-mousquetaires-all-specified
 """
 
 import json
@@ -76,10 +76,12 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
 
             if input_ingredient_id not in ingredients_stats:
                 ingredients_stats[input_ingredient_id] = {
+                    'total_input_percent': 0,
                     "total_percent_estimate": 0,
                     "total_difference": 0,
                     "number_of_products": 0,
                     "number_of_products_where_specified": 0,
+                    'is_in_taxonomy': input_ingredient.get('is_in_taxonomy'),
                     "ciqual_food_code": ciqual_food_code,
                     "ciqual_proxy_food_code": ciqual_proxy_food_code
                 }
@@ -89,6 +91,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             ingredients_stats[input_ingredient_id]["number_of_products"] += 1
             if input_percent_is_specified:
                 ingredients_stats[input_ingredient_id]["number_of_products_where_specified"] += 1
+                ingredients_stats[input_ingredient_id]["total_input_percent"] += input_percent
 
     return (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code)
 
@@ -126,7 +129,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
     with open(result_set_path + "/products_stats.csv", "w", newline="") as products_csv, \
          open(result_set_path + "/products_ingredients_stats.csv", "w", newline="") as products_ingredients_csv:
         products_csv_writer = csv.writer(products_csv)
-        products_csv_writer.writerow(['test_name', 'total_difference','number_of_ingredients_without_ciqual_code'])
+        products_csv_writer.writerow(['test_name', 'total_difference','number_of_ingredients_without_ciqual_code','ingredients_text'])
         products_ingredients_csv_writer = csv.writer(products_ingredients_csv)
         products_ingredients_csv_writer.writerow(['test_name','ingredient','percent','percent_estimate','difference'])
 
@@ -163,7 +166,9 @@ def compute_metrics_for_test_set(results_path, test_set_name):
                 json.dump(resulting_product, f,  indent=4, ensure_ascii=False, sort_keys=True)
 
             # Write to the products summary CSV file
-            products_csv_writer.writerow([test_name, resulting_product["ingredients_metrics"]["total_difference"], resulting_product["ingredients_metrics"]["number_of_ingredients_without_ciqual_code"]])
+            products_csv_writer.writerow([test_name, resulting_product["ingredients_metrics"]["total_difference"],
+                                          resulting_product["ingredients_metrics"]["number_of_ingredients_without_ciqual_code"],
+                                           resulting_product["ingredients_text"]])
 
             # Aggregate metrics by test set
             test_set_total_difference += resulting_product["ingredients_metrics"]["total_difference"]
@@ -182,14 +187,21 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         # Save the ingredients stats as a CSV file in the test set directory
         with open(results_path + "/" + test_set_name + "/ingredients_stats.csv", "w", newline="") as ingredients_stats_csv:
             ingredients_stats_csv_writer = csv.writer(ingredients_stats_csv)
-            ingredients_stats_csv_writer.writerow(['ingredient','ciqual_food_code','ciqual_proxy_food_code','total_percent_estimate','total_difference','number_of_products','number_of_products_where_specified'])
+            ingredients_stats_csv_writer.writerow(['ingredient','is_in_taxonomy','ciqual_food_code','ciqual_proxy_food_code', 'total_input_percent', 'total_percent_estimate','total_difference','relative_difference','number_of_products','number_of_products_where_specified'])
             # sort ingredients by id for easy diffs
             for ingredient_id in sorted(ingredients_stats.keys()):
                 ingredient_stats = ingredients_stats[ingredient_id]
-                ingredients_stats_csv_writer.writerow([ingredient_id, ingredient_stats["ciqual_food_code"],
+                # If we have some specified input percent, compute the relative difference
+                if (ingredient_stats["total_input_percent"] > 0):
+                     ingredient_stats["relative_difference"] = round_to_n(ingredient_stats["total_difference"] / ingredient_stats["total_input_percent"],3)
+                ingredients_stats_csv_writer.writerow([ingredient_id, 
+                                                       ingredient_stats["is_in_taxonomy"],
+                                                       ingredient_stats["ciqual_food_code"],
                                                        ingredient_stats["ciqual_proxy_food_code"],
+                                                       round_to_n(ingredient_stats["total_input_percent"], 3),
                                                        round_to_n(ingredient_stats["total_percent_estimate"], 3),
                         round_to_n(ingredient_stats["total_difference"], 3),
+                        ingredient_stats.get("relative_difference", ""),
                           ingredient_stats["number_of_products"], 
                           ingredient_stats["number_of_products_where_specified"]])
 

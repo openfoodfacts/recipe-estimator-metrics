@@ -4,6 +4,16 @@ parse_ingredients_for_input_test_sets.py [paths of one or more input test sets]
 
 This script calls the Product Opener API to parse the ingredients list and create the ingredients nested structure
 for each product of each specified input test set.
+
+It calls product opener running locally in a dev environment at the http://world.openfoodfacts.localhost domain
+
+See https://github.com/openfoodfacts/openfoodfacts-server/blob/main/docs/dev/how-to-quick-start-guide.md 
+to set up and run product opener locally with Docker.
+
+Example:
+
+./scripts/parse_ingredients_for_input_test_sets.py test-sets/input/fr-1000-some-specified-popular
+
 """
 
 import json
