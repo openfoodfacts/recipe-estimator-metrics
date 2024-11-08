@@ -179,7 +179,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1291,6 +1291,7 @@
     "ingredients": [
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "text": "Maltodextrine"
         },
         {
@@ -1298,10 +1299,12 @@
             "ingredients": [
                 {
                     "id": "en:e955",
+                    "is_in_taxonomy": 1,
                     "percent": 0.98,
                     "text": "Sucralose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9dulcorant"
         }
     ],
@@ -1378,6 +1381,12 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e955",
+        "en:maltodextrin",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 3,
@@ -1650,7 +1659,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         }
     ],

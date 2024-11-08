@@ -231,7 +231,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1707,11 +1707,14 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "id": "fr:feves-de-soja-sans-ogm",
+            "is_in_taxonomy": 0,
             "percent": 32,
             "text": "f\u00e8ves de soja* sans OGM"
         },
@@ -1723,16 +1726,20 @@
                     "ingredients": [
                         {
                             "id": "en:nigari",
+                            "is_in_taxonomy": 1,
                             "text": "nigari"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "chlorure de magn\u00e9sium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "agent de coagulation"
         },
         {
             "id": "en:e516",
+            "is_in_taxonomy": 1,
             "text": "sulfate de calcium"
         }
     ],
@@ -1851,6 +1858,14 @@
         "fr:feves-de-soja-sans-ogm"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coagulant",
+        "en:e511",
+        "en:e516",
+        "en:nigari",
+        "fr:feves-de-soja-sans-ogm"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 5,
@@ -2292,46 +2307,66 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 400,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 26.22
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:hdpe-2-high-density-polyethylene"
+                "id": {
+                    "id": "en:hdpe-2-high-density-polyethylene"
+                }
             },
             "shape": {
-                "id": "en:packet"
+                "id": {
+                    "id": "en:packet"
+                }
             }
         },
         {
             "material": {
-                "id": "en:hdpe-2-high-density-polyethylene"
+                "id": {
+                    "id": "en:hdpe-2-high-density-polyethylene"
+                }
             },
             "shape": {
-                "id": "en:packet"
+                "id": {
+                    "id": "en:packet"
+                }
             }
         }
     ],

@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1409,44 +1409,55 @@
     "ingredients": [
         {
             "id": "fr:seigle-complet-egruge",
+            "is_in_taxonomy": 0,
             "percent": 51,
             "text": "seigle complet \u00e9grug\u00e9\u00b9"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "id": "fr:gruau-d-epeautre-complet",
+            "is_in_taxonomy": 0,
             "percent": 8,
             "text": "gruau d'\u00e9peautre complet\u00b9"
         },
         {
             "id": "fr:gruau-d-epeautre-vert-complet",
+            "is_in_taxonomy": 0,
             "percent": 2,
             "text": "gruau d'\u00e9peautre vert complet"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "id": "fr:production",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "text": "production"
         },
         {
             "id": "fr:a-conserver-a-l-abri-de-la-chaleur-et-de-l-humidite",
+            "is_in_taxonomy": 0,
             "text": "\u00c0 conserver \u00e0 l'abri de la chaleur et de l'humidit\u00e9"
         },
         {
             "id": "fr:non-ouvert",
+            "is_in_taxonomy": 0,
             "text": "Non ouvert"
         }
     ],
@@ -1550,6 +1561,16 @@
     "ingredients_with_unspecified_percent_n": 6,
     "ingredients_with_unspecified_percent_sum": 39,
     "ingredients_without_ciqual_codes": [
+        "fr:a-conserver-a-l-abri-de-la-chaleur-et-de-l-humidite",
+        "fr:gruau-d-epeautre-complet",
+        "fr:gruau-d-epeautre-vert-complet",
+        "fr:non-ouvert",
+        "fr:production",
+        "fr:seigle-complet-egruge"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt",
         "en:yeast",
         "fr:a-conserver-a-l-abri-de-la-chaleur-et-de-l-humidite",
         "fr:gruau-d-epeautre-complet",
@@ -1558,7 +1579,7 @@
         "fr:production",
         "fr:seigle-complet-egruge"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -1945,7 +1966,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         }
     ],

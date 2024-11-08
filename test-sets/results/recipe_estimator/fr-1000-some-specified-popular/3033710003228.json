@@ -258,7 +258,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2152,6 +2152,7 @@
             "ciqual_food_code_used": null,
             "difference": 19.0,
             "id": "en:barley",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2246,11 +2247,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2300,6 +2301,7 @@
             "ciqual_food_code_used": null,
             "difference": 3.0,
             "id": "en:malted-barley",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2394,11 +2396,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2449,6 +2451,7 @@
             "ciqual_food_code_used": "9390",
             "difference": 11.0,
             "id": "en:rye",
+            "is_in_taxonomy": 1,
             "lost_water": 3.6274813559322028,
             "nutrients": {
                 "alcohol": {
@@ -2543,13 +2546,13 @@
                     "percent_max": 0.98,
                     "percent_min": 0.98
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00034,
+                    "percent_min": 0.00034
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00034,
-                    "percent_min": 0.00034
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00020999999999999998,
@@ -2594,6 +2597,7 @@
             "ciqual_food_code_used": "20026",
             "difference": 11.0,
             "id": "en:chicory",
+            "is_in_taxonomy": 1,
             "lost_water": 31.969298305084745,
             "nutrients": {
                 "alcohol": {
@@ -2688,13 +2692,13 @@
                     "percent_max": 2.4,
                     "percent_min": 2.4
                 },
+                "vitamin-b1": {
+                    "percent_max": 6.7e-05,
+                    "percent_min": 6.7e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 6.7e-05,
-                    "percent_min": 6.7e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 1e-05,
@@ -2848,6 +2852,13 @@
         "en:malted-barley"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley",
+        "en:chicory",
+        "en:malted-barley",
+        "en:rye"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -3356,62 +3367,94 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:drink-can"
+                "id": {
+                    "id": "en:drink-can"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         }
     ],
@@ -3854,15 +3897,15 @@
                 "unweighted_total": 3.38,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 4,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.000407
+            },
             "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 4,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.000407
             },
             "vitamin-b2": {
                 "ingredient_count": 4,

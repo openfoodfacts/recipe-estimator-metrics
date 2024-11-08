@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1247,23 +1247,28 @@
     "ingredients": [
         {
             "id": "fr:cacahuetes-des-ameriques-grillees",
+            "is_in_taxonomy": 0,
             "percent": 86,
             "text": "CACAHUETES des Am\u00e9riques grill\u00e9es"
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
             "ingredients": [
                 {
                     "id": "en:sal-tree",
+                    "is_in_taxonomy": 1,
                     "text": "sal"
                 },
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
+                    "is_in_taxonomy": 1,
                     "text": "cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:vegan",
             "text": "beurre",
             "vegan": "en:yes",
@@ -1271,12 +1276,15 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         }
     ],
@@ -1357,6 +1365,13 @@
         "fr:cacahuetes-des-ameriques-grillees"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:sal-tree",
+        "en:salt",
+        "fr:cacahuetes-des-ameriques-grillees"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 9,
@@ -1788,49 +1803,67 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "454 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 454,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.48
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "454 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 454,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             },
             "weight_measured": 40.6
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "454 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 454,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             },
             "weight_measured": 11.9
         }

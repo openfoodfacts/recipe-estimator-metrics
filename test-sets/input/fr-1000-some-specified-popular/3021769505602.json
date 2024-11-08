@@ -241,7 +241,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1999,19 +1999,23 @@
     "ingredients": [
         {
             "ciqual_food_code": "13050",
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple",
             "ingredients": [
                 {
                     "id": "fr:puree-et-puree-concentree",
+                    "is_in_taxonomy": 1,
                     "text": "pur\u00e9e et pur\u00e9e concentr\u00e9e"
                 }
             ],
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 99.7,
             "text": "Pomme"
         },
         {
             "id": "en:natural-apple-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de pomme"
         },
         {
@@ -2020,9 +2024,11 @@
             "ingredients": [
                 {
                     "id": "fr:si-necessaire-pour-reguler-l-acidite",
+                    "is_in_taxonomy": 0,
                     "text": "si n\u00e9cessaire pour r\u00e9guler l'acidit\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "jus de citron concentr\u00e9"
         },
         {
@@ -2030,9 +2036,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         }
     ],
@@ -2168,6 +2176,15 @@
         "fr:si-necessaire-pour-reguler-l-acidite"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:concentrated-lemon-juice",
+        "en:e300",
+        "en:natural-apple-flavouring",
+        "fr:puree-et-puree-concentree",
+        "fr:si-necessaire-pour-reguler-l-acidite"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2597,30 +2614,42 @@
     "packagings": [
         {
             "material": {
-                "id": "en:recyclable-plastic"
+                "id": {
+                    "id": "en:recyclable-plastic"
+                }
             },
             "number_of_units": 32,
             "quantity_per_unit": "90 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 90,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pouch-flask"
+                "id": {
+                    "id": "en:pouch-flask"
+                }
             },
             "weight_measured": 5.85
         },
         {
             "material": {
-                "id": "en:recyclable-plastic"
+                "id": {
+                    "id": "en:recyclable-plastic"
+                }
             },
             "number_of_units": 32,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             },
             "weight_measured": 0.93
         }

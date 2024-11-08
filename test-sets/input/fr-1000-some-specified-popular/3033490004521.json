@@ -30,7 +30,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT , LAIT, LAIT, LAIT, LAIT, LAIT, LAIT, ferments lactiques",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -231,7 +231,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1362,21 +1362,26 @@
     "ingredients": [
         {
             "id": "fr:lait-partiellement-ecreme-a-1-matieres-grasses",
+            "is_in_taxonomy": 0,
             "percent": 94.7,
             "text": "LAIT partiellement \u00e9cr\u00e9m\u00e9 \u00e0 1 % Mati\u00e8res Grasses"
         },
         {
             "id": "fr:lait-ecreme-concentreou-en-poudre",
+            "is_in_taxonomy": 0,
             "percent": 5.2,
             "text": "LAIT \u00e9cr\u00e9m\u00e9 concentr\u00e9ou en poudre"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "LAIT"
         }
@@ -1518,6 +1523,12 @@
         "fr:lait-partiellement-ecreme-a-1-matieres-grasses"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:lactic-ferments",
+        "fr:lait-ecreme-concentreou-en-poudre",
+        "fr:lait-partiellement-ecreme-a-1-matieres-grasses"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 5,
@@ -1988,47 +1999,67 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             },
             "number_of_units": 4,
             "quantity_per_unit": "125 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "125",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": "4"
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "4",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": "4",
             "shape": {
-                "id": "en:sheet"
+                "id": {
+                    "id": "en:sheet"
+                }
             }
         },
         {
             "material": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             },
             "shape": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             }
         }
     ],

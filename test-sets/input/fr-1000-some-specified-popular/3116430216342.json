@@ -165,7 +165,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -989,27 +989,34 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sugar"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "cocoa butter"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "cocoa mass"
                 },
                 {
                     "ciqual_food_code": "19054",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:skimmed-milk-powder",
+                    "is_in_taxonomy": 1,
                     "text": "skimmed milk powder"
                 },
                 {
                     "ciqual_food_code": "16401",
                     "id": "en:butterfat",
+                    "is_in_taxonomy": 1,
                     "text": "pastry butter"
                 },
                 {
@@ -1018,27 +1025,35 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "soy lecithin"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "emulsifier"
                 },
                 {
                     "id": "en:flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "flavour"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 38,
             "text": "milk chocolate"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "wheat flour"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
@@ -1046,23 +1061,30 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "text": "palm"
                 },
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "rapeseed"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "vegetable fat"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:lactose-and-milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "lactose and milk proteins"
         },
         {
@@ -1071,9 +1093,11 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
@@ -1082,17 +1106,21 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "sodium carbonates"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "baking powders"
         },
         {
             "id": "en:e503",
+            "is_in_taxonomy": 1,
             "text": "ammonium carbonates"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavouring"
         }
     ],
@@ -1262,6 +1290,22 @@
         "en:vegetable-fat"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:baking-powder",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e500",
+        "en:e503",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:lactose-and-milk-proteins",
+        "en:milk-chocolate",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vegetable-fat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 43,
@@ -1665,38 +1709,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

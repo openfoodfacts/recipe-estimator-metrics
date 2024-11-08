@@ -286,7 +286,7 @@
                         "epi_score": "74",
                         "origin": "en:belgium",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 74,
@@ -2591,85 +2591,107 @@
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "flocons d'avoine"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "flocons de bl\u00e9"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "processing": "en:flakes,en:grilled",
                     "text": "bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 59,
             "text": "C\u00e9r\u00e9ales compl\u00e8tes"
         },
         {
             "id": "en:dried-fruits",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "fruits secs"
         },
         {
             "ciqual_food_code": "15023",
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
             "ingredients": [
                 {
                     "ciqual_food_code": "13046",
                     "id": "en:raisin",
+                    "is_in_taxonomy": 1,
                     "text": "raisins secs"
                 },
                 {
                     "id": "fr:raisins-de-sultane",
+                    "is_in_taxonomy": 0,
                     "text": "raisins de sultane"
                 },
                 {
                     "ciqual_food_code": "13000",
+                    "ecobalyse_code": "apricot-eu",
                     "id": "en:dried-apricots",
+                    "is_in_taxonomy": 1,
                     "processing": "en:chopped",
                     "text": "abricots secs"
                 },
                 {
                     "ciqual_food_code": "13111",
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:dried-apple",
+                    "is_in_taxonomy": 1,
                     "processing": "en:sliced",
                     "text": "pommes s\u00e9ch\u00e9es"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "processing": "en:cut,en:grilled",
                     "text": "noix de coco"
                 },
                 {
                     "ciqual_food_code": "15004",
+                    "ecobalyse_code": "hazelnut-unshelled-non-eu",
                     "id": "en:roasted-nibbed-hazelnuts",
+                    "is_in_taxonomy": 1,
                     "text": "noisettes hach\u00e9es grill\u00e9es"
                 },
                 {
                     "ciqual_food_code": "15041",
                     "id": "en:flaked-almonds",
+                    "is_in_taxonomy": 1,
                     "text": "amandes effil\u00e9es"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "noix"
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "text": "flocons d'orge"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "text": "graines de tournesol"
         },
         {
             "ciqual_food_code": "15023",
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
+            "is_in_taxonomy": 1,
             "text": "autres noix"
         }
     ],
@@ -2903,6 +2925,19 @@
         "fr:raisins-de-sultane"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-flakes",
+        "en:coconut",
+        "en:dried-fruits",
+        "en:flaked-almonds",
+        "en:oat-flakes",
+        "en:raisin",
+        "en:wheat",
+        "en:wheat-flakes",
+        "en:wholemeal-cereal",
+        "fr:raisins-de-sultane"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -3398,39 +3433,57 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 66.44
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 7.5
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

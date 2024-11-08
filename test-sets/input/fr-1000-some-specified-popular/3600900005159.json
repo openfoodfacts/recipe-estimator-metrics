@@ -59,7 +59,7 @@
         "en:e160c",
         "en:e330"
     ],
-    "allergens": "en:gluten, en:gluten",
+    "allergens": "en:gluten, en:gluten, en:gluten",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, gluten",
     "allergens_from_user": "(en) en:gluten, en:gluten",
     "allergens_hierarchy": [
@@ -230,7 +230,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1477,30 +1477,39 @@
     "ingredients": [
         {
             "ciqual_food_code": "9610",
+            "ecobalyse_code": "durum-wheat-semolina",
             "id": "fr:semoule-de-ble-dur-precuite",
+            "is_in_taxonomy": 1,
             "percent": 88,
             "text": "Semoule de _bl\u00e9_ dur pr\u00e9cuite"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent": 2.5,
             "text": "huile d'olive vierge extra"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "processing": "en:powder",
             "text": "oignon"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
@@ -1508,14 +1517,17 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "processing": "en:dehydrated",
             "text": "persil"
         },
@@ -1527,34 +1539,42 @@
                     "ingredients": [
                         {
                             "id": "en:e160c",
+                            "is_in_taxonomy": 1,
                             "text": "extrait de paprika"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "colorant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de menthe"
         },
         {
             "ciqual_food_code": "11027",
             "id": "en:mint",
+            "is_in_taxonomy": 1,
             "processing": "en:dehydrated",
             "text": "menthe"
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "text": "maltodextrine"
         },
         {
             "ciqual_proxy_food_code": "13009",
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon",
             "ingredients": [],
+            "is_in_taxonomy": 1,
             "processing": "en:juice,en:dehydrated,en:concentrated",
             "text": "citron"
         },
         {
             "ciqual_proxy_food_code": "11089",
             "id": "en:turmeric",
+            "is_in_taxonomy": 1,
             "text": "curcuma"
         }
     ],
@@ -1806,6 +1826,19 @@
         "en:natural-mint-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:colour",
+        "en:e160c",
+        "en:e330",
+        "en:maltodextrin",
+        "en:mint",
+        "en:natural-mint-flavouring",
+        "en:parsley",
+        "en:salt",
+        "en:turmeric"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_modified": "20190830",
     "known_ingredients_n": 39,
     "labels": "Fabriqu\u00e9 en France, Nutriscore, Nutriscore A, E A",
@@ -2236,18 +2269,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:individual-bag"
+                "id": {
+                    "id": "en:individual-bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

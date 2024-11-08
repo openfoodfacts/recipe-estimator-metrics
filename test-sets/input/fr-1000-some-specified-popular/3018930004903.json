@@ -197,7 +197,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1189,26 +1189,34 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "Farine de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent": 4.9,
             "text": "huile de tournesol"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de malt d'_ORGE_"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
@@ -1216,9 +1224,11 @@
             "ingredients": [
                 {
                     "id": "en:e524",
+                    "is_in_taxonomy": 1,
                     "text": "hydroxyde de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteur d'acidit\u00e9"
         }
     ],
@@ -1333,10 +1343,17 @@
     "ingredients_without_ciqual_codes": [
         "en:acidity-regulator",
         "en:barley-malt-extract",
+        "en:e524"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:barley-malt-extract",
         "en:e524",
+        "en:salt",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 16,
@@ -1778,17 +1795,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 4.86
         }

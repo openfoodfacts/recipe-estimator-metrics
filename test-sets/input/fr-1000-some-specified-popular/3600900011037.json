@@ -220,7 +220,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1371,29 +1371,36 @@
         {
             "ciqual_food_code": "9340",
             "id": "en:quinoa",
+            "is_in_taxonomy": 1,
             "percent": 51,
             "text": "Quinoa"
         },
         {
             "ciqual_food_code": "9690",
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:bulgur",
+            "is_in_taxonomy": 1,
             "percent": 31.5,
             "text": "Boulgour"
         },
         {
             "ciqual_food_code": "9610",
+            "ecobalyse_code": "durum-wheat-semolina",
             "id": "en:durum-wheat-semolina",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "semoule de bl\u00e9 dur"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "processing": "en:crushed,en:toasted",
             "text": "de bl\u00e9"
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "text": "\u00e9pices"
         }
     ],
@@ -1521,6 +1528,12 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:quinoa",
+        "en:spice",
+        "en:wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -1948,7 +1961,9 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:container"
+                "id": {
+                    "id": "en:container"
+                }
             }
         }
     ],

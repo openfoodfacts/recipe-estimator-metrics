@@ -258,7 +258,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2150,23 +2150,27 @@
     "ingredients": [
         {
             "id": "en:barley",
+            "is_in_taxonomy": 1,
             "percent": 44,
             "text": "ORGE"
         },
         {
             "id": "en:malted-barley",
+            "is_in_taxonomy": 1,
             "percent": 28,
             "text": "ORGE MALTEE"
         },
         {
             "ciqual_food_code": "9390",
             "id": "en:rye",
+            "is_in_taxonomy": 1,
             "percent": 14,
             "text": "SEIGLE"
         },
         {
             "ciqual_food_code": "20026",
             "id": "en:chicory",
+            "is_in_taxonomy": 1,
             "percent": 14,
             "text": "chicor\u00e9e"
         }
@@ -2278,6 +2282,13 @@
         "en:malted-barley"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley",
+        "en:chicory",
+        "en:malted-barley",
+        "en:rye"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -2786,62 +2797,94 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:drink-can"
+                "id": {
+                    "id": "en:drink-can"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         }
     ],

@@ -188,13 +188,13 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 97,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 3,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1110,13 +1110,16 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "origins": "en:european-union",
             "text": "Beurre"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent": 3,
             "text": "sel"
         }
@@ -1187,6 +1190,10 @@
     "ingredients_with_unspecified_percent_sum": 97,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -1607,23 +1614,33 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

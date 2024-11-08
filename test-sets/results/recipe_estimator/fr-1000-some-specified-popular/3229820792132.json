@@ -275,7 +275,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1930,7 +1930,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2025,11 +2027,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2075,6 +2077,7 @@
             "ciqual_food_code_used": "9310",
             "difference": 1.57,
             "id": "en:oat",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 0.0,
             "nutrients": {
@@ -2170,13 +2173,13 @@
                     "percent_max": 1.2,
                     "percent_min": 1.2
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00076,
+                    "percent_min": 0.00076
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00076,
-                    "percent_min": 0.00076
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00014000000000000001,
@@ -2219,7 +2222,9 @@
         {
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 0.0,
             "nutrients": {
@@ -2315,11 +2320,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2364,6 +2369,7 @@
             "ciqual_food_code": "11082",
             "ciqual_food_code_used": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2458,11 +2464,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2617,6 +2623,11 @@
     "ingredients_with_unspecified_percent_sum": 89,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oat",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -3128,24 +3139,36 @@
     "packagings": [
         {
             "material": {
-                "id": "fr:plastique végétal"
+                "id": {
+                    "id": "fr:plastique végétal"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:tetra-brik-aseptic"
+                "id": {
+                    "id": "en:tetra-brik-aseptic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         }
     ],
@@ -3696,15 +3719,15 @@
                 "unweighted_total": 1.2,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 4,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.00076
+            },
             "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 4,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.00076
             },
             "vitamin-b2": {
                 "ingredient_count": 4,

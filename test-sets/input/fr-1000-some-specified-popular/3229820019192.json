@@ -224,7 +224,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1718,6 +1718,7 @@
                 {
                     "ciqual_food_code": "9390",
                     "id": "en:wholemeal-rye",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent": 49,
                     "text": "wholemeal rye"
@@ -1725,50 +1726,61 @@
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent": 3,
                     "text": "oat flakes"
                 },
                 {
                     "id": "en:barley",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent": 3,
                     "processing": "en:flakes",
                     "text": "of barley"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 55,
             "text": "cereals"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
             "ciqual_food_code": "15034",
             "id": "en:flax-seed",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "flax seeds"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         },
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame-seeds",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "sesame seeds"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "yeast"
         },
         {
             "id": "en:percentages-expressed-on-finished-product",
+            "is_in_taxonomy": 0,
             "text": "percentages expressed on finished product"
         }
     ],
@@ -1916,10 +1928,21 @@
     "ingredients_without_ciqual_codes": [
         "en:barley",
         "en:cereal",
+        "en:percentages-expressed-on-finished-product"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley",
+        "en:cereal",
+        "en:flax-seed",
+        "en:oat-flakes",
         "en:percentages-expressed-on-finished-product",
+        "en:sea-salt",
+        "en:sesame-seeds",
+        "en:wholemeal-rye",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2347,15 +2370,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

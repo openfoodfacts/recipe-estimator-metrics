@@ -88,7 +88,7 @@
         "en:e621",
         "en:e635"
     ],
-    "allergens": "en:gluten,en:soybeans, en:gluten",
+    "allergens": "en:gluten,en:soybeans, en:gluten, en:gluten",
     "allergens_from_ingredients": "en:gluten, Weizenmehl, Gluten",
     "allergens_from_user": "(de) en:gluten,en:soybeans, en:gluten",
     "allergens_hierarchy": [
@@ -310,7 +310,7 @@
                         "epi_score": "0",
                         "origin": "en:thailand",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2033,16 +2033,21 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "_Weizenmehl_"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
                     "text": "Palm\u00f6l"
                 },
                 {
@@ -2050,37 +2055,45 @@
                     "ingredients": [
                         {
                             "id": "en:e306",
+                            "is_in_taxonomy": 1,
                             "text": "e306"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "Antioxidationsmittel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Palm\u00f6l"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "Salz"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:tapioca",
+            "is_in_taxonomy": 1,
             "text": "Tapiokast\u00e4rke"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-tapioca-starch",
+            "is_in_taxonomy": 1,
             "text": "modifizierte Tapiokast\u00e4rke"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent": 1.7,
             "text": "Knoblauch"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "Aroma"
         },
         {
@@ -2088,40 +2101,51 @@
             "ingredients": [
                 {
                     "id": "en:e621",
+                    "is_in_taxonomy": 1,
                     "text": "e621"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Geschmacksverst\u00e4rker"
         },
         {
             "id": "en:e635",
+            "is_in_taxonomy": 1,
             "text": "e635"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Zucker"
         },
         {
             "ciqual_food_code": "20151",
             "id": "en:chili-pepper",
+            "is_in_taxonomy": 1,
             "percent": 0.5,
             "text": "Chili"
         },
         {
             "ciqual_food_code": "11003",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:spring-onion",
+            "is_in_taxonomy": 1,
             "percent": 0.1,
             "text": "Fr\u00fchlingszwiebel"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "percent": 0.1,
             "text": "Pfeffer"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "text": "Maisst\u00e4rke"
         },
         {
@@ -2129,9 +2153,11 @@
             "ingredients": [
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "e296"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "S\u00e4uerungsmittel"
         },
         {
@@ -2139,13 +2165,17 @@
             "ingredients": [
                 {
                     "id": "en:e466",
+                    "is_in_taxonomy": 1,
                     "text": "e466"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Verdickungsmittel"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast-extract",
+            "is_in_taxonomy": 1,
             "text": "Hefeextrakt"
         },
         {
@@ -2153,9 +2183,11 @@
             "ingredients": [
                 {
                     "id": "en:e150a",
+                    "is_in_taxonomy": 1,
                     "text": "e150c"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Farbstoff"
         }
     ],
@@ -2777,11 +2809,32 @@
         "en:e635",
         "en:flavour-enhancer",
         "en:flavouring",
+        "en:thickener"
+    ],
+    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:antioxidant",
+        "en:chili-pepper",
+        "en:colour",
+        "en:corn-starch",
+        "en:e150a",
+        "en:e296",
+        "en:e306",
+        "en:e466",
+        "en:e621",
+        "en:e635",
+        "en:flavour-enhancer",
+        "en:flavouring",
+        "en:garlic",
+        "en:modified-tapioca-starch",
         "en:pepper",
+        "en:salt",
+        "en:tapioca",
         "en:thickener",
         "en:yeast-extract"
     ],
-    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 42,
@@ -3284,40 +3337,58 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-with-plastics"
+                "id": {
+                    "id": "en:recycle-with-plastics"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 0.47
         },
         {
             "material": {
-                "id": "en:plastic-aluminium"
+                "id": {
+                    "id": "en:plastic-aluminium"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:wrapper"
+                "id": {
+                    "id": "en:wrapper"
+                }
             },
             "weight_measured": 2
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 0.25
         }

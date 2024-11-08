@@ -160,7 +160,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -971,10 +971,12 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin"
         },
         {
             "id": "en:plant",
+            "is_in_taxonomy": 1,
             "percent": 33,
             "text": "plantes"
         },
@@ -983,66 +985,83 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "20055",
+                    "ecobalyse_code": "celery-eu",
                     "id": "en:celery",
+                    "is_in_taxonomy": 1,
                     "text": "c\u00e9leri"
                 },
                 {
                     "ciqual_food_code": "20039",
+                    "ecobalyse_code": "leek-fr",
                     "id": "en:leek",
+                    "is_in_taxonomy": 1,
                     "text": "poireau"
                 },
                 {
                     "id": "en:cress",
+                    "is_in_taxonomy": 1,
                     "text": "cresson"
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "text": "oignon"
                 },
                 {
                     "ciqual_food_code": "11003",
                     "id": "en:chives",
+                    "is_in_taxonomy": 1,
                     "text": "ciboulette"
                 },
                 {
                     "ciqual_proxy_food_code": "11014",
                     "id": "en:parsley",
+                    "is_in_taxonomy": 1,
                     "text": "persil"
                 },
                 {
                     "id": "en:lovage",
+                    "is_in_taxonomy": 1,
                     "text": "liv\u00e8che"
                 },
                 {
                     "ciqual_food_code": "11000",
                     "id": "en:garlic",
+                    "is_in_taxonomy": 1,
                     "text": "ail"
                 },
                 {
                     "ciqual_food_code": "11033",
                     "id": "en:basil",
+                    "is_in_taxonomy": 1,
                     "text": "basilic"
                 },
                 {
                     "id": "en:marjoram",
+                    "is_in_taxonomy": 1,
                     "text": "marjolaine"
                 },
                 {
                     "id": "en:rosemary",
+                    "is_in_taxonomy": 1,
                     "text": "romarin"
                 },
                 {
                     "ciqual_food_code": "11070",
                     "id": "en:thyme",
+                    "is_in_taxonomy": 1,
                     "text": "thym"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 33,
             "text": "l\u00e9gumes frais"
         },
         {
             "id": "fr:algues-marine-kelp",
+            "is_in_taxonomy": 0,
             "text": "algues marine kelp"
         }
     ],
@@ -1253,6 +1272,22 @@
         "fr:algues-marine-kelp"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:basil",
+        "en:chives",
+        "en:cress",
+        "en:fresh-vegetables",
+        "en:garlic",
+        "en:lovage",
+        "en:marjoram",
+        "en:parsley",
+        "en:plant",
+        "en:rosemary",
+        "en:sea-salt",
+        "en:thyme",
+        "fr:algues-marine-kelp"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -1511,7 +1546,9 @@
         {
             "number_of_units": 1,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

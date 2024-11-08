@@ -216,7 +216,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1578,27 +1578,35 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "percent": 8,
             "text": "peppers"
         },
         {
             "ciqual_food_code": "20041",
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:bell-pepper",
+            "is_in_taxonomy": 1,
             "text": "bell pepper"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "text": "starch"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
@@ -1606,19 +1614,24 @@
             "ingredients": [
                 {
                     "id": "en:e260",
+                    "is_in_taxonomy": 1,
                     "text": "acetic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifier"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "text": "garlic"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "text": "onion"
         },
         {
@@ -1626,9 +1639,11 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "xanthan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "thickener"
         },
         {
@@ -1636,9 +1651,11 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "text": "potassium sorbate"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "consewateur"
         }
     ],
@@ -1826,10 +1843,22 @@
         "en:e202",
         "en:e260",
         "en:e415",
-        "en:pepper",
         "en:thickener"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:consewateur",
+        "en:e202",
+        "en:e260",
+        "en:e415",
+        "en:garlic",
+        "en:pepper",
+        "en:salt",
+        "en:starch",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -2255,7 +2284,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             }
         }
     ],

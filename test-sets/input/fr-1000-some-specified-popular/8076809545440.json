@@ -265,7 +265,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -2468,6 +2468,7 @@
         {
             "ciqual_food_code": "9200",
             "id": "en:white-corn",
+            "is_in_taxonomy": 1,
             "percent": 60,
             "processing": "en:flour",
             "text": "\u0431\u044f\u043b\u0430 \u0446\u0430\u0440\u0435\u0432\u0438\u0446\u0430"
@@ -2475,18 +2476,24 @@
         {
             "ciqual_food_code": "9200",
             "id": "en:yellow-corn",
+            "is_in_taxonomy": 1,
             "percent": 29.5,
             "processing": "en:flour",
             "text": "\u0436\u044a\u043b\u0442\u0430 \u0446\u0430\u0440\u0435\u0432\u0438\u0446\u0430"
         },
         {
-            "id": "bg:\u0431\u0440\u0430\u0448\u043d\u043e-\u043e\u0442-\u043f\u044a\u043b\u043d\u043e\u0437\u044a\u0440\u043d\u0435\u0441\u0442-\u043e\u0440\u0438\u0437",
+            "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
+            "id": "en:brown-rice-flour",
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "\u0431\u0440\u0430\u0448\u043d\u043e \u043e\u0442 \u043f\u044a\u043b\u043d\u043e\u0437\u044a\u0440\u043d\u0435\u0441\u0442 \u043e\u0440\u0438\u0437"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "\u0432\u043e\u0434\u0430"
         },
         {
@@ -2494,9 +2501,11 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "\u043c\u043e\u043d\u043e \u0438 \u0434\u0438\u0433\u043b\u0438\u0446\u0435\u0440\u0438\u0434\u0438 \u043d\u0430 \u043c\u0430\u0441\u0442\u043d\u0438 \u043a\u0438\u0441\u0435\u043b\u0438\u043d\u0438"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u0435\u043c\u0443\u043b\u0433\u0430\u0442\u043e\u0440"
         }
     ],
@@ -2661,11 +2670,17 @@
     "ingredients_with_unspecified_percent_n": 2,
     "ingredients_with_unspecified_percent_sum": 0.5,
     "ingredients_without_ciqual_codes": [
-        "bg:\u0431\u0440\u0430\u0448\u043d\u043e-\u043e\u0442-\u043f\u044a\u043b\u043d\u043e\u0437\u044a\u0440\u043d\u0435\u0441\u0442-\u043e\u0440\u0438\u0437",
         "en:e471",
         "en:emulsifier"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e471",
+        "en:emulsifier",
+        "en:white-corn",
+        "en:yellow-corn"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -3165,14 +3180,18 @@
     "packagings": [
         {
             "material": {
-                "id": "en:non-corrugated-cardboard"
+                "id": {
+                    "id": "en:non-corrugated-cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 400,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 16.9
         }

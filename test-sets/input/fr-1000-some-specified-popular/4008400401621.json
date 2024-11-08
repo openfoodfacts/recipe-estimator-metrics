@@ -46,7 +46,7 @@
     "additives_tags": [
         "en:e322"
     ],
-    "allergens": "en:milk,en:nuts,en:soybeans, en:soybeans",
+    "allergens": "en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:nuts, Hazelnuts, Soya",
     "allergens_from_user": "(en) en:milk,en:nuts,en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -240,7 +240,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1822,29 +1822,38 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sugar"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "Palm Oil"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "Hazelnuts"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent": 8.7,
             "text": "Skimmed Milk Powder"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent": 7.4,
             "text": "Fat-Reduced Cocoa"
         },
@@ -1853,13 +1862,16 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "text": "Lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Emulsifier"
         },
         {
             "id": "en:vanillin",
+            "is_in_taxonomy": 1,
             "text": "Vanillin"
         }
     ],
@@ -2030,6 +2042,13 @@
         "en:vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e322",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -2462,12 +2481,16 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             }
         },
         {
             "material": {
-                "id": "xx:82-c-pap"
+                "id": {
+                    "id": "xx:82-c-pap"
+                }
             }
         }
     ],

@@ -219,7 +219,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1266,6 +1266,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 100,
             "text": "Flocons d'avoine compl\u00e8te"
         }
@@ -1316,6 +1317,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:whole-grain-oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -1777,17 +1782,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": "9"
         }

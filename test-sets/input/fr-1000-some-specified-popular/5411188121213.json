@@ -273,7 +273,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1657,21 +1657,27 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "20901",
                     "id": "en:hulled-soya-bean",
+                    "is_in_taxonomy": 1,
                     "percent": 15.7,
                     "text": "hulled soya beans"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "soya base"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
@@ -1679,9 +1685,11 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabiliser"
         },
         {
@@ -1689,9 +1697,11 @@
             "ingredients": [
                 {
                     "id": "en:tri-calciumcitrate",
+                    "is_in_taxonomy": 0,
                     "text": "tri-calciumcitrate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "calcium"
         },
         {
@@ -1699,22 +1709,27 @@
             "ingredients": [
                 {
                     "id": "en:e331",
+                    "is_in_taxonomy": 1,
                     "text": "sodium citrates"
                 },
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidity regulators"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural flavouring"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         },
         {
@@ -1722,25 +1737,31 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "text": "tocopherol-rich extract"
                 },
                 {
                     "id": "en:e304",
+                    "is_in_taxonomy": 1,
                     "text": "fatty acid esters of ascorbic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxidants"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamins"
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "text": "vitamin b12"
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "text": "vitamin d2"
         },
         {
@@ -1748,21 +1769,26 @@
             "ingredients": [
                 {
                     "id": "en:s",
+                    "is_in_taxonomy": 0,
                     "text": "s"
                 },
                 {
                     "id": "en:thermophilus",
+                    "is_in_taxonomy": 0,
                     "text": "thermophilus"
                 },
                 {
                     "id": "en:l",
+                    "is_in_taxonomy": 0,
                     "text": "l"
                 },
                 {
                     "id": "en:bulgaricus",
+                    "is_in_taxonomy": 0,
                     "text": "bulgaricus"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "yogurt cultures"
         }
     ],
@@ -2115,6 +2141,31 @@
         "en:yogurt-cultures"
     ],
     "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:bulgaricus",
+        "en:calcium",
+        "en:e304",
+        "en:e306",
+        "en:e330",
+        "en:e331",
+        "en:e440a",
+        "en:ergocalciferol",
+        "en:hulled-soya-bean",
+        "en:l",
+        "en:natural-flavouring",
+        "en:s",
+        "en:sea-salt",
+        "en:soy-base",
+        "en:stabiliser",
+        "en:thermophilus",
+        "en:tri-calciumcitrate",
+        "en:vitamin-b12",
+        "en:vitamins",
+        "en:yogurt-cultures"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 33,
@@ -2574,20 +2625,28 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

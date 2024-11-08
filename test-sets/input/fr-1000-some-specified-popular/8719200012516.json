@@ -231,7 +231,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1026,46 +1026,58 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
+                    "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
                     "text": "tournesol"
                 },
                 {
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "text": "lin"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "text": "karit\u00e9"
                 },
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "colza"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "text": "coco"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 36,
             "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "id": "fr:esters-de-phytosterols",
+            "is_in_taxonomy": 0,
             "percent": 11,
             "text": "esters de phytost\u00e9rols"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent": 0.3,
             "text": "sel de mer"
         },
@@ -1074,25 +1086,31 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:vitamin-a",
+            "is_in_taxonomy": 1,
             "text": "vitamine A"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         }
     ],
@@ -1347,7 +1365,7 @@
         "en:emulsifier",
         "en:flax",
         "en:natural-flavouring",
-        "en:shea-butter",
+        "en:rapeseed",
         "en:sunflower",
         "en:sunflower-lecithin",
         "en:vegetable-oil",
@@ -1357,6 +1375,21 @@
         "fr:esters-de-phytosterols"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:emulsifier",
+        "en:flax",
+        "en:natural-flavouring",
+        "en:sea-salt",
+        "en:shea-butter",
+        "en:sunflower-lecithin",
+        "en:vegetable-oil",
+        "en:vitamin-a",
+        "en:vitamin-d",
+        "en:vitamins",
+        "fr:esters-de-phytosterols"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1784,7 +1817,9 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

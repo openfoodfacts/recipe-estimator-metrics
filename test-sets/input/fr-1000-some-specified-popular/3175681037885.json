@@ -246,7 +246,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1829,59 +1829,76 @@
     "ingredients": [
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "text": "rice flour"
         },
         {
             "ciqual_food_code": "9540",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "text": "buckwheat flour"
         },
         {
             "ciqual_food_code": "9340",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:quinoa-flour",
+            "is_in_taxonomy": 1,
             "text": "quinoa flour"
         },
         {
             "id": "en:quot",
+            "is_in_taxonomy": 0,
             "text": "quot"
         },
         {
             "id": "en:red-cane-sugar",
+            "is_in_taxonomy": 0,
             "text": "red cane sugar"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         },
         {
             "ciqual_food_code": "9540",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 29.3,
             "text": "buckwheat flour"
         },
         {
             "id": "en:quinoa-flour-for-100g-of-bread",
+            "is_in_taxonomy": 0,
             "percent": 9.4,
             "text": "quinoa flour* for 100g of bread"
         },
         {
             "id": "en:agriculture",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "text": "agriculture"
         },
         {
             "id": "en:manufactured-in-a-workshop-using-cereals-containing-gluten",
+            "is_in_taxonomy": 0,
             "text": "manufactured in a workshop using cereals containing gluten"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "text": "milk"
         },
         {
             "id": "en:soya",
+            "is_in_taxonomy": 1,
             "text": "soy"
         }
     ],
@@ -2005,6 +2022,16 @@
         "en:soya"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:agriculture",
+        "en:manufactured-in-a-workshop-using-cereals-containing-gluten",
+        "en:quinoa-flour-for-100g-of-bread",
+        "en:quot",
+        "en:red-cane-sugar",
+        "en:sea-salt",
+        "en:soya"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -2779,6 +2806,12 @@
     },
     "sortkey": 1610811033,
     "specific_ingredients": [
+        {
+            "id": "en:rice-flour",
+            "ingredient": "rice flour*",
+            "percent": 66.8,
+            "text": "prepared with 66.8% of rice flour*"
+        },
         {
             "id": "en:rice-flour",
             "ingredient": "rice flour*",

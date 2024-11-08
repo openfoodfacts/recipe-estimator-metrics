@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1760,7 +1760,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9540",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "buckwheat flour"
         },
@@ -1769,16 +1771,19 @@
             "ingredients": [
                 {
                     "id": "en:lt",
+                    "is_in_taxonomy": 0,
                     "percent": 2,
                     "text": "lt"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "text": "cane sugar complete"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         }
     ],
@@ -1891,6 +1896,12 @@
         "en:lt"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cane-sugar-complete",
+        "en:lt",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
     "labels": "No gluten, Organic, Vegetarian, EU Organic, Kosher, Vegan, EU Agriculture, FR-BIO-01, Green Dot, Nutriscore, Nutriscore Grade A, The Vegan Society, AB Agriculture Biologique, fr:K",

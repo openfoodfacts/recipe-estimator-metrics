@@ -240,13 +240,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 63.7,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 36.3,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 59.241,
@@ -2710,11 +2710,13 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:cereal-flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "origins": "en:france",
                     "percent": 46.6,
                     "text": "BL\u00c9"
@@ -2722,120 +2724,148 @@
                 {
                     "ciqual_food_code": "9310",
                     "id": "en:oat",
+                    "is_in_taxonomy": 1,
                     "percent": 1.8,
                     "text": "AVOINE"
                 },
                 {
                     "ciqual_proxy_food_code": "9100",
                     "id": "en:rice",
+                    "is_in_taxonomy": 1,
                     "text": "riz"
                 },
                 {
                     "ciqual_food_code": "9390",
                     "id": "en:rye",
+                    "is_in_taxonomy": 1,
                     "text": "SEIGLE"
                 },
                 {
                     "id": "en:barley",
+                    "is_in_taxonomy": 1,
                     "percent": 1.8,
                     "text": "ORGE"
                 },
                 {
                     "ciqual_food_code": "9390",
                     "id": "en:rye",
+                    "is_in_taxonomy": 1,
                     "processing": "en:malted",
                     "text": "SEIGLE"
                 },
                 {
                     "id": "en:malted-barley",
+                    "is_in_taxonomy": 1,
                     "percent": 0.3,
                     "text": "ORGE malt\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 54.8,
             "text": "Farines de c\u00e9r\u00e9ales"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "id": "en:seed",
             "ingredients": [
                 {
+                    "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
                     "percent": 4.6,
                     "text": "tournesol"
                 },
                 {
                     "id": "en:soya",
+                    "is_in_taxonomy": 1,
                     "text": "SOJA"
                 },
                 {
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "text": "lin"
                 },
                 {
                     "ciqual_food_code": "9330",
                     "id": "en:millet",
+                    "is_in_taxonomy": 1,
                     "text": "millet"
                 },
                 {
                     "ciqual_food_code": "9310",
                     "id": "en:oat",
+                    "is_in_taxonomy": 1,
                     "percent": 0.9,
                     "text": "AVOINE"
                 },
                 {
                     "ciqual_food_code": "9200",
                     "id": "en:corn",
+                    "is_in_taxonomy": 1,
                     "text": "ma\u00efs"
                 },
                 {
                     "id": "en:barley",
+                    "is_in_taxonomy": 1,
                     "percent": 0.4,
                     "text": "ORGE"
                 },
                 {
                     "ciqual_food_code": "15010",
                     "id": "en:sesame",
+                    "is_in_taxonomy": 1,
                     "text": "S\u00c9SAME"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 14.6,
             "text": "graines"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "text": "gluten de BL\u00c9"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre"
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "text": "extrait d'ac\u00e9rola"
         }
     ],
@@ -2981,10 +3011,30 @@
         "en:seed",
         "en:soya",
         "en:sunflower",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:barley",
+        "en:corn",
+        "en:flavouring",
+        "en:flax",
+        "en:malted-barley",
+        "en:millet",
+        "en:oat",
+        "en:rice",
+        "en:rye",
+        "en:salt",
+        "en:seed",
+        "en:sesame",
+        "en:soya",
+        "en:vinegar",
+        "en:wheat",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 34,
@@ -3466,33 +3516,47 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 5.8
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:fastener"
+                "id": {
+                    "id": "en:fastener"
+                }
             },
             "weight_measured": 0.34
         },
         {
             "shape": {
-                "id": "en:envelope"
+                "id": {
+                    "id": "en:envelope"
+                }
             }
         }
     ],

@@ -35,7 +35,7 @@
     "additives_tags": [
         "en:e428"
     ],
-    "allergens": "en:milk, en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, lait, lait, lait, cr\u00e8me, ferments lactiques",
     "allergens_from_user": "(fr) en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1223,12 +1223,14 @@
     "ingredients": [
         {
             "id": "fr:fromage-blanc-au-lait-pasteurise",
+            "is_in_taxonomy": 0,
             "percent": 75.3,
             "text": "fromage blanc au _lait_ pasteuris\u00e9"
         },
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "text": "cr\u00e8me"
         },
         {
@@ -1236,13 +1238,16 @@
             "ingredients": [
                 {
                     "id": "fr:non-porcine",
+                    "is_in_taxonomy": 0,
                     "text": "non porcine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "g\u00e9latine"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         }
     ],
@@ -1392,6 +1397,14 @@
         "fr:non-porcine"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:e428",
+        "en:lactic-ferments",
+        "fr:fromage-blanc-au-lait-pasteurise",
+        "fr:non-porcine"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -1760,10 +1773,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],

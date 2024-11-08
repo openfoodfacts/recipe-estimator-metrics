@@ -234,7 +234,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2327,13 +2327,16 @@
     "ingredients": [
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent": 99.7,
             "text": "Tomaten"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "Speisesalz"
         },
         {
@@ -2341,9 +2344,11 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "Citronens\u00e4ure"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "S\u00e4uerungsmittel"
         }
     ],
@@ -2439,6 +2444,12 @@
         "en:e330"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -2927,14 +2938,18 @@
     "packagings": [
         {
             "material": {
-                "id": "en:fsc-cardboard"
+                "id": {
+                    "id": "en:fsc-cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             },
             "weight_measured": 19.44
         }

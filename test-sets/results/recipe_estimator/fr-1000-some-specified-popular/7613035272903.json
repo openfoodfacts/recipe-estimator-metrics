@@ -228,13 +228,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:india",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 46.5,
@@ -1683,7 +1683,9 @@
             "ciqual_food_code": "18005",
             "ciqual_food_code_used": "18005",
             "difference": 8.2,
+            "ecobalyse_code": "coffee-ground",
             "id": "en:instant-coffee",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1778,13 +1780,13 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
+                "vitamin-b1": {
+                    "percent_max": 8e-06,
+                    "percent_min": 8e-06
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 8e-06,
-                    "percent_min": 8e-06
                 },
                 "vitamin-b2": {
                     "percent_max": 9.2e-05,
@@ -1832,6 +1834,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:oligofructose",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1926,11 +1929,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -1976,6 +1979,7 @@
                     "text": "oligofructose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 25.0,
             "percent_hidden": 33,
             "quantity_estimate": 24.99749999999999,
@@ -1986,6 +1990,7 @@
             "ciqual_food_code_used": "18152",
             "difference": 5.0,
             "id": "fr:chicoree-soluble",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2080,13 +2085,13 @@
                     "percent_max": 21.7,
                     "percent_min": 21.7
                 },
+                "vitamin-b1": {
+                    "percent_max": 4e-05,
+                    "percent_min": 4e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 4e-05,
-                    "percent_min": 4e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00011999999999999999,
@@ -2129,6 +2134,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:e518",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2223,11 +2229,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2376,6 +2382,13 @@
         "en:oligofructose"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chicory-fibre",
+        "en:e518",
+        "en:oligofructose",
+        "fr:chicoree-soluble"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -2712,38 +2725,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         }
     ],
@@ -3095,15 +3126,15 @@
                 "unweighted_total": 21.7,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 4,
+                "notes": "Not listed on product",
+                "unweighted_total": 4.8e-05
+            },
             "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 4,
-                "notes": "Not listed on product",
-                "unweighted_total": 4.8e-05
             },
             "vitamin-b2": {
                 "ingredient_count": 4,

@@ -202,7 +202,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1105,66 +1105,80 @@
     "ingredients": [
         {
             "ciqual_food_code": "2074",
+            "ecobalyse_code": "apple-fr",
             "id": "en:squeezed-apple-juice",
+            "is_in_taxonomy": 1,
             "percent": 66,
             "text": "pommes press\u00e9es"
         },
         {
             "ciqual_food_code": "18011",
             "id": "en:coconut-water",
+            "is_in_taxonomy": 1,
             "percent": 18,
             "text": "eau de coco"
         },
         {
             "id": "fr:15-raisins-presses",
+            "is_in_taxonomy": 0,
             "text": "15 raisins press\u00e9s"
         },
         {
             "id": "fr:goyave-blanche-ecrasee",
+            "is_in_taxonomy": 0,
             "percent": 5,
             "text": "goyave blanche \u00e9cras\u00e9e"
         },
         {
             "ciqual_food_code": "13016",
             "id": "en:passionfruit",
+            "is_in_taxonomy": 1,
             "processing": "en:pressed",
             "text": "fruit de la passion"
         },
         {
             "ciqual_food_code": "13067",
             "id": "en:lime-juice",
+            "is_in_taxonomy": 1,
             "percent": 0.9,
             "text": "jus de citron vert"
         },
         {
             "ciqual_proxy_food_code": "20984",
             "id": "en:spirulina",
+            "is_in_taxonomy": 1,
             "percent": 0.8,
             "processing": "en:extract",
             "text": "spiruline"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamine B2"
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "text": "vitamine B3"
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "text": "vitamine B6"
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "text": "vitamine E"
         }
     ],
@@ -1402,6 +1416,21 @@
         "fr:goyave-blanche-ecrasee"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut-water",
+        "en:e101",
+        "en:e375",
+        "en:lime-juice",
+        "en:passionfruit",
+        "en:spirulina",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "en:vitamins",
+        "fr:15-raisins-presses",
+        "fr:goyave-blanche-ecrasee"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -1836,18 +1865,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:recycled-plastic"
+                "id": {
+                    "id": "en:recycled-plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             }
         }
     ],

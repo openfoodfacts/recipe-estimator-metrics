@@ -162,7 +162,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -869,33 +869,41 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 68,
             "text": "Wholegrain OAT Flakes"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sugar"
         },
         {
             "ciqual_food_code": "13046",
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "percent": 7,
             "text": "Raisins"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "Sunflower Oil"
         },
         {
             "ciqual_food_code": "13112",
             "id": "en:sultana",
+            "is_in_taxonomy": 1,
             "text": "Sultanas"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 3.5,
             "processing": "en:whole,en:sliced",
             "text": "ALMONDS"
@@ -903,16 +911,20 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "Honey"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "text": "Sunflower Seeds"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "Natural Flavouring"
         }
     ],
@@ -1154,6 +1166,15 @@
         "en:natural-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:honey",
+        "en:natural-flavouring",
+        "en:raisin",
+        "en:sultana",
+        "en:whole-grain-oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1508,10 +1529,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

@@ -178,7 +178,7 @@
                         "epi_score": "17",
                         "origin": "en:mexico",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 17,
@@ -984,6 +984,7 @@
         {
             "ciqual_food_code": "31089",
             "id": "en:agave-syrup",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "origins": "en:mexico",
             "percent": 100,
@@ -1050,6 +1051,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:agave-syrup"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -1427,10 +1432,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:vial"
+                "id": {
+                    "id": "en:vial"
+                }
             }
         }
     ],

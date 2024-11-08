@@ -212,7 +212,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1976,6 +1976,7 @@
     "ingredients": [
         {
             "id": "fr:i\u0307ngredients",
+            "is_in_taxonomy": 0,
             "processing": "en:sugared",
             "text": "\u0130ngr\u00e9dients"
         },
@@ -1986,23 +1987,28 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent": 11,
                     "text": "beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "cacao maigre"
         },
         {
             "id": "fr:en-poudre",
+            "is_in_taxonomy": 0,
             "text": "en poudre"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent": 32,
             "text": "Cacao"
         }
@@ -2108,6 +2114,15 @@
         "fr:i\u0307ngredients"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:fat-reduced-cocoa",
+        "en:flavouring",
+        "fr:en-poudre",
+        "fr:i\u0307ngredients"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -2629,10 +2644,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

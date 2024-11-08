@@ -315,13 +315,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 64.7,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 35.3,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 32.829,
@@ -3104,7 +3104,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 35.3,
             "text": "Farine de BL\u00c9 complet"
@@ -3112,47 +3114,59 @@
         {
             "ciqual_food_code": "9615",
             "id": "en:cornmeal",
+            "is_in_taxonomy": 1,
             "text": "semoule de ma\u00efs"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de BL\u00c9"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "id": "en:e170i",
+            "is_in_taxonomy": 1,
             "text": "carbonate de calcium"
         },
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent": 1.7,
             "text": "cacao maigre en poudre"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "farine de BL\u00c9"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -3160,13 +3174,16 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         },
         {
@@ -3174,57 +3191,71 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "text": "extrait riche en tocoph\u00e9rols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "text": "fer"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "text": "vitamine B3"
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "text": "vitamine B5"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "text": "vitamine B9"
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "text": "vitamine B6"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamine B2"
         },
         {
             "id": "fr:bilan-massique-certifie-rainforest-alliance",
+            "is_in_taxonomy": 0,
             "text": "Bilan massique certifi\u00e9 Rainforest Alliance"
         },
         {
             "id": "fr:www-ra-org",
+            "is_in_taxonomy": 0,
             "text": "www.ra.org"
         },
         {
             "id": "fr:fr",
+            "is_in_taxonomy": 0,
             "text": "fr"
         },
         {
             "id": "fr:nestle-achete-une-quantite-de-cacao-certifie-rainforest-alliance-equivalente-a-cette-necessaire-pour-ce-produit",
+            "is_in_taxonomy": 0,
             "text": "Nestl\u00e9 ach\u00e8te une quantit\u00e9 de cacao certifi\u00e9 Rainforest Alliance \u00e9quivalente \u00e0 cette n\u00e9cessaire pour ce produit"
         }
     ],
@@ -3626,6 +3657,32 @@
         "fr:www-ra-org"
     ],
     "ingredients_without_ciqual_codes_n": 18,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cornmeal",
+        "en:e101",
+        "en:e170i",
+        "en:e306",
+        "en:e375",
+        "en:e500",
+        "en:fat-reduced-cocoa-powder",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:iron",
+        "en:natural-flavouring",
+        "en:pantothenic-acid",
+        "en:raising-agent",
+        "en:salt",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:wheat-starch",
+        "fr:bilan-massique-certifie-rainforest-alliance",
+        "fr:fr",
+        "fr:nestle-achete-une-quantite-de-cacao-certifie-rainforest-alliance-equivalente-a-cette-necessaire-pour-ce-produit",
+        "fr:www-ra-org"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 23,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 44,
@@ -4248,26 +4305,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

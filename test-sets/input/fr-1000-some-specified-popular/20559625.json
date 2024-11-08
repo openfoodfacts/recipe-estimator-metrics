@@ -194,49 +194,49 @@
                         "epi_score": "63",
                         "origin": "en:united-states",
                         "percent": 30.844696969697,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "16",
                         "origin": "en:argentina",
                         "percent": 19.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 12.9772727272727,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:india",
                         "percent": 9.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "50",
                         "origin": "en:vietnam",
                         "percent": 9.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "79",
                         "origin": "en:australia",
                         "percent": 6.33333333333333,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "68",
                         "origin": "en:canada",
                         "percent": 6.33333333333333,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "4",
                         "origin": "en:iran",
                         "percent": 5.01136363636364,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 36.8126136363636,
@@ -1101,7 +1101,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "15001",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
+            "is_in_taxonomy": 1,
             "origins": "en:united-states,en:argentina",
             "percent": 39,
             "text": "peanuts"
@@ -1109,6 +1111,7 @@
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "origins": "en:vietnam,en:india",
             "percent": 19,
             "text": "cashew nuts"
@@ -1116,42 +1119,55 @@
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "origins": "en:united-states,en:canada,en:australia",
             "percent": 19,
             "text": "almonds"
         },
         {
             "id": "en:which-was-9-7-pistachio",
+            "is_in_taxonomy": 0,
             "origins": "en:iran,en:united-states",
             "text": "which was 9.7% pistachio"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "text": "rapeseed oil"
         },
         {
             "ciqual_food_code": "9545",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:corn-flour",
+            "is_in_taxonomy": 1,
             "text": "maize flour"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "wheat flour"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "text": "corn starch"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
@@ -1160,37 +1176,49 @@
                 {
                     "ciqual_food_code": "11049",
                     "id": "en:paprika",
+                    "is_in_taxonomy": 1,
                     "text": "paprika"
                 },
                 {
                     "ciqual_food_code": "20151",
                     "id": "en:chili-pepper",
+                    "is_in_taxonomy": 1,
                     "text": "chilli"
                 },
                 {
+                    "ciqual_proxy_food_code": "11015",
                     "id": "en:pepper",
+                    "is_in_taxonomy": 1,
                     "text": "pepper"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "spices"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-powder",
+            "is_in_taxonomy": 1,
             "text": "egg * powder"
         },
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "processing": "en:powder",
             "text": "tomato"
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "text": "maltodextrin"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast-extract",
+            "is_in_taxonomy": 1,
             "text": "yeast extract"
         },
         {
@@ -1199,10 +1227,12 @@
                 {
                     "ciqual_food_code": "11049",
                     "id": "en:paprika",
+                    "is_in_taxonomy": 1,
                     "processing": "en:extract",
                     "text": "paprika"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colouring agent"
         },
         {
@@ -1210,25 +1240,32 @@
             "ingredients": [
                 {
                     "id": "en:phosphates-tricalciques",
+                    "is_in_taxonomy": 0,
                     "text": "phosphates tricalciques"
                 },
                 {
                     "id": "en:ch",
+                    "is_in_taxonomy": 0,
                     "text": "ch"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "anti-caking agent"
         },
         {
             "id": "en:e341",
+            "is_in_taxonomy": 1,
             "text": "calcium phosphates"
         },
         {
             "id": "en:e551",
+            "is_in_taxonomy": 1,
             "text": "silicon dioxide"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper-extract",
+            "is_in_taxonomy": 1,
             "text": "pepper extract"
         },
         {
@@ -1236,17 +1273,21 @@
             "ingredients": [
                 {
                     "id": "en:e262i",
+                    "is_in_taxonomy": 1,
                     "text": "sodium acetate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "preservative"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural flavourings"
         },
         {
             "id": "en:smoke-flavouring",
+            "is_in_taxonomy": 1,
             "text": "smoke flavourings"
         },
         {
@@ -1254,13 +1295,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifier"
         },
         {
             "id": "en:from-hens-on-the-ground",
+            "is_in_taxonomy": 0,
             "text": "from hens on the ground"
         }
     ],
@@ -1689,17 +1733,41 @@
         "en:from-hens-on-the-ground",
         "en:maltodextrin",
         "en:natural-flavouring",
+        "en:phosphates-tricalciques",
+        "en:preservative",
+        "en:smoke-flavouring",
+        "en:spice",
+        "en:which-was-9-7-pistachio"
+    ],
+    "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:almond",
+        "en:anti-caking-agent",
+        "en:cashew-nuts",
+        "en:ch",
+        "en:chili-pepper",
+        "en:colour",
+        "en:corn-starch",
+        "en:e262i",
+        "en:e330",
+        "en:e341",
+        "en:e551",
+        "en:from-hens-on-the-ground",
+        "en:maltodextrin",
+        "en:natural-flavouring",
+        "en:paprika",
         "en:pepper",
         "en:pepper-extract",
         "en:phosphates-tricalciques",
         "en:preservative",
-        "en:rapeseed-oil",
+        "en:salt",
         "en:smoke-flavouring",
         "en:spice",
         "en:which-was-9-7-pistachio",
         "en:yeast-extract"
     ],
-    "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ecobalyse_ids_n": 25,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 48,
@@ -2126,7 +2194,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:o-7-other-plastics"
+                "id": {
+                    "id": "en:o-7-other-plastics"
+                }
             },
             "number_of_units": 1
         }

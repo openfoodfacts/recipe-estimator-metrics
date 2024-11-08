@@ -235,13 +235,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 54,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 46,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 50.22,
@@ -1401,7 +1401,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 54,
             "text": "LAIT \u00e9cr\u00e9m\u00e9"
@@ -1409,26 +1411,32 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:fresh-cream",
+            "is_in_taxonomy": 1,
             "percent": 20,
             "text": "CR\u00c8ME fra\u00eeche"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "text": "fructose"
         },
         {
             "id": "en:lactose-and-milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "LACTOSE et prot\u00e9ines de LAIT"
         },
         {
@@ -1436,9 +1444,11 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- et diglyc\u00e9rides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -1446,31 +1456,39 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "text": "gomme guar"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine de graines de caroube"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisants"
         },
         {
             "id": "fr:lait-ecreme-concentre1",
+            "is_in_taxonomy": 0,
             "percent": 0.2,
             "text": "LAIT \u00e9cr\u00e9m\u00e9 concentr\u00e91"
         },
         {
             "id": "en:exhausted-ground-vanilla-pod",
+            "is_in_taxonomy": 1,
             "text": "gousses de vanille \u00e9puis\u00e9es broy\u00e9es"
         },
         {
             "id": "fr:arome-naturel-de-vanille2",
+            "is_in_taxonomy": 0,
             "text": "ar\u00f4me naturel de vanille2"
         },
         {
             "id": "fr:extrait-de-vanille2",
+            "is_in_taxonomy": 0,
             "text": "extrait de vanille2"
         },
         {
@@ -1478,9 +1496,11 @@
             "ingredients": [
                 {
                     "id": "en:e160",
+                    "is_in_taxonomy": 1,
                     "text": "carot\u00e9no\u00efdes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         }
     ],
@@ -1653,6 +1673,23 @@
         "fr:lait-ecreme-concentre1"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:e160",
+        "en:e412",
+        "en:e471",
+        "en:emulsifier",
+        "en:exhausted-ground-vanilla-pod",
+        "en:fresh-cream",
+        "en:fructose",
+        "en:glucose-syrup",
+        "en:lactose-and-milk-proteins",
+        "en:stabiliser",
+        "fr:arome-naturel-de-vanille2",
+        "fr:extrait-de-vanille2",
+        "fr:lait-ecreme-concentre1"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -2184,48 +2221,68 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 15.2
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "2",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": "1",
             "quantity_per_unit": "472 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "472",
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 22.8
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

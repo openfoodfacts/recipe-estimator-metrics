@@ -188,7 +188,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1190,12 +1190,15 @@
         {
             "ciqual_food_code": "18152",
             "id": "fr:chicoree-soluble",
+            "is_in_taxonomy": 1,
             "percent": 60,
             "text": "chicor\u00e9e soluble"
         },
         {
             "ciqual_food_code": "18005",
+            "ecobalyse_code": "coffee-ground",
             "id": "en:instant-coffee",
+            "is_in_taxonomy": 1,
             "percent": 40,
             "text": "caf\u00e9 soluble"
         }
@@ -1263,6 +1266,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "fr:chicoree-soluble"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -1590,36 +1597,52 @@
             "number_of_units": 1,
             "quantity_per_unit": "250",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "250",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "250",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

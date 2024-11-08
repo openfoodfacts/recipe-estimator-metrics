@@ -261,7 +261,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2013,20 +2013,24 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "flocons de _bl\u00e9_"
                 },
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "flocons d'_avoine_"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "processing": "en:grilled",
                     "text": "p\u00e9tales de bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 64,
             "text": "C\u00e9r\u00e9ales compl\u00e8tes"
         },
@@ -2035,14 +2039,18 @@
             "ingredients": [
                 {
                     "id": "fr:raisins-de-sultane",
+                    "is_in_taxonomy": 0,
                     "text": "raisins de sultane"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 16,
             "text": "raisins de sultane"
         },
@@ -2053,34 +2061,43 @@
                 {
                     "ciqual_food_code": "13046",
                     "id": "en:raisin",
+                    "is_in_taxonomy": 1,
                     "text": "raisins secs"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 11,
             "text": "raisins secs"
         },
         {
             "ciqual_proxy_food_code": "15006",
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent": 3.5,
             "processing": "en:cut",
             "text": "noix de coco"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 3,
             "processing": "en:whole,en:grilled",
             "text": "_noisettes_"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent": 2.5,
             "text": "graines de tournesol"
         }
@@ -2366,6 +2383,15 @@
         "fr:raisins-de-sultane"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:oat-flakes",
+        "en:raisin",
+        "en:wheat-flakes",
+        "en:wholemeal-cereal",
+        "fr:raisins-de-sultane"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2829,24 +2855,36 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

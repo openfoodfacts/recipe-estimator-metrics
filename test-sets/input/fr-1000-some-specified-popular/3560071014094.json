@@ -293,7 +293,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1473,12 +1473,15 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 2.8,
             "text": "_amande_"
@@ -1486,11 +1489,13 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:tapioca",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "amidon de manioc"
         },
         {
             "id": "en:natural-almond-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel d'_amande_"
         },
         {
@@ -1498,16 +1503,20 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "farine de graine de caroube"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississant"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin"
         }
     ],
@@ -1661,6 +1670,14 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:natural-almond-flavouring",
+        "en:sea-salt",
+        "en:tapioca",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,
@@ -2276,36 +2293,54 @@
     "packagings": [
         {
             "material": {
-                "id": "en:fsc-cardboard"
+                "id": {
+                    "id": "en:fsc-cardboard"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:tetra-pak"
+                "id": {
+                    "id": "en:tetra-pak"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         }
     ],

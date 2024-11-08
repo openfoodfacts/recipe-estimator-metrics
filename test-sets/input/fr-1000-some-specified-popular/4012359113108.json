@@ -241,7 +241,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1621,12 +1621,15 @@
                 {
                     "ciqual_food_code": "20901",
                     "id": "en:soya-bean",
+                    "is_in_taxonomy": 1,
                     "percent": 55,
                     "text": "graines de _soja_"
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
@@ -1634,16 +1637,20 @@
                     "ingredients": [
                         {
                             "id": "en:e511",
+                            "is_in_taxonomy": 1,
                             "text": "chlorure de magn\u00e9sium"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "agents de coagulation"
                 },
                 {
                     "id": "en:e516",
+                    "is_in_taxonomy": 1,
                     "text": "sulfate de calcium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 87,
             "text": "Tofu"
         },
@@ -1653,36 +1660,44 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "20901",
                     "id": "en:soya-bean",
+                    "is_in_taxonomy": 1,
                     "text": "graines de _soja_"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "_bl\u00e9_"
                 },
                 {
                     "ciqual_food_code": "11082",
                     "id": "en:sea-salt",
+                    "is_in_taxonomy": 1,
                     "text": "sel marin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "sauce de _soja_"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 3.4,
             "text": "_amandes_"
         },
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame",
+            "is_in_taxonomy": 1,
             "percent": 3.1,
             "text": "_s\u00e9same_"
         }
@@ -1930,6 +1945,19 @@
         "en:e516"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:coagulant",
+        "en:e511",
+        "en:e516",
+        "en:sea-salt",
+        "en:sesame",
+        "en:soy-sauce",
+        "en:soya-bean",
+        "en:tofu",
+        "en:wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -2415,14 +2443,18 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 6.16
         }

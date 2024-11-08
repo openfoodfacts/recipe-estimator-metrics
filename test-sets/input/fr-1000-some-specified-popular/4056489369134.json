@@ -188,7 +188,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1468,17 +1468,23 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
@@ -1488,11 +1494,14 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
@@ -1501,28 +1510,35 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithines de soja"
                         }
                     ],
+                    "is_in_taxonomy": 0,
                     "text": "beurre de cacao* \u00e9mulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 9.5,
             "text": "p\u00e9pites de chocolat"
         },
         {
             "ciqual_food_code": "9660",
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "percent": 5.5,
             "text": "germe de bl\u00e9"
         },
         {
             "ciqual_food_code": "9545",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:corn-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de ma\u00efs"
         },
         {
             "id": "en:magnesium",
+            "is_in_taxonomy": 1,
             "text": "magn\u00e9sium"
         },
         {
@@ -1530,31 +1546,38 @@
             "ingredients": [
                 {
                     "id": "en:e336",
+                    "is_in_taxonomy": 1,
                     "text": "tartrates de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "text": "carbonates de sodium"
         },
         {
             "id": "en:e503",
+            "is_in_taxonomy": 1,
             "text": "carbonates d'ammonium"
         },
         {
             "ciqual_food_code": "9310",
             "id": "en:oat-fibre",
+            "is_in_taxonomy": 1,
             "text": "fibres d'avoine"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel de mer"
         },
         {
@@ -1562,29 +1585,36 @@
             "ingredients": [
                 {
                     "id": "en:rapeseed-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "id": "fr:amidon-natif-de-ble",
+            "is_in_taxonomy": 0,
             "text": "amidon natif de bl\u00e9"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "text": "vitamine E"
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "text": "vitamine B6"
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "text": "vitamine B9"
         }
     ],
@@ -1772,6 +1802,29 @@
         "fr:beurre-de-cacao-emulsifiant"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate-chunk",
+        "en:cocoa-paste",
+        "en:e336",
+        "en:e500",
+        "en:e503",
+        "en:emulsifier",
+        "en:folic-acid",
+        "en:magnesium",
+        "en:natural-flavouring",
+        "en:oat-fibre",
+        "en:raising-agent",
+        "en:rapeseed-lecithin",
+        "en:sea-salt",
+        "en:soya-lecithin",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "en:vitamins",
+        "en:wheat-germ",
+        "fr:amidon-natif-de-ble",
+        "fr:beurre-de-cacao-emulsifiant"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 43,
@@ -2205,32 +2258,44 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "quantity_per_unit": "50 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 50,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:individual-bag"
+                "id": {
+                    "id": "en:individual-bag"
+                }
             },
             "weight_measured": 0.7
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "quantity_per_unit": "200 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 26.5
         }

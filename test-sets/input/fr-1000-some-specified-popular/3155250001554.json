@@ -225,7 +225,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1426,17 +1426,21 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "19051",
+                    "ecobalyse_code": "milk",
                     "id": "en:milk",
+                    "is_in_taxonomy": 1,
                     "origins": "en:france",
                     "text": "lait"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 97,
             "text": "Cr\u00e8me l\u00e9g\u00e8re"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-tapioca-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de tapioca modifi\u00e9"
         },
         {
@@ -1444,13 +1448,16 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississant"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         }
     ],
@@ -1566,6 +1573,14 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e440a",
+        "en:lactic-ferments",
+        "en:light-cream",
+        "en:modified-tapioca-starch",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 13,
@@ -2025,38 +2040,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],

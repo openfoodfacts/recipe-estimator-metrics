@@ -238,7 +238,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -2041,6 +2041,7 @@
     "ingredients": [
         {
             "id": "es:achicoria-soluble",
+            "is_in_taxonomy": 0,
             "percent": 100,
             "text": "achicoria soluble"
         }
@@ -2106,6 +2107,10 @@
         "es:achicoria-soluble"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "es:achicoria-soluble"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -2425,43 +2430,63 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

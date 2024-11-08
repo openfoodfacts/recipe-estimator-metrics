@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1434,37 +1434,47 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 71.1,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "2074",
+            "ecobalyse_code": "apple-fr",
             "id": "en:concentrated-apple-juice",
+            "is_in_taxonomy": 1,
             "percent": 9.4,
             "text": "jus de pomme concentr\u00e9"
         },
         {
             "ciqual_food_code": "13111",
+            "ecobalyse_code": "apple-fr",
             "id": "en:dried-apple",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9510",
                     "id": "en:wheat-starch",
+                    "is_in_taxonomy": 1,
                     "text": "amidon de bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 4.2,
             "processing": "en:powder",
             "text": "pommes s\u00e9ch\u00e9es"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de malt d'orge"
         },
         {
@@ -1473,35 +1483,43 @@
             "ingredients": [
                 {
                     "id": "en:fructooligosaccharide",
+                    "is_in_taxonomy": 1,
                     "text": "fructooligosaccharides"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "fibres de chicor\u00e9e"
         },
         {
             "ciqual_proxy_food_code": "9100",
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "text": "riz"
         },
         {
             "id": "en:natural-apricot-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel d'abricot"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
             "id": "en:apple-extract",
+            "is_in_taxonomy": 1,
             "percent": 0.46,
             "text": "extrait de pomme"
         },
         {
             "id": "en:natural-apple-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de pomme"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
@@ -1509,9 +1527,11 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -1519,9 +1539,11 @@
             "ingredients": [
                 {
                     "id": "en:e501",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
@@ -1529,22 +1551,27 @@
             "ingredients": [
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
             "ciqual_food_code": "9310",
             "id": "en:oat",
+            "is_in_taxonomy": 1,
             "text": "avoine"
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "prot\u00e9ines de lait"
         },
         {
             "id": "en:barley",
+            "is_in_taxonomy": 1,
             "text": "orge"
         }
     ],
@@ -1893,6 +1920,27 @@
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:apple-extract",
+        "en:barley",
+        "en:barley-malt-extract",
+        "en:chicory-fibre",
+        "en:e296",
+        "en:e322",
+        "en:e501",
+        "en:emulsifier",
+        "en:fructooligosaccharide",
+        "en:milk-proteins",
+        "en:natural-apple-flavouring",
+        "en:natural-apricot-flavouring",
+        "en:natural-flavouring",
+        "en:oat",
+        "en:raising-agent",
+        "en:rice",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 48,
@@ -2384,32 +2432,44 @@
     "packagings": [
         {
             "material": {
-                "id": "en:recycled-cardboard"
+                "id": {
+                    "id": "en:recycled-cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "360 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 360,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "quantity_per_unit": "90 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 90,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:individual-bag"
+                "id": {
+                    "id": "en:individual-bag"
+                }
             }
         }
     ],

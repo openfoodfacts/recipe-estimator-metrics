@@ -75,7 +75,7 @@
         "en:e503",
         "en:e503ii"
     ],
-    "allergens": "en:gluten,en:milk,en:soybeans, en:milk",
+    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, beurre, bl\u00e9, beurre, lait, lait, lait, beurre, soja, lait",
     "allergens_from_user": "(en) en:gluten,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -266,7 +266,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1647,32 +1647,41 @@
     ],
     "ingredients": [
         {
+            "ciqual_food_code": "24000",
             "id": "en:petit-beurre",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 68,
                     "text": "Farine de _bl\u00e9_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 52,
             "text": "Petit _beurre_"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent": 14,
             "text": "_beurre_ p\u00e2tissier"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "_lait_ \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
@@ -1680,22 +1689,27 @@
             "ingredients": [
                 {
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "text": "carbonate acide d'ammonium"
                 },
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "carbonate acide de sodium"
                 },
                 {
                     "id": "en:e450i",
+                    "is_in_taxonomy": 1,
                     "text": "diphosphate disodique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1703,14 +1717,17 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteur d'acidit\u00e9"
         },
         {
             "ciqual_food_code": "31004",
             "id": "en:milk-chocolate",
+            "is_in_taxonomy": 1,
             "percent": 48,
             "processing": "en:sugared",
             "text": "Chocolat au _lait_"
@@ -1718,25 +1735,31 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "text": "beurre de cacao"
         },
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "text": "p\u00e2te de cacao"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "_lait_ \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum en poudre"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "text": "_beurre_ p\u00e2tissier"
         },
         {
@@ -1745,17 +1768,21 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de _soja_"
                 },
                 {
                     "id": "en:e476",
+                    "is_in_taxonomy": 1,
                     "text": "e476"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me"
         }
     ],
@@ -2083,11 +2110,30 @@
         "en:e503ii",
         "en:emulsifier",
         "en:flavouring",
-        "en:petit-beurre",
         "en:raising-agent",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e330",
+        "en:e450i",
+        "en:e476",
+        "en:e500ii",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:milk-chocolate",
+        "en:petit-beurre",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -2531,28 +2577,40 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "75",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:individual-bag"
+                "id": {
+                    "id": "en:individual-bag"
+                }
             },
             "weight_measured": 0.97
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 17.54
         }

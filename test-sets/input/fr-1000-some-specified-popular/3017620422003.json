@@ -349,7 +349,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -3840,34 +3840,44 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "NOISETTES"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent": 7.4,
             "text": "cacao maigre"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent": 6.6,
             "text": "LAIT \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "LACTOSERUM en poudre"
         },
         {
@@ -3876,13 +3886,16 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "id": "en:vanillin",
+            "is_in_taxonomy": 1,
             "text": "vanilline"
         }
     ],
@@ -4092,6 +4105,14 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:soya-lecithin",
+        "en:vanillin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -4626,86 +4647,118 @@
     "packagings": [
         {
             "material": {
-                "id": "en:clear-glass"
+                "id": {
+                    "id": "en:clear-glass"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "400",
             "recycling": {
-                "id": "en:recycle-in-glass-bin"
+                "id": {
+                    "id": "en:recycle-in-glass-bin"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 209.4
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "400",
             "recycling": {
-                "id": "en:recycle-with-plastics-metal-and-bricks"
+                "id": {
+                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 6.8
         },
         {
             "material": {
-                "id": "en:non-corrugated-cardboard"
+                "id": {
+                    "id": "en:non-corrugated-cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "400",
             "recycling": {
-                "id": "en:recycle-in-paper-bin"
+                "id": {
+                    "id": "en:recycle-in-paper-bin"
+                }
             },
             "shape": {
-                "id": "en:backing"
+                "id": {
+                    "id": "en:backing"
+                }
             },
             "weight_measured": 1.8
         },
         {
             "material": {
-                "id": "xx:82-c-pap"
+                "id": {
+                    "id": "xx:82-c-pap"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "400",
             "recycling": {
-                "id": "en:recycle-with-plastics-metal-and-bricks"
+                "id": {
+                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.4
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": "1",
             "quantity_per_unit": "400g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "400",
             "recycling": {
-                "id": "en:recycle-in-paper-bin"
+                "id": {
+                    "id": "en:recycle-in-paper-bin"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

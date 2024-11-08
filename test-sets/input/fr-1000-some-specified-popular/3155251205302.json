@@ -214,7 +214,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1512,37 +1512,47 @@
     "ingredients": [
         {
             "id": "en:vegetable-oil",
+            "is_in_taxonomy": 1,
             "text": "vegetable oils"
         },
         {
             "id": "en:fat",
             "ingredients": [
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "rapeseed"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "text": "coconut"
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "text": "palm"
                 },
                 {
                     "id": "en:palm-kernel-oil",
+                    "is_in_taxonomy": 1,
                     "text": "palm kernel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 54,
             "processing": "en:non-hydrogenated",
             "text": "fats"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
@@ -1550,22 +1560,27 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- and diglycerides of fatty acids"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifiers"
         },
         {
             "id": "en:sunflower-lecithin",
+            "is_in_taxonomy": 1,
             "text": "sunflower lecithin"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural flavourings"
         },
         {
@@ -1573,14 +1588,17 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "text": "extracts of rosemary"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxidant"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "concentrated lemon juice"
         },
         {
@@ -1588,17 +1606,21 @@
             "ingredients": [
                 {
                     "id": "en:e160b",
+                    "is_in_taxonomy": 1,
                     "text": "annatto"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colouring agents"
         },
         {
             "id": "en:e100",
+            "is_in_taxonomy": 1,
             "text": "curcumin"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamin b1"
         }
     ],
@@ -1858,6 +1880,25 @@
         "en:vegetable-oil"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:coconut",
+        "en:colour",
+        "en:concentrated-lemon-juice",
+        "en:e100",
+        "en:e160b",
+        "en:e392",
+        "en:e471",
+        "en:emulsifier",
+        "en:fat",
+        "en:natural-flavouring",
+        "en:palm-kernel-oil",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:thiamin",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 33,
@@ -2305,14 +2346,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 3,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

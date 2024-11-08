@@ -219,7 +219,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1881,7 +1881,9 @@
             "ciqual_food_code": "15024",
             "ciqual_food_code_used": "15024",
             "difference": 15.5,
+            "ecobalyse_code": "chestnut-husked-fr",
             "id": "en:chestnut",
+            "is_in_taxonomy": 1,
             "lost_water": 23.86173184357544,
             "nutrients": {
                 "alcohol": {
@@ -1976,13 +1978,13 @@
                     "percent_max": 7.86,
                     "percent_min": 7.86
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00022,
+                    "percent_min": 0.00022
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00022,
-                    "percent_min": 0.00022
                 },
                 "vitamin-b2": {
                     "percent_max": 0.0001,
@@ -2025,7 +2027,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2120,11 +2124,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2168,6 +2172,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "fr:marrons-glaces",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2262,11 +2267,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2315,6 +2320,7 @@
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "lost_water": 0.019665486699656256,
             "nutrients": {
                 "alcohol": {
@@ -2409,11 +2415,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2457,7 +2463,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 11.567933352738969,
             "nutrients": {
                 "alcohol": {
@@ -2552,11 +2560,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2600,6 +2608,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "fr:extrait-naturel-de-vanille-madagascar",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2694,11 +2703,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2833,6 +2842,12 @@
         "fr:marrons-glaces"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:glucose-syrup",
+        "fr:extrait-naturel-de-vanille-madagascar",
+        "fr:marrons-glaces"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -3244,29 +3259,41 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:food-can"
+                "id": {
+                    "id": "en:food-can"
+                }
             },
             "weight_measured": 20.55
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 3.86
         }
@@ -3594,15 +3621,15 @@
                 "unweighted_total": 207.45999999999998,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 6,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.00022
+            },
             "vitamin-b12": {
                 "ingredient_count": 6,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 6,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.00022
             },
             "vitamin-b2": {
                 "ingredient_count": 6,

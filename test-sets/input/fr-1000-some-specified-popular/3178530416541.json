@@ -213,7 +213,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1297,26 +1297,34 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 66,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 16,
             "text": "beurre"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 2.7,
             "text": "\u0153ufs"
@@ -1324,12 +1332,14 @@
         {
             "ciqual_food_code": "1004",
             "id": "en:rum",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "rhum"
         },
         {
             "ciqual_food_code": "11083",
             "id": "en:grey-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin gris"
         },
         {
@@ -1337,18 +1347,23 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "text": "carbonates de sodium"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "lait \u00e9cr\u00e9m\u00e9 en poudre"
         }
@@ -1545,6 +1560,14 @@
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e500",
+        "en:e503",
+        "en:grey-salt",
+        "en:raising-agent",
+        "en:rum"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2061,23 +2084,33 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:individual-bag"
+                "id": {
+                    "id": "en:individual-bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

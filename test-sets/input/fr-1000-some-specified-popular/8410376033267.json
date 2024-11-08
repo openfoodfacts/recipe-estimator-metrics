@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1465,12 +1465,15 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 34.5,
             "text": "Copos de avena"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 33,
             "text": "harina de trigo"
         },
@@ -1479,10 +1482,13 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:high-oleic-sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "aceite girasol alto ole\u00edco"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 15.5,
             "text": "aceite vegetal"
         },
@@ -1491,13 +1497,16 @@
             "ingredients": [
                 {
                     "id": "en:e965",
+                    "is_in_taxonomy": 1,
                     "text": "maltitol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "edulcorante"
         },
         {
             "id": "en:vegetable-fiber",
+            "is_in_taxonomy": 1,
             "text": "fibra vegetal"
         },
         {
@@ -1505,31 +1514,39 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "carbonato \u00e1cido de sodio"
                 },
                 {
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "text": "carbonato \u00e1cido de amonio"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "gasificantes"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sal"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "aromas"
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "text": "canela"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:high-oleic-sunflower",
+            "is_in_taxonomy": 1,
             "text": "Con girasol alto oleico"
         }
     ],
@@ -1757,6 +1774,20 @@
         "en:vegetable-oil"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cinnamon",
+        "en:e500ii",
+        "en:e503ii",
+        "en:e965",
+        "en:flavouring",
+        "en:oat-flakes",
+        "en:raising-agent",
+        "en:salt",
+        "en:sweetener",
+        "en:vegetable-fiber",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 27,
@@ -2231,12 +2262,16 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:container"
+                "id": {
+                    "id": "en:container"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

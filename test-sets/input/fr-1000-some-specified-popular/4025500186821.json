@@ -199,7 +199,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1252,10 +1252,12 @@
     "ingredients": [
         {
             "id": "de:fettarmer-kefir-mild",
+            "is_in_taxonomy": 0,
             "text": "Fettarmer Kefir mild"
         },
         {
             "id": "en:fat",
+            "is_in_taxonomy": 1,
             "percent": 1.5,
             "text": "Fett"
         }
@@ -1329,6 +1331,11 @@
         "en:fat"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "de:fettarmer-kefir-mild",
+        "en:fat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 2,
@@ -1724,7 +1731,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             }
         }
     ],

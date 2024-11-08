@@ -263,7 +263,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1453,37 +1453,46 @@
     "ingredients": [
         {
             "ciqual_food_code": "9545",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:corn-flour",
+            "is_in_taxonomy": 1,
             "percent": 76,
             "text": "Farine de ma\u00efs"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "Sirop de glucose"
         },
         {
             "id": "en:corn-fiber",
+            "is_in_taxonomy": 1,
             "text": "Fibres de ma\u00efs"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "Miel"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "Sel"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "Extrait de malt d'ORGE"
         },
         {
@@ -1491,23 +1500,29 @@
             "ingredients": [
                 {
                     "id": "en:e160",
+                    "is_in_taxonomy": 1,
                     "text": "Carot\u00e9no\u00efdes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Colorant"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "LAIT \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "ciqual_food_code": "20591",
             "id": "en:soy-protein-isolate",
+            "is_in_taxonomy": 1,
             "text": "Isolat de prot\u00e9ine de SOJA"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "Vitamines"
         },
         {
@@ -1515,41 +1530,51 @@
             "ingredients": [
                 {
                     "id": "en:vitamins",
+                    "is_in_taxonomy": 1,
                     "text": "vitamines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Min\u00e9raux"
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "text": "Niacine"
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "text": "vitamine B6"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamine B2"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "text": "Acide folique"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "text": "vitamine B12"
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "text": "Fer"
         }
     ],
@@ -1896,6 +1921,27 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:colour",
+        "en:corn-fiber",
+        "en:e101",
+        "en:e160",
+        "en:e375",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:honey",
+        "en:iron",
+        "en:minerals",
+        "en:salt",
+        "en:soy-protein-isolate",
+        "en:thiamin",
+        "en:vitamin-b12",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 38,
@@ -2460,15 +2506,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             }
         }
     ],

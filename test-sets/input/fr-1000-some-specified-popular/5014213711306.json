@@ -200,7 +200,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -995,6 +995,7 @@
     "ingredients": [
         {
             "id": "en:roasted-peanuts-whole-skin-on",
+            "is_in_taxonomy": 0,
             "percent": 100,
             "text": "Roasted Peanuts Whole Skin On"
         }
@@ -1051,6 +1052,10 @@
         "en:roasted-peanuts-whole-skin-on"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:roasted-peanuts-whole-skin-on"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -1439,26 +1444,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:clear-glass"
+                "id": {
+                    "id": "en:clear-glass"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         },
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

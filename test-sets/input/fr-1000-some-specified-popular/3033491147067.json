@@ -35,7 +35,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT , LAIT, LAIT, LAIT, LAIT",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -216,13 +216,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 99.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 0.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 92.535,
@@ -1360,14 +1360,18 @@
     "ingredients": [
         {
             "ciqual_food_code": "19023",
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 96,
             "text": "LAIT entier"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:condensed-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "processing": "en:powder",
             "text": "LAIT \u00e9cr\u00e9m\u00e9 concentr\u00e9"
@@ -1377,13 +1381,16 @@
             "ingredients": [
                 {
                     "id": "fr:bifidus-acti",
+                    "is_in_taxonomy": 0,
                     "text": "Bifidus Acti"
                 },
                 {
                     "id": "fr:regularis",
+                    "is_in_taxonomy": 0,
                     "text": "Regularis"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques dont bifidobact\u00e9rium"
         }
     ],
@@ -1530,6 +1537,12 @@
         "fr:regularis"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "es:bifidobacterias-y-otros-fermentos-lacticos",
+        "fr:bifidus-acti",
+        "fr:regularis"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -2033,41 +2046,57 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "quantity_per_unit": "125 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "125",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": "4"
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "4",
             "quantity_per_unit": "125 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "125",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             },
             "shape": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             }
         }
     ],

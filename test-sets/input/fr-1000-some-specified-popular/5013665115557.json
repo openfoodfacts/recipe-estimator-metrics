@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -957,13 +957,16 @@
     "ingredients": [
         {
             "ciqual_food_code": "15037",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent": 99,
             "text": "Cacahu\u00e8tes grill\u00e9es"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel Marin"
         }
     ],
@@ -1012,6 +1015,10 @@
     "ingredients_with_unspecified_percent_sum": 1,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1416,18 +1423,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

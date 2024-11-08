@@ -203,7 +203,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1268,7 +1268,9 @@
         {
             "ciqual_food_code_used": "9410",
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "lost_water": 13.556851311953356,
             "nutrients": {
                 "alcohol": {
@@ -1363,13 +1365,13 @@
                     "percent_max": 1.6,
                     "percent_min": 1.6
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00026000000000000003,
+                    "percent_min": 0.00026000000000000003
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00026000000000000003,
-                    "percent_min": 0.00026000000000000003
                 },
                 "vitamin-b2": {
                     "percent_max": 1e-05,
@@ -1411,6 +1413,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1505,11 +1508,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1558,7 +1561,9 @@
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
             "difference": 1.33,
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0006357061430934763,
             "nutrients": {
                 "alcohol": {
@@ -1653,11 +1658,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1702,6 +1707,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "fr:sel-levure",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1796,11 +1802,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1851,6 +1857,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e524",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1945,11 +1952,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -1995,6 +2002,7 @@
                     "text": "hydroxyde de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.35e-15,
             "quantity_estimate": 1.5354471166739714e-15,
             "text": "correcteur d'acidité"
@@ -2129,6 +2137,13 @@
         "fr:sel-levure"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:barley-malt-extract",
+        "en:e524",
+        "fr:sel-levure"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -2503,7 +2518,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         }
     ],
@@ -2784,15 +2801,15 @@
                 "unweighted_total": 1.6,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 5,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.00026000000000000003
+            },
             "vitamin-b12": {
                 "ingredient_count": 5,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 5,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.00026000000000000003
             },
             "vitamin-b2": {
                 "ingredient_count": 5,

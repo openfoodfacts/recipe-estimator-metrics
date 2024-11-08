@@ -243,7 +243,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -3358,25 +3358,31 @@
     "ingredients": [
         {
             "ciqual_food_code": "15023",
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
+            "is_in_taxonomy": 1,
             "percent": 25,
             "text": "walnuts"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 25,
             "text": "hazelnuts"
         },
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent": 25,
             "text": "cashews"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 25,
             "processing": "en:blanched",
             "text": "almonds"
@@ -3471,6 +3477,11 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:cashew-nuts"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -3999,17 +4010,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic-aluminium"
+                "id": {
+                    "id": "en:plastic-aluminium"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 7.51
         }

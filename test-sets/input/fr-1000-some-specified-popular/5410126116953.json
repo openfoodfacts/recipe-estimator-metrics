@@ -214,7 +214,7 @@
                         "epi_score": "92",
                         "origin": "en:austria",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 92,
@@ -1449,25 +1449,35 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "text": "wheat flour"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sugar"
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
                     "text": "palm* vegetable oils"
                 },
                 {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:rapeseed-oil",
+                    "is_in_taxonomy": 1,
                     "text": "rapeseed vegetable oils"
                 },
                 {
                     "id": "en:syrup",
+                    "is_in_taxonomy": 1,
                     "text": "syrup"
                 },
                 {
@@ -1475,37 +1485,49 @@
                     "ingredients": [
                         {
                             "id": "en:e500ii",
+                            "is_in_taxonomy": 1,
                             "text": "sodium bicarbonate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "raising agent"
                 },
                 {
                     "ciqual_food_code": "20900",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:soya-flour",
+                    "is_in_taxonomy": 1,
                     "text": "soybean meal"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "salt"
                 },
                 {
                     "id": "en:cinnamon",
+                    "is_in_taxonomy": 1,
                     "text": "cinnamon"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 58,
             "processing": "en:caramelized",
             "text": "biscuits"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "text": "rapeseed oil"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
@@ -1514,9 +1536,11 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "soya lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
@@ -1524,9 +1548,11 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acid"
         }
     ],
@@ -1782,10 +1808,22 @@
         "en:e500ii",
         "en:emulsifier",
         "en:raising-agent",
-        "en:rapeseed-oil",
         "en:syrup"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:biscuit",
+        "en:cinnamon",
+        "en:e330",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:syrup"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -2219,18 +2257,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         },
         {
             "material": {
-                "id": "en:hdpe-2-high-density-polyethylene"
+                "id": {
+                    "id": "en:hdpe-2-high-density-polyethylene"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

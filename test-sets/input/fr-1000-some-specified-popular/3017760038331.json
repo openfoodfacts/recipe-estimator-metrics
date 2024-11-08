@@ -259,7 +259,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 97.75,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1397,22 +1397,29 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 20,
             "text": "farine de bl\u00e9"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "id": "fr:ceufs",
+            "is_in_taxonomy": 0,
             "text": "ceufs"
         },
         {
@@ -1421,34 +1428,43 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "18100",
                     "id": "en:cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "text": "cacao en poudre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "chocolat en poudre"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut-paste",
+            "is_in_taxonomy": 1,
             "percent": 6,
             "text": "p\u00e2te de noisette"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
             "ingredients": [],
+            "is_in_taxonomy": 1,
             "percent": 4.5,
             "text": "lait \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose-fructose"
         },
         {
@@ -1456,13 +1472,16 @@
             "ingredients": [
                 {
                     "id": "en:e450",
+                    "is_in_taxonomy": 1,
                     "text": "diphosphates"
                 },
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
@@ -1470,19 +1489,23 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "e471"
                 },
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1490,22 +1513,28 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de bl\u00e9"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "bg:\u0441\u0443\u0445\u0430-\u043c\u0430\u044f",
+            "is_in_taxonomy": 1,
             "text": "levure s\u00e8che"
         }
     ],
@@ -1869,7 +1898,6 @@
     "ingredients_with_unspecified_percent_n": 15,
     "ingredients_with_unspecified_percent_sum": 71.75,
     "ingredients_without_ciqual_codes": [
-        "bg:\u0441\u0443\u0445\u0430-\u043c\u0430\u044f",
         "en:acid",
         "en:e330",
         "en:e450",
@@ -1880,7 +1908,26 @@
         "en:raising-agent",
         "fr:ceufs"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "bg:\u0441\u0443\u0445\u0430-\u043c\u0430\u044f",
+        "en:acid",
+        "en:chocolate-powder",
+        "en:cocoa-powder",
+        "en:e330",
+        "en:e450",
+        "en:e471",
+        "en:e500",
+        "en:emulsifier",
+        "en:glucose-fructose-syrup",
+        "en:natural-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:wheat-starch",
+        "fr:ceufs"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -2330,15 +2377,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         }
     ],

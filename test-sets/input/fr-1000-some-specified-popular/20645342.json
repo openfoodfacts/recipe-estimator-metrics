@@ -218,7 +218,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -1445,53 +1445,68 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20047",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato",
+                    "is_in_taxonomy": 1,
                     "text": "tomate"
                 },
                 {
                     "ciqual_food_code": "20041",
+                    "ecobalyse_code": "bellpepper-unheated-greehouse",
                     "id": "en:bell-pepper",
+                    "is_in_taxonomy": 1,
                     "text": "pimiento"
                 },
                 {
                     "ciqual_proxy_food_code": "20019",
+                    "ecobalyse_code": "cucumber-eu",
                     "id": "en:cucumber",
+                    "is_in_taxonomy": 1,
                     "text": "pepino"
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "text": "cebolla"
                 },
                 {
                     "ciqual_food_code": "11000",
                     "id": "en:garlic",
+                    "is_in_taxonomy": 1,
                     "text": "ajo"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 95,
             "processing": "en:fresh",
             "text": "hortalizas"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent": 2.6,
             "text": "aceite de oliva virgen extra"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:sherry-vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinagre de Jerez"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sal"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "zumo de lim\u00f3n"
         }
     ],
@@ -1649,6 +1664,14 @@
         "en:vegetable"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:garlic",
+        "en:lemon-juice",
+        "en:salt",
+        "en:sherry-vinegar",
+        "en:vegetable"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2061,15 +2084,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:composite-material"
+                "id": {
+                    "id": "en:composite-material"
+                }
             },
             "shape": {
-                "id": "en:container"
+                "id": {
+                    "id": "en:container"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         }
     ],

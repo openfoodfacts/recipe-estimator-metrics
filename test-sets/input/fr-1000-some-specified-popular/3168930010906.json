@@ -279,7 +279,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1858,25 +1858,31 @@
     "ingredients": [
         {
             "id": "en:full-oats",
+            "is_in_taxonomy": 0,
             "percent": 37,
             "text": "full oats"
         },
         {
             "ciqual_proxy_food_code": "31074",
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
+                    "is_in_taxonomy": 1,
                     "text": "cocoa"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sugar"
                 },
                 {
                     "id": "en:natural-vanilla-flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "natural vanilla flavour"
                 },
                 {
@@ -1885,84 +1891,106 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "soy lecithin"
                         },
                         {
                             "id": "en:e476",
+                            "is_in_taxonomy": 1,
                             "text": "polyglycerol polyricinoleate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "emulsifiers"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 12,
             "text": "dark chocolate"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "sunflower oil"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "9010",
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent": 9.6,
             "text": "complete wheat"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "glucose syrup"
         },
         {
             "id": "en:oligofructose",
+            "is_in_taxonomy": 1,
             "text": "oligofructose"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent": 1.9,
             "text": "rice flours"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "percent": 1.9,
             "text": "wheat"
         },
         {
             "ciqual_proxy_food_code": "15006",
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "processing": "en:dried",
             "text": "coconut"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "text": "molasses"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "text": "cinnamon"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "processing": "en:caramelized",
             "text": "sugar"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavourings"
         },
         {
@@ -1970,13 +1998,16 @@
             "ingredients": [
                 {
                     "id": "en:vitamin-e",
+                    "is_in_taxonomy": 1,
                     "text": "tocopherol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxidant"
         },
         {
             "id": "en:dark-chocolate-contains-a-minimum-of-65-cocoa",
+            "is_in_taxonomy": 0,
             "text": "dark chocolate contains a minimum of 65% cocoa"
         }
     ],
@@ -2330,6 +2361,26 @@
         "en:vitamin-e"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cinnamon",
+        "en:cocoa",
+        "en:coconut",
+        "en:dark-chocolate-contains-a-minimum-of-65-cocoa",
+        "en:e476",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:full-oats",
+        "en:glucose-syrup",
+        "en:natural-vanilla-flavouring",
+        "en:oligofructose",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vitamin-e",
+        "en:wheat",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2862,37 +2913,51 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "1",
             "quantity_per_unit": "450 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "450",
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": "1",
             "quantity_per_unit": "450 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "450",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

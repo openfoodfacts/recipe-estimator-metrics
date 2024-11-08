@@ -35,7 +35,7 @@
         "en:e471",
         "en:e481"
     ],
-    "allergens": "en:milk, en:milk, en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, blé, beurre concentré, lait, lait, œufs frais, lait, blé, blé, gluten de blé",
     "allergens_from_user": "(fr) en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -183,7 +183,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1067,7 +1067,9 @@
         {
             "ciqual_food_code_used": "9410",
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1162,13 +1164,13 @@
                     "percent_max": 1.6,
                     "percent_min": 1.6
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00026000000000000003,
+                    "percent_min": 0.00026000000000000003
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00026000000000000003,
-                    "percent_min": 0.00026000000000000003
                 },
                 "vitamin-b2": {
                     "percent_max": 1e-05,
@@ -1203,14 +1205,16 @@
                     "percent_min": 0.0019
                 }
             },
-            "percent_estimate": 44.7,
-            "quantity_estimate": 49.647956950135885,
+            "percent_estimate": 51.6,
+            "quantity_estimate": 51.619767505621354,
             "text": "Farine de blé"
         },
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1305,11 +1309,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1346,14 +1350,15 @@
                     "percent_min": 2e-05
                 }
             },
-            "percent_estimate": 11.6,
-            "quantity_estimate": 12.847328833188927,
+            "percent_estimate": 13.0,
+            "quantity_estimate": 12.9543913242222,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "16401",
             "ciqual_food_code_used": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1448,13 +1453,13 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
+                "vitamin-b1": {
+                    "percent_max": 1e-06,
+                    "percent_min": 1e-06
+                },
                 "vitamin-b12": {
                     "percent_max": 1e-08,
                     "percent_min": 1e-08
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 1e-06,
-                    "percent_min": 1e-06
                 },
                 "vitamin-b2": {
                     "percent_max": 5e-06,
@@ -1489,14 +1494,16 @@
                     "percent_min": 1e-05
                 }
             },
-            "percent_estimate": 8.74,
-            "quantity_estimate": 9.704456682384405,
+            "percent_estimate": 11.6,
+            "quantity_estimate": 11.626321039517766,
             "text": "beurre concentré"
         },
         {
             "ciqual_food_code": "22000",
             "ciqual_food_code_used": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:fresh-egg",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1591,13 +1598,13 @@
                     "percent_max": 0.27,
                     "percent_min": 0.27
                 },
+                "vitamin-b1": {
+                    "percent_max": 5.5e-05,
+                    "percent_min": 5.5e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 1.4499999999999999e-06,
                     "percent_min": 1.4499999999999999e-06
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 5.5e-05,
-                    "percent_min": 5.5e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00045,
@@ -1632,15 +1639,17 @@
                     "percent_min": 0.00101
                 }
             },
-            "percent_estimate": 8.74,
-            "quantity_estimate": 9.704456682384405,
+            "percent_estimate": 3.97,
+            "quantity_estimate": 3.970808641660729,
             "text": "œufs frais"
         },
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "lost_water": 9.704456682384404,
+            "is_in_taxonomy": 1,
+            "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
                     "percent_max": 0.0,
@@ -1734,11 +1743,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1775,15 +1784,16 @@
                     "percent_min": 1.1e-05
                 }
             },
-            "percent_estimate": 8.74,
-            "quantity_estimate": 9.704456682384405,
+            "percent_estimate": 3.97,
+            "quantity_estimate": 3.970808641660728,
             "text": "eau"
         },
         {
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
-            "difference": 3.74,
+            "difference": 1.03,
             "id": "en:fresh-cream",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1878,13 +1888,13 @@
                     "percent_max": 2.77,
                     "percent_min": 2.77
                 },
+                "vitamin-b1": {
+                    "percent_max": 2.8e-05,
+                    "percent_min": 2.8e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 1.8e-07,
                     "percent_min": 1.8e-07
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 2.8e-05,
-                    "percent_min": 2.8e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00017999999999999998,
@@ -1919,9 +1929,9 @@
                     "percent_min": 0.00027
                 }
             },
-            "percent_estimate": 8.74,
+            "percent_estimate": 3.97,
             "percent_hidden": 5,
-            "quantity_estimate": 9.704456682384404,
+            "quantity_estimate": 3.970808641660727,
             "text": "crème fraîche"
         },
         {
@@ -1930,8 +1940,10 @@
                 {
                     "ciqual_food_code_used": "9410",
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "lost_water": 0.689618483513575,
+                    "is_in_taxonomy": 1,
+                    "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
                             "percent_max": 0.0,
@@ -2025,13 +2037,13 @@
                             "percent_max": 1.6,
                             "percent_min": 1.6
                         },
+                        "vitamin-b1": {
+                            "percent_max": 0.00026000000000000003,
+                            "percent_min": 0.00026000000000000003
+                        },
                         "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
-                        },
-                        "vitamin-b1_unit": {
-                            "percent_max": 0.00026000000000000003,
-                            "percent_min": 0.00026000000000000003
                         },
                         "vitamin-b2": {
                             "percent_max": 1e-05,
@@ -2066,15 +2078,17 @@
                             "percent_min": 0.0019
                         }
                     },
-                    "percent_estimate": 5.01,
-                    "quantity_estimate": 5.56143938317399,
+                    "percent_estimate": 2.65,
+                    "quantity_estimate": 2.6472057611071502,
                     "text": "farine de blé"
                 },
                 {
                     "ciqual_food_code": "18066",
                     "ciqual_food_code_used": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "lost_water": 0.6134940293488492,
+                    "is_in_taxonomy": 1,
+                    "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
                             "percent_max": 0.0,
@@ -2168,11 +2182,11 @@
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -2209,14 +2223,15 @@
                             "percent_min": 1.1e-05
                         }
                     },
-                    "percent_estimate": 2.91,
-                    "quantity_estimate": 3.2348188941281366,
+                    "percent_estimate": 1.32,
+                    "quantity_estimate": 1.3236028805535753,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "ciqual_food_code_used": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2311,11 +2326,11 @@
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -2352,165 +2367,165 @@
                             "percent_min": 0.0
                         }
                     },
-                    "percent_estimate": 0.818,
-                    "quantity_estimate": 0.9081984050822822,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "sel"
                 }
             ],
-            "percent_estimate": 8.74,
-            "quantity_estimate": 9.704456682384409,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.97,
+            "quantity_estimate": 3.9708086416607253,
             "text": "levain"
         },
         {
-            "ciqual_food_code_used": null,
+            "ciqual_food_code_used": "11009",
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0,
+                    "percent_min": 0.0
                 },
                 "calcium": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.13,
+                    "percent_min": 0.13
                 },
                 "carbohydrates": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 21.8,
+                    "percent_min": 21.8
                 },
                 "cholesterol": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0007,
+                    "percent_min": 0.0007
                 },
                 "copper": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.00039,
+                    "percent_min": 0.00039
                 },
                 "energy": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 1400.0,
+                    "percent_min": 1400.0
                 },
                 "fat": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 4.5,
+                    "percent_min": 4.5
                 },
                 "fiber": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 22.5,
+                    "percent_min": 22.5
                 },
                 "folates": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.000697,
+                    "percent_min": 0.000697
                 },
                 "iron": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0040999999999999995,
+                    "percent_min": 0.0040999999999999995
                 },
                 "magnesium": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.15,
+                    "percent_min": 0.15
                 },
                 "manganese": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0008900000000000001,
+                    "percent_min": 0.0008900000000000001
                 },
                 "monounsaturated-fat": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 2.1,
+                    "percent_min": 2.1
                 },
                 "pantothenic-acid": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.00514,
+                    "percent_min": 0.00514
                 },
                 "phosphorus": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 1.1,
+                    "percent_min": 1.1
                 },
                 "polyols": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0,
+                    "percent_min": 0.0
                 },
                 "polyunsaturated-fat": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.01,
+                    "percent_min": 0.01
                 },
                 "potassium": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 1.7,
+                    "percent_min": 1.7
                 },
                 "proteins": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 40.4,
+                    "percent_min": 40.4
                 },
                 "salt": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.35,
+                    "percent_min": 0.35
                 },
                 "saturated-fat": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.7,
+                    "percent_min": 0.7
                 },
                 "sodium": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.141,
+                    "percent_min": 0.141
                 },
                 "sugars": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 2.5,
+                    "percent_min": 2.5
+                },
+                "vitamin-b1": {
+                    "percent_max": 0.0116,
+                    "percent_min": 0.0116
                 },
                 "vitamin-b12": {
-                    "percent_max": 0,
-                    "percent_min": 0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 3.4000000000000003e-07,
+                    "percent_min": 3.4000000000000003e-07
                 },
                 "vitamin-b2": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.001,
+                    "percent_min": 0.001
                 },
                 "vitamin-b6": {
-                    "percent_max": 0,
-                    "percent_min": 0
-                },
-                "vitamin-b9": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.00088,
+                    "percent_min": 0.00088
                 },
                 "vitamin-c": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0005,
+                    "percent_min": 0.0005
                 },
                 "vitamin-d": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 2.5e-07,
+                    "percent_min": 2.5e-07
                 },
                 "vitamin-e": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 9.800000000000001e-05,
+                    "percent_min": 9.800000000000001e-05
                 },
                 "vitamin-pp": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.0185,
+                    "percent_min": 0.0185
                 },
                 "water": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 5.0,
+                    "percent_min": 5.0
                 },
                 "zinc": {
-                    "percent_max": 0,
-                    "percent_min": 0
+                    "percent_max": 0.008400000000000001,
+                    "percent_min": 0.008400000000000001
                 }
             },
-            "percent_estimate": 0.0,
-            "quantity_estimate": 0.0,
+            "percent_estimate": 3.3,
+            "quantity_estimate": 3.301332138084157,
             "text": "levure"
         },
         {
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2605,11 +2620,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2646,8 +2661,8 @@
                     "percent_min": 0.0
                 }
             },
-            "percent_estimate": 0.0,
-            "quantity_estimate": 0.0,
+            "percent_estimate": 0.921,
+            "quantity_estimate": 0.9209906851823203,
             "text": "sel"
         },
         {
@@ -2657,6 +2672,7 @@
                     "ciqual_food_code": "1014",
                     "ciqual_food_code_used": "1014",
                     "id": "en:alcohol",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2751,11 +2767,11 @@
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -2792,13 +2808,14 @@
                             "percent_min": 0.0
                         }
                     },
-                    "percent_estimate": 0.0,
-                    "quantity_estimate": 0.0,
+                    "percent_estimate": 0.921,
+                    "quantity_estimate": 0.9209906851823271,
                     "text": "alcool"
                 }
             ],
-            "percent_estimate": 0.0,
-            "quantity_estimate": 0.0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.921,
+            "quantity_estimate": 0.9209906851823271,
             "text": "arômes naturels de vanille"
         },
         {
@@ -2807,6 +2824,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2901,11 +2919,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2946,18 +2964,20 @@
                             "percent_min": 0
                         }
                     },
-                    "percent_estimate": 0.0,
-                    "quantity_estimate": 0.0,
+                    "percent_estimate": 0.921,
+                    "quantity_estimate": 0.9209906851823202,
                     "text": "mono- et diglycérides d'acides gras"
                 }
             ],
-            "percent_estimate": 0.0,
-            "quantity_estimate": 0.0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.921,
+            "quantity_estimate": 0.9209906851823202,
             "text": "émulsifiants"
         },
         {
             "ciqual_food_code_used": null,
             "id": "en:e481",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3052,11 +3072,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -3097,13 +3117,14 @@
                     "percent_min": 0
                 }
             },
-            "percent_estimate": 0.0,
-            "quantity_estimate": 0.0,
+            "percent_estimate": 0.921,
+            "quantity_estimate": 0.9209906851823202,
             "text": "stéaroyl-2-lactylate de sodium"
         },
         {
             "ciqual_food_code_used": null,
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3198,11 +3219,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -3243,8 +3264,8 @@
                     "percent_min": 0
                 }
             },
-            "percent_estimate": 0.0,
-            "quantity_estimate": 0.0,
+            "percent_estimate": 0.921,
+            "quantity_estimate": 0.9209906851823202,
             "text": "gluten de blé"
         }
     ],
@@ -3311,9 +3332,9 @@
     ],
     "ingredients_ids_debug": [],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.748,
-        "total_difference": 3.74,
+        "number_of_ingredients_without_ciqual_code": 3,
+        "relative_difference": 0.206,
+        "total_difference": 1.03,
         "total_specified_input_percent": 5
     },
     "ingredients_n": 18,
@@ -3397,10 +3418,23 @@
         "en:emulsifier",
         "en:natural-vanilla-flavouring",
         "en:sourdough",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol",
+        "en:butterfat",
+        "en:e471",
+        "en:e481",
+        "en:emulsifier",
+        "en:fresh-cream",
+        "en:natural-vanilla-flavouring",
+        "en:salt",
+        "en:sourdough",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -3789,22 +3823,32 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],
@@ -3930,7 +3974,7 @@
     "quantity": "500g",
     "recipe_estimator": {
         "ingredient_count": 15,
-        "iterations": 19,
+        "iterations": 37,
         "nutrients": {
             "alcohol": {
                 "ingredient_count": 15,
@@ -3940,75 +3984,75 @@
             "calcium": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.26155
+                "unweighted_total": 0.39154999999999995
             },
             "carbohydrates": {
                 "ingredient_count": 15,
                 "product_total": 51,
-                "unweighted_total": 240.14,
+                "unweighted_total": 261.94,
                 "weighting": 1
             },
             "cholesterol": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.7446
+                "unweighted_total": 0.7453000000000001
             },
             "copper": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.0006630000000000001
+                "unweighted_total": 0.0010530000000000001
             },
             "energy": {
                 "ingredient_count": 15,
                 "notes": "Energy not used for calculation",
                 "product_total": 1534,
-                "unweighted_total": 7324.0
+                "unweighted_total": 8724.0
             },
             "fat": {
                 "ingredient_count": 15,
                 "product_total": 14,
-                "unweighted_total": 138.73000000000002,
+                "unweighted_total": 143.23000000000002,
                 "weighting": 1
             },
             "fiber": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 14.989999999999998
+                "unweighted_total": 37.489999999999995
             },
             "folates": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.0001077
+                "unweighted_total": 0.0008047
             },
             "iron": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.006519
+                "unweighted_total": 0.010619
             },
             "magnesium": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.17505999999999994
+                "unweighted_total": 0.3250599999999999
             },
             "manganese": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.004438040000000001
+                "unweighted_total": 0.005328040000000001
             },
             "monounsaturated-fat": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 39.0
+                "unweighted_total": 41.1
             },
             "pantothenic-acid": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.0027900000000000004
+                "unweighted_total": 0.00793
             },
             "phosphorus": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.7132
+                "unweighted_total": 1.8132000000000001
             },
             "polyols": {
                 "ingredient_count": 15,
@@ -4018,97 +4062,97 @@
             "polyunsaturated-fat": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 7.660000000000001
+                "unweighted_total": 7.670000000000001
             },
             "potassium": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.8477620000000001
+                "unweighted_total": 2.547762
             },
             "proteins": {
                 "ingredient_count": 15,
                 "product_total": 7.2,
-                "unweighted_total": 35.08,
+                "unweighted_total": 75.47999999999999,
                 "weighting": 1
             },
             "salt": {
                 "ingredient_count": 15,
                 "product_total": 1,
-                "unweighted_total": 196.2756,
+                "unweighted_total": 196.6256,
                 "weighting": 1
             },
             "saturated-fat": {
                 "ingredient_count": 15,
                 "product_total": 9.3,
-                "unweighted_total": 82.88,
+                "unweighted_total": 83.58,
                 "weighting": 1
             },
             "sodium": {
                 "ingredient_count": 15,
                 "notes": "Sodium not used for calculation",
                 "product_total": 0.4,
-                "unweighted_total": 78.37487
+                "unweighted_total": 78.51587
             },
             "sugars": {
                 "ingredient_count": 15,
                 "product_total": 14,
-                "unweighted_total": 106.03999999999998,
+                "unweighted_total": 108.53999999999998,
                 "weighting": 1
+            },
+            "vitamin-b1": {
+                "ingredient_count": 15,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.012204
             },
             "vitamin-b12": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 1.6399999999999998e-06
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 15,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.000604
+                "unweighted_total": 1.9799999999999997e-06
             },
             "vitamin-b2": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.000674
+                "unweighted_total": 0.0016740000000000001
             },
             "vitamin-b6": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.000406
+                "unweighted_total": 0.001286
             },
             "vitamin-b9": {
-                "ingredient_count": 4,
+                "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0
             },
             "vitamin-c": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.0013
+                "unweighted_total": 0.0018
             },
             "vitamin-d": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 4.35e-06
+                "unweighted_total": 4.6e-06
             },
             "vitamin-e": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.00633
+                "unweighted_total": 0.006428
             },
             "vitamin-pp": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.000416
+                "unweighted_total": 0.018916
             },
             "water": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 370.82399999999996
+                "unweighted_total": 375.82399999999996
             },
             "zinc": {
                 "ingredient_count": 15,
                 "notes": "Not listed on product",
-                "unweighted_total": 0.005131999999999999
+                "unweighted_total": 0.013532
             }
         },
         "status": 0

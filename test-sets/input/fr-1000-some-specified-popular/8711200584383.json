@@ -247,7 +247,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1358,11 +1358,13 @@
     "ingredients": [
         {
             "id": "en:huile-de-colza",
+            "is_in_taxonomy": 0,
             "percent": 35,
             "text": "Huile de colza"
         },
         {
             "id": "en:vinaigre-de-vin-rouge",
+            "is_in_taxonomy": 0,
             "text": "vinaigre de vin rouge"
         },
         {
@@ -1370,60 +1372,74 @@
             "ingredients": [
                 {
                     "id": "en:eau",
+                    "is_in_taxonomy": 0,
                     "text": "eau"
                 },
                 {
                     "id": "en:graines-de-soja",
+                    "is_in_taxonomy": 0,
                     "text": "graines de SOJA"
                 },
                 {
                     "id": "en:ble",
+                    "is_in_taxonomy": 0,
                     "text": "BL\u00c9"
                 },
                 {
                     "id": "en:sel",
+                    "is_in_taxonomy": 0,
                     "text": "sel"
                 },
                 {
                     "id": "en:vinaigre-d-alcool",
+                    "is_in_taxonomy": 0,
                     "text": "vinaigre d'alcool"
                 },
                 {
                     "id": "en:alcool",
+                    "is_in_taxonomy": 0,
                     "text": "alcool"
                 },
                 {
                     "id": "en:sucre",
+                    "is_in_taxonomy": 0,
                     "text": "sucre"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 18,
             "text": "sauce soja"
         },
         {
             "id": "en:vinaigre-de-vin-blanc",
+            "is_in_taxonomy": 0,
             "text": "vinaigre de vin blanc"
         },
         {
             "id": "en:huile-de-sesame",
+            "is_in_taxonomy": 0,
             "percent": 5.7,
             "text": "huile de S\u00c9SAME"
         },
         {
             "id": "en:sucre",
+            "is_in_taxonomy": 0,
             "text": "sucre"
         },
         {
             "id": "en:eau",
+            "is_in_taxonomy": 0,
             "text": "eau"
         },
         {
             "id": "en:graines-de-sesame-torrefiees",
+            "is_in_taxonomy": 0,
             "percent": 2.4,
             "text": "graines de S\u00c9SAME torr\u00e9fi\u00e9es"
         },
         {
             "id": "en:sel",
+            "is_in_taxonomy": 0,
             "text": "sel"
         },
         {
@@ -1431,13 +1447,16 @@
             "ingredients": [
                 {
                     "id": "en:carraghenanes-et-gomme-xanthane",
+                    "is_in_taxonomy": 0,
                     "text": "carragh\u00e9nanes et gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "\u00e9paississants"
         },
         {
             "id": "en:epices",
+            "is_in_taxonomy": 0,
             "text": "\u00e9pices"
         },
         {
@@ -1445,9 +1464,11 @@
             "ingredients": [
                 {
                     "id": "en:moutarde",
+                    "is_in_taxonomy": 0,
                     "text": "moutarde"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Peut contenir"
         }
     ],
@@ -1755,6 +1776,27 @@
         "en:vinaigre-de-vin-rouge"
     ],
     "ingredients_without_ciqual_codes_n": 18,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcool",
+        "en:ble",
+        "en:carraghenanes-et-gomme-xanthane",
+        "en:eau",
+        "en:epaississants",
+        "en:epices",
+        "en:graines-de-sesame-torrefiees",
+        "en:graines-de-soja",
+        "en:huile-de-colza",
+        "en:huile-de-sesame",
+        "en:moutarde",
+        "en:peut-contenir",
+        "en:sauce-soja",
+        "en:sel",
+        "en:sucre",
+        "en:vinaigre-d-alcool",
+        "en:vinaigre-de-vin-blanc",
+        "en:vinaigre-de-vin-rouge"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -2195,15 +2237,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

@@ -206,7 +206,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1320,67 +1320,85 @@
     "ingredients": [
         {
             "ciqual_food_code": "13050",
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple",
+            "is_in_taxonomy": 1,
             "text": "pommes"
         },
         {
             "ciqual_food_code": "13005",
+            "ecobalyse_code": "banana-non-eu",
             "id": "en:banana",
+            "is_in_taxonomy": 1,
             "text": "banane"
         },
         {
             "ciqual_food_code": "13044",
             "id": "en:white-grape",
+            "is_in_taxonomy": 1,
             "text": "raisins blancs"
         },
         {
             "ciqual_food_code": "13025",
+            "ecobalyse_code": "mango-non-eu",
             "id": "en:mango",
+            "is_in_taxonomy": 1,
             "text": "mangue"
         },
         {
             "ciqual_food_code": "13021",
+            "ecobalyse_code": "kiwi-non-eu",
             "id": "en:kiwi",
+            "is_in_taxonomy": 1,
             "percent": 6,
             "text": "kiwi"
         },
         {
             "ciqual_proxy_food_code": "20019",
+            "ecobalyse_code": "cucumber-eu",
             "id": "en:cucumber",
+            "is_in_taxonomy": 1,
             "text": "concombre"
         },
         {
             "ciqual_proxy_food_code": "20984",
             "id": "en:spirulina",
+            "is_in_taxonomy": 1,
             "text": "spiruline"
         },
         {
             "id": "en:flax",
+            "is_in_taxonomy": 1,
             "percent": 0.6,
             "text": "lin"
         },
         {
             "ciqual_food_code": "13067",
             "id": "en:lime-juice",
+            "is_in_taxonomy": 1,
             "percent": 0.1,
             "text": "jus de citron vert"
         },
         {
             "id": "en:safflower",
+            "is_in_taxonomy": 1,
             "text": "carthame"
         },
         {
             "id": "fr:infusion-de-the-vert-matcha",
+            "is_in_taxonomy": 0,
             "percent": 0.05,
             "text": "infusion de th\u00e9 vert matcha"
         },
         {
             "id": "fr:herbe-de-ble-moulue",
+            "is_in_taxonomy": 0,
             "percent": 0.03,
             "text": "herbe de bl\u00e9 moulue"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         }
     ],
@@ -1682,6 +1700,17 @@
         "fr:infusion-de-the-vert-matcha"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:flax",
+        "en:lime-juice",
+        "en:safflower",
+        "en:spirulina",
+        "en:vitamins",
+        "en:white-grape",
+        "fr:herbe-de-ble-moulue",
+        "fr:infusion-de-the-vert-matcha"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2115,21 +2144,31 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             }
         }
     ],

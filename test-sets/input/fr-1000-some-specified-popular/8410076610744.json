@@ -64,7 +64,7 @@
         "en:e322i",
         "en:e422"
     ],
-    "allergens": "en:milk,en:nuts,en:peanuts,en:soybeans, en:milk",
+    "allergens": "en:milk,en:nuts,en:peanuts,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:peanuts, cacahu\u00e8tes, soja, amandes, lait, lait, lait, soja, lactos\u00e9rum",
     "allergens_from_user": "(fr) en:milk,en:nuts,en:peanuts,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1029,57 +1029,71 @@
     "ingredients": [
         {
             "ciqual_food_code": "15037",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent": 38,
             "text": "_cacahu\u00e8tes_ grill\u00e9es"
         },
         {
             "ciqual_food_code": "20026",
             "id": "en:chicory-root",
+            "is_in_taxonomy": 1,
             "processing": "en:extract",
             "text": "racine de chicor\u00e9e"
         },
         {
             "id": "fr:proteine-isolee-de-soja",
+            "is_in_taxonomy": 0,
             "text": "prot\u00e9ine isol\u00e9e de _soja_"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 9,
             "text": "_amandes_"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose"
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "text": "mati\u00e8re grasse v\u00e9g\u00e9tale de palme"
         },
         {
             "id": "en:whey",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "text": "fructose"
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "text": "maltodextrine"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:tapioca",
+            "is_in_taxonomy": 1,
             "text": "amidon de tapioca"
         },
         {
@@ -1087,14 +1101,17 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "text": "glyc\u00e9rol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "humectant"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1102,20 +1119,27 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "19054",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:skimmed-milk-powder",
+                    "is_in_taxonomy": 1,
                     "text": "_lait_ \u00e9cr\u00e9m\u00e9 en poudre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "caramel en poudre"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "_lait_ \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
@@ -1123,17 +1147,21 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de tournesol"
                 },
                 {
                     "id": "en:soya",
+                    "is_in_taxonomy": 1,
                     "text": "de _soja_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         }
     ],
@@ -1307,6 +1335,25 @@
         "fr:proteine-isolee-de-soja"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:caramel-powder",
+        "en:chicory-root",
+        "en:e422",
+        "en:emulsifier",
+        "en:fructose",
+        "en:glucose-syrup",
+        "en:humectant",
+        "en:maltodextrin",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:soya",
+        "en:sunflower-lecithin",
+        "en:tapioca",
+        "en:whey",
+        "fr:proteine-isolee-de-soja"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 41,
@@ -1768,18 +1815,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

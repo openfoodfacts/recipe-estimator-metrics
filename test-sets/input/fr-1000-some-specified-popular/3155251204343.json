@@ -213,7 +213,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -985,36 +985,45 @@
     "ingredients": [
         {
             "id": "en:oil",
+            "is_in_taxonomy": 1,
             "text": "Huiles"
         },
         {
             "id": "en:non-hydrogenated-vegetable-fats",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "colza"
                 },
                 {
                     "ciqual_food_code": "16040",
                     "id": "en:coconut-oil",
+                    "is_in_taxonomy": 1,
                     "text": "coprah"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "text": "karit\u00e9"
                 },
                 {
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "text": "lin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 62.5,
             "text": "graisses v\u00e9g\u00e9tales non hydrog\u00e9n\u00e9es"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
@@ -1022,14 +1031,17 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1037,18 +1049,22 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "text": "extrait de romarin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "jus concentr\u00e9 de citron"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
@@ -1056,21 +1072,26 @@
             "ingredients": [
                 {
                     "id": "en:e160b",
+                    "is_in_taxonomy": 1,
                     "text": "rocou"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorants"
         },
         {
             "id": "en:e100",
+            "is_in_taxonomy": 1,
             "text": "curcumine"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         },
         {
             "id": "fr:ingredients",
+            "is_in_taxonomy": 0,
             "text": "Ingr\u00e9dients",
             "vegan": "en:yes",
             "vegetarian": "en:yes"
@@ -1341,12 +1362,32 @@
         "en:natural-flavouring",
         "en:non-hydrogenated-vegetable-fats",
         "en:oil",
-        "en:shea-butter",
+        "en:rapeseed",
         "en:sunflower-lecithin",
         "en:thiamin",
         "fr:ingredients"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:coconut-oil",
+        "en:colour",
+        "en:concentrated-lemon-juice",
+        "en:e100",
+        "en:e160b",
+        "en:e392",
+        "en:emulsifier",
+        "en:flax",
+        "en:natural-flavouring",
+        "en:non-hydrogenated-vegetable-fats",
+        "en:oil",
+        "en:salt",
+        "en:shea-butter",
+        "en:sunflower-lecithin",
+        "en:thiamin",
+        "fr:ingredients"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 30,
@@ -1792,10 +1833,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

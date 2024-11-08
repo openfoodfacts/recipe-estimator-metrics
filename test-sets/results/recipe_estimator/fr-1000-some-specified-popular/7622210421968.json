@@ -75,7 +75,7 @@
         "en:e503",
         "en:e503ii"
     ],
-    "allergens": "en:gluten,en:milk,en:soybeans, en:milk",
+    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, beurre, blé, beurre, lait, lait, lait, beurre, soja, lait",
     "allergens_from_user": "(en) en:gluten,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -266,7 +266,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1647,6 +1647,7 @@
     ],
     "ingredients": [
         {
+            "ciqual_food_code": "24000",
             "difference": 14.9,
             "id": "en:petit-beurre",
             "ingredients": [
@@ -1654,7 +1655,9 @@
                     "ciqual_food_code_used": "9410",
                     "ciqual_proxy_food_code": "9410",
                     "difference": 30.9,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "lost_water": 3.8150851305273625,
                     "nutrients": {
                         "alcohol": {
@@ -1749,13 +1752,13 @@
                             "percent_max": 1.6,
                             "percent_min": 1.6
                         },
+                        "vitamin-b1": {
+                            "percent_max": 0.00026000000000000003,
+                            "percent_min": 0.00026000000000000003
+                        },
                         "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
-                        },
-                        "vitamin-b1_unit": {
-                            "percent_max": 0.00026000000000000003,
-                            "percent_min": 0.00026000000000000003
                         },
                         "vitamin-b2": {
                             "percent_max": 1e-05,
@@ -1796,6 +1799,7 @@
                     "text": "Farine de _blé_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 37.1,
             "percent_hidden": 52,
             "quantity_estimate": 38.69615616942746,
@@ -1804,7 +1808,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.05881264233915726,
             "nutrients": {
                 "alcohol": {
@@ -1899,11 +1905,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1949,6 +1955,7 @@
             "ciqual_food_code_used": "16401",
             "difference": 7.31,
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "lost_water": 0.3335375711256891,
             "nutrients": {
                 "alcohol": {
@@ -2043,13 +2050,13 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
+                "vitamin-b1": {
+                    "percent_max": 1e-06,
+                    "percent_min": 1e-06
+                },
                 "vitamin-b12": {
                     "percent_max": 1e-08,
                     "percent_min": 1e-08
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 1e-06,
-                    "percent_min": 1e-06
                 },
                 "vitamin-b2": {
                     "percent_max": 5e-06,
@@ -2092,7 +2099,9 @@
         {
             "ciqual_food_code": "19054",
             "ciqual_food_code_used": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "lost_water": 0.13149417928869167,
             "nutrients": {
                 "alcohol": {
@@ -2187,13 +2196,13 @@
                     "percent_max": 53.1,
                     "percent_min": 53.1
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00043,
+                    "percent_min": 0.00043
+                },
                 "vitamin-b12": {
                     "percent_max": 4.02e-06,
                     "percent_min": 4.02e-06
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00043,
-                    "percent_min": 0.00043
                 },
                 "vitamin-b2": {
                     "percent_max": 0.0015,
@@ -2238,6 +2247,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2332,11 +2342,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2384,6 +2394,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2478,11 +2489,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2530,6 +2541,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e450i",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2624,11 +2636,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2674,6 +2686,7 @@
                     "text": "diphosphate disodique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.494,
             "quantity_estimate": 0.5154298109372245,
             "text": "poudre à lever"
@@ -2682,6 +2695,7 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0001391660489530507,
             "nutrients": {
                 "alcohol": {
@@ -2776,11 +2790,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2827,6 +2841,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2921,11 +2936,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2971,6 +2986,7 @@
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.494,
             "quantity_estimate": 0.5154298109372458,
             "text": "correcteur d'acidité"
@@ -2980,6 +2996,7 @@
             "ciqual_food_code_used": "31004",
             "difference": 47.5,
             "id": "en:milk-chocolate",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0036080086765605725,
             "nutrients": {
                 "alcohol": {
@@ -3074,13 +3091,13 @@
                     "percent_max": 53.1,
                     "percent_min": 53.1
                 },
+                "vitamin-b1": {
+                    "percent_max": 7.099999999999999e-05,
+                    "percent_min": 7.099999999999999e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 5.4e-07,
                     "percent_min": 5.4e-07
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 7.099999999999999e-05,
-                    "percent_min": 7.099999999999999e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00026000000000000003,
@@ -3125,6 +3142,7 @@
             "ciqual_food_code": "16030",
             "ciqual_food_code_used": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3219,11 +3237,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3268,6 +3286,7 @@
             "ciqual_food_code_used": "16030",
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3362,11 +3381,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3410,7 +3429,9 @@
         {
             "ciqual_food_code": "19054",
             "ciqual_food_code_used": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3505,13 +3526,13 @@
                     "percent_max": 53.1,
                     "percent_min": 53.1
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00043,
+                    "percent_min": 0.00043
+                },
                 "vitamin-b12": {
                     "percent_max": 4.02e-06,
                     "percent_min": 4.02e-06
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00043,
-                    "percent_min": 0.00043
                 },
                 "vitamin-b2": {
                     "percent_max": 0.0015,
@@ -3553,6 +3574,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3647,11 +3669,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -3700,6 +3722,7 @@
             "ciqual_food_code": "16401",
             "ciqual_food_code_used": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3794,13 +3817,13 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
+                "vitamin-b1": {
+                    "percent_max": 1e-06,
+                    "percent_min": 1e-06
+                },
                 "vitamin-b12": {
                     "percent_max": 1e-08,
                     "percent_min": 1e-08
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 1e-06,
-                    "percent_min": 1e-06
                 },
                 "vitamin-b2": {
                     "percent_max": 5e-06,
@@ -3846,6 +3869,7 @@
                     "ciqual_food_code": "42200",
                     "ciqual_food_code_used": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -3940,11 +3964,11 @@
                             "percent_max": 3.3,
                             "percent_min": 3.3
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -3988,6 +4012,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e476",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -4082,11 +4107,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -4132,6 +4157,7 @@
                     "text": "e476"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0,
             "quantity_estimate": 0.0,
             "text": "émulsifiant"
@@ -4139,6 +4165,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -4233,11 +4260,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -4613,11 +4640,30 @@
         "en:e503ii",
         "en:emulsifier",
         "en:flavouring",
-        "en:petit-beurre",
         "en:raising-agent",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e330",
+        "en:e450i",
+        "en:e476",
+        "en:e500ii",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:milk-chocolate",
+        "en:petit-beurre",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -5061,28 +5107,40 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "75",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:individual-bag"
+                "id": {
+                    "id": "en:individual-bag"
+                }
             },
             "weight_measured": 0.97
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 17.54
         }
@@ -5792,15 +5850,15 @@
                 "unweighted_total": 264.0,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 18,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.0011929999999999998
+            },
             "vitamin-b12": {
                 "ingredient_count": 18,
                 "notes": "Not listed on product",
                 "unweighted_total": 8.599999999999999e-06
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 18,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0011929999999999998
             },
             "vitamin-b2": {
                 "ingredient_count": 18,

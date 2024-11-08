@@ -229,7 +229,7 @@
                         "epi_score": "85",
                         "origin": "en:germany",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 85,
@@ -1284,6 +1284,7 @@
         {
             "ciqual_food_code": "9310",
             "id": "en:wholemeal-oat",
+            "is_in_taxonomy": 1,
             "percent": 100,
             "text": "Avena integral"
         }
@@ -1342,6 +1343,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:wholemeal-oat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 3,
@@ -1827,13 +1832,19 @@
     "packagings": [
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "recycling": {
-                "id": "es:Ecoponto-azul"
+                "id": {
+                    "id": "es:Ecoponto-azul"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

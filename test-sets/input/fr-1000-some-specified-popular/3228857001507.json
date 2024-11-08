@@ -205,7 +205,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1231,20 +1231,24 @@
     "ingredients": [
         {
             "id": "en:farine-complete-de-ble",
+            "is_in_taxonomy": 0,
             "percent": 45,
             "text": "Farine compl\u00e8te de bl\u00e9"
         },
         {
             "id": "en:eau",
+            "is_in_taxonomy": 0,
             "text": "eau"
         },
         {
             "id": "en:farine-de-ble",
+            "is_in_taxonomy": 0,
             "percent": 25,
             "text": "farine de bl\u00e9"
         },
         {
             "id": "en:huile-de-colza",
+            "is_in_taxonomy": 0,
             "text": "huile de colza"
         },
         {
@@ -1252,49 +1256,61 @@
             "ingredients": [
                 {
                     "id": "en:contient-alcool",
+                    "is_in_taxonomy": 0,
                     "text": "contient alcool"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "ar\u00f4me"
         },
         {
             "id": "en:gluten-de-ble",
+            "is_in_taxonomy": 0,
             "text": "gluten de bl\u00e9"
         },
         {
             "id": "en:sel",
+            "is_in_taxonomy": 0,
             "text": "sel"
         },
         {
             "id": "en:levure",
+            "is_in_taxonomy": 0,
             "text": "levure"
         },
         {
             "id": "en:vinaigre",
+            "is_in_taxonomy": 0,
             "text": "vinaigre"
         },
         {
             "id": "en:extrait-d-acerola",
+            "is_in_taxonomy": 0,
             "text": "extrait d'ac\u00e9rola"
         },
         {
             "id": "en:peut-contenir-des-traces-d-oeufs",
+            "is_in_taxonomy": 0,
             "text": "Peut contenir des traces d'\u0153ufs"
         },
         {
             "id": "en:soya",
+            "is_in_taxonomy": 1,
             "text": "soja"
         },
         {
             "id": "en:lait",
+            "is_in_taxonomy": 0,
             "text": "lait"
         },
         {
             "id": "en:fruits-a-coques",
+            "is_in_taxonomy": 0,
             "text": "fruits \u00e0 coques"
         },
         {
             "id": "en:graines-de-sesame",
+            "is_in_taxonomy": 0,
             "text": "graines de s\u00e9same"
         }
     ],
@@ -1452,6 +1468,25 @@
         "en:vinaigre"
     ],
     "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:arome",
+        "en:contient-alcool",
+        "en:eau",
+        "en:extrait-d-acerola",
+        "en:farine-complete-de-ble",
+        "en:farine-de-ble",
+        "en:fruits-a-coques",
+        "en:gluten-de-ble",
+        "en:graines-de-sesame",
+        "en:huile-de-colza",
+        "en:lait",
+        "en:levure",
+        "en:peut-contenir-des-traces-d-oeufs",
+        "en:sel",
+        "en:soya",
+        "en:vinaigre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 1,
@@ -1897,33 +1932,45 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "280 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 280,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 6.42
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "280 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 280,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:fastener"
+                "id": {
+                    "id": "en:fastener"
+                }
             },
             "weight_measured": 0.39
         }

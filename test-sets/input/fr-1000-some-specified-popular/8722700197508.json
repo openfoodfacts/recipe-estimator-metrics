@@ -47,7 +47,7 @@
         "en:e220",
         "en:e415"
     ],
-    "allergens": "en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
+    "allergens": "en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_from_ingredients": "SULFITES, SULFITES",
     "allergens_from_user": "(en) en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_hierarchy": [
@@ -245,7 +245,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -1778,17 +1778,21 @@
                         {
                             "ciqual_food_code": "11018",
                             "id": "en:wine-vinegar",
+                            "is_in_taxonomy": 1,
                             "text": "vinaigre de vin"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "Vinaigre Balsamique de Mod\u00e8ne"
                 },
                 {
                     "id": "en:concentrated-grape-must",
+                    "is_in_taxonomy": 1,
                     "text": "mo\u00fbt de raisin concentr\u00e9"
                 },
                 {
                     "id": "en:cooked-grape-must",
+                    "is_in_taxonomy": 1,
                     "text": "mo\u00fbt de raisin cuit"
                 },
                 {
@@ -1796,9 +1800,11 @@
                     "ingredients": [
                         {
                             "id": "en:e150d",
+                            "is_in_taxonomy": 1,
                             "text": "e150d"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "colorant"
                 },
                 {
@@ -1806,28 +1812,35 @@
                     "ingredients": [
                         {
                             "id": "en:e220",
+                            "is_in_taxonomy": 1,
                             "text": "e220"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "antioxydant"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:pgi, en:pgi",
             "percent": 60,
             "text": "Aceto Balsamico di Modena"
         },
         {
             "id": "en:cooked-grape-must",
+            "is_in_taxonomy": 1,
             "text": "mo\u00fbt de raisin cuit"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon modifi\u00e9"
         },
         {
@@ -1835,9 +1848,11 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississant"
         }
     ],
@@ -2056,6 +2071,21 @@
         "fr:aceto-balsamico-di-modena"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:balsamic-vinegar-of-modena",
+        "en:colour",
+        "en:concentrated-grape-must",
+        "en:cooked-grape-must",
+        "en:e150d",
+        "en:e220",
+        "en:e415",
+        "en:modified-starch",
+        "en:thickener",
+        "en:wine-vinegar",
+        "fr:aceto-balsamico-di-modena"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,
@@ -2422,26 +2452,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:spout"
+                "id": {
+                    "id": "en:spout"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

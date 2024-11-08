@@ -183,7 +183,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1057,6 +1057,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 49,
             "text": "flocons d'avoine compl\u00e8te"
@@ -1068,15 +1069,18 @@
                 {
                     "ciqual_food_code": "9001",
                     "id": "en:spelt",
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9peautre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 21,
             "text": "flocons de bl\u00e9"
         },
         {
             "id": "fr:complet",
+            "is_in_taxonomy": 0,
             "text": "complet"
         },
         {
@@ -1085,18 +1089,23 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "13111",
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:dried-apple-pieces",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent": 13,
                     "text": "morceaux de pommes s\u00e9ch\u00e9es"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "raisins sec"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 2,
             "processing": "en:chopped,en:grilled",
@@ -1105,12 +1114,14 @@
         {
             "ciqual_food_code": "15041",
             "id": "en:ground-almonds",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 2,
             "text": "amandes hach\u00e9es"
         },
         {
             "id": "fr:contient-naturellement-du-sucre",
+            "is_in_taxonomy": 0,
             "text": "contient naturellement du sucre"
         }
     ],
@@ -1223,6 +1234,16 @@
         "fr:contient-naturellement-du-sucre"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:ground-almonds",
+        "en:raisin",
+        "en:spelt",
+        "en:wheat-flakes",
+        "en:whole-grain-oat-flakes",
+        "fr:complet",
+        "fr:contient-naturellement-du-sucre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -1603,27 +1624,35 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 44.1
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 3.4
         }

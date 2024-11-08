@@ -195,7 +195,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -1192,17 +1192,21 @@
     "ingredients": [
         {
             "id": "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee",
+            "is_in_taxonomy": 0,
             "percent": 80,
             "text": "cuisson et assainissement Huile de tournesol raffin\u00e9e"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent": 20,
             "text": "huile d'olive vierge extra"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         }
     ],
@@ -1295,6 +1299,11 @@
         "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:vitamin-d",
+        "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -1720,21 +1729,31 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

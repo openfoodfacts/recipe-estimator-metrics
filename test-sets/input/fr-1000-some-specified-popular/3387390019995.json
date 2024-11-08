@@ -270,7 +270,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1944,27 +1944,35 @@
         {
             "ciqual_food_code": "9010",
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent": 41.3,
             "text": "BLE complet"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de BLE"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
@@ -1973,50 +1981,64 @@
                 {
                     "ciqual_food_code": "18100",
                     "id": "en:fat-reduced-cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "text": "cacao maigre en poudre"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 }
             ],
-            "percent": 3,
+            "is_in_taxonomy": 1,
+            "percent": 3.0,
             "text": "chocolat"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:sweetened-condensed-milk",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "19051",
+                    "ecobalyse_code": "milk",
                     "id": "en:milk",
+                    "is_in_taxonomy": 1,
                     "text": "LAIT"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "LAIT concentr\u00e9 sucr\u00e9"
         },
         {
             "id": "en:e170i",
+            "is_in_taxonomy": 1,
             "text": "carbonate de calcium"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
@@ -2024,49 +2046,62 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:brown-sugar-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de sucre caram\u00e9lis\u00e9"
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "text": "fer"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "text": "vitamine B3"
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "text": "vitamine B5"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "text": "vitamine B6"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamine B2"
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "text": "vitamine B9"
         }
     ],
@@ -2464,7 +2499,6 @@
     "ingredients_with_unspecified_percent_n": 23,
     "ingredients_with_unspecified_percent_sum": 58.7,
     "ingredients_without_ciqual_codes": [
-        "en:brown-sugar-syrup",
         "en:chocolate",
         "en:e101",
         "en:e170i",
@@ -2480,7 +2514,30 @@
         "en:vitamin-d",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:brown-sugar-syrup",
+        "en:chocolate",
+        "en:cocoa-paste",
+        "en:e101",
+        "en:e170i",
+        "en:e375",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:iron",
+        "en:natural-flavouring",
+        "en:pantothenic-acid",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 48,
@@ -3094,36 +3151,52 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:Container"
+                "id": {
+                    "id": "en:Container"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

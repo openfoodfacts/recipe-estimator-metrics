@@ -175,7 +175,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1071,23 +1071,28 @@
     "ingredients": [
         {
             "id": "fr:focons-d-avoine",
+            "is_in_taxonomy": 0,
             "percent": 44,
             "text": "focons d'avoine"
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "percent": 11,
             "processing": "en:grilled",
             "text": "flocons d'orge"
         },
         {
             "ciqual_food_code": "13000",
+            "ecobalyse_code": "apricot-eu",
             "id": "en:dried-apricots",
+            "is_in_taxonomy": 1,
             "percent": 11,
             "text": "abricots secs"
         },
         {
             "id": "fr:abricos-tn-de-riz",
+            "is_in_taxonomy": 0,
             "text": "abricos Tn de riz"
         },
         {
@@ -1097,35 +1102,44 @@
                 {
                     "ciqual_food_code": "13046",
                     "id": "en:raisin",
+                    "is_in_taxonomy": 1,
                     "percent": 99.5,
                     "text": "raisins secs"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 11,
             "text": "raisins secs"
         },
         {
             "id": "fr:chips-de-noix-derat-draines-de-lin",
+            "is_in_taxonomy": 0,
             "text": "chips de noix derat Draines de lin"
         },
         {
             "ciqual_food_code": "13008",
+            "ecobalyse_code": "cherry-tr",
             "id": "en:cherry",
+            "is_in_taxonomy": 1,
             "percent": 2.3,
             "processing": "en:freeze-dried",
             "text": "cerises"
         },
         {
             "id": "fr:cassis-lyophilises-1",
+            "is_in_taxonomy": 0,
             "text": "cassis lyophilis\u00e9s* 1"
         },
         {
             "id": "fr:",
+            "is_in_taxonomy": 0,
             "text": "%"
         }
     ],
@@ -1245,6 +1259,16 @@
         "fr:focons-d-avoine"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-flakes",
+        "en:raisin",
+        "fr:",
+        "fr:abricos-tn-de-riz",
+        "fr:cassis-lyophilises-1",
+        "fr:chips-de-noix-derat-draines-de-lin",
+        "fr:focons-d-avoine"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -1627,34 +1651,46 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 7.93
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             },
             "weight_measured": 1.52
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 400,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 50.41
         }

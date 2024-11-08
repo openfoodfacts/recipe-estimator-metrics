@@ -264,7 +264,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2474,7 +2474,9 @@
         {
             "ciqual_food_code_used": "9530",
             "ciqual_proxy_food_code": "9530",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:wholemeal-rye-flour",
+            "is_in_taxonomy": 1,
             "lost_water": 10.239441987197319,
             "nutrients": {
                 "alcohol": {
@@ -2569,13 +2571,13 @@
                     "percent_max": 2.31,
                     "percent_min": 2.31
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00032,
+                    "percent_min": 0.00032
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00032,
-                    "percent_min": 0.00032
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00025,
@@ -2620,6 +2622,7 @@
             "ciqual_food_code": "9621",
             "ciqual_food_code_used": "9621",
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2714,11 +2717,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2765,6 +2768,7 @@
             "ciqual_food_code": "9311",
             "ciqual_food_code_used": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "lost_water": 0.4618799020596929,
             "nutrients": {
                 "alcohol": {
@@ -2859,13 +2863,13 @@
                     "percent_max": 0.97,
                     "percent_min": 0.97
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00043,
+                    "percent_min": 0.00043
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00043,
-                    "percent_min": 0.00043
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00014000000000000001,
@@ -2911,6 +2915,7 @@
             "ciqual_food_code_used": "15010",
             "difference": 3.78,
             "id": "en:sesame-seeds",
+            "is_in_taxonomy": 1,
             "lost_water": 0.15914277813541886,
             "nutrients": {
                 "alcohol": {
@@ -3005,13 +3010,13 @@
                     "percent_max": 0.3,
                     "percent_min": 0.3
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00079,
+                    "percent_min": 0.00079
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00079,
-                    "percent_min": 0.00079
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00025,
@@ -3055,6 +3060,7 @@
             "ciqual_food_code": "9660",
             "ciqual_food_code_used": "9660",
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "lost_water": 0.09124441971524283,
             "nutrients": {
                 "alcohol": {
@@ -3149,13 +3155,13 @@
                     "percent_max": 10.0,
                     "percent_min": 10.0
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00132,
+                    "percent_min": 0.00132
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00132,
-                    "percent_min": 0.00132
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00014000000000000001,
@@ -3198,6 +3204,7 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.00032847991097487416,
             "nutrients": {
                 "alcohol": {
@@ -3292,11 +3299,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3440,6 +3447,14 @@
     "ingredients_with_unspecified_percent_sum": 92.1,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oat-flakes",
+        "en:salt",
+        "en:sesame-seeds",
+        "en:wheat-bran",
+        "en:wheat-germ"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 15,
@@ -3992,16 +4007,22 @@
     "packagings": [
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "quantity_per_unit": "230 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 230,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:envelope"
+                "id": {
+                    "id": "en:envelope"
+                }
             }
         }
     ],
@@ -4708,15 +4729,15 @@
                 "unweighted_total": 13.58,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 6,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.00286
+            },
             "vitamin-b12": {
                 "ingredient_count": 6,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 6,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.00286
             },
             "vitamin-b2": {
                 "ingredient_count": 6,

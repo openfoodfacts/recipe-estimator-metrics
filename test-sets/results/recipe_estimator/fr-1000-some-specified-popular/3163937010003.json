@@ -197,7 +197,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1538,7 +1538,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 47.720042417815485,
             "nutrients": {
                 "alcohol": {
@@ -1633,11 +1635,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1682,6 +1684,7 @@
             "ciqual_food_code": "1014",
             "ciqual_food_code_used": "1014",
             "id": "en:alcohol",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1776,11 +1779,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1824,7 +1827,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.05539321878208372,
             "nutrients": {
                 "alcohol": {
@@ -1919,11 +1924,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1967,6 +1972,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:liquorice",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2061,11 +2067,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2115,6 +2121,7 @@
             "ciqual_food_code_used": null,
             "difference": 1.36,
             "id": "en:aniseed",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2209,11 +2216,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2262,7 +2269,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:caramelised-sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2357,11 +2366,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2405,6 +2414,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:mixed-condiments",
+            "is_in_taxonomy": 1,
             "labels": "en:vegan",
             "lost_water": 0.0,
             "nutrients": {
@@ -2500,11 +2510,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2681,6 +2691,13 @@
         "en:mixed-condiments"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol",
+        "en:aniseed",
+        "en:liquorice",
+        "en:mixed-condiments"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -2986,29 +3003,41 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:brown-glass"
+                "id": {
+                    "id": "en:brown-glass"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1L",
             "quantity_per_unit_unit": "l",
             "quantity_per_unit_value": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         }
     ],
@@ -3403,12 +3432,12 @@
                 "notes": "Not listed on product",
                 "unweighted_total": 199.6
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 7,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 7,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

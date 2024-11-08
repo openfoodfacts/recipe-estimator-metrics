@@ -195,7 +195,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1046,43 +1046,53 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 50,
             "text": "flocons d'avoine compl\u00e8te"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "15023",
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
             "ingredients": [
                 {
                     "ciqual_food_code": "15041",
                     "id": "en:almond",
+                    "is_in_taxonomy": 1,
                     "processing": "en:pieces",
                     "text": "amandes"
                 },
                 {
                     "ciqual_food_code": "15004",
+                    "ecobalyse_code": "hazelnut-unshelled-non-eu",
                     "id": "en:hazelnut",
+                    "is_in_taxonomy": 1,
                     "processing": "en:pieces,en:toasted",
                     "text": "noisettes"
                 },
                 {
                     "ciqual_proxy_food_code": "15055",
                     "id": "en:cashew-nuts",
+                    "is_in_taxonomy": 1,
                     "processing": "en:pieces",
                     "text": "noix de cajou"
                 },
                 {
                     "ciqual_food_code": "15026",
                     "id": "en:pecan-nut",
+                    "is_in_taxonomy": 1,
                     "processing": "en:pieces",
                     "text": "noix de p\u00e9can"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 11,
             "text": "noix"
         },
@@ -1093,62 +1103,80 @@
                 {
                     "ciqual_proxy_food_code": "9100",
                     "id": "en:rice-semolina",
+                    "is_in_taxonomy": 1,
                     "text": "semoule de riz"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine de bl\u00e9"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "id": "en:malted-barley",
+                    "is_in_taxonomy": 1,
                     "text": "malt d'orge"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 8,
             "text": "riz extrud\u00e9"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "text": "miel"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:caramelised-sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre caram\u00e9lis\u00e9"
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "text": "cannelle"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         },
         {
@@ -1156,9 +1184,11 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "text": "extrait riche en tocoph\u00e9rols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         }
     ],
@@ -1456,6 +1486,23 @@
         "en:natural-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:antioxidant",
+        "en:cashew-nuts",
+        "en:cinnamon",
+        "en:e306",
+        "en:extruded-rice",
+        "en:glucose-syrup",
+        "en:honey",
+        "en:malted-barley",
+        "en:natural-flavouring",
+        "en:pecan-nut",
+        "en:rice-semolina",
+        "en:salt",
+        "en:whole-grain-oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -1890,7 +1937,9 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

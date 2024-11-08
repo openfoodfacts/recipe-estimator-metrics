@@ -173,13 +173,13 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 75.225,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 24.775,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 51.153,
@@ -1002,6 +1002,7 @@
             "ciqual_food_code_used": null,
             "difference": 98.1,
             "id": "fr:iait-de-vache-pasteurise",
+            "is_in_taxonomy": 0,
             "labels": "en:fed-without-gmos",
             "lost_water": 0.0,
             "nutrients": {
@@ -1097,11 +1098,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1151,6 +1152,7 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1245,11 +1247,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1293,6 +1295,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:coagulating-enzyme",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1387,11 +1390,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1443,6 +1446,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1537,11 +1541,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -1587,6 +1591,7 @@
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.33e-15,
             "quantity_estimate": 5.329070518200751e-15,
             "text": "acidifiant"
@@ -1666,6 +1671,14 @@
         "fr:iait-de-vache-pasteurise"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:coagulating-enzyme",
+        "en:e330",
+        "en:salt",
+        "fr:iait-de-vache-pasteurise"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -2029,10 +2042,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],
@@ -2305,12 +2322,12 @@
                 "unweighted_total": 0.0,
                 "weighting": 1
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

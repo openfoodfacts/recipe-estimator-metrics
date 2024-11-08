@@ -258,7 +258,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1981,6 +1981,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 60,
             "text": "Flocons d'_avoine_ compl\u00e8te"
         },
@@ -1991,14 +1992,18 @@
                 {
                     "ciqual_food_code": "13046",
                     "id": "en:raisin",
+                    "is_in_taxonomy": 1,
                     "text": "raisins secs"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 18,
             "text": "raisins secs"
         },
@@ -2009,15 +2014,18 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "_bl\u00e9_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 12,
             "text": "flocons d'_\u00e9peautre_* complets"
         },
         {
             "ciqual_food_code": "9010",
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent": 5,
             "processing": "en:flakes,en:toasted",
             "text": "_bl\u00e9_* complet"
@@ -2025,12 +2033,14 @@
         {
             "ciqual_food_code": "15041",
             "id": "en:whole-almonds",
+            "is_in_taxonomy": 1,
             "percent": 3,
             "text": "amandes* enti\u00e8res"
         },
         {
             "ciqual_food_code": "13113",
             "id": "en:cranberry",
+            "is_in_taxonomy": 1,
             "percent": 0.7,
             "processing": "en:freeze-dried",
             "text": "canneberges"
@@ -2038,13 +2048,16 @@
         {
             "ciqual_food_code": "13007",
             "id": "en:blackcurrant",
+            "is_in_taxonomy": 1,
             "percent": 0.7,
             "processing": "en:freeze-dried",
             "text": "cassis"
         },
         {
             "ciqual_food_code": "13028",
+            "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
+            "is_in_taxonomy": 1,
             "percent": 0.7,
             "processing": "en:freeze-dried",
             "text": "myrtilles"
@@ -2225,6 +2238,17 @@
     "ingredients_with_unspecified_percent_sum": 29.97002997003,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:blackcurrant",
+        "en:cranberry",
+        "en:raisin",
+        "en:wheat",
+        "en:whole-almonds",
+        "en:whole-grain-oat-flakes",
+        "en:whole-grain-spelt-flakes",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 24,
@@ -2734,14 +2758,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

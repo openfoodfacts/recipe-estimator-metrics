@@ -204,7 +204,7 @@
                         "epi_score": "0",
                         "origin": "en:tanzania",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1391,7 +1391,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "19023",
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 72.8,
             "text": "LAIT entier"
@@ -1402,18 +1404,22 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "labels": "en:fair-trade",
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "18100",
                     "id": "en:cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "labels": "en:fair-trade",
                     "percent": 3.5,
                     "text": "cacao en poudre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 10.9,
             "text": "chocolat en poudre"
@@ -1421,23 +1427,29 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
             "text": "creme"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
             "text": "sucre de canne"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "lait \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de mais"
         }
     ],
@@ -1591,6 +1603,13 @@
     "ingredients_with_unspecified_percent_sum": 23.7,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate-powder",
+        "en:cocoa-powder",
+        "en:corn-starch",
+        "en:cream"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -2035,20 +2054,28 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "shape": {
-                "id": "en:individual-pot"
+                "id": {
+                    "id": "en:individual-pot"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         }
     ],

@@ -49,7 +49,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:milk,en:soybeans, en:milk, en:milk, en:soybeans",
+    "allergens": "en:milk,en:soybeans, en:milk, en:milk, en:soybeans, en:milk, en:milk, en:soybeans",
     "allergens_from_ingredients": "en:nuts, milk, milk, soy",
     "allergens_from_user": "(fr) en:milk, en:milk, en:soybeans",
     "allergens_hierarchy": [
@@ -210,7 +210,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1588,42 +1588,54 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "text": "cocoa butter"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 12,
             "text": "hazelnuts"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "skimmed milk powder"
         },
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "text": "cocoa mass"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "whey powder"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "text": "concentrated butter"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut-paste",
+            "is_in_taxonomy": 1,
             "text": "hazelnut paste"
         },
         {
@@ -1631,14 +1643,17 @@
             "ingredients": [
                 {
                     "id": "en:e322i",
+                    "is_in_taxonomy": 1,
                     "text": "lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
+            "is_in_taxonomy": 1,
             "text": "vanilla extract"
         }
     ],
@@ -1839,6 +1854,16 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e322i",
+        "en:emulsifier",
+        "en:vanilla-extract",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2317,14 +2342,18 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "100 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 100,
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],

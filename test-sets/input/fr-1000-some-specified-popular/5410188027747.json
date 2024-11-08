@@ -221,7 +221,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1514,56 +1514,70 @@
     "ingredients": [
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent": 88,
             "text": "Tomate"
         },
         {
             "ciqual_food_code": "20020",
+            "ecobalyse_code": "zucchini-eu",
             "id": "en:courgette",
+            "is_in_taxonomy": 1,
             "text": "courgette"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "jus de citron"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "text": "oignon"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent": 0.9,
             "text": "huile d'olive vierge extra"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "text": "ail"
         },
         {
             "ciqual_food_code": "11033",
             "id": "en:basil",
+            "is_in_taxonomy": 1,
             "percent": 0.5,
             "text": "basilic"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "11027",
             "id": "en:mint",
+            "is_in_taxonomy": 1,
             "percent": 0.15,
             "text": "menthe"
         },
         {
             "ciqual_food_code": "11019",
             "id": "en:white-pepper",
+            "is_in_taxonomy": 1,
             "text": "poivre blanc"
         }
     ],
@@ -1746,6 +1760,15 @@
     "ingredients_with_unspecified_percent_sum": 11.2958333333333,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:basil",
+        "en:garlic",
+        "en:lemon-juice",
+        "en:mint",
+        "en:salt",
+        "en:white-pepper"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2255,26 +2278,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pure-pak-classic"
+                "id": {
+                    "id": "en:pure-pak-classic"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         }
     ],
@@ -2567,6 +2602,12 @@
         }
     },
     "specific_ingredients": [
+        {
+            "id": "en:vegetable",
+            "ingredient": "l\u00e9gumes",
+            "percent": 93,
+            "text": "teneur en l\u00e9gumes: 93%"
+        },
         {
             "id": "en:vegetable",
             "ingredient": "l\u00e9gumes",

@@ -170,13 +170,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.9353571428571,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 0.0646428571428572,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0.0439571428571429,
@@ -872,38 +872,49 @@
     "ingredients": [
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot",
+            "is_in_taxonomy": 1,
             "percent": 82,
             "text": "Carottes"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre d'alcool"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:liquid-sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre liquide"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "origins": "en:sicily",
             "percent": 0.6,
             "text": "jus de citron"
@@ -914,45 +925,57 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "text": "graines de moutarde"
                 },
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:alcohol-vinegar",
+                    "is_in_taxonomy": 1,
                     "text": "vinaigre d'alcool"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "moutarde de Dijon"
         },
         {
             "ciqual_food_code": "13125",
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon-zest",
+            "is_in_taxonomy": 1,
             "percent": 0.1,
             "processing": "en:extract",
             "text": "zeste de citron"
         },
         {
             "ciqual_proxy_food_code": "9510",
+            "ecobalyse_code": "potato-starch",
             "id": "en:potato-starch",
+            "is_in_taxonomy": 1,
             "text": "f\u00e9cule de pomme de terre"
         },
         {
             "id": "en:e415",
+            "is_in_taxonomy": 1,
             "text": "gomme xanthane"
         },
         {
             "id": "en:e412",
+            "is_in_taxonomy": 1,
             "text": "gomme guar"
         },
         {
@@ -960,18 +983,22 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic-puree",
+            "is_in_taxonomy": 1,
             "text": "pur\u00e9e d'ail"
         },
         {
             "id": "en:natural-pepper-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de poivre"
         }
     ],
@@ -1121,6 +1148,20 @@
         "en:natural-pepper-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:antioxidant",
+        "en:dijon-mustard",
+        "en:e300",
+        "en:e412",
+        "en:e415",
+        "en:garlic-puree",
+        "en:lemon-juice",
+        "en:mustard-seed",
+        "en:natural-pepper-flavouring",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -1500,32 +1541,46 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

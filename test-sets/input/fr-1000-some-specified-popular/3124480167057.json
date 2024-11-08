@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1468,7 +1468,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:spring-water",
+            "is_in_taxonomy": 1,
             "percent": 80,
             "text": "EAU DE SOURCE"
         },
@@ -1477,39 +1479,50 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13034",
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
+                    "is_in_taxonomy": 1,
                     "percent": 6.5,
                     "text": "ORANGE"
                 },
                 {
                     "ciqual_food_code": "13050",
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:apple",
+                    "is_in_taxonomy": 1,
                     "text": "POMME"
                 },
                 {
                     "ciqual_food_code": "13016",
                     "id": "en:passionfruit",
+                    "is_in_taxonomy": 1,
                     "percent": 0.1,
                     "text": "FRUIT DE LA PASSION"
                 },
                 {
                     "ciqual_food_code": "13025",
+                    "ecobalyse_code": "mango-non-eu",
                     "id": "en:mango",
+                    "is_in_taxonomy": 1,
                     "percent": 0.08,
                     "text": "MANGUE"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 12,
             "text": "JUS DE FRUITS \u00c0 BASE DE CONCENTRES"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "SUCRE"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "SIROP DE FRUCTOSE"
         },
         {
@@ -1517,17 +1530,21 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "ACIDE CITRIQUE"
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "ACIDE MALIQUE"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "ACIDIFIANTS"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "AROME NATUREL"
         },
         {
@@ -1535,9 +1552,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "ACIDE ASCORBIQUE"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "ANTIOXYDANT"
         },
         {
@@ -1545,13 +1564,16 @@
             "ingredients": [
                 {
                     "id": "en:e160c",
+                    "is_in_taxonomy": 1,
                     "text": "EXTRAIT DE PAPRIKA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "COLORANT"
         },
         {
             "id": "en:natural-orange-flavouring",
+            "is_in_taxonomy": 1,
             "text": "AROME NATUREL D'ORANGE"
         }
     ],
@@ -1801,6 +1823,21 @@
         "en:natural-orange-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:antioxidant",
+        "en:colour",
+        "en:e160c",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:fructose-syrup",
+        "en:fruit-juice-from-concentrate",
+        "en:natural-flavouring",
+        "en:natural-orange-flavouring",
+        "en:passionfruit"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 27,
@@ -2227,26 +2264,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

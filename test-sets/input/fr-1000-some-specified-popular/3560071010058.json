@@ -223,7 +223,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1382,12 +1382,16 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 18,
             "text": "farine de _bl\u00e9_"
         },
@@ -1396,85 +1400,109 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_proxy_food_code": "9532",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rye-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 7.7,
                     "text": "farine de _seigle_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "levain de _seigle_"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 8.7,
             "text": "farine de _bl\u00e9_ complet"
         },
         {
             "ciqual_proxy_food_code": "9532",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rye-flour",
+            "is_in_taxonomy": 1,
             "percent": 5.9,
             "text": "farine de _seigle_"
         },
         {
             "ciqual_food_code": "15034",
             "id": "en:flax-seed",
+            "is_in_taxonomy": 1,
             "percent": 5.5,
             "text": "graines de lin"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent": 3.6,
             "text": "graines de tournesol"
         },
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 3.2,
             "text": "flocons d'_avoine_"
         },
         {
             "ciqual_proxy_food_code": "9530",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:wholemeal-rye-flour",
+            "is_in_taxonomy": 1,
             "percent": 2.6,
             "text": "farine de _seigle_ complet"
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "percent": 2.6,
             "text": "flocons d'_orge_"
         },
         {
             "ciqual_food_code": "9330",
             "id": "en:millet-seed",
+            "is_in_taxonomy": 1,
             "percent": 2.6,
             "text": "graines de millet"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de malt d'orge"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:wheat-protein",
+            "is_in_taxonomy": 1,
             "text": "prot\u00e9ines de _bl\u00e9_"
         },
         {
@@ -1482,9 +1510,11 @@
             "ingredients": [
                 {
                     "id": "en:e200",
+                    "is_in_taxonomy": 1,
                     "text": "acide sorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "conservateur"
         },
         {
@@ -1492,14 +1522,18 @@
             "ingredients": [
                 {
                     "id": "en:e262",
+                    "is_in_taxonomy": 1,
                     "text": "ac\u00e9tates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteur d'acidit\u00e9"
         },
         {
             "ciqual_food_code": "9550",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-malt-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de malt d'_orge_"
         },
         {
@@ -1507,13 +1541,16 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "agent de traitement de la farine"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me naturel"
         }
@@ -1870,10 +1907,28 @@
         "en:natural-flavouring",
         "en:preservative",
         "en:rye-sourdough",
+        "en:wheat-protein"
+    ],
+    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:barley-flakes",
+        "en:barley-malt-extract",
+        "en:e200",
+        "en:e262",
+        "en:e300",
+        "en:flax-seed",
+        "en:flour-treatment-agent",
+        "en:millet-seed",
+        "en:natural-flavouring",
+        "en:oat-flakes",
+        "en:preservative",
+        "en:rye-sourdough",
+        "en:salt",
         "en:wheat-protein",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 47,
@@ -2330,10 +2385,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

@@ -195,7 +195,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -1194,6 +1194,7 @@
             "ciqual_food_code_used": null,
             "difference": 30.0,
             "id": "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1288,11 +1289,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1342,7 +1343,9 @@
             "ciqual_food_code": "17270",
             "ciqual_food_code_used": "17270",
             "difference": 30.0,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "lost_water": 0.05003001500750376,
             "nutrients": {
                 "alcohol": {
@@ -1437,11 +1440,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1486,6 +1489,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1580,11 +1584,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1725,6 +1729,11 @@
         "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:vitamin-d",
+        "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -2150,21 +2159,31 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],
@@ -2489,12 +2508,12 @@
                 "product_total": 0,
                 "unweighted_total": 0.0
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

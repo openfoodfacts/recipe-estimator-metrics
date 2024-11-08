@@ -195,7 +195,7 @@
                         "epi_score": "97",
                         "origin": "en:united-kingdom",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 97,
@@ -1155,6 +1155,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 100,
             "text": "Rolled Oats"
         }
@@ -1204,6 +1205,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -1629,10 +1634,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

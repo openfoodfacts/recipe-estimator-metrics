@@ -178,7 +178,7 @@
                         "epi_score": "17",
                         "origin": "en:mexico",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 17,
@@ -986,6 +986,7 @@
             "ciqual_food_code_used": "31089",
             "difference": 0.0,
             "id": "en:agave-syrup",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 27.880025575447565,
             "nutrients": {
@@ -1081,11 +1082,11 @@
                     "percent_max": 70.2,
                     "percent_min": 70.2
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1195,6 +1196,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:agave-syrup"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -1572,10 +1577,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:vial"
+                "id": {
+                    "id": "en:vial"
+                }
             }
         }
     ],
@@ -1839,12 +1848,12 @@
                 "unweighted_total": 70.2,
                 "weighting": 1
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

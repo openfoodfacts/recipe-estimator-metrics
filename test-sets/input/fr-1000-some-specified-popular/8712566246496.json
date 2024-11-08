@@ -259,7 +259,7 @@
                         "epi_score": "0",
                         "origin": "en:india",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1504,44 +1504,54 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "11004",
+            "ecobalyse_code": "cucumber-eu",
             "id": "en:gherkin",
             "ingredients": [
                 {
                     "id": "en:sulfite",
+                    "is_in_taxonomy": 1,
                     "text": "dont SULFITES"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Cornichons"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "percent": 42,
             "text": "vinaigre d'alcool"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "text": "oignon"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "11013",
             "id": "en:mustard-seed",
+            "is_in_taxonomy": 1,
             "percent": 0.6,
             "text": "graines de MOUTARDE"
         },
         {
             "ciqual_food_code": "11026",
             "id": "en:coriander-seed",
+            "is_in_taxonomy": 1,
             "text": "graines de coriandre"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         }
     ],
@@ -1697,6 +1707,15 @@
         "en:sulfite"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:coriander-seed",
+        "en:mustard-seed",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:sulfite"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2211,26 +2230,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

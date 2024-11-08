@@ -74,7 +74,7 @@
         "en:e950",
         "en:e955"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT, LAIT, LAIT, LAIT, LAIT, ferments lactiques",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -271,13 +271,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 94.9294642857143,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 5.07053571428572,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 88.2844017857143,
@@ -1496,14 +1496,18 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 89.8,
             "text": "LAIT \u00e9cr\u00e9m\u00e9"
         },
         {
             "ciqual_food_code": "13028",
+            "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
+            "is_in_taxonomy": 1,
             "percent": 5.8,
             "text": "myrtille"
         },
@@ -1516,9 +1520,11 @@
                     "ingredients": [
                         {
                             "id": "en:e1422",
+                            "is_in_taxonomy": 1,
                             "text": "e1422"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "amidon transform\u00e9 de ma\u00efs"
                 },
                 {
@@ -1526,9 +1532,11 @@
                     "ingredients": [
                         {
                             "id": "en:e440a",
+                            "is_in_taxonomy": 1,
                             "text": "e440"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "pectine de fruits"
                 },
                 {
@@ -1536,16 +1544,20 @@
                     "ingredients": [
                         {
                             "id": "en:e412",
+                            "is_in_taxonomy": 1,
                             "text": "e412"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "gomme guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississants"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         },
         {
@@ -1556,9 +1568,11 @@
                     "ingredients": [
                         {
                             "id": "en:e331",
+                            "is_in_taxonomy": 1,
                             "text": "e331"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "citrate de sodium"
                 },
                 {
@@ -1566,16 +1580,20 @@
                     "ingredients": [
                         {
                             "id": "en:e330",
+                            "is_in_taxonomy": 1,
                             "text": "e330"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteurs d'acidit\u00e9"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         },
         {
@@ -1586,9 +1604,11 @@
                     "ingredients": [
                         {
                             "id": "en:e950",
+                            "is_in_taxonomy": 1,
                             "text": "e950"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "ac\u00e9sulfame-k"
                 },
                 {
@@ -1596,21 +1616,27 @@
                     "ingredients": [
                         {
                             "id": "en:e955",
+                            "is_in_taxonomy": 1,
                             "text": "e955"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "sucralose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9dulcorants"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "LAIT"
         }
@@ -1762,6 +1788,25 @@
         "en:vitamin-d"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:e1422",
+        "en:e330",
+        "en:e331",
+        "en:e412",
+        "en:e440a",
+        "en:e950",
+        "en:e955",
+        "en:flavouring",
+        "en:fruit-pectin",
+        "en:lactic-ferments",
+        "en:modified-corn-starch",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "en:thickener",
+        "en:vitamin-d"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 29,
@@ -2319,28 +2364,40 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "160",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 8.1
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 2,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.1
         }

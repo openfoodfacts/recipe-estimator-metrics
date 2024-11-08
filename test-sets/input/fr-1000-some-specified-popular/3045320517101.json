@@ -221,7 +221,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1563,11 +1563,13 @@
     "ingredients": [
         {
             "id": "en:pommes",
+            "is_in_taxonomy": 0,
             "percent": 95,
             "text": "pommes"
         },
         {
             "id": "en:sucre",
+            "is_in_taxonomy": 0,
             "text": "sucre"
         },
         {
@@ -1575,9 +1577,11 @@
             "ingredients": [
                 {
                     "id": "en:acide-ascorbique",
+                    "is_in_taxonomy": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "antioxydant"
         }
     ],
@@ -1674,6 +1678,13 @@
         "en:sucre"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acide-ascorbique",
+        "en:antioxydant",
+        "en:pommes",
+        "en:sucre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -2065,29 +2076,43 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "recycling": {
-                "id": "en:return-to-store"
+                "id": {
+                    "id": "en:return-to-store"
+                }
             },
             "shape": {
-                "id": "en:capsule"
+                "id": {
+                    "id": "en:capsule"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

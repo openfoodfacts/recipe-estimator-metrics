@@ -246,13 +246,13 @@
                         "epi_score": "0",
                         "origin": "en:thailand",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "50",
                         "origin": "en:vietnam",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 25,
@@ -2953,6 +2953,7 @@
             "ciqual_food_code_used": null,
             "difference": 41.0,
             "id": "cs:extrakt-z-kokosového-ořechu",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3047,11 +3048,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -3100,7 +3101,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3195,11 +3198,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3246,6 +3249,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -3340,11 +3344,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -3390,6 +3394,7 @@
                     "text": "guma guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "quantity_estimate": 16.665,
             "text": "stabilizátor"
@@ -3534,6 +3539,12 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "cs:extrakt-z-kokosového-ořechu",
+        "en:e412",
+        "en:stabiliser"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -3982,24 +3993,32 @@
     "packagings": [
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400 ml",
             "quantity_per_unit_unit": "ml",
             "quantity_per_unit_value": 400,
             "shape": {
-                "id": "en:food-can"
+                "id": {
+                    "id": "en:food-can"
+                }
             },
             "weight_measured": 62.89
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         }
     ],
@@ -4591,12 +4610,12 @@
                 "unweighted_total": 0.0,
                 "weighting": 1
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

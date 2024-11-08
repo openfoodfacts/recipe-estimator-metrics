@@ -238,7 +238,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1560,22 +1560,28 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "processing": "en:extract",
                     "text": "noix de coco"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 31.8,
             "text": "Lait de coco all\u00e9g\u00e9"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
@@ -1583,22 +1589,27 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
                     "ciqual_food_code": "18100",
                     "id": "en:fat-reduced-cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "text": "cacao maigre en poudre"
                 },
                 {
@@ -1607,36 +1618,45 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithine de soja"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9mulsifiant"
                 },
                 {
                     "id": "en:natural-vanilla-flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "ar\u00f4me naturel de vanille"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 16.2,
             "text": "chocolat"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "18011",
             "id": "en:coconut-water",
+            "is_in_taxonomy": 1,
             "text": "eau de coco"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "text": "amidon"
         },
         {
             "id": "en:potato-protein",
+            "is_in_taxonomy": 1,
             "text": "prot\u00e9ines de pomme de terre"
         },
         {
@@ -1646,14 +1666,17 @@
                     "id": "en:e471",
                     "ingredients": [
                         {
-                            "ciqual_food_code": "17130",
-                            "id": "en:colza-oil",
+                            "ecobalyse_code": "rapeseed-non-eu",
+                            "id": "en:rapeseed",
+                            "is_in_taxonomy": 1,
                             "text": "colza"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "mono- et diglyc\u00e9rides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -1661,14 +1684,17 @@
             "ingredients": [
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "text": "carragh\u00e9nanes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississant"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         }
     ],
@@ -1967,10 +1993,30 @@
         "en:emulsifier",
         "en:natural-vanilla-flavouring",
         "en:potato-protein",
+        "en:rapeseed",
         "en:thickener",
         "fr:lait-de-coco-allege"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:coconut",
+        "en:coconut-water",
+        "en:e407",
+        "en:e471",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:natural-vanilla-flavouring",
+        "en:potato-protein",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:starch",
+        "en:thickener",
+        "fr:lait-de-coco-allege"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -2414,46 +2460,64 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.5
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "220 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 220,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 11.9
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "quantity_per_unit": "55 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 55,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 5.6
         }

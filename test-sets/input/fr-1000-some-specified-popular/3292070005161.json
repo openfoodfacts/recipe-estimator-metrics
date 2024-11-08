@@ -232,7 +232,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1411,41 +1411,53 @@
     "ingredients": [
         {
             "ciqual_food_code": "20532",
+            "ecobalyse_code": "chickpea-fr",
             "id": "en:chickpea",
+            "is_in_taxonomy": 1,
             "percent": 47,
             "text": "chickpeas"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "text": "rapeseed oil"
         },
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame-paste",
+            "is_in_taxonomy": 1,
             "text": "sesame paste"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame-seeds",
+            "is_in_taxonomy": 1,
             "percent": 1.2,
             "text": "sesame seeds"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:e330",
+            "is_in_taxonomy": 1,
             "text": "e330"
         },
         {
             "id": "en:e202",
+            "is_in_taxonomy": 1,
             "text": "e202"
         }
     ],
@@ -1607,10 +1619,17 @@
     "ingredients_with_unspecified_percent_sum": 51.8,
     "ingredients_without_ciqual_codes": [
         "en:e202",
-        "en:e330",
-        "en:rapeseed-oil"
+        "en:e330"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e202",
+        "en:e330",
+        "en:salt",
+        "en:sesame-paste",
+        "en:sesame-seeds"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2017,56 +2036,80 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "175g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 175,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 13.4
         },
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 5.8
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:tie"
+                "id": {
+                    "id": "en:tie"
+                }
             },
             "weight_measured": 0.7
         },
         {
             "material": {
-                "id": "en:paper-and-plastic"
+                "id": {
+                    "id": "en:paper-and-plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             },
             "weight_measured": 0.1
         }

@@ -25,7 +25,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, crème, lait, ferments lactiques, lait",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -192,7 +192,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1240,7 +1240,9 @@
             "ciqual_food_code": "19023",
             "ciqual_food_code_used": "19023",
             "difference": 16.9,
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1335,13 +1337,13 @@
                     "percent_max": 4.2,
                     "percent_min": 4.2
                 },
+                "vitamin-b1": {
+                    "percent_max": 4.1e-05,
+                    "percent_min": 4.1e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 2.4e-07,
                     "percent_min": 2.4e-07
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 4.1e-05,
-                    "percent_min": 4.1e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00017,
@@ -1389,7 +1391,9 @@
                 {
                     "ciqual_food_code_used": "19051",
                     "ciqual_proxy_food_code": "19051",
+                    "ecobalyse_code": "milk",
                     "id": "en:milk",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1484,13 +1488,13 @@
                             "percent_max": 4.93,
                             "percent_min": 4.93
                         },
+                        "vitamin-b1": {
+                            "percent_max": 4.2999999999999995e-05,
+                            "percent_min": 4.2999999999999995e-05
+                        },
                         "vitamin-b12": {
                             "percent_max": 4.9e-07,
                             "percent_min": 4.9e-07
-                        },
-                        "vitamin-b1_unit": {
-                            "percent_max": 4.2999999999999995e-05,
-                            "percent_min": 4.2999999999999995e-05
                         },
                         "vitamin-b2": {
                             "percent_max": 0.00017999999999999998,
@@ -1531,6 +1535,7 @@
                     "text": "lait"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0,
             "quantity_estimate": 0.0,
             "text": "crème"
@@ -1538,7 +1543,9 @@
         {
             "ciqual_food_code": "19054",
             "ciqual_food_code_used": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1633,13 +1640,13 @@
                     "percent_max": 53.1,
                     "percent_min": 53.1
                 },
+                "vitamin-b1": {
+                    "percent_max": 0.00043,
+                    "percent_min": 0.00043
+                },
                 "vitamin-b12": {
                     "percent_max": 4.02e-06,
                     "percent_min": 4.02e-06
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 0.00043,
-                    "percent_min": 0.00043
                 },
                 "vitamin-b2": {
                     "percent_max": 0.0015,
@@ -1682,6 +1689,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1776,11 +1784,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1931,6 +1939,11 @@
         "en:lactic-ferments"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -2325,43 +2338,61 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "quantity_per_unit": "150g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 150,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:individual-pot"
+                "id": {
+                    "id": "en:individual-pot"
+                }
             },
             "weight_measured": 4.41
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 17.34
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 4,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.51
         }
@@ -2686,15 +2717,15 @@
                 "unweighted_total": 62.230000000000004,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 4,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.000514
+            },
             "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 4.749999999999999e-06
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 4,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.000514
             },
             "vitamin-b2": {
                 "ingredient_count": 4,

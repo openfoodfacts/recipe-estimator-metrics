@@ -143,7 +143,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -918,17 +918,22 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose-fructose"
         },
         {
@@ -941,31 +946,39 @@
                         {
                             "ciqual_food_code": "13019",
                             "id": "en:redcurrant",
+                            "is_in_taxonomy": 1,
                             "text": "groseille"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent": 10,
                     "text": "fruits rouges"
                 },
                 {
                     "ciqual_food_code": "13007",
                     "id": "en:blackcurrant",
+                    "is_in_taxonomy": 1,
                     "text": "cassis"
                 },
                 {
                     "id": "en:elder",
+                    "is_in_taxonomy": 1,
                     "text": "sureau"
                 },
                 {
                     "ciqual_food_code": "13015",
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "en:raspberry",
+                    "is_in_taxonomy": 1,
                     "text": "framboise"
                 },
                 {
                     "id": "en:chokeberry",
+                    "is_in_taxonomy": 1,
                     "text": "aronia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "jus de fruits \u00e0 base de concentr\u00e9s"
         },
@@ -974,17 +987,21 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
             "id": "fr:cette-recette-est-elaboree-a-partir-d-aromes-naturels-non-issus-exclusivement-de-fruits-rouges",
+            "is_in_taxonomy": 0,
             "text": "Cette recette est \u00e9labor\u00e9e \u00e0 partir d'ar\u00f4mes naturels non issus exclusivement de fruits rouges"
         }
     ],
@@ -1104,6 +1121,20 @@
         "fr:cette-recette-est-elaboree-a-partir-d-aromes-naturels-non-issus-exclusivement-de-fruits-rouges"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:blackcurrant",
+        "en:chokeberry",
+        "en:e330",
+        "en:elder",
+        "en:fruit-juice-from-concentrate",
+        "en:glucose-fructose-syrup",
+        "en:natural-flavouring",
+        "en:red-fruits",
+        "en:redcurrant",
+        "fr:cette-recette-est-elaboree-a-partir-d-aromes-naturels-non-issus-exclusivement-de-fruits-rouges"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -1346,12 +1377,16 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

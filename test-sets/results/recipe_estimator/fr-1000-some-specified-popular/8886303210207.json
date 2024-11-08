@@ -260,7 +260,7 @@
                         "epi_score": "0",
                         "origin": "en:indonesia",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1766,6 +1766,7 @@
             "ciqual_food_code_used": null,
             "difference": 59.9,
             "id": "en:natural-coconut-cream",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1860,11 +1861,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1913,6 +1914,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:e415",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2007,11 +2009,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2059,6 +2061,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:e412",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2153,11 +2156,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2205,6 +2208,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:e407",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2299,11 +2303,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2477,6 +2481,13 @@
         "en:natural-coconut-cream"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e407",
+        "en:e412",
+        "en:e415",
+        "en:natural-coconut-cream"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_modified": "20190830",
     "known_ingredients_n": 3,
     "labels": "No gluten, Vegetarian, Kosher, No preservatives, Vegan, FSC, Green Dot, Halal, ISO 9001, No colorings, No flavors, No milk, Organized Kashrut Kosher",
@@ -2991,11 +3002,15 @@
     "packagings": [
         {
             "material": {
-                "id": "en:tetra-brik-aseptic"
+                "id": {
+                    "id": "en:tetra-brik-aseptic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         }
     ],
@@ -3370,12 +3385,12 @@
                 "unweighted_total": 0,
                 "weighting": 1
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0

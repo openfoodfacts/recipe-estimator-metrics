@@ -185,7 +185,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1541,40 +1541,49 @@
         {
             "ciqual_food_code": "36005",
             "id": "en:chicken-meat",
+            "is_in_taxonomy": 1,
             "percent": 90,
             "text": "chicken meat"
         },
         {
             "ciqual_food_code": "16550",
             "id": "en:duck-fat",
+            "is_in_taxonomy": 1,
             "text": "duck fat"
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot",
+            "is_in_taxonomy": 1,
             "text": "carrots"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "text": "honey"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "text": "alcohol vinegar"
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "text": "spices"
         },
         {
-            "id": "en:aromatic-plants",
+            "id": "en:herb",
+            "is_in_taxonomy": 1,
             "text": "aromatic plants"
         }
     ],
@@ -1716,10 +1725,20 @@
     "ingredients_with_unspecified_percent_n": 7,
     "ingredients_with_unspecified_percent_sum": 10,
     "ingredients_without_ciqual_codes": [
-        "en:aromatic-plants",
+        "en:herb",
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:chicken-meat",
+        "en:duck-fat",
+        "en:herb",
+        "en:honey",
+        "en:salt",
+        "en:spice"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -2108,7 +2127,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         }
     ],

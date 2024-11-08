@@ -207,7 +207,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1182,26 +1182,33 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 59,
             "text": "flocons d'avoine compl\u00e8te"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "id": "fr:farines-57-farine-de-ble-complete",
+            "is_in_taxonomy": 0,
             "text": "farines 57% farine de bl\u00e9 compl\u00e8te"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "bl\u00e9"
         },
@@ -1211,19 +1218,25 @@
                 {
                     "ciqual_food_code": "13029",
                     "id": "en:blackberry",
+                    "is_in_taxonomy": 1,
                     "text": "m\u00fbres"
                 },
                 {
                     "ciqual_food_code": "13028",
+                    "ecobalyse_code": "blueberry-non-eu",
                     "id": "en:blueberry",
+                    "is_in_taxonomy": 1,
                     "text": "myrtilles"
                 },
                 {
                     "ciqual_food_code": "13015",
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "en:raspberry",
+                    "is_in_taxonomy": 1,
                     "text": "framboises"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 3,
             "processing": "en:freeze-dried",
             "text": "fruits"
@@ -1231,6 +1244,7 @@
         {
             "ciqual_proxy_food_code": "15006",
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent": 2.5,
             "processing": "en:grated",
             "text": "noix de coco"
@@ -1238,20 +1252,25 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "text": "m\u00e9lasse"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de malt d'orge"
         },
         {
@@ -1259,13 +1278,16 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "text": "cannelle"
         },
         {
@@ -1273,9 +1295,11 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "text": "extrait riche en tocoph\u00e9rols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydants"
         }
     ],
@@ -1429,6 +1453,23 @@
         "fr:farines-57-farine-de-ble-complete"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:barley-malt-extract",
+        "en:blackberry",
+        "en:cinnamon",
+        "en:coconut",
+        "en:e306",
+        "en:emulsifier",
+        "en:fruit",
+        "en:glucose-syrup",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:wheat",
+        "en:whole-grain-oat-flakes",
+        "fr:farines-57-farine-de-ble-complete"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 35,
@@ -1841,27 +1882,35 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 56.7
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 7.3
         }

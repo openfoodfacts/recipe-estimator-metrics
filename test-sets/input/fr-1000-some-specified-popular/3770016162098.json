@@ -207,7 +207,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1272,12 +1272,16 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
@@ -1285,23 +1289,28 @@
             "ingredients": [
                 {
                     "id": "en:pea-protein",
+                    "is_in_taxonomy": 1,
                     "percent": 9,
                     "text": "prot\u00e9ines de pois"
                 },
                 {
                     "id": "fr:extaits-de-pois",
+                    "is_in_taxonomy": 0,
                     "text": "extaits de pois"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "prot\u00e9ines textur\u00e9es de pois"
         },
         {
             "id": "en:pea-protein",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "prot\u00e9ines de pois"
         },
         {
             "id": "en:broad-bean-protein",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "prot\u00e9ines de f\u00e9veroles"
         },
@@ -1310,23 +1319,30 @@
             "ingredients": [
                 {
                     "id": "en:plantain",
+                    "is_in_taxonomy": 1,
                     "text": "plantain"
                 },
                 {
                     "id": "en:bamboo",
+                    "is_in_taxonomy": 1,
                     "text": "bambou"
                 },
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato",
+                    "is_in_taxonomy": 1,
                     "text": "pomme de terre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "fibres v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion-extract",
+            "is_in_taxonomy": 1,
             "text": "extraits d'oignons"
         },
         {
@@ -1334,18 +1350,23 @@
             "ingredients": [
                 {
                     "id": "fr:vinaigre-tamponne",
+                    "is_in_taxonomy": 0,
                     "text": "vinaigre tamponn\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteur d'acidit\u00e9"
         },
         {
             "ciqual_proxy_food_code": "9510",
+            "ecobalyse_code": "potato-starch",
             "id": "en:potato-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de pomme de terre"
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "text": "\u00e9pices"
         },
         {
@@ -1354,18 +1375,22 @@
                 {
                     "ciqual_food_code": "11060",
                     "id": "en:herbes-de-provence",
+                    "is_in_taxonomy": 1,
                     "percent": 0.6,
                     "text": "dont herbes de Provence"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "herbes aromatiques"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "text": "maltodextrine"
         },
         {
@@ -1373,9 +1398,11 @@
             "ingredients": [
                 {
                     "id": "en:e461",
+                    "is_in_taxonomy": 1,
                     "text": "m\u00e9thylcellulose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisant"
         },
         {
@@ -1383,11 +1410,14 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20091",
+                    "ecobalyse_code": "beetroot-fr",
                     "id": "en:red-beetroot",
+                    "is_in_taxonomy": 1,
                     "processing": "en:extract",
                     "text": "betterave rouge"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         },
         {
@@ -1395,13 +1425,16 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "text": "extrait de romarin"
                 },
                 {
                     "id": "fr:enveloppe-vegetale",
+                    "is_in_taxonomy": 0,
                     "text": "Enveloppe v\u00e9g\u00e9tale"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         },
         {
@@ -1409,9 +1442,11 @@
             "ingredients": [
                 {
                     "id": "en:e404",
+                    "is_in_taxonomy": 1,
                     "text": "alginate de calcium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "g\u00e9lifiant"
         }
     ],
@@ -1613,6 +1648,31 @@
         "fr:vinaigre-tamponne"
     ],
     "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:bamboo",
+        "en:broad-bean-protein",
+        "en:colour",
+        "en:e392",
+        "en:e404",
+        "en:e461",
+        "en:gelling-agent",
+        "en:herb",
+        "en:herbes-de-provence",
+        "en:maltodextrin",
+        "en:natural-flavouring",
+        "en:pea-protein",
+        "en:plantain",
+        "en:spice",
+        "en:stabiliser",
+        "en:vegetable-fiber",
+        "fr:enveloppe-vegetale",
+        "fr:extaits-de-pois",
+        "fr:proteines-texturees-de-pois",
+        "fr:vinaigre-tamponne"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -2056,30 +2116,42 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             },
             "weight_measured": 14
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],

@@ -194,13 +194,13 @@
                         "epi_score": "71",
                         "origin": "en:slovenia",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 74,
@@ -1167,38 +1167,48 @@
     "ingredients": [
         {
             "id": "fr:lait-pasteurise-a-2-2-de-matiere-grasse",
+            "is_in_taxonomy": 0,
             "percent": 85.8,
             "text": "Lait pasteuris\u00e9 \u00e0 2.2% de mati\u00e8re grasse"
         },
         {
             "ciqual_food_code": "13015",
+            "ecobalyse_code": "raspberry-eu",
             "id": "en:raspberry",
+            "is_in_taxonomy": 1,
             "percent": 6.4,
             "text": "framboises"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "percent": 5.1,
             "text": "sucre de canne"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "jus de citron concentr\u00e9"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de ma\u00efs"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "poudre de lait \u00e9cr\u00e9m\u00e9"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         }
     ],
@@ -1301,6 +1311,13 @@
         "fr:lait-pasteurise-a-2-2-de-matiere-grasse"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-lemon-juice",
+        "en:corn-starch",
+        "en:lactic-ferments",
+        "fr:lait-pasteurise-a-2-2-de-matiere-grasse"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -1719,10 +1736,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],

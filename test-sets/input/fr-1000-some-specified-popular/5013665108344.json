@@ -203,7 +203,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -936,20 +936,25 @@
     "ingredients": [
         {
             "ciqual_food_code": "15037",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 91,
             "text": "roasted peanuts"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "sustainable palm oil"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         }
     ],
@@ -1057,6 +1062,10 @@
     "ingredients_with_unspecified_percent_sum": 9,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1495,10 +1504,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

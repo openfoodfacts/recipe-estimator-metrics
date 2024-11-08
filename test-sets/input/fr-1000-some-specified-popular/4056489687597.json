@@ -149,7 +149,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -709,23 +709,29 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "ciqual_food_code": "9310",
             "id": "en:oat",
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "avoine"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel de mer"
         }
     ],
@@ -785,6 +791,11 @@
     "ingredients_with_unspecified_percent_sum": 90,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oat",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1243,21 +1254,27 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pure-pak-sense"
+                "id": {
+                    "id": "en:pure-pak-sense"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1 L",
             "quantity_per_unit_unit": "l",
             "quantity_per_unit_value": 1,
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             },
             "weight_measured": 38
         },
         {
             "number_of_units": 1,
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             },
             "weight_measured": 1.2
         }

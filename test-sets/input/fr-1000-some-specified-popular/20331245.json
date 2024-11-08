@@ -193,13 +193,13 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 78,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 22,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 60.06,
@@ -1171,37 +1171,49 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:spain",
             "percent": 56,
             "text": "farine de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "text": "dextrose"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "text": "gluten de _bl\u00e9_"
         },
         {
@@ -1209,17 +1221,21 @@
             "ingredients": [
                 {
                     "id": "en:e282",
+                    "is_in_taxonomy": 1,
                     "text": "propionate de calcium"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "sel conservateurs"
         },
         {
             "id": "en:e200",
+            "is_in_taxonomy": 1,
             "text": "acide sorbique"
         },
         {
             "id": "en:e202",
+            "is_in_taxonomy": 1,
             "text": "sorbate de potassium"
         },
         {
@@ -1227,18 +1243,23 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- et diglyc\u00e9rides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "id": "en:e481",
+            "is_in_taxonomy": 1,
             "text": "st\u00e9aroyl-2-lactylate de sodium"
         },
         {
             "ciqual_food_code": "20900",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:soya-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de _soja_"
         },
         {
@@ -1246,13 +1267,16 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "text": "gomme guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisant"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me"
         }
@@ -1403,10 +1427,25 @@
         "en:flavouring",
         "en:stabiliser",
         "en:wheat-gluten",
+        "fr:sel-conservateurs"
+    ],
+    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:dextrose",
+        "en:e200",
+        "en:e202",
+        "en:e282",
+        "en:e412",
+        "en:e471",
+        "en:e481",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:stabiliser",
+        "en:wheat-gluten",
         "en:yeast",
         "fr:sel-conservateurs"
     ],
-    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -1824,10 +1863,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

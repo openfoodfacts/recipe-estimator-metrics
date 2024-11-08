@@ -44,7 +44,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:milk, Magermilchpulver*, Weizenmehl, Haseln\u00fcsse, Weizenvollkornmehl, Butterreinfett*, Weizenst\u00e4rke, Soja, Sahnepulver*",
     "allergens_from_user": "(pl) en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1714,7 +1714,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Zucker"
         },
         {
@@ -1722,59 +1724,76 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "text": "Palm"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "text": "Shea"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "flanzliche Fette"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent": 13.5,
             "text": "Magermilchpulver"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 12.3,
             "text": "Weizenmehl"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 9.1,
             "text": "Haseln\u00fcsse"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 6.1,
             "text": "Weizenvollkornmehl"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "text": "Kakao"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent": 2.6,
             "text": "Butterreinfett"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "text": "magerer Kakao"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "Weizenst\u00e4rke"
         },
         {
@@ -1782,22 +1801,27 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "text": "Lecithine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Emulgator"
         },
         {
             "id": "en:whey",
+            "is_in_taxonomy": 1,
             "text": "Molken"
         },
         {
             "id": "de:erzeugnis",
+            "is_in_taxonomy": 0,
             "text": "erzeugnis"
         },
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "percent": 0.2,
             "processing": "en:powder",
             "text": "Sahne"
@@ -1805,10 +1829,12 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "Salz"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "nat\u00fcrliche Aromen"
         },
         {
@@ -1816,13 +1842,16 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "Natriumhydrogencarbonat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Backtriebmittel"
         },
         {
             "id": "de:gemahlene-erdn\u00fcsse-entspricht-zusammen-10-milchanteil",
+            "is_in_taxonomy": 0,
             "text": "gemahlene Erdn\u00fcsse entspricht zusammen 10% Milchanteil"
         }
     ],
@@ -2007,10 +2036,28 @@
         "en:emulsifier",
         "en:natural-flavouring",
         "en:raising-agent",
-        "en:shea-butter",
         "en:whey"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "de:erzeugnis",
+        "de:flanzliche-fette",
+        "de:gemahlene-erdn\u00fcsse-entspricht-zusammen-10-milchanteil",
+        "en:butterfat",
+        "en:cocoa",
+        "en:cream",
+        "en:e322",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:natural-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:shea-butter",
+        "en:wheat-starch",
+        "en:whey"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 41,
@@ -2451,7 +2498,9 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             }
         }
     ],

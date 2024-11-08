@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 75,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1214,7 +1214,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1309,11 +1311,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1358,6 +1360,7 @@
             "ciqual_food_code": "13067",
             "id": "en:reconstituted-lime-juice",
             "ingredients": [],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0,
             "quantity_estimate": 0,
             "text": "jus de citron vert à base de concentré"
@@ -1366,7 +1369,9 @@
             "ciqual_food_code": "13009",
             "ciqual_food_code_used": "13009",
             "difference": 4.0,
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon-pulp",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1461,13 +1466,13 @@
                     "percent_max": 0.8,
                     "percent_min": 0.8
                 },
+                "vitamin-b1": {
+                    "percent_max": 4.2999999999999995e-05,
+                    "percent_min": 4.2999999999999995e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 4.2999999999999995e-05,
-                    "percent_min": 4.2999999999999995e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 1e-05,
@@ -1513,6 +1518,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1607,11 +1613,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -1657,6 +1663,7 @@
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0,
             "quantity_estimate": 0.0,
             "text": "acidifiant"
@@ -1665,6 +1672,7 @@
             "ciqual_food_code": "13067",
             "ciqual_food_code_used": "13067",
             "id": "en:lime",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1759,13 +1767,13 @@
                     "percent_max": 2.1,
                     "percent_min": 2.1
                 },
+                "vitamin-b1": {
+                    "percent_max": 1.4999999999999999e-05,
+                    "percent_min": 1.4999999999999999e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 1.4999999999999999e-05,
-                    "percent_min": 1.4999999999999999e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 2.3e-05,
@@ -1921,6 +1929,13 @@
         "en:e330"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:lime",
+        "en:reconstituted-lime-juice"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 12,
@@ -2364,13 +2379,19 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         }
     ],
@@ -2691,12 +2712,12 @@
                 "product_total": 0.8,
                 "unweighted_total": 0.0
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

@@ -72,7 +72,7 @@
         "en:e471",
         "en:e481"
     ],
-    "allergens": "en:gluten,en:milk, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, beurre p\u00e2tissier, lait, lait, gluten de bl\u00e9",
     "allergens_from_user": "(fr) en:gluten,en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -247,7 +247,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1515,47 +1515,60 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 85.4,
             "text": "Farine de bl\u00e9"
         },
         {
             "id": "en:margarine",
+            "is_in_taxonomy": 1,
             "percent": 12.2,
             "text": "margarine"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huiles v\u00e9g\u00e9tales de palme"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huiles v\u00e9g\u00e9tales de colza"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "text": "beurre p\u00e2tissier"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum en poudre"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1563,14 +1576,17 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "e471"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "text": "miel"
         },
         {
@@ -1578,9 +1594,11 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "text": "sorbate de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "conservateur"
         },
         {
@@ -1588,9 +1606,11 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
@@ -1598,31 +1618,40 @@
             "ingredients": [
                 {
                     "id": "en:e160ai",
+                    "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum en poudre"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "text": "gluten de bl\u00e9"
         },
         {
@@ -1630,13 +1659,16 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "e471"
                 },
                 {
                     "id": "en:e481",
+                    "is_in_taxonomy": 1,
                     "text": "e481"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
@@ -1644,9 +1676,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "agent de traitement de la farine"
         }
     ],
@@ -2067,10 +2101,31 @@
         "en:margarine",
         "en:preservative",
         "en:wheat-gluten",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:butterfat",
+        "en:colour",
+        "en:e160ai",
+        "en:e202",
+        "en:e300",
+        "en:e330",
+        "en:e471",
+        "en:e481",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:flour-treatment-agent",
+        "en:honey",
+        "en:margarine",
+        "en:preservative",
+        "en:salt",
+        "en:wheat-gluten",
         "en:whey-powder",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids_n": 19,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 40,
@@ -2513,15 +2568,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             }
         }
     ],

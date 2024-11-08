@@ -32,7 +32,7 @@
     "additives_old_tags": [],
     "additives_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "ferments lactiques, lait",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -174,7 +174,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1013,24 +1013,30 @@
     "ingredients": [
         {
             "id": "fr:lait-pasteurise-a-2-2-de-matieres-grasses",
+            "is_in_taxonomy": 0,
             "percent": 86,
             "text": "Lait pasteuris\u00e9 \u00e0 2.2% de mati\u00e8res grasses"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "percent": 4.5,
             "text": "sucre de canne"
         },
         {
             "ciqual_food_code": "13025",
+            "ecobalyse_code": "mango-non-eu",
             "id": "en:mango-puree",
+            "is_in_taxonomy": 1,
             "percent": 4,
             "text": "pur\u00e9e de mangue"
         },
         {
             "ciqual_food_code": "13016",
             "id": "en:passionfruit",
+            "is_in_taxonomy": 1,
             "percent": 2.8,
             "processing": "en:juice",
             "text": "fruit de la passion"
@@ -1038,15 +1044,18 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "text": "amidon"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "jus de citron concentr\u00e9"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         }
     ],
@@ -1140,6 +1149,14 @@
         "fr:lait-pasteurise-a-2-2-de-matieres-grasses"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-lemon-juice",
+        "en:lactic-ferments",
+        "en:passionfruit",
+        "en:starch",
+        "fr:lait-pasteurise-a-2-2-de-matieres-grasses"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1537,74 +1554,102 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "280 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 280,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": "12"
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "140 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 140,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.5
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "140 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 140,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": "4"
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "140 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 140,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sheet"
+                "id": {
+                    "id": "en:sheet"
+                }
             },
             "weight_measured": 2.5
         },
         {
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         }
     ],

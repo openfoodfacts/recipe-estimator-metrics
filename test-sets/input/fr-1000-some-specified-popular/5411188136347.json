@@ -243,7 +243,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1593,15 +1593,19 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "water"
                 },
                 {
                     "id": "en:husked-soya-beans",
+                    "is_in_taxonomy": 0,
                     "percent": 9.5,
                     "text": "husked soya beans"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "soy base"
         },
         {
@@ -1609,30 +1613,39 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "13008",
+                    "ecobalyse_code": "cherry-tr",
                     "id": "en:cherry-juice",
+                    "is_in_taxonomy": 1,
                     "percent": 4.2,
                     "processing": "en:from-concentrate",
                     "text": "cherry juice"
                 },
                 {
                     "ciqual_food_code": "13014",
+                    "ecobalyse_code": "strawberry-non-eu",
                     "id": "en:strawberry",
+                    "is_in_taxonomy": 1,
                     "percent": 3.2,
                     "text": "strawberry"
                 },
                 {
                     "ciqual_food_code": "13014",
+                    "ecobalyse_code": "strawberry-non-eu",
                     "id": "en:strawberry-juice-from-concentrate",
+                    "is_in_taxonomy": 1,
                     "percent": 3.1,
                     "text": "strawberry juice from concentrate"
                 },
                 {
                     "ciqual_food_code": "13008",
+                    "ecobalyse_code": "cherry-tr",
                     "id": "en:cherry",
+                    "is_in_taxonomy": 1,
                     "percent": 2,
                     "text": "cherry"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 12.5,
             "text": "red fruit mix"
         },
@@ -1641,16 +1654,19 @@
             "ingredients": [
                 {
                     "id": "en:juice",
+                    "is_in_taxonomy": 1,
                     "percent": 4.1,
                     "processing": "en:from-concentrate",
                     "text": "juice"
                 },
                 {
                     "id": "en:fruit",
+                    "is_in_taxonomy": 1,
                     "percent": 2.1,
                     "text": "fruit"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 6.2,
             "text": "date mix"
         },
@@ -1659,13 +1675,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 },
                 {
                     "id": "en:e331",
+                    "is_in_taxonomy": 1,
                     "text": "sodium citrates"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "acidity correctors"
         },
         {
@@ -1673,23 +1692,29 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilizer"
         },
         {
             "id": "en:e341iii",
+            "is_in_taxonomy": 1,
             "text": "tricalcium phosphate"
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot-extract",
+            "is_in_taxonomy": 1,
             "text": "carrot extract"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         },
         {
@@ -1697,33 +1722,41 @@
             "ingredients": [
                 {
                     "id": "en:extract-rich-in-tocopherols",
+                    "is_in_taxonomy": 0,
                     "text": "extract rich in tocopherols"
                 },
                 {
                     "id": "en:e304",
+                    "is_in_taxonomy": 1,
                     "text": "fatty acid esters of ascorbic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxidants"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavourings"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamins"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamin b2"
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "text": "vitamin b12"
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "text": "vitamin d2"
         },
         {
@@ -1731,21 +1764,26 @@
             "ingredients": [
                 {
                     "id": "en:s",
+                    "is_in_taxonomy": 0,
                     "text": "s"
                 },
                 {
                     "id": "en:thermophilus",
+                    "is_in_taxonomy": 0,
                     "text": "thermophilus"
                 },
                 {
                     "id": "en:l",
+                    "is_in_taxonomy": 0,
                     "text": "l"
                 },
                 {
                     "id": "en:bulgaricus",
+                    "is_in_taxonomy": 0,
                     "text": "bulgaricus"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "yogurt ferments"
         }
     ],
@@ -1973,6 +2011,35 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 25,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-correctors",
+        "en:antioxidant",
+        "en:bulgaricus",
+        "en:date-mix",
+        "en:e101",
+        "en:e304",
+        "en:e330",
+        "en:e331",
+        "en:e341iii",
+        "en:e440a",
+        "en:ergocalciferol",
+        "en:extract-rich-in-tocopherols",
+        "en:flavouring",
+        "en:fruit",
+        "en:husked-soya-beans",
+        "en:juice",
+        "en:l",
+        "en:lactic-ferments",
+        "en:red-fruit-mix",
+        "en:s",
+        "en:sea-salt",
+        "en:soy-base",
+        "en:stabiliser",
+        "en:thermophilus",
+        "en:vitamin-b12",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 26,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 37,
@@ -2446,26 +2513,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:Container"
+                "id": {
+                    "id": "en:Container"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         }
     ],

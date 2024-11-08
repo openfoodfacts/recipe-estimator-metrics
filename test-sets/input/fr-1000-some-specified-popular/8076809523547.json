@@ -280,7 +280,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2594,15 +2594,18 @@
     "ingredients": [
         {
             "id": "en:tomatenfruch",
+            "is_in_taxonomy": 0,
             "percent": 37,
             "text": "Tomatenfruch"
         },
         {
             "id": "en:sonnenblumenol",
+            "is_in_taxonomy": 0,
             "text": "Sonnenblumen\u00f6l"
         },
         {
             "id": "en:tomatenmarkkonzentr",
+            "is_in_taxonomy": 0,
             "percent": 15,
             "text": "Tomatenmarkkonzentr"
         },
@@ -2611,38 +2614,47 @@
             "ingredients": [
                 {
                     "id": "en:milch",
+                    "is_in_taxonomy": 0,
                     "text": "Milch"
                 },
                 {
                     "id": "en:lysozym-aus-ei",
+                    "is_in_taxonomy": 0,
                     "text": "Lysozym aus Ei"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Grana Padano-K\u00e4se g.U"
         },
         {
             "id": "en:cashewkerne",
+            "is_in_taxonomy": 0,
             "text": "Cashewkerne"
         },
         {
             "id": "en:zucker",
+            "is_in_taxonomy": 0,
             "text": "Zucker"
         },
         {
             "id": "en:salz",
+            "is_in_taxonomy": 0,
             "text": "Salz"
         },
         {
             "id": "en:basilikum",
+            "is_in_taxonomy": 0,
             "text": "Basilikum"
         },
         {
             "id": "en:balsamico-essig-aus-modena-aceto-balsamico-d-modena-gg-a",
+            "is_in_taxonomy": 0,
             "percent": 2,
             "text": "Balsamico-Essig aus Modena \"Aceto Balsamico d Modena gg.A"
         },
         {
             "id": "en:weinessig",
+            "is_in_taxonomy": 0,
             "text": "Weinessig"
         },
         {
@@ -2650,9 +2662,11 @@
             "ingredients": [
                 {
                     "id": "en:milch",
+                    "is_in_taxonomy": 0,
                     "text": "Milch"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "gekochter Traubermost Molkepulver"
         },
         {
@@ -2660,21 +2674,26 @@
             "ingredients": [
                 {
                     "id": "en:schafsmilch",
+                    "is_in_taxonomy": 0,
                     "text": "Schafsmilch"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Pecorino Romano Kase gu"
         },
         {
             "id": "en:reisstarke",
+            "is_in_taxonomy": 0,
             "text": "Reisst\u00e4rke"
         },
         {
             "id": "en:knoblauch",
+            "is_in_taxonomy": 0,
             "text": "Knoblauch"
         },
         {
             "id": "en:saureregulator-michsaure",
+            "is_in_taxonomy": 0,
             "text": "S\u00e4ureregulator Michs\u00e4ure"
         },
         {
@@ -2682,17 +2701,21 @@
             "ingredients": [
                 {
                     "id": "en:milch",
+                    "is_in_taxonomy": 0,
                     "text": "Milch"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "nat\u00fcrliches Aroma"
         },
         {
             "id": "en:kann-spuren-2-3-von-anderen-schalenfruchten",
+            "is_in_taxonomy": 0,
             "text": "Kann Spuren 2\u201a3 von anderen Schalenfr\u00fcchten"
         },
         {
             "id": "en:hartschalenobst-83-8-enthalten",
+            "is_in_taxonomy": 0,
             "text": "Hartschalenobst 83\u201a8 enthalten"
         }
     ],
@@ -3055,6 +3078,30 @@
         "en:zucker"
     ],
     "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ecobalyse_ids": [
+        "en:balsamico-essig-aus-modena-aceto-balsamico-d-modena-gg-a",
+        "en:basilikum",
+        "en:cashewkerne",
+        "en:gekochter-traubermost-molkepulver",
+        "en:grana-padano-kase-g-u",
+        "en:hartschalenobst-83-8-enthalten",
+        "en:kann-spuren-2-3-von-anderen-schalenfruchten",
+        "en:knoblauch",
+        "en:lysozym-aus-ei",
+        "en:milch",
+        "en:naturliches-aroma",
+        "en:pecorino-romano-kase-gu",
+        "en:reisstarke",
+        "en:salz",
+        "en:saureregulator-michsaure",
+        "en:schafsmilch",
+        "en:sonnenblumenol",
+        "en:tomatenfruch",
+        "en:tomatenmarkkonzentr",
+        "en:weinessig",
+        "en:zucker"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 21,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 0,
@@ -3529,26 +3576,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:clear-glass"
+                "id": {
+                    "id": "en:clear-glass"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         },
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1419,30 +1419,37 @@
     "ingredients": [
         {
             "id": "fr:water-source",
+            "is_in_taxonomy": 0,
             "percent": 80,
             "text": "water source"
         },
         {
             "id": "fr:fruit-juice-base-concentrate",
+            "is_in_taxonomy": 0,
             "percent": 12,
             "text": "fruit juice base concentrate"
         },
         {
             "ciqual_proxy_food_code": "13034",
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange",
+            "is_in_taxonomy": 1,
             "percent": 6.4,
             "text": "orange"
         },
         {
             "id": "fr:apple",
+            "is_in_taxonomy": 0,
             "text": "apple"
         },
         {
             "id": "en:acerola",
+            "is_in_taxonomy": 1,
             "text": "acerola"
         },
         {
             "id": "fr:passion-fruit",
+            "is_in_taxonomy": 0,
             "percent": 0.1,
             "text": "passion fruit"
         },
@@ -1451,13 +1458,16 @@
             "ingredients": [
                 {
                     "id": "fr:0-07-per-cent",
+                    "is_in_taxonomy": 0,
                     "text": "0\u201a07 per cent"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "mango"
         },
         {
             "id": "fr:sugar",
+            "is_in_taxonomy": 0,
             "percent": 7.1,
             "text": "sugar"
         },
@@ -1466,13 +1476,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "for the acidifier"
         },
         {
             "id": "fr:natural-orange-flavoring-with-other-natural-flavor",
+            "is_in_taxonomy": 0,
             "text": "natural orange flavoring with other natural flavor"
         },
         {
@@ -1480,9 +1493,11 @@
             "ingredients": [
                 {
                     "id": "fr:paprika-extract",
+                    "is_in_taxonomy": 0,
                     "text": "paprika extract"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "coloring"
         }
     ],
@@ -1624,6 +1639,22 @@
         "fr:water-source"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola",
+        "en:e330",
+        "fr:0-07-per-cent",
+        "fr:apple",
+        "fr:coloring",
+        "fr:for-the-acidifier",
+        "fr:fruit-juice-base-concentrate",
+        "fr:mango",
+        "fr:natural-orange-flavoring-with-other-natural-flavor",
+        "fr:paprika-extract",
+        "fr:passion-fruit",
+        "fr:sugar",
+        "fr:water-source"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -2029,27 +2060,39 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             },
             "weight_measured": 49.26
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             },
             "weight_measured": 2.73
         }

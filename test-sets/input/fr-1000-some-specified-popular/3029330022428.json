@@ -272,7 +272,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -2339,27 +2339,33 @@
             "ingredients": [
                 {
                     "id": "en:farine-complete-de-ble",
+                    "is_in_taxonomy": 0,
                     "percent": 63,
                     "text": "Farine compl\u00e8te de bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Ingr\u00e9dients"
         },
         {
             "id": "en:eau",
+            "is_in_taxonomy": 0,
             "text": "eau"
         },
         {
             "id": "en:farine-de-ble",
+            "is_in_taxonomy": 0,
             "percent": 2.2,
             "text": "farine de bl\u00e9"
         },
         {
             "id": "en:huile-de-colza",
+            "is_in_taxonomy": 0,
             "text": "huile de colza"
         },
         {
             "id": "en:levure",
+            "is_in_taxonomy": 0,
             "text": "levure"
         },
         {
@@ -2367,25 +2373,31 @@
             "ingredients": [
                 {
                     "id": "en:contient-alcool",
+                    "is_in_taxonomy": 0,
                     "text": "contient alcool"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "ar\u00f4me naturel"
         },
         {
             "id": "en:sel",
+            "is_in_taxonomy": 0,
             "text": "sel"
         },
         {
             "id": "en:farine-de-mais-fermentee",
+            "is_in_taxonomy": 0,
             "text": "farine de ma\u00efs ferment\u00e9e"
         },
         {
             "id": "en:gluten-de-ble",
+            "is_in_taxonomy": 0,
             "text": "gluten de bl\u00e9"
         },
         {
             "id": "en:jus-d-acerola-en-poudre",
+            "is_in_taxonomy": 0,
             "text": "jus d'ac\u00e9rola en poudre"
         },
         {
@@ -2393,17 +2405,21 @@
             "ingredients": [
                 {
                     "id": "en:lait",
+                    "is_in_taxonomy": 0,
                     "text": "Lait"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Pr\u00e9sence possible de"
         },
         {
             "id": "en:oeufs",
+            "is_in_taxonomy": 0,
             "text": "\u0153ufs"
         },
         {
             "id": "en:graines-de-sesame",
+            "is_in_taxonomy": 0,
             "text": "graines de s\u00e9same"
         }
     ],
@@ -2655,6 +2671,25 @@
         "en:sel"
     ],
     "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:arome-naturel",
+        "en:contient-alcool",
+        "en:eau",
+        "en:farine-complete-de-ble",
+        "en:farine-de-ble",
+        "en:farine-de-mais-fermentee",
+        "en:gluten-de-ble",
+        "en:graines-de-sesame",
+        "en:huile-de-colza",
+        "en:ingredients",
+        "en:jus-d-acerola-en-poudre",
+        "en:lait",
+        "en:levure",
+        "en:oeufs",
+        "en:presence-possible-de",
+        "en:sel"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 0,
@@ -3112,7 +3147,9 @@
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 550,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 6.5
         },

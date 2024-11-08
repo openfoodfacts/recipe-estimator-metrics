@@ -192,7 +192,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1494,38 +1494,50 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "Farine de _froment_"
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent": 24,
             "text": "_beurre_"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "text": "_\u0153ufs_"
         },
         {
             "ciqual_food_code": "22003",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk-powder",
+            "is_in_taxonomy": 1,
             "text": "jaunes d'_\u0153ufs_ en poudre"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de vanille"
         },
         {
@@ -1534,19 +1546,25 @@
                 {
                     "ciqual_proxy_food_code": "31016",
                     "id": "en:glucose-syrup",
+                    "is_in_taxonomy": 1,
                     "text": "sirop de glucose"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "caramel"
         }
     ],
@@ -1744,6 +1762,13 @@
         "en:natural-vanilla-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e150",
+        "en:glucose-syrup",
+        "en:natural-vanilla-flavouring",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2169,15 +2194,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             }
         }
     ],

@@ -223,13 +223,13 @@
                         "epi_score": "13",
                         "origin": "en:brazil",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 53,
@@ -1146,23 +1146,30 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:carbonated-water",
+            "is_in_taxonomy": 1,
             "text": "Eau gaz\u00e9ifi\u00e9e"
         },
         {
             "ciqual_food_code": "2012",
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "jus d'orange \u00e0 base de jus concentr\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "jus de citron \u00e0 base de concentr\u00e9"
         },
@@ -1171,17 +1178,21 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "text": "sorbate de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "conservateur"
         },
         {
             "id": "en:natural-orange-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels d'orange"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
@@ -1189,13 +1200,16 @@
             "ingredients": [
                 {
                     "id": "en:e950",
+                    "is_in_taxonomy": 1,
                     "text": "ac\u00e9sulfame-K"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9dulcorants"
         },
         {
             "id": "en:e955",
+            "is_in_taxonomy": 1,
             "text": "sucralose"
         },
         {
@@ -1203,9 +1217,11 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "text": "gomme de guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisant"
         },
         {
@@ -1213,9 +1229,11 @@
             "ingredients": [
                 {
                     "id": "en:e160",
+                    "is_in_taxonomy": 1,
                     "text": "carot\u00e9no\u00efdes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         }
     ],
@@ -1444,6 +1462,21 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:e160",
+        "en:e202",
+        "en:e412",
+        "en:e950",
+        "en:e955",
+        "en:lemon-juice-from-concentrate",
+        "en:natural-flavouring",
+        "en:natural-orange-flavouring",
+        "en:preservative",
+        "en:stabiliser",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1893,14 +1926,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-with-plastics-metal-and-bricks"
+                "id": {
+                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                }
             },
             "shape": {
-                "id": "en:drink-can"
+                "id": {
+                    "id": "en:drink-can"
+                }
             }
         }
     ],

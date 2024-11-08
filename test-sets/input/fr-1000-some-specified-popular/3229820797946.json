@@ -193,7 +193,7 @@
                         "epi_score": "85",
                         "origin": "en:germany",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 85,
@@ -1015,6 +1015,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 44,
             "text": "Flocons d'avoine"
@@ -1026,9 +1027,11 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 15,
             "text": "flocons d'\u00e9peautre"
@@ -1040,15 +1043,19 @@
                 {
                     "ciqual_food_code": "13112",
                     "id": "en:grape",
+                    "is_in_taxonomy": 1,
                     "text": "raisins"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 10,
             "text": "raisins"
@@ -1056,6 +1063,7 @@
         {
             "ciqual_food_code": "9200",
             "id": "en:corn-flakes",
+            "is_in_taxonomy": 1,
             "text": "p\u00e9tales de mais"
         },
         {
@@ -1064,33 +1072,42 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "farine de riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 9,
             "text": "figues"
         },
         {
             "ciqual_food_code": "13000",
+            "ecobalyse_code": "apricot-eu",
             "id": "en:apricot",
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "farine de riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 4,
             "text": "abricots"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "text": "graines de tournesol"
         },
         {
@@ -1099,20 +1116,24 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent": 3,
             "text": "p\u00e9tales d'\u00e9peautre complet"
         },
         {
             "id": "fr:graines-de-lin-graines-de-courge",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "text": "graines de lin graines de courge"
         },
         {
             "id": "fr:epo-fabrique-en-allemagne",
+            "is_in_taxonomy": 0,
             "text": "epo Fabriqu\u00e9 en Allemagne"
         }
     ],
@@ -1243,6 +1264,18 @@
         "fr:petales-d-epeautre-complet"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn-flakes",
+        "en:fig",
+        "en:grape",
+        "en:oat-flakes",
+        "en:wheat",
+        "fr:epo-fabrique-en-allemagne",
+        "fr:flocons-d-epeautre",
+        "fr:graines-de-lin-graines-de-courge",
+        "fr:petales-d-epeautre-complet"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -1637,10 +1670,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

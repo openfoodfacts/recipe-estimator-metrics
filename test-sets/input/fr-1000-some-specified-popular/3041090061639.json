@@ -83,7 +83,7 @@
         "en:e333",
         "en:e440"
     ],
-    "allergens": "en:gluten,en:milk, en:milk",
+    "allergens": "en:gluten,en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, lait",
     "allergens_from_user": "(fr) en:gluten,en:milk, en:milk",
     "allergens_hierarchy": [
@@ -277,7 +277,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100.75,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1533,18 +1533,23 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 45,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose-fructose"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
@@ -1552,36 +1557,46 @@
             "ingredients": [
                 {
                     "id": "fr:glucerol",
+                    "is_in_taxonomy": 0,
                     "text": "gluc\u00e9rol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "humectant"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "text": "dextrose"
         },
         {
             "ciqual_food_code": "13015",
+            "ecobalyse_code": "raspberry-eu",
             "id": "en:raspberry-puree",
+            "is_in_taxonomy": 1,
             "percent": 4.4,
             "text": "pur\u00e9e de framboises"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
             "ciqual_food_code": "13015",
+            "ecobalyse_code": "raspberry-eu",
             "id": "fr:puree-de-framboise-concentree",
             "ingredients": [],
+            "is_in_taxonomy": 1,
             "percent": 1.5,
             "text": "pur\u00e9e de framboises concentr\u00e9e"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum en poudre"
         },
         {
@@ -1589,13 +1604,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiants"
         },
         {
@@ -1603,14 +1621,17 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "g\u00e9lifiant"
         },
         {
             "ciqual_food_code": "13126",
             "id": "en:elderberry",
+            "is_in_taxonomy": 1,
             "processing": "en:juice,en:concentrated",
             "text": "baies de sureau"
         },
@@ -1619,22 +1640,27 @@
             "ingredients": [
                 {
                     "id": "en:e331",
+                    "is_in_taxonomy": 1,
                     "text": "citrates de sodium"
                 },
                 {
                     "id": "en:e333",
+                    "is_in_taxonomy": 1,
                     "text": "citrates de calcium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteurs d'acidit\u00e9"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1642,9 +1668,11 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -1652,9 +1680,11 @@
             "ingredients": [
                 {
                     "id": "en:ferric-diphosphate",
+                    "is_in_taxonomy": 1,
                     "text": "diphosphate ferrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "min\u00e9ral"
         }
     ],
@@ -2040,6 +2070,29 @@
         "fr:glucerol"
     ],
     "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:dextrose",
+        "en:e296",
+        "en:e330",
+        "en:e331",
+        "en:e333",
+        "en:e440a",
+        "en:elderberry",
+        "en:emulsifier",
+        "en:ferric-diphosphate",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
+        "en:humectant",
+        "en:minerals",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:whey-powder",
+        "fr:glucerol"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 46,

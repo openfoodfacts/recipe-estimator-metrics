@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1526,13 +1526,16 @@
     "ingredients": [
         {
             "ciqual_food_code": "15037",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent": 34,
             "text": "roasted peanuts"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 24,
             "processing": "en:toasted",
             "text": "almonds"
@@ -1540,6 +1543,7 @@
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent": 23,
             "processing": "en:toasted",
             "text": "cashew nuts"
@@ -1547,53 +1551,70 @@
         {
             "ciqual_food_code": "15026",
             "id": "en:pecan-nut",
+            "is_in_taxonomy": 1,
             "percent": 6,
             "text": "pecan nuts"
         },
         {
             "ciqual_food_code": "15044",
+            "ecobalyse_code": "pistachio-non-eu",
             "id": "en:pistachio-nuts",
+            "is_in_taxonomy": 1,
             "percent": 5,
             "text": "pistachios"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "text": "rapeseed vegetable oils"
         },
         {
             "id": "en:olive-vegetable-oils",
+            "is_in_taxonomy": 0,
             "text": "olive vegetable oils"
         },
         {
             "id": "en:dried-olives-in-slices",
+            "is_in_taxonomy": 0,
             "percent": 2,
             "text": "dried olives in slices"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "cooking salt"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "text": "onion"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "text": "garlic"
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "text": "maltodextrin"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast-extract",
+            "is_in_taxonomy": 1,
             "text": "yeast extract"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "text": "pepper"
         },
         {
@@ -1601,13 +1622,16 @@
             "ingredients": [
                 {
                     "id": "en:e551",
+                    "is_in_taxonomy": 1,
                     "text": "silicon dioxide"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "anti-caking agent"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavors"
         },
         {
@@ -1615,9 +1639,11 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "acidifying"
         }
     ],
@@ -1763,12 +1789,27 @@
         "en:e551",
         "en:flavouring",
         "en:maltodextrin",
+        "en:olive-vegetable-oils"
+    ],
+    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidifying",
+        "en:almond",
+        "en:anti-caking-agent",
+        "en:cashew-nuts",
+        "en:dried-olives-in-slices",
+        "en:e330",
+        "en:e551",
+        "en:flavouring",
+        "en:garlic",
+        "en:maltodextrin",
         "en:olive-vegetable-oils",
+        "en:pecan-nut",
         "en:pepper",
-        "en:rapeseed-oil",
+        "en:salt",
         "en:yeast-extract"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2199,10 +2240,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:o-7-other-plastics"
+                "id": {
+                    "id": "en:o-7-other-plastics"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

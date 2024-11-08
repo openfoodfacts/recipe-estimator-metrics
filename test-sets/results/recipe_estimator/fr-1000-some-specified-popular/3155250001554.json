@@ -225,7 +225,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1428,7 +1428,9 @@
                 {
                     "ciqual_food_code_used": "19051",
                     "ciqual_proxy_food_code": "19051",
+                    "ecobalyse_code": "milk",
                     "id": "en:milk",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1523,13 +1525,13 @@
                             "percent_max": 4.93,
                             "percent_min": 4.93
                         },
+                        "vitamin-b1": {
+                            "percent_max": 4.2999999999999995e-05,
+                            "percent_min": 4.2999999999999995e-05
+                        },
                         "vitamin-b12": {
                             "percent_max": 4.9e-07,
                             "percent_min": 4.9e-07
-                        },
-                        "vitamin-b1_unit": {
-                            "percent_max": 4.2999999999999995e-05,
-                            "percent_min": 4.2999999999999995e-05
                         },
                         "vitamin-b2": {
                             "percent_max": 0.00017999999999999998,
@@ -1570,6 +1572,7 @@
                     "text": "lait"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 95.9,
             "percent_hidden": 97,
             "quantity_estimate": 95.90607571062911,
@@ -1579,6 +1582,7 @@
             "ciqual_food_code_used": "9510",
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-tapioca-starch",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1673,11 +1677,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1724,6 +1728,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1818,11 +1823,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -1868,6 +1873,7 @@
                     "text": "pectine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.36,
             "quantity_estimate": 1.3613080964569635,
             "text": "épaississant"
@@ -1875,6 +1881,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1969,11 +1976,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2137,6 +2144,14 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e440a",
+        "en:lactic-ferments",
+        "en:light-cream",
+        "en:modified-tapioca-starch",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 13,
@@ -2596,38 +2611,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],
@@ -2959,15 +2992,15 @@
                 "unweighted_total": 4.93,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 4,
+                "notes": "Not listed on product",
+                "unweighted_total": 4.2999999999999995e-05
+            },
             "vitamin-b12": {
                 "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 4.9e-07
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 4,
-                "notes": "Not listed on product",
-                "unweighted_total": 4.2999999999999995e-05
             },
             "vitamin-b2": {
                 "ingredient_count": 4,

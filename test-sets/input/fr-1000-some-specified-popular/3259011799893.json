@@ -215,7 +215,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1812,7 +1812,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9690",
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:whole-wheat-bulgur",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 48.5,
             "processing": "en:pre-cooked",
@@ -1821,6 +1823,7 @@
         {
             "ciqual_proxy_food_code": "9380",
             "id": "en:buckwheat",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 18.3,
             "processing": "en:pre-cooked,en:grilled",
@@ -1828,17 +1831,21 @@
         },
         {
             "ciqual_food_code": "12115",
+            "ecobalyse_code": "emmental",
             "id": "en:emmental",
             "ingredients": [
                 {
                     "id": "fr:sans-pressure-animale",
+                    "is_in_taxonomy": 0,
                     "text": "sans pressure animale"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emmental"
         },
         {
             "id": "fr:bio",
+            "is_in_taxonomy": 0,
             "labels": "en:organic, en:organic",
             "percent": 10.8,
             "text": "Bio"
@@ -1848,46 +1855,58 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:high-oleic-sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "huile de tournesol ol\u00e9ique"
                 },
                 {
+                    "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "et tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "flocons de bl\u00e9 complet"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "oignons"
         },
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "flocons d'avoine compl\u00e8te"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "farine de bl\u00e9"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin"
         }
     ],
@@ -2111,6 +2130,16 @@
         "fr:sans-pressure-animale"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:buckwheat",
+        "en:sea-salt",
+        "en:vegetable-oil",
+        "en:whole-grain-oat-flakes",
+        "en:whole-wheat-flakes",
+        "fr:bio",
+        "fr:sans-pressure-animale"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 30,
@@ -2543,44 +2572,62 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 2,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:non-corrugated-cardboard"
+                "id": {
+                    "id": "en:non-corrugated-cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "100g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 100,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

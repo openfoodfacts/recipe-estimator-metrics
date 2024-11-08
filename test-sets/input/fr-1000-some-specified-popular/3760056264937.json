@@ -183,7 +183,7 @@
                         "epi_score": "63",
                         "origin": "en:greece",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 63,
@@ -955,32 +955,39 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
             "ingredients": [
                 {
                     "id": "en:sheep",
+                    "is_in_taxonomy": 1,
                     "percent": 70,
                     "text": "sheep"
                 },
                 {
                     "id": "en:goat",
+                    "is_in_taxonomy": 1,
                     "percent": 30,
                     "text": "goat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "milk"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:rensure",
+            "is_in_taxonomy": 0,
             "text": "rensure"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "lactic ferments"
         }
     ],
@@ -1105,6 +1112,14 @@
         "en:sheep"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:goat",
+        "en:lactic-ferments",
+        "en:rensure",
+        "en:salt",
+        "en:sheep"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1540,36 +1555,52 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:protection-cover"
+                "id": {
+                    "id": "en:protection-cover"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 14
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 12
         }

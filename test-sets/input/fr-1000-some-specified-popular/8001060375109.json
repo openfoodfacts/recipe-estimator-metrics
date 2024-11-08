@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1559,6 +1559,7 @@
         {
             "ciqual_food_code": "11033",
             "id": "en:basil",
+            "is_in_taxonomy": 1,
             "percent": 46,
             "text": "basil"
         },
@@ -1568,15 +1569,20 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "sunflower seed oil"
                 },
                 {
                     "ciqual_proxy_food_code": "17270",
+                    "ecobalyse_code": "olive-oil-eu",
                     "id": "en:olive-oil",
+                    "is_in_taxonomy": 1,
                     "text": "olive oil"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "vegetable oil blend"
         },
         {
@@ -1585,55 +1591,68 @@
                 {
                     "ciqual_proxy_food_code": "12999",
                     "id": "en:cheese",
+                    "is_in_taxonomy": 1,
                     "text": "cheese"
                 },
                 {
                     "ciqual_food_code": "12120",
                     "id": "en:parmigiano-reggiano",
+                    "is_in_taxonomy": 1,
                     "labels": "en:pdo",
                     "text": "parmigiano reggiano cheese"
                 },
                 {
                     "ciqual_proxy_food_code": "12999",
                     "id": "en:pecorino-romano",
+                    "is_in_taxonomy": 1,
                     "labels": "en:pdo",
                     "text": "pecorino romano cheese"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "cheeses milk"
         },
         {
             "ciqual_proxy_food_code": "17270",
+            "ecobalyse_code": "olive-oil-eu",
             "id": "en:olive-oil",
+            "is_in_taxonomy": 1,
             "text": "olive oil"
         },
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "text": "cashew nuts"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose",
+            "is_in_taxonomy": 1,
             "text": "glucose"
         },
         {
             "ciqual_food_code": "4003",
+            "ecobalyse_code": "potato-industry-fr",
             "id": "en:potato",
+            "is_in_taxonomy": 1,
             "text": "potato"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavouring"
         },
         {
             "ciqual_food_code": "15025",
             "id": "en:pine-nuts",
+            "is_in_taxonomy": 1,
             "text": "pine nuts"
         },
         {
@@ -1641,22 +1660,28 @@
             "ingredients": [
                 {
                     "id": "en:e270",
+                    "is_in_taxonomy": 1,
                     "text": "lactic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidity regulator"
         },
         {
             "id": "en:natural-garlic-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural garlic flavouring"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "text": "extra virgin olive oil"
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "text": "spices"
         }
     ],
@@ -1915,6 +1940,24 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:basil",
+        "en:cashew-nuts",
+        "en:cheese",
+        "en:cheeses-milk",
+        "en:e270",
+        "en:flavouring",
+        "en:glucose",
+        "en:natural-garlic-flavouring",
+        "en:parmigiano-reggiano",
+        "en:pecorino-romano",
+        "en:pine-nuts",
+        "en:salt",
+        "en:spice",
+        "en:vegetable-oil-blend"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -2318,23 +2361,33 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

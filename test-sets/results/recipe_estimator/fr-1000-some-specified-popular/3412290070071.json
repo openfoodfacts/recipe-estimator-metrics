@@ -231,7 +231,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1333,6 +1333,7 @@
             "ciqual_food_code_used": "12999",
             "ciqual_proxy_food_code": "12999",
             "id": "en:soft-white-cheese",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1427,13 +1428,13 @@
                     "percent_max": 0.27,
                     "percent_min": 0.27
                 },
+                "vitamin-b1": {
+                    "percent_max": 3.5000000000000004e-05,
+                    "percent_min": 3.5000000000000004e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 1.3600000000000001e-06,
                     "percent_min": 1.3600000000000001e-06
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 3.5000000000000004e-05,
-                    "percent_min": 3.5000000000000004e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00041,
@@ -1477,6 +1478,7 @@
             "ciqual_food_code_used": "11082",
             "difference": 1.1,
             "id": "en:salt-from-guerande",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1571,11 +1573,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1697,6 +1699,11 @@
     "ingredients_with_unspecified_percent_sum": 98.9,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt-from-guerande",
+        "en:soft-white-cheese"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 6,
@@ -2169,47 +2176,65 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "320g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 320,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "320g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 320,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "320g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 320,
             "recycling": {
-                "id": "en:recycle-with-drink-cartons"
+                "id": {
+                    "id": "en:recycle-with-drink-cartons"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 20.05
         }
@@ -2593,15 +2618,15 @@
                 "unweighted_total": 0.27,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 3.5000000000000004e-05
+            },
             "vitamin-b12": {
                 "ingredient_count": 2,
                 "notes": "Not listed on product",
                 "unweighted_total": 1.3600000000000001e-06
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 2,
-                "notes": "Not listed on product",
-                "unweighted_total": 3.5000000000000004e-05
             },
             "vitamin-b2": {
                 "ingredient_count": 2,

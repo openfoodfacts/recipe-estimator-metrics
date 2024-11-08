@@ -209,7 +209,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1408,46 +1408,60 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 70,
             "text": "Farine de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:broad-bean-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de f\u00e8ves"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me"
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "text": "extrait d'ac\u00e9rola"
         }
     ],
@@ -1640,10 +1654,17 @@
     "ingredients_with_unspecified_percent_sum": 30,
     "ingredients_without_ciqual_codes": [
         "en:acerola-juice",
+        "en:flavouring"
+    ],
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
         "en:flavouring",
+        "en:salt",
+        "en:vinegar",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 20,
@@ -2106,27 +2127,39 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 6
         },
         {
             "material": {
-                "id": "fr:Plastique et m\u00e9tal"
+                "id": {
+                    "id": "fr:Plastique et m\u00e9tal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:fastener"
+                "id": {
+                    "id": "en:fastener"
+                }
             },
             "weight_measured": 0.25
         }

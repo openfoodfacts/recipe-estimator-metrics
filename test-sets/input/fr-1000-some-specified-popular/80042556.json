@@ -257,7 +257,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -2353,13 +2353,16 @@
     "ingredients": [
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent": 99.8,
             "text": "tomates"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         }
     ],
@@ -2436,6 +2439,10 @@
     "ingredients_with_unspecified_percent_sum": 0.200000000000003,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -2936,17 +2943,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 400,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:food-can"
+                "id": {
+                    "id": "en:food-can"
+                }
             },
             "weight_measured": 58
         }

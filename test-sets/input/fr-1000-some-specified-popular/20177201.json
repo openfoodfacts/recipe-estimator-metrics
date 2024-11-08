@@ -54,7 +54,7 @@
         "en:e330",
         "en:e440"
     ],
-    "allergens": "en:soybeans, en:soybeans",
+    "allergens": "en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "soy",
     "allergens_from_user": "(fr) en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -237,7 +237,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2035,33 +2035,42 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "text": "cocoa paste"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "text": "cocoa butter"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "glucose-fructose syrup"
         },
         {
             "ciqual_food_code": "13015",
+            "ecobalyse_code": "raspberry-eu",
             "id": "en:raspberry-puree",
+            "is_in_taxonomy": 1,
             "percent": 0.5,
             "processing": "en:concentrated",
             "text": "raspberry puree"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "text": "rice flour"
         },
         {
@@ -2069,23 +2078,29 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "text": "lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "text": "palm fat"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural aroma"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
+            "is_in_taxonomy": 1,
             "text": "rice starch"
         },
         {
@@ -2093,9 +2108,11 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "thickener"
         },
         {
@@ -2103,18 +2120,22 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifier"
         },
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
+            "is_in_taxonomy": 1,
             "text": "vanilla extract"
         },
         {
             "id": "en:concentrated-black-carrot-juice-with-colouring-property",
+            "is_in_taxonomy": 0,
             "text": "concentrated black carrot juice with colouring property"
         }
     ],
@@ -2386,6 +2407,22 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:concentrated-black-carrot-juice-with-colouring-property",
+        "en:e322",
+        "en:e330",
+        "en:e440a",
+        "en:emulsifier",
+        "en:glucose-fructose-syrup",
+        "en:natural-flavouring",
+        "en:rice-starch",
+        "en:thickener",
+        "en:vanilla-extract"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
     "labels": "Fair trade, Vegetarian, Fairtrade International, Fairtrade cocoa, Green Dot",
@@ -2859,36 +2896,52 @@
     "packagings": [
         {
             "material": {
-                "id": "en:fsc-cardboard"
+                "id": {
+                    "id": "en:fsc-cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sheet"
+                "id": {
+                    "id": "en:sheet"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

@@ -211,13 +211,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 98.125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 1.875,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 91.25625,
@@ -1343,7 +1343,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "19042",
+            "ecobalyse_code": "milk",
             "id": "en:pasteurized-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 90,
             "text": "Lait demi-\u00e9cr\u00e9m\u00e9 pasteuris\u00e9"
@@ -1351,21 +1353,25 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "processing": "en:pasteurised",
             "text": "cr\u00e8me"
         },
         {
             "id": "en:milk-mineral-concentrate",
+            "is_in_taxonomy": 1,
             "origins": "en:european-union",
             "text": "concentr\u00e9 des min\u00e9raux du lait"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamine D"
         }
     ],
@@ -1471,6 +1477,13 @@
         "en:vitamin-d"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments",
+        "en:milk-mineral-concentrate",
+        "en:vitamin-d"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -1918,10 +1931,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],

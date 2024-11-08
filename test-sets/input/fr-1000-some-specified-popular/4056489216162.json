@@ -227,7 +227,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1973,27 +1973,33 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "text": "Magermilch"
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "Milcheiwei\u00df"
         },
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "text": "Sahne"
         },
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "fettarmes Kakaopulver"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "text": "modifizierte St\u00e4rke"
         },
         {
@@ -2001,21 +2007,26 @@
             "ingredients": [
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "text": "Carrageen"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Verdickungsmittel"
         },
         {
             "id": "en:e466",
+            "is_in_taxonomy": 1,
             "text": "Natriumcarboxymethylcellulose"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "nat\u00fcrliches Aroma"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "Aroma"
         },
         {
@@ -2023,17 +2034,21 @@
             "ingredients": [
                 {
                     "id": "en:e950",
+                    "is_in_taxonomy": 1,
                     "text": "Acesulfam K"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "S\u00fc\u00dfungsmittel"
         },
         {
             "id": "en:e955",
+            "is_in_taxonomy": 1,
             "text": "Sucralose"
         },
         {
             "id": "en:lactase",
+            "is_in_taxonomy": 1,
             "text": "Laktase"
         }
     ],
@@ -2163,6 +2178,22 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:e407",
+        "en:e466",
+        "en:e950",
+        "en:e955",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:lactase",
+        "en:milk-proteins",
+        "en:modified-starch",
+        "en:natural-flavouring",
+        "en:sweetener",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2654,12 +2685,16 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],

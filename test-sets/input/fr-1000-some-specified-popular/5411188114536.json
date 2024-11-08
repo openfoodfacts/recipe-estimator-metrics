@@ -289,7 +289,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1921,18 +1921,22 @@
     ],
     "ingredients": [
         {
-            "id": "fr:base-de-soja",
+            "id": "en:soya",
+            "is_in_taxonomy": 1,
             "percent": 80,
             "text": "Base de soja"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "20901",
             "id": "en:soya-bean",
+            "is_in_taxonomy": 1,
             "percent": 9.7,
             "processing": "en:shelled",
             "text": "f\u00e8ves de soja"
@@ -1942,18 +1946,21 @@
             "ingredients": [
                 {
                     "id": "en:fruit",
+                    "is_in_taxonomy": 1,
                     "percent": 7,
                     "text": "fruit"
                 },
                 {
-                    "id": "en:juice",
+                    "id": "en:concentrated-juice",
+                    "is_in_taxonomy": 1,
                     "percent": 3.9,
-                    "processing": "en:from-concentrate",
-                    "text": "jus"
+                    "text": "jus \u00e0 base de concentr\u00e9"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
@@ -1961,17 +1968,21 @@
                     "ingredients": [
                         {
                             "id": "en:e330",
+                            "is_in_taxonomy": 1,
                             "text": "acide citrique"
                         },
                         {
                             "id": "en:e331",
+                            "is_in_taxonomy": 1,
                             "text": "citrates de sodium"
                         },
                         {
                             "id": "en:e296",
+                            "is_in_taxonomy": 1,
                             "text": "acide malique"
                         }
                     ],
+                    "is_in_taxonomy": 0,
                     "text": "comec teurs d'acidit\u00e9"
                 },
                 {
@@ -1979,41 +1990,52 @@
                     "ingredients": [
                         {
                             "id": "en:e440a",
+                            "is_in_taxonomy": 1,
                             "text": "pectines"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "stabilisant"
                 },
                 {
                     "id": "fr:calcium-phosphate-tricalcique",
+                    "is_in_taxonomy": 0,
                     "text": "calcium phosphate tricalcique"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 10.9,
             "text": "m\u00e9lange de fraise"
         },
         {
             "ciqual_proxy_food_code": "20091",
+            "ecobalyse_code": "beetroot-fr",
             "id": "fr:concentre-de-betterave",
+            "is_in_taxonomy": 1,
             "text": "concentr\u00e9 de betterave"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:black-carrot",
+            "is_in_taxonomy": 1,
             "processing": "en:concentrated",
             "text": "carotte noire"
         },
         {
             "id": "fr:quot",
+            "is_in_taxonomy": 0,
             "text": "quot"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin de table"
         },
         {
@@ -2021,29 +2043,36 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "text": "extrait riche en tocoph\u00e9rols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydants"
         },
         {
             "id": "en:e304",
+            "is_in_taxonomy": 1,
             "text": "esters d'acides gras de l'acide ascorbique"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamine B2"
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "text": "vitamine B12"
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "text": "vitamine D2"
         },
         {
@@ -2051,21 +2080,26 @@
             "ingredients": [
                 {
                     "id": "fr:s",
+                    "is_in_taxonomy": 0,
                     "text": "S"
                 },
                 {
                     "id": "fr:thermophilus",
+                    "is_in_taxonomy": 0,
                     "text": "thermophilus"
                 },
                 {
                     "id": "fr:l",
+                    "is_in_taxonomy": 0,
                     "text": "L"
                 },
                 {
                     "id": "en:lactobacillus-bulgaricus",
+                    "is_in_taxonomy": 1,
                     "text": "bulgaricus"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "ferments du yaourt"
         }
     ],
@@ -2483,6 +2517,7 @@
     "ingredients_with_unspecified_percent_sum": 10,
     "ingredients_without_ciqual_codes": [
         "en:antioxidant",
+        "en:concentrated-juice",
         "en:e101",
         "en:e296",
         "en:e304",
@@ -2492,14 +2527,13 @@
         "en:e440a",
         "en:ergocalciferol",
         "en:fruit",
-        "en:juice",
         "en:lactobacillus-bulgaricus",
         "en:natural-flavouring",
+        "en:soya",
         "en:stabiliser",
         "en:vitamin-b12",
         "en:vitamins",
         "en:yogurt-cultures",
-        "fr:base-de-soja",
         "fr:calcium-phosphate-tricalcique",
         "fr:comec-teurs-d-acidite",
         "fr:l",
@@ -2509,6 +2543,36 @@
         "fr:thermophilus"
     ],
     "ingredients_without_ciqual_codes_n": 25,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:concentrated-juice",
+        "en:e101",
+        "en:e296",
+        "en:e304",
+        "en:e306",
+        "en:e330",
+        "en:e331",
+        "en:e440a",
+        "en:ergocalciferol",
+        "en:fruit",
+        "en:lactobacillus-bulgaricus",
+        "en:natural-flavouring",
+        "en:sea-salt",
+        "en:soya",
+        "en:soya-bean",
+        "en:stabiliser",
+        "en:vitamin-b12",
+        "en:vitamins",
+        "en:yogurt-cultures",
+        "fr:calcium-phosphate-tricalcique",
+        "fr:comec-teurs-d-acidite",
+        "fr:l",
+        "fr:melange-de-fraise",
+        "fr:quot",
+        "fr:s",
+        "fr:thermophilus"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 27,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 41,
@@ -3018,53 +3082,77 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 8.86
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 0.77
         },
         {
             "material": {
-                "id": "en:rpet-transparent"
+                "id": {
+                    "id": "en:rpet-transparent"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 3.09
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 7.76
         }

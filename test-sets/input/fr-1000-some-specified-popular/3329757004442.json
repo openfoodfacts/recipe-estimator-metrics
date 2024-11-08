@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1070,9 +1070,11 @@
             "ingredients": [
                 {
                     "id": "en:e968",
+                    "is_in_taxonomy": 1,
                     "text": "erythritol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Agent de charge"
         },
         {
@@ -1080,9 +1082,11 @@
             "ingredients": [
                 {
                     "id": "en:e414",
+                    "is_in_taxonomy": 1,
                     "text": "gomme d'acacia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisant"
         },
         {
@@ -1090,10 +1094,12 @@
             "ingredients": [
                 {
                     "id": "en:e960",
+                    "is_in_taxonomy": 1,
                     "percent": 0.2,
                     "text": "glycosides de st\u00e9viol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9dulcorant"
         }
     ],
@@ -1156,6 +1162,15 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bulking-agent",
+        "en:e414",
+        "en:e960",
+        "en:e968",
+        "en:stabiliser",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 6,
@@ -1437,34 +1452,50 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:kraft-paper"
+                "id": {
+                    "id": "en:kraft-paper"
+                }
             },
             "shape": {
-                "id": "en:packaging"
+                "id": {
+                    "id": "en:packaging"
+                }
             }
         }
     ],

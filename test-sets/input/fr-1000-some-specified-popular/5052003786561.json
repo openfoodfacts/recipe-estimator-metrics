@@ -29,7 +29,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, Wheat, Milk, Hazelnut, Almond",
     "allergens_from_user": "(en) en:milk",
     "allergens_hierarchy": [
@@ -171,7 +171,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -976,6 +976,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "text": "Oat Flakes"
         },
         {
@@ -985,35 +986,43 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "Wheat"
                 },
                 {
                     "id": "en:barley-malt-extract",
+                    "is_in_taxonomy": 1,
                     "text": "Barley Malt Extract"
                 }
             ],
+            "is_in_taxonomy": 1,
             "processing": "en:flakes,en:malted,en:toasted",
             "text": "Wheat"
         },
         {
             "ciqual_food_code": "13046",
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "Raisins"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "Whey Powder"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "Hazelnut"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "text": "Almond"
         }
     ],
@@ -1103,6 +1112,15 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:barley-malt-extract",
+        "en:oat-flakes",
+        "en:raisin",
+        "en:wheat",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,

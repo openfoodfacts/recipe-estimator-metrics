@@ -178,7 +178,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1240,6 +1240,7 @@
     "ingredients": [
         {
             "id": "en:pure-brown-sugar-unrefined-cane",
+            "is_in_taxonomy": 0,
             "percent": 100,
             "text": "pure brown sugar unrefined cane"
         }
@@ -1296,6 +1297,10 @@
         "en:pure-brown-sugar-unrefined-cane"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:pure-brown-sugar-unrefined-cane"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -1691,30 +1696,42 @@
     "packagings": [
         {
             "material": {
-                "id": "en:kraft-paper"
+                "id": {
+                    "id": "en:kraft-paper"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "750g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "750",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 12.61
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             },
             "weight_measured": 1.21
         }

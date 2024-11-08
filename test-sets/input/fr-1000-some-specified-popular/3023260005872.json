@@ -228,13 +228,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 72.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 27.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 67.425,
@@ -1377,27 +1377,33 @@
     "ingredients": [
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent": 48.1,
             "text": "Huile de colza"
         },
         {
             "ciqual_proxy_food_code": "12999",
             "id": "fr:fromage-de-brebis-au-lait-pasteurise",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 45,
             "text": "fromage de brebis au lait pasteuris\u00e9"
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "text": "aromates"
         },
         {
             "id": "en:herb",
+            "is_in_taxonomy": 1,
             "text": "plantes aromatiques"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         }
     ],
@@ -1523,6 +1529,13 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:herb",
+        "en:natural-flavouring",
+        "en:spice",
+        "fr:fromage-de-brebis-au-lait-pasteurise"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 13,
@@ -1943,33 +1956,45 @@
     "packagings": [
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "300 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 300,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": 9.71
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "300 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 300,
             "recycling": {
-                "id": "en:recycle-in-glass-bin"
+                "id": {
+                    "id": "en:recycle-in-glass-bin"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             },
             "weight_measured": 245.28
         }

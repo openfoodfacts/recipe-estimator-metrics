@@ -185,7 +185,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1216,24 +1216,32 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent": 18,
             "text": "Huile d'olive vierge extra"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent": 14,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "20170",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "fr:puree-de-tomate-mi-reduite",
+            "is_in_taxonomy": 1,
             "percent": 13.6,
             "text": "pur\u00e9e de tomates mi-r\u00e9duite"
         },
@@ -1244,44 +1252,55 @@
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:wine-vinegar",
+                    "is_in_taxonomy": 1,
                     "text": "vinaigre de vin"
                 },
                 {
                     "id": "en:concentrated-grape-must",
+                    "is_in_taxonomy": 1,
                     "text": "mo\u00fbt de raisin concentr\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "vinaigre balsamique"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:white-wine-vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre de vin blanc"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:red-wine-vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre de vin rouge"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "text": "ail"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "20041",
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:bell-pepper",
+            "is_in_taxonomy": 1,
             "text": "poivron"
         },
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "processing": "en:dried",
             "text": "tomates"
@@ -1506,6 +1525,16 @@
         "en:concentrated-grape-must"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:balsamic-vinegar",
+        "en:concentrated-grape-must",
+        "en:garlic",
+        "en:red-wine-vinegar",
+        "en:salt",
+        "en:white-wine-vinegar",
+        "en:wine-vinegar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,
@@ -1928,47 +1957,65 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "33cl",
             "quantity_per_unit_unit": "cl",
             "quantity_per_unit_value": 33,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "33cl",
             "quantity_per_unit_unit": "cl",
             "quantity_per_unit_value": 33,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "33cl",
             "quantity_per_unit_unit": "cl",
             "quantity_per_unit_value": 33,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         }
     ],

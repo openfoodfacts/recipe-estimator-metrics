@@ -48,7 +48,7 @@
     "additives_old_tags": [],
     "additives_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, lait, ferments lactiques, lait",
     "allergens_from_user": "(fr) en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -197,19 +197,19 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 86.5752645502645,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 6.71236772486773,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:madagascar",
                         "percent": 6.71236772486773,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 80.514996031746,
@@ -1103,7 +1103,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "19042",
+            "ecobalyse_code": "milk",
             "id": "en:pasteurized-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade, en:organic",
             "origins": "en:france",
             "percent": 79.6,
@@ -1111,7 +1113,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 8,
             "text": "sucre de canne"
@@ -1119,39 +1123,48 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade, en:organic",
             "text": "cr\u00e8me"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "poudre de lait\" \u00e9cr\u00e9m\u00e9"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "amidon de ma\u00efs"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "jus de citron concentr\u00e9"
         },
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "extrait de vanille"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "Lait"
         }
@@ -1256,6 +1269,14 @@
         "en:lactic-ferments"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-lemon-juice",
+        "en:corn-starch",
+        "en:cream",
+        "en:lactic-ferments",
+        "en:vanilla-extract"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1743,26 +1764,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "4",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": "4",
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],

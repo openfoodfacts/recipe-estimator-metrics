@@ -242,7 +242,7 @@
                         "epi_score": "92",
                         "origin": "en:austria",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 92,
@@ -1466,7 +1466,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
@@ -1474,17 +1476,21 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acid"
         },
         {
             "id": "en:e290",
+            "is_in_taxonomy": 1,
             "text": "carbon dioxide"
         },
         {
             "id": "en:taurine",
+            "is_in_taxonomy": 1,
             "percent": 0.4,
             "text": "taurine"
         },
@@ -1493,13 +1499,16 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "sodium carbonates"
                 },
                 {
                     "id": "en:e504",
+                    "is_in_taxonomy": 1,
                     "text": "magnesium carbonates"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidity regulators"
         },
         {
@@ -1507,17 +1516,21 @@
             "ingredients": [
                 {
                     "id": "en:e950",
+                    "is_in_taxonomy": 1,
                     "text": "acesulfame k"
                 },
                 {
                     "id": "en:e951",
+                    "is_in_taxonomy": 1,
                     "text": "aspartame"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "sweeteners"
         },
         {
             "id": "en:caffeine",
+            "is_in_taxonomy": 1,
             "percent": 0.03,
             "text": "caffeine"
         },
@@ -1526,21 +1539,26 @@
             "ingredients": [
                 {
                     "id": "en:niacin-nlathenic-acid",
+                    "is_in_taxonomy": 0,
                     "text": "niacin nlathenic acid"
                 },
                 {
                     "id": "en:vitamin-b6",
+                    "is_in_taxonomy": 1,
                     "text": "b6"
                 },
                 {
                     "id": "en:vitamin-b12",
+                    "is_in_taxonomy": 1,
                     "text": "b12"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "vitamins"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavourings"
         },
         {
@@ -1548,9 +1566,11 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "xanthan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "thickener"
         },
         {
@@ -1558,17 +1578,21 @@
             "ingredients": [
                 {
                     "id": "en:e150a",
+                    "is_in_taxonomy": 1,
                     "text": "plain caramel"
                 },
                 {
                     "id": "en:e101",
+                    "is_in_taxonomy": 1,
                     "text": "riboflavin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colours"
         },
         {
             "id": "en:contiains-a-source-of-phenylanine",
+            "is_in_taxonomy": 0,
             "text": "contiains a source of phenylanine"
         }
     ],
@@ -1877,6 +1901,31 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 22,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:caffeine",
+        "en:colour",
+        "en:contiains-a-source-of-phenylanine",
+        "en:e101",
+        "en:e150a",
+        "en:e290",
+        "en:e330",
+        "en:e415",
+        "en:e500",
+        "en:e504",
+        "en:e950",
+        "en:e951",
+        "en:flavouring",
+        "en:niacin-nlathenic-acid",
+        "en:sweetener",
+        "en:taurine",
+        "en:thickener",
+        "en:vitamin-b12",
+        "en:vitamin-b6",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2402,10 +2451,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             }
         }
     ],

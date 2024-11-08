@@ -226,7 +226,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1047,30 +1047,37 @@
             "ingredients": [
                 {
                     "id": "en:sulfite",
+                    "is_in_taxonomy": 1,
                     "text": "including sulphites"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "pickles"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:spirit-vinegar",
+            "is_in_taxonomy": 1,
             "text": "spirit vinegar"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent": 8,
             "text": "onion"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:white-wine-vinegar",
+            "is_in_taxonomy": 1,
             "text": "white wine vinegar"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
@@ -1079,38 +1086,48 @@
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "text": "mustard seeds"
                 },
                 {
                     "ciqual_food_code": "20087",
+                    "ecobalyse_code": "bellpepper-unheated-greehouse",
                     "id": "en:red-bell-pepper",
+                    "is_in_taxonomy": 1,
                     "text": "red bell pepper"
                 },
                 {
                     "id": "en:rehydrated",
+                    "is_in_taxonomy": 0,
                     "text": "rehydrated"
                 },
                 {
                     "ciqual_food_code": "11026",
                     "id": "en:coriander-seed",
+                    "is_in_taxonomy": 1,
                     "text": "coriander seeds"
                 },
                 {
                     "ciqual_food_code": "20151",
                     "id": "en:allspice",
+                    "is_in_taxonomy": 1,
                     "text": "allspice"
                 },
                 {
                     "ciqual_food_code": "11015",
+                    "ecobalyse_code": "black-pepper",
                     "id": "en:black-pepper",
+                    "is_in_taxonomy": 1,
                     "text": "black pepper"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 1.9,
             "text": "spices to"
         },
         {
             "id": "en:natural-flavor-of-tarragon-with-other-natural-flavourings",
+            "is_in_taxonomy": 0,
             "text": "natural flavor of tarragon with other natural flavourings"
         }
     ],
@@ -1330,6 +1347,20 @@
         "en:sulfite"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:allspice",
+        "en:coriander-seed",
+        "en:mustard-seed",
+        "en:natural-flavor-of-tarragon-with-other-natural-flavourings",
+        "en:pickles",
+        "en:rehydrated",
+        "en:salt",
+        "en:spice",
+        "en:spirit-vinegar",
+        "en:sulfite",
+        "en:white-wine-vinegar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -1769,17 +1800,23 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:wrapper"
+                "id": {
+                    "id": "en:wrapper"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

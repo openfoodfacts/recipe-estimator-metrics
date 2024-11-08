@@ -243,7 +243,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2060,21 +2060,26 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31074",
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:cane-sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre de canne"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
@@ -2083,18 +2088,22 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithines de soja"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9mulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 60,
             "text": "chocolat noir"
         },
         {
             "ciqual_proxy_food_code": "9100",
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "percent": 40,
             "text": "riz"
         }
@@ -2283,6 +2292,14 @@
         "en:emulsifier"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:rice",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2712,10 +2729,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

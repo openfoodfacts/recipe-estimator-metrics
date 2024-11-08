@@ -241,7 +241,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -2309,51 +2309,60 @@
             "ingredients": [
                 {
                     "id": "en:calcium",
+                    "is_in_taxonomy": 1,
                     "quantity": "549 mg",
                     "quantity_g": 0.549,
                     "text": "Calcium ="
                 },
                 {
                     "id": "en:magnesium",
+                    "is_in_taxonomy": 1,
                     "quantity": "119 mg",
                     "quantity_g": 0.119,
                     "text": "Magn\u00e9sium ="
                 },
                 {
                     "id": "en:sodium",
+                    "is_in_taxonomy": 1,
                     "quantity": "14.2 mg",
                     "quantity_g": 0.0142,
                     "text": "Sodium ="
                 },
                 {
                     "id": "en:sulfates",
+                    "is_in_taxonomy": 1,
                     "quantity": "1530 mg",
                     "quantity_g": 1.53,
                     "text": "Sulfate ="
                 },
                 {
                     "id": "fr:hydrogenocarbonate",
+                    "is_in_taxonomy": 0,
                     "quantity": "387.3 mg",
                     "quantity_g": 0.3873,
                     "text": "Hydrog\u00e9nocarbonate ="
                 },
                 {
                     "id": "fr:nitrate",
+                    "is_in_taxonomy": 0,
                     "quantity": "4.3 mg",
                     "quantity_g": 0.0043,
                     "text": "Nitrate ="
                 },
                 {
                     "id": "fr:residu-sec-a-180-c",
+                    "is_in_taxonomy": 0,
                     "quantity": "2513 mg",
                     "quantity_g": 2.513,
                     "text": "R\u00e9sidu sec \u00e0 180\u00b0C ="
                 },
                 {
                     "id": "fr:ph-7-2",
+                    "is_in_taxonomy": 0,
                     "text": "pH 7.2"
                 }
             ],
+            "is_in_taxonomy": 0,
             "quantity": "100 ml",
             "quantity_g": 100,
             "text": "Pour"
@@ -2474,6 +2483,18 @@
         "fr:residu-sec-a-180-c"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:magnesium",
+        "en:sodium",
+        "en:sulfates",
+        "fr:hydrogenocarbonate",
+        "fr:nitrate",
+        "fr:ph-7-2",
+        "fr:pour",
+        "fr:residu-sec-a-180-c"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -2966,29 +2987,41 @@
     "packagings": [
         {
             "material": {
-                "id": "en:rpet-transparent"
+                "id": {
+                    "id": "en:rpet-transparent"
+                }
             },
             "number_of_units": "1",
             "quantity_per_unit": "1L",
             "quantity_per_unit_unit": "l",
             "quantity_per_unit_value": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:hdpe-2-high-density-polyethylene"
+                "id": {
+                    "id": "en:hdpe-2-high-density-polyethylene"
+                }
             },
             "number_of_units": "1",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

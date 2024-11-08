@@ -219,7 +219,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1254,22 +1254,29 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
-            "ciqual_food_code": "9410",
+            "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:soft-wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de bl\u00e9 tendre"
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent": 25,
             "text": "beurre"
         },
         {
             "id": "fr:eufs-frais",
+            "is_in_taxonomy": 0,
             "text": "eufs frais"
         },
         {
@@ -1277,9 +1284,11 @@
             "ingredients": [
                 {
                     "id": "en:e450i",
+                    "is_in_taxonomy": 1,
                     "text": "diphosphates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
@@ -1288,23 +1297,28 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "carbonates de sodium"
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de vanille"
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me naturel de vanille"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         }
     ],
@@ -1480,6 +1494,16 @@
         "fr:eufs-frais"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e450i",
+        "en:e500",
+        "en:natural-vanilla-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:wheat",
+        "fr:eufs-frais"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 20,
     "labels": "Point Vert, Fabriqu\u00e9 en France, Pur beurre, Au beurre frais",
@@ -1892,30 +1916,42 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sheet"
+                "id": {
+                    "id": "en:sheet"
+                }
             },
             "weight_measured": 12.2
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             },
             "weight_measured": 6.24
         }

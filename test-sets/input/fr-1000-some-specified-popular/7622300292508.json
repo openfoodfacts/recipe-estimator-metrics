@@ -56,7 +56,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, lait, beurre p\u00e2tissier, l\u00e9cithine de soja, bl\u00e9, lait, l\u00e9cithine de soja",
     "allergens_from_user": "(es) en:gluten,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1478,31 +1478,39 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_food_code": "19054",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:skimmed-milk-powder",
+                    "is_in_taxonomy": 1,
                     "text": "lait \u00e9cr\u00e9m\u00e9 en poudre"
                 },
                 {
                     "id": "en:whey-powder",
+                    "is_in_taxonomy": 1,
                     "text": "lactos\u00e9rum en poudre"
                 },
                 {
                     "ciqual_food_code": "16401",
                     "id": "en:butterfat",
+                    "is_in_taxonomy": 1,
                     "text": "beurre p\u00e2tissier"
                 },
                 {
@@ -1511,52 +1519,67 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithine de soja"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9mulsifiant"
                 },
                 {
                     "id": "en:flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "ar\u00f4me"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 60,
             "text": "Chocolat au lait du pays alpin"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "text": "graisses v\u00e9g\u00e9tales de palme"
         },
         {
             "ciqual_food_code": "16040",
             "id": "en:coconut-oil",
+            "is_in_taxonomy": 1,
             "text": "graisses v\u00e9g\u00e9tales de noix de coco"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum en poudre"
         },
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "cacao maigre en poudre"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
@@ -1565,9 +1588,11 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -1575,18 +1600,22 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "carbonate acide de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me"
         }
     ],
@@ -1933,6 +1962,22 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:coconut-oil",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:whey-powder",
+        "fr:chocolat-au-lait-du-pays-alpin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 42,
@@ -2430,56 +2475,80 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 6,
             "quantity_per_unit": "30 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 30,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sheet"
+                "id": {
+                    "id": "en:sheet"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": 6,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "180 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 180,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

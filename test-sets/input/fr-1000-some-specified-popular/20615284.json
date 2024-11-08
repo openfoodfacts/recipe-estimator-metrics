@@ -215,7 +215,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1190,30 +1190,37 @@
             "id": "en:vegetable-fat",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "colza"
                 },
                 {
                     "id": "fr:palme-non-hydrogene",
+                    "is_in_taxonomy": 0,
                     "text": "palme non hydrog\u00e9n\u00e9"
                 },
                 {
                     "ciqual_food_code": "16040",
                     "id": "en:coconut-oil",
+                    "is_in_taxonomy": 1,
                     "text": "coprah"
                 },
                 {
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "text": "lin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 54,
             "text": "huiles et graisses v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
@@ -1221,28 +1228,35 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- et diglyc\u00e9rides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "id": "en:e322",
+            "is_in_taxonomy": 1,
             "text": "l\u00e9cithines"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent": 0.4,
             "text": "sel"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "poudre de _lait_ \u00e9cr\u00e9m\u00e9"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         },
         {
@@ -1250,9 +1264,11 @@
             "ingredients": [
                 {
                     "id": "en:e270",
+                    "is_in_taxonomy": 1,
                     "text": "acide lactique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
@@ -1260,9 +1276,11 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "text": "sorbate de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "conservateur"
         },
         {
@@ -1270,9 +1288,11 @@
             "ingredients": [
                 {
                     "id": "en:e160",
+                    "is_in_taxonomy": 1,
                     "text": "carot\u00e9no\u00efdes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         }
     ],
@@ -1526,10 +1546,29 @@
         "en:flavouring",
         "en:flax",
         "en:preservative",
+        "en:rapeseed",
         "en:vegetable-fat",
         "fr:palme-non-hydrogene"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:coconut-oil",
+        "en:colour",
+        "en:e160",
+        "en:e202",
+        "en:e270",
+        "en:e322",
+        "en:e471",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:flax",
+        "en:preservative",
+        "en:salt",
+        "en:vegetable-fat",
+        "fr:palme-non-hydrogene"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -1937,29 +1976,43 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

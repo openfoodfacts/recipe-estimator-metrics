@@ -196,7 +196,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1010,15 +1010,17 @@
     "ingredients": [
         {
             "id": "fr:son-a-l-eau-minerale-naturelle-gazeifiee",
+            "is_in_taxonomy": 0,
             "text": "son \u00e0 l'eau min\u00e9rale naturelle gaz\u00e9ifi\u00e9e"
         },
         {
-            "id": "en:fruit-juice",
-            "processing": "en:from-concentrate",
-            "text": "au jus de fruits"
+            "id": "en:fruit-juice-concentrate",
+            "is_in_taxonomy": 1,
+            "text": "au jus de fruits \u00e0 base de concentr\u00e9"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "aux ar\u00f4mes naturels"
         },
         {
@@ -1026,10 +1028,12 @@
             "ingredients": [
                 {
                     "id": "fr:eau-minerale-naturelle-gazeifiee-de-st-alban",
+                    "is_in_taxonomy": 0,
                     "percent": 86.8,
                     "text": "eau minerale naturelle gaz\u00e9ifi\u00e9e de St Alban"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "ents"
         },
         {
@@ -1037,21 +1041,26 @@
             "ingredients": [
                 {
                     "id": "fr:pamolemousse",
+                    "is_in_taxonomy": 0,
                     "percent": 52,
                     "text": "pamolemousse"
                 },
                 {
                     "id": "fr:ctron",
+                    "is_in_taxonomy": 0,
                     "percent": 3.1,
                     "text": "ctron"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 8.8,
             "text": "jus de fruits \u00e0 base de concentr\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent": 42,
             "text": "sucre"
         },
@@ -1060,30 +1069,38 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
             "id": "en:grapefruit-natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels de pamplemousse"
         },
         {
             "id": "en:natural-lemon-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels de citron"
         },
         {
             "ciqual_proxy_food_code": "13009",
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon",
+            "is_in_taxonomy": 1,
             "text": "citron"
         },
         {
             "id": "fr:vert",
+            "is_in_taxonomy": 0,
             "text": "vert"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         }
     ],
@@ -1317,7 +1334,7 @@
     "ingredients_without_ciqual_codes": [
         "en:acid",
         "en:e330",
-        "en:fruit-juice",
+        "en:fruit-juice-concentrate",
         "en:fruit-juice-from-concentrate",
         "en:grapefruit-natural-flavouring",
         "en:natural-flavouring",
@@ -1330,6 +1347,22 @@
         "fr:vert"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:fruit-juice-concentrate",
+        "en:fruit-juice-from-concentrate",
+        "en:grapefruit-natural-flavouring",
+        "en:natural-flavouring",
+        "en:natural-lemon-flavouring",
+        "fr:ctron",
+        "fr:eau-minerale-naturelle-gazeifiee-de-st-alban",
+        "fr:ents",
+        "fr:pamolemousse",
+        "fr:son-a-l-eau-minerale-naturelle-gazeifiee",
+        "fr:vert"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1735,24 +1768,36 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

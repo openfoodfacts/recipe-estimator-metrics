@@ -211,7 +211,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1215,22 +1215,28 @@
         {
             "ciqual_food_code": "9310",
             "id": "en:wholemeal-oat",
+            "is_in_taxonomy": 1,
             "percent": 90,
             "text": "Wholegrain Oats"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "Sunflower Oil"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "Sustainable Palm Fruit Oil"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "Sea Salt"
         },
         {
@@ -1238,9 +1244,11 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "Sodium Bicarbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Raising Agent"
         }
     ],
@@ -1357,6 +1365,13 @@
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e500ii",
+        "en:raising-agent",
+        "en:sea-salt",
+        "en:wholemeal-oat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -1784,28 +1799,40 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:container"
+                "id": {
+                    "id": "en:container"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:pouch-flask"
+                "id": {
+                    "id": "en:pouch-flask"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:card"
+                "id": {
+                    "id": "en:card"
+                }
             }
         }
     ],

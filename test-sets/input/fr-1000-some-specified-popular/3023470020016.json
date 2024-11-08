@@ -246,7 +246,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1894,29 +1894,38 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 52,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "beurre"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "text": "\u0153ufs"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1924,25 +1933,31 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "text": "carbonates de sodium"
         },
         {
             "id": "en:e330",
+            "is_in_taxonomy": 1,
             "text": "acide citrique"
         },
         {
             "id": "fr:tenir-au-sec",
+            "is_in_taxonomy": 0,
             "text": "Tenir au sec"
         },
         {
             "id": "fr:a-l-abri-de-la-chaleur-et-de-la-lumiere",
+            "is_in_taxonomy": 0,
             "text": "\u00e0 l'abri de la chaleur et de la lumi\u00e8re"
         }
     ],
@@ -2113,6 +2128,16 @@
         "fr:tenir-au-sec"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e330",
+        "en:e500",
+        "en:e503",
+        "en:raising-agent",
+        "en:salt",
+        "fr:a-l-abri-de-la-chaleur-et-de-la-lumiere",
+        "fr:tenir-au-sec"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 16,
@@ -2580,30 +2605,42 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 3,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 0.87
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "150g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 150,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 30
         }

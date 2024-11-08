@@ -246,7 +246,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2116,47 +2116,61 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine de bl\u00e9"
                 },
                 {
                     "id": "en:calcium",
+                    "is_in_taxonomy": 1,
                     "text": "calcium"
                 },
                 {
                     "id": "en:iron",
+                    "is_in_taxonomy": 1,
                     "text": "fer"
                 },
                 {
                     "id": "en:e375",
+                    "is_in_taxonomy": 1,
                     "text": "niacine"
                 },
                 {
                     "id": "en:thiamin",
+                    "is_in_taxonomy": 1,
                     "text": "thiamine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 55,
             "text": "Farine"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 16,
             "text": "farine de bl\u00e9 compl\u00e8te"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
@@ -2164,26 +2178,33 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates de sodium"
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "acide malique"
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:invert-sugar-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de sucre inverti"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         }
     ],
@@ -2424,12 +2445,24 @@
         "en:e375",
         "en:e500",
         "en:e503",
-        "en:invert-sugar-syrup",
         "en:iron",
         "en:raising-agent",
         "en:thiamin"
     ],
-    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:e296",
+        "en:e375",
+        "en:e500",
+        "en:e503",
+        "en:invert-sugar-syrup",
+        "en:iron",
+        "en:raising-agent",
+        "en:salt",
+        "en:thiamin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,
@@ -2864,24 +2897,36 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

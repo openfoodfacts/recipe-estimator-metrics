@@ -248,7 +248,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2243,7 +2243,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2338,11 +2340,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2387,6 +2389,7 @@
             "ciqual_food_code_used": "16030",
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2481,11 +2484,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2530,6 +2533,7 @@
             "ciqual_food_code": "16030",
             "ciqual_food_code_used": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2624,11 +2628,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2673,6 +2677,7 @@
             "ciqual_food_code": "16401",
             "ciqual_food_code_used": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2767,13 +2772,13 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
+                "vitamin-b1": {
+                    "percent_max": 1e-06,
+                    "percent_min": 1e-06
+                },
                 "vitamin-b12": {
                     "percent_max": 1e-08,
                     "percent_min": 1e-08
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 1e-06,
-                    "percent_min": 1e-06
                 },
                 "vitamin-b2": {
                     "percent_max": 5e-06,
@@ -2819,6 +2824,7 @@
                     "ciqual_food_code": "42200",
                     "ciqual_food_code_used": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2913,11 +2919,11 @@
                             "percent_max": 3.3,
                             "percent_min": 3.3
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -2959,6 +2965,7 @@
                     "text": "soya lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.2,
             "quantity_estimate": 6.194518909919166,
             "text": "emulsifier"
@@ -2968,6 +2975,7 @@
             "ciqual_food_code_used": "11082",
             "difference": 5.9,
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3062,11 +3070,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3111,6 +3119,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:flavouring-vanillin",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3205,11 +3214,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -3420,6 +3429,16 @@
         "en:flavouring-vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:flavouring-vanillin",
+        "en:sea-salt",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,
     "labels": "Green Dot",
@@ -3907,15 +3926,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "shape": {
-                "id": "en:wrapper"
+                "id": {
+                    "id": "en:wrapper"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],
@@ -4545,15 +4570,15 @@
                 "unweighted_total": 103.1,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 7,
+                "notes": "Not listed on product",
+                "unweighted_total": 1e-06
+            },
             "vitamin-b12": {
                 "ingredient_count": 7,
                 "notes": "Not listed on product",
                 "unweighted_total": 1e-08
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 7,
-                "notes": "Not listed on product",
-                "unweighted_total": 1e-06
             },
             "vitamin-b2": {
                 "ingredient_count": 7,

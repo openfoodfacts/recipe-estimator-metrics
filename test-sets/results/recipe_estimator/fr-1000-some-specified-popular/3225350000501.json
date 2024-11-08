@@ -246,7 +246,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1955,7 +1955,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 46.15384615384615,
             "nutrients": {
                 "alcohol": {
@@ -2050,11 +2052,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2096,13 +2098,15 @@
             "text": "eau"
         },
         {
-            "id": "en:juice",
+            "id": "en:concentrated-juice",
             "ingredients": [
                 {
                     "ciqual_food_code_used": "13009",
                     "ciqual_proxy_food_code": "13009",
                     "difference": 18.8,
+                    "ecobalyse_code": "lemon-eu",
                     "id": "en:lemon",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2197,13 +2201,13 @@
                             "percent_max": 0.8,
                             "percent_min": 0.8
                         },
+                        "vitamin-b1": {
+                            "percent_max": 4.2999999999999995e-05,
+                            "percent_min": 4.2999999999999995e-05
+                        },
                         "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
-                        },
-                        "vitamin-b1_unit": {
-                            "percent_max": 4.2999999999999995e-05,
-                            "percent_min": 4.2999999999999995e-05
                         },
                         "vitamin-b2": {
                             "percent_max": 1e-05,
@@ -2246,11 +2250,13 @@
                 {
                     "ciqual_proxy_food_code": "13034",
                     "difference": 3.83,
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
                     "ingredients": [
                         {
                             "ciqual_food_code_used": null,
                             "id": "fr:equivalents-a-40-de-jus-reconstitues",
+                            "is_in_taxonomy": 0,
                             "lost_water": 0.0,
                             "nutrients": {
                                 "alcohol": {
@@ -2345,11 +2351,11 @@
                                     "percent_max": 0,
                                     "percent_min": 0
                                 },
-                                "vitamin-b12": {
+                                "vitamin-b1": {
                                     "percent_max": 0,
                                     "percent_min": 0
                                 },
-                                "vitamin-b1_unit": {
+                                "vitamin-b12": {
                                     "percent_max": 0,
                                     "percent_min": 0
                                 },
@@ -2395,22 +2401,25 @@
                             "text": "équivalents à 40 % de jus reconstitués"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent": 4.5,
                     "percent_estimate": 8.33,
                     "quantity_estimate": 15.384615384615387,
                     "text": "orange"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 25.0,
-            "processing": "en:from-concentrate",
             "quantity_estimate": 46.15384615384616,
-            "text": "jus"
+            "text": "jus à base de concentré"
         },
         {
             "ciqual_food_code": "13009",
             "ciqual_food_code_used": "13009",
             "difference": 20.0,
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon-pulp",
+            "is_in_taxonomy": 1,
             "lost_water": 38.451538461538476,
             "nutrients": {
                 "alcohol": {
@@ -2505,13 +2514,13 @@
                     "percent_max": 0.8,
                     "percent_min": 0.8
                 },
+                "vitamin-b1": {
+                    "percent_max": 4.2999999999999995e-05,
+                    "percent_min": 4.2999999999999995e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 4.2999999999999995e-05,
-                    "percent_min": 4.2999999999999995e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 1e-05,
@@ -2557,6 +2566,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -2651,11 +2661,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2701,14 +2711,15 @@
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.5,
             "quantity_estimate": 23.07692307692308,
             "text": "acidifiant"
         },
         {
             "ciqual_food_code_used": "13009",
-            "ciqual_proxy_food_code": "13009",
             "id": "en:lemon-extract",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2803,13 +2814,13 @@
                     "percent_max": 0.8,
                     "percent_min": 0.8
                 },
+                "vitamin-b1": {
+                    "percent_max": 4.2999999999999995e-05,
+                    "percent_min": 4.2999999999999995e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 4.2999999999999995e-05,
-                    "percent_min": 4.2999999999999995e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 1e-05,
@@ -2943,7 +2954,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.948,
         "total_difference": 42.7,
         "total_specified_input_percent": 45.0
@@ -2997,11 +3008,20 @@
     "ingredients_with_unspecified_percent_sum": 59.5,
     "ingredients_without_ciqual_codes": [
         "en:acid",
+        "en:concentrated-juice",
         "en:e330",
-        "en:juice",
+        "en:lemon-extract",
         "fr:equivalents-a-40-de-jus-reconstitues"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:concentrated-juice",
+        "en:e330",
+        "en:lemon-extract",
+        "fr:equivalents-a-40-de-jus-reconstitues"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 10,
@@ -3487,23 +3507,33 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],
@@ -4000,15 +4030,15 @@
                 "unweighted_total": 2.4000000000000004,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 6,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.000129
+            },
             "vitamin-b12": {
                 "ingredient_count": 6,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 6,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.000129
             },
             "vitamin-b2": {
                 "ingredient_count": 6,

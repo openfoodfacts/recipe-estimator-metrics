@@ -238,7 +238,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1375,33 +1375,42 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "id": "en:red-bean",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "processing": "en:flour",
                     "text": "haricots rouges"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent": 30,
             "text": "Pure\u0301e de haricots rouges"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:coconut-sugar",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "text": "sucre de fleur de coco"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "id": "fr:puree-de-noisettes-torrefiees",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent": 17.5,
             "text": "pure\u0301e de noisettes torre\u0301fie\u0301es"
@@ -1409,6 +1418,7 @@
         {
             "ciqual_food_code": "18100",
             "id": "en:cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent": 4.8,
             "text": "poudre de cacao"
         }
@@ -1508,6 +1518,13 @@
         "fr:puree-de-noisettes-torrefiees"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-powder",
+        "en:red-bean",
+        "fr:puree-de-haricots-rouges",
+        "fr:puree-de-noisettes-torrefiees"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 13,
@@ -1985,24 +2002,36 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "material": {
-                "id": "en:tin-plated-steel"
+                "id": {
+                    "id": "en:tin-plated-steel"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:capsule"
+                "id": {
+                    "id": "en:capsule"
+                }
             }
         }
     ],

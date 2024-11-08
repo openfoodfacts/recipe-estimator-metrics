@@ -257,7 +257,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -2355,7 +2355,9 @@
             "ciqual_food_code": "20047",
             "ciqual_food_code_used": "20047",
             "difference": 0.0627,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "lost_water": 13.190623392044303,
             "nutrients": {
                 "alcohol": {
@@ -2450,13 +2452,13 @@
                     "percent_max": 2.48,
                     "percent_min": 2.48
                 },
+                "vitamin-b1": {
+                    "percent_max": 3.9e-05,
+                    "percent_min": 3.9e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 3.9e-05,
-                    "percent_min": 3.9e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 1.9e-05,
@@ -2500,6 +2502,7 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2594,11 +2597,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2719,6 +2722,10 @@
     "ingredients_with_unspecified_percent_sum": 0.200000000000003,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -3219,17 +3226,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:steel"
+                "id": {
+                    "id": "en:steel"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 400,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:food-can"
+                "id": {
+                    "id": "en:food-can"
+                }
             },
             "weight_measured": 58
         }
@@ -4163,15 +4176,15 @@
                 "unweighted_total": 2.48,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 3.9e-05
+            },
             "vitamin-b12": {
                 "ingredient_count": 2,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 2,
-                "notes": "Not listed on product",
-                "unweighted_total": 3.9e-05
             },
             "vitamin-b2": {
                 "ingredient_count": 2,

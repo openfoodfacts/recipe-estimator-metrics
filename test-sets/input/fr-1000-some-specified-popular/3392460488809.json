@@ -226,7 +226,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1223,34 +1223,43 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 86,
             "text": "Farine de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose-fructose"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent": 6.9,
             "text": "_beurre_ p\u00e2tissier"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-powder",
             "ingredients": [],
+            "is_in_taxonomy": 1,
             "percent": 0.5,
             "text": "_oeufs_ en poudre"
         },
@@ -1259,13 +1268,16 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "e471"
                 },
                 {
                     "id": "en:e481",
+                    "is_in_taxonomy": 1,
                     "text": "e481"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
@@ -1273,9 +1285,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "agent de traitement de la farine"
         }
     ],
@@ -1509,10 +1523,21 @@
         "en:e471",
         "en:e481",
         "en:emulsifier",
+        "en:flour-treatment-agent"
+    ],
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:e300",
+        "en:e471",
+        "en:e481",
+        "en:emulsifier",
         "en:flour-treatment-agent",
+        "en:glucose-fructose-syrup",
+        "en:salt",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1959,32 +1984,44 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "150g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 150,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "150g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 150,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

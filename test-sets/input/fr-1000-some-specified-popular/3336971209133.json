@@ -224,7 +224,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1519,25 +1519,31 @@
         {
             "ciqual_food_code": "9615",
             "id": "en:cornmeal",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 59,
             "text": "cornmeal"
         },
         {
             "ciqual_food_code": "15037",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "processing": "en:ground",
             "text": "roasted peanuts"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "sunflower oil"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
@@ -1545,14 +1551,18 @@
             "ingredients": [
                 {
                     "id": "en:natural-flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "natural flavour"
                 },
                 {
                     "ciqual_food_code": "20047",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato",
+                    "is_in_taxonomy": 1,
                     "text": "tomato"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "spice flavouring base"
         }
     ],
@@ -1688,6 +1698,13 @@
         "en:spice-flavouring-base"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cornmeal",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:spice-flavouring-base"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 16,
@@ -2113,17 +2130,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "100g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 100,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 4
         }

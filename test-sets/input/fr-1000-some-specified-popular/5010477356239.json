@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1339,26 +1339,32 @@
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "Flocons d'Avoine"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "processing": "en:grilled",
                     "text": "P\u00e9tales de Bl\u00e9"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "Flocons de Bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 78,
             "text": "C\u00e9r\u00e9ales Compl\u00e8tes"
         },
         {
             "ciqual_proxy_food_code": "31074",
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate-chunks",
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "P\u00e9pites de Chocolat Noir"
         },
@@ -1369,15 +1375,19 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "Masse de Cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 48.5,
             "text": "Cacao"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
@@ -1386,14 +1396,18 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "L\u00e9cithine de Soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00c9mulsifiant"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent": 6,
             "text": "Graines de Tournesol"
         },
@@ -1404,13 +1418,16 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "Bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Epeautre"
         },
         {
             "id": "fr:souffle",
+            "is_in_taxonomy": 0,
             "percent": 3,
             "text": "Souffl\u00e9"
         }
@@ -1641,6 +1658,19 @@
         "fr:souffle"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:oat-flakes",
+        "en:soya-lecithin",
+        "en:spelt",
+        "en:wheat",
+        "en:wheat-flakes",
+        "en:wholemeal-cereal",
+        "fr:souffle"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2047,18 +2077,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

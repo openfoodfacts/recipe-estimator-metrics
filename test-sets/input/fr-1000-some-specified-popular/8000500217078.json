@@ -247,7 +247,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2044,11 +2044,13 @@
     "ingredients": [
         {
             "id": "en:waffel-spezialitat-gefullt-mit-nuss-nugat-creme-und-weizencrisp",
+            "is_in_taxonomy": 0,
             "percent": 2,
             "text": "Waffel-Spezialit\u00e4t gef\u00fcllt mit Nuss-Nugat-Creme und Weizencrisp"
         },
         {
             "id": "en:10-stuck-220-ge-8-000500-217078",
+            "is_in_taxonomy": 0,
             "text": "10 St\u00fcck 220 ge 8 \"000500 217078"
         }
     ],
@@ -2260,6 +2262,11 @@
         "en:waffel-spezialitat-gefullt-mit-nuss-nugat-creme-und-weizencrisp"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:10-stuck-220-ge-8-000500-217078",
+        "en:waffel-spezialitat-gefullt-mit-nuss-nugat-creme-und-weizencrisp"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -2687,15 +2694,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

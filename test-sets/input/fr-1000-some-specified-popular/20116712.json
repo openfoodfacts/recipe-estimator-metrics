@@ -202,7 +202,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -1337,56 +1337,67 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31074",
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent": 45.8,
                     "text": "cocoa paste"
                 },
                 {
                     "id": "en:red-sugar",
+                    "is_in_taxonomy": 0,
                     "percent": 40.7,
                     "text": "red sugar"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent": 13.2,
                     "text": "cocoa butter"
                 },
                 {
                     "id": "en:emulsifier",
+                    "is_in_taxonomy": 1,
                     "text": "emulsifier"
                 },
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "soy lecithins"
                 },
                 {
                     "id": "en:vanilla-flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "vanilla aroma"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 60,
             "text": "dark chocolate"
         },
         {
             "ciqual_proxy_food_code": "9100",
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "percent": 39.5,
             "text": "rice"
         },
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame-seeds",
+            "is_in_taxonomy": 1,
             "text": "sesame seeds"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         }
     ],
@@ -1576,6 +1587,18 @@
         "en:vanilla-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:red-sugar",
+        "en:rice",
+        "en:salt",
+        "en:sesame-seeds",
+        "en:soya-lecithin",
+        "en:vanilla-flavouring"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1978,10 +2001,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

@@ -215,7 +215,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1441,25 +1441,32 @@
     "ingredients": [
         {
             "ciqual_food_code": "19042",
+            "ecobalyse_code": "milk",
             "id": "en:pasteurized-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "Lait partiellement \u00e9cr\u00e9m\u00e9 pasteuris\u00e9"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:condensed-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "lait concentr\u00e9 \u00e9cr\u00e9m\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent": 9,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent": 3.8,
             "text": "cacao"
         },
@@ -1469,24 +1476,30 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 0.8,
             "text": "chocolat"
         },
         {
             "id": "en:rennet",
+            "is_in_taxonomy": 1,
             "text": "pr\u00e9sure"
         }
     ],
@@ -1630,6 +1643,14 @@
         "en:rennet"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate",
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:rennet"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 17,
@@ -2096,32 +2117,48 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:individual-pot"
+                "id": {
+                    "id": "en:individual-pot"
+                }
             }
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         }
     ],

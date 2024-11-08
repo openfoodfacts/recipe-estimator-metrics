@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2321,37 +2321,47 @@
     "ingredients": [
         {
             "ciqual_food_code": "9540",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 69.6,
             "text": "buckwheat flour for"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "text": "rice flour"
         },
         {
             "id": "en:red-cane-sugar",
+            "is_in_taxonomy": 0,
             "text": "red cane sugar"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent": 0.48,
             "text": "sea salt"
         },
         {
             "id": "en:manufactured-in-a-workshop-using-cereals-containing-gluten",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "text": "manufactured in a workshop using cereals containing gluten"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "text": "milk"
         },
         {
             "id": "en:soya",
+            "is_in_taxonomy": 1,
             "text": "soy"
         }
     ],
@@ -2463,6 +2473,13 @@
         "en:soya"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:manufactured-in-a-workshop-using-cereals-containing-gluten",
+        "en:red-cane-sugar",
+        "en:sea-salt",
+        "en:soya"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -2887,21 +2904,31 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

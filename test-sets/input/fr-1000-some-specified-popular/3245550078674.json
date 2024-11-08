@@ -38,7 +38,7 @@
         "en:e160c",
         "en:e296"
     ],
-    "allergens": "en:celery,en:milk,en:soybeans, en:milk",
+    "allergens": "en:celery,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:soybeans, soy flour, lactose, milk",
     "allergens_from_user": "(fr) en:celery,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -213,7 +213,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1703,25 +1703,31 @@
     ],
     "ingredients": [
         {
-            "id": "en:soy-based-preparation",
+            "id": "en:soy-preparation",
             "ingredients": [
                 {
                     "ciqual_food_code": "20900",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:soya-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 37,
                     "text": "soy flour"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:tapioca-flour",
+                    "is_in_taxonomy": 1,
                     "text": "tapioca flour"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "salt"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "soy-based preparation"
         },
         {
@@ -1729,21 +1735,27 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 16,
                     "text": "potato flour"
                 },
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "text": "rice flour"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "salt"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "potato preparation"
         },
         {
@@ -1751,35 +1763,46 @@
             "ingredients": [
                 {
                     "id": "en:lactose",
+                    "is_in_taxonomy": 1,
                     "text": "lactose"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sugar"
                 },
                 {
+                    "ciqual_proxy_food_code": "11009",
                     "id": "en:yeast-extract",
+                    "is_in_taxonomy": 1,
                     "text": "yeast extract"
                 },
                 {
                     "ciqual_food_code": "20180",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:dehydrated-onion",
+                    "is_in_taxonomy": 1,
                     "processing": "en:powder",
                     "text": "dried onion"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "salt"
                 },
                 {
                     "id": "en:flavouring",
+                    "is_in_taxonomy": 1,
                     "text": "flavors"
                 },
                 {
                     "ciqual_food_code": "20189",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:dried-tomatoes",
+                    "is_in_taxonomy": 1,
                     "processing": "en:powder",
                     "text": "dried tomato"
                 },
@@ -1788,9 +1811,11 @@
                     "ingredients": [
                         {
                             "id": "en:e160c",
+                            "is_in_taxonomy": 1,
                             "text": "paprika extracts"
                         }
                     ],
+                    "is_in_taxonomy": 0,
                     "text": "dye"
                 },
                 {
@@ -1798,26 +1823,34 @@
                     "ingredients": [
                         {
                             "id": "en:e296",
+                            "is_in_taxonomy": 1,
                             "text": "malic acid"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "acidifier"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "text": "sunflower oil"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "barbecue flavor"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "sunflower oil"
         },
         {
             "id": "en:flax",
+            "is_in_taxonomy": 1,
             "processing": "en:powder",
             "text": "flax"
         }
@@ -2134,10 +2167,24 @@
         "en:flax",
         "en:lactose",
         "en:potato-preparation",
-        "en:soy-based-preparation",
+        "en:soy-preparation"
+    ],
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:barbecue-flavouring",
+        "en:dye",
+        "en:e160c",
+        "en:e296",
+        "en:flavouring",
+        "en:flax",
+        "en:lactose",
+        "en:potato-preparation",
+        "en:salt",
+        "en:soy-preparation",
         "en:yeast-extract"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2554,10 +2601,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

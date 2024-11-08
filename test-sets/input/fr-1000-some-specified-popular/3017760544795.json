@@ -66,7 +66,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk,en:soybeans, en:milk",
+    "allergens": "en:eggs,en:gluten,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, bl\u00e9, \u0153ufs, soja, lait",
     "allergens_from_user": "(fr) en:eggs,en:gluten,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.978125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1329,41 +1329,52 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "Sirop de glucose-fructose"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 30.8,
             "text": "farine de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "13014",
+            "ecobalyse_code": "strawberry-non-eu",
             "id": "en:strawberry-puree",
+            "is_in_taxonomy": 1,
             "percent": 25.2,
             "text": "pur\u00e9e de fraises"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "13050",
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple-puree",
+            "is_in_taxonomy": 1,
             "text": "pur\u00e9e de pomme"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "lactos\u00e9rum en poudre"
         },
         {
             "id": "fr:jus-concentre-de-cassis",
+            "is_in_taxonomy": 0,
             "text": "jus concentr\u00e9 de cassis"
         },
         {
             "id": "fr:puree-de-fraises-des-bols-concentree",
             "ingredients": [],
+            "is_in_taxonomy": 0,
             "percent": 0.5,
             "text": "pur\u00e9e de fraises des bols concentr\u00e9e"
         },
@@ -1372,23 +1383,30 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiants"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "22003",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk-powder",
+            "is_in_taxonomy": 1,
             "text": "jaunes d'_\u0153ufs_ en poudre"
         },
         {
@@ -1396,14 +1414,18 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "g\u00e9lifiant"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
@@ -1411,13 +1433,16 @@
             "ingredients": [
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "text": "citrate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteur d'acidit\u00e9"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         },
         {
@@ -1426,9 +1451,11 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de _soja_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -1436,13 +1463,17 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "carbonate acide de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "bg:\u0441\u0443\u0445\u0430-\u043c\u0430\u044f",
+            "is_in_taxonomy": 1,
             "text": "levure s\u00e8che"
         }
     ],
@@ -1856,7 +1887,6 @@
     "ingredients_with_unspecified_percent_n": 16,
     "ingredients_with_unspecified_percent_sum": 43.978125,
     "ingredients_without_ciqual_codes": [
-        "bg:\u0441\u0443\u0445\u0430-\u043c\u0430\u044f",
         "en:acid",
         "en:acidity-regulator",
         "en:e296",
@@ -1872,7 +1902,28 @@
         "fr:jus-concentre-de-cassis",
         "fr:puree-de-fraises-des-bols-concentree"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "bg:\u0441\u0443\u0445\u0430-\u043c\u0430\u044f",
+        "en:acid",
+        "en:acidity-regulator",
+        "en:e296",
+        "en:e330",
+        "en:e440a",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
+        "en:raising-agent",
+        "en:sodium-citrate",
+        "en:soya-lecithin",
+        "en:wheat-starch",
+        "en:whey-powder",
+        "fr:jus-concentre-de-cassis",
+        "fr:puree-de-fraises-des-bols-concentree"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 51,
@@ -2288,18 +2339,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

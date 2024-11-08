@@ -263,7 +263,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2963,7 +2963,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18005",
+            "ecobalyse_code": "coffee-ground",
             "id": "en:instant-coffee",
+            "is_in_taxonomy": 1,
             "percent": 33.2,
             "text": "Caf\u00e9 soluble"
         },
@@ -2973,20 +2975,24 @@
             "ingredients": [
                 {
                     "id": "en:oligofructose",
+                    "is_in_taxonomy": 1,
                     "text": "oligofructose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 33,
             "text": "fibres de chicor\u00e9e"
         },
         {
             "ciqual_food_code": "18152",
             "id": "fr:chicoree-soluble",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "chicor\u00e9e soluble"
         },
         {
             "id": "en:e518",
+            "is_in_taxonomy": 1,
             "text": "sulfate de magn\u00e9sium"
         }
     ],
@@ -3110,6 +3116,13 @@
         "en:oligofructose"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chicory-fibre",
+        "en:e518",
+        "en:oligofructose",
+        "fr:chicoree-soluble"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -3630,43 +3643,65 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:drink-can"
+                "id": {
+                    "id": "en:drink-can"
+                }
             }
         }
     ],

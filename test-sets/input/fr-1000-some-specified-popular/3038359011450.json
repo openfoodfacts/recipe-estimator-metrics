@@ -167,7 +167,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1101,13 +1101,17 @@
     "ingredients": [
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:fresh-tomatoes",
+            "is_in_taxonomy": 1,
             "processing": "en:pulp,en:pieces",
             "text": "tomates fra\u00eeches avec"
         },
         {
             "ciqual_food_code": "20170",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato-puree",
+            "is_in_taxonomy": 1,
             "percent": 85,
             "processing": "en:fresh",
             "text": "pur\u00e9es de tomates"
@@ -1117,57 +1121,73 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20009",
+                    "ecobalyse_code": "carrot-non-eu",
                     "id": "en:carrot",
+                    "is_in_taxonomy": 1,
                     "percent": 5,
                     "text": "carottes"
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "percent": 4,
                     "text": "oignons"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "l\u00e9gumes frais"
         },
         {
             "ciqual_proxy_food_code": "17270",
+            "ecobalyse_code": "olive-oil-eu",
             "id": "en:virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "text": "huile d'olive vierge"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "text": "amidon"
         },
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "text": "persil"
         },
         {
             "ciqual_food_code": "11060",
             "id": "en:herbes-de-provence",
+            "is_in_taxonomy": 1,
             "percent": 0.4,
             "text": "herbes de Provence"
         },
         {
             "id": "en:natural-herbs-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels d'herbes"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait d'oignon"
         }
     ],
@@ -1287,6 +1307,15 @@
         "en:natural-herbs-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:fresh-vegetables",
+        "en:herbes-de-provence",
+        "en:natural-herbs-flavouring",
+        "en:parsley",
+        "en:salt",
+        "en:starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 29,
@@ -1769,32 +1798,46 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": "1",
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

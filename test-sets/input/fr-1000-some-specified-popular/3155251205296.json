@@ -260,13 +260,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 56.8,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 43.2,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 52.824,
@@ -1830,17 +1830,21 @@
     "ingredients": [
         {
             "id": "en:non-hydrogenated-vegetable-oils",
+            "is_in_taxonomy": 1,
             "origins": "en:france,fr:coco*,fr:palme*,fr:palmiste*,fr:lin*",
             "percent": 54,
             "text": "Huiles v\u00e9g\u00e9tales non hydrog\u00e9n\u00e9es"
         },
         {
             "id": "fr:",
+            "is_in_taxonomy": 0,
             "text": "\u00b9"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
@@ -1848,22 +1852,27 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- et diglyc\u00e9rides d'acides gras"
                 },
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
@@ -1871,14 +1880,17 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "text": "extrait de romarin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "text": "jus de citron concentr\u00e9"
         },
         {
@@ -1886,17 +1898,21 @@
             "ingredients": [
                 {
                     "id": "en:e160ai",
+                    "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         },
         {
             "id": "fr:ingredients",
+            "is_in_taxonomy": 0,
             "text": "Ingr\u00e9dients",
             "vegan": "en:yes",
             "vegetarian": "en:yes"
@@ -2144,6 +2160,23 @@
         "fr:ingredients"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:colour",
+        "en:concentrated-lemon-juice",
+        "en:e160ai",
+        "en:e392",
+        "en:e471",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:non-hydrogenated-vegetable-oils",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:thiamin",
+        "fr:",
+        "fr:ingredients"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -2604,10 +2637,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

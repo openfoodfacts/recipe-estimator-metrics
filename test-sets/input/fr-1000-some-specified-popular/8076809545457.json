@@ -256,7 +256,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1956,30 +1956,38 @@
     "ingredients": [
         {
             "ciqual_food_code": "9545",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:white-corn-flour",
+            "is_in_taxonomy": 1,
             "percent": 60,
             "text": "white corn flour"
         },
         {
             "ciqual_food_code": "9200",
             "id": "en:corn",
+            "is_in_taxonomy": 1,
             "processing": "en:flour",
             "text": "of corn"
         },
         {
             "id": "en:yellow",
+            "is_in_taxonomy": 0,
             "percent": 29.5,
             "text": "yellow"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:brown-rice-flour",
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "brown rice flour"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
@@ -1987,9 +1995,11 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- and diglycerides of fatty acids"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         }
     ],
@@ -2152,6 +2162,13 @@
         "en:yellow"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn",
+        "en:e471",
+        "en:emulsifier",
+        "en:yellow"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 13,
@@ -2616,12 +2633,16 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:Container"
+                "id": {
+                    "id": "en:Container"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

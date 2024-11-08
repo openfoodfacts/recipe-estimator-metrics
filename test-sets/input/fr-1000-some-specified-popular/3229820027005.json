@@ -194,7 +194,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2596,7 +2596,9 @@
     ],
     "ingredients": [
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:brewer-s-yeast",
+            "is_in_taxonomy": 1,
             "percent": 100,
             "text": "levure de bi\u00e8re"
         }
@@ -2648,10 +2650,12 @@
     "ingredients_with_specified_percent_sum": 100,
     "ingredients_with_unspecified_percent_n": 0,
     "ingredients_with_unspecified_percent_sum": 0,
-    "ingredients_without_ciqual_codes": [
+    "ingredients_without_ciqual_codes": [],
+    "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
         "en:brewer-s-yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 2,
@@ -2999,14 +3003,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

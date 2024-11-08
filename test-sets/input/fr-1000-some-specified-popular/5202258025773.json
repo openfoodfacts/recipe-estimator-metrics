@@ -28,7 +28,7 @@
     "additives_old_tags": [],
     "additives_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, milk",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -177,7 +177,7 @@
                         "epi_score": "63",
                         "origin": "en:greece",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 63,
@@ -974,28 +974,35 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:sheeps-milk",
+            "is_in_taxonomy": 1,
             "percent": 70,
             "processing": "en:pasteurised",
             "text": "sheep's milk"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:pasteurised-goat-milk",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "pasteurized goat's milk"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "lactic ferments"
         },
         {
             "id": "en:rennet",
+            "is_in_taxonomy": 1,
             "text": "rennet"
         }
     ],
@@ -1075,6 +1082,12 @@
         "en:rennet"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:lactic-ferments",
+        "en:rennet",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 12,

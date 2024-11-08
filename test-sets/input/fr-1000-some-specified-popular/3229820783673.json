@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1569,7 +1569,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 34,
             "text": "Farine de bl\u00e9"
         },
@@ -1579,58 +1581,76 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre de canne non raffin\u00e9"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
                     "ciqual_proxy_food_code": "19044",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:milk-powder",
+                    "is_in_taxonomy": 1,
                     "text": "lait en poudre"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 25,
             "text": "chocolat au lait"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "farine compl\u00e8te de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre de canne roux non raffin\u00e9"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:high-oleic-sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol ol\u00e9ique"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:roasted-nibbed-hazelnuts",
+            "is_in_taxonomy": 1,
             "percent": 5,
             "text": "noisettes hach\u00e9es grill\u00e9es"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "lait \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:unrefined-sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin non raffin\u00e9"
         },
         {
@@ -1638,17 +1658,21 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "text": "carbonates de sodium"
         },
         {
             "id": "fr:arome-naturel-de-noisette",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de noisettes"
         },
         {
@@ -1656,9 +1680,11 @@
             "ingredients": [
                 {
                     "id": "en:e414",
+                    "is_in_taxonomy": 1,
                     "text": "gomme d'acacia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississant"
         },
         {
@@ -1666,9 +1692,11 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "text": "extrait de romarin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         }
     ],
@@ -1995,6 +2023,21 @@
         "fr:arome-naturel-de-noisette"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e392",
+        "en:e414",
+        "en:e500",
+        "en:e503",
+        "en:milk-chocolate",
+        "en:raising-agent",
+        "en:thickener",
+        "en:unrefined-sea-salt",
+        "fr:arome-naturel-de-noisette"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -2487,33 +2530,45 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 3,
             "quantity_per_unit": "75g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 75,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             },
             "weight_measured": 0.71
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "225g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 225,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             },
             "weight_measured": 19.26
         }

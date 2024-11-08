@@ -180,7 +180,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -957,39 +957,50 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "water"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "contents"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "ingredients": [
                 {
                     "id": "en:s",
+                    "is_in_taxonomy": 0,
                     "text": "s"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
-            "id": "en:and-fructose-glucose-syrup",
+            "ciqual_food_code": "31077",
+            "id": "en:glucose-fructose-syrup",
             "ingredients": [
                 {
                     "id": "en:f",
+                    "is_in_taxonomy": 0,
                     "text": "f"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "and fructose-glucose syrup"
         },
         {
             "id": "en:e290",
+            "is_in_taxonomy": 1,
             "text": "carbon dioxide"
         },
         {
             "id": "en:orange-juice-concentrate-fruit-ratio-at-least",
+            "is_in_taxonomy": 0,
             "percent": 3,
             "text": "orange juice concentrate fruit ratio at least"
         },
@@ -998,21 +1009,26 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "text": "malic acid"
                 },
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "text": "sodium citrate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidity regulators"
         },
         {
             "id": "en:vitamin-c",
+            "is_in_taxonomy": 1,
             "text": "vitamin c"
         },
         {
@@ -1020,13 +1036,16 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "text": "potassium sorbate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "preservative"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavorings"
         },
         {
@@ -1034,14 +1053,18 @@
             "ingredients": [
                 {
                     "id": "en:sodium-cyclalamate",
+                    "is_in_taxonomy": 0,
                     "text": "sodium cyclalamate"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sucrose",
+                    "is_in_taxonomy": 1,
                     "text": "sucrose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "sweeteners"
         },
         {
@@ -1049,9 +1072,11 @@
             "ingredients": [
                 {
                     "id": "en:e160ai",
+                    "is_in_taxonomy": 1,
                     "text": "beta carotene"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "coloring"
         },
         {
@@ -1059,17 +1084,21 @@
             "ingredients": [
                 {
                     "id": "en:goat-horn-gami",
+                    "is_in_taxonomy": 0,
                     "text": "goat horn gami"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "consistency enhancer"
         },
         {
             "id": "en:kallanilan-sugar-and-fructose-glucose-surubu-are-encoded-on-the-package",
+            "is_in_taxonomy": 0,
             "text": "kallanilan sugar and fructose-glucose surubu are encoded on the package"
         },
         {
             "id": "en:energy-eat-nutrient-oaelari",
+            "is_in_taxonomy": 0,
             "text": "energy eat nutrient o\u00e4elari"
         }
     ],
@@ -1232,7 +1261,6 @@
     "ingredients_with_unspecified_percent_sum": 97,
     "ingredients_without_ciqual_codes": [
         "en:acidity-regulator",
-        "en:and-fructose-glucose-syrup",
         "en:colour",
         "en:consistency-enhancer",
         "en:contents",
@@ -1254,7 +1282,32 @@
         "en:sweetener",
         "en:vitamin-c"
     ],
-    "ingredients_without_ciqual_codes_n": 22,
+    "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:colour",
+        "en:consistency-enhancer",
+        "en:contents",
+        "en:e160ai",
+        "en:e202",
+        "en:e290",
+        "en:e296",
+        "en:e330",
+        "en:energy-eat-nutrient-oaelari",
+        "en:f",
+        "en:flavouring",
+        "en:glucose-fructose-syrup",
+        "en:goat-horn-gami",
+        "en:kallanilan-sugar-and-fructose-glucose-surubu-are-encoded-on-the-package",
+        "en:orange-juice-concentrate-fruit-ratio-at-least",
+        "en:preservative",
+        "en:s",
+        "en:sodium-citrate",
+        "en:sodium-cyclalamate",
+        "en:sweetener",
+        "en:vitamin-c"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 20,

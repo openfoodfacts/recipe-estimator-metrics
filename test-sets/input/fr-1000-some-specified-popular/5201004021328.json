@@ -235,7 +235,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1243,12 +1243,16 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "wheat flour"
         },
         {
@@ -1256,27 +1260,36 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
                     "text": "palm oil"
                 },
                 {
                     "id": "en:palm-kernel-oil",
+                    "is_in_taxonomy": 1,
                     "text": "palm kernel oil"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "text": "shea"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "vegetable oils"
         },
         {
             "id": "en:lactose",
+            "is_in_taxonomy": 1,
             "text": "lactose"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 6,
             "processing": "en:pulp",
             "text": "of hazelnuts"
@@ -1284,12 +1297,14 @@
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent": 3.5,
             "processing": "en:powder,en:defatted",
             "text": "cocoa"
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "milk protein"
         },
         {
@@ -1297,24 +1312,30 @@
             "ingredients": [
                 {
                     "id": "en:e420ii",
+                    "is_in_taxonomy": 1,
                     "text": "sorbitol syrup"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilizer"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "text": "starch"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "text": "fructose"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "skimmed milk powder"
         },
         {
@@ -1322,18 +1343,22 @@
             "ingredients": [
                 {
                     "id": "en:e150a",
+                    "is_in_taxonomy": 1,
                     "text": "ammonia caramel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colouring agent"
         },
         {
             "id": "en:fiber",
+            "is_in_taxonomy": 1,
             "text": "dietary fibre"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
@@ -1342,9 +1367,11 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
@@ -1352,17 +1379,21 @@
             "ingredients": [
                 {
                     "id": "en:palmitate-ascorbyle",
+                    "is_in_taxonomy": 0,
                     "text": "palmitate ascorbyle"
                 },
                 {
                     "id": "en:extracts-rich-in-tocopherols",
+                    "is_in_taxonomy": 0,
                     "text": "extracts rich in tocopherols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxidant"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavorings"
         }
     ],
@@ -1731,11 +1762,33 @@
         "en:milk-proteins",
         "en:palm-kernel-oil",
         "en:palmitate-ascorbyle",
-        "en:shea-butter",
         "en:stabiliser",
         "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cocoa",
+        "en:colour",
+        "en:e150a",
+        "en:e420ii",
+        "en:emulsifier",
+        "en:extracts-rich-in-tocopherols",
+        "en:fiber",
+        "en:flavouring",
+        "en:fructose",
+        "en:lactose",
+        "en:milk-proteins",
+        "en:palm-kernel-oil",
+        "en:palmitate-ascorbyle",
+        "en:salt",
+        "en:shea-butter",
+        "en:soya-lecithin",
+        "en:stabiliser",
+        "en:starch",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -2172,14 +2225,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

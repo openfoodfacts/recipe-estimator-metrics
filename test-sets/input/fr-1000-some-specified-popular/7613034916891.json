@@ -251,7 +251,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2145,17 +2145,22 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
-            "id": "en:lean-cocoa",
+            "ciqual_proxy_food_code": "18100",
+            "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent": 21.3,
             "text": "lean cocoa"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "text": "dextrose"
         },
         {
@@ -2164,9 +2169,11 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "soya lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
@@ -2174,46 +2181,57 @@
             "ingredients": [
                 {
                     "id": "en:e504i",
+                    "is_in_taxonomy": 1,
                     "text": "magnesium carbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "minerals"
         },
         {
             "id": "en:ferric-diphosphate",
+            "is_in_taxonomy": 1,
             "text": "iron pyrophosphate"
         },
         {
             "id": "en:zinc-sulfate",
+            "is_in_taxonomy": 1,
             "text": "zinc sulphate"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamins"
         },
         {
             "id": "en:vitamin-c",
+            "is_in_taxonomy": 1,
             "text": "vitamin c"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamin b1"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "text": "vitamin d"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "text": "cinnamon"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "flavors"
         }
     ],
@@ -2443,7 +2461,6 @@
         "en:emulsifier",
         "en:ferric-diphosphate",
         "en:flavouring",
-        "en:lean-cocoa",
         "en:minerals",
         "en:thiamin",
         "en:vitamin-c",
@@ -2451,7 +2468,25 @@
         "en:vitamins",
         "en:zinc-sulfate"
     ],
-    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cinnamon",
+        "en:dextrose",
+        "en:e504i",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:ferric-diphosphate",
+        "en:flavouring",
+        "en:minerals",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:thiamin",
+        "en:vitamin-c",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:zinc-sulfate"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -3122,20 +3157,28 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

@@ -262,7 +262,7 @@
                         "epi_score": "97",
                         "origin": "en:united-kingdom",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 97,
@@ -1864,6 +1864,7 @@
             "ciqual_food_code_used": null,
             "difference": 0.0,
             "id": "en:oatmeal",
+            "is_in_taxonomy": 0,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1958,11 +1959,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2074,6 +2075,10 @@
         "en:oatmeal"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oatmeal"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 0,
@@ -2589,17 +2594,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "800g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 800,
             "recycling": {
-                "id": "en:recycle-with-drink-cartons"
+                "id": {
+                    "id": "en:recycle-with-drink-cartons"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],
@@ -3040,12 +3051,13 @@
                 "unweighted_total": 0,
                 "weighting": 1
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0
+                "product_total": 0.0009,
+                "unweighted_total": 0,
+                "weighting": 1
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0

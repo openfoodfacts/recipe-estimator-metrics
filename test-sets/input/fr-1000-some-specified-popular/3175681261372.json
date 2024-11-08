@@ -190,7 +190,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1035,47 +1035,59 @@
     "ingredients": [
         {
             "id": "fr:fanine-de-ble-54-2-huile-de-colza",
+            "is_in_taxonomy": 0,
             "text": "Fanine de bl\u00e9 54.2% huile de colza"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre de canne roux"
         },
         {
             "ciqual_food_code": "9660",
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "percent": 5.6,
             "text": "germe de bl\u00e9"
         },
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent": 5,
             "text": "cacao maigre en poudre"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de bl\u00e9"
         },
         {
             "id": "en:wheat-fiber",
+            "is_in_taxonomy": 1,
             "text": "fibre de bl\u00e9"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent": 3.1,
             "text": "farine de riz"
         },
         {
             "id": "fr:feves-de-cacao-1-5-jus-concentre-de-citron",
+            "is_in_taxonomy": 0,
             "text": "f\u00e8ves de cacao 1.5% jus concentr\u00e9 de citron"
         },
         {
             "ciqual_food_code": "9310",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:oat-flour",
+            "is_in_taxonomy": 1,
             "percent": 0.5,
             "text": "farine d'avoine"
         },
@@ -1084,22 +1096,28 @@
             "ingredients": [
                 {
                     "id": "en:rapeseed-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "id": "en:magnesium",
+            "is_in_taxonomy": 1,
             "text": "magn\u00e9sium"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de malt d'orge"
         },
         {
             "ciqual_food_code": "9550",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-flour",
+            "is_in_taxonomy": 1,
             "percent": 0.1,
             "text": "farine d'orge"
         },
@@ -1108,32 +1126,40 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
             "id": "fr:fabrique-dans-un-atelier-qui-utilise-des-fruits-a-coque",
+            "is_in_taxonomy": 0,
             "text": "Fabriqu\u00e9 dans un atelier qu\u00ec utilise des fruits \u00e0 coque"
         },
         {
             "ciqual_food_code": "20534",
             "id": "en:lupin-bean",
+            "is_in_taxonomy": 1,
             "text": "du lupin"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "text": "du lait"
         },
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame",
+            "is_in_taxonomy": 1,
             "text": "de s\u00e9same"
         },
         {
             "id": "en:soya",
+            "is_in_taxonomy": 1,
             "text": "du soja"
         }
     ],
@@ -1325,6 +1351,25 @@
         "fr:feves-de-cacao-1-5-jus-concentre-de-citron"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:e500",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:lupin-bean",
+        "en:magnesium",
+        "en:raising-agent",
+        "en:rapeseed-lecithin",
+        "en:sesame",
+        "en:soya",
+        "en:wheat-fiber",
+        "en:wheat-germ",
+        "en:wheat-starch",
+        "fr:fabrique-dans-un-atelier-qui-utilise-des-fruits-a-coque",
+        "fr:fanine-de-ble-54-2-huile-de-colza",
+        "fr:feves-de-cacao-1-5-jus-concentre-de-citron"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 46,
@@ -1735,17 +1780,23 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:packet"
+                "id": {
+                    "id": "en:packet"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:packet"
+                "id": {
+                    "id": "en:packet"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

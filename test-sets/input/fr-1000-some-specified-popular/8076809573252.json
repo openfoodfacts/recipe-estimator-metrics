@@ -242,7 +242,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1942,29 +1942,39 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "text": "wheat flour"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "biscuit"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "id": "en:fresh-ova-sunflower-oil",
+            "is_in_taxonomy": 0,
             "text": "fresh ova sunflower oil"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "skimmed milk powder"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:pasteurised-milk",
+            "is_in_taxonomy": 1,
             "processing": "en:fresh",
             "text": "pasteurized milk"
         },
@@ -1973,94 +1983,129 @@
             "ingredients": [
                 {
                     "id": "en:ammonium-acid-carbonate",
+                    "is_in_taxonomy": 0,
                     "text": "ammonium acid carbonate"
                 },
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "sodium acid carbonate"
                 },
                 {
                     "id": "en:e336i",
+                    "is_in_taxonomy": 1,
                     "text": "monopotassic tartrate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "leavening agents"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "wheat starch"
         },
         {
             "id": "en:aroria",
+            "is_in_taxonomy": 0,
             "text": "aroria"
         },
         {
-            "id": "en:hazelnut-cream-and-cocoa",
+            "id": "en:hazelnut-cream",
+            "is_in_taxonomy": 0,
+            "percent": 26.5,
+            "text": "hazelnut cream"
+        },
+        {
+            "ciqual_proxy_food_code": "18100",
+            "id": "en:cocoa",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sugar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 26.5,
-            "text": "hazelnut cream and cocoa"
+            "text": "cocoa"
         },
         {
             "id": "en:vegetable-fat",
+            "is_in_taxonomy": 1,
             "text": "vegetable fats"
         },
         {
             "id": "en:oil",
             "ingredients": [
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "text": "shea"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "text": "coconut"
                 },
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
+                    "is_in_taxonomy": 1,
                     "text": "cocoa"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "oils"
         },
         {
             "id": "en:hazelnuts-6-4-on-the-finished-product",
+            "is_in_taxonomy": 0,
             "text": "hazelnuts 6.4% on the finished product"
         },
         {
             "id": "en:cocoa-2-7-on-the-finished-product",
+            "is_in_taxonomy": 0,
             "text": "cocoa 2.7% on the finished product"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "skimmed milk powder"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "wheat starch"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "aroma"
         },
         {
-            "id": "en:sesamus-and-soy",
-            "text": "sesamus and soy"
+            "id": "en:sesamus",
+            "is_in_taxonomy": 0,
+            "text": "sesamus"
+        },
+        {
+            "id": "en:soya",
+            "is_in_taxonomy": 1,
+            "text": "soy"
         }
     ],
     "ingredients_analysis": {
@@ -2410,15 +2455,38 @@
         "en:e500ii",
         "en:flavouring",
         "en:fresh-ova-sunflower-oil",
-        "en:hazelnut-cream-and-cocoa",
+        "en:hazelnut-cream",
         "en:hazelnuts-6-4-on-the-finished-product",
         "en:oil",
         "en:raising-agent",
-        "en:sesamus-and-soy",
-        "en:shea-butter",
+        "en:sesamus",
+        "en:soya",
         "en:vegetable-fat"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:ammonium-acid-carbonate",
+        "en:aroria",
+        "en:biscuit",
+        "en:cocoa",
+        "en:cocoa-2-7-on-the-finished-product",
+        "en:coconut",
+        "en:e336i",
+        "en:e500ii",
+        "en:flavouring",
+        "en:fresh-ova-sunflower-oil",
+        "en:hazelnut-cream",
+        "en:hazelnuts-6-4-on-the-finished-product",
+        "en:oil",
+        "en:raising-agent",
+        "en:salt",
+        "en:sesamus",
+        "en:shea-butter",
+        "en:soya",
+        "en:vegetable-fat",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 32,
@@ -2858,11 +2926,15 @@
     "packagings": [
         {
             "material": {
-                "id": "xx:81-c-pap"
+                "id": {
+                    "id": "xx:81-c-pap"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

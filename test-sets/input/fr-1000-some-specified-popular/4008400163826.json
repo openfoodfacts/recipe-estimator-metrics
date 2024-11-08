@@ -32,7 +32,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:milk, soya, hazelnuts, wheat flour, soya",
     "allergens_from_user": "(en) en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -219,7 +219,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1442,27 +1442,34 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sugar"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "cocoa butter"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "cocoa mass"
                 },
                 {
                     "ciqual_food_code": "19054",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:skimmed-milk-powder",
+                    "is_in_taxonomy": 1,
                     "text": "skimmed milk powder"
                 },
                 {
                     "ciqual_food_code": "16401",
                     "id": "en:butterfat",
+                    "is_in_taxonomy": 1,
                     "text": "concentrated butter"
                 },
                 {
@@ -1470,47 +1477,61 @@
                     "ingredients": [
                         {
                             "id": "en:e322",
+                            "is_in_taxonomy": 1,
                             "text": "lecithins"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "emulsifier"
                 },
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "text": "vanillin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "milk chocolate"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 28.5,
             "text": "hazelnuts"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "palm oil"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "wheat flour"
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "text": "whey powder"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "text": "fat-reduced cocoa"
         },
         {
@@ -1518,9 +1539,11 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "text": "lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
@@ -1528,18 +1551,22 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "text": "sodium bicarbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "raising agent"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:vanillin",
+            "is_in_taxonomy": 1,
             "text": "vanillin"
         }
     ],
@@ -1836,6 +1863,21 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e322",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:milk-chocolate",
+        "en:raising-agent",
+        "en:salt",
+        "en:vanillin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 37,
@@ -2256,16 +2298,22 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cpp-cast-polypropylen"
+                "id": {
+                    "id": "en:cpp-cast-polypropylen"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:can"
+                "id": {
+                    "id": "en:can"
+                }
             }
         }
     ],

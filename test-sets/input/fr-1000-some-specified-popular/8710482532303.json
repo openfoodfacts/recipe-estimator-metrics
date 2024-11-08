@@ -30,7 +30,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:gluten, en:gluten",
+    "allergens": "en:gluten, en:gluten, en:gluten",
     "allergens_from_ingredients": "Trigo, gluten",
     "allergens_from_user": "(pt) en:gluten, en:gluten",
     "allergens_hierarchy": [
@@ -204,7 +204,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1353,65 +1353,84 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:wholemeal-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 52,
                     "text": "harina integral"
                 },
                 {
                     "id": "es:harina-flor",
+                    "is_in_taxonomy": 0,
                     "text": "harina flor"
                 },
                 {
                     "id": "es:copos",
+                    "is_in_taxonomy": 0,
                     "text": "copos"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:molasses",
+                    "is_in_taxonomy": 1,
                     "text": "melaza"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 85,
             "text": "_Trigo_ espelta"
         },
         {
             "ciqual_food_code": "15034",
             "id": "en:flax-seed",
+            "is_in_taxonomy": 1,
             "text": "linaza"
         },
         {
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "de nabina"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "aceite vegetal"
         },
         {
             "id": "en:fiber",
+            "is_in_taxonomy": 1,
             "text": "fibras vegetales"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent": 4.5,
             "text": "pipas de girasol"
         },
         {
             "ciqual_food_code": "20139",
+            "ecobalyse_code": "pumpkin-fr",
             "id": "en:pumpkin-seed",
+            "is_in_taxonomy": 1,
             "percent": 2.5,
             "text": "pipas de calabaza"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sal"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levadura"
         }
     ],
@@ -1634,12 +1653,22 @@
         "en:fiber",
         "en:rapeseed",
         "en:vegetable-oil",
+        "es:copos",
+        "es:harina-flor",
+        "es:trigo-espelta"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:fiber",
+        "en:flax-seed",
+        "en:salt",
+        "en:vegetable-oil",
         "en:yeast",
         "es:copos",
         "es:harina-flor",
         "es:trigo-espelta"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,

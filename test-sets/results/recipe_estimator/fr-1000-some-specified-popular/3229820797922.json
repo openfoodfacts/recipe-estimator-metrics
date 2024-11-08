@@ -223,7 +223,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1299,7 +1299,9 @@
         {
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1394,11 +1396,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1444,6 +1446,7 @@
             "ciqual_proxy_food_code": "15006",
             "difference": 0.334,
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1538,13 +1541,13 @@
                     "percent_max": 6.22,
                     "percent_min": 6.22
                 },
+                "vitamin-b1": {
+                    "percent_max": 6.6e-05,
+                    "percent_min": 6.6e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 6.6e-05,
-                    "percent_min": 6.6e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 2e-05,
@@ -1588,6 +1591,7 @@
             "ciqual_food_code_used": "9510",
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 0.0,
             "nutrients": {
@@ -1683,11 +1687,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -1731,6 +1735,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:natural-coconut-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 0.0,
             "nutrients": {
@@ -1826,11 +1831,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1879,6 +1884,7 @@
             "ciqual_food_code": "11082",
             "ciqual_food_code_used": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1973,11 +1979,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2024,6 +2030,7 @@
                 {
                     "ciqual_food_code_used": null,
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "lost_water": 0.0,
                     "nutrients": {
@@ -2119,11 +2126,11 @@
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0,
                             "percent_min": 0
                         },
@@ -2169,6 +2176,7 @@
                     "text": "gomme guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0959,
             "quantity_estimate": 0.09593699135872014,
             "text": "stabilisants"
@@ -2176,6 +2184,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:e415",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2270,11 +2279,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2506,6 +2515,16 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:e412",
+        "en:e415",
+        "en:natural-coconut-flavouring",
+        "en:rice-starch",
+        "en:sea-salt",
+        "en:stabiliser"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -2977,20 +2996,28 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:Container"
+                "id": {
+                    "id": "en:Container"
+                }
             }
         },
         {
             "material": {
-                "id": "en:tetra-pak"
+                "id": {
+                    "id": "en:tetra-pak"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],
@@ -3321,15 +3348,15 @@
                 "unweighted_total": 6.22,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 7,
+                "notes": "Not listed on product",
+                "unweighted_total": 6.6e-05
+            },
             "vitamin-b12": {
                 "ingredient_count": 7,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 7,
-                "notes": "Not listed on product",
-                "unweighted_total": 6.6e-05
             },
             "vitamin-b2": {
                 "ingredient_count": 7,

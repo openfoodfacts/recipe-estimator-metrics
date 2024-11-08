@@ -61,7 +61,7 @@
         "en:e950",
         "en:e955"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT, LAIT, LAIT, LAIT, LAIT, ferments lactiques",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -265,7 +265,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1609,12 +1609,15 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent": 86,
             "text": "LAIT \u00e9cr\u00e9m\u00e9"
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "prot\u00e9ines de LAIT"
         },
         {
@@ -1626,9 +1629,11 @@
                     "ingredients": [
                         {
                             "id": "en:e1422",
+                            "is_in_taxonomy": 1,
                             "text": "e1422"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "amidon transform\u00e9 de ma\u00efs"
                 },
                 {
@@ -1636,16 +1641,20 @@
                     "ingredients": [
                         {
                             "id": "en:e440a",
+                            "is_in_taxonomy": 1,
                             "text": "e440"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "pectine de fruits"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississants"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         },
         {
@@ -1656,9 +1665,11 @@
                     "ingredients": [
                         {
                             "id": "en:e270",
+                            "is_in_taxonomy": 1,
                             "text": "e270"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "acide lactique"
                 },
                 {
@@ -1666,16 +1677,20 @@
                     "ingredients": [
                         {
                             "id": "en:e331",
+                            "is_in_taxonomy": 1,
                             "text": "e331"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "citrate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteurs d'acidit\u00e9"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques"
         },
         {
@@ -1686,9 +1701,11 @@
                     "ingredients": [
                         {
                             "id": "en:e950",
+                            "is_in_taxonomy": 1,
                             "text": "e950"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "ac\u00e9sulfame-k"
                 },
                 {
@@ -1696,12 +1713,15 @@
                     "ingredients": [
                         {
                             "id": "en:e955",
+                            "is_in_taxonomy": 1,
                             "text": "e955"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "sucralose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9dulcorants"
         }
     ],
@@ -1841,6 +1861,24 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:e1422",
+        "en:e270",
+        "en:e331",
+        "en:e440a",
+        "en:e950",
+        "en:e955",
+        "en:flavouring",
+        "en:fruit-pectin",
+        "en:lactic-ferments",
+        "en:milk-proteins",
+        "en:modified-corn-starch",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,
@@ -2332,26 +2370,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:wine-cork"
+                "id": {
+                    "id": "en:wine-cork"
+                }
             }
         },
         {
             "material": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             },
             "shape": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             }
         }
     ],

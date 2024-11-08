@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1701,32 +1701,40 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 58.1,
             "text": "Farine de bl\u00e9"
         },
         {
             "id": "en:sweetener",
+            "is_in_taxonomy": 1,
             "text": "\u00e9dulcorant",
             "vegan": "en:yes",
             "vegetarian": "en:yes"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon de bl\u00e9"
         },
         {
             "id": "en:wheat-fiber",
+            "is_in_taxonomy": 1,
             "text": "fibres de bl\u00e9"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes naturels"
         },
         {
@@ -1734,14 +1742,17 @@
             "ingredients": [
                 {
                     "id": "en:rapeseed-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel de mer"
         },
         {
@@ -1749,13 +1760,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudres \u00e0 lever"
         }
     ],
@@ -1958,6 +1972,19 @@
         "en:wheat-fiber"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e330",
+        "en:e503",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:raising-agent",
+        "en:rapeseed-lecithin",
+        "en:sea-salt",
+        "en:sweetener",
+        "en:wheat-fiber",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 26,
@@ -2470,18 +2497,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

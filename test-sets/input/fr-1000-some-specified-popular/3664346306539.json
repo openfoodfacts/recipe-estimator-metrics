@@ -182,7 +182,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1137,7 +1137,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
@@ -1145,23 +1147,28 @@
             "ingredients": [
                 {
                     "id": "en:e470b",
+                    "is_in_taxonomy": 1,
                     "text": "Sels de magn\u00e9sium d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Agent d'enrobage"
         },
         {
             "id": "fr:extraits-des-eaux-de-vichy",
+            "is_in_taxonomy": 0,
             "percent": 0.3,
             "text": "Extraits des eaux de Vichy"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "Ar\u00f4me"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "Sirop de glucose"
         }
     ],
@@ -1304,6 +1311,14 @@
         "fr:extraits-des-eaux-de-vichy"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e470b",
+        "en:flavouring",
+        "en:glazing-agent",
+        "en:glucose-syrup",
+        "fr:extraits-des-eaux-de-vichy"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1735,10 +1750,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

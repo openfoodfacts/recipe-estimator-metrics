@@ -236,25 +236,25 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 25,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 25,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 25,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 25,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 59.5,
@@ -1989,30 +1989,43 @@
     "ingredients": [
         {
             "id": "en:barley",
+            "is_in_taxonomy": 1,
             "percent": 41.8,
             "processing": "en:pre-cooked,en:crushed",
             "text": "barley *"
         },
         {
             "ciqual_food_code": "9690",
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:wheat-bulgur",
+            "is_in_taxonomy": 1,
             "percent": 29.2,
             "processing": "en:pre-cooked",
             "text": "wheat bulgur *"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "text": "onions"
         },
         {
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "id": "en:oleic-sunflower-and-sunflower",
-                    "text": "oleic sunflower* and sunflower"
+                    "id": "en:oleic-sunflower",
+                    "is_in_taxonomy": 0,
+                    "text": "oleic sunflower"
+                },
+                {
+                    "ecobalyse_code": "sunflower-non-eu",
+                    "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
+                    "text": "sunflower"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "vegetable oils"
         },
         {
@@ -2021,45 +2034,56 @@
             "ingredients": [
                 {
                     "id": "en:without-animal-rennet",
+                    "is_in_taxonomy": 0,
                     "text": "without animal rennet"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 5.9,
             "text": "goat cheese"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "wheat flour"
         },
         {
             "id": "en:whole-oatmeal",
+            "is_in_taxonomy": 0,
             "text": "whole oatmeal"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "text": "whole wheat flakes"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent": 2.4,
             "text": "honey"
         },
         {
             "ciqual_food_code": "11061",
             "id": "en:poppyseed",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "poppy seeds"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "text": "pepper"
         }
     ],
@@ -2344,13 +2368,27 @@
     "ingredients_with_unspecified_percent_sum": 26.0633333333333,
     "ingredients_without_ciqual_codes": [
         "en:barley",
-        "en:oleic-sunflower-and-sunflower",
-        "en:pepper",
+        "en:oleic-sunflower",
+        "en:sunflower",
         "en:vegetable-oil",
         "en:whole-oatmeal",
         "en:without-animal-rennet"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley",
+        "en:goat-cheese",
+        "en:honey",
+        "en:oleic-sunflower",
+        "en:pepper",
+        "en:poppyseed",
+        "en:sea-salt",
+        "en:vegetable-oil",
+        "en:whole-oatmeal",
+        "en:whole-wheat-flakes",
+        "en:without-animal-rennet"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 30,
@@ -2815,34 +2853,50 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1104,12 +1104,17 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "20055",
+            "ecobalyse_code": "celery-eu",
             "id": "en:celery",
+            "is_in_taxonomy": 1,
             "percent": 72,
             "text": "celery"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "text": "rapeseed oil"
         },
         {
@@ -1118,20 +1123,26 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "19051",
+                    "ecobalyse_code": "milk",
                     "id": "en:pasteurized-skimmed-milk",
+                    "is_in_taxonomy": 1,
                     "text": "pasteurized skimmed milk"
                 },
                 {
                     "id": "en:lactic-ferments",
+                    "is_in_taxonomy": 1,
                     "text": "lactic ferments"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 6.5,
             "text": "cottage cheese"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
@@ -1140,45 +1151,57 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "text": "mustard seeds"
                 },
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:alcohol-vinegar",
+                    "is_in_taxonomy": 1,
                     "text": "alcohol vinegar"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "salt"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "dijon mustard"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "text": "alcohol vinegar"
         },
         {
             "ciqual_food_code": "22003",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk-powder",
+            "is_in_taxonomy": 1,
             "text": "egg yolk powder"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
@@ -1186,13 +1209,16 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "xanthan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "thickener"
         },
         {
             "id": "en:e412",
+            "is_in_taxonomy": 1,
             "text": "guar gum"
         }
     ],
@@ -1334,10 +1360,21 @@
         "en:e412",
         "en:e415",
         "en:lactic-ferments",
-        "en:rapeseed-oil",
         "en:thickener"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:cottage-cheese",
+        "en:dijon-mustard",
+        "en:e412",
+        "en:e415",
+        "en:lactic-ferments",
+        "en:mustard-seed",
+        "en:salt",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -1742,31 +1779,45 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

@@ -210,7 +210,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1264,22 +1264,29 @@
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent": 97,
             "text": "cashew nuts"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
             "ingredients": [
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:canola",
+                    "is_in_taxonomy": 1,
                     "text": "canola"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "rapeseed-oil"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "salt"
         }
@@ -1349,10 +1356,14 @@
     "ingredients_with_unspecified_percent_n": 1,
     "ingredients_with_unspecified_percent_sum": 2,
     "ingredients_without_ciqual_codes": [
-        "en:canola",
-        "en:rapeseed-oil"
+        "en:canola"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cashew-nuts",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -1784,7 +1795,9 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

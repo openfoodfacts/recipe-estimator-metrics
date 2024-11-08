@@ -215,7 +215,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1334,6 +1334,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "flocons d'avoine compl\u00e8te"
         },
@@ -1343,22 +1344,28 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
                     "ciqual_food_code": "19021",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:whole-milk-powder",
+                    "is_in_taxonomy": 1,
                     "text": "lait en poudre entier"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
@@ -1369,36 +1376,48 @@
                             "ingredients": [
                                 {
                                     "id": "fr:tournmesol",
+                                    "is_in_taxonomy": 0,
                                     "text": "tournmesol"
                                 }
                             ],
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithines"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9mulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 25,
             "text": "chocolat au lait"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "text": "graisse de palme"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 11,
             "text": "farine de bl\u00e9 complet"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:invert-sugar-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de sucre inverti"
         },
         {
@@ -1406,24 +1425,30 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "poudre \u00e0 lever"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_proxy_food_code": "20091",
+            "ecobalyse_code": "beetroot-fr",
             "id": "en:beetroot",
+            "is_in_taxonomy": 1,
             "processing": "en:syrup,en:sugared",
             "text": "de betterave \u00e0"
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel de vanille"
         }
     ],
@@ -1692,12 +1717,26 @@
         "en:e322",
         "en:e500",
         "en:emulsifier",
-        "en:invert-sugar-syrup",
         "en:natural-vanilla-flavouring",
         "en:raising-agent",
         "fr:tournmesol"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e322",
+        "en:e500",
+        "en:emulsifier",
+        "en:invert-sugar-syrup",
+        "en:milk-chocolate",
+        "en:natural-vanilla-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:whole-grain-oat-flakes",
+        "fr:tournmesol"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 43,
@@ -2188,26 +2227,34 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pet-transparent"
+                "id": {
+                    "id": "en:pet-transparent"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 200,
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

@@ -278,7 +278,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1963,22 +1963,27 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 2.1,
             "text": "_amande_"
         },
         {
             "id": "en:e341",
+            "is_in_taxonomy": 1,
             "text": "phosphate tricalcique"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sel marin"
         },
         {
@@ -1986,14 +1991,18 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine de graines de caroube"
                 },
                 {
                     "id": "en:e418",
+                    "is_in_taxonomy": 1,
                     "text": "gomme gellane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisants"
         },
         {
@@ -2001,9 +2010,11 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
@@ -2014,28 +2025,35 @@
                     "ingredients": [
                         {
                             "id": "fr:82",
+                            "is_in_taxonomy": 0,
                             "text": "82"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "riboflavine"
                 },
                 {
                     "id": "fr:812",
+                    "is_in_taxonomy": 0,
                     "text": "812"
                 },
                 {
                     "id": "fr:e",
+                    "is_in_taxonomy": 0,
                     "text": "E"
                 },
                 {
                     "id": "fr:d2",
+                    "is_in_taxonomy": 0,
                     "text": "D2"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         }
     ],
@@ -2315,6 +2333,23 @@
         "fr:e"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:e101",
+        "en:e341",
+        "en:e418",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:sea-salt",
+        "en:stabiliser",
+        "en:sunflower-lecithin",
+        "en:vitamins",
+        "fr:812",
+        "fr:82",
+        "fr:d2",
+        "fr:e"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2811,23 +2846,33 @@
     "packagings": [
         {
             "material": {
-                "id": "en:composite-material"
+                "id": {
+                    "id": "en:composite-material"
+                }
             },
             "shape": {
-                "id": "en:Container"
+                "id": {
+                    "id": "en:Container"
+                }
             }
         },
         {
             "material": {
-                "id": "en:tetra-pak"
+                "id": {
+                    "id": "en:tetra-pak"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

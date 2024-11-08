@@ -186,7 +186,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1394,31 +1394,41 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 32,
                     "text": "wheat flour"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 15,
                     "text": "wholemeal wheat flour"
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:wholemeal-rye-flour",
+                    "is_in_taxonomy": 1,
                     "text": "wholemeal rye flour"
                 },
                 {
                     "ciqual_food_code": "9550",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:wholemeal-barley-flour",
+                    "is_in_taxonomy": 1,
                     "text": "wholemeal barley flour"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "cereals"
         },
         {
             "id": "en:glucose-fruciose-syrup",
+            "is_in_taxonomy": 0,
             "text": "glucose-fruciose syrup"
         },
         {
@@ -1426,10 +1436,13 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "text": "palm"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "sugar-vegetable fat"
         },
         {
@@ -1437,31 +1450,38 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "text": "glycerol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabiliser"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "glucose syrup"
         },
         {
             "ciqual_food_code": "13014",
+            "ecobalyse_code": "strawberry-non-eu",
             "id": "en:concentrated-strawberry-puree",
             "ingredients": [
                 {
                     "id": "en:strawberry-equivalent",
+                    "is_in_taxonomy": 0,
                     "percent": 2,
                     "text": "strawberry equivalent"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "concentrated strawberry puree"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "text": "starch"
         },
         {
@@ -1469,23 +1489,29 @@
             "ingredients": [
                 {
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "text": "ammonium bicarbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "raising agents"
         },
         {
             "id": "en:e500ii",
+            "is_in_taxonomy": 1,
             "text": "sodium bicarbonate"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "processing": "en:dried",
             "text": "skimmed milk"
         },
@@ -1494,13 +1520,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acids"
         },
         {
             "id": "en:e331iii",
+            "is_in_taxonomy": 1,
             "text": "trisodium citrate"
         },
         {
@@ -1508,18 +1537,23 @@
             "ingredients": [
                 {
                     "id": "en:beetroot-red-gelling-agent",
+                    "is_in_taxonomy": 0,
                     "text": "beetroot red-gelling agent"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colour"
         },
         {
             "id": "en:pectin-flavouring",
+            "is_in_taxonomy": 0,
             "text": "pectin-flavouring"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk-solids",
+            "is_in_taxonomy": 1,
             "text": "milk solids"
         }
     ],
@@ -1732,6 +1766,27 @@
         "en:sugar-vegetable-fat"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:beetroot-red-gelling-agent",
+        "en:cereal",
+        "en:colour",
+        "en:e330",
+        "en:e331iii",
+        "en:e422",
+        "en:e500ii",
+        "en:e503ii",
+        "en:glucose-fruciose-syrup",
+        "en:glucose-syrup",
+        "en:pectin-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:stabiliser",
+        "en:starch",
+        "en:strawberry-equivalent",
+        "en:sugar-vegetable-fat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 45,
@@ -2134,20 +2189,28 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:envelope"
+                "id": {
+                    "id": "en:envelope"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],

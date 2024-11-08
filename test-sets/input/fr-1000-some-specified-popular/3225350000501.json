@@ -246,7 +246,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1954,37 +1954,46 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
-            "id": "en:juice",
+            "id": "en:concentrated-juice",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13009",
+                    "ecobalyse_code": "lemon-eu",
                     "id": "en:lemon",
+                    "is_in_taxonomy": 1,
                     "percent": 35.5,
                     "text": "citron"
                 },
                 {
                     "ciqual_proxy_food_code": "13034",
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
                     "ingredients": [
                         {
                             "id": "fr:equivalents-a-40-de-jus-reconstitues",
+                            "is_in_taxonomy": 0,
                             "text": "\u00e9quivalents \u00e0 40 % de jus reconstitu\u00e9s"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent": 4.5,
                     "text": "orange"
                 }
             ],
-            "processing": "en:from-concentrate",
-            "text": "jus"
+            "is_in_taxonomy": 1,
+            "text": "jus \u00e0 base de concentr\u00e9"
         },
         {
             "ciqual_food_code": "13009",
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon-pulp",
+            "is_in_taxonomy": 1,
             "percent": 5,
             "text": "pulpe de citron"
         },
@@ -1993,14 +2002,16 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
-            "ciqual_proxy_food_code": "13009",
             "id": "en:lemon-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de citron"
         }
     ],
@@ -2146,11 +2157,20 @@
     "ingredients_with_unspecified_percent_sum": 59.5,
     "ingredients_without_ciqual_codes": [
         "en:acid",
+        "en:concentrated-juice",
         "en:e330",
-        "en:juice",
+        "en:lemon-extract",
         "fr:equivalents-a-40-de-jus-reconstitues"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:concentrated-juice",
+        "en:e330",
+        "en:lemon-extract",
+        "fr:equivalents-a-40-de-jus-reconstitues"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 10,
@@ -2636,23 +2656,33 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

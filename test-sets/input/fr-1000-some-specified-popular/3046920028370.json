@@ -300,7 +300,7 @@
                         "epi_score": "97",
                         "origin": "en:switzerland",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 97,
@@ -2422,43 +2422,53 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sugar"
         },
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "text": "cocoa mass"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 7,
             "text": "almonds"
         },
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "text": "cocoa butter"
         },
         {
             "ciqual_food_code": "2012",
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent": 3.9,
             "text": "orange juice from concentrate"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "text": "anhydrous milk fat"
         },
         {
             "id": "en:invert-sugar",
+            "is_in_taxonomy": 1,
             "text": "invert sugar"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "text": "lemon juice from concentrate"
         },
         {
@@ -2467,13 +2477,17 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "soya lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
+            "ecobalyse_code": "pineapple-non-eu",
             "id": "en:pineapple",
+            "is_in_taxonomy": 1,
             "text": "pineapple"
         },
         {
@@ -2481,13 +2495,16 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "text": "pectin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "gelling agent"
         },
         {
             "id": "en:natural-orange-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural orange flavouring"
         },
         {
@@ -2495,9 +2512,11 @@
             "ingredients": [
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "text": "vanillin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "artificial flavouring"
         }
     ],
@@ -2854,6 +2873,22 @@
         "en:vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:artificial-flavouring",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e440a",
+        "en:emulsifier",
+        "en:gelling-agent",
+        "en:invert-sugar",
+        "en:lemon-juice-from-concentrate",
+        "en:natural-orange-flavouring",
+        "en:soya-lecithin",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 38,
     "labels": "Green Dot, Made in Swiss, Natural flavors, Artificial flavors, Lindt & Spr\u00fcngli Cocoa Farming Program",
@@ -3383,26 +3418,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:paperboard"
+                "id": {
+                    "id": "en:paperboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:wrapper"
+                "id": {
+                    "id": "en:wrapper"
+                }
             }
         }
     ],

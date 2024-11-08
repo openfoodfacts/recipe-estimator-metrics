@@ -31,7 +31,7 @@
     "additives_tags": [
         "en:e325"
     ],
-    "allergens": "en:fish, en:fish",
+    "allergens": "en:fish, en:fish, en:fish",
     "allergens_from_ingredients": "en:fish, poissons",
     "allergens_from_user": "(fr) en:fish, en:fish",
     "allergens_hierarchy": [
@@ -167,7 +167,7 @@
                         "epi_score": "40",
                         "origin": "en:poland",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 40,
@@ -1068,20 +1068,24 @@
         {
             "ciqual_proxy_food_code": "26140",
             "id": "en:rainbow-trout",
+            "is_in_taxonomy": 1,
             "percent": 95,
             "text": "truite arc-en-ciel"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:e325",
+            "is_in_taxonomy": 1,
             "text": "lactate de sodium"
         },
         {
             "id": "en:beech-wood-smoke",
+            "is_in_taxonomy": 1,
             "text": "fum\u00e9e de bois de h\u00eatre"
         }
     ],
@@ -1151,6 +1155,13 @@
         "en:e325"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:beech-wood-smoke",
+        "en:e325",
+        "en:rainbow-trout",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -1572,38 +1583,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "fr:Planche"
+                "id": {
+                    "id": "fr:Planche"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],

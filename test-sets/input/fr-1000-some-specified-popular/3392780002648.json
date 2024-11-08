@@ -213,7 +213,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1371,15 +1371,18 @@
                 {
                     "ciqual_proxy_food_code": "26140",
                     "id": "en:rainbow-trout",
+                    "is_in_taxonomy": 1,
                     "percent": 97,
                     "text": "Oncorhynchus mykiss"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Truite Arc-En-Ciel"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent": 3,
             "text": "sel"
         }
@@ -1461,6 +1464,11 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:rainbow-trout",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1914,15 +1922,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

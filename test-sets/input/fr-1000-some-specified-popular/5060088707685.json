@@ -237,7 +237,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1542,30 +1542,36 @@
         {
             "ciqual_food_code": "13011",
             "id": "en:date",
+            "is_in_taxonomy": 1,
             "percent": 58,
             "text": "dates"
         },
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "_cashew nuts_"
         },
         {
             "ciqual_food_code": "13046",
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "raisins"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "_almonds_"
         },
         {
             "ciqual_food_code": "13028",
+            "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
+            "is_in_taxonomy": 1,
             "percent": 2,
             "text": "blueberries"
         }
@@ -1638,6 +1644,13 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:cashew-nuts",
+        "en:date",
+        "en:raisin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 10,
@@ -2165,26 +2178,36 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "140 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 140,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 15.95
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

@@ -278,7 +278,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2209,28 +2209,34 @@
         {
             "ciqual_food_code": "9010",
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent": 43,
             "text": "Vollkornweizen"
         },
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 37,
             "text": "Vollkornhaferflocken"
         },
         {
             "ciqual_food_code": "13046",
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "Rosinen"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "Magermilchpulver"
         },
         {
             "id": "en:sweet-whey-powder",
+            "is_in_taxonomy": 1,
             "text": "S\u00fc\u00dfmolkenpulver"
         },
         {
@@ -2238,15 +2244,19 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "15004",
+                    "ecobalyse_code": "hazelnut-unshelled-non-eu",
                     "id": "en:hazelnut",
+                    "is_in_taxonomy": 1,
                     "text": "Haseln\u00fcsse"
                 },
                 {
                     "ciqual_food_code": "15041",
                     "id": "en:almond",
+                    "is_in_taxonomy": 1,
                     "text": "Mandeln"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 2,
             "processing": "en:toasted,en:chopped",
             "text": "N\u00fcsse"
@@ -2254,6 +2264,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "Salz"
         }
     ],
@@ -2445,6 +2456,16 @@
         "en:sweet-whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:nut",
+        "en:raisin",
+        "en:salt",
+        "en:sweet-whey-powder",
+        "en:whole-grain-oat-flakes",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -2975,25 +2996,35 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

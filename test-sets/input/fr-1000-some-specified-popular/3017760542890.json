@@ -251,7 +251,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1828,38 +1828,50 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 86,
             "text": "farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 15,
             "text": "farine compl\u00e8te de bl\u00e9"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose-fructose"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:malted-wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de bl\u00e9 malt\u00e9"
         },
         {
@@ -1867,14 +1879,18 @@
             "ingredients": [
                 {
                     "id": "en:e270",
+                    "is_in_taxonomy": 1,
                     "text": "acide lactique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "acidifiant"
         },
         {
             "ciqual_proxy_food_code": "9532",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rye-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de seigle"
         },
         {
@@ -1882,9 +1898,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "agent de traitement de la farine"
         }
     ],
@@ -2095,10 +2113,19 @@
         "en:acid",
         "en:e270",
         "en:e300",
+        "en:flour-treatment-agent"
+    ],
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e270",
+        "en:e300",
         "en:flour-treatment-agent",
+        "en:glucose-fructose-syrup",
+        "en:salt",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -2536,20 +2563,28 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 2,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

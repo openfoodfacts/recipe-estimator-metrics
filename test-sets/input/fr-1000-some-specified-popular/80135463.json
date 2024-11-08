@@ -303,7 +303,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2778,29 +2778,38 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "NOISETTES"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent": 8.7,
             "text": "LAIT \u00e9cr\u00e9m\u00e9 en poudre"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent": 7.4,
             "text": "cacao maigre"
         },
@@ -2810,13 +2819,16 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithines de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "id": "en:vanillin",
+            "is_in_taxonomy": 1,
             "text": "vanilline"
         }
     ],
@@ -3012,6 +3024,13 @@
         "en:vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:soya-lecithin",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -3518,62 +3537,88 @@
     "packagings": [
         {
             "material": {
-                "id": "en:ldpe-4-low-density-polyethylene"
+                "id": {
+                    "id": "en:ldpe-4-low-density-polyethylene"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             },
             "weight_measured": "5"
         },
         {
             "material": {
-                "id": "xx:82-c-pap"
+                "id": {
+                    "id": "xx:82-c-pap"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             },
             "weight_measured": 1.1
         },
         {
             "material": {
-                "id": "en:clear-glass"
+                "id": {
+                    "id": "en:clear-glass"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": "200",
             "recycling": {
-                "id": "en:recycle-in-glass-bin"
+                "id": {
+                    "id": "en:recycle-in-glass-bin"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             },
             "weight_measured": 174.3
         },
         {
             "material": {
-                "id": "en:paper"
+                "id": {
+                    "id": "en:paper"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:label"
+                "id": {
+                    "id": "en:label"
+                }
             },
             "weight_measured": 0.1
         },
         {
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         }
     ],

@@ -60,7 +60,7 @@
         "en:e331",
         "en:e407"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:nuts, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT , BL\u00c9, NOISETTE, AMANDE, NOIX, LAIT, LAIT, LAIT, LAIT, BL\u00c9, NOISETTE, AMANDE, NOIX, LAIT, LAIT, cr\u00e8me",
     "allergens_from_user": "(fr) Gluten, Lait, Fruits \u00e0 coque, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -251,7 +251,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1495,23 +1495,31 @@
     "ingredients": [
         {
             "ciqual_food_code": "19023",
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "percent": 67,
             "text": "LAIT entier"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:condensed-skimmed-milk",
+            "is_in_taxonomy": 1,
             "text": "LAIT \u00e9cr\u00e9m\u00e9 concentr\u00e9"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent": 6.7,
             "text": "sucre"
         },
@@ -1521,44 +1529,55 @@
                 {
                     "ciqual_food_code": "13046",
                     "id": "en:raisin",
+                    "is_in_taxonomy": 1,
                     "text": "raisins secs"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "BL\u00c9"
                 },
                 {
                     "ciqual_food_code": "9310",
                     "id": "en:oat",
+                    "is_in_taxonomy": 1,
                     "text": "AVOINE"
                 },
                 {
                     "ciqual_food_code": "15004",
+                    "ecobalyse_code": "hazelnut-unshelled-non-eu",
                     "id": "en:hazelnut",
+                    "is_in_taxonomy": 1,
                     "text": "NOISETTE"
                 },
                 {
                     "ciqual_food_code": "15041",
                     "id": "en:almond",
+                    "is_in_taxonomy": 1,
                     "text": "AMANDE"
                 },
                 {
                     "ciqual_food_code": "15023",
+                    "ecobalyse_code": "walnut-husked-fr",
                     "id": "en:walnut",
+                    "is_in_taxonomy": 1,
                     "text": "NOIX"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 3.5,
             "text": "m\u00fcesli"
         },
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "text": "cr\u00e8me"
         },
         {
             "id": "en:fructooligosaccharide",
+            "is_in_taxonomy": 1,
             "text": "fructo-oligosaccharide"
         },
         {
@@ -1569,9 +1588,11 @@
                     "ingredients": [
                         {
                             "id": "en:e407",
+                            "is_in_taxonomy": 1,
                             "text": "e407"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "carragh\u00e9nanes"
                 },
                 {
@@ -1580,12 +1601,15 @@
                     "ingredients": [
                         {
                             "id": "en:e1422",
+                            "is_in_taxonomy": 1,
                             "text": "e1422"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "amidon transform\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississants"
         },
         {
@@ -1593,9 +1617,11 @@
             "ingredients": [
                 {
                     "id": "en:bifidus-actiregularis",
+                    "is_in_taxonomy": 1,
                     "text": "Bifidus ActiRegularis"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "ferments lactiques dont bifidobacterium"
         },
         {
@@ -1606,9 +1632,11 @@
                     "ingredients": [
                         {
                             "id": "en:e330",
+                            "is_in_taxonomy": 1,
                             "text": "e330"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "acide citrique"
                 },
                 {
@@ -1616,16 +1644,20 @@
                     "ingredients": [
                         {
                             "id": "en:e331",
+                            "is_in_taxonomy": 1,
                             "text": "e331"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "citrate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "correcteurs d'acidit\u00e9"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         }
     ],
@@ -2024,6 +2056,27 @@
         "es:bifidobacterias-y-otros-fermentos-lacticos"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:almond",
+        "en:bifidus-actiregularis",
+        "en:cream",
+        "en:e1422",
+        "en:e330",
+        "en:e331",
+        "en:e407",
+        "en:flavouring",
+        "en:fructooligosaccharide",
+        "en:modified-starch",
+        "en:muesli",
+        "en:oat",
+        "en:raisin",
+        "en:sodium-citrate",
+        "en:thickener",
+        "en:wheat",
+        "es:bifidobacterias-y-otros-fermentos-lacticos"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 43,
@@ -2577,40 +2630,60 @@
     "packagings": [
         {
             "material": {
-                "id": "en:ps-6-polystyrene"
+                "id": {
+                    "id": "en:ps-6-polystyrene"
+                }
             },
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "material": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             },
             "shape": {
-                "id": "en:unknown"
+                "id": {
+                    "id": "en:unknown"
+                }
             }
         }
     ],

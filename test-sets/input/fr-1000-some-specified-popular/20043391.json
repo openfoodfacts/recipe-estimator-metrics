@@ -61,7 +61,7 @@
         "en:e412",
         "en:e415"
     ],
-    "allergens": "en:eggs,en:fish,en:milk,en:mustard, en:fish",
+    "allergens": "en:eggs,en:fish,en:milk,en:mustard, en:fish, en:fish",
     "allergens_from_ingredients": "en:fish, poissons, moutarde",
     "allergens_from_user": "(fr) en:eggs,en:milk,en:mustard, en:fish",
     "allergens_hierarchy": [
@@ -236,7 +236,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1598,12 +1598,15 @@
         {
             "ciqual_food_code": "26051",
             "id": "en:mackerel-fillet",
+            "is_in_taxonomy": 1,
             "percent": 56,
             "text": "filets de maquereaux"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
@@ -1612,55 +1615,69 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "text": "graines de moutarde"
                 },
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:alcohol-vinegar",
+                    "is_in_taxonomy": 1,
                     "text": "vinaigre d'alcool"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "moutarde"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre d'alcool"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:modified-corn-starch",
+            "is_in_taxonomy": 1,
             "text": "amidon modifi\u00e9 de ma\u00efs"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "text": "poivre"
         },
         {
             "ciqual_food_code": "20151",
             "id": "en:chili-pepper",
+            "is_in_taxonomy": 1,
             "text": "piment"
         },
         {
@@ -1668,17 +1685,21 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9paississants"
         },
         {
             "id": "en:e412",
+            "is_in_taxonomy": 1,
             "text": "gomme guar"
         },
         {
             "id": "en:e100",
+            "is_in_taxonomy": 1,
             "text": "extrait de curcuma"
         }
     ],
@@ -1950,10 +1971,24 @@
         "en:e100",
         "en:e412",
         "en:e415",
-        "en:pepper",
         "en:thickener"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:chili-pepper",
+        "en:e100",
+        "en:e412",
+        "en:e415",
+        "en:mackerel-fillet",
+        "en:modified-corn-starch",
+        "en:mustard",
+        "en:mustard-seed",
+        "en:pepper",
+        "en:salt",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,
     "labels": "Point Vert, P\u00each\u00e9 au filet p\u00e9lagique, P\u00each\u00e9 \u00e0 la senne, en:Alu recyclable, en:Eco-Emballages",
@@ -2443,14 +2478,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:metal"
+                "id": {
+                    "id": "en:metal"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:food-can"
+                "id": {
+                    "id": "en:food-can"
+                }
             },
             "weight_measured": 20
         }

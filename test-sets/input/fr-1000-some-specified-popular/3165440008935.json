@@ -45,7 +45,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:celery,en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten",
+    "allergens": "en:celery,en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten",
     "allergens_from_ingredients": "en:gluten, gluten, gluten, gluten, gluten, gluten, gluten",
     "allergens_from_user": "(fr) en:celery,en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten, en:gluten",
     "allergens_hierarchy": [
@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -4338,92 +4338,114 @@
     "ingredients": [
         {
             "ciqual_food_code": "9610",
+            "ecobalyse_code": "durum-wheat-semolina",
             "id": "fr:semoule-de-ble-dur-precuite",
+            "is_in_taxonomy": 1,
             "text": "Semoule de bl\u00e9 dur pr\u00e9cuite"
         },
         {
             "id": "en:wholemeal-cereal",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "c\u00e9r\u00e9ales compl\u00e8tes"
         },
         {
             "id": "fr:semoule-de-ble-dur-complete-precuite",
+            "is_in_taxonomy": 0,
             "text": "semoule de bl\u00e9 dur compl\u00e8te pr\u00e9cuite"
         },
         {
             "ciqual_food_code": "9390",
             "id": "en:malted-rye-flakes",
+            "is_in_taxonomy": 1,
             "text": "flocons de seigle malt\u00e9"
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "text": "flocons d'orge"
         },
         {
             "ciqual_food_code": "9001",
             "id": "fr:flocons-d-epeautre",
+            "is_in_taxonomy": 1,
             "text": "flocons d'\u00e9peautre"
         },
         {
             "ciqual_food_code": "9615",
             "id": "fr:semoule-de-mais-precuite",
+            "is_in_taxonomy": 1,
             "percent": 6.5,
             "text": "semoule de ma\u00efs pr\u00e9cuite"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "processing": "en:flour,en:pre-cooked",
             "text": "bl\u00e9"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "processing": "en:dehydrated",
             "text": "tomates"
         },
         {
             "ciqual_food_code": "20087",
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:red-bell-pepper",
+            "is_in_taxonomy": 1,
             "processing": "en:dehydrated",
             "text": "poivrons rouges"
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent": 0.9,
             "text": "huile d'olive vierge extra"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent": 0.9,
             "text": "ail"
         },
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "percent": 0.75,
             "processing": "en:dehydrated",
             "text": "persil"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "11060",
             "id": "en:herbes-de-provence",
+            "is_in_taxonomy": 1,
             "percent": 0.1,
             "text": "herbes de Provence"
         }
@@ -4753,6 +4775,21 @@
         "fr:semoule-de-ble-dur-complete-precuite"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-flakes",
+        "en:garlic",
+        "en:herbes-de-provence",
+        "en:malted-rye-flakes",
+        "en:natural-flavouring",
+        "en:parsley",
+        "en:salt",
+        "en:wheat",
+        "en:wholemeal-cereal",
+        "fr:flocons-d-epeautre",
+        "fr:semoule-de-ble-dur-complete-precuite",
+        "fr:semoule-de-mais-precuite"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -5199,28 +5236,40 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "400",
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 2,
             "quantity_per_unit": "200",
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

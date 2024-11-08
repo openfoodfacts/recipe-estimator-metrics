@@ -207,7 +207,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1329,40 +1329,52 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 38,
             "text": "Farine de _bl\u00e9_"
         },
         {
             "ciqual_food_code": "19023",
+            "ecobalyse_code": "milk",
             "id": "en:fresh-whole-milk",
+            "is_in_taxonomy": 1,
             "percent": 30,
             "text": "_lait_ entier frais"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "text": "_\u0153ufs_"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "text": "dextrose"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
@@ -1370,23 +1382,28 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- et diglyc\u00e9rides d'acides gras",
                     "vegan": "en:yes",
                     "vegetarian": "en:yes"
                 },
                 {
                     "id": "fr:source",
+                    "is_in_taxonomy": 0,
                     "text": "Source"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "id": "fr:service-client-st-michel",
+            "is_in_taxonomy": 0,
             "text": "service client St Michel"
         },
         {
             "id": "fr:le-produit-convient-donc-a-une-alimention-ovo-lacto-vegetarienne",
+            "is_in_taxonomy": 0,
             "text": "Le produit convient donc \u00e0 une alimention ovo-lacto v\u00e9g\u00e9tarienne"
         }
     ],
@@ -1581,6 +1598,16 @@
         "fr:source"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:dextrose",
+        "en:e471",
+        "en:emulsifier",
+        "en:salt",
+        "fr:le-produit-convient-donc-a-une-alimention-ovo-lacto-vegetarienne",
+        "fr:service-client-st-michel",
+        "fr:source"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 24,
@@ -2064,14 +2091,20 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

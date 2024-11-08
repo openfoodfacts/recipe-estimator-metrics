@@ -349,7 +349,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -3495,18 +3495,23 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Wasser"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 2.3,
             "text": "_Mandeln_"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "Zucker"
         },
         {
@@ -3514,14 +3519,17 @@
             "ingredients": [
                 {
                     "id": "en:e341iii",
+                    "is_in_taxonomy": 1,
                     "text": "Tricalciumphosphat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Calcium"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "Meersalz"
         },
         {
@@ -3529,14 +3537,18 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "text": "Johannisbrotkernmehl"
                 },
                 {
                     "id": "en:e418",
+                    "is_in_taxonomy": 1,
                     "text": "Gellan"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Stabilisatoren"
         },
         {
@@ -3544,33 +3556,41 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "text": "Lecithine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Emulgator"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "nat\u00fcrliches Aroma"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamine"
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "text": "vitamin B2"
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "text": "vitamin B12"
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "text": "vitamin E"
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "text": "vitamin D2"
         }
     ],
@@ -3875,6 +3895,23 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:calcium",
+        "en:e101",
+        "en:e322",
+        "en:e341iii",
+        "en:e418",
+        "en:emulsifier",
+        "en:ergocalciferol",
+        "en:natural-flavouring",
+        "en:sea-salt",
+        "en:stabiliser",
+        "en:vitamin-b12",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 31,
@@ -4495,38 +4532,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:tetra-pak"
+                "id": {
+                    "id": "en:tetra-pak"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         },
         {
             "material": {
-                "id": "en:pet-1-polyethylene-terephthalate"
+                "id": {
+                    "id": "en:pet-1-polyethylene-terephthalate"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         },
         {
             "material": {
-                "id": "en:FSC mix"
+                "id": {
+                    "id": "en:FSC mix"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:brick"
+                "id": {
+                    "id": "en:brick"
+                }
             }
         }
     ],

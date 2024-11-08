@@ -225,13 +225,13 @@
                         "epi_score": "0",
                         "origin": "en:peru",
                         "percent": 63.75,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 36.25,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1725,6 +1725,7 @@
                     "ciqual_food_code_used": "16030",
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1819,11 +1820,11 @@
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -1869,6 +1870,7 @@
                     "ciqual_food_code": "16030",
                     "ciqual_food_code_used": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
@@ -1963,11 +1965,11 @@
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b12": {
+                        "vitamin-b1": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
-                        "vitamin-b1_unit": {
+                        "vitamin-b12": {
                             "percent_max": 0.0,
                             "percent_min": 0.0
                         },
@@ -2009,6 +2011,7 @@
                     "text": "beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 75.9,
             "percent_hidden": 85,
             "quantity_estimate": 75.94190380761523,
@@ -2017,7 +2020,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2112,11 +2117,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -2275,6 +2280,12 @@
     "ingredients_with_unspecified_percent_sum": 100,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -2765,32 +2776,44 @@
     "packagings": [
         {
             "material": {
-                "id": "en:non-corrugated-cardboard"
+                "id": {
+                    "id": "en:non-corrugated-cardboard"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "100g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 100,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         },
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "100g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 100,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:sheet"
+                "id": {
+                    "id": "en:sheet"
+                }
             }
         }
     ],
@@ -3189,12 +3212,12 @@
                 "unweighted_total": 99.8,
                 "weighting": 1
             },
-            "vitamin-b12": {
+            "vitamin-b1": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
             },
-            "vitamin-b1_unit": {
+            "vitamin-b12": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0

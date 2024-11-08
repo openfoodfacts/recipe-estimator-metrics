@@ -254,7 +254,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2634,19 +2634,23 @@
     "ingredients": [
         {
             "ciqual_food_code": "2074",
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple-juice",
+            "is_in_taxonomy": 1,
             "percent": 65,
             "text": "Apfelsaft"
         },
         {
             "ciqual_food_code": "11074",
             "id": "en:ginger",
+            "is_in_taxonomy": 1,
             "processing": "en:juice",
             "text": "Ingwer"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "percent": 10,
             "text": "Zitronensaft"
         },
@@ -2655,9 +2659,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "Ascorbins\u00e4ure"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Antioxidationsmittel"
         }
     ],
@@ -2737,6 +2743,13 @@
         "en:e300"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:e300",
+        "en:ginger",
+        "en:lemon-juice"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -3235,17 +3248,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:aluminium"
+                "id": {
+                    "id": "en:aluminium"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "150ml",
             "quantity_per_unit_unit": "ml",
             "quantity_per_unit_value": 150,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:drink-can"
+                "id": {
+                    "id": "en:drink-can"
+                }
             },
             "weight_measured": 8.52
         }

@@ -262,7 +262,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2065,37 +2065,47 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Eau"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "Huile de colza"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent": 12.8,
             "text": "_Gluten de bl\u00e9_"
         },
         {
             "ciqual_food_code": "22004",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:powdered-egg-white",
+            "is_in_taxonomy": 1,
             "percent": 4.1,
             "text": "Blanc d'_\u0153uf_ en poudre"
         },
         {
             "id": "en:pea-protein-isolate",
+            "is_in_taxonomy": 1,
             "percent": 0.9,
             "text": "isolat de prot\u00e9ines de pois"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "Ar\u00f4mes naturels"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "Sel"
         },
         {
@@ -2103,23 +2113,29 @@
             "ingredients": [
                 {
                     "id": "en:e461",
+                    "is_in_taxonomy": 1,
                     "text": "methylcellulose"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine de graines de caroube"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "G\u00e9lifiants"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "text": "Vinaigre d'alcool"
         },
         {
             "id": "en:herbs-and-spices",
+            "is_in_taxonomy": 1,
             "text": "\u00e9pices et plantes aromatiques"
         },
         {
@@ -2127,24 +2143,30 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "text": "gomme de guar"
                 },
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "gomme de xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiants"
         },
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "processing": "en:powder",
             "text": "Tomate"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "text": "Amidon de _bl\u00e9_"
         },
         {
@@ -2152,23 +2174,29 @@
             "ingredients": [
                 {
                     "id": "en:e301",
+                    "is_in_taxonomy": 1,
                     "text": "ascorbate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Antioxydant"
         },
         {
             "ciqual_food_code": "20181",
             "id": "en:parsnip",
+            "is_in_taxonomy": 1,
             "text": "Panais"
         },
         {
             "id": "en:spice-extract",
+            "is_in_taxonomy": 1,
             "text": "Extrait d'\u00e9pices"
         },
         {
             "ciqual_food_code": "20039",
+            "ecobalyse_code": "leek-fr",
             "id": "en:leek",
+            "is_in_taxonomy": 1,
             "text": "Poireau"
         },
         {
@@ -2176,9 +2204,11 @@
             "ingredients": [
                 {
                     "id": "en:e160d",
+                    "is_in_taxonomy": 1,
                     "text": "lycop\u00e8ne"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Colorant"
         }
     ],
@@ -2489,6 +2519,27 @@
         "en:wheat-gluten"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:antioxidant",
+        "en:colour",
+        "en:e160d",
+        "en:e301",
+        "en:e412",
+        "en:e415",
+        "en:e461",
+        "en:emulsifier",
+        "en:gelling-agent",
+        "en:herbs-and-spices",
+        "en:natural-flavouring",
+        "en:parsnip",
+        "en:pea-protein-isolate",
+        "en:salt",
+        "en:spice-extract",
+        "en:wheat-gluten",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 48,
@@ -2951,17 +3002,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "210 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 210,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 4.28
         }

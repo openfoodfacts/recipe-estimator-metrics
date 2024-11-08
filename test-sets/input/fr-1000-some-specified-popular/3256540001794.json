@@ -201,7 +201,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1162,11 +1162,14 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 41,
                     "text": "Farine de BLE"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Ingredients Brioche tress\u00e9e aux p\u00e9pites de chocolat"
         },
         {
@@ -1174,17 +1177,21 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
@@ -1193,18 +1200,23 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithines de SOJA"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9mulsifiant"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 10,
             "text": "CEUFS frais 15%-P\u00e9pites de chocolat"
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "text": "Mati\u00e8re grasse v\u00e9g\u00e9tale de palme"
         },
         {
@@ -1212,26 +1224,33 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 3,
                     "text": "farine de BLE"
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 6,
             "text": "Levain"
         },
         {
             "id": "fr:sirop-de-fructose-glucose-sucre",
+            "is_in_taxonomy": 0,
             "text": "Sirop de fructose-glucose-Sucre"
         },
         {
@@ -1239,17 +1258,21 @@
             "ingredients": [
                 {
                     "id": "fr:mono-et-diglycerides-d-acides-gras-gluten-de-ble-epaississant",
+                    "is_in_taxonomy": 0,
                     "text": "mono- et diglyc\u00e9rides d'acides gras GLUTEN de BLE-Epaississant"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Levure-Sel-Emulsifiant"
         },
         {
             "id": "en:e412",
+            "is_in_taxonomy": 1,
             "text": "gomme guar"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "Ar\u00f4me"
         },
         {
@@ -1257,17 +1280,21 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "Antioxydant"
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "text": "Prot\u00e9ines de LAIT"
         },
         {
             "id": "fr:informations-allergenes",
+            "is_in_taxonomy": 0,
             "text": "Informations allerg\u00e8nes"
         }
     ],
@@ -1579,6 +1606,26 @@
         "fr:sirop-de-fructose-glucose-sucre"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e300",
+        "en:e412",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:milk-proteins",
+        "en:salt",
+        "en:sourdough",
+        "en:soya-lecithin",
+        "fr:ceufs-frais-15-pepites-de-chocolat",
+        "fr:informations-allergenes",
+        "fr:ingredients-brioche-tressee-aux-pepites-de-chocolat",
+        "fr:levure-sel-emulsifiant",
+        "fr:mono-et-diglycerides-d-acides-gras-gluten-de-ble-epaississant",
+        "fr:sirop-de-fructose-glucose-sucre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 31,
@@ -1981,10 +2028,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

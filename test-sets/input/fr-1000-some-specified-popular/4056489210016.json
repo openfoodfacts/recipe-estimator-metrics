@@ -200,7 +200,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1201,82 +1201,101 @@
     "ingredients": [
         {
             "id": "en:whole-oatmeal",
+            "is_in_taxonomy": 0,
             "percent": 39,
             "text": "whole oatmeal"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 23,
             "text": "whole wheat flakes"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "palm oil"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 5,
             "text": "wheat flour"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent": 4.5,
             "text": "almonds"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 4.5,
             "text": "hazelnuts"
         },
         {
             "ciqual_proxy_food_code": "9100",
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "percent": 3,
             "text": "rice"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "text": "glucose syrup"
         },
         {
             "ciqual_food_code": "15026",
             "id": "en:pecan-nut",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "pecans"
         },
         {
             "ciqual_food_code": "15008",
             "id": "en:brazil-nut",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "brazil nuts"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "text": "honey"
         },
         {
             "id": "en:e150",
+            "is_in_taxonomy": 1,
             "text": "caramel"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "natural flavor"
         },
         {
@@ -1284,17 +1303,21 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "text": "mono- and diglycerides of fatty acids"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "emulsifier"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "barley malt extract"
         },
         {
             "id": "en:vegetable",
+            "is_in_taxonomy": 1,
             "origins": "",
             "text": "of vegetable"
         }
@@ -1447,6 +1470,24 @@
         "en:whole-oatmeal"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:barley-malt-extract",
+        "en:brazil-nut",
+        "en:e150",
+        "en:e471",
+        "en:emulsifier",
+        "en:glucose-syrup",
+        "en:honey",
+        "en:natural-flavouring",
+        "en:pecan-nut",
+        "en:rice",
+        "en:salt",
+        "en:vegetable",
+        "en:whole-oatmeal",
+        "en:whole-wheat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -1867,12 +1908,16 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             }
         }
     ],

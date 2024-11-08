@@ -220,7 +220,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1149,77 +1149,98 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 28.6,
                     "text": "farine compl\u00e8te de BL\u00c9"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 28.4,
                     "text": "farine de BL\u00c9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 57,
             "text": "Farines"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent": 6.1,
             "text": "graines de tournesol"
         },
         {
             "ciqual_food_code": "9621",
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent": 4.2,
             "text": "son de BL\u00c9"
         },
         {
             "ciqual_food_code": "15052",
             "id": "en:brown-flax-seeds",
+            "is_in_taxonomy": 1,
             "percent": 3.1,
             "text": "graines de lin brun"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "text": "gluten de BL\u00c9"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "text": "vinaigre"
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "text": "extrait d'ac\u00e9rola"
         }
     ],
@@ -1344,10 +1365,20 @@
     "ingredients_without_ciqual_codes": [
         "en:acerola-juice",
         "en:flavouring",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:brown-flax-seeds",
+        "en:flavouring",
+        "en:salt",
+        "en:vinegar",
+        "en:wheat-bran",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 31,
@@ -1807,12 +1838,16 @@
     "packagings": [
         {
             "shape": {
-                "id": "en:envelope"
+                "id": {
+                    "id": "en:envelope"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         }
     ],

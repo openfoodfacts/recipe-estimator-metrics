@@ -211,13 +211,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 98.125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 1.875,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 91.25625,
@@ -1345,7 +1345,9 @@
             "ciqual_food_code": "19042",
             "ciqual_food_code_used": "19042",
             "difference": 10.8,
+            "ecobalyse_code": "milk",
             "id": "en:pasteurized-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1440,13 +1442,13 @@
                     "percent_max": 4.81,
                     "percent_min": 4.81
                 },
+                "vitamin-b1": {
+                    "percent_max": 4.7e-05,
+                    "percent_min": 4.7e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 4.9e-07,
                     "percent_min": 4.9e-07
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 4.7e-05,
-                    "percent_min": 4.7e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00017999999999999998,
@@ -1491,6 +1493,7 @@
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1585,13 +1588,13 @@
                     "percent_max": 2.77,
                     "percent_min": 2.77
                 },
+                "vitamin-b1": {
+                    "percent_max": 2.8e-05,
+                    "percent_min": 2.8e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 1.8e-07,
                     "percent_min": 1.8e-07
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 2.8e-05,
-                    "percent_min": 2.8e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00017999999999999998,
@@ -1635,6 +1638,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:milk-mineral-concentrate",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1729,11 +1733,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1782,6 +1786,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -1876,11 +1881,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -1928,6 +1933,7 @@
         {
             "ciqual_food_code_used": null,
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -2022,11 +2028,11 @@
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0,
                     "percent_min": 0
                 },
@@ -2180,6 +2186,13 @@
         "en:vitamin-d"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments",
+        "en:milk-mineral-concentrate",
+        "en:vitamin-d"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -2627,10 +2640,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         }
     ],
@@ -2954,15 +2971,15 @@
                 "unweighted_total": 7.58,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 5,
+                "notes": "Not listed on product",
+                "unweighted_total": 7.5e-05
+            },
             "vitamin-b12": {
                 "ingredient_count": 5,
                 "notes": "Not listed on product",
                 "unweighted_total": 6.699999999999999e-07
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 5,
-                "notes": "Not listed on product",
-                "unweighted_total": 7.5e-05
             },
             "vitamin-b2": {
                 "ingredient_count": 5,

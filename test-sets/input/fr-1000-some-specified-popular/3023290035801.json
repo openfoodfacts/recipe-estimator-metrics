@@ -41,7 +41,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:eggs,en:milk,en:soybeans, en:milk",
+    "allergens": "en:eggs,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, Lait entier, cr\u00e8me, lait, blancs d'oeufs",
     "allergens_from_user": "(en) en:eggs,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -217,13 +217,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 61,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 39,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 56.73,
@@ -1315,7 +1315,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "19023",
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent": 61,
             "text": "Lait entier"
@@ -1325,17 +1327,21 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "text": "sucre"
                 },
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "text": "p\u00e2te de cacao"
                 },
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "text": "beurre de cacao"
                 },
                 {
@@ -1343,56 +1349,73 @@
                     "ingredients": [
                         {
                             "id": "en:e322i",
+                            "is_in_taxonomy": 1,
                             "text": "l\u00e9cithine"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "\u00e9mulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 10.4,
             "text": "chocolat"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:whole-fresh-eggs",
+            "is_in_taxonomy": 1,
             "percent": 9.6,
             "text": "\u0153ufs entiers frais"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "text": "cr\u00e8me"
         },
         {
             "ciqual_proxy_food_code": "19044",
+            "ecobalyse_code": "milk-powder",
             "id": "fr:lait-ecreme-a-base-de-poudre-de-lait",
+            "is_in_taxonomy": 1,
             "text": "lait \u00e9cr\u00e9m\u00e9 \u00e0 base de poudre de lait"
         },
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent": 2.7,
             "text": "cacao maigre en poudre"
         },
         {
             "ciqual_food_code": "22001",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-white",
+            "is_in_taxonomy": 1,
             "percent": 1.4,
             "text": "blancs d'oeufs"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "text": "poudre de lait \u00e9cr\u00e9m\u00e9"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "text": "Lait"
         }
@@ -1513,6 +1536,16 @@
         "en:emulsifier"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:cream",
+        "en:e322i",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1926,25 +1959,35 @@
     "packagings": [
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:Container"
+                "id": {
+                    "id": "en:Container"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:pot"
+                "id": {
+                    "id": "en:pot"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

@@ -222,13 +222,13 @@
                         "epi_score": "0",
                         "origin": "en:malawi",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:nicaragua",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1620,33 +1620,41 @@
     "ingredients": [
         {
             "ciqual_food_code": "15001",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
+            "is_in_taxonomy": 1,
             "percent": 95,
             "text": "Arachides"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "id": "en:stabiliser",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "text": "colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "stabilisant"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "fr:ar-amorce",
+            "is_in_taxonomy": 0,
             "labels": "en:fair-trade",
             "text": "Ar amorce"
         }
@@ -1749,10 +1757,17 @@
     "ingredients_with_unspecified_percent_n": 4,
     "ingredients_with_unspecified_percent_sum": 5,
     "ingredients_without_ciqual_codes": [
+        "en:rapeseed",
         "en:stabiliser",
         "fr:ar-amorce"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt",
+        "en:stabiliser",
+        "fr:ar-amorce"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -2192,18 +2207,26 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:jar"
+                "id": {
+                    "id": "en:jar"
+                }
             }
         },
         {
             "material": {
-                "id": "en:glass"
+                "id": {
+                    "id": "en:glass"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         }
     ],

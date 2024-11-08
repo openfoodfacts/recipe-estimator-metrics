@@ -215,7 +215,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1616,21 +1616,29 @@
     "ingredients": [
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "sunflower vegetable oils"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "text": "rapeseed vegetable oils"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:white-wine-vinegar",
+            "is_in_taxonomy": 1,
             "text": "white wine vinegar"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "water"
         },
         {
@@ -1639,48 +1647,60 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "text": "mustard seeds"
                 },
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:spirit-vinegar",
+                    "is_in_taxonomy": 1,
                     "text": "spirit vinegar"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "text": "salt"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "dijon mustard"
         },
         {
             "id": "en:egg-yolk-from-hens-raised-outdoors",
+            "is_in_taxonomy": 0,
             "text": "egg yolk from hens raised outdoors"
         },
         {
             "id": "en:or",
+            "is_in_taxonomy": 0,
             "percent": 5.1,
             "text": "or"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "salt"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sugar"
         },
         {
             "id": "en:e1400",
+            "is_in_taxonomy": 1,
             "text": "dextrin"
         },
         {
@@ -1688,13 +1708,16 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "text": "xanthan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "thickener"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "aroma"
         },
         {
@@ -1702,13 +1725,16 @@
             "ingredients": [
                 {
                     "id": "en:e161b",
+                    "is_in_taxonomy": 1,
                     "text": "lutein"
                 },
                 {
                     "id": "en:e160c",
+                    "is_in_taxonomy": 1,
                     "text": "paprika extract"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colourings"
         }
     ],
@@ -1968,10 +1994,26 @@
         "en:egg-yolk-from-hens-raised-outdoors",
         "en:flavouring",
         "en:or",
-        "en:rapeseed-oil",
         "en:thickener"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:dijon-mustard",
+        "en:e1400",
+        "en:e160c",
+        "en:e161b",
+        "en:e415",
+        "en:egg-yolk-from-hens-raised-outdoors",
+        "en:flavouring",
+        "en:mustard-seed",
+        "en:or",
+        "en:salt",
+        "en:spirit-vinegar",
+        "en:thickener",
+        "en:white-wine-vinegar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2470,20 +2512,28 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:seal"
+                "id": {
+                    "id": "en:seal"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

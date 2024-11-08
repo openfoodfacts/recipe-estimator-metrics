@@ -236,7 +236,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -2368,6 +2368,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent": 99.88,
             "text": "jus de citron \u00e0 base de concentr\u00e9"
         },
@@ -2376,9 +2377,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         },
         {
@@ -2386,9 +2389,11 @@
             "ingredients": [
                 {
                     "id": "en:e224",
+                    "is_in_taxonomy": 1,
                     "text": "disulfite de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "conservateur"
         }
     ],
@@ -2487,6 +2492,14 @@
         "en:preservative"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:e224",
+        "en:e300",
+        "en:lemon-juice-from-concentrate",
+        "en:preservative"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -2991,29 +3004,41 @@
     "packagings": [
         {
             "material": {
-                "id": "en:recycled-plastic"
+                "id": {
+                    "id": "en:recycled-plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200 ml",
             "quantity_per_unit_unit": "ml",
             "quantity_per_unit_value": 200,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle-in-sorting-bin"
+                "id": {
+                    "id": "en:recycle-in-sorting-bin"
+                }
             },
             "shape": {
-                "id": "en:bottle-cap"
+                "id": {
+                    "id": "en:bottle-cap"
+                }
             }
         }
     ],

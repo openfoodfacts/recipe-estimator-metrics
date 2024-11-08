@@ -267,7 +267,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1598,35 +1598,49 @@
     ],
     "ingredients": [
         {
-            "id": "fr:huiles-et-stearines-vegetales",
+            "id": "en:oil",
+            "is_in_taxonomy": 1,
+            "percent": 51,
+            "text": "Huiles"
+        },
+        {
+            "id": "fr:stearines-vegetales",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "percent": 30,
                     "text": "colza"
                 },
                 {
                     "id": "en:palm-kernel-oil",
+                    "is_in_taxonomy": 1,
                     "text": "palmiste"
                 },
                 {
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "percent": 5.4,
                     "text": "lin"
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "text": "palme"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 51,
-            "text": "Huiles et st\u00e9arines v\u00e9g\u00e9tales"
+            "text": "st\u00e9arines v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "eau"
         },
         {
@@ -1635,18 +1649,22 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "text": "l\u00e9cithine de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "\u00e9mulsifiant"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4mes"
         },
         {
@@ -1654,13 +1672,16 @@
             "ingredients": [
                 {
                     "id": "en:e160ai",
+                    "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         }
     ],
@@ -1882,11 +1903,27 @@
         "en:emulsifier",
         "en:flavouring",
         "en:flax",
+        "en:oil",
         "en:palm-kernel-oil",
+        "en:rapeseed",
         "en:thiamin",
-        "fr:huiles-et-stearines-vegetales"
+        "fr:stearines-vegetales"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:e160ai",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:flax",
+        "en:oil",
+        "en:palm-kernel-oil",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:thiamin",
+        "fr:stearines-vegetales"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2404,15 +2441,21 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "shape": {
-                "id": "en:lid"
+                "id": {
+                    "id": "en:lid"
+                }
             }
         },
         {
             "shape": {
-                "id": "en:tray"
+                "id": {
+                    "id": "en:tray"
+                }
             }
         }
     ],

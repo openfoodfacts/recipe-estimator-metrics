@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1989,19 +1989,25 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 57,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:whole-fresh-eggs",
+            "is_in_taxonomy": 1,
             "percent": 13,
             "text": "\u0153ufs entiers frais"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent": 7.5,
             "processing": "en:pasteurised,en:fresh",
             "text": "lait \u00e9cr\u00e9m\u00e9"
@@ -2011,70 +2017,92 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "text": "eau"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent": 3.1,
                     "text": "farines de bl\u00e9"
                 },
                 {
                     "ciqual_proxy_food_code": "9532",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rye-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine de seigle"
                 },
                 {
+                    "ciqual_proxy_food_code": "11009",
                     "id": "en:yeast",
+                    "is_in_taxonomy": 1,
                     "text": "levures"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "levain"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "9550",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-flour",
+            "is_in_taxonomy": 1,
             "text": "farine d'orge"
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
             "ingredients": [
                 {
                     "id": "fr:charentes-poitou",
+                    "is_in_taxonomy": 0,
                     "text": "Charentes-Poitou"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:pdo",
             "percent": 1.8,
             "text": "beurre"
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "text": "ar\u00f4me naturel de vanille"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "text": "gluten de bl\u00e9"
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "text": "extrait d'ac\u00e9rola"
         },
         {
@@ -2082,9 +2110,11 @@
             "ingredients": [
                 {
                     "id": "en:e160",
+                    "is_in_taxonomy": 1,
                     "text": "carot\u00e9no\u00efdes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "colorant"
         }
     ],
@@ -2238,10 +2268,21 @@
         "en:natural-vanilla-flavouring",
         "en:sourdough",
         "en:wheat-gluten",
+        "fr:charentes-poitou"
+    ],
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:colour",
+        "en:e160",
+        "en:natural-vanilla-flavouring",
+        "en:salt",
+        "en:sourdough",
+        "en:wheat-gluten",
         "en:yeast",
         "fr:charentes-poitou"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -2659,10 +2700,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         }
     ],

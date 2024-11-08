@@ -209,7 +209,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1214,12 +1214,15 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "text": "Water"
         },
         {
             "ciqual_food_code": "9310",
             "id": "en:oat",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent": 10,
             "text": "_oats_"
@@ -1227,6 +1230,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         }
     ],
@@ -1282,6 +1286,11 @@
     "ingredients_with_unspecified_percent_sum": 90,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oat",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1731,10 +1740,14 @@
     "packagings": [
         {
             "material": {
-                "id": "en:composite-material"
+                "id": {
+                    "id": "en:composite-material"
+                }
             },
             "shape": {
-                "id": "en:container"
+                "id": {
+                    "id": "en:container"
+                }
             }
         }
     ],

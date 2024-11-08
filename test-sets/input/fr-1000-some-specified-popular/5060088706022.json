@@ -226,7 +226,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1376,22 +1376,27 @@
         {
             "ciqual_food_code": "13011",
             "id": "en:date",
+            "is_in_taxonomy": 1,
             "percent": 53,
             "text": "dates"
         },
         {
             "ciqual_food_code": "15001",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
+            "is_in_taxonomy": 1,
             "percent": 46,
             "text": "peanuts"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "text": "sea salt"
         },
         {
             "id": "en:a-hint-of-natural-flavourings",
+            "is_in_taxonomy": 0,
             "text": "a hint of natural flavourings"
         }
     ],
@@ -1489,6 +1494,12 @@
         "en:a-hint-of-natural-flavourings"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:a-hint-of-natural-flavourings",
+        "en:date",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 6,
@@ -2018,29 +2029,43 @@
     "packagings": [
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:packaging"
+                "id": {
+                    "id": "en:packaging"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],

@@ -253,7 +253,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1676,22 +1676,29 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent": 99,
             "text": "Farine de bl\u00e9"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "text": "sirop de glucose-fructose"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de palme"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "text": "levure"
         },
         {
@@ -1702,9 +1709,11 @@
                     "ingredients": [
                         {
                             "id": "fr:phosphate",
+                            "is_in_taxonomy": 0,
                             "text": "phosphate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "calcium"
                 },
                 {
@@ -1712,48 +1721,60 @@
                     "ingredients": [
                         {
                             "id": "en:sulfates",
+                            "is_in_taxonomy": 1,
                             "text": "sulfate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "text": "zinc"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "min\u00e9raux"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "text": "vitamines"
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "text": "vitamine E"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "thiamine"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "text": "vitamine B1"
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "text": "niacine"
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "text": "vitamine PP"
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "text": "vitamine B6"
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "text": "acide folique"
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "text": "vitamine B9"
         },
         {
@@ -1761,9 +1782,11 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "agent de traitement de la farine"
         }
     ],
@@ -2058,11 +2081,28 @@
         "en:vitamin-b6",
         "en:vitamin-e",
         "en:vitamins",
+        "en:zinc",
+        "fr:phosphate"
+    ],
+    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:e300",
+        "en:e375",
+        "en:flour-treatment-agent",
+        "en:folic-acid",
+        "en:glucose-fructose-syrup",
+        "en:minerals",
+        "en:sulfates",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "en:vitamins",
         "en:yeast",
         "en:zinc",
         "fr:phosphate"
     ],
-    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,
@@ -2515,17 +2555,23 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 6,
             "quantity_per_unit": "25 cl",
             "quantity_per_unit_unit": "cl",
             "quantity_per_unit_value": "25",
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:bottle"
+                "id": {
+                    "id": "en:bottle"
+                }
             },
             "weight_measured": "10"
         }

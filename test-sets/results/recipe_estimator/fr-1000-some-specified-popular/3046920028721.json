@@ -264,7 +264,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -2980,6 +2980,7 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 54.9,
             "id": "en:cocoa-solids",
+            "is_in_taxonomy": 1,
             "lost_water": 1.5787281746373703,
             "nutrients": {
                 "alcohol": {
@@ -3074,13 +3075,13 @@
                     "percent_max": 0.9,
                     "percent_min": 0.9
                 },
+                "vitamin-b1": {
+                    "percent_max": 7.6e-05,
+                    "percent_min": 7.6e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 7.6e-05,
-                    "percent_min": 7.6e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00011999999999999999,
@@ -3124,6 +3125,7 @@
             "ciqual_food_code_used": "16030",
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3218,11 +3220,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3267,6 +3269,7 @@
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "lost_water": 0.6617325457954223,
             "nutrients": {
                 "alcohol": {
@@ -3361,13 +3364,13 @@
                     "percent_max": 0.9,
                     "percent_min": 0.9
                 },
+                "vitamin-b1": {
+                    "percent_max": 7.6e-05,
+                    "percent_min": 7.6e-05
+                },
                 "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
-                },
-                "vitamin-b1_unit": {
-                    "percent_max": 7.6e-05,
-                    "percent_min": 7.6e-05
                 },
                 "vitamin-b2": {
                     "percent_max": 0.00011999999999999999,
@@ -3410,6 +3413,7 @@
             "ciqual_food_code": "16030",
             "ciqual_food_code_used": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
@@ -3504,11 +3508,11 @@
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3552,7 +3556,9 @@
         {
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:demerara-sugar",
+            "is_in_taxonomy": 1,
             "lost_water": 0.0007220426847231111,
             "nutrients": {
                 "alcohol": {
@@ -3647,11 +3653,11 @@
                     "percent_max": 99.8,
                     "percent_min": 99.8
                 },
-                "vitamin-b12": {
+                "vitamin-b1": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
-                "vitamin-b1_unit": {
+                "vitamin-b12": {
                     "percent_max": 0.0,
                     "percent_min": 0.0
                 },
@@ -3821,6 +3827,13 @@
     "ingredients_with_unspecified_percent_sum": 1,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:cocoa-solids",
+        "en:fat-reduced-cocoa"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 13,
@@ -4292,38 +4305,56 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "es:Ecoponto-amarelo"
+                "id": {
+                    "id": "es:Ecoponto-amarelo"
+                }
             },
             "shape": {
-                "id": "es:Bandeja"
+                "id": {
+                    "id": "es:Bandeja"
+                }
             }
         },
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "es:Ecoponto-amarelo"
+                "id": {
+                    "id": "es:Ecoponto-amarelo"
+                }
             },
             "shape": {
-                "id": "en:film"
+                "id": {
+                    "id": "en:film"
+                }
             }
         },
         {
             "material": {
-                "id": "en:italpack"
+                "id": {
+                    "id": "en:italpack"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "es:Ecoponto-azul"
+                "id": {
+                    "id": "es:Ecoponto-azul"
+                }
             },
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             }
         }
     ],
@@ -5543,15 +5574,15 @@
                 "unweighted_total": 101.6,
                 "weighting": 1
             },
+            "vitamin-b1": {
+                "ingredient_count": 5,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.000152
+            },
             "vitamin-b12": {
                 "ingredient_count": 5,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0
-            },
-            "vitamin-b1_unit": {
-                "ingredient_count": 5,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.000152
             },
             "vitamin-b2": {
                 "ingredient_count": 5,

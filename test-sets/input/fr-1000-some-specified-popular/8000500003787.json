@@ -278,7 +278,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1759,22 +1759,27 @@
             "ingredients": [
                 {
                     "id": "ar:zucker",
+                    "is_in_taxonomy": 0,
                     "text": "Zucker"
                 },
                 {
                     "id": "ar:kakaobutter",
+                    "is_in_taxonomy": 0,
                     "text": "Kakaobutter"
                 },
                 {
                     "id": "ar:kakaomasse",
+                    "is_in_taxonomy": 0,
                     "text": "Kakaomasse"
                 },
                 {
                     "id": "ar:magermilchpulver",
+                    "is_in_taxonomy": 0,
                     "text": "MAGERMILCHPULVER"
                 },
                 {
                     "id": "ar:butterreinfett",
+                    "is_in_taxonomy": 0,
                     "text": "BUTTERREINFETT"
                 },
                 {
@@ -1782,42 +1787,52 @@
                     "ingredients": [
                         {
                             "id": "ar:soja",
+                            "is_in_taxonomy": 0,
                             "text": "SOJA"
                         }
                     ],
+                    "is_in_taxonomy": 0,
                     "text": "Emulgator Lecithine"
                 },
                 {
                     "id": "ar:vanillin",
+                    "is_in_taxonomy": 0,
                     "text": "Vanillin"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 30,
             "text": "MILCHSCHOKOLADE"
         },
         {
             "id": "ar:haseln\u00fcsse",
+            "is_in_taxonomy": 0,
             "percent": 28.5,
             "text": "HASELN\u00dcSSE"
         },
         {
             "id": "ar:zucker",
+            "is_in_taxonomy": 0,
             "text": "Zucker"
         },
         {
             "id": "ar:palmol",
+            "is_in_taxonomy": 0,
             "text": "Palmol"
         },
         {
             "id": "ar:weizenmehl",
+            "is_in_taxonomy": 0,
             "text": "WEIZENMEHL"
         },
         {
             "id": "ar:s\u00fcssmolkenpulver",
+            "is_in_taxonomy": 0,
             "text": "S\u00dcSSMOLKENPULVER"
         },
         {
             "id": "ar:fettarmer-kakao",
+            "is_in_taxonomy": 0,
             "text": "fettarmer Kakao"
         },
         {
@@ -1825,21 +1840,26 @@
             "ingredients": [
                 {
                     "id": "ar:soja",
+                    "is_in_taxonomy": 0,
                     "text": "SOJA"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Emulgator Lecithine"
         },
         {
             "id": "ar:backtriebmittel-natriumhydrogencarbonat",
+            "is_in_taxonomy": 0,
             "text": "Backtriebmittel Natriumhydrogencarbonat"
         },
         {
             "id": "ar:salz",
+            "is_in_taxonomy": 0,
             "text": "Salz"
         },
         {
             "id": "ar:vanillin",
+            "is_in_taxonomy": 0,
             "text": "Vanillin"
         },
         {
@@ -1847,9 +1867,11 @@
             "ingredients": [
                 {
                     "id": "ar:0",
+                    "is_in_taxonomy": 0,
                     "text": "0"
                 }
             ],
+            "is_in_taxonomy": 0,
             "text": "Kohlenhydrate davon Zucker Elwelfs Salz N\u00c4HRWERTE Energie Fett"
         }
     ],
@@ -2200,6 +2222,27 @@
         "ar:zucker"
     ],
     "ingredients_without_ciqual_codes_n": 18,
+    "ingredients_without_ecobalyse_ids": [
+        "ar:0",
+        "ar:backtriebmittel-natriumhydrogencarbonat",
+        "ar:butterreinfett",
+        "ar:emulgator-lecithine",
+        "ar:fettarmer-kakao",
+        "ar:haseln\u00fcsse",
+        "ar:kakaobutter",
+        "ar:kakaomasse",
+        "ar:kohlenhydrate-davon-zucker-elwelfs-salz-n\u00e4hrwerte-energie-fett",
+        "ar:magermilchpulver",
+        "ar:milchschokolade",
+        "ar:palmol",
+        "ar:salz",
+        "ar:soja",
+        "ar:s\u00fcssmolkenpulver",
+        "ar:vanillin",
+        "ar:weizenmehl",
+        "ar:zucker"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 0,
@@ -2692,11 +2735,15 @@
     "packagings": [
         {
             "material": {
-                "id": "en:pp-5-polypropylene"
+                "id": {
+                    "id": "en:pp-5-polypropylene"
+                }
             },
             "number_of_units": 3,
             "shape": {
-                "id": "en:box"
+                "id": {
+                    "id": "en:box"
+                }
             },
             "weight_measured": 29
         }

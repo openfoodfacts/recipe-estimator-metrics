@@ -253,7 +253,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1581,43 +1581,57 @@
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "text": "flocons d'avoine"
                 },
                 {
                     "ciqual_food_code": "9310",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:oat-flour",
+                    "is_in_taxonomy": 1,
                     "text": "farine d'avoine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 54,
             "text": "C\u00e9r\u00e9ales compl\u00e8tes"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "text": "flocons d'orge"
         },
         {
             "id": "en:vegetable-oil",
+            "is_in_taxonomy": 1,
             "text": "huile v\u00e9g\u00e9tale"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de riz"
         },
         {
@@ -1626,28 +1640,34 @@
                 {
                     "ciqual_food_code": "13019",
                     "id": "en:redcurrant",
+                    "is_in_taxonomy": 1,
                     "processing": "en:whole",
                     "text": "groseilles"
                 },
                 {
                     "ciqual_food_code": "13007",
                     "id": "en:blackcurrant",
+                    "is_in_taxonomy": 1,
                     "processing": "en:whole",
                     "text": "cassis"
                 },
                 {
                     "ciqual_food_code": "13028",
+                    "ecobalyse_code": "blueberry-non-eu",
                     "id": "en:blueberry",
+                    "is_in_taxonomy": 1,
                     "processing": "en:whole",
                     "text": "myrtilles"
                 },
                 {
                     "ciqual_food_code": "13113",
                     "id": "en:cranberry",
+                    "is_in_taxonomy": 1,
                     "processing": "en:sliced",
                     "text": "cranberries"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent": 2.5,
             "processing": "en:freeze-dried",
             "text": "baies"
@@ -1655,10 +1675,12 @@
         {
             "ciqual_food_code": "15007",
             "id": "en:desiccated-coconut",
+            "is_in_taxonomy": 1,
             "text": "noix de coco s\u00e9ch\u00e9e"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "text": "ar\u00f4me naturel"
         }
     ],
@@ -1941,6 +1963,19 @@
         "en:wholemeal-cereal"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-flakes",
+        "en:berries",
+        "en:blackcurrant",
+        "en:cranberry",
+        "en:desiccated-coconut",
+        "en:natural-flavouring",
+        "en:oat-flakes",
+        "en:redcurrant",
+        "en:vegetable-oil",
+        "en:wholemeal-cereal"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 30,
@@ -2383,26 +2418,38 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:discard"
+                "id": {
+                    "id": "en:discard"
+                }
             },
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             }
         },
         {
             "material": {
-                "id": "en:cardboard"
+                "id": {
+                    "id": "en:cardboard"
+                }
             },
             "number_of_units": 1,
             "recycling": {
-                "id": "en:recycle"
+                "id": {
+                    "id": "en:recycle"
+                }
             },
             "shape": {
-                "id": "en:sleeve"
+                "id": {
+                    "id": "en:sleeve"
+                }
             }
         }
     ],

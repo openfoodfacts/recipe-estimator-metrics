@@ -34,7 +34,7 @@
     "additives_tags": [
         "en:e306"
     ],
-    "allergens": "en:gluten,en:peanuts, en:peanuts",
+    "allergens": "en:gluten,en:peanuts, en:peanuts, en:peanuts",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, bl\u00e9, arachides, malt d'orge",
     "allergens_from_user": "(nl) en:gluten,en:peanuts, en:peanuts",
     "allergens_hierarchy": [
@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1183,12 +1183,15 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent": 45,
             "text": "flocons d'avoine compl\u00e8te"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "text": "sucre"
         },
         {
@@ -1198,70 +1201,87 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "text": "bl\u00e9"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "grains de froment"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "text": "huile de tournesol"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "text": "farine de bl\u00e9"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "text": "flocons de bl\u00e9 complet"
         },
         {
             "ciqual_food_code": "15026",
             "id": "en:pecan-nut",
+            "is_in_taxonomy": 1,
             "percent": 4,
             "processing": "en:chopped",
             "text": "noix de p\u00e9can"
         },
         {
             "ciqual_food_code": "15001",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
+            "is_in_taxonomy": 1,
             "percent": 4,
             "text": "cacahu\u00e8tes"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent": 1.5,
             "text": "miel"
         },
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "noix de cajou"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "noisettes"
         },
         {
             "ciqual_food_code": "15041",
             "id": "en:flaked-almonds",
+            "is_in_taxonomy": 1,
             "percent": 1,
             "text": "amandes effil\u00e9es"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "text": "sel"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "text": "extrait de malt d'orge"
         },
         {
@@ -1269,9 +1289,11 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "text": "extrait riche en tocoph\u00e9rols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "text": "antioxydant"
         }
     ],
@@ -1402,6 +1424,21 @@
         "en:e306"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:barley-malt-extract",
+        "en:cashew-nuts",
+        "en:e306",
+        "en:flaked-almonds",
+        "en:honey",
+        "en:pecan-nut",
+        "en:salt",
+        "en:wheat",
+        "en:wheat-grain",
+        "en:whole-grain-oat-flakes",
+        "en:whole-wheat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 33,
@@ -1784,14 +1821,18 @@
     "packagings": [
         {
             "material": {
-                "id": "en:plastic"
+                "id": {
+                    "id": "en:plastic"
+                }
             },
             "number_of_units": 1,
             "quantity_per_unit": "500 g",
             "quantity_per_unit_unit": "g",
             "quantity_per_unit_value": 500,
             "shape": {
-                "id": "en:bag"
+                "id": {
+                    "id": "en:bag"
+                }
             },
             "weight_measured": 7.9
         }
