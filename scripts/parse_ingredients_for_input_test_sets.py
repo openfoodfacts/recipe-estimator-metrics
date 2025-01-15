@@ -40,8 +40,11 @@ for test_set_path in sys.argv[1:]:
 
         product_opener_api_url = "http://world.openfoodfacts.localhost/api/v3/product_services"
         request_data = {
+            #"services": ["parse_ingredients_text", "extend_ingredients", "estimate_ingredients_percent"],
             "services": ["parse_ingredients_text", "extend_ingredients"],
-            "fields": ["all"],
+            "fields": [""],
+            "lc": "fr",
+            "tags_lc": "fr",
             "product": product
         }
         response = requests.post(product_opener_api_url, json=request_data)
