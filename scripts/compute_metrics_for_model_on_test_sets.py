@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
 compute_metrics_for_model_on_test_sets [name of model results] [names of one or more input test sets]
-
-This scriptwill go through each product JSON file of the specified input test sets to:
+ 
+This script will go through each product JSON file of the specified input test sets to:
 - Compute accuracy metrics comparing the estimated "percent_estimate" field in the resulting product
 to the "percent" field in the input product
 - Store product level metrics in the resulting product
