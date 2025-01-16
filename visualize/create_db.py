@@ -9,6 +9,7 @@ import json
 import os
 
 import duckdb
+import sqlite3
 import pandas as pd
 
 
@@ -31,25 +32,30 @@ def model_name(results_path):
     return results_path.strip("/").split('/')[-2]
 
 
+def is_sqlite(db_path):
+    return db_path.endswith(".sqlite")
+
 @contextlib.contextmanager
 def test_db(db_path):
-    with duckdb.connect(db_path) as conn:
-        yield conn
+    if is_sqlite(db_path):
+        with sqlite3.connect(db_path) as conn:
+            yield conn
+    else:
+        with duckdb.connect(db_path) as conn:
+            yield conn
 
 
 def create_db(db_path):
     with test_db(db_path) as conn:
-        conn.execute("""
+        sql = """
             CREATE TABLE models(
                 id INTEGER PRIMARY KEY,
-                name VARCHAR,
+                name VARCHAR
             );
-            CREATE SEQUENCE seq_models_id START 1;
             CREATE TABLE tests(
                 id INTEGER PRIMARY KEY,
-                name VARCHAR,
+                name VARCHAR
             );
-            CREATE SEQUENCE seq_tests_id START 1;
             CREATE TABLE results(
                 id INTEGER PRIMARY KEY,
                 test_id INTEGER,
@@ -65,7 +71,6 @@ def create_db(db_path):
                 FOREIGN KEY(test_id) REFERENCES tests(id),
                 FOREIGN KEY(model_id) REFERENCES models(id)
             );
-            CREATE SEQUENCE seq_results_id START 1;
             CREATE TABLE ingredients(
                 id INTEGER PRIMARY KEY,
                 result_id INTEGER,
@@ -83,7 +88,6 @@ def create_db(db_path):
                 FOREIGN KEY(result_id) REFERENCES results(id),
                 UNIQUE (result_id, name, position)
             );
-            CREATE SEQUENCE seq_ingredients_id START 1;
             CREATE TABLE categories(
                 id INTEGER PRIMARY KEY,
                 result_id INTEGER,
@@ -91,8 +95,9 @@ def create_db(db_path):
                 FOREIGN KEY(result_id) REFERENCES results(id),
                 UNIQUE (result_id, name)
             );
-            CREATE SEQUENCE seq_categories_id START 1;
-        """)
+        """
+        for statement in sql.split(";"):
+            conn.execute(statement)
 
 
 def num_ingredients_total(ingredients):
@@ -230,7 +235,12 @@ def populate_db(db_path, statements):
         datas = sorted(statements, key=lambda x: (ORDERS[x[0]], x[0], x[1].get("id")))
         for table, data in itertools.groupby(datas, lambda x: x[0]):
             data_df = pd.DataFrame([d[1] for d in data])
-            conn.execute(f"INSERT INTO {table} SELECT * FROM data_df")
+            if is_sqlite(db_path):
+                # sqlite
+                data_df.to_sql(name=table, con=conn, if_exists="append", index=False, method="multi")
+            else:
+                # duckdb
+                conn.execute(f"INSERT INTO {table} SELECT * FROM data_df")
 
 
 def process_path(db_path, results_path, sequences=None):
