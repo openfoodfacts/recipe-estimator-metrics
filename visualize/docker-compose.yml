@@ -1,0 +1,54 @@
+
+
+x-redash-common: &redash-common
+  image: redash/redash:latest
+  depends_on:
+  - redis
+  restart: no
+  volumes:
+    - ./duckdb:/duckdb
+
+x-redash-common-env: &redash-common-env
+  REDASH_SECRET_KEY:
+  REDASH_COOKIE_SECRET:
+  REDASH_REDIS_URL:
+  REDASH_DATABASE_URL:
+
+
+services:
+  server:
+    <<: *redash-common
+    ports:
+    - "127.0.0.1:5000:5000"
+    command: server
+    environment:
+      <<: *redash-common-env
+      REDASH_WEB_WORKERS: 4
+  scheduler:
+    <<: *redash-common
+    command: scheduler
+    environment:
+      <<: *redash-common-env
+  scheduled_worker:
+    <<: *redash-common
+    command: worker
+    environment:
+      <<: *redash-common-env
+      QUEUES: "scheduled_queries,schemas"
+      WORKERS_COUNT: 1
+  queries_worker:
+    <<: *redash-common
+    command: worker
+    environment:
+      <<: *redash-common-env
+      QUEUES: "queries"
+      WORKERS_COUNT: 2
+  redis:
+    image: redis:7
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+    volumes:
+      - ./pg-data:/var/lib/postgresql/data
