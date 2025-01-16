@@ -67,7 +67,7 @@ Once Recipe Estimator runs in your dev environment, you can use the recipe_estim
 
 ## PEFAP estimator model
 
-[PEFAP estimator]() is a based-on Monte-Carlo algorithm tool that estimates the environmental impact of a given product, based on its ingredients
+[PEFAP estimator](https://framagit.org/GustaveCoste/off-product-environmental-impact) is a based-on Monte-Carlo algorithm tool that estimates the environmental impact of a given product, based on its ingredients
 
 To execute this model, you need :
 
@@ -75,7 +75,7 @@ To execute this model, you need :
 
 2) To execute the following command :
 
-python scripts/run_model_on_input_test_sets.py "you\path\to\python.exe;models/pefap_estimator_localhost.py" test-sets/results/pefap_estimator/ test-sets/input/pick_a_test
+python scripts/run_model_on_input_test_sets.py "you\path\to\python.exe;models/pefap_estimator_localhost.py" test-sets/results/pefap_estimator test-sets/input/pick_a_test
 
 # Usage
 

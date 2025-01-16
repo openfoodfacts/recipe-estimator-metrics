@@ -11,52 +11,44 @@ import json
 import sys
 
 pefap_package_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../PEFAP_estimator"))
-
-print(pefap_package_dir)
+#print(pefap_package_dir)
 
 # Local configuration
 if os.path.isdir(pefap_package_dir):
     sys.path.insert(0, pefap_package_dir)
 
-    print(pefap_package_dir)
     try: 
         # Local configuration
         from impacts_estimation import estimate_impacts
         
-        path = "../test-sets/input/fr-62-products-10-specified-ingredients/20298036.json"
-        file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), path))
-        
-        with open(file_path, 'r') as f:
-            product = json.load(f)
-            
+        # Check that we have an input product in JSON format in STDIN
+        try:
+            product = json.load(sys.stdin)
+        except ValueError:
+            print("Input product is not in JSON format", file=sys.stderr)
+
         # Calling the PEFAP algorithm
         impact_categories = ['EF single score', 'Climate change']
-        print("Estimating recipe")
+        #print("Estimating recipe")
         impact_estimation_result = estimate_impacts(product=product, impact_names=impact_categories)
         
+        #print("Debugging :\n\n")
         #print(impact_estimation_result['ingredients_mass_share'])
 
-    except Exception as e:
-        print("An error occured..") 
-        raise
-# Online configuration
-else :
-    # Checking that we have an input product in JSON format in STDIN
-    try:
-        product = json.load(sys.stdin)
-    except ValueError:
-        print("Input product is not in JSON format", file=sys.stderr)
-    
-    # Calling the PEFAP algorithm
-    impact_estimation_result = estimate_impacts(product=product, impact_names=impact_categories)
-    
-    # 
-    try:
-        response_json = impact_estimation_result['ingredients_mass_share']
+        try:
+            mass_share_dict = impact_estimation_result.get('ingredients_mass_share', {})
 
-        # Merging results with json
-        
-        print(response_json, file=sys.stderr)
-    except:
-        print(impact_estimation_result, file=sys.stderr)
+            # Mettre à jour les ingrédients avec leur part de masse estimée
+            for ingredient in product["ingredients"]:
+                ingredient_id = ingredient["id"]
+                if ingredient_id in mass_share_dict:
+                    ingredient["percent_estimate"] = mass_share_dict[ingredient_id]*100
 
+            result_json = json.dumps(product, indent=4, ensure_ascii=False)
+
+            print(result_json, file=sys.stdout)
+        except :
+            print(impact_estimation_result, file=sys.stderr)
+
+    except :
+        print("You need to add the PEFAP package (see README for further information.")

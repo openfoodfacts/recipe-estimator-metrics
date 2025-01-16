@@ -228,7 +228,10 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
         # Save a summary of the results in the test set directory        
         test_set_average_difference = test_set_total_difference / test_set_number_of_products
-        all_ciqual_test_set_average_difference = all_ciqual_test_set_total_difference / all_ciqual_test_set_number_of_products
+        try:
+            all_ciqual_test_set_average_difference = all_ciqual_test_set_total_difference / all_ciqual_test_set_number_of_products
+        except: 
+            all_ciqual_test_set_average_difference = 0
 
         results_summary = {
             "test_set_name": test_set_name,

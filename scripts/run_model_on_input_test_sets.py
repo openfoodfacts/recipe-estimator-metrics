@@ -18,10 +18,15 @@ Example:
 
 """
 
+
 import json
 import sys
 import os
 import subprocess
+
+import time
+
+import concurrent.futures
 
 from compute_metrics import compute_metrics_for_test_set
 
@@ -63,6 +68,8 @@ for element in command:
     if not os.path.exists(element):
         print(f"{element} does not exist")
         sys.exit(1)
+
+start_time = time.time()
 
 # Go through each input test set directory
 test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
@@ -111,14 +118,14 @@ for test_set_name in test_sets:
 
         # Pass the input to the command
         stdout, stderr = p.communicate(input=json.dumps(input_product))
-        r=stderr.strip() if stderr else None
-        if r:
-            print(r,out=sys.stderr)
+
+        # Handle errors if any
+        if stderr:
+            print(stderr.strip(), file=sys.stderr)
 
         # Get the output
         result_json = stdout.strip()
 
-        # convert json to object
         try:
             result = json.loads(result_json)
 
@@ -127,7 +134,99 @@ for test_set_name in test_sets:
             print("Saving output to " + result_path)
             with open(result_path, "w") as f:
                 json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
-        except:
-            print(result_json, file=sys.stderr)
+        except Exception as e:
+            #print(result_json, file=sys.stderr)
+            print("An issue occurred: " + str(e), file=sys.stderr)
+
+        elapsed_time = time.time() - start_time
+        print(f"\n -- Test set {test_set_name} completed in {elapsed_time:.2f} seconds. -- \n")
 
     compute_metrics_for_test_set(results_path, test_set_name)
+
+    elapsed_time = time.time() - start_time
+    print(f"\n -- Compute_metrics_for_test_set completed in {elapsed_time:.2f} seconds. -- \n")
+
+
+"""
+import json
+import sys
+import os
+import subprocess
+import time
+from concurrent.futures import ProcessPoolExecutor
+from compute_metrics import compute_metrics_for_test_set
+
+start_time = time.time()
+
+# Suppression des champs "percent" dans les ingrédients
+def remove_percent_fields(ingredients):
+    for ingredient in ingredients:
+        if "percent" in ingredient:
+            ingredient["percent_hidden"] = ingredient["percent"]
+        fields_to_remove = ["percent", "percent_min", "percent_max", "percent_estimate"]
+        for field in fields_to_remove:
+            if field in ingredient:
+                del ingredient[field]
+    return ingredients
+
+def process_product(path, model, results_path, test_set_name):
+    test_name = path.split("/")[-1]
+
+    with open(path, "r") as f:
+        input_product = json.load(f)
+
+    if "ingredients" not in input_product:
+        print("Skipping product without ingredients: " + path)
+        return
+
+    input_product["ingredients"] = remove_percent_fields(input_product["ingredients"])
+    print("Running model on product " + path)
+
+    command = model.split(";")
+    p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+    stdout, stderr = p.communicate(input=json.dumps(input_product))
+
+    if stderr:
+        print(stderr.strip(), file=sys.stderr)
+
+    result_json = stdout.strip()
+    try:
+        result = json.loads(result_json)
+        result_path = results_path + "/" + test_set_name + "/" + test_name
+        print("Saving output to " + result_path)
+        with open(result_path, "w") as f:
+            json.dump(result, f, indent=4, ensure_ascii=False, sort_keys=True)
+    except Exception as e:
+        print("An issue occurred: " + str(e), file=sys.stderr)
+
+def main():
+    if len(sys.argv) < 3:
+        print("Usage: run_model_input_test_sets.py [full path or name of model executable] [full path or name for results] [full paths or names of one or more input test sets]")
+        sys.exit(1)
+
+    model = sys.argv[1]
+    results_path = sys.argv[2]
+    test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
+
+    for test_set_name in test_sets:
+        test_set_path = test_set_name 
+        if not os.path.exists(results_path):
+            os.makedirs(results_path)
+        if not os.path.exists(results_path + "/" + test_set_name):
+            os.makedirs(results_path + "/" + test_set_name)
+
+        paths = [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]
+
+        with ProcessPoolExecutor() as executor:
+            futures = [executor.submit(process_product, path, model, results_path, test_set_name) for path in paths]
+            for future in futures:
+                future.result()  # This will raise any exception caught during processing
+
+        compute_metrics_for_test_set(results_path, test_set_name)
+        
+        elapsed_time = time.time() - start_time
+        print(f"\n -- Temps écoulé : {elapsed_time:.2f} seconds. -- \n")
+
+if __name__ == '__main__':
+    main()
+"""
