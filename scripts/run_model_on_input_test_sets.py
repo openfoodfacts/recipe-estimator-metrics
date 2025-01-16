@@ -58,9 +58,11 @@ if "/" not in sys.argv[2]:
 
 results_path = sys.argv[2]
 
-if not os.path.exists(model):
-    print("Model executable does not exist")
-    sys.exit(1)
+command = model.split(";")
+for element in command:
+    if not os.path.exists(element):
+        print(f"{element} does not exist")
+        sys.exit(1)
 
 # Go through each input test set directory
 test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
@@ -101,13 +103,17 @@ for test_set_name in test_sets:
         print("Running model on product " + path)
 
         # Define the command to be executed
-        command = [model]
+        command = model.split(";")
+        #print(command)
 
         # Create a Popen object
         p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
 
         # Pass the input to the command
         stdout, stderr = p.communicate(input=json.dumps(input_product))
+        r=stderr.strip() if stderr else None
+        if r:
+            print(r,out=sys.stderr)
 
         # Get the output
         result_json = stdout.strip()

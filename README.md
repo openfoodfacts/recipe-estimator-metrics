@@ -46,7 +46,7 @@ The models directory contains executable files for each model we want to evaluat
 The executable file for each model expects the JSON of one product in STDIN, and outputs the resulting product (with added percent_estimate field for some or all ingredients) to STDOUT.
 In most cases, the executable file is just a wrapper for an API or local service.
 
-We currently have 2 models:
+We currently have 3 models:
 
 ## Product Opener model
 
@@ -64,6 +64,18 @@ Once Product Opener runs in your dev environment, you can use the product_opener
 [Recipe Estimator](https://github.com/openfoodfacts/recipe-estimator) is a new model that uses linear solving to find the most likely quantity of each ingredient based on how close the sum of the nutrients of each ingredient matches the nutritional facts table listed on the product.
 
 Once Recipe Estimator runs in your dev environment, you can use the recipe_estimator_localhost model in the metrics framework.
+
+## PEFAP estimator model
+
+[PEFAP estimator]() is a based-on Monte-Carlo algorithm tool that estimates the environmental impact of a given product, based on its ingredients
+
+To execute this model, you need :
+
+1) To install the PEFAP package in the root of this deposit :
+
+2) To execute the following command :
+
+python scripts/run_model_on_input_test_sets.py "you\path\to\python.exe;models/pefap_estimator_localhost.py" test-sets/results/pefap_estimator/ test-sets/input/pick_a_test
 
 # Usage
 
