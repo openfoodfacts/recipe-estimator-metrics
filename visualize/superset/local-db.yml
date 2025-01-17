@@ -1,0 +1,12 @@
+x-local-db-volumes: &local-db-volumes
+  - ./local_db:/local_db
+  
+
+services:
+  superset:
+    volumes: *local-db-volumes
+  superset-worker:
+    volumes: *local-db-volumes
+  superset-worker-beat:
+    volumes: *local-db-volumes
+

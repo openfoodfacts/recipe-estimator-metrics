@@ -6,7 +6,7 @@ x-redash-common: &redash-common
   - redis
   restart: no
   volumes:
-    - ./duckdb:/duckdb
+    - ./local_db:/local_db
 
 x-redash-common-env: &redash-common-env
   REDASH_SECRET_KEY:
