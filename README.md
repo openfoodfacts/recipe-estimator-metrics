@@ -23,6 +23,32 @@ The percent estimation models run on sometimes noisy data:
 - not all ingredients can be matched to known ingredients in the Open Food Facts ingredients taxonomy
 - not all ingredients in the taxonomy have an association to the CIQUAL database from which we get nutrient data for the ingredient (which is a key input for the Recipe estimator model)
 
+A recipe estimate is for the content before eventual evaporation (due to transformation like cooking for example).
+
+On each product:
+* we have:
+  * models might add a specific entry to report some informations
+    * it's the case for recipe estimator (in `recipe_estimator`) 
+* we will report in `ingredients_metrics`:
+  * `relative_difference` (float): sum(difference) / count(ingredients)
+  * `total_difference` (float): sum of difference
+  * `total_specified_input_percent` (float): the sum of the percentage for known ingredients (given on the packaging)
+
+On each ingredient:
+* as input, we have:
+  * percent_estimate - the percent of this ingredient in the recipe
+  * quantity_estimate - the quantity we estimated of the product (sum of quantity might be more than 100g due to evaporation)
+* per ingredients we add:
+  * `difference`: abs(percent_estimate - real percent) if we know real percent
+  *   
+* we round those values to avoid excessif diff in git  
+
+Note that we have estimates only on 
+
+And we will report:
+* `difference`: is the difference between the 
+* hidden_percent
+
 For those reasons, we report metrics for different sub sets:
 
 ### All products
