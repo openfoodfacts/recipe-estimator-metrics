@@ -5,17 +5,17 @@
     "ingredients": [
         {
             "ciqual_food_code": "18155",
-            "difference": 2.75,
+            "difference": 0.138,
             "id": "en:green-tea",
-            "percent_estimate": 49.2,
+            "percent_estimate": 51.9,
             "percent_hidden": 52,
             "text": "Thé vert"
         },
         {
             "ciqual_food_code": "11074",
-            "difference": 12.1,
+            "difference": 12.4,
             "id": "en:ginger",
-            "percent_estimate": 17.9,
+            "percent_estimate": 17.6,
             "percent_hidden": 30,
             "text": "gingembre"
         },
@@ -25,16 +25,16 @@
             "text": "café vert"
         },
         {
-            "difference": 12.6,
+            "difference": 14.9,
             "id": "en:guarana",
-            "percent_estimate": 17.6,
+            "percent_estimate": 19.9,
             "percent_hidden": 5,
             "text": "guarana"
         },
         {
             "ciqual_food_code": "11027",
             "id": "en:peppermint",
-            "percent_estimate": 7.31,
+            "percent_estimate": 8.43,
             "text": "menthe poivrée"
         },
         {
@@ -101,10 +101,10 @@
                     "id": "fr:ingredient",
                     "ingredients": [
                         {
-                            "difference": 47.7,
+                            "difference": 52,
                             "id": "fr:of-total-weight",
-                            "percent": 52,
-                            "percent_estimate": 4.31,
+                            "percent_estimate": 0,
+                            "percent_hidden": 52,
                             "text": "of total weight"
                         }
                     ],
@@ -167,10 +167,10 @@
                     "id": "fr:fairtrade-ingredienten",
                     "ingredients": [
                         {
-                            "difference": 50.9,
+                            "difference": 52,
                             "id": "fr:van-totaalgewicht",
-                            "percent": 52,
-                            "percent_estimate": 1.07,
+                            "percent_estimate": 0,
+                            "percent_hidden": 52,
                             "text": "van totaalgewicht"
                         }
                     ],
@@ -182,8 +182,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 21,
-        "relative_difference": 0.822,
-        "total_difference": 300.0,
+        "relative_difference": 0.837,
+        "total_difference": 305.0,
         "total_specified_input_percent": 365
     },
     "ingredients_text": "Thé vert* 52%, gingembre* 30%, café vert*, guarana* 5%, menthe poivrée*, poivrier long*. *Produits issus de l'agriculture biologique. Souligné : ingrédient issu du commerce équitable (52% du poids total). INGREDIENTS: green tea* 52%, ginger* 30%, green coffee*, guarana* 5%, pepper mint*, long pepper*. *Organically grown products. Underlined: fair trade ingredient (52% of total weight). Ingrediënten : groene thee* 52%, gember* 30%, ongebrande koffie*, guarana* 5%, pepermunt*, lange peper*. *Biologisch geteelde producten. Onderstreept: Fairtrade ingrediënten (52% van totaalgewicht).",
@@ -235,8 +235,8 @@
     },
     "pefap_data": {
         "average_total_used_mass": 100.0,
-        "calculation_time": 13.610920429229736,
-        "const_relax_coef": 0.01,
+        "calculation_time": 15.914463996887207,
+        "const_relax_coef": 0,
         "data_sources": {
             "en:ginger": {
                 "environmental_impact": [
@@ -285,7 +285,11 @@
         },
         "ignored_unknown_ingredients": [
             "fr:ingredients",
+            "fr:of-total-weight",
+            "fr:ingredient",
             "fr:ingredienten",
+            "fr:van-totaalgewicht",
+            "fr:fairtrade-ingredienten",
             "fr:cafe-vert",
             "fr:poivrier-long",
             "fr:souligne",
@@ -295,40 +299,42 @@
             "fr:pepper-mint",
             "fr:long-pepper",
             "fr:organically-grown-products",
+            "fr:underlined",
             "fr:groene-thee",
             "fr:gember",
             "fr:ongebrande-koffie",
             "fr:pepermunt",
             "fr:lange-peper",
-            "fr:biologisch-geteelde-producten"
+            "fr:biologisch-geteelde-producten",
+            "fr:onderstreept"
         ],
         "impacts_geom_means": {
-            "Climate change": 0.024762646157265734,
-            "EF single score": 0.006217070502384784
+            "Climate change": 0.024603782295556858,
+            "EF single score": 0.006210328345620493
         },
         "impacts_geom_stdevs": {
-            "Climate change": 1.1348967092447997,
-            "EF single score": 1.1517765312470292
+            "Climate change": 1.2088747087942888,
+            "EF single score": 1.2141503886000737
         },
         "impacts_quantiles": {
             "Climate change": {
-                "0.05": 0.017827298751590316,
-                "0.25": 0.023511571736055996,
-                "0.5": 0.025064926893752316,
-                "0.75": 0.027037186799812877,
-                "0.95": 0.02901594906222004
+                "0.05": 0.014709182185181217,
+                "0.25": 0.024442260288672853,
+                "0.5": 0.025738028940728245,
+                "0.75": 0.027111672274136425,
+                "0.95": 0.02888198736285367
             },
             "EF single score": {
-                "0.05": 0.004420944210084356,
-                "0.25": 0.005710214032544191,
-                "0.5": 0.006284126833219493,
-                "0.75": 0.007042477718354928,
-                "0.95": 0.007562486098856256
+                "0.05": 0.0037170569540846015,
+                "0.25": 0.0060912924859439195,
+                "0.5": 0.006493839299278299,
+                "0.75": 0.006915031357072699,
+                "0.95": 0.0074984758504744314
             }
         },
         "impacts_relative_interquartile": {
-            "Climate change": 0.1406592996940149,
-            "EF single score": 0.21200458252498214
+            "Climate change": 0.103714701370914,
+            "EF single score": 0.12684928486301267
         },
         "impacts_units": {
             "Climate change": "kg CO2 eq",
@@ -336,68 +342,54 @@
         },
         "ingredients_impacts_share": {
             "Climate change": {
-                "en:ginger": 0.1864794520601821,
-                "en:green-tea": 0.4924737206487399,
-                "en:guarana": 0.1762110677611309,
-                "en:peppermint": 0.09099287740088821,
-                "en:water": 3.9864903584377876e-05,
-                "fr:of-total-weight": 0.043100632897955446,
-                "fr:van-totaalgewicht": 0.010702384327519165
+                "en:ginger": 0.17801566154098414,
+                "en:green-tea": 0.5186152651943993,
+                "en:guarana": 0.19941500013576252,
+                "en:peppermint": 0.10391945525331532,
+                "en:water": 3.461787553894456e-05
             },
             "EF single score": {
-                "en:ginger": 0.17726782817797512,
-                "en:green-tea": 0.4924737206487399,
-                "en:guarana": 0.1762110677611309,
-                "en:peppermint": 0.10024419770905477,
-                "en:water": 1.684776247224991e-07,
-                "fr:of-total-weight": 0.043100632897955446,
-                "fr:van-totaalgewicht": 0.010702384327519165
+                "en:ginger": 0.16716067901117926,
+                "en:green-tea": 0.5186152651943993,
+                "en:guarana": 0.19941500013576252,
+                "en:peppermint": 0.11480891114108095,
+                "en:water": 1.4451757810209164e-07
             }
         },
         "ingredients_mass_share": {
-            "en:ginger": 0.1785542803462264,
-            "en:green-tea": 0.4924737206487398,
-            "en:guarana": 0.17621106776113085,
-            "en:peppermint": 0.07314909721393889,
-            "en:water": 0.02580881680448941,
-            "fr:of-total-weight": 0.04310063289795543,
-            "fr:van-totaalgewicht": 0.010702384327519165
+            "en:ginger": 0.17598301052677792,
+            "en:green-tea": 0.518615265194399,
+            "en:guarana": 0.19941500013576258,
+            "en:peppermint": 0.08428542807980134,
+            "en:water": 0.021701296063259046
         },
-        "number_of_ingredients": 8,
-        "number_of_runs": 30,
+        "number_of_ingredients": 6,
+        "number_of_runs": 43,
         "pefap_duplicate_ingredients": true,
-        "pefap_execution_time": 20.655317068099976,
+        "pefap_execution_time": 15.914463996887207,
         "product_quantity": 100,
         "reliability": 4,
         "uncharacterized_ingredients": {
             "impact": [
-                "fr:van-totaalgewicht",
                 "en:green-tea",
-                "en:guarana",
-                "fr:of-total-weight"
+                "en:guarana"
             ],
-            "nutrition": [
-                "fr:of-total-weight",
-                "fr:van-totaalgewicht"
-            ]
+            "nutrition": []
         },
         "uncharacterized_ingredients_mass_proportion": {
-            "impact": 0.7224878056353453,
-            "nutrition": 0.0538030172254746
+            "impact": 0.7180302653301617,
+            "nutrition": 0
         },
         "uncharacterized_ingredients_ratio": {
-            "impact": 0.75,
-            "nutrition": 0.25
+            "impact": 0.6666666666666666,
+            "nutrition": 0.0
         },
         "warnings": [
             "The nutrients are not well informed : the mass of nutrients is less 1g",
-            "The product has a high number of nutrition uncharacterized ingredients: 25%",
-            "The product has a high number of impact uncharacterized ingredients: 75%",
+            "The product has a high number of impact uncharacterized ingredients: 67%",
             "The product has no recognized nutriment information.",
             "The estimated mass of impact uncharacterized ingredients in the product is high: 72%",
-            "17 ingredients have been ignored because they are absent of OFF ingredients taxonomy.",
-            "Parameter use_defined_prct has been set to False in order to get a result.",
-            "Parameter const_relax_coef has been set to 0.01 in order to get a result."
+            "23 ingredients have been ignored because they are absent of OFF ingredients taxonomy."
         ]
     }
 }

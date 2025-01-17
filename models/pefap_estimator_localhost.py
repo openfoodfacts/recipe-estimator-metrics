@@ -9,6 +9,7 @@ import os
 import sys
 import json
 import sys
+import time
 
 pefap_package_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../PEFAP_estimator"))
 #print(pefap_package_dir)
@@ -45,7 +46,11 @@ if os.path.isdir(pefap_package_dir):
             # Calling the PEFAP algorithm
             print("\n --- CALLING PEFAP --- \n")
             impact_categories = ['EF single score', 'Climate change']
+
+            start_product_time = time.time()
             impact_estimation_result = estimate_impacts(product=product, impact_names=impact_categories)
+            end_product_time = time.time()
+            execution_time = end_product_time - start_product_time
 
             print("\n --- RESULT --- \n")
             print(impact_estimation_result.get('ingredients_mass_share', {}))
@@ -71,8 +76,6 @@ if os.path.isdir(pefap_package_dir):
                     ingredient_id = ingredient["id"]
                     if ingredient_id in mass_share_dict:
                         ingredient["percent_estimate"] = mass_share_dict[ingredient_id]*100
-
-                result_json = json.dumps(product, indent=4, ensure_ascii=False)
             
             except Exception as e:
                 print(e)
@@ -83,7 +86,6 @@ if os.path.isdir(pefap_package_dir):
 
     else :
         try: 
-            # Local configuration
             from impacts_estimation import estimate_impacts
         
             # Check that we have an input product in JSON format in STDIN
@@ -94,7 +96,10 @@ if os.path.isdir(pefap_package_dir):
 
             # Calling the PEFAP algorithm
             impact_categories = ['EF single score', 'Climate change']
+            start_product_time = time.time()
             impact_estimation_result = estimate_impacts(product=product, impact_names=impact_categories)
+            end_product_time = time.time()
+            execution_time = end_product_time - start_product_time
         
             #print("Debugging :\n\n")
             #print(impact_estimation_result['ingredients_mass_share'])
@@ -124,13 +129,13 @@ if os.path.isdir(pefap_package_dir):
                             update_ingredient_percentages(ingredient["ingredients"], mass_share_dict)
 
                 update_ingredient_percentages(product["ingredients"], mass_share_dict)
-                
+
+                # Add execution time to the result JSON
+                impact_estimation_result["pefap_execution_time"] = execution_time
+
                 product["pefap_data"] = impact_estimation_result
 
                 result_json = json.dumps(product, indent=4, ensure_ascii=False)
-
-                # Définir un chemin relatif pour stocker le fichier
-                script_dir = os.path.dirname(os.path.abspath(__file__))
 
                 print(result_json, file=sys.stdout)
             except :

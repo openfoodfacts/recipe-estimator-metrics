@@ -168,17 +168,26 @@ from concurrent.futures import ProcessPoolExecutor
 from compute_metrics import compute_metrics_for_test_set
 
 start_time = time.time()
-
 # Function to remove percent fields from ingredients
 def remove_percent_fields(ingredients):
+    """
+    Recursively removes percentage-related fields from ingredients, including sub-ingredients.
+    If 'percent' is found, it is moved to 'percent_hidden' before deletion.
+    """
+    fields_to_remove = ["percent", "percent_min", "percent_max", "percent_estimate"]
+
     for ingredient in ingredients:
         if "percent" in ingredient:
-            ingredient["percent_hidden"] = ingredient["percent"]
-        fields_to_remove = ["percent", "percent_min", "percent_max", "percent_estimate"]
+            ingredient["percent_hidden"] = ingredient["percent"]  # Store the hidden percentage
+        
         for field in fields_to_remove:
-            if field in ingredient:
-                del ingredient[field]
-    return ingredients
+            ingredient.pop(field, None)  # Remove the field if it exists
+
+        # If the ingredient has sub-ingredients, apply the function recursively
+        if "ingredients" in ingredient and isinstance(ingredient["ingredients"], list):
+            remove_percent_fields(ingredient["ingredients"])
+
+    return ingredients  # Optional, for function chaining
 
 # Function to check is there are duplicates
 def find_ingredients_with_duplicates(ingredients):
@@ -218,26 +227,19 @@ def process_product(path, model, results_path, test_set_name):
 
     command = model.split(";")
     p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
-
-    start_product_time = time.time()
     stdout, stderr = p.communicate(input=json.dumps(input_product))
-    end_product_time = time.time()
-    execution_time = end_product_time - start_product_time
-
-    print(f"\n -- Past time for test [{test_name}] : {execution_time:.2f} seconds. -- \n")
 
     if stderr:
         print(stderr.strip(), file=sys.stderr)
 
     result_json = stdout.strip()
+
     try:
         result = json.loads(result_json)
 
         # Verification : we want to know if there are duplicate ingredients
         result["pefap_data"]["pefap_duplicate_ingredients"] = find_ingredients_with_duplicates(input_product["ingredients"])
-
-        # Add execution time to the result JSON
-        result["pefap_data"]["pefap_execution_time"] = execution_time
+        print(f"\n -- Past time for test [{test_name}] : {result["pefap_data"]["pefap_execution_time"]:.2f} seconds. -- \n")
 
         result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
         print("✅ Saving output to " + result_path + "\n")
@@ -272,7 +274,7 @@ def main():
                 processed_count += 1
                 sys.stdout.write(f"\r -- Products processed: {processed_count} -- \n")
                 sys.stdout.flush()
-                future.result()
+                time_execution = future.result()
         
         compute_metrics_for_test_set(results_path, os.path.relpath(test_set_name, start="test-sets/input"))
 
