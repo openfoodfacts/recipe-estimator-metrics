@@ -36,7 +36,7 @@ if os.path.isdir(pefap_package_dir):
             try:
                 with open(path_to_input_file, "r", encoding="utf-8") as file:
                     product = json.load(file)
-                    print("\n✅ JSON chargé avec succès !")
+                print("\n✅ JSON chargé avec succès !")
             except json.FileNotFoundError:
                 print("❌ Erreur : Fichier introuvable !")
             except json.JSONDecodeError:
@@ -102,13 +102,30 @@ if os.path.isdir(pefap_package_dir):
             try:            
                 mass_share_dict = impact_estimation_result.get('ingredients_mass_share', {})
 
-                # Mettre à jour les ingrédients avec leur part de masse estimée
-                for ingredient in product["ingredients"]:
-                    ingredient_id = ingredient["id"]
-                    if ingredient_id in mass_share_dict:
-                        ingredient["percent_estimate"] = mass_share_dict[ingredient_id]*100
+                def update_ingredient_percentages(ingredients_list, mass_share_dict):
+                    seen_ingredients = set()  # Track ingredients that have already been assigned a percentage
 
-                product["pefap_raw_result"] = impact_estimation_result
+                    for ingredient in ingredients_list:
+                        ingredient_id = ingredient.get("id")
+                        has_sub_ingredients = "ingredients" in ingredient and isinstance(ingredient["ingredients"], list)
+
+                        if ingredient_id in mass_share_dict:
+                            if ingredient_id not in seen_ingredients:
+                                ingredient["percent_estimate"] = mass_share_dict[ingredient_id] * 100
+                                seen_ingredients.add(ingredient_id)  # Mark as assigned
+                            else:
+                                ingredient["percent_estimate"] = 0  # Set to 0 for duplicate occurrences
+                        elif not has_sub_ingredients:
+                            # If ingredient is not in mass_share_dict and has no sub-ingredients, set percent_estimate = 0
+                            ingredient["percent_estimate"] = 0
+
+                        # Recursively update sub-ingredients if they exist
+                        if has_sub_ingredients:
+                            update_ingredient_percentages(ingredient["ingredients"], mass_share_dict)
+
+                update_ingredient_percentages(product["ingredients"], mass_share_dict)
+                
+                product["pefap_data"] = impact_estimation_result
 
                 result_json = json.dumps(product, indent=4, ensure_ascii=False)
 
@@ -117,7 +134,8 @@ if os.path.isdir(pefap_package_dir):
 
                 print(result_json, file=sys.stdout)
             except :
-                print(impact_estimation_result, file=sys.stderr)
+                print("An error occured : PEFAP didn't give any results.", file=sys.stderr)
+                #print(impact_estimation_result, file=sys.stderr)
 
         except :
             print("You need to add the PEFAP package (see README for further information).")

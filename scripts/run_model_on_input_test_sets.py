@@ -180,6 +180,30 @@ def remove_percent_fields(ingredients):
                 del ingredient[field]
     return ingredients
 
+# Function to check is there are duplicates
+def find_ingredients_with_duplicates(ingredients):
+    ingredient_names = []
+    has_duplicates = False
+
+    # Recursive function
+    def check_ingredients(ingredients_list):
+        nonlocal has_duplicates
+        for ingredient in ingredients_list:
+            if isinstance(ingredient, dict) and "ingredients" in ingredient:
+                check_ingredients(ingredient["ingredients"])
+            else :
+                #print(ingredient["id"])
+                ingredient_names.append(ingredient["id"])
+
+    check_ingredients(ingredients)
+    
+    # Verification of duplicates
+    unique_ingredients = set(ingredient_names)
+    if len(unique_ingredients) < len(ingredient_names):
+        has_duplicates = True
+
+    return has_duplicates
+
 def process_product(path, model, results_path, test_set_name):
     test_name = path.split("/")[-1]
 
@@ -188,7 +212,6 @@ def process_product(path, model, results_path, test_set_name):
 
     if "ingredients" not in input_product:
         print("Skipping product without ingredients: " + path)
-        return
 
     input_product["ingredients"] = remove_percent_fields(input_product["ingredients"])
     print("Running model on product " + path)
@@ -201,7 +224,7 @@ def process_product(path, model, results_path, test_set_name):
     end_product_time = time.time()
     execution_time = end_product_time - start_product_time
 
-    print(f"\n -- Temps écoulé : {execution_time:.2f} seconds. -- \n")
+    print(f"\n -- Past time for test [{test_name}] : {execution_time:.2f} seconds. -- \n")
 
     if stderr:
         print(stderr.strip(), file=sys.stderr)
@@ -210,13 +233,17 @@ def process_product(path, model, results_path, test_set_name):
     try:
         result = json.loads(result_json)
 
+        # Verification : we want to know if there are duplicate ingredients
+        result["pefap_data"]["pefap_duplicate_ingredients"] = find_ingredients_with_duplicates(input_product["ingredients"])
+
         # Add execution time to the result JSON
-        result["pefap_execution_time"] = execution_time
+        result["pefap_data"]["pefap_execution_time"] = execution_time
 
         result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
         print("✅ Saving output to " + result_path + "\n")
         with open(result_path, "w") as f:
             json.dump(result, f, indent=4, ensure_ascii=False, sort_keys=True)
+    
     except Exception as e:
         print("❌ An issue occurred: " + str(e) + "\n", file=sys.stderr)
 
@@ -238,11 +265,15 @@ def main():
 
         paths = [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]
 
+        processed_count = 0
         with ProcessPoolExecutor() as executor:
             futures = [executor.submit(process_product, path, model, results_path, test_set_name) for path in paths]
             for future in futures:
-                future.result()  # This will raise any exception caught during processing
-
+                processed_count += 1
+                sys.stdout.write(f"\r -- Products processed: {processed_count} -- \n")
+                sys.stdout.flush()
+                future.result()
+        
         compute_metrics_for_test_set(results_path, os.path.relpath(test_set_name, start="test-sets/input"))
 
 if __name__ == '__main__':
