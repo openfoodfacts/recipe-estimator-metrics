@@ -7,6 +7,7 @@ import glob
 import itertools
 import json
 import os
+import sys
 
 import duckdb
 import sqlite3
@@ -20,6 +21,7 @@ def parse_args(args=None):
     )
     parser.add_argument("db_path", help="Path of the db file")
     parser.add_argument("results_path", nargs="*", help="Path to the results directory")
+    parser.add_argument("--force", action="store_true", help="Force overwrite of existing db")
     result = parser.parse_args(args)
     return result
 
@@ -43,6 +45,18 @@ def test_db(db_path):
     else:
         with duckdb.connect(db_path) as conn:
             yield conn
+
+
+class DBExistsException(RuntimeError):
+    pass
+
+
+def check_db(db_path, force=False):
+    if os.path.exists(db_path):
+        if force:
+            os.remove(db_path)
+        else:
+            raise DBExistsException(f"db {db_path} already exists")
 
 
 def create_db(db_path):
@@ -76,17 +90,18 @@ def create_db(db_path):
                 result_id INTEGER,
                 name VARCHAR,
                 position DECIMAL,
-                is_sub BOOLEAN,
+                /* how deep an ingredient is this */
+                sub_level INTEGER,
+                /* difference are only if we had a percent_hidden */
                 difference FLOAT,
                 has_sub_ingredients BOOLEAN,
                 percent_estimate FLOAT,
+                quantity_estimate FLOAT,
                 percent_hidden FLOAT,
-                percent_max FLOAT,
-                percent_min FLOAT,
                 rank INTEGER,
                 text VARCHAR,
-                FOREIGN KEY(result_id) REFERENCES results(id),
-                UNIQUE (result_id, name, position)
+                FOREIGN KEY(result_id) REFERENCES results(id)
+                /* UNIQUE (result_id, name, position, sub_level) */
             );
             CREATE TABLE categories(
                 id INTEGER PRIMARY KEY,
@@ -145,31 +160,42 @@ def next_seq(sequences, name, key=None):
 def current_seq(sequences, name):
     return sequences[name]["current"]
 
+def get_with_children(ingredient, prop):
+    """get property on ingredient, or recompute it from children"""
+    value = ingredient.get(prop)
+    if not value and ingredient.get("ingredients"):
+        # compute from the children
+        try:
+            value = sum(
+                get_with_children(sub_ingredient, prop)
+                for sub_ingredient in ingredient.get("ingredients")
+            )
+        except TypeError:
+            # one None value in children
+            pass
+    return value
 
-def populate_ingredients_statement(ingredient, result_id, position, is_sub=False):
+def populate_ingredients_statement(ingredient, result_id, position, sub_level=0):
     yield (
-        """
-        INSERT INTO ingredients
-        (id, result_id, name, position, is_sub, difference, has_sub_ingredients, percent_estimate, percent_hidden, percent_max, percent_min, rank, text)
-        VALUES (nextval('seq_ingredients_id'), getvariable('test_id'), ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """,
-        (
-            ingredient["name"],
-            position,
-            is_sub,
-            ingredient["difference"],
-            bool(ingredient.get("ingredients")),
-            ingredient["percent_estimate"],
-            ingredient["percent_hidden"],
-            ingredient["percent_max"],
-            ingredient["percent_min"],
-            ingredient["rank"],
-            ingredient["text"],
-        )
+        "ingredients",
+        {
+            "id": next_seq(sequences, "ingredients"),
+            "result_id": result_id,
+            "name": ingredient["id"],
+            "position": float(position),
+            "sub_level": sub_level,
+            "difference": ingredient.get("difference"),
+            "has_sub_ingredients": bool(ingredient.get("ingredients")),
+            "percent_estimate": get_with_children(ingredient, "percent_estimate"),
+            "quantity_estimate": get_with_children(ingredient, "quantity_estimate"),
+            "percent_hidden": ingredient.get("percent_hidden"),
+            "rank": ingredient.get("rank"),
+            "text": ingredient["text"],
+        }
     )
     if ingredient.get("ingredients"):
-        for sub_ingredient in ingredient["ingredients"]:
-            yield from populate_ingredients_statement(sub_ingredient, result_id, is_sub=True)
+        for i, sub_ingredient in enumerate(ingredient["ingredients"]):
+            yield from populate_ingredients_statement(sub_ingredient, result_id, i, sub_level=sub_level + 1)
 
 
 def populate_statements(results_path, sequences):
@@ -208,10 +234,11 @@ def result_statements(sequences, code, result):
         "total_difference": metrics.get("total_difference"),
         "relative_difference": metrics.get("relative_difference"),
     })
-    for ingredient in result["ingredients"]:
-        pass  # FIXME
-    for category in result.get("categories_tags", []):
-        yield ("categories", {"id": next_seq(sequences, "categories"), "result_id": current_seq(sequences, "results"), "name": category})
+    result_id = current_seq(sequences, "results")
+    for i, ingredient in enumerate(result["ingredients"]):
+        yield from populate_ingredients_statement(ingredient, result_id, i)
+    for category in set(result.get("categories_tags", [])):
+        yield ("categories", {"id": next_seq(sequences, "categories"), "result_id": result_id, "name": category})
 
 
 def batched(iter, n):
@@ -237,7 +264,7 @@ def populate_db(db_path, statements):
             data_df = pd.DataFrame([d[1] for d in data])
             if is_sqlite(db_path):
                 # sqlite
-                data_df.to_sql(name=table, con=conn, if_exists="append", index=False, method="multi")
+                data_df.to_sql(name=table, con=conn, if_exists="append", index=False, method="multi", chunksize=1000)
             else:
                 # duckdb
                 conn.execute(f"INSERT INTO {table} SELECT * FROM data_df")
@@ -248,12 +275,17 @@ def process_path(db_path, results_path, sequences=None):
         populate_db(db_path, populate_statements(results_path, sequences))
     else:
         # recurse
-        for sub_path in glob.glob("results_path/*"):
+        for sub_path in glob.glob(f"{results_path}/*"):
             if os.path.isdir(sub_path):
                 process_path(db_path, sub_path, sequences)
 
 if __name__ == "__main__":
     args = parse_args()
+    try:
+        check_db(args.db_path, force=args.force)
+    except DBExistsException as e:
+        print(f"ERR: {"".join(e.args)}, use --force to overwrite", file=sys.stderr)
+        exit(1)
     create_db(args.db_path)
     # help having unique ids per models
     # if we want to update an existing db, we should get sequences from database
