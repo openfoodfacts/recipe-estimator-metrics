@@ -1,0 +1,232 @@
+<head>
+    <style>
+        {{stylesheet}}
+    </style>
+</head>
+
+<body>
+<div>
+    <h1>{{product_name}}</h1>
+    <h2>{{barcode}}</h2>
+
+
+    <dl>
+        {% if has_agribalyse_proxy %}
+        <dt>Reference Agribalyse product</dt>
+        <dd>{{ reference_agb_product }}</dd>
+        {% endif %}
+        <dt>Estimated impact for <em>{{ main_impact_category }}</em></dt>
+        <dd>{{ impacts_data[main_impact_category]['amount'] | smart_round_format(2) }} {{
+            impacts_data[main_impact_category]['unit']
+            }}
+        </dd>
+        <dt>Estimated impact confidence interval for <em>{{ main_impact_category }}</em></dt>
+        <dd>
+            [{{ impacts_data[main_impact_category]['conf_int_lower_bound'] | smart_round_format(2) }},
+            {{impacts_data[main_impact_category]['conf_int_upper_bound'] | smart_round_format(2) }}]
+            {{ impacts_data[main_impact_category]['unit'] }}
+        </dd>
+        {% if has_agribalyse_proxy %}
+        <dt>Reference impact for <em>{{ main_impact_category }}</em></dt>
+        <dd>{{ impacts_data[main_impact_category]['reference_impact'] | smart_round_format(2) }} {{
+            impacts_data[main_impact_category]['unit'] }}
+        </dd>
+        {% endif %}
+        <dt>Result reliability</dt>
+        <dd>
+            <div class="reliability-div">
+                {% for level in ['1','2','3','4'] %}
+                <span class="reliability reliability-{{ level }}{% if level == reliability %} reliability-value{% endif %}">{{ level }}</span>
+                {% endfor %}
+            </div>
+        </dd>
+    </dl>
+</div>
+
+{% if not has_agribalyse_proxy %}
+<div class="warning-block">
+    <p><strong>Warning: </strong>This product has no Agribalyse reference, the impact per step and the impact reference
+        cannot be calculated.</p>
+</div>
+{% endif %}
+
+
+<div>
+    <div class="centered-div">
+        {{ images['main_impact_plot'] }}
+    </div>
+    <p>
+        <small>
+            The boxplot represents the 90% and 50% confidence intervals and the orange bar the estimated impact result.
+            {% if has_agribalyse_proxy %}
+            The green dotted line represents the impact of the reference Agribalyse category.
+            {% endif %}
+        </small>
+    </p>
+</div>
+{% if has_agribalyse_proxy %}
+<div>
+    <h3>Impact per step</h3>
+    {{ images['impact_per_step_plot'] }}
+</div>
+{% endif %}
+<div>
+    <h3>Impact per ingredient</h3>
+    {{ images['impact_per_ingredient_plot'] }}
+    {% if has_ingredients_without_impact %}
+    <div class="note-block">
+        <p>
+            Ingredients shown in red have no environmental impact data.
+            They are supposed to have the average impact of the product and thus have an impact share equal to their
+            mass share.
+        </p>
+    </div>
+    {% endif %}
+</div>
+<div>
+    <h3>Mass share per ingredient</h3>
+    <dl>
+        <dt>Product mass</dt>
+        <dd><strong>{{ product_mass | round | int }}g</strong></dd>
+
+        <dt>Estimated ingredients mass used</dt>
+        <dd><strong>{{ total_mass_used | round | int }}g</strong></dd>
+    </dl>
+    {{ images['mass_per_ingredient_plot'] }}
+    <div class="warning-block">
+        <p>
+            <strong>Warning : </strong>This does not represent an estimation of the composition of the product but the
+            average proportion of each ingredient in the random recipes generated to assess the product's impact. See
+            the documentation for more information.
+        </p>
+    </div>
+</div>
+
+<div>
+    <h3>Ingredients</h3>
+
+    <h4>Full ingredient list</h4>
+    {{ full_ingredient_list }}
+
+    <h4>Parsed ingredient list</h4>
+    <p>
+        {% for ingredient in off_ingredients recursive %}
+        <span class="{% if ingredient['in_taxonomy'] %}in-taxo{% endif %}
+                     {% if ingredient['has_nutrition'] %}has-nutri{% endif %}
+                     {% if ingredient['has_impact'] %}has-impact{% endif %}
+                     {% if not ingredient['in_recipe'] %}not-in-recipe{% endif %}">
+            {{ ingredient['id'] }}
+        </span>
+        {% if ingredient['ingredients'] %}
+        ({{ loop(ingredient['ingredients']) }}){% endif %}
+        {% if not loop.last %},{% endif %}
+        {% endfor %}
+    </p>
+
+    <h5>Legend:</h5>
+    <ul style="font-size:x-small">
+        <li class="not-in-recipe">Not in recipe (compound ingredient)</li>
+        <li> Not in taxonomy</li>
+        <li class="in-taxo">In taxonomy</li>
+        <li class="in-taxo has-nutri">In taxonomy, with nutrition data</li>
+        <li class="in-taxo has-impact">In taxonomy, with impact data</li>
+        <li class="in-taxo has-nutri has-impact">In taxonomy, with nutrition and impact data</li>
+    </ul>
+
+    <h4>Ingredients properties</h4>
+    <table class="pure-table">
+        <thead>
+        <tr>
+            <th>Open Food Facts id</th>
+            <th>Nutritional reference</th>
+            <th>Environmental impact reference</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for ingredient in off_ingredients recursive %}
+        <tr>
+            <td class="{% if ingredient['in_taxonomy'] %}in-taxo{% endif %}
+                       {% if ingredient['has_nutrition'] %}has-nutri{% endif %}
+                       {% if ingredient['has_impact'] %}has-impact{% endif %}
+                       {% if not ingredient['in_recipe'] %}not-in-recipe{% endif %}">{{ingredient.id}}
+            </td>
+            <td>
+                {% if ingredient['nutritional_references']|length == 0 %}
+                {% elif ingredient['nutritional_references']|length == 1 %}
+                {{ ingredient['nutritional_references'][0] }}
+                {% else %}
+                <table>
+                    {% for nutri_ref in ingredient['nutritional_references'] %}
+                    <tr>
+                        <td> {{ nutri_ref }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+            </td>
+            <td>
+                {% if ingredient['environmental_references']|length == 0 %}
+                {% elif ingredient['environmental_references']|length == 1 %}
+                {{ ingredient['environmental_references'][0] }}
+                {% else %}
+                <table>
+                    {% for env_ref in ingredient['environmental_references'] %}
+                    <tr>
+                        <td> {{ env_ref }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+            </td>
+        </tr>
+        {{ loop(ingredient['ingredients']) }}
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h3>Impacts</h3>
+    <table class="pure-table">
+        <thead>
+        <tr>
+            <th>Impact category</th>
+            <th>Amount</th>
+            <th>Confidence interval</th>
+            {% if has_agribalyse_proxy %}
+            <th>Reference impact</th>
+            {% endif %}
+            <th>Unit</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for impact_category in impacts_data.values() %}
+        <tr>
+            <td>{{ impact_category['category'] }}</td>
+            <td>{{ impact_category['amount'] | smart_round_format(2)}}</td>
+            <td>
+                [{{ impact_category['conf_int_lower_bound'] | smart_round_format(2) }},
+                {{impact_category['conf_int_upper_bound'] | smart_round_format(2) }}]
+            </td>
+            {% if has_agribalyse_proxy %}
+            <td>{{ impact_category['reference_impact'] | smart_round_format(2)}}</td>
+            {% endif %}
+            <td>{{ impact_category['unit'] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h3>Open Food Facts categories</h3>
+    <p>{{ off_categories | join("</br>") }}</p>
+</div>
+
+{% if result_warnings | length >0 %}
+<div>
+    <h3>Warnings</h3>
+    <p>{{ result_warnings | join("</br>") }}</p>
+</div>
+{% endif %}
+</body>

@@ -18,7 +18,7 @@ Example:
 
 """
 
-
+"""
 import json
 import sys
 import os
@@ -148,6 +148,17 @@ for test_set_name in test_sets:
 
 
 """
+
+
+
+
+
+
+
+
+
+
+
 import json
 import sys
 import os
@@ -158,7 +169,7 @@ from compute_metrics import compute_metrics_for_test_set
 
 start_time = time.time()
 
-# Suppression des champs "percent" dans les ingrédients
+# Function to remove percent fields from ingredients
 def remove_percent_fields(ingredients):
     for ingredient in ingredients:
         if "percent" in ingredient:
@@ -184,7 +195,13 @@ def process_product(path, model, results_path, test_set_name):
 
     command = model.split(";")
     p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+
+    start_product_time = time.time()
     stdout, stderr = p.communicate(input=json.dumps(input_product))
+    end_product_time = time.time()
+    execution_time = end_product_time - start_product_time
+
+    print(f"\n -- Temps écoulé : {execution_time:.2f} seconds. -- \n")
 
     if stderr:
         print(stderr.strip(), file=sys.stderr)
@@ -192,12 +209,16 @@ def process_product(path, model, results_path, test_set_name):
     result_json = stdout.strip()
     try:
         result = json.loads(result_json)
-        result_path = results_path + "/" + test_set_name + "/" + test_name
-        print("Saving output to " + result_path)
+
+        # Add execution time to the result JSON
+        result["pefap_execution_time"] = execution_time
+
+        result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
+        print("✅ Saving output to " + result_path + "\n")
         with open(result_path, "w") as f:
             json.dump(result, f, indent=4, ensure_ascii=False, sort_keys=True)
     except Exception as e:
-        print("An issue occurred: " + str(e), file=sys.stderr)
+        print("❌ An issue occurred: " + str(e) + "\n", file=sys.stderr)
 
 def main():
     if len(sys.argv) < 3:
@@ -212,8 +233,8 @@ def main():
         test_set_path = test_set_name 
         if not os.path.exists(results_path):
             os.makedirs(results_path)
-        if not os.path.exists(results_path + "/" + test_set_name):
-            os.makedirs(results_path + "/" + test_set_name)
+        if not os.path.exists(results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input")):
+            os.makedirs(results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input"))
 
         paths = [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]
 
@@ -222,11 +243,7 @@ def main():
             for future in futures:
                 future.result()  # This will raise any exception caught during processing
 
-        compute_metrics_for_test_set(results_path, test_set_name)
-        
-        elapsed_time = time.time() - start_time
-        print(f"\n -- Temps écoulé : {elapsed_time:.2f} seconds. -- \n")
+        compute_metrics_for_test_set(results_path, os.path.relpath(test_set_name, start="test-sets/input"))
 
 if __name__ == '__main__':
     main()
-"""
