@@ -20,12 +20,23 @@ import math
 
 round_to_n = lambda x, n: x if x == 0 else round(x, -int(math.floor(math.log10(abs(x)))) + (n - 1))
 
+def add_missing_estimates_for_parent_ingredients(ingredients):
+    # Add missing percent_estimate to parent ingredients by summing the percent_estimate of their children
+    for ingredient in ingredients:
+        if "ingredients" in ingredient:
+            add_missing_estimates_for_parent_ingredients(ingredient["ingredients"])
+            if "percent_estimate" not in ingredient:
+                ingredient["percent_estimate"] = sum([sub_ingredient["percent_estimate"] for sub_ingredient in ingredient["ingredients"]])
+
 def compare_input_ingredients_to_resulting_ingredients(input_ingredients, resulting_ingredients, ingredients_stats, products_ingredients_csv_writer, test_name):
     # Compute difference metrics for each ingredient and nested sub ingredient comparing the input percent to the resulting percent_estimate
 
     total_difference = 0
     total_specified_input_percent = 0
     number_of_ingredients_without_ciqual_code = 0
+
+    # add missing percent_estimate to parent ingredients by summing the percent_estimate of their children
+    add_missing_estimates_for_parent_ingredients(resulting_ingredients)
 
     for i, input_ingredient in enumerate(input_ingredients):
         resulting_ingredient = resulting_ingredients[i]

@@ -67,6 +67,31 @@ Once Recipe Estimator runs in your dev environment, you can use the recipe_estim
 
 # Usage
 
+## Installation
+
+## Python environment
+
+This is using Python3.
+
+Create a virtualenv.
+```
+python -m venv venv 
+```
+
+Enter virtualenv (Windows).
+```
+venv/Scripts/activate
+```
+or (Linux)
+```
+source venv/bin/activate
+```
+
+Install requirements.
+```
+pip install -r requirements.txt
+```
+
 ## Create or add to a test set the products corresponding to a search query
 
 This script is used to create a new test set by querying the Open Food Facts production (or local development) database for products matching a specific query.
@@ -81,6 +106,14 @@ Remove fields that are not needed.
 
 ```bash
 ./scripts/clean_input_test_sets.py test-sets/input/fr-1000-some-specified-popular
+```
+
+## Update the ingredients parsing of a test set
+
+This script reruns the ingredients analysis to recreate the "ingredients" structure from the textual list of ingredients (ingredients_text).
+
+```bash
+./scripts/parse_ingredients_for_input_test_sets.py test-sets/input/fr-1000-some-specified-popular
 ```
 
 ## Run a model on a test set

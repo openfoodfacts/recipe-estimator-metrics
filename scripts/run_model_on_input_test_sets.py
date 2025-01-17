@@ -36,6 +36,9 @@ def remove_percent_fields(ingredients):
         for field in fields_to_remove:
             if field in ingredient:
                 del ingredient[field]
+        # recursively remove percent fields from sub-ingredients
+        if "ingredients" in ingredient:
+            ingredient["ingredients"] = remove_percent_fields(ingredient["ingredients"])
     return ingredients
 
 # Check input parameters (existing model executable, and specified results path + at least 1 input test set), otherwise print usage
