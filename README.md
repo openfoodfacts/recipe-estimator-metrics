@@ -75,7 +75,11 @@ To execute this model, you need :
 
 2) To execute the following command :
 
+```bash
 python scripts/run_model_on_input_test_sets.py "you\path\to\python.exe;models/pefap_estimator_localhost.py" test-sets/results/pefap_estimator test-sets/input/pick_a_test
+```
+
+(don't forget to install de required python packages !!)
 
 # Usage
 
