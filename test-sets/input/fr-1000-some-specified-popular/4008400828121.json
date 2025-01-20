@@ -700,48 +700,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.129819341654441,
-            "likeliest_impacts": {
-                "Climate_change": 0.82867904631546,
-                "EF_single_score": 0.0649226398753789
-            },
-            "likeliest_recipe": {
-                "en:butterfat": 6.7143596560341,
-                "en:cocoa_butter": 7.68170364177271,
-                "en:cocoa_paste": 7.6817036417727,
-                "en:milk_powder": 7.68541085611201,
-                "en:palm_oil": 7.31010311462579,
-                "en:skimmed_milk_powder": 8.46300073042105,
-                "en:soya_lecithin": 12.2194362073236,
-                "en:sugar": 39.8027767968856,
-                "en:vanillin": 3.41098204063439,
-                "en:water": 0.138668643946358
-            },
-            "mass_ratio_uncharacterized": 0.118879786385537,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vanillin",
-                    "en:butterfat"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.118879786385537,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 12%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 36,
     "ecoscore_tags": [
@@ -1600,10 +1558,17 @@
                     "id": "en:emulsifier",
                     "ingredients": [
                         {
-                            "ciqual_food_code": "42200",
-                            "id": "en:soya-lecithin",
+                            "id": "en:e322",
+                            "ingredients": [
+                                {
+                                    "ciqual_food_code": "42200",
+                                    "id": "en:soya-lecithin",
+                                    "is_in_taxonomy": 1,
+                                    "text": "l\u00e9cithines de SOJA"
+                                }
+                            ],
                             "is_in_taxonomy": 1,
-                            "text": "l\u00e9cithines de SOJA"
+                            "text": "l\u00e9cithines"
                         }
                     ],
                     "is_in_taxonomy": 1,
@@ -1650,10 +1615,17 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "ciqual_food_code": "42200",
-                    "id": "en:soya-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "42200",
+                            "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de SOJA"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de SOJA"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -1891,20 +1863,22 @@
     "ingredients_with_unspecified_percent_n": 12,
     "ingredients_with_unspecified_percent_sum": 100,
     "ingredients_without_ciqual_codes": [
+        "en:e322",
         "en:emulsifier",
         "en:vanillin"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 3,
     "ingredients_without_ecobalyse_ids": [
         "de:feine-milchschokolade",
         "en:butterfat",
         "en:cocoa-butter",
         "en:cocoa-paste",
+        "en:e322",
         "en:emulsifier",
         "en:soya-lecithin",
         "en:vanillin"
     ],
-    "ingredients_without_ecobalyse_ids_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2422,18 +2396,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 9.9
@@ -2441,19 +2439,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "11",
             "quantity_per_unit": "21",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sheet"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.32
@@ -2461,18 +2483,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "11",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sheet"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.25

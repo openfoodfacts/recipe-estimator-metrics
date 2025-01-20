@@ -662,56 +662,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.172883920115911,
-            "likeliest_impacts": {
-                "Climate_change": 0.00142888691342504,
-                "EF_single_score": 0.000371738392319022
-            },
-            "likeliest_recipe": {
-                "en:black_tea_extract": 1.19860335961169,
-                "en:e296": 0.356031525475801,
-                "en:e300": 0.00339340774834641,
-                "en:e330": 0.84257183413589,
-                "en:e960": 0.00339340774834641,
-                "en:flavouring": 0.00339340774834719,
-                "en:fructose": 1.21298773574326,
-                "en:peach": 0.0998836133009743,
-                "en:sodium_citrate": 0.00339340774834797,
-                "en:sugar": 2.40123040435607,
-                "en:water": 93.7587311973572
-            },
-            "mass_ratio_uncharacterized": 0.0306016996723885,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300",
-                    "en:e960",
-                    "en:black-tea-extract",
-                    "en:flavouring",
-                    "en:e330",
-                    "en:e296"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0306016996723885,
-                "nutrition": 0.00117391011899795
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.545454545454545,
-                "nutrition": 0.0909090909090909
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 55%",
-                "The impact relative interquartile is high for EF single score (39%)",
-                "The impact relative interquartile is high for Climate change (35%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 65,
     "ecoscore_tags": [
@@ -1723,7 +1673,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -1892,13 +1842,13 @@
         "en:acidity-regulator",
         "en:antioxidant",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:e960a",
         "en:flavouring",
         "en:peach",
         "en:sodium-citrate",
         "en:sweetener",
+        "en:vitamin-c",
         "fr:extrait-de-the-noir\u207d-\u207e",
         "fr:people-and-nature-l-humain-et-la-nature",
         "fr:plus-d-informations-sur-ra-org",
@@ -1910,13 +1860,13 @@
         "en:acidity-regulator",
         "en:antioxidant",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:e960a",
         "en:flavouring",
         "en:fructose",
         "en:sodium-citrate",
         "en:sweetener",
+        "en:vitamin-c",
         "fr:extrait-de-the-noir\u207d-\u207e",
         "fr:people-and-nature-l-humain-et-la-nature",
         "fr:plus-d-informations-sur-ra-org",
@@ -2377,18 +2327,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:drink-can"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

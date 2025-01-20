@@ -986,7 +986,7 @@
         },
         {
             "ciqual_food_code": "9520",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rice-flour",
             "is_in_taxonomy": 1,
             "percent": 0.23,
@@ -994,7 +994,7 @@
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:barley-malt-flour",
             "is_in_taxonomy": 1,
             "percent": 0.23,
@@ -1006,8 +1006,9 @@
             "id": "en:wheat-flour",
             "ingredients": [
                 {
-                    "ciqual_food_code": "9001",
-                    "id": "en:spelt",
+                    "ciqual_food_code": "9480",
+                    "ecobalyse_code": "flour",
+                    "id": "en:spelt-flour",
                     "is_in_taxonomy": 1,
                     "text": "\u00e9peautre"
                 }
@@ -1026,7 +1027,7 @@
         },
         {
             "ciqual_food_code": "9540",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:buckwheat-flour",
             "is_in_taxonomy": 1,
             "percent": 0.23,
@@ -1134,6 +1135,7 @@
         "en:alcohol",
         "fr:base-sur-le-produit-final-un-type-de-ble"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 27,
     "ingredients_n_tags": [
         "27",
@@ -1247,7 +1249,6 @@
         "en:oat-flakes",
         "en:rye-flakes",
         "en:salt",
-        "en:spelt",
         "en:wheat",
         "en:wheat-germ",
         "en:wheat-protein",
@@ -1255,7 +1256,7 @@
         "en:yeast",
         "fr:base-sur-le-produit-final-un-type-de-ble"
     ],
-    "ingredients_without_ecobalyse_ids_n": 16,
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -1623,7 +1624,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

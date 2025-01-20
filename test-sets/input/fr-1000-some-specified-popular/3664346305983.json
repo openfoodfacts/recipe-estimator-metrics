@@ -630,48 +630,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00526396291088992,
-            "likeliest_impacts": {
-                "Climate_change": 0.328277214494736,
-                "EF_single_score": 0.0226228315039301
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 5.5,
-                "en:cocoa_butter": 5.5,
-                "en:flavouring": 5.49999999999998,
-                "en:sugar": 31.0221100835888,
-                "en:water": 2.47788991641124
-            },
-            "mass_ratio_uncharacterized": 0.108967848185652,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.108967848185652,
-                "nutrition": 0.108967848185652
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (32%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 11%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%",
-                "Parameter const_relax_coef has been set to 0.5 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 38,
     "ecoscore_tags": [
@@ -1451,6 +1409,7 @@
         "11-de-beurre-de-cacao-en-poudre",
         "arome"
     ],
+    "ingredients_lc": "en",
     "ingredients_n": 5,
     "ingredients_n_tags": [
         "5",
@@ -2005,14 +1964,30 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:non-corrugated-cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1",
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 20
@@ -2020,19 +1995,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 4

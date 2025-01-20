@@ -685,50 +685,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.130540108963079,
-            "likeliest_impacts": {
-                "Climate_change": 0.0251235967409943,
-                "EF_single_score": 0.0124790617393894
-            },
-            "likeliest_recipe": {
-                "en:brown_rice_flour": 0.587010518616307,
-                "en:corn": 6.10826633678708,
-                "en:e471": 0.568574324649394,
-                "en:water": 0.568574324649403,
-                "en:white_corn_flour": 94.4814081104999,
-                "en:yellow": 3.88362961684392
-            },
-            "mass_ratio_uncharacterized": 0.150146577537851,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e471",
-                    "en:yellow"
-                ],
-                "nutrition": [
-                    "en:yellow"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.150146577537851,
-                "nutrition": 0.136620270176063
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.166666666666667
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 14%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%",
-                "The impact relative interquartile is high for Climate change (39%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 60,
     "ecoscore_tags": [
@@ -1956,7 +1912,7 @@
     "ingredients": [
         {
             "ciqual_food_code": "9545",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:white-corn-flour",
             "is_in_taxonomy": 1,
             "percent": 60,
@@ -1977,7 +1933,7 @@
         },
         {
             "ciqual_food_code": "9520",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:brown-rice-flour",
             "is_in_taxonomy": 1,
             "percent": 10,
@@ -2634,14 +2590,30 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:Container"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -745,89 +745,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.219638587343255,
-            "likeliest_impacts": {
-                "Climate_change": 0.418365931247567,
-                "EF_single_score": 0.0334888595669765
-            },
-            "likeliest_recipe": {
-                "en:ammonium_acid_carbonate": 1.00058793829719,
-                "en:cocoa_butter": 6.22292525484036,
-                "en:cocoa_paste": 6.22292525484036,
-                "en:e322i": 0.24540696065313,
-                "en:e330": 1.1663991810495,
-                "en:e333": 0.600585597559475,
-                "en:e415": 0.166890082746326,
-                "en:e440a": 0.478236429544716,
-                "en:e450i": 0.565277939187788,
-                "en:e500ii": 0.467960838938399,
-                "en:egg": 4.23558882516521,
-                "en:equivalent_redcover_juice": 1.43820316455667,
-                "en:flavouring": 0.529879843414226,
-                "en:glucose_fructose_syrup": 27.9660103032101,
-                "en:illipe_oil": 6.08527023744608,
-                "en:lactose_and_milk_proteins": 0,
-                "en:mango": 0.0461895579104087,
-                "en:rapeseed_oil": 2.03382671642338,
-                "en:raspberry": 1.98404901932095,
-                "en:raspberry_pulp_equivalent": 2.06461341791489,
-                "en:sal_tree": 0.046189557910409,
-                "en:salt": 0.39807827674149,
-                "en:shea_and_palm_in_varying_proportions": 0,
-                "en:sodium_citrate": 0.736009441814695,
-                "en:soya_lecithin": 0,
-                "en:sugar": 21.9514014865487,
-                "en:water": 0.788660654081549,
-                "en:wheat_flour": 12.8267363265054
-            },
-            "mass_ratio_uncharacterized": 0.227068257336457,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e440a",
-                    "en:illipe-oil",
-                    "en:e330",
-                    "en:lactose-and-milk-proteins",
-                    "en:e450i",
-                    "en:e322i",
-                    "en:sal-tree",
-                    "en:e333",
-                    "en:e415",
-                    "en:flavouring",
-                    "en:equivalent redcover juice",
-                    "en:ammonium acid carbonate",
-                    "en:raspberry pulp equivalent",
-                    "en:e500ii",
-                    "en:shea and palm in varying proportions"
-                ],
-                "nutrition": [
-                    "en:sal-tree",
-                    "en:flavouring",
-                    "en:equivalent redcover juice",
-                    "en:ammonium acid carbonate",
-                    "en:raspberry pulp equivalent",
-                    "en:shea and palm in varying proportions"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.227068257336457,
-                "nutrition": 0.148137804884875
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.516129032258065,
-                "nutrition": 0.225806451612903
-            },
-            "warnings": [
-                "3 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 52%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 15%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 23%",
-                "The impact relative interquartile is high for Climate change (32%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -2270,27 +2187,34 @@
             "text": "beurre de cacao"
         },
         {
-            "id": "en:mango-kernel-oil",
+            "id": "en:vegetable-fat",
+            "ingredients": [
+                {
+                    "id": "en:mango-kernel-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de noyaux de mangue"
+                },
+                {
+                    "id": "en:shorea-robusta-seed-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de sal"
+                },
+                {
+                    "ciqual_food_code": "16110",
+                    "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de karit\u00e9"
+                },
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "graisses v\u00e9g\u00e9tales de noyaux de mangue"
-        },
-        {
-            "id": "en:shorea-robusta-seed-oil",
-            "is_in_taxonomy": 1,
-            "text": "graisses v\u00e9g\u00e9tales de sal"
-        },
-        {
-            "ciqual_food_code": "16110",
-            "id": "en:shea-butter",
-            "is_in_taxonomy": 1,
-            "text": "graisses v\u00e9g\u00e9tales de karit\u00e9"
-        },
-        {
-            "ciqual_proxy_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-fat",
-            "is_in_taxonomy": 1,
-            "text": "graisses v\u00e9g\u00e9tales de palme"
+            "text": "graisses v\u00e9g\u00e9tales"
         },
         {
             "id": "en:emulsifier",
@@ -2965,10 +2889,11 @@
         "en:raising-agent",
         "en:shorea-robusta-seed-oil",
         "en:thickener",
+        "en:vegetable-fat",
         "fr:jus-concentre-de-groseilles",
         "fr:preparation-a-la-framboise"
     ],
-    "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ciqual_codes_n": 21,
     "ingredients_without_ecobalyse_ids": [
         "en:acid",
         "en:acidity-regulator",
@@ -2994,11 +2919,12 @@
         "en:shorea-robusta-seed-oil",
         "en:soya-lecithin",
         "en:thickener",
+        "en:vegetable-fat",
         "en:wheat-starch",
         "fr:jus-concentre-de-groseilles",
         "fr:preparation-a-la-framboise"
     ],
-    "ingredients_without_ecobalyse_ids_n": 27,
+    "ingredients_without_ecobalyse_ids_n": 28,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 59,
     "labels": "Labels de distributeurs, Sans conservateurs, en:Charte LU Harmony, Sans colorants, Sans colorants ou conservateurs, Pur beurre de cacao, Triman, en:fabrique-dans-l-ue, en:fabrique-en-belgique, en:snack-mindfully",
@@ -3486,18 +3412,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 17.85
@@ -3505,7 +3455,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3514,12 +3472,28 @@
             "quantity_per_unit_value": 150,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 1.26

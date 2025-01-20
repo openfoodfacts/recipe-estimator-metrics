@@ -707,41 +707,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0791742515986506,
-            "likeliest_impacts": {
-                "Climate_change": 1.09869971624148,
-                "EF_single_score": 0.0735854414345766
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 0.0535723868287807,
-                "en:cocoa_butter": 20.2253273371797,
-                "en:cocoa_paste": 20.2717580427858,
-                "en:natural_vanilla_flavouring": 0.704371446726794,
-                "en:sugar": 45.1999065204752,
-                "en:sunflower_lecithin": 13.3388242557741,
-                "en:water": 0.061062409139649
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (52%) has not been used."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 38,
     "ecoscore_tags": [
@@ -2454,9 +2419,16 @@
             "text": "cocoa butter"
         },
         {
-            "id": "en:emulsifier-sunflower-lecithin",
-            "is_in_taxonomy": 0,
-            "text": "emulsifier sunflower lecithin"
+            "id": "en:emulsifier",
+            "ingredients": [
+                {
+                    "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
+                    "text": "sunflower lecithin"
+                }
+            ],
+            "is_in_taxonomy": 1,
+            "text": "emulsifier"
         },
         {
             "id": "en:natural-vanilla-aroma-madagascar",
@@ -2604,18 +2576,20 @@
     "ingredients_with_unspecified_percent_n": 5,
     "ingredients_with_unspecified_percent_sum": 96.875,
     "ingredients_without_ciqual_codes": [
-        "en:emulsifier-sunflower-lecithin",
-        "en:natural-vanilla-aroma-madagascar"
+        "en:emulsifier",
+        "en:natural-vanilla-aroma-madagascar",
+        "en:sunflower-lecithin"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 3,
     "ingredients_without_ecobalyse_ids": [
         "en:cocoa",
         "en:cocoa-butter",
         "en:cocoa-paste",
-        "en:emulsifier-sunflower-lecithin",
-        "en:natural-vanilla-aroma-madagascar"
+        "en:emulsifier",
+        "en:natural-vanilla-aroma-madagascar",
+        "en:sunflower-lecithin"
     ],
-    "ingredients_without_ecobalyse_ids_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -3120,7 +3094,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 2,
@@ -3129,19 +3111,43 @@
             "quantity_per_unit_value": 205,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sheet"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paper"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3150,12 +3156,28 @@
             "quantity_per_unit_value": 205,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sheet"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 4.68
@@ -3163,7 +3185,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3172,12 +3202,28 @@
             "quantity_per_unit_value": 410,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

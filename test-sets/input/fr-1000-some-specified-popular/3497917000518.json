@@ -667,42 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.111349984981769,
-            "likeliest_impacts": {
-                "Climate_change": 0.14786720293816,
-                "EF_single_score": 0.0203411990089838
-            },
-            "likeliest_recipe": {
-                "en:espelette_chili_pepper": 0.910818899210322,
-                "en:goat_cheese": 1.1385236240129,
-                "en:milk": 2.07741499737793,
-                "en:potato": 81.1380040800356,
-                "en:salt": 1.82281382657167,
-                "en:sunflower_oil": 39.215813716,
-                "en:water": 0.199235747114063
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The impact relative interquartile is high for Climate change (26%)",
-                "Parameter const_relax_coef has been set to 0.3 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 76,
     "ecoscore_tags": [
@@ -1885,9 +1849,7 @@
             "id": "en:natural-flavouring",
             "ingredients": [
                 {
-                    "ciqual_proxy_food_code": "19051",
-                    "ecobalyse_code": "milk",
-                    "id": "en:milk",
+                    "id": "en:natural-milk-flavouring",
                     "is_in_taxonomy": 1,
                     "text": "lait"
                 }
@@ -2085,6 +2047,7 @@
         "0",
         "72"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 12,
     "ingredients_n_tags": [
         "12",
@@ -2152,15 +2115,17 @@
     "ingredients_with_unspecified_percent_sum": 68.28,
     "ingredients_without_ciqual_codes": [
         "en:natural-flavouring",
+        "en:natural-milk-flavouring",
         "en:spice",
         "en:whey-powder",
         "fr:0-92"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 5,
     "ingredients_without_ecobalyse_ids": [
         "en:espelette-chili-pepper",
         "en:goat-cheese",
         "en:natural-flavouring",
+        "en:natural-milk-flavouring",
         "en:pepper",
         "en:salt",
         "en:spice",
@@ -2168,7 +2133,7 @@
         "en:whey-powder",
         "fr:0-92"
     ],
-    "ingredients_without_ecobalyse_ids_n": 9,
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2617,18 +2582,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 5.52
@@ -2636,18 +2625,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

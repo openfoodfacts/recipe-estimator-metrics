@@ -39,7 +39,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:peanuts, en:peanuts, en:peanuts",
+    "allergens": "en:peanuts, en:peanuts, en:peanuts, en:peanuts, en:peanuts, en:peanuts, en:peanuts",
     "allergens_from_ingredients": "en:peanuts, arachides",
     "allergens_from_user": "(nl) en:peanuts, en:peanuts",
     "allergens_hierarchy": [
@@ -671,44 +671,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0116318510161581,
-            "likeliest_impacts": {
-                "Climate_change": 0.399946225351268,
-                "EF_single_score": 0.0552831635932224
-            },
-            "likeliest_recipe": {
-                "en:fully_hardened_palm_fat": 0.538632669897159,
-                "en:roasted_peanuts": 85.2515962703773,
-                "en:salt": 0.128310448735846,
-                "en:sunflower_oil": 13.4686871048059,
-                "en:water": 0.908769118392377
-            },
-            "mass_ratio_uncharacterized": 0.0394556173313603,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:fully hardened palm fat"
-                ],
-                "nutrition": [
-                    "en:fully hardened palm fat"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0394556173313603,
-                "nutrition": 0.0394556173313603
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 36,
     "ecoscore_tags": [
@@ -2133,17 +2095,24 @@
             "text": "huile de tournesol"
         },
         {
-            "ciqual_proxy_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-fat",
+            "id": "en:vegetable-fat",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                },
+                {
+                    "ciqual_food_code": "16110",
+                    "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de karit\u00e9"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "graisses v\u00e9g\u00e9tales de palme"
-        },
-        {
-            "ciqual_food_code": "16110",
-            "id": "en:shea-butter",
-            "is_in_taxonomy": 1,
-            "text": "graisses v\u00e9g\u00e9tales de karit\u00e9"
+            "text": "graisses v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "11058",
@@ -2256,13 +2225,16 @@
     "ingredients_with_specified_percent_sum": 85,
     "ingredients_with_unspecified_percent_n": 4,
     "ingredients_with_unspecified_percent_sum": 15,
-    "ingredients_without_ciqual_codes": [],
-    "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ciqual_codes": [
+        "en:vegetable-fat"
+    ],
+    "ingredients_without_ciqual_codes_n": 1,
     "ingredients_without_ecobalyse_ids": [
         "en:salt",
-        "en:shea-butter"
+        "en:shea-butter",
+        "en:vegetable-fat"
     ],
-    "ingredients_without_ecobalyse_ids_n": 2,
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -2749,7 +2721,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2758,7 +2738,15 @@
             "quantity_per_unit_value": 650,
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 301
@@ -2766,13 +2754,29 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 8.71

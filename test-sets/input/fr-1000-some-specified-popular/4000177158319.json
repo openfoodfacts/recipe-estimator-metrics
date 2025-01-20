@@ -687,81 +687,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.731373307956491,
-            "likeliest_impacts": {
-                "Climate_change": 0.0122556174012882,
-                "EF_single_score": 0.0044888415796019
-            },
-            "likeliest_recipe": {
-                "en:0_22_passion_fruit": 3.40525821707288,
-                "en:0_42_kiwi": 4.36236979009213,
-                "en:antioxidant": 2.32481867191202,
-                "en:apple_1_8_grapefruit_0_77_banana": 10.3386262940403,
-                "en:b12": 0.0656203679372231,
-                "en:biotin": 0.076357842080818,
-                "en:e300": 0.979922090091414,
-                "en:e375": 1.22898861047165,
-                "en:e_86": 0.106822396398465,
-                "en:fruit_juices_from_concentrate_lemon": 11.7597153931242,
-                "en:l": 1.48067996160266,
-                "en:lime": 3.06529157488971,
-                "en:natural_flavouring": 3.04558137172077,
-                "en:orange": 10.3794478103921,
-                "en:pineapple": 10.33862629404,
-                "en:sugar": 3.06529157488971,
-                "en:thiamin": 0.106822396398679,
-                "en:water": 33.8697593428453
-            },
-            "mass_ratio_uncharacterized": 0.454902075076945,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:0\u201a42 kiwi",
-                    "en:0\u201a22 passion fruit",
-                    "en:antioxidant",
-                    "en:e300",
-                    "en:b12",
-                    "en:e 86",
-                    "en:biotin",
-                    "en:e375",
-                    "en:l",
-                    "en:apple 1\u201a8 grapefruit 0\u201a77 banana",
-                    "en:natural-flavouring",
-                    "en:fruit juices from concentrate lemon"
-                ],
-                "nutrition": [
-                    "en:0\u201a42 kiwi",
-                    "en:0\u201a22 passion fruit",
-                    "en:antioxidant",
-                    "en:b12",
-                    "en:e 86",
-                    "en:l",
-                    "en:apple 1\u201a8 grapefruit 0\u201a77 banana",
-                    "en:natural-flavouring",
-                    "en:fruit juices from concentrate lemon"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.454902075076945,
-                "nutrition": 0.430325009247449
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.722222222222222,
-                "nutrition": 0.5
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 50%",
-                "The product has a high number of impact uncharacterized ingredients: 72%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 43%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 45%",
-                "The impact relative interquartile is high for EF single score (82%)",
-                "The impact relative interquartile is high for Climate change (73%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 45,
     "ecoscore_tags": [
@@ -1762,7 +1687,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -2085,11 +2010,12 @@
         "en:pineapple",
         "en:thiamin",
         "en:vitamin-b6",
+        "en:vitamin-c",
         "en:vitamin-e",
         "fr:arome-naturel-vitamines",
         "fr:citron-4-6-orange"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 12,
     "ingredients_without_ecobalyse_ids": [
         "en:antioxidant",
         "en:biotin",
@@ -2099,11 +2025,12 @@
         "en:passionfruit",
         "en:thiamin",
         "en:vitamin-b6",
+        "en:vitamin-c",
         "en:vitamin-e",
         "fr:arome-naturel-vitamines",
         "fr:citron-4-6-orange"
     ],
-    "ingredients_without_ecobalyse_ids_n": 11,
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2548,54 +2475,126 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paper"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drinking-straw"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:drinking-straw"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packaging"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:packaging"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

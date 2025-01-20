@@ -680,10 +680,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process got exception: ValueError: shapes (533,) and (532,) not aligned: 533 (dim 0) != 532 (dim 0)"
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2035,7 +2031,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -2123,6 +2119,7 @@
         "antioxydant",
         "acide-ascorbique"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 7,
     "ingredients_n_tags": [
         "7",
@@ -2170,8 +2167,8 @@
     "ingredients_with_unspecified_percent_sum": 100,
     "ingredients_without_ciqual_codes": [
         "en:antioxidant",
-        "en:e300",
         "en:natural-apple-flavouring",
+        "en:vitamin-c",
         "fr:puree-et-puree-concentree",
         "fr:si-necessaire-pour-reguler-l-acidite"
     ],
@@ -2179,8 +2176,8 @@
     "ingredients_without_ecobalyse_ids": [
         "en:antioxidant",
         "en:concentrated-lemon-juice",
-        "en:e300",
         "en:natural-apple-flavouring",
+        "en:vitamin-c",
         "fr:puree-et-puree-concentree",
         "fr:si-necessaire-pour-reguler-l-acidite"
     ],
@@ -2615,7 +2612,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recyclable-plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 32,
@@ -2624,12 +2629,28 @@
             "quantity_per_unit_value": 90,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pouch-flask"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pouch-flask"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 5.85
@@ -2637,18 +2658,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recyclable-plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 32,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.93

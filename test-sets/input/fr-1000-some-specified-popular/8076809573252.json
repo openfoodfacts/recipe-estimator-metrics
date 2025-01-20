@@ -644,39 +644,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.263439461346521,
-            "likeliest_impacts": {
-                "Climate_change": 0.165629594064489,
-                "EF_single_score": 0.0222562979704773
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 0.255054023098179,
-                "en:coconut_oil": 0.954663357137206,
-                "en:e336": 0.132462075519872,
-                "en:e500ii": 0.650994339440252,
-                "en:e503ii": 1.00044229420116,
-                "en:egg": 1.9991414372749,
-                "en:flavouring": 1.19739277700601,
-                "en:oil_and_fat": 1.13361228177298,
-                "en:pasteurised_whole_milk": 0.787921864316903,
-                "en:salt": 0.657405156322193,
-                "en:shea_butter": 0.255054023098177,
-                "en:skimmed_milk_powder": 2.6229035727099,
-                "en:sugar": 25.1889897325632,
-                "en:sunflower_oil": 23.531666781315,
-                "en:water": 1.70309000241149,
-                "en:wheat_flour": 34.7477874781897,
-                "en:wheat_starch": 0.659551846044983,
-                "fr:Cr_me___la_noisette_et_au_cacao": 1.49599895321714,
-                "fr:cacao_2_7___du_produit_fini": 0.202722558723928,
-                "fr:noisettes_6_4___du_produit_fini": 0.255054023098179
-            },
-            "mass_ratio_uncharacterized": 0.156189976921539
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 41,
     "ecoscore_tags": [
@@ -2049,13 +2016,13 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16110",
-                    "id": "en:shea-butter",
+                    "id": "en:shea-oil",
                     "is_in_taxonomy": 1,
                     "text": "shea"
                 },
                 {
-                    "ciqual_proxy_food_code": "15006",
-                    "id": "en:coconut",
+                    "ciqual_food_code": "16040",
+                    "id": "en:coconut-oil",
                     "is_in_taxonomy": 1,
                     "text": "coconut"
                 },
@@ -2470,7 +2437,7 @@
         "en:biscuit",
         "en:cocoa",
         "en:cocoa-2-7-on-the-finished-product",
-        "en:coconut",
+        "en:coconut-oil",
         "en:e336i",
         "en:e500ii",
         "en:flavouring",
@@ -2481,7 +2448,7 @@
         "en:raising-agent",
         "en:salt",
         "en:sesamus",
-        "en:shea-butter",
+        "en:shea-oil",
         "en:soya",
         "en:vegetable-fat",
         "en:wheat-starch"
@@ -2927,13 +2894,29 @@
         {
             "material": {
                 "id": {
-                    "id": "xx:81-c-pap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "xx:81-c-pap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

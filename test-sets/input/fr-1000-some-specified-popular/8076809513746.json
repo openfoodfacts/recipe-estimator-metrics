@@ -40,7 +40,7 @@
     "additives_tags": [
         "en:e270"
     ],
-    "allergens": "en:milk,en:nuts, en:milk, en:milk, en:milk, en:milk",
+    "allergens": "en:milk,en:nuts, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:nuts, NOIX DE CAJOU, LAIT, LAIT, LAIT, LAIT, NOIX DE CAJOU, LAIT, LAIT, LAIT, LAIT",
     "allergens_from_user": "(it) en:milk,en:nuts, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -671,57 +671,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.118860846064398,
-            "likeliest_impacts": {
-                "Climate_change": 0.23042284507696,
-                "EF_single_score": 0.0386010769980358
-            },
-            "likeliest_recipe": {
-                "de:Maisfasern": 2.55283979605065,
-                "de:Parmigiano_Reggiano_g_U": 5.23782239502755,
-                "en:basil": 29.781866186955,
-                "en:basil_extract": 0.992728872898501,
-                "en:cashew_nuts": 14.0652191380717,
-                "en:e270": 0.380750568625135,
-                "en:extra_virgin_olive_oil": 0.9927288728985,
-                "en:garlic": 0.104059903983623,
-                "en:milk": 8.23518305614482,
-                "en:milk_proteins": 1.20743818555629,
-                "en:salt": 2.25447840553981,
-                "en:sugar": 0.992728872898501,
-                "en:sunflower_oil": 29.7915293220021,
-                "en:water": 2.68351371319789
-            },
-            "mass_ratio_uncharacterized": 0.121640065426001,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:milk-proteins",
-                    "en:e270",
-                    "de:Maisfasern",
-                    "de:Parmigiano Reggiano g.U"
-                ],
-                "nutrition": [
-                    "de:Maisfasern",
-                    "de:Parmigiano Reggiano g.U"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.121640065426001,
-                "nutrition": 0.09943544762292
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.266666666666667,
-                "nutrition": 0.133333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 27%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 12%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1846,18 +1795,25 @@
     ],
     "ingredients": [
         {
-            "ciqual_proxy_food_code": "17270",
-            "ecobalyse_code": "olive-oil-eu",
-            "id": "en:olive-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_proxy_food_code": "17270",
+                    "ecobalyse_code": "olive-oil-eu",
+                    "id": "en:olive-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de olive"
+                },
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "Huiles v\u00e9g\u00e9tales d'olive"
-        },
-        {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
-            "is_in_taxonomy": 1,
-            "text": "Huiles v\u00e9g\u00e9tales de tournesol"
+            "text": "Huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "11033",
@@ -1925,9 +1881,7 @@
             "id": "en:natural-flavouring",
             "ingredients": [
                 {
-                    "ciqual_proxy_food_code": "19051",
-                    "ecobalyse_code": "milk",
-                    "id": "en:milk",
+                    "id": "en:natural-milk-flavouring",
                     "is_in_taxonomy": 1,
                     "text": "LAIT"
                 }
@@ -2192,9 +2146,11 @@
         "en:e270",
         "en:milk-proteins",
         "en:natural-flavouring",
+        "en:natural-milk-flavouring",
+        "en:vegetable-oil",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 8,
     "ingredients_without_ecobalyse_ids": [
         "en:acidity-regulator",
         "en:basil-extract",
@@ -2205,11 +2161,13 @@
         "en:garlic",
         "en:milk-proteins",
         "en:natural-flavouring",
+        "en:natural-milk-flavouring",
         "en:parmigiano-reggiano",
         "en:salt",
+        "en:vegetable-oil",
         "en:whey-powder"
     ],
-    "ingredients_without_ecobalyse_ids_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 38,
@@ -2739,26 +2697,58 @@
         {
             "material": {
                 "id": {
-                    "id": "en:clear-glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:clear-glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic-tinplate"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic-tinplate"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

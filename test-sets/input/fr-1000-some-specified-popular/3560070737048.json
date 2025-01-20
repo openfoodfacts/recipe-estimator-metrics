@@ -672,45 +672,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0207346057556837,
-            "likeliest_impacts": {
-                "Climate_change": 0.043777748793654,
-                "EF_single_score": 0.00956856415366386
-            },
-            "likeliest_recipe": {
-                "en:colza_oil": 6.69651557379274,
-                "en:e300": 0.217973270287455,
-                "en:salt": 0.296008737092016,
-                "en:sugar": 0.296008737092016,
-                "en:water": 0.0590878011980753,
-                "en:wheat_flour": 46.4575627293402,
-                "en:wheat_gluten": 0.217973270287455,
-                "en:whole_wheat_flour": 46.4575627293402,
-                "en:yeast": 0.296008737092004
-            },
-            "mass_ratio_uncharacterized": 0.00118205417849906,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00118205417849906,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.125,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 86,
     "ecoscore_tags": [
@@ -1868,6 +1829,7 @@
         "d-oeufs",
         "de-graines-de-sesame-et-de-soja"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 9,
     "ingredients_n_tags": [
         "9",
@@ -2514,7 +2476,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paper"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2523,12 +2493,28 @@
             "quantity_per_unit_value": 400,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 19

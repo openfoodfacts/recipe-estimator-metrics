@@ -147,6 +147,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
             # Read the corresponding resulting product
             result_path = result_set_path + '/' + test_name
+            print ("Reading resulting product: " + result_path)
             with open(result_path, "r") as f:
                 resulting_product = json.load(f)
 

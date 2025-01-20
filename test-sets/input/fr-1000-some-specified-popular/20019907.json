@@ -672,42 +672,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 1.77635683940025e-15,
-            "likeliest_impacts": {
-                "Climate_change": 0.0160003397432564,
-                "EF_single_score": 0.00733546668238582
-            },
-            "likeliest_recipe": {
-                "en:e224": 0,
-                "en:e300": 0.0565340662408474,
-                "en:lemon_juice_from_concentrate": 99.4308787444306,
-                "en:water": 0.0629263407408545
-            },
-            "mass_ratio_uncharacterized": 0.000567894260559587,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e224",
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.000567894260559587,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.666666666666667,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 67%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 15,
     "ecoscore_tags": [
@@ -2376,7 +2340,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -2488,16 +2452,16 @@
     "ingredients_without_ciqual_codes": [
         "en:antioxidant",
         "en:e224",
-        "en:e300",
-        "en:preservative"
+        "en:preservative",
+        "en:vitamin-c"
     ],
     "ingredients_without_ciqual_codes_n": 4,
     "ingredients_without_ecobalyse_ids": [
         "en:antioxidant",
         "en:e224",
-        "en:e300",
         "en:lemon-juice-from-concentrate",
-        "en:preservative"
+        "en:preservative",
+        "en:vitamin-c"
     ],
     "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
@@ -3005,7 +2969,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recycled-plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycled-plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3014,30 +2986,70 @@
             "quantity_per_unit_value": 200,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

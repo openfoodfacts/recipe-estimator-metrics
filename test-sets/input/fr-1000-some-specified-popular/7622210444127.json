@@ -687,90 +687,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.224833780458045,
-            "likeliest_impacts": {
-                "Climate_change": 0.0847019087835641,
-                "EF_single_score": 0.019659777974996
-            },
-            "likeliest_recipe": {
-                "en:cane_sugar": 2.55346948973597,
-                "en:cereal": 22.4909230701343,
-                "en:colza_oil": 4.5428221214702,
-                "en:cranberry": 5.10693897947199,
-                "en:dextrose": 0,
-                "en:e330": 2.42429149638932,
-                "en:e422": 4.09582945581571,
-                "en:e500ii": 0.0864551911529695,
-                "en:e530": 0,
-                "en:e965": 1.54235996607971,
-                "en:elemental_iron": 0,
-                "en:flavouring": 0.0864551911529704,
-                "en:folic_acid": 0,
-                "en:inulin": 1.54235996607971,
-                "en:isomaltulose": 2.42429149638932,
-                "en:malted_wheat_flour": 9.26526976850552,
-                "en:modified_starch": 2.42429149638932,
-                "en:oat_flakes": 0.651048163454668,
-                "en:raisin": 1.54235996607971,
-                "en:redcurrant": 0,
-                "en:rice_flour": 9.2807581778337,
-                "en:salt": 0.086455191152976,
-                "en:soya_lecithin": 0.0864551911529695,
-                "en:sugar": 9.26526976850552,
-                "en:sunflower_oil": 2.42429149638932,
-                "en:vitamin_b6": 0,
-                "en:water": 0,
-                "en:wheat_flour": 9.28075817783369,
-                "en:wheat_gluten": 0.086455191152976,
-                "en:whole_wheat_flour": 3.25172236110941,
-                "en:wholemeal_barley_flour": 0.884125218154101,
-                "en:wholemeal_buckwheat": 3.75585202215341,
-                "en:wholemeal_spelt_flour": 0.738010412962105
-            },
-            "mass_ratio_uncharacterized": 0.398649798181085,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:wholemeal-buckwheat",
-                    "en:e965",
-                    "en:e530",
-                    "en:cereal",
-                    "en:dextrose",
-                    "en:flavouring",
-                    "en:e500ii",
-                    "en:e422",
-                    "en:isomaltulose",
-                    "en:folic-acid",
-                    "en:e330",
-                    "en:vitamin-b6",
-                    "en:elemental-iron",
-                    "en:inulin"
-                ],
-                "nutrition": [
-                    "en:wholemeal-buckwheat",
-                    "en:isomaltulose",
-                    "en:flavouring",
-                    "en:dextrose"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.398649798181085,
-                "nutrition": 0.0974137417728823
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.441176470588235,
-                "nutrition": 0.117647058823529
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 44%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentages were not used for estimating the impact.",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 40%",
-                "The impact relative interquartile is high for EF single score (36%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 53,
     "ecoscore_tags": [
@@ -1493,7 +1409,7 @@
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-barley-flour",
                     "is_in_taxonomy": 1,
                     "percent": 0.9,
@@ -1501,7 +1417,7 @@
                 },
                 {
                     "ciqual_food_code": "9480",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-spelt-flour",
                     "is_in_taxonomy": 1,
                     "percent": 0.9,
@@ -1521,7 +1437,7 @@
         },
         {
             "ciqual_food_code": "9520",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rice-flour",
             "is_in_taxonomy": 1,
             "percent": 2.3,
@@ -2826,7 +2742,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2835,12 +2759,28 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 29.1
@@ -2848,7 +2788,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 5,
@@ -2857,12 +2805,28 @@
             "quantity_per_unit_value": 50,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 1.03

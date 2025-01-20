@@ -736,70 +736,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0602991930710545,
-            "likeliest_impacts": {
-                "Climate_change": 0.207074607600167,
-                "EF_single_score": 0.0207355694493584
-            },
-            "likeliest_recipe": {
-                "en:cornmeal": 15.4562184144361,
-                "en:e101": 0.103305239590274,
-                "en:e170i": 0.229916909217445,
-                "en:e375": 0.229916909217441,
-                "en:fat_reduced_cocoa_powder": 5.92320349944913,
-                "en:folic_acid": 0,
-                "en:glucose_syrup": 5.92320349944913,
-                "en:iron": 0.229916909217438,
-                "en:natural_flavouring": 0.229916909217445,
-                "en:pantothenic_acid": 0.116021531877632,
-                "en:salt": 0.229916909217441,
-                "en:sugar": 20.1655430397913,
-                "en:sunflower_oil": 0.229916909217441,
-                "en:thiamin": 0.103305239590274,
-                "en:vitamin_b6": 0.103305239590271,
-                "en:vitamin_d": 0.103305239590271,
-                "en:vitamins": 0.229916909217438,
-                "en:water": 0,
-                "en:whole_wheat": 56.1646617537052
-            },
-            "mass_ratio_uncharacterized": 0.12329906442201,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:iron",
-                    "en:e170i",
-                    "en:vitamin-d",
-                    "en:e101",
-                    "en:vitamins",
-                    "en:pantothenic-acid",
-                    "en:thiamin",
-                    "en:folic-acid",
-                    "en:natural-flavouring",
-                    "en:e375",
-                    "en:vitamin-b6",
-                    "en:glucose-syrup"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.12329906442201,
-                "nutrition": 0.0797583798380266
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.666666666666667,
-                "nutrition": 0.111111111111111
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 67%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 12%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 34,
     "ecoscore_tags": [
@@ -2165,18 +2101,25 @@
             "text": "carbonate de calcium"
         },
         {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
+            "id": "en:oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                },
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "contient de l'huile de tournesol"
-        },
-        {
-            "ciqual_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-oil",
-            "is_in_taxonomy": 1,
-            "text": "huile de palme"
+            "text": "contient de l'huile"
         },
         {
             "ciqual_food_code": "11058",
@@ -2553,6 +2496,7 @@
         "en:folic-acid",
         "en:iron",
         "en:natural-flavouring",
+        "en:oil",
         "en:pantothenic-acid",
         "en:thiamin",
         "en:vitamin-b6",
@@ -2563,7 +2507,7 @@
         "fr:nestle-achete-une-quantite-de-cacao-certifie-rainforest-alliance-equivalente-a-celle-necessaire-pour-ce-produit",
         "fr:www-ra-org"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 16,
     "ingredients_without_ecobalyse_ids": [
         "en:cornmeal",
         "en:e101",
@@ -2574,6 +2518,7 @@
         "en:glucose-syrup",
         "en:iron",
         "en:natural-flavouring",
+        "en:oil",
         "en:pantothenic-acid",
         "en:salt",
         "en:thiamin",
@@ -2586,7 +2531,7 @@
         "fr:nestle-achete-une-quantite-de-cacao-certifie-rainforest-alliance-equivalente-a-celle-necessaire-pour-ce-produit",
         "fr:www-ra-org"
     ],
-    "ingredients_without_ecobalyse_ids_n": 20,
+    "ingredients_without_ecobalyse_ids_n": 21,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -3235,56 +3180,128 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -67,7 +67,7 @@
     "additives_tags": [
         "en:e525"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk, en:milk, en:milk, en:milk, en:milk",
+    "allergens": "en:eggs,en:gluten,en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, GOUDA , LAIT, BLE, BLE, FROMAGE , LAIT, OEUF, GOUDA, LAIT, BLE, BLE, FROMAGE, LAIT, OEUF",
     "allergens_from_user": "(en) en:eggs,en:gluten,en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -519,67 +519,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.158821626446565,
-            "likeliest_impacts": {
-                "Climate_change": 0.119993137531254,
-                "EF_single_score": 0.0148448256422081
-            },
-            "likeliest_recipe": {
-                "en:basil": 0.786017985285103,
-                "en:corn_starch": 0.774592637358986,
-                "en:dried_high_ground_chickens": 0.706128620107601,
-                "en:edam": 0,
-                "en:gouda": 13.1627600605807,
-                "en:paprika": 0.249609836863708,
-                "en:pea_fiber": 0.786017985285104,
-                "en:pea_starch": 0.786017985285104,
-                "en:powdered_egg_white": 0.786017985285103,
-                "en:rapeseed_oil": 3.67721868006728,
-                "en:rapeseed_vegetable_oil": 3.49736400183278,
-                "en:rice": 14.9768727856595,
-                "en:salt": 1.02420247422269,
-                "en:spinach": 35.487589473576,
-                "en:sunflower_vegetable_oil": 3.49736400183278,
-                "en:turmeric": 0.188121690983741,
-                "en:vinegar": 0.786017985285104,
-                "en:water": 12.6323244295029,
-                "en:wheat_flour": 4.99012860699497,
-                "en:yeast": 1.31815137326446
-            },
-            "mass_ratio_uncharacterized": 0.148050471623917,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:rapeseed vegetable oil",
-                    "en:pea-fiber",
-                    "en:dried high-ground chickens",
-                    "en:sunflower vegetable oil",
-                    "en:pea-starch"
-                ],
-                "nutrition": [
-                    "en:sunflower vegetable oil",
-                    "en:rapeseed vegetable oil",
-                    "en:dried high-ground chickens"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.148050471623917,
-                "nutrition": 0.115272277202607
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.217391304347826,
-                "nutrition": 0.130434782608696
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 12%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1519,18 +1458,25 @@
             "text": "eau"
         },
         {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                },
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de colza"
-        },
-        {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de tournesol"
+            "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_proxy_food_code": "9410",
@@ -2024,10 +1970,11 @@
         "en:fiber",
         "en:herbs-and-spices",
         "en:spice",
+        "en:vegetable-oil",
         "fr:1",
         "fr:en-poudre"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 8,
     "ingredients_without_ecobalyse_ids": [
         "en:acidity-regulator",
         "en:alcohol-vinegar",
@@ -2047,11 +1994,12 @@
         "en:salt",
         "en:spice",
         "en:turmeric",
+        "en:vegetable-oil",
         "en:yeast",
         "fr:1",
         "fr:en-poudre"
     ],
-    "ingredients_without_ecobalyse_ids_n": 21,
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 46,
@@ -2532,12 +2480,28 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -2545,30 +2509,70 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
