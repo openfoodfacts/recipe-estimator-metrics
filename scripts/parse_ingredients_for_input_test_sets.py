@@ -42,9 +42,7 @@ for test_set_path in sys.argv[1:]:
         request_data = {
             #"services": ["parse_ingredients_text", "extend_ingredients", "estimate_ingredients_percent"],
             "services": ["parse_ingredients_text", "extend_ingredients"],
-            "fields": [""],
-            "lc": "fr",
-            "tags_lc": "fr",
+            "fields": ["all"],
             "product": product
         }
         response = requests.post(product_opener_api_url, json=request_data)
