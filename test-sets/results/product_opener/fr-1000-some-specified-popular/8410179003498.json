@@ -195,7 +195,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -623,46 +623,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 8.88178419700125e-16,
-            "likeliest_impacts": {
-                "Climate_change": 0.112547309887453,
-                "EF_single_score": 0.0525008379474992
-            },
-            "likeliest_recipe": {
-                "en:extra_virgin_olive_oil": 19.99999998,
-                "en:vitamin_d": 0,
-                "en:water": 0,
-                "fr:cuisson_et_assainissement_Huile_de_tournesol_raffin_e": 79.99999992
-            },
-            "mass_ratio_uncharacterized": 0.8,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:cuisson et assainissement Huile de tournesol raffinée",
-                    "en:vitamin-d"
-                ],
-                "nutrition": [
-                    "fr:cuisson et assainissement Huile de tournesol raffinée"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.8,
-                "nutrition": 0.8
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.666666666666667,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 67%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 80%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 80%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 53,
     "ecoscore_tags": [
@@ -1193,6 +1153,7 @@
         {
             "difference": 13.3,
             "id": "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee",
+            "is_in_taxonomy": 0,
             "percent_estimate": 66.7,
             "percent_hidden": 80,
             "percent_max": 100,
@@ -1201,8 +1162,10 @@
         },
         {
             "ciqual_food_code": "17270",
-            "difference": 3.3,
+            "difference": 3.33,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "percent_hidden": 20,
             "percent_max": 50,
@@ -1211,6 +1174,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1269,8 +1233,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.166,
-        "total_difference": 16.6,
+        "relative_difference": 0.167,
+        "total_difference": 16.7,
         "total_specified_input_percent": 100
     },
     "ingredients_n": 3,
@@ -1312,6 +1276,11 @@
         "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:vitamin-d",
+        "fr:cuisson-et-assainissement-huile-de-tournesol-raffinee"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -1737,29 +1706,39 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

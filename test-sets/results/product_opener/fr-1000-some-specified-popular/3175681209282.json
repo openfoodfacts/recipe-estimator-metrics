@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -670,74 +670,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.192371168462278,
-            "likeliest_impacts": {
-                "Climate_change": 0.0576972424580285,
-                "EF_single_score": 0.0135062045292657
-            },
-            "likeliest_recipe": {
-                "en:apple_extract": 1.31312338400535,
-                "en:barley": 0,
-                "en:barley_malt_extract": 2.16914478901515,
-                "en:barley_malt_syrup": 0,
-                "en:colza_oil": 12.5987183639228,
-                "en:e296": 0.133250841211819,
-                "en:e501": 0.17825497908648,
-                "en:fructooligosaccharide": 2.05173115188494,
-                "en:milk_proteins": 0,
-                "en:natural_apple_flavouring": 1.29388068751818,
-                "en:natural_apricot_flavouring": 1.31312338400535,
-                "en:natural_flavouring": 2.27864416028217,
-                "en:oat": 0.0542570454715515,
-                "en:rapeseed_lecithin": 0.133250841211819,
-                "en:rice": 1.31312338400535,
-                "en:water": 2.1313150039722,
-                "en:wheat_flour": 65.8484757674174,
-                "en:wheat_starch": 2.72533490278618,
-                "fr:jus_concentr__de_pomme": 12.5987183639228
-            },
-            "mass_ratio_uncharacterized": 0.492565653998763,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:milk-proteins",
-                    "en:fructooligosaccharide",
-                    "fr:jus concentré de pomme",
-                    "en:barley-malt-syrup",
-                    "en:natural-apple-flavouring",
-                    "en:natural-flavouring",
-                    "en:barley-malt-extract",
-                    "en:e296",
-                    "en:e501",
-                    "en:wheat-starch"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:natural-apple-flavouring",
-                    "fr:jus concentré de pomme"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.492565653998763,
-                "nutrition": 0.207018669536254
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.578947368421053,
-                "nutrition": 0.210526315789474
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 58%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 21%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 49%",
-                "The impact relative interquartile is high for EF single score (30%)",
-                "The impact relative interquartile is high for Climate change (27%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 54,
     "ecoscore_tags": [
@@ -1435,7 +1367,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 18.3,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.8,
             "percent_hidden": 71.1,
             "percent_max": 100,
@@ -1444,7 +1378,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.6,
             "percent_max": 50,
             "percent_min": 0,
@@ -1452,8 +1388,10 @@
         },
         {
             "ciqual_food_code": "2074",
-            "difference": 2.4,
+            "difference": 2.41,
+            "ecobalyse_code": "apple-fr",
             "id": "en:concentrated-apple-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_hidden": 9.4,
             "percent_max": 33.3333333333333,
@@ -1463,17 +1401,20 @@
         {
             "ciqual_food_code": "13111",
             "difference": 1.7,
+            "ecobalyse_code": "apple-fr",
             "id": "en:dried-apple",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9510",
                     "id": "en:wheat-starch",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.9,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "amidon de blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.9,
             "percent_hidden": 4.2,
             "percent_max": 25,
@@ -1483,6 +1424,7 @@
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.95,
             "percent_max": 20,
             "percent_min": 0,
@@ -1494,12 +1436,14 @@
             "ingredients": [
                 {
                     "id": "en:fructooligosaccharide",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.48,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "fructooligosaccharides"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1508,6 +1452,7 @@
         {
             "ciqual_proxy_food_code": "9100",
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.738,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1515,38 +1460,43 @@
         },
         {
             "id": "en:natural-apricot-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.369,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel d'abricot"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.184,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
         {
             "difference": 0.368,
             "id": "en:apple-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0922,
             "percent_hidden": 0.46,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "extrait de pomme"
         },
         {
             "id": "en:natural-apple-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0461,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de pomme"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0231,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
@@ -1555,14 +1505,16 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0115,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "lécithines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0115,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "émulsifiant"
         },
@@ -1571,14 +1523,16 @@
             "ingredients": [
                 {
                     "id": "en:e501",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00576,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "carbonates de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00576,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "poudre à lever"
         },
@@ -1587,36 +1541,41 @@
             "ingredients": [
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00288,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00288,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "acidifiant"
         },
         {
             "ciqual_food_code": "9310",
             "id": "en:oat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00144,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "avoine"
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "protéines de lait"
         },
         {
             "id": "en:barley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "orge"
         }
@@ -1857,7 +1816,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 12,
-        "relative_difference": 0.267,
+        "relative_difference": 0.268,
         "total_difference": 22.8,
         "total_specified_input_percent": 85.2
     },
@@ -1972,6 +1931,27 @@
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:apple-extract",
+        "en:barley",
+        "en:barley-malt-extract",
+        "en:chicory-fibre",
+        "en:e296",
+        "en:e322",
+        "en:e501",
+        "en:emulsifier",
+        "en:fructooligosaccharide",
+        "en:milk-proteins",
+        "en:natural-apple-flavouring",
+        "en:natural-apricot-flavouring",
+        "en:natural-flavouring",
+        "en:oat",
+        "en:raising-agent",
+        "en:rice",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 48,
@@ -2463,7 +2443,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recycled-cardboard"
+                    "id": {
+                        "id": "en:recycled-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2472,19 +2454,25 @@
             "quantity_per_unit_value": 360,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 4,
@@ -2493,12 +2481,16 @@
             "quantity_per_unit_value": 90,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:individual-bag"
+                    "id": {
+                        "id": "en:individual-bag"
+                    }
                 }
             }
         }

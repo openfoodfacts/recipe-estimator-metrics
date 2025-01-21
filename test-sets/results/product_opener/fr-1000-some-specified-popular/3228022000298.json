@@ -41,7 +41,7 @@
         "en:e428",
         "en:e471"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, butter, milk, gelatin",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -230,7 +230,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -654,64 +654,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.585529796624031,
-            "likeliest_impacts": {
-                "Climate_change": 0.0635878213788118,
-                "EF_single_score": 0.00570107758683457
-            },
-            "likeliest_recipe": {
-                "en:acid": 0.794717555780375,
-                "en:dye": 0.430328229231473,
-                "en:e202": 0.430328229231473,
-                "en:e428": 0.939717466837971,
-                "en:e471": 0.430328229231472,
-                "en:milk": 50.4546639997714,
-                "en:modified_starch": 1.60188688632502,
-                "en:natural_flavouring": 0.327503062622742,
-                "en:salt": 0.430328229231472,
-                "en:vitamin_a": 0.372441922096746,
-                "en:vitamin_e": 0.347170934196687,
-                "en:vitamins": 0.430328229231473,
-                "en:water": 50.5923143340798
-            },
-            "mass_ratio_uncharacterized": 0.112670015836837,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e202",
-                    "en:dye",
-                    "en:e428",
-                    "en:natural-flavouring",
-                    "en:vitamins",
-                    "en:vitamin-e",
-                    "en:acid",
-                    "en:vitamin-a",
-                    "en:e471"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:dye"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.112670015836837,
-                "nutrition": 0.00434824011967122
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.692307692307692,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 69%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%",
-                "The impact relative interquartile is high for EF single score (38%)",
-                "The impact relative interquartile is high for Climate change (47%)",
-                "Parameter const_relax_coef has been set to 0.3 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 24,
     "ecoscore_tags": [
@@ -1341,7 +1283,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_max": 100,
             "percent_min": 7.69230769230769,
@@ -1349,7 +1293,9 @@
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_max": 50,
             "percent_min": 0,
@@ -1358,6 +1304,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1365,6 +1312,7 @@
         },
         {
             "id": "en:e428",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.77,
             "percent_max": 25,
             "percent_min": 0,
@@ -1375,12 +1323,14 @@
             "ingredients": [
                 {
                     "id": "en:dairy-acid",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.88,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "dairy acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.88,
             "percent_max": 20,
             "percent_min": 0,
@@ -1390,6 +1340,7 @@
             "ciqual_food_code": "11058",
             "difference": 0.2,
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.2,
             "percent_hidden": 0.4,
             "percent_max": 0.4,
@@ -1401,12 +1352,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.2,
                     "percent_max": 0.4,
                     "percent_min": 0,
                     "text": "e471"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.2,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1417,12 +1370,14 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.2,
                     "percent_max": 0.4,
                     "percent_min": 0,
                     "text": "potassium sorbate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.2,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1433,12 +1388,14 @@
             "ingredients": [
                 {
                     "id": "en:e160ai",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.2,
                     "percent_max": 0.4,
                     "percent_min": 0,
                     "text": "beta carotene"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.2,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1446,6 +1403,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.2,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1453,6 +1411,7 @@
         },
         {
             "id": "en:vitamin-a",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.2,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1460,6 +1419,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.2,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1467,6 +1427,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 0.4,
             "percent_min": 0,
@@ -1624,6 +1585,24 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:dairy-acid",
+        "en:dye",
+        "en:e160ai",
+        "en:e202",
+        "en:e428",
+        "en:e471",
+        "en:emulsifier",
+        "en:modified-starch",
+        "en:natural-flavouring",
+        "en:preservative",
+        "en:salt",
+        "en:vitamin-a",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 19,
@@ -2069,12 +2048,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         }

@@ -263,7 +263,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -709,42 +709,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0115455309793475,
-            "likeliest_impacts": {
-                "Climate_change": 0.660261399294671,
-                "EF_single_score": 0.153361048810125
-            },
-            "likeliest_recipe": {
-                "en:e518": 0.601373239943826,
-                "en:instant_coffee": 33.2,
-                "en:oligofructose": 33,
-                "en:water": 3.19862676005618,
-                "fr:chicoree_soluble": 30
-            },
-            "mass_ratio_uncharacterized": 0.0185143976011958,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e518"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0185143976011958,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "Parameter const_relax_coef has been set to 0.3 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": -20,
     "ecoscore_tags": [
@@ -2964,7 +2928,9 @@
         {
             "ciqual_food_code": "18005",
             "difference": 29.3,
+            "ecobalyse_code": "coffee-ground",
             "id": "en:instant-coffee",
+            "is_in_taxonomy": 1,
             "percent_estimate": 62.5,
             "percent_hidden": 33.2,
             "percent_max": 100,
@@ -2978,12 +2944,14 @@
             "ingredients": [
                 {
                     "id": "en:oligofructose",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 18.8,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "oligofructose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.8,
             "percent_hidden": 33,
             "percent_max": 50,
@@ -2994,6 +2962,7 @@
             "ciqual_food_code": "18152",
             "difference": 20.6,
             "id": "fr:chicoree-soluble",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_hidden": 30,
             "percent_max": 33.3333333333333,
@@ -3002,6 +2971,7 @@
         },
         {
             "id": "en:e518",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_max": 25,
             "percent_min": 0,
@@ -3088,7 +3058,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
         "relative_difference": 0.667,
-        "total_difference": 64.1,
+        "total_difference": 64.2,
         "total_specified_input_percent": 96.2
     },
     "ingredients_n": 5,
@@ -3134,6 +3104,13 @@
         "en:oligofructose"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chicory-fibre",
+        "en:e518",
+        "en:oligofructose",
+        "fr:chicoree-soluble"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -3654,63 +3631,85 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": "en:drink-can"
+                    }
                 }
             }
         }

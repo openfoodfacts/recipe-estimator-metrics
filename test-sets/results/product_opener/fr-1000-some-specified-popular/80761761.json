@@ -57,7 +57,7 @@
         "en:e503",
         "en:e503ii"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:milk, en:milk, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:milk, en:milk, en:soybeans, en:soybeans, en:milk, en:milk, en:soybeans",
     "allergens_from_ingredients": "en:milk, MILK , BUTTER, SOYA, WHEAT , MILK , MILK , HAZELNUTS, MILK, WHEAT , MILK, SOYA, MILK, BUTTER, SOYA, WHEAT, MILK, MILK, HAZELNUTS, MILK, WHEAT, MILK, SOYA",
     "allergens_from_user": "(pt) en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:milk, en:milk, en:soybeans",
     "allergens_hierarchy": [
@@ -302,7 +302,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2297,6 +2297,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 27.0,
                     "percent_max": 100,
                     "percent_min": 0.980392156862745,
@@ -2304,7 +2305,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.0,
                     "percent_max": 43.9,
                     "percent_min": 0,
@@ -2312,7 +2315,9 @@
                 },
                 {
                     "ciqual_food_code": "19054",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:skimmed-milk-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.5,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -2320,6 +2325,7 @@
                 },
                 {
                     "id": "en:nd-concentrated-butter",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 3.25,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -2330,12 +2336,14 @@
                     "ingredients": [
                         {
                             "id": "en:e322",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.62,
                             "percent_max": 20,
                             "percent_min": 0,
                             "text": "lecithins"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.62,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -2343,12 +2351,14 @@
                 },
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.62,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "vanillin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.9,
             "percent_hidden": 28,
             "percent_max": 100,
@@ -2357,7 +2367,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_max": 43.9,
             "percent_min": 0,
@@ -2365,7 +2377,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2373,7 +2387,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.28,
             "percent_max": 25,
             "percent_min": 0,
@@ -2381,7 +2397,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.14,
             "percent_max": 20,
             "percent_min": 0,
@@ -2389,7 +2407,9 @@
         },
         {
             "ciqual_proxy_food_code": "19044",
+            "ecobalyse_code": "milk-powder",
             "id": "en:milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.57,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2397,8 +2417,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 4.21,
+            "difference": 4.22,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.785,
             "percent_hidden": 5,
             "percent_max": 14.2857142857143,
@@ -2407,6 +2429,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.392,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2415,6 +2438,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.196,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2423,6 +2447,7 @@
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0981,
             "percent_max": 10,
             "percent_min": 0,
@@ -2430,7 +2455,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.049,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2438,6 +2465,7 @@
         },
         {
             "id": "en:whey-protein",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0245,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -2448,12 +2476,14 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0123,
                     "percent_max": 7.69230769230769,
                     "percent_min": 0,
                     "text": "lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0123,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -2464,6 +2494,7 @@
             "ingredients": [
                 {
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00307,
                     "percent_max": 7.14285714285714,
                     "percent_min": 0,
@@ -2471,12 +2502,14 @@
                 },
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00307,
                     "percent_max": 3.57142857142857,
                     "percent_min": 0,
                     "text": "sodium bicarbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00613,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -2484,14 +2517,16 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00307,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flavourings"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00153,
             "percent_max": 0.33,
             "percent_min": 0,
@@ -2500,6 +2535,7 @@
         {
             "difference": 21.5,
             "id": "en:total-milk-constituents",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.00153,
             "percent_hidden": 21.5,
             "percent_max": 0.33,
@@ -2768,7 +2804,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
         "relative_difference": 0.929,
-        "total_difference": 50.6,
+        "total_difference": 50.7,
         "total_specified_input_percent": 54.5
     },
     "ingredients_n": 27,
@@ -2892,6 +2928,25 @@
         "en:whey-protein"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:e322",
+        "en:e500ii",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:flavouring",
+        "en:nd-concentrated-butter",
+        "en:raising-agent",
+        "en:salt",
+        "en:total-milk-constituents",
+        "en:vanillin",
+        "en:wheat-starch",
+        "en:whey-powder",
+        "en:whey-protein",
+        "en:white-chocolate"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 44,
@@ -3456,7 +3511,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": "1",
@@ -3465,19 +3522,25 @@
             "quantity_per_unit_value": "39",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": "2",
@@ -3486,12 +3549,16 @@
             "quantity_per_unit_value": 19.5,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

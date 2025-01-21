@@ -251,7 +251,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2068,7 +2068,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_max": 100,
             "percent_min": 12.5,
@@ -2076,8 +2078,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 3.4,
+            "difference": 3.38,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_hidden": 18.5,
             "percent_max": 50,
@@ -2086,7 +2090,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2094,7 +2100,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_max": 25,
             "percent_min": 0,
@@ -2104,6 +2112,7 @@
             "ciqual_food_code": "18100",
             "difference": 3.77,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_hidden": 6.5,
             "percent_max": 20,
@@ -2113,6 +2122,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2121,6 +2131,7 @@
         {
             "ciqual_food_code": "42200",
             "id": "en:soya-lecithin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2129,6 +2140,7 @@
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2244,8 +2256,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.287,
-        "total_difference": 7.17,
+        "relative_difference": 0.286,
+        "total_difference": 7.14,
         "total_specified_input_percent": 25.0
     },
     "ingredients_n": 8,
@@ -2310,6 +2322,13 @@
     "ingredients_with_unspecified_percent_sum": 75,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:fat-reduced-cocoa-powder",
+        "en:soya-lecithin",
+        "en:vanilla-extract"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2827,7 +2846,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2836,12 +2857,16 @@
             "quantity_per_unit_value": 270,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_measured": 178.3
@@ -2849,13 +2874,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             },
             "weight_measured": 0.8
@@ -2863,18 +2892,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 6.8

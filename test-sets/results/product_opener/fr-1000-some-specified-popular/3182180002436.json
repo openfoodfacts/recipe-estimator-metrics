@@ -173,7 +173,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -871,7 +871,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_max": 100,
             "percent_min": 10,
@@ -880,6 +882,7 @@
         {
             "difference": 17.5,
             "id": "en:wheat-sourdough",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 5,
             "percent_max": 50,
@@ -888,7 +891,9 @@
         },
         {
             "ciqual_proxy_food_code": "9532",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rye-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -896,7 +901,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -904,7 +911,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -913,6 +922,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:salt-from-guerande",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.125,
             "percent_max": 0.25,
             "percent_min": 0,
@@ -921,6 +931,7 @@
         {
             "ciqual_food_code": "11045",
             "id": "en:baker-s-yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.125,
             "percent_max": 0.25,
             "percent_min": 0,
@@ -928,7 +939,9 @@
         },
         {
             "ciqual_food_code": "9550",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-malt-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.125,
             "percent_max": 0.25,
             "percent_min": 0,
@@ -936,6 +949,7 @@
         },
         {
             "id": "en:dried-wheat-sourdough",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.125,
             "percent_max": 0.25,
             "percent_min": 0,
@@ -946,12 +960,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 4.62,
                     "percent_max": 0.25,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.62,
             "percent_max": 0.25,
             "percent_min": 0,
@@ -1081,6 +1097,15 @@
         "en:wheat-sourdough"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:baker-s-yeast",
+        "en:dried-wheat-sourdough",
+        "en:e300",
+        "en:flour-treatment-agent",
+        "en:salt-from-guerande",
+        "en:wheat-sourdough"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,
@@ -1482,19 +1507,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             }
         }

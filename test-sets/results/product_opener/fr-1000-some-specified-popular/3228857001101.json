@@ -220,7 +220,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -647,49 +647,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0442600893147325,
-            "likeliest_impacts": {
-                "Climate_change": 0.0473836057016715,
-                "EF_single_score": 0.0106624508956347
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0.322487592519853,
-                "en:alcohol": 2.52861287982407,
-                "en:brown_flax_seeds": 3.0496969992045,
-                "en:colza_oil": 2.97822720486735,
-                "en:salt": 1.08495281072399,
-                "en:sunflower_seed": 6.00101667585401,
-                "en:vinegar": 0.374907149429845,
-                "en:water": 16.3574133383508,
-                "en:wheat_bran": 4.13184754730932,
-                "en:wheat_flour": 27.9391596056154,
-                "en:wheat_gluten": 2.94447362073517,
-                "en:whole_wheat_flour": 28.1359142507254,
-                "en:yeast": 2.52861287982407
-            },
-            "mass_ratio_uncharacterized": 0.00415379335246254,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:acerola-juice"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00415379335246254,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0769230769230769,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 74,
     "ecoscore_tags": [
@@ -1149,49 +1106,59 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0,
+            "difference": 2.83,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.0,
+                    "difference": 0.567,
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
-                    "percent": 28.6,
-                    "percent_estimate": 28.6,
-                    "percent_max": 28.6,
-                    "percent_min": 28.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 29.2,
+                    "percent_hidden": 28.6,
+                    "percent_max": 100,
+                    "percent_min": 4.16666666666667,
                     "text": "farine complète de BLÉ"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.0,
+                    "difference": 3.4,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 28.4,
-                    "percent_estimate": 28.4,
-                    "percent_max": 28.4,
-                    "percent_min": 28.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 28.4,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "farine de BLÉ"
                 }
             ],
-            "percent_estimate": 57,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.2,
             "percent_hidden": 57,
-            "percent_max": 57,
-            "percent_min": 57,
+            "percent_max": 100,
+            "percent_min": 8.33333333333333,
             "text": "Farines"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 23.5,
-            "percent_max": 43,
-            "percent_min": 3.90909090909091,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.9,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "eau"
         },
         {
             "ciqual_food_code": "15011",
-            "difference": 3.67,
+            "difference": 5.36,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
-            "percent_estimate": 9.77,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.5,
             "percent_hidden": 6.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1199,58 +1166,67 @@
         },
         {
             "ciqual_food_code": "9621",
-            "difference": 0.69,
+            "difference": 1.53,
             "id": "en:wheat-bran",
-            "percent_estimate": 4.89,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.73,
             "percent_hidden": 4.2,
-            "percent_max": 19.5454545454545,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "son de BLÉ"
         },
         {
             "ciqual_food_code": "15052",
-            "difference": 0.66,
+            "difference": 0.235,
             "id": "en:brown-flax-seeds",
-            "percent_estimate": 2.44,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.86,
             "percent_hidden": 3.1,
-            "percent_max": 13.030303030303,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "graines de lin brun"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 1.22,
-            "percent_max": 9.77272727272727,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.43,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "huile de colza"
         },
         {
             "id": "en:wheat-gluten",
-            "percent_estimate": 0.611,
-            "percent_max": 7.81818181818182,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.716,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "gluten de BLÉ"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
-            "percent_estimate": 0.305,
-            "percent_max": 6.51515151515152,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.358,
+            "percent_max": 12.5,
             "percent_min": 0,
             "text": "levure"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
-            "percent_estimate": 0.153,
-            "percent_max": "5",
+            "percent_estimate": 0.179,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.0763,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0895,
             "percent_max": 1,
             "percent_min": 0,
             "text": "sel"
@@ -1258,14 +1234,16 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
-            "percent_estimate": 0.0382,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0448,
             "percent_max": 1,
             "percent_min": 0,
             "text": "vinaigre"
         },
         {
             "id": "en:acerola-juice",
-            "percent_estimate": 0.0382,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0448,
             "percent_max": 1,
             "percent_min": 0,
             "text": "extrait d'acérola"
@@ -1322,9 +1300,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.0394,
-        "total_difference": 5.02,
+        "number_of_ingredients_without_ciqual_code": 3,
+        "relative_difference": 0.109,
+        "total_difference": 13.9,
         "total_specified_input_percent": 127.0
     },
     "ingredients_n": 14,
@@ -1398,10 +1376,20 @@
     "ingredients_without_ciqual_codes": [
         "en:acerola-juice",
         "en:flavouring",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:brown-flax-seeds",
+        "en:flavouring",
+        "en:salt",
+        "en:vinegar",
+        "en:wheat-bran",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 31,
@@ -1480,8 +1468,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "no_nutrition_data_imported": "false",
@@ -1861,14 +1848,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:envelope"
+                    "id": {
+                        "id": "en:envelope"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

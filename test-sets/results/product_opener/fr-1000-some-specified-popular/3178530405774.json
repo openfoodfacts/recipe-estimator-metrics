@@ -207,7 +207,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1330,7 +1330,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 17,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 55,
             "percent_hidden": 38,
@@ -1341,7 +1343,9 @@
         {
             "ciqual_food_code": "19023",
             "difference": 7.5,
+            "ecobalyse_code": "milk",
             "id": "en:fresh-whole-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 30,
             "percent_max": 50,
@@ -1350,7 +1354,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 27,
             "percent_min": 0,
@@ -1358,7 +1364,9 @@
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1366,7 +1374,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 20,
             "percent_min": 0,
@@ -1375,6 +1385,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1383,6 +1394,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1393,6 +1405,7 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.176,
                     "percent_max": 1.6,
                     "percent_min": 0,
@@ -1402,12 +1415,14 @@
                 },
                 {
                     "id": "fr:source",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.176,
                     "percent_max": 0.8,
                     "percent_min": 0,
                     "text": "Source"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.352,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1415,6 +1430,7 @@
         },
         {
             "id": "fr:service-client-st-michel",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.176,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1422,6 +1438,7 @@
         },
         {
             "id": "fr:le-produit-convient-donc-a-une-alimention-ovo-lacto-vegetarienne",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.176,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1625,6 +1642,16 @@
         "fr:source"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:dextrose",
+        "en:e471",
+        "en:emulsifier",
+        "en:salt",
+        "fr:le-produit-convient-donc-a-une-alimention-ovo-lacto-vegetarienne",
+        "fr:service-client-st-michel",
+        "fr:source"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 24,
@@ -2108,18 +2135,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

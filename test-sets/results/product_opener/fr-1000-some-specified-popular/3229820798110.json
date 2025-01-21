@@ -212,7 +212,7 @@
                         "epi_score": "85",
                         "origin": "en:germany",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 85,
@@ -620,43 +620,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0393891903627283,
-            "likeliest_impacts": {
-                "Climate_change": 0.296901320105975,
-                "EF_single_score": 0.0353172003077299
-            },
-            "likeliest_recipe": {
-                "en:brown_rice_flour": 2.40348851500334,
-                "en:cocoa_butter": 0.385907211875862,
-                "en:cocoa_paste": 3.91099563715899,
-                "en:fat_reduced_cocoa_powder": 2.81621703691785,
-                "en:inulin": 2.87094582343305,
-                "en:oat_flakes": 70.9269475964495,
-                "en:sunflower_oil": 7.25345007548862,
-                "en:unrefined_cane_sugar": 13.1219210459756,
-                "en:water": 0.61446175835828
-            },
-            "mass_ratio_uncharacterized": 0.037881135429489,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:inulin"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.037881135429489,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.111111111111111,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1448,6 +1411,7 @@
             "ciqual_food_code": "9311",
             "difference": 4,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 64,
             "percent_hidden": 68,
             "percent_max": 100,
@@ -1457,7 +1421,9 @@
         {
             "ciqual_proxy_food_code": "31016",
             "difference": 3.7,
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6,
             "percent_hidden": 9.7,
             "percent_max": 12,
@@ -1467,11 +1433,13 @@
         {
             "ciqual_proxy_food_code": "31074",
             "difference": 1,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3,
                     "percent_max": 12,
                     "percent_min": 0,
@@ -1479,7 +1447,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 6,
                     "percent_min": 0,
@@ -1488,12 +1458,14 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 4,
                     "percent_min": 0,
                     "text": "beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 6,
             "percent_hidden": 7,
             "percent_max": 12,
@@ -1502,7 +1474,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6,
             "percent_max": 12,
             "percent_min": 0,
@@ -1510,6 +1484,7 @@
         },
         {
             "id": "en:inulin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6,
             "percent_max": 12,
             "percent_min": 0,
@@ -1519,6 +1494,7 @@
             "ciqual_food_code": "18100",
             "difference": 3.3,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6,
             "percent_hidden": 2.7,
             "percent_max": 12,
@@ -1531,13 +1507,16 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:brown-rice-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6,
                     "percent_max": 12,
                     "percent_min": 0,
                     "text": "farine complète de riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 6,
             "percent_max": 12,
             "percent_min": 0,
@@ -1663,6 +1642,15 @@
         "en:inulin"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:extruded-rice",
+        "en:fat-reduced-cocoa-powder",
+        "en:inulin",
+        "en:oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 31,
@@ -2048,36 +2036,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         }

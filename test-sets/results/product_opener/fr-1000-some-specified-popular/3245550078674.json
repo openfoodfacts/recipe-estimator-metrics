@@ -38,7 +38,7 @@
         "en:e160c",
         "en:e296"
     ],
-    "allergens": "en:celery,en:milk,en:soybeans, en:milk",
+    "allergens": "en:celery,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:soybeans, soy flour, lactose, milk",
     "allergens_from_user": "(fr) en:celery,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -213,7 +213,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1703,38 +1703,44 @@
     ],
     "ingredients": [
         {
-            "id": "en:soy-based-preparation",
+            "id": "en:soy-preparation",
             "ingredients": [
                 {
                     "ciqual_food_code": "20900",
-                    "difference": 0,
+                    "difference": 2.58,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:soya-flour",
-                    "percent": 37,
-                    "percent_estimate": 37,
-                    "percent_max": 37,
-                    "percent_min": 37,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 39.6,
+                    "percent_hidden": 37,
+                    "percent_max": 100,
+                    "percent_min": 11.6666666666667,
                     "text": "soy flour"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:tapioca-flour",
-                    "percent_estimate": 19.6,
-                    "percent_max": 37,
-                    "percent_min": 12.76,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 14.0,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "tapioca flour"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 6.87,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 14.0,
                     "percent_max": 1.62,
                     "percent_min": 0,
                     "text": "salt"
                 }
             ],
-            "percent_estimate": 63.5,
-            "percent_max": 75.62,
-            "percent_min": 51.38,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 67.5,
+            "percent_max": 100,
+            "percent_min": 35,
             "text": "soy-based preparation"
         },
         {
@@ -1742,34 +1748,40 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "4003",
-                    "difference": 0,
+                    "difference": 7.88,
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato-flour",
-                    "percent": 16,
-                    "percent_estimate": 16,
-                    "percent_max": 16,
-                    "percent_min": 16,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 8.12,
+                    "percent_hidden": 16,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "potato flour"
                 },
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
-                    "percent_estimate": 4.41,
-                    "percent_max": 16,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.06,
+                    "percent_max": 25,
                     "percent_min": 0,
                     "text": "rice flour"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 4.41,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.06,
                     "percent_max": 1.62,
                     "percent_min": 0,
                     "text": "salt"
                 }
             ],
-            "percent_estimate": 24.8,
-            "percent_max": 33.62,
-            "percent_min": 16,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 16.2,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "potato preparation"
         },
         {
@@ -1777,21 +1789,26 @@
             "ingredients": [
                 {
                     "id": "en:lactose",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.25,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "lactose"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.625,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "sugar"
                 },
                 {
+                    "ciqual_proxy_food_code": "11009",
                     "id": "en:yeast-extract",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.312,
                     "percent_max": 1.66666666666667,
                     "percent_min": 0,
@@ -1799,7 +1816,9 @@
                 },
                 {
                     "ciqual_food_code": "20180",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:dehydrated-onion",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.156,
                     "percent_max": 1.25,
                     "percent_min": 0,
@@ -1809,6 +1828,7 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0781,
                     "percent_max": 1,
                     "percent_min": 0,
@@ -1816,6 +1836,7 @@
                 },
                 {
                     "id": "en:flavouring",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0391,
                     "percent_max": 0.833333333333333,
                     "percent_min": 0,
@@ -1823,7 +1844,9 @@
                 },
                 {
                     "ciqual_food_code": "20189",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:dried-tomatoes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0195,
                     "percent_max": 0.714285714285714,
                     "percent_min": 0,
@@ -1835,12 +1858,14 @@
                     "ingredients": [
                         {
                             "id": "en:e160c",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.00977,
                             "percent_max": 0.625,
                             "percent_min": 0,
                             "text": "paprika extracts"
                         }
                     ],
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.00977,
                     "percent_max": 0.625,
                     "percent_min": 0,
@@ -1851,12 +1876,14 @@
                     "ingredients": [
                         {
                             "id": "en:e296",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.00488,
                             "percent_max": 0.555555555555556,
                             "percent_min": 0,
                             "text": "malic acid"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00488,
                     "percent_max": 0.555555555555556,
                     "percent_min": 0,
@@ -1864,30 +1891,36 @@
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00488,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "sunflower oil"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "barbecue flavor"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "sunflower oil"
         },
         {
             "id": "en:flax",
-            "percent_estimate": 6.69,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.2,
+            "percent_max": 5,
             "percent_min": 0,
             "processing": "en:powder",
             "text": "flax"
@@ -2107,9 +2140,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.0,
-        "total_difference": 0,
+        "number_of_ingredients_without_ciqual_code": 5,
+        "relative_difference": 0.197,
+        "total_difference": 10.5,
         "total_specified_input_percent": 53
     },
     "ingredients_n": 23,
@@ -2211,10 +2244,24 @@
         "en:flax",
         "en:lactose",
         "en:potato-preparation",
-        "en:soy-based-preparation",
+        "en:soy-preparation"
+    ],
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:barbecue-flavouring",
+        "en:dye",
+        "en:e160c",
+        "en:e296",
+        "en:flavouring",
+        "en:flax",
+        "en:lactose",
+        "en:potato-preparation",
+        "en:salt",
+        "en:soy-preparation",
         "en:yeast-extract"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2292,8 +2339,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2632,12 +2678,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

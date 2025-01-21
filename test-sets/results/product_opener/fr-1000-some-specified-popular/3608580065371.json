@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -610,42 +610,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0570733506113154,
-            "likeliest_impacts": {
-                "Climate_change": 0.529126267593538,
-                "EF_single_score": 0.0507525919159611
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 4.61816520044439,
-                "en:colza_oil": 8.00166065011046,
-                "en:fat_reduced_cocoa_powder": 5.60863214916613,
-                "en:hazelnut": 20.3950259969677,
-                "en:skimmed_milk_powder": 7.58508666812092,
-                "en:sugar": 44.2384498095726,
-                "en:sunflower_lecithin": 0.616299733465294,
-                "en:sunflower_oil": 8.08454178412766,
-                "en:vanilla_extract": 0.242720018514892,
-                "en:water": 2.58454797434865
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -948,7 +912,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_max": 100,
             "percent_min": 11.1111111111111,
@@ -956,8 +922,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 2.2,
+            "difference": 2.22,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_hidden": 20,
             "percent_max": 50,
@@ -966,7 +934,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -974,7 +944,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.56,
             "percent_max": 25,
             "percent_min": 0,
@@ -982,7 +954,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.78,
             "percent_max": 20,
             "percent_min": 0,
@@ -992,6 +966,7 @@
             "ciqual_food_code": "18100",
             "difference": 4.11,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.39,
             "percent_hidden": 5.5,
             "percent_max": 16.6666666666667,
@@ -1001,6 +976,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.694,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1011,12 +987,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.347,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1025,6 +1003,7 @@
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1074,8 +1053,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.247,
-        "total_difference": 6.31,
+        "relative_difference": 0.248,
+        "total_difference": 6.33,
         "total_specified_input_percent": 25.5
     },
     "ingredients_n": 10,
@@ -1141,6 +1120,14 @@
         "en:sunflower-lecithin"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:sunflower-lecithin",
+        "en:vanilla-extract"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1565,31 +1552,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:capsule"
+                    "id": {
+                        "id": "en:capsule"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

@@ -231,7 +231,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -681,41 +681,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.63557113816899,
-            "likeliest_impacts": {
-                "Climate_change": 0.274694095830004,
-                "EF_single_score": 0.0229123948432658
-            },
-            "likeliest_recipe": {
-                "en:salt_from_guerande": 1.10035302513027,
-                "en:soft_white_cheese": 96.3603760104053,
-                "en:water": 2.57136415812507
-            },
-            "mass_ratio_uncharacterized": 0.011,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:salt-from-guerande"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.011,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The impact relative interquartile is high for EF single score (263%)",
-                "The impact relative interquartile is high for Climate change (109%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -1332,6 +1297,7 @@
         {
             "ciqual_proxy_food_code": "12999",
             "id": "en:soft-white-cheese",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99.5,
             "percent_max": 100,
             "percent_min": 98.9,
@@ -1341,6 +1307,7 @@
             "ciqual_food_code": "11082",
             "difference": 0.55,
             "id": "en:salt-from-guerande",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_hidden": 1.1,
             "percent_max": 1.09999999999999,
@@ -1427,6 +1394,11 @@
     "ingredients_with_unspecified_percent_sum": 98.9,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt-from-guerande",
+        "en:soft-white-cheese"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 6,
@@ -1899,7 +1871,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1908,19 +1882,25 @@
             "quantity_per_unit_value": 320,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1929,19 +1909,25 @@
             "quantity_per_unit_value": 320,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1950,12 +1936,16 @@
             "quantity_per_unit_value": 320,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-drink-cartons"
+                    "id": {
+                        "id": "en:recycle-with-drink-cartons"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 20.05

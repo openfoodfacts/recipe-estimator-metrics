@@ -262,7 +262,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2272,6 +2272,7 @@
             "ciqual_food_code": "9311",
             "difference": 0,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -2340,6 +2341,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -2911,7 +2916,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2920,12 +2927,16 @@
             "quantity_per_unit_value": "550",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 28.74

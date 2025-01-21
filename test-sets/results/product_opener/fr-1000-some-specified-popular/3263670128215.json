@@ -201,7 +201,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -626,44 +626,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0514449512654569,
-            "likeliest_impacts": {
-                "Climate_change": 0.0663260190716129,
-                "EF_single_score": 0.0128913677487464
-            },
-            "likeliest_recipe": {
-                "en:basil": 0.4004722634867,
-                "en:e415": 0,
-                "en:lemon": 3.00354197615025,
-                "en:natural_lemon_flavouring": 0.00754894605426472,
-                "en:salt": 0.448773748132906,
-                "en:sardine": 89.4765765498178,
-                "en:sugar": 0.448773748132869,
-                "en:vinegar": 3.0994136031396,
-                "en:water": 3.23296503676058
-            },
-            "mass_ratio_uncharacterized": 0.00388423782635679,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-lemon-flavouring",
-                    "en:e415"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00388423782635679,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.222222222222222,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 28,
     "ecoscore_tags": [
@@ -1095,6 +1057,7 @@
         {
             "ciqual_food_code": "26065",
             "id": "en:sardine",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_max": 100,
             "percent_min": 11.1111111111111,
@@ -1102,7 +1065,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1111,6 +1076,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1119,16 +1085,27 @@
         {
             "ciqual_proxy_food_code": "13009",
             "difference": 2.56,
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon",
             "ingredients": [
                 {
-                    "id": "fr:rondelle-et-jus",
-                    "percent_estimate": 5.56,
+                    "id": "fr:rondelle",
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 2.78,
                     "percent_max": 25,
                     "percent_min": 0,
-                    "text": "rondelle et jus"
+                    "text": "rondelle"
+                },
+                {
+                    "id": "en:juice",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.78,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
+                    "text": "jus"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.56,
             "percent_hidden": 3,
             "percent_max": 25,
@@ -1138,6 +1115,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -1145,7 +1123,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.35,
             "percent_max": 0.7,
             "percent_min": 0,
@@ -1155,6 +1135,7 @@
             "ciqual_food_code": "11033",
             "difference": 0.05,
             "id": "en:basil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.35,
             "percent_hidden": 0.4,
             "percent_max": 0.7,
@@ -1163,6 +1144,7 @@
         },
         {
             "id": "en:natural-lemon-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.35,
             "percent_max": 0.7,
             "percent_min": 0,
@@ -1173,12 +1155,14 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 4.01,
                     "percent_max": 0.7,
                     "percent_min": 0,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.01,
             "percent_max": 0.7,
             "percent_min": 0,
@@ -1305,8 +1289,8 @@
         "gomme-xanthane"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.768,
+        "number_of_ingredients_without_ciqual_code": 4,
+        "relative_difference": 0.766,
         "total_difference": 2.61,
         "total_specified_input_percent": 3.4
     },
@@ -1366,11 +1350,24 @@
     "ingredients_with_unspecified_percent_sum": 99.6,
     "ingredients_without_ciqual_codes": [
         "en:e415",
+        "en:juice",
         "en:natural-lemon-flavouring",
         "en:thickener",
-        "fr:rondelle-et-jus"
+        "fr:rondelle"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:basil",
+        "en:e415",
+        "en:juice",
+        "en:natural-lemon-flavouring",
+        "en:salt",
+        "en:sardine",
+        "en:thickener",
+        "en:vinegar",
+        "fr:rondelle"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -1775,17 +1772,23 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

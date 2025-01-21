@@ -41,7 +41,7 @@
     "additives_tags": [
         "en:e322"
     ],
-    "allergens": "en:milk,en:nuts,en:soybeans, en:soybeans",
+    "allergens": "en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "soja",
     "allergens_from_user": "(fr) en:milk,en:nuts,en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -231,7 +231,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -675,54 +675,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.100787274215626,
-            "likeliest_impacts": {
-                "Climate_change": 0.186514436669906,
-                "EF_single_score": 0.0157473636868421
-            },
-            "likeliest_recipe": {
-                "en:lean_cocoa": 7.37559688733194,
-                "en:milk_skimmed_powder": 8.67130985402538,
-                "en:noisettes": 12.9571296669345,
-                "en:palm_oil": 20.2421074422862,
-                "en:soya": 5.16543519126559,
-                "en:sugar": 39.8138362489651,
-                "en:vanillin": 0.668617056639318,
-                "en:water": 4.77619585974024
-            },
-            "mass_ratio_uncharacterized": 0.307689485028562,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:milk skimmed powder",
-                    "en:lean cocoa",
-                    "en:vanillin",
-                    "en:noisettes"
-                ],
-                "nutrition": [
-                    "en:milk skimmed powder",
-                    "en:lean cocoa",
-                    "en:noisettes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.307689485028562,
-                "nutrition": 0.291
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.571428571428571,
-                "nutrition": 0.428571428571429
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 43%",
-                "The product has a high number of impact uncharacterized ingredients: 57%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 29%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 31%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 31,
     "ecoscore_tags": [
@@ -1628,7 +1580,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.3,
             "percent_max": 100,
             "percent_min": 16.6666666666667,
@@ -1636,15 +1590,18 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20.8,
             "percent_max": 50,
             "percent_min": 0,
             "text": "palm oil"
         },
         {
-            "difference": 2.6,
+            "difference": 2.58,
             "id": "en:noisettes",
+            "is_in_taxonomy": 0,
             "percent_estimate": 10.4,
             "percent_hidden": 13,
             "percent_max": 33.3333333333333,
@@ -1654,6 +1611,7 @@
         {
             "difference": 3.49,
             "id": "en:milk-skimmed-powder",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.21,
             "percent_hidden": 8.7,
             "percent_max": 25,
@@ -1661,8 +1619,10 @@
             "text": "milk skimmed powder"
         },
         {
+            "ciqual_proxy_food_code": "18100",
             "difference": 4.8,
-            "id": "en:lean-cocoa",
+            "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_hidden": 7.4,
             "percent_max": 20,
@@ -1674,6 +1634,7 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.3,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1681,12 +1642,14 @@
                 },
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.3,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "vanillin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1807,7 +1770,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.374,
         "total_difference": 10.9,
         "total_specified_input_percent": 29.1
@@ -1862,12 +1825,20 @@
     "ingredients_without_ciqual_codes": [
         "en:e322",
         "en:emulsifier",
-        "en:lean-cocoa",
         "en:milk-skimmed-powder",
         "en:noisettes",
         "en:vanillin"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e322",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:milk-skimmed-powder",
+        "en:noisettes",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -2326,43 +2297,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

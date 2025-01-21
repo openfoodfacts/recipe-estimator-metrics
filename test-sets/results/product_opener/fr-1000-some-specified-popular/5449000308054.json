@@ -171,7 +171,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -663,7 +663,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:carbonated-water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_max": 100,
             "percent_min": 9.09090909090909,
@@ -672,7 +674,9 @@
         {
             "ciqual_food_code": "2012",
             "difference": 12.7,
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 10,
             "percent_max": 50,
@@ -681,7 +685,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.25,
             "percent_max": 6.5,
             "percent_min": 0,
@@ -691,6 +697,7 @@
             "ciqual_food_code": "2028",
             "difference": 1.25,
             "id": "en:lemon-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.25,
             "percent_hidden": 2,
             "percent_max": 6.5,
@@ -702,12 +709,14 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.25,
                     "percent_max": 6.5,
                     "percent_min": 0,
                     "text": "sorbate de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.25,
             "percent_max": 6.5,
             "percent_min": 0,
@@ -715,15 +724,17 @@
         },
         {
             "id": "en:natural-orange-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels d'orange"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
@@ -732,21 +743,24 @@
             "ingredients": [
                 {
                     "id": "en:e950",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acésulfame-K"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "édulcorants"
         },
         {
             "id": "en:e955",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "sucralose"
         },
@@ -755,21 +769,24 @@
             "ingredients": [
                 {
                     "id": "en:colour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.49,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "colorant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "stabilisant"
         },
         {
             "id": "en:e160",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "caroténoïdes"
         }
@@ -824,7 +841,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
         "relative_difference": 1.16,
-        "total_difference": 13.9,
+        "total_difference": 14.0,
         "total_specified_input_percent": 12
     },
     "ingredients_n": 14,
@@ -899,6 +916,20 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:e160",
+        "en:e202",
+        "en:e950",
+        "en:e955",
+        "en:lemon-juice-from-concentrate",
+        "en:natural-flavouring",
+        "en:natural-orange-flavouring",
+        "en:preservative",
+        "en:stabiliser",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -1275,13 +1306,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": "en:recyclable-plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         }

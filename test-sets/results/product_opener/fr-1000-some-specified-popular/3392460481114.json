@@ -253,7 +253,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -657,60 +657,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00525361632688394,
-            "likeliest_impacts": {
-                "Climate_change": 0.0388410068271622,
-                "EF_single_score": 0.00745036749877451
-            },
-            "likeliest_recipe": {
-                "en:e300": 0,
-                "en:e375": 0.00886886944594711,
-                "en:folic_acid": 0,
-                "en:glucose_fructose_syrup": 0.499022763744019,
-                "en:palm_oil": 0.499022763744019,
-                "en:sulfates": 0.00221721736148678,
-                "en:thiamin": 0.00886886944594711,
-                "en:vitamin_b6": 0,
-                "en:vitamin_e": 0.00443443472297356,
-                "en:vitamins": 0.00443443472297356,
-                "en:water": 0,
-                "en:wheat_flour": 102.318579521911,
-                "en:yeast": 0.00443443472296148,
-                "fr:orthophosphate": 0.00221721736148678
-            },
-            "mass_ratio_uncharacterized": 0.00426258815195919,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:folic-acid",
-                    "en:e375",
-                    "en:sulfates",
-                    "en:vitamin-e",
-                    "en:vitamins",
-                    "en:e300",
-                    "fr:orthophosphate",
-                    "en:vitamin-b6"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00426258815195919,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.75,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 75%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1677,7 +1623,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 45.7,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.3,
             "percent_hidden": 99,
             "percent_max": 100,
@@ -1687,6 +1635,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.3,
             "percent_max": 50,
             "percent_min": 0,
@@ -1694,14 +1643,18 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "huile de palme"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.83,
             "percent_max": 25,
             "percent_min": 0,
@@ -1715,12 +1668,14 @@
                     "ingredients": [
                         {
                             "id": "fr:phosphate",
+                            "is_in_taxonomy": 0,
                             "percent_estimate": 1.46,
                             "percent_max": 20,
                             "percent_min": 0,
                             "text": "phosphate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.46,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1731,18 +1686,21 @@
                     "ingredients": [
                         {
                             "id": "en:sulfates",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.46,
                             "percent_max": 10,
                             "percent_min": 0,
                             "text": "sulfate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.46,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "zinc"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.92,
             "percent_max": 20,
             "percent_min": 0,
@@ -1750,6 +1708,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1757,6 +1716,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.729,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1764,6 +1724,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.365,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1771,6 +1732,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.182,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1778,6 +1740,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0911,
             "percent_max": 10,
             "percent_min": 0,
@@ -1785,6 +1748,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0456,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1792,6 +1756,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0228,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1799,6 +1764,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0114,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1806,6 +1772,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0057,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1816,12 +1783,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0057,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0057,
             "percent_max": 6.66666666666667,
             "percent_min": 0,
@@ -2038,8 +2007,8 @@
         "acide-ascorbique"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 13,
-        "relative_difference": 0.462,
+        "number_of_ingredients_without_ciqual_code": 12,
+        "relative_difference": 0.461,
         "total_difference": 45.7,
         "total_specified_input_percent": 99
     },
@@ -2125,11 +2094,28 @@
         "en:vitamin-b6",
         "en:vitamin-e",
         "en:vitamins",
+        "en:zinc",
+        "fr:phosphate"
+    ],
+    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:e300",
+        "en:e375",
+        "en:flour-treatment-agent",
+        "en:folic-acid",
+        "en:glucose-fructose-syrup",
+        "en:minerals",
+        "en:sulfates",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "en:vitamins",
         "en:yeast",
         "en:zinc",
         "fr:phosphate"
     ],
-    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,
@@ -2582,7 +2568,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 6,
@@ -2591,12 +2579,16 @@
             "quantity_per_unit_value": "25",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             },
             "weight_measured": "10"

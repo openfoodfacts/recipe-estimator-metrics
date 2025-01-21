@@ -241,7 +241,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -495,10 +495,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: ValueError: The product ingredients list is empty."
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "not-applicable",
     "ecoscore_tags": [
         "not-applicable"
@@ -2309,6 +2305,7 @@
             "ingredients": [
                 {
                     "id": "en:calcium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 56.2,
                     "percent_max": 100,
                     "percent_min": 12.5,
@@ -2318,6 +2315,7 @@
                 },
                 {
                     "id": "en:magnesium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 21.9,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -2327,6 +2325,7 @@
                 },
                 {
                     "id": "en:sodium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 10.9,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -2336,6 +2335,7 @@
                 },
                 {
                     "id": "en:sulfates",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.47,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -2345,6 +2345,7 @@
                 },
                 {
                     "id": "fr:hydrogenocarbonate",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.73,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -2354,6 +2355,7 @@
                 },
                 {
                     "id": "fr:nitrate",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 1.37,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -2363,6 +2365,7 @@
                 },
                 {
                     "id": "fr:residu-sec-a-180-c",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.684,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
@@ -2372,12 +2375,14 @@
                 },
                 {
                     "id": "fr:ph-7-2",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.684,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "pH 7.2"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent": 100,
             "percent_estimate": 100,
             "percent_max": 100,
@@ -2507,6 +2512,18 @@
         "fr:residu-sec-a-180-c"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:magnesium",
+        "en:sodium",
+        "en:sulfates",
+        "fr:hydrogenocarbonate",
+        "fr:nitrate",
+        "fr:ph-7-2",
+        "fr:pour",
+        "fr:residu-sec-a-180-c"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -3000,7 +3017,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:rpet-transparent"
+                    "id": {
+                        "id": "en:rpet-transparent"
+                    }
                 }
             },
             "number_of_units": "1",
@@ -3009,30 +3028,40 @@
             "quantity_per_unit_value": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": "en:hdpe-2-high-density-polyethylene"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

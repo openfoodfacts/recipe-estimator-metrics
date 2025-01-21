@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -680,54 +680,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 1.10900189299486,
-            "likeliest_impacts": {
-                "Climate_change": 0.0169021503591478,
-                "EF_single_score": 0.00668131124392816
-            },
-            "likeliest_recipe": {
-                "en:almond": 3.04650301075025,
-                "en:ingredients": 0.245897782507186,
-                "en:red_cane_sugar": 3.80183136292698,
-                "en:rice_starch": 3.71879727595584,
-                "en:sea_salt": 0.359921903229935,
-                "en:seaweed_lithothamnium_calcareum": 0.400192775044945,
-                "en:water": 88.4750496508213
-            },
-            "mass_ratio_uncharacterized": 0.0663903772993214,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:red cane sugar",
-                    "en:ingredients",
-                    "en:seaweed lithothamnium calcareum",
-                    "en:rice-starch"
-                ],
-                "nutrition": [
-                    "en:red cane sugar",
-                    "en:ingredients",
-                    "en:seaweed lithothamnium calcareum"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0663903772993214,
-                "nutrition": 0.0437116015008786
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.571428571428571,
-                "nutrition": 0.428571428571429
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of nutrition uncharacterized ingredients: 43%",
-                "The product has a high number of impact uncharacterized ingredients: 57%",
-                "The impact relative interquartile is high for EF single score (109%)",
-                "The impact relative interquartile is high for Climate change (109%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 83,
     "ecoscore_tags": [
@@ -1622,41 +1574,61 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 71.0,
+                    "percent_max": 100,
+                    "percent_min": 45.95,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "15041",
                     "difference": 22.2,
                     "id": "en:almond",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent": 2.8,
-                    "percent_estimate": 25,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 2.8,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "amandes"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
-            "percent_estimate": 50,
+            "percent_estimate": 96.0,
+            "percent_max": 100,
+            "percent_min": 91.9,
             "text": "Lait d'amande"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.0,
+            "percent_max": 4,
+            "percent_min": 0,
             "text": "sucre de canne non raffiné"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 12.5,
+            "percent_estimate": 1.02,
+            "percent_max": 4,
+            "percent_min": 0,
             "text": "amidon de riz"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.03,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "sel marin"
         }
     ],
@@ -1782,7 +1754,7 @@
         "en:water",
         "en:almond"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "fr:lait-d-amande",
         "en:unrefined-cane-sugar",
@@ -1817,6 +1789,13 @@
         "fr:lait-d-amande"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:rice-starch",
+        "en:sea-salt",
+        "fr:lait-d-amande"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -1921,8 +1900,7 @@
         "en:ecoscore-changed",
         "en:ecoscore-grade-changed",
         "en:main-countries-ch-unexpectedly-low-scans",
-        "en:main-countries-ch-unexpectedly-low-scans-0-10-percent-of-expected",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-ch-unexpectedly-low-scans-0-10-percent-of-expected"
     ],
     "new_additives_n": 0,
     "no_nutrition_data": "",
@@ -2258,41 +2236,55 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         },
         {
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-pak"
+                    "id": {
+                        "id": "en:tetra-pak"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         }

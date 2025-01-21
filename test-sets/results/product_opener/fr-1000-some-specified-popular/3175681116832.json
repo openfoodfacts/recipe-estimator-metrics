@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -662,56 +662,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0974521378026979,
-            "likeliest_impacts": {
-                "Climate_change": 0.0585463962610232,
-                "EF_single_score": 0.0137597294200999
-            },
-            "likeliest_recipe": {
-                "en:colza_oil": 12.4225566081817,
-                "en:e450": 0.0717322184526647,
-                "en:e500": 0.00386388244324641,
-                "en:e503": 0.00386388244324641,
-                "en:e965": 14.8173771397259,
-                "en:natural_flavouring": 1.15012935556294,
-                "en:rapeseed_lecithin": 0.0794599833391516,
-                "en:sea_salt": 0.0794599833391544,
-                "en:water": 0.113466799826287,
-                "en:wheat_fiber": 1.37696085172054,
-                "en:wheat_flour": 68.7815754590041,
-                "en:wheat_starch": 12.1333355352703
-            },
-            "mass_ratio_uncharacterized": 0.24683071348559,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e965",
-                    "en:wheat-starch",
-                    "en:e503",
-                    "en:e500",
-                    "en:e450",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.24683071348559,
-                "nutrition": 0.0496375374306705
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.545454545454545,
-                "nutrition": 0.0909090909090909
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 55%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 53,
     "ecoscore_tags": [
@@ -1701,8 +1651,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 2.5,
+            "difference": 2.54,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_hidden": 58.1,
             "percent_max": 100,
@@ -1711,6 +1663,7 @@
         },
         {
             "id": "en:sweetener",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1720,7 +1673,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1729,6 +1684,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.56,
             "percent_max": 25,
             "percent_min": 0,
@@ -1736,6 +1692,7 @@
         },
         {
             "id": "en:wheat-fiber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.78,
             "percent_max": 20,
             "percent_min": 0,
@@ -1743,8 +1700,9 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.39,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
@@ -1753,20 +1711,23 @@
             "ingredients": [
                 {
                     "id": "en:rapeseed-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.694,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "lécithines de colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.694,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "émulsifiant"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.1,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1777,6 +1738,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.1,
                     "percent_max": 0.2,
                     "percent_min": 0,
@@ -1784,12 +1746,14 @@
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.494,
                     "percent_max": 0.2,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.594,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1925,8 +1889,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.043,
-        "total_difference": 2.5,
+        "relative_difference": 0.0438,
+        "total_difference": 2.54,
         "total_specified_input_percent": 58.1
     },
     "ingredients_n": 12,
@@ -2001,6 +1965,19 @@
         "en:wheat-fiber"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e330",
+        "en:e503",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:raising-agent",
+        "en:rapeseed-lecithin",
+        "en:sea-salt",
+        "en:sweetener",
+        "en:wheat-fiber",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 26,
@@ -2513,24 +2490,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

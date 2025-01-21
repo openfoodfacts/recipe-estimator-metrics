@@ -244,7 +244,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -660,51 +660,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.107708787956555,
-            "likeliest_impacts": {
-                "Climate_change": 0.0449725694461862,
-                "EF_single_score": 0.0112306394342463
-            },
-            "likeliest_recipe": {
-                "en:colza_oil": 2.5323782535298,
-                "en:crustacean": 0.433305347933315,
-                "en:e160c": 0.0708616494504045,
-                "en:potato_starch": 9.45706623219275,
-                "en:rehydrated_egg_white": 9.7221104975579,
-                "en:salt": 1.039446778543,
-                "en:sugar": 1.28467806303941,
-                "en:water": 35.4842605628777,
-                "en:wheat": 0.322204146945238,
-                "en:wheat_starch": 1.65102667369035,
-                "fr:chair_de_poisson": 37.9983685777238
-            },
-            "mass_ratio_uncharacterized": 0.419150234465868,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e160c",
-                    "en:crustacean",
-                    "fr:chair-de-poisson",
-                    "en:wheat-starch"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.419150234465868,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.363636363636364,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 36%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 42%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 19,
     "ecoscore_tags": [
@@ -2107,6 +2062,7 @@
             "ciqual_proxy_food_code": "26140",
             "difference": 17,
             "id": "en:fish-meat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_hidden": 38,
             "percent_max": 100,
@@ -2115,7 +2071,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -2123,7 +2081,9 @@
         },
         {
             "ciqual_food_code": "22004",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:rehydrated-egg-white",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2131,14 +2091,19 @@
         },
         {
             "ciqual_proxy_food_code": "9510",
+            "ecobalyse_code": "potato-starch",
             "id": "en:potato-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
             "text": "potato starch"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 20,
             "percent_min": 0,
@@ -2147,6 +2112,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2154,7 +2120,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -2163,6 +2131,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.352,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -2173,6 +2142,7 @@
             "ingredients": [
                 {
                     "id": "en:crustacean",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0879,
                     "percent_max": 1.5,
                     "percent_min": 0,
@@ -2181,12 +2151,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0879,
                     "percent_max": 0.75,
                     "percent_min": 0,
                     "text": "wheat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -2197,12 +2169,14 @@
             "ingredients": [
                 {
                     "id": "en:e160c",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.176,
                     "percent_max": 1.5,
                     "percent_min": 0,
                     "text": "paprika extract"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -2335,7 +2309,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 3,
+        "number_of_ingredients_without_ciqual_code": 2,
         "relative_difference": 0.447,
         "total_difference": 17,
         "total_specified_input_percent": 38
@@ -2406,10 +2380,20 @@
         "en:colour",
         "en:crustacean",
         "en:e160c",
-        "en:natural-flavouring",
-        "en:rapeseed-oil"
+        "en:natural-flavouring"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:crustacean",
+        "en:e160c",
+        "en:fish-meat",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:wheat",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,

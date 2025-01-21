@@ -40,7 +40,7 @@
         "en:e440",
         "en:e472e"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, milk",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -221,7 +221,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -649,47 +649,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00592708853081877,
-            "likeliest_impacts": {
-                "Climate_change": 0.118352689408338,
-                "EF_single_score": 0.0104946230084738
-            },
-            "likeliest_recipe": {
-                "en:e407": 0.409379683459892,
-                "en:e440a": 0.484995500961845,
-                "en:e472e": 0.297758813465941,
-                "en:milk": 98.0307016695131,
-                "en:modified_corn_starch": 0.80849256679626,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0.00723919600127639,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e440a",
-                    "en:e407",
-                    "en:e472e"
-                ],
-                "nutrition": [
-                    "en:e407"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00723919600127639,
-                "nutrition": 0.00220352188686062
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "Parameter const_relax_coef has been set to 0.2 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 62,
     "ecoscore_tags": [
@@ -2465,6 +2424,7 @@
             "ciqual_food_code": "19402",
             "difference": 38,
             "id": "en:light-cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 98,
             "percent_max": 100,
@@ -2474,6 +2434,7 @@
         {
             "ciqual_food_code": "9510",
             "id": "en:modified-corn-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_max": 50,
             "percent_min": 0,
@@ -2484,12 +2445,14 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 10,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "pectin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2497,6 +2460,7 @@
         },
         {
             "id": "en:caragonanes",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -2507,12 +2471,14 @@
             "ingredients": [
                 {
                     "id": "en:e472e",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "e472e"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -2666,6 +2632,16 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:caragonanes",
+        "en:e440a",
+        "en:e472e",
+        "en:emulsifier",
+        "en:light-cream",
+        "en:modified-corn-starch",
+        "en:stabiliser"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -3066,14 +3042,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

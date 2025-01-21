@@ -200,7 +200,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -633,54 +633,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0607949336171237,
-            "likeliest_impacts": {
-                "Climate_change": 0.0108329485204751,
-                "EF_single_score": 0.00460680817435063
-            },
-            "likeliest_recipe": {
-                "en:carrot_juice": 4.99742926172054,
-                "en:e300": 1.98400013181573,
-                "en:lemon": 4.99742926172054,
-                "en:natural_flavouring": 1.55564923361422,
-                "en:orange": 19.9897170468821,
-                "en:provitamin_a": 0.00583540064452437,
-                "en:sugar": 4.99742926172054,
-                "en:vitamin_e": 0.95902346092888,
-                "en:vitamins": 2.0405140351026,
-                "en:water": 58.421558140261
-            },
-            "mass_ratio_uncharacterized": 0.131669079705804,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "en:e300",
-                    "en:vitamin-e",
-                    "en:provitamin-a",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:provitamin-a"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.131669079705804,
-                "nutrition": 0.0331720890853026
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 8,
     "ecoscore_tags": [
@@ -1227,44 +1179,53 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 50,
-            "percent_max": 80,
-            "percent_min": 20,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 55,
+            "percent_max": 100,
+            "percent_min": 10,
             "text": "Eau"
         },
         {
-            "id": "fr:jus-a-base-de-concentre-de",
+            "id": "en:concentrated-juice",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13034",
-                    "difference": 0,
+                    "difference": 2.5,
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
-                    "percent": 20,
-                    "percent_estimate": 20,
-                    "percent_max": 20,
-                    "percent_min": 20,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 22.5,
+                    "percent_hidden": 20,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "orange"
                 }
             ],
-            "percent_estimate": 20,
-            "percent_max": 20,
-            "percent_min": 20,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.5,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "jus à base de concentré de"
         },
         {
             "ciqual_proxy_food_code": "13009",
-            "difference": 5,
+            "difference": 6.25,
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon",
-            "percent_estimate": 10,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.2,
             "percent_hidden": 5,
-            "percent_max": 20,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "citron"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.6,
             "percent_max": 9.2,
             "percent_min": 0,
@@ -1272,9 +1233,11 @@
         },
         {
             "ciqual_food_code": "20009",
-            "difference": 0.4,
+            "difference": 1.67,
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot-juice-from-concentrate",
-            "percent_estimate": 4.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.33,
             "percent_hidden": 5,
             "percent_max": 9.2,
             "percent_min": 0,
@@ -1282,36 +1245,41 @@
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 4.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.66,
             "percent_max": 9.2,
             "percent_min": 0,
             "text": "vitamines"
         },
         {
             "id": "en:e300",
-            "percent_estimate": 3.1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.831,
             "percent_max": 9.2,
             "percent_min": 0,
             "text": "vitamine C"
         },
         {
             "id": "en:vitamin-e",
-            "percent_estimate": 1.55,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.416,
             "percent_max": 9.2,
             "percent_min": 0,
             "text": "vitamine E"
         },
         {
             "id": "en:provitamin-a",
-            "percent_estimate": 0.775,
-            "percent_max": 8.57142857142857,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.208,
+            "percent_max": 9.2,
             "percent_min": 0,
             "text": "provitamine A"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": 0.775,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.208,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         }
@@ -1419,8 +1387,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.18,
-        "total_difference": 5.4,
+        "relative_difference": 0.348,
+        "total_difference": 10.4,
         "total_specified_input_percent": 30
     },
     "ingredients_n": 11,
@@ -1480,14 +1448,23 @@
     "ingredients_with_unspecified_percent_n": 7,
     "ingredients_with_unspecified_percent_sum": 65,
     "ingredients_without_ciqual_codes": [
+        "en:concentrated-juice",
         "en:e300",
         "en:natural-flavouring",
         "en:provitamin-a",
         "en:vitamin-e",
-        "en:vitamins",
-        "fr:jus-a-base-de-concentre-de"
+        "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-juice",
+        "en:e300",
+        "en:natural-flavouring",
+        "en:provitamin-a",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -1559,8 +1536,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1909,29 +1885,39 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

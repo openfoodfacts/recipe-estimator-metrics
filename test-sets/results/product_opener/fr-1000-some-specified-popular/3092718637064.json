@@ -143,7 +143,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -918,87 +918,100 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 42.1,
-            "percent_max": 70,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 57.1,
+            "percent_max": 100,
             "percent_min": 14.2857142857143,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 25,
-            "percent_max": 40,
-            "percent_min": 10,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 21.4,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "eau"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
-            "percent_estimate": 20,
-            "percent_max": 30,
-            "percent_min": 10,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10.7,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "sirop de glucose-fructose"
         },
         {
-            "difference": 1.6,
+            "difference": 7.64,
             "id": "en:fruit-juice-from-concentrate",
             "ingredients": [
                 {
                     "ciqual_food_code": "13997",
-                    "difference": 0,
+                    "difference": 7.32,
                     "id": "en:red-fruits",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13019",
                             "id": "en:redcurrant",
-                            "percent_estimate": 10,
-                            "percent_max": 10,
-                            "percent_min": 10,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 2.68,
+                            "percent_max": 25,
+                            "percent_min": 0,
                             "text": "groseille"
                         }
                     ],
-                    "percent": 10,
-                    "percent_estimate": 10,
-                    "percent_max": 10,
-                    "percent_min": 10,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.68,
+                    "percent_hidden": 10,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "fruits rouges"
                 },
                 {
                     "ciqual_food_code": "13007",
                     "id": "en:blackcurrant",
-                    "percent_estimate": 0.714,
-                    "percent_max": 10,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.34,
+                    "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "cassis"
                 },
                 {
                     "id": "en:elder",
-                    "percent_estimate": 0.357,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.67,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "sureau"
                 },
                 {
                     "ciqual_food_code": "13015",
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "en:raspberry",
-                    "percent_estimate": 0.179,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.335,
                     "percent_max": 6.25,
                     "percent_min": 0,
                     "text": "framboise"
                 },
                 {
                     "id": "en:chokeberry",
-                    "percent_estimate": 0.179,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.335,
                     "percent_max": 5,
                     "percent_min": 0,
                     "text": "aronia"
                 }
             ],
-            "percent_estimate": 11.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.36,
             "percent_hidden": 13,
             "percent_max": 25,
-            "percent_min": 10,
+            "percent_min": 0,
             "text": "jus de fruits à base de concentrés"
         },
         {
@@ -1006,28 +1019,32 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 0.714,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.68,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 0.714,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.68,
             "percent_max": 20,
             "percent_min": 0,
             "text": "acidifiant"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": 0.357,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.34,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
         {
             "id": "fr:cette-recette-est-elaboree-a-partir-d-aromes-naturels-non-issus-exclusivement-de-fruits-rouges",
-            "percent_estimate": 0.357,
-            "percent_max": "5",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 1.34,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Cette recette est élaborée à partir d'arômes naturels non issus exclusivement de fruits rouges"
         }
@@ -1083,8 +1100,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.0696,
-        "total_difference": 1.6,
+        "relative_difference": 0.651,
+        "total_difference": 15.0,
         "total_specified_input_percent": 23
     },
     "ingredients_n": 14,
@@ -1154,6 +1171,20 @@
         "fr:cette-recette-est-elaboree-a-partir-d-aromes-naturels-non-issus-exclusivement-de-fruits-rouges"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:blackcurrant",
+        "en:chokeberry",
+        "en:e330",
+        "en:elder",
+        "en:fruit-juice-from-concentrate",
+        "en:glucose-fructose-syrup",
+        "en:natural-flavouring",
+        "en:red-fruits",
+        "en:redcurrant",
+        "fr:cette-recette-est-elaboree-a-partir-d-aromes-naturels-non-issus-exclusivement-de-fruits-rouges"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -1218,8 +1249,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1397,14 +1427,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

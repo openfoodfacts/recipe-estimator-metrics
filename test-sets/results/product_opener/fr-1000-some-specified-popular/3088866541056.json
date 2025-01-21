@@ -78,7 +78,7 @@
         "en:e450",
         "en:e500"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk,en:nuts,en:peanuts,en:soybeans,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
+    "allergens": "en:eggs,en:gluten,en:milk,en:nuts,en:peanuts,en:soybeans,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_from_ingredients": "en:gluten, BLÉ, OEUFS , ORGE, BLÉ , ANHYDRIDE SULFUREUX, BLÉ, OEUFS, ORGE, BLÉ, ANHYDRIDE SULFUREUX",
     "allergens_from_user": "(fr) en:eggs,en:gluten,en:milk,en:nuts,en:peanuts,en:soybeans,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_hierarchy": [
@@ -283,7 +283,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -719,81 +719,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.105679122839906,
-            "likeliest_impacts": {
-                "Climate_change": 0.0693149758608601,
-                "EF_single_score": 0.0191383270235812
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 5.43212270282571,
-                "en:colza_oil": 9.50784802483076,
-                "en:dextrose": 4.57851380750974,
-                "en:e120": 0.117416992479698,
-                "en:e202": 1.60864837520208,
-                "en:e220": 0,
-                "en:e330": 6.4404618575499,
-                "en:e401": 0.814345322478737,
-                "en:e420": 5.43212270282571,
-                "en:e450": 0.81434532247871,
-                "en:e500": 0.814345322478737,
-                "en:flavouring": 3.3546173708341,
-                "en:fresh_egg": 5.90600046318923,
-                "en:glucose_fructose_syrup": 5.43212270282571,
-                "en:grape": 12.7761499888023,
-                "en:malted_wheat_flour": 0.814345322478735,
-                "en:natural_orange_flavouring": 0.814345322478735,
-                "en:papaya": 5.33192131822928,
-                "en:rum": 3.91330721265061,
-                "en:salt": 0.814345322478737,
-                "en:sugar": 11.7466804822291,
-                "en:sweet_cherry": 5.52210376388375,
-                "en:water": 0,
-                "en:wheat_flour": 19.1202077153008,
-                "fr:coton": 2.28226319523966,
-                "fr:infusion_d__corces_d_oranges_douces": 3.91330721265061
-            },
-            "mass_ratio_uncharacterized": 0.213225825347714,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e202",
-                    "en:barley-malt-extract",
-                    "en:e401",
-                    "fr:infusion d'écorces d'oranges douces",
-                    "en:e420",
-                    "fr:coton",
-                    "en:e500",
-                    "en:e330",
-                    "en:flavouring",
-                    "en:dextrose",
-                    "en:e450",
-                    "en:e120",
-                    "en:e220"
-                ],
-                "nutrition": [
-                    "fr:coton",
-                    "en:dextrose",
-                    "en:flavouring",
-                    "fr:infusion d'écorces d'oranges douces"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.213225825347714,
-                "nutrition": 0.0726577192784851
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.53125,
-                "nutrition": 0.15625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 53%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 21%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1658,27 +1583,32 @@
     ],
     "ingredients": [
         {
-            "difference": 0.0,
+            "difference": 31.8,
             "id": "fr:fruits-confits",
             "ingredients": [
                 {
                     "ciqual_food_code": "13008",
-                    "difference": 0.0,
+                    "difference": 12.0,
+                    "ecobalyse_code": "cherry-tr",
                     "id": "fr:bigarreaux-confits",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13008",
+                            "ecobalyse_code": "cherry-tr",
                             "id": "en:sweet-cherry",
-                            "percent_estimate": 9.18,
-                            "percent_max": 15.3,
-                            "percent_min": 3.06,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 13.9,
+                            "percent_max": 100,
+                            "percent_min": 0.454545454545455,
                             "text": "bigarreaux"
                         },
                         {
                             "ciqual_proxy_food_code": "31016",
+                            "ecobalyse_code": "sugar",
                             "id": "en:sugar",
-                            "percent_estimate": 3.06,
-                            "percent_max": 7.65,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 6.7,
+                            "percent_max": 37,
                             "percent_min": 0,
                             "text": "sucre"
                         },
@@ -1687,14 +1617,16 @@
                             "ingredients": [
                                 {
                                     "id": "en:e330",
-                                    "percent_estimate": 1.53,
-                                    "percent_max": 5.1,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 3.35,
+                                    "percent_max": 33.3333333333333,
                                     "percent_min": 0,
                                     "text": "acide citrique"
                                 }
                             ],
-                            "percent_estimate": 1.53,
-                            "percent_max": 5.1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 3.35,
+                            "percent_max": 33.3333333333333,
                             "percent_min": 0,
                             "text": "acidifiant"
                         },
@@ -1703,14 +1635,16 @@
                             "ingredients": [
                                 {
                                     "id": "en:e202",
-                                    "percent_estimate": 0.765,
-                                    "percent_max": 3.825,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 1.68,
+                                    "percent_max": 25,
                                     "percent_min": 0,
                                     "text": "sorbate de potassium"
                                 }
                             ],
-                            "percent_estimate": 0.765,
-                            "percent_max": 3.825,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.68,
+                            "percent_max": 25,
                             "percent_min": 0,
                             "text": "conservateur"
                         },
@@ -1719,42 +1653,50 @@
                             "ingredients": [
                                 {
                                     "id": "en:e120",
-                                    "percent_estimate": 0.765,
-                                    "percent_max": 3.06,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 1.68,
+                                    "percent_max": 20,
                                     "percent_min": 0,
                                     "text": "cochenille"
                                 }
                             ],
-                            "percent_estimate": 0.765,
-                            "percent_max": 3.06,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.68,
+                            "percent_max": 20,
                             "percent_min": 0,
                             "text": "colorant"
                         }
                     ],
-                    "percent": 15.3,
-                    "percent_estimate": 15.3,
-                    "percent_max": 15.3,
-                    "percent_min": 15.3,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 27.3,
+                    "percent_hidden": 15.3,
+                    "percent_max": 100,
+                    "percent_min": 2.27272727272727,
                     "text": "bigarreaux confits"
                 },
                 {
                     "ciqual_food_code": "13035",
-                    "difference": 0.0,
+                    "difference": 19.8,
+                    "ecobalyse_code": "papaya-organic",
                     "id": "en:papaya",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13035",
+                            "ecobalyse_code": "papaya-organic",
                             "id": "en:papaya",
-                            "percent_estimate": 3.25,
-                            "percent_max": 5.2,
-                            "percent_min": 1.3,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 12.5,
+                            "percent_max": 50,
+                            "percent_min": 0,
                             "text": "papayes"
                         },
                         {
                             "ciqual_proxy_food_code": "31016",
+                            "ecobalyse_code": "sugar",
                             "id": "en:sugar",
-                            "percent_estimate": 0.975,
-                            "percent_max": 2.6,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 6.25,
+                            "percent_max": 25,
                             "percent_min": 0,
                             "text": "sucre"
                         },
@@ -1763,14 +1705,16 @@
                             "ingredients": [
                                 {
                                     "id": "en:e202",
-                                    "percent_estimate": 0.488,
-                                    "percent_max": 1.73333333333333,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 3.12,
+                                    "percent_max": 16.6666666666667,
                                     "percent_min": 0,
                                     "text": "sorbate de potassium"
                                 }
                             ],
-                            "percent_estimate": 0.488,
-                            "percent_max": 1.73333333333333,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 3.12,
+                            "percent_max": 16.6666666666667,
                             "percent_min": 0,
                             "text": "conservateur"
                         },
@@ -1779,95 +1723,112 @@
                             "ingredients": [
                                 {
                                     "id": "en:e330",
-                                    "percent_estimate": 0.488,
-                                    "percent_max": 1.3,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 3.12,
+                                    "percent_max": 12.5,
                                     "percent_min": 0,
                                     "text": "acide citrique"
                                 }
                             ],
-                            "percent_estimate": 0.488,
-                            "percent_max": 1.3,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 3.12,
+                            "percent_max": 12.5,
                             "percent_min": 0,
                             "text": "acidifiant"
                         }
                     ],
-                    "percent": 5.2,
-                    "percent_estimate": 5.2,
-                    "percent_max": 5.2,
-                    "percent_min": 5.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 5.2,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "processing": "en:candied",
                     "text": "papayes"
                 }
             ],
-            "percent_estimate": 20.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.3,
             "percent_hidden": 20.5,
-            "percent_max": 20.5,
-            "percent_min": 20.5,
+            "percent_max": 100,
+            "percent_min": 4.54545454545455,
             "text": "Fruits confits"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 12.1,
-            "percent_max": 20.5,
-            "percent_min": 3.78571428571429,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.9,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "farine de BLÉ"
         },
         {
             "ciqual_food_code": "13046",
-            "difference": 4.6,
+            "difference": 4.37,
             "id": "en:raisin",
             "ingredients": [
                 {
                     "ciqual_food_code": "13112",
                     "id": "en:grape",
-                    "percent_estimate": 6.35,
-                    "percent_max": 20.5,
-                    "percent_min": 0.983333333333333,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.97,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "raisins"
                 },
                 {
                     "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:colza-oil",
-                    "percent_estimate": 2.69,
-                    "percent_max": 10.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.98,
+                    "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "huiles végétales de colza"
                 },
                 {
                     "id": "fr:coton",
-                    "percent_estimate": 2.69,
-                    "percent_max": 6.83333333333333,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 2.98,
+                    "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "coton"
                 }
             ],
-            "percent_estimate": 11.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.9,
             "percent_hidden": 16.3,
-            "percent_max": 20.5,
-            "percent_min": 2.95,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "raisins secs"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:fresh-egg",
-            "percent_estimate": 11.3,
-            "percent_max": 20.5,
-            "percent_min": 2.02631578947368,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.97,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "OEUFS frais"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 10.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.98,
             "percent_max": 20,
-            "percent_min": 1,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 8.33,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.49,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "huile de colza"
@@ -1877,13 +1838,15 @@
             "ingredients": [
                 {
                     "id": "en:e420",
-                    "percent_estimate": 7.14,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.746,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "sorbitols"
                 }
             ],
-            "percent_estimate": 7.14,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.746,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "stabilisant"
@@ -1891,23 +1854,26 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
-            "percent_estimate": 6.06,
-            "percent_max": 12.1146616541353,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.373,
+            "percent_max": 12.5,
             "percent_min": 0,
             "text": "sirop de glucose-fructose"
         },
         {
             "id": "en:barley-malt-extract",
-            "percent_estimate": 5.19,
-            "percent_max": 10.3839957035446,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.186,
+            "percent_max": 11.1111111111111,
             "percent_min": 0,
             "text": "extrait de malt d'ORGE"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
-            "percent_estimate": 3.57,
-            "percent_max": 9.0859962406015,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0932,
+            "percent_max": 10,
             "percent_min": 0,
             "text": "dextrose"
         },
@@ -1917,35 +1883,40 @@
                 {
                     "ciqual_food_code": "1004",
                     "id": "en:rum",
-                    "percent_estimate": 1.79,
-                    "percent_max": 8.07644110275689,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0466,
+                    "percent_max": 9.09090909090909,
                     "percent_min": 0,
                     "text": "rhum"
                 }
             ],
-            "percent_estimate": 1.79,
-            "percent_max": 8.07644110275689,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0466,
+            "percent_max": 9.09090909090909,
             "percent_min": 0,
             "text": "extrait aromatique"
         },
         {
             "id": "fr:infusion-d-ecorces-d-oranges-douces",
-            "percent_estimate": 0.893,
-            "percent_max": 7.2687969924812,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0233,
+            "percent_max": 8.33333333333333,
             "percent_min": 0,
             "text": "infusion d'écorces d'oranges douces"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.446,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0117,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.223,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00583,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme"
         },
@@ -1954,21 +1925,24 @@
             "ingredients": [
                 {
                     "id": "en:e450",
-                    "percent_estimate": 0.112,
-                    "percent_max": "5",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00291,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "diphosphates"
                 }
             ],
-            "percent_estimate": 0.112,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00291,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "poudres à lever"
         },
         {
             "id": "en:e500",
-            "percent_estimate": 0.0558,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00146,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "carbonates de sodium"
         },
@@ -1977,28 +1951,32 @@
             "ingredients": [
                 {
                     "id": "en:e401",
-                    "percent_estimate": 0.0279,
-                    "percent_max": 4.84586466165414,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000728,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "alginate de sodium"
                 }
             ],
-            "percent_estimate": 0.0279,
-            "percent_max": 4.84586466165414,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000728,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "gélifiant"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.014,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000364,
             "percent_max": 0.39,
             "percent_min": 0,
             "text": "sel"
         },
         {
             "id": "en:natural-orange-flavouring",
-            "percent_estimate": 0.00698,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000182,
             "percent_max": 0.39,
             "percent_min": 0,
             "text": "arôme naturel d'orange"
@@ -2008,28 +1986,33 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 0.00349,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 9.1e-05,
                     "percent_max": 0.39,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 0.00349,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.1e-05,
             "percent_max": 0.39,
             "percent_min": 0,
             "text": "correcteur d'acidité"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:malted-wheat-flour",
-            "percent_estimate": 0.00174,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 4.55e-05,
             "percent_max": 0.39,
             "percent_min": 0,
             "text": "farine de BLÉ malté"
         },
         {
             "id": "en:preservative",
-            "percent_estimate": 0.00174,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 4.55e-05,
             "percent_max": 0.39,
             "percent_min": 0,
             "text": "conservateur"
@@ -2442,8 +2425,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 17,
-        "relative_difference": 0.0803,
-        "total_difference": 4.6,
+        "relative_difference": 1.19,
+        "total_difference": 67.9,
         "total_specified_input_percent": 57.3
     },
     "ingredients_n": 46,
@@ -2599,6 +2582,36 @@
         "fr:infusion-d-ecorces-d-oranges-douces"
     ],
     "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:barley-malt-extract",
+        "en:colour",
+        "en:dextrose",
+        "en:e120",
+        "en:e202",
+        "en:e330",
+        "en:e401",
+        "en:e420",
+        "en:e450",
+        "en:e500",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
+        "en:grape",
+        "en:natural-orange-flavouring",
+        "en:preservative",
+        "en:raisin",
+        "en:raising-agent",
+        "en:rum",
+        "en:salt",
+        "en:stabiliser",
+        "fr:coton",
+        "fr:extrait-aromatique",
+        "fr:fruits-confits",
+        "fr:infusion-d-ecorces-d-oranges-douces"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 27,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 53,
@@ -2691,8 +2704,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "new_additives_n": 8,
     "no_nutrition_data": "",
@@ -3106,36 +3118,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic,en:metal"
+                    "id": {
+                        "id": "en:plastic,en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:aerosol-can"
+                    "id": {
+                        "id": "en:aerosol-can"
+                    }
                 }
             }
         }

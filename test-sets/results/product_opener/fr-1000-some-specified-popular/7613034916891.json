@@ -251,7 +251,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -687,33 +687,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0220280333614529,
-            "likeliest_impacts": {
-                "Climate_change": 0.578663565459556,
-                "EF_single_score": 0.0411493815834452
-            },
-            "likeliest_recipe": {
-                "en:cinnamon": 0,
-                "en:e300": 0.180561794872931,
-                "en:fat_reduced_cocoa_powder": 21.3294962080538,
-                "en:ferric_diphosphate": 0.180561794872931,
-                "en:natural_flavouring": 0,
-                "en:salt": 0.180561794872936,
-                "en:soya_lecithin": 0.217363823097676,
-                "en:sugar": 77.0252113883491,
-                "en:thiamin": 0.180561794872931,
-                "en:vitamin_d": 0.180561794872931,
-                "en:vitamins": 0.180561794872942,
-                "en:water": 0.389960069915903,
-                "en:zinc_sulfate": 0.0930775913639037,
-                "fr:Origines_vari_es": 0
-            },
-            "mass_ratio_uncharacterized": 0.0358808232873499
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 44,
     "ecoscore_tags": [
@@ -2145,15 +2118,19 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_max": 100,
             "percent_min": 7.14285714285714,
             "text": "sugar"
         },
         {
-            "difference": 1.9,
-            "id": "en:lean-cocoa",
+            "ciqual_proxy_food_code": "18100",
+            "difference": 1.91,
+            "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_hidden": 21.3,
             "percent_max": 50,
@@ -2163,6 +2140,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2174,12 +2152,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.8,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "soya lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
@@ -2190,12 +2170,14 @@
             "ingredients": [
                 {
                     "id": "en:e504i",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.9,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "magnesium carbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_max": 20,
             "percent_min": 0,
@@ -2203,6 +2185,7 @@
         },
         {
             "id": "en:ferric-diphosphate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2210,6 +2193,7 @@
         },
         {
             "id": "en:zinc-sulfate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2217,6 +2201,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.363,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2224,6 +2209,7 @@
         },
         {
             "id": "en:vitamin-c",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2231,6 +2217,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
             "percent_max": 10,
             "percent_min": 0,
@@ -2238,6 +2225,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2246,6 +2234,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
             "percent_max": 0.41,
             "percent_min": 0,
@@ -2253,6 +2242,7 @@
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.41,
             "percent_min": 0,
@@ -2260,6 +2250,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.41,
             "percent_min": 0,
@@ -2416,9 +2407,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 0.0892,
-        "total_difference": 1.9,
+        "number_of_ingredients_without_ciqual_code": 9,
+        "relative_difference": 0.0899,
+        "total_difference": 1.91,
         "total_specified_input_percent": 21.3
     },
     "ingredients_n": 16,
@@ -2498,7 +2489,6 @@
         "en:emulsifier",
         "en:ferric-diphosphate",
         "en:flavouring",
-        "en:lean-cocoa",
         "en:minerals",
         "en:thiamin",
         "en:vitamin-c",
@@ -2506,7 +2496,25 @@
         "en:vitamins",
         "en:zinc-sulfate"
     ],
-    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cinnamon",
+        "en:dextrose",
+        "en:e504i",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:ferric-diphosphate",
+        "en:flavouring",
+        "en:minerals",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:thiamin",
+        "en:vitamin-c",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:zinc-sulfate"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -3177,26 +3185,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

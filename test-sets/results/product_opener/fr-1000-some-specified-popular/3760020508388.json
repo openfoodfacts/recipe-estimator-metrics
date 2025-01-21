@@ -231,7 +231,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1478,7 +1478,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 74.7,
             "percent_max": 100,
@@ -1488,7 +1490,9 @@
         {
             "ciqual_food_code": "9570",
             "difference": 12.4,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:chestnut-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 12.6,
             "percent_hidden": 25,
@@ -1499,6 +1503,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.6,
             "percent_max": 0.55,
             "percent_min": 0,
@@ -1554,7 +1559,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.496,
+        "relative_difference": 0.495,
         "total_difference": 12.4,
         "total_specified_input_percent": 25
     },
@@ -1596,6 +1601,10 @@
     "ingredients_with_unspecified_percent_sum": 75,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -2137,36 +2146,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 2,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

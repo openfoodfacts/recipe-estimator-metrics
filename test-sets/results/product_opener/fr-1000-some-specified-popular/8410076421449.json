@@ -55,7 +55,7 @@
         "en:e330",
         "en:e575"
     ],
-    "allergens": "en:gluten,en:milk,en:sulphur-dioxide-and-sulphites, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:sulphur-dioxide-and-sulphites, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, cream, sulphites, whey, milk, milk",
     "allergens_from_user": "(fr) en:gluten,en:milk,en:sulphur-dioxide-and-sulphites, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -225,7 +225,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -648,85 +648,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.124525845613445,
-            "likeliest_impacts": {
-                "Climate_change": 0.08608953565031,
-                "EF_single_score": 0.0205994207793025
-            },
-            "likeliest_recipe": {
-                "en:avocado": 24.4210973622792,
-                "en:chopped_tomatoes": 10,
-                "en:cream": 1.60336470659143,
-                "en:dextrose": 1.59184910503996,
-                "en:dyes_chlorophyllins": 1.5881085628207,
-                "en:e161b": 1.58810856282071,
-                "en:e300": 1.59184910503996,
-                "en:e330": 1.59184910503996,
-                "en:e575": 1.59184910503996,
-                "en:finely_spicy": 10.8224910843905,
-                "en:garlic": 1.59184910503996,
-                "en:herb": 1.59184910503996,
-                "en:jalapeno": 1.59184910503996,
-                "en:juis_of_green_lemon_concentrate": 1.59184910503996,
-                "en:milk": 3.18369821007992,
-                "en:modified_maize": 1.60336470659143,
-                "en:onion": 7,
-                "en:potato": 1.60336470659143,
-                "en:preparation_of_cheese": 1.60336470659143,
-                "en:rapeseed_oil": 1.60336470659143,
-                "en:salt": 1.59184910503996,
-                "en:siopde_anhydrous_glucose": 1.59184910503996,
-                "en:spice": 1.59184910503996,
-                "en:starch": 1.60336470659143,
-                "en:sugar": 1.59184910503996,
-                "en:water": 10.8224910843905,
-                "en:wheat": 1.85162763319032
-            },
-            "mass_ratio_uncharacterized": 0.245481923281691,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:preparation of cheese",
-                    "en:modified maize",
-                    "en:e575",
-                    "en:e161b",
-                    "en:juis of green lemon concentrate",
-                    "en:e330",
-                    "en:herb",
-                    "en:e300",
-                    "en:dextrose",
-                    "en:finely spicy",
-                    "en:siopde anhydrous glucose",
-                    "en:dyes chlorophyllins",
-                    "en:jalapeno"
-                ],
-                "nutrition": [
-                    "en:preparation of cheese",
-                    "en:modified maize",
-                    "en:juis of green lemon concentrate",
-                    "en:dextrose",
-                    "en:finely spicy",
-                    "en:siopde anhydrous glucose",
-                    "en:dyes chlorophyllins"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.245481923281691,
-                "nutrition": 0.2170760015864
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.448275862068966,
-                "nutrition": 0.241379310344828
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 45%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 22%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -1451,7 +1372,10 @@
     ],
     "ingredients": [
         {
+            "ciqual_food_code": "13004",
+            "ecobalyse_code": "avocado-non-eu",
             "id": "en:avocado",
+            "is_in_taxonomy": 1,
             "percent_estimate": 51.7,
             "percent_max": 100,
             "percent_min": 3.44827586206897,
@@ -1463,12 +1387,14 @@
             "ingredients": [
                 {
                     "id": "en:ngredients",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 24.1,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "ngrédients"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 24.1,
             "percent_max": 50,
             "percent_min": 0,
@@ -1476,23 +1402,29 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "water"
         },
         {
+            "ciqual_food_code": "13004",
+            "ecobalyse_code": "avocado-non-eu",
             "id": "en:avocado",
             "ingredients": [
                 {
                     "id": "en:1496",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 6.03,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "1496"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.03,
             "percent_max": 25,
             "percent_min": 0,
@@ -1501,7 +1433,9 @@
         {
             "ciqual_food_code": "20047",
             "difference": 6.98,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:chopped-tomatoes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.02,
             "percent_hidden": 10,
             "percent_max": 20,
@@ -1511,7 +1445,9 @@
         {
             "ciqual_food_code": "20034",
             "difference": 5.49,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.51,
             "percent_hidden": 7,
             "percent_max": 16.6666666666667,
@@ -1521,6 +1457,7 @@
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.754,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1529,6 +1466,7 @@
         },
         {
             "id": "en:preparation-of-cheese",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.377,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1537,6 +1475,7 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.189,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1545,6 +1484,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0943,
             "percent_max": 10,
             "percent_min": 0,
@@ -1552,13 +1492,17 @@
         },
         {
             "id": "en:modified-maize",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0471,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
             "text": "modified maize"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0236,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1566,7 +1510,9 @@
         },
         {
             "ciqual_food_code": "4003",
+            "ecobalyse_code": "potato-industry-fr",
             "id": "en:potato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0118,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1576,6 +1522,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00589,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1584,6 +1531,7 @@
         },
         {
             "id": "en:whey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00295,
             "percent_max": 6.66666666666667,
             "percent_min": 0,
@@ -1592,6 +1540,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00147,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1599,6 +1548,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000737,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1606,6 +1556,7 @@
         },
         {
             "id": "en:juis-of-green-lemon-concentrate",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.000368,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1613,6 +1564,7 @@
         },
         {
             "id": "en:contains-sulftes-whey-powder",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.000184,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1620,7 +1572,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.21e-05,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1628,6 +1582,7 @@
         },
         {
             "id": "en:siopde-anhydrous-glucose",
+            "is_in_taxonomy": 0,
             "percent_estimate": 4.6e-05,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1638,12 +1593,14 @@
             "ingredients": [
                 {
                     "id": "en:e575",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.3e-05,
                     "percent_max": 0.85,
                     "percent_min": 0,
                     "text": "glucono-delta-lactone"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.3e-05,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1651,6 +1608,7 @@
         },
         {
             "id": "en:e330",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15e-05,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1659,6 +1617,7 @@
         {
             "ciqual_food_code": "20151",
             "id": "en:jalapeno-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.75e-06,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1666,6 +1625,7 @@
         },
         {
             "id": "en:herb",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.88e-06,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1675,6 +1635,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.44e-06,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1685,12 +1646,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 7.19e-07,
                     "percent_max": 0.85,
                     "percent_min": 0,
                     "text": "ascorbic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.19e-07,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1698,6 +1661,7 @@
         },
         {
             "id": "en:dyes-chlorophyllins",
+            "is_in_taxonomy": 0,
             "percent_estimate": 3.6e-07,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1705,6 +1669,7 @@
         },
         {
             "id": "en:e161b",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.6e-07,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -2027,7 +1992,7 @@
         "luteine"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 17,
+        "number_of_ingredients_without_ciqual_code": 15,
         "relative_difference": 0.734,
         "total_difference": 12.5,
         "total_specified_input_percent": 17
@@ -2139,7 +2104,6 @@
     "ingredients_without_ciqual_codes": [
         "en:1496",
         "en:antioxidant",
-        "en:avocado",
         "en:contains-sulftes-whey-powder",
         "en:correctors-of-acidity",
         "en:dyes-chlorophyllins",
@@ -2153,12 +2117,39 @@
         "en:modified-maize",
         "en:ngredients",
         "en:preparation-of-cheese",
-        "en:rapeseed-oil",
         "en:siopde-anhydrous-glucose",
         "en:spice",
         "en:whey"
     ],
-    "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ciqual_codes_n": 18,
+    "ingredients_without_ecobalyse_ids": [
+        "en:1496",
+        "en:antioxidant",
+        "en:contains-sulftes-whey-powder",
+        "en:correctors-of-acidity",
+        "en:cream",
+        "en:dextrose",
+        "en:dyes-chlorophyllins",
+        "en:e161b",
+        "en:e300",
+        "en:e330",
+        "en:e575",
+        "en:finely-spicy",
+        "en:garlic",
+        "en:herb",
+        "en:jalapeno-pepper",
+        "en:juis-of-green-lemon-concentrate",
+        "en:modified-maize",
+        "en:ngredients",
+        "en:preparation-of-cheese",
+        "en:salt",
+        "en:siopde-anhydrous-glucose",
+        "en:spice",
+        "en:starch",
+        "en:wheat",
+        "en:whey"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 25,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 38,
@@ -2555,7 +2546,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             }
         }

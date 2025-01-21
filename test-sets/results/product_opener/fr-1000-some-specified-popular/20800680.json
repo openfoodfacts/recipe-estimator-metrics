@@ -217,7 +217,7 @@
                         "epi_score": "17",
                         "origin": "en:mexico",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 17,
@@ -627,10 +627,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -2257,6 +2253,7 @@
             "ciqual_food_code": "31089",
             "difference": 0,
             "id": "en:concentrated-agave-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -2329,6 +2326,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-agave-syrup"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -2752,19 +2753,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:vial"
+                    "id": {
+                        "id": "en:vial"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             }
         }

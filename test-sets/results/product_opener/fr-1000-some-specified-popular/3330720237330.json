@@ -217,7 +217,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1112,7 +1112,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.3,
             "percent_max": 100,
             "percent_min": 16.6666666666667,
@@ -1120,7 +1122,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1128,8 +1132,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 5.6,
+            "difference": 5.58,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_hidden": 16,
             "percent_max": 33.3333333333333,
@@ -1138,7 +1144,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.21,
             "percent_max": 25,
             "percent_min": 0,
@@ -1148,6 +1156,7 @@
             "ciqual_food_code": "18100",
             "difference": 4.4,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_hidden": 7,
             "percent_max": 20,
@@ -1159,12 +1168,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.6,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1270,8 +1281,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.435,
-        "total_difference": 10.0,
+        "relative_difference": 0.434,
+        "total_difference": 9.98,
         "total_specified_input_percent": 23
     },
     "ingredients_n": 7,
@@ -1330,6 +1341,12 @@
         "en:sunflower-lecithin"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:sunflower-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -1746,7 +1763,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1755,12 +1774,16 @@
             "quantity_per_unit_value": 280,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 7
@@ -1768,7 +1791,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:clear-glass"
+                    "id": {
+                        "id": "en:clear-glass"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1777,12 +1802,16 @@
             "quantity_per_unit_value": 280,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": "en:recycle-in-glass-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_measured": 139

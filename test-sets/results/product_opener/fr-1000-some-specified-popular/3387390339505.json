@@ -280,7 +280,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -727,74 +727,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0678647318362969,
-            "likeliest_impacts": {
-                "Climate_change": 0.0384169503156136,
-                "EF_single_score": 0.011420767316071
-            },
-            "likeliest_recipe": {
-                "en:corn_starch": 2.20025117051123,
-                "en:cornmeal": 12.7696914840173,
-                "en:dextrose": 12.1746138315788,
-                "en:e101": 0.0226191049622834,
-                "en:e170i": 0.453217686523136,
-                "en:e375": 0.0226191049622842,
-                "en:e500ii": 0.131252148761213,
-                "en:folic_acid": 0.0226191049622842,
-                "en:glucose_syrup": 12.6045341283249,
-                "en:invert_sugar_syrup": 12.1746138315788,
-                "en:iron": 0.131252148761214,
-                "en:molasses": 0.131252148761213,
-                "en:natural_flavouring": 0.131252148761214,
-                "en:pantothenic_acid": 0.0226191049622842,
-                "en:salt": 0.131252148761214,
-                "en:sugar": 12.6220126742109,
-                "en:sunflower_oil": 0.453217686523138,
-                "en:vitamin_b6": 0.0226191049622834,
-                "en:vitamins": 0.0459466804950878,
-                "en:water": 0,
-                "en:whole_wheat": 37.7630868533504
-            },
-            "mass_ratio_uncharacterized": 0.221892044121053,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:glucose-syrup",
-                    "en:natural-flavouring",
-                    "en:e500ii",
-                    "en:folic-acid",
-                    "en:e101",
-                    "en:e375",
-                    "en:dextrose",
-                    "en:e170i",
-                    "en:pantothenic-acid",
-                    "en:vitamin-b6",
-                    "en:iron",
-                    "en:vitamins"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "en:dextrose",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.221892044121053,
-                "nutrition": 0.146508114492122
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.15
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 15%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 22%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 36,
     "ecoscore_tags": [
@@ -1901,6 +1833,7 @@
             "ciqual_food_code": "9010",
             "difference": 16.8,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 52.5,
             "percent_hidden": 35.7,
@@ -1911,6 +1844,7 @@
         {
             "ciqual_food_code": "9615",
             "id": "en:cornmeal",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1918,7 +1852,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.9,
             "percent_max": 24.5,
             "percent_min": 0,
@@ -1927,13 +1863,16 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.94,
             "percent_max": 24.5,
             "percent_min": 0,
             "text": "sirop de glucose"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:invert-sugar-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.97,
             "percent_max": 20,
             "percent_min": 0,
@@ -1942,6 +1881,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1950,6 +1890,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.742,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1957,7 +1898,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.371,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1965,6 +1908,7 @@
         },
         {
             "id": "en:e170i",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.186,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1975,12 +1919,14 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0928,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "bicarbonate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0928,
             "percent_max": 10,
             "percent_min": 0,
@@ -1988,7 +1934,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0464,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1997,6 +1945,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0232,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2004,6 +1953,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0116,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2011,6 +1961,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0058,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2018,6 +1969,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0029,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2025,6 +1977,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00145,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2032,6 +1985,7 @@
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000725,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2039,6 +1993,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000362,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2046,6 +2001,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000181,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2053,6 +2009,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000181,
             "percent_max": 0.97,
             "percent_min": 0,
@@ -2270,7 +2227,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 11,
+        "number_of_ingredients_without_ciqual_code": 10,
         "relative_difference": 0.471,
         "total_difference": 16.8,
         "total_specified_input_percent": 35.7
@@ -2366,7 +2323,6 @@
         "en:e375",
         "en:e500ii",
         "en:folic-acid",
-        "en:invert-sugar-syrup",
         "en:iron",
         "en:natural-flavouring",
         "en:pantothenic-acid",
@@ -2374,7 +2330,28 @@
         "en:vitamin-b6",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cornmeal",
+        "en:dextrose",
+        "en:e101",
+        "en:e170i",
+        "en:e375",
+        "en:e500ii",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:invert-sugar-syrup",
+        "en:iron",
+        "en:natural-flavouring",
+        "en:pantothenic-acid",
+        "en:raising-agent",
+        "en:salt",
+        "en:vitamin-b6",
+        "en:vitamins",
+        "en:wheat-starch",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 39,
@@ -2956,72 +2933,96 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

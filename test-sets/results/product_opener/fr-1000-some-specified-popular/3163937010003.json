@@ -197,7 +197,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -631,26 +631,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.386704713522035,
-            "likeliest_impacts": {
-                "Climate_change": 0.0251207667348462,
-                "EF_single_score": 0.00709911089668307
-            },
-            "likeliest_recipe": {
-                "en:alcohol": 16.8174754387624,
-                "en:caramelised_sugar": 12.4370060133583,
-                "en:herb": 12.4370060133582,
-                "en:sugar": 16.2917820098277,
-                "en:water": 16.8174754387624,
-                "fr:d_anis_2__": 12.4976377418599,
-                "fr:extraits_naturels_de_r_glisse": 12.498373797818
-            },
-            "mass_ratio_uncharacterized": 0.202490817928535
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 59,
     "ecoscore_tags": [
@@ -1537,7 +1517,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -1546,6 +1528,7 @@
         {
             "ciqual_food_code": "1014",
             "id": "en:alcohol",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_max": 50,
             "percent_min": 0,
@@ -1553,7 +1536,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1561,6 +1546,7 @@
         },
         {
             "id": "en:liquorice",
+            "is_in_taxonomy": 1,
             "origins": "en:provence",
             "percent_estimate": 5.36,
             "percent_max": 25,
@@ -1570,6 +1556,7 @@
         {
             "difference": 2.48,
             "id": "en:aniseed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.68,
             "percent_hidden": 0.2,
             "percent_max": 20,
@@ -1578,7 +1565,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:caramelised-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.34,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1586,6 +1575,7 @@
         },
         {
             "id": "en:mixed-condiments",
+            "is_in_taxonomy": 1,
             "labels": "en:vegan",
             "percent_estimate": 1.34,
             "percent_max": 14.2857142857143,
@@ -1724,6 +1714,13 @@
         "en:mixed-condiments"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol",
+        "en:aniseed",
+        "en:liquorice",
+        "en:mixed-condiments"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -2029,25 +2026,33 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:brown-glass"
+                    "id": {
+                        "id": "en:brown-glass"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2056,12 +2061,16 @@
             "quantity_per_unit_value": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         }

@@ -246,7 +246,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1954,58 +1954,67 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 50,
-            "percent_max": 60,
-            "percent_min": 40,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 60,
+            "percent_max": 100,
+            "percent_min": 20,
             "text": "eau"
         },
         {
-            "id": "en:juice",
+            "id": "en:concentrated-juice",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13009",
-                    "difference": 0.0,
+                    "difference": 25.5,
+                    "ecobalyse_code": "lemon-eu",
                     "id": "en:lemon",
-                    "percent": 35.5,
-                    "percent_estimate": 35.5,
-                    "percent_max": 35.5,
-                    "percent_min": 35.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10,
+                    "percent_hidden": 35.5,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "citron"
                 },
                 {
                     "ciqual_proxy_food_code": "13034",
-                    "difference": 0.0,
+                    "difference": 5.5,
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
                     "ingredients": [
                         {
                             "id": "fr:equivalents-a-40-de-jus-reconstitues",
-                            "percent_estimate": 4.5,
-                            "percent_max": 4.5,
-                            "percent_min": 4.5,
+                            "is_in_taxonomy": 0,
+                            "percent_estimate": 10,
+                            "percent_max": 25,
+                            "percent_min": 0,
                             "text": "équivalents à 40 % de jus reconstitués"
                         }
                     ],
-                    "percent": 4.5,
-                    "percent_estimate": 4.5,
-                    "percent_max": 4.5,
-                    "percent_min": 4.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10,
+                    "percent_hidden": 4.5,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "orange"
                 }
             ],
-            "percent_estimate": 40,
-            "percent_max": 40,
-            "percent_min": 40,
-            "processing": "en:from-concentrate",
-            "text": "jus"
+            "is_in_taxonomy": 1,
+            "percent_estimate": 20,
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "jus à base de concentré"
         },
         {
             "ciqual_food_code": "13009",
-            "difference": 0,
+            "difference": 5,
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon-pulp",
-            "percent_estimate": 5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10,
             "percent_hidden": 5,
-            "percent_max": 20,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "pulpe de citron"
         },
@@ -2014,22 +2023,24 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 2.5,
-                    "percent_max": 10,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5,
+                    "percent_max": 25,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 2.5,
-            "percent_max": 10,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "acidifiant"
         },
         {
-            "ciqual_proxy_food_code": "13009",
             "id": "en:lemon-extract",
-            "percent_estimate": 2.5,
-            "percent_max": 6.66666666666667,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "extrait de citron"
         }
@@ -2128,9 +2139,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0,
-        "total_difference": 0.0,
+        "number_of_ingredients_without_ciqual_code": 3,
+        "relative_difference": 0.8,
+        "total_difference": 36.0,
         "total_specified_input_percent": 45.0
     },
     "ingredients_n": 9,
@@ -2182,11 +2193,20 @@
     "ingredients_with_unspecified_percent_sum": 59.5,
     "ingredients_without_ciqual_codes": [
         "en:acid",
+        "en:concentrated-juice",
         "en:e330",
-        "en:juice",
+        "en:lemon-extract",
         "fr:equivalents-a-40-de-jus-reconstitues"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:concentrated-juice",
+        "en:e330",
+        "en:lemon-extract",
+        "fr:equivalents-a-40-de-jus-reconstitues"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 10,
@@ -2287,8 +2307,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "new_additives_n": 1,
     "no_nutrition_data": "",
@@ -2673,18 +2692,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
@@ -2692,12 +2717,16 @@
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

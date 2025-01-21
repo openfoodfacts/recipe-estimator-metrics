@@ -243,7 +243,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -519,39 +519,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0,
-            "likeliest_impacts": {
-                "Climate_change": 0.468347152751645,
-                "EF_single_score": 0.119417481095724
-            },
-            "likeliest_recipe": {
-                "en:almond": 26.0032894736842,
-                "en:cashew_nuts": 26.0032894736842,
-                "en:hazelnut": 26.0032894736842,
-                "en:walnut": 26.0032894736842,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -3359,7 +3326,9 @@
         {
             "ciqual_food_code": "15023",
             "difference": 37.5,
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 62.5,
             "percent_hidden": 25,
             "percent_max": 100,
@@ -3368,8 +3337,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 6.2,
+            "difference": 6.25,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.8,
             "percent_hidden": 25,
             "percent_max": 50,
@@ -3380,6 +3351,7 @@
             "ciqual_proxy_food_code": "15055",
             "difference": 15.6,
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_hidden": 25,
             "percent_max": 33.3333333333333,
@@ -3390,6 +3362,7 @@
             "ciqual_food_code": "15041",
             "difference": 15.6,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_hidden": 25,
             "percent_max": 25,
@@ -3442,8 +3415,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.749,
-        "total_difference": 74.9,
+        "relative_difference": 0.75,
+        "total_difference": 75.0,
         "total_specified_input_percent": 100
     },
     "ingredients_n": 4,
@@ -3493,6 +3466,11 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:cashew-nuts"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -4020,7 +3998,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic-aluminium"
+                    "id": {
+                        "id": "en:plastic-aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -4029,12 +4009,16 @@
             "quantity_per_unit_value": 200,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 7.51

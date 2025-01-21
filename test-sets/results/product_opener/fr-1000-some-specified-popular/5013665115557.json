@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -605,10 +605,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 61,
     "ecoscore_tags": [
@@ -957,8 +953,10 @@
     "ingredients": [
         {
             "ciqual_food_code": "15037",
-            "difference": 0.7,
+            "difference": 0.655,
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99.7,
             "percent_hidden": 99,
             "percent_max": 100,
@@ -968,6 +966,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.345,
             "percent_max": 0.689999999999998,
             "percent_min": 0,
@@ -992,8 +991,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.00707,
-        "total_difference": 0.7,
+        "relative_difference": 0.00662,
+        "total_difference": 0.655,
         "total_specified_input_percent": 99
     },
     "ingredients_n": 2,
@@ -1025,6 +1024,10 @@
     "ingredients_with_unspecified_percent_sum": 1,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1429,24 +1432,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

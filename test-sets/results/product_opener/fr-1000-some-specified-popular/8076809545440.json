@@ -265,7 +265,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -689,50 +689,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0863471833646306,
-            "likeliest_impacts": {
-                "Climate_change": 0.0262899942659381,
-                "EF_single_score": 0.0124428951844786
-            },
-            "likeliest_recipe": {
-                "en:corn": 0.908523333714881,
-                "en:e471": 1.81827180822727,
-                "en:rice_flour": 1.49023005569363,
-                "en:water": 1.95950728954607,
-                "en:white_corn_flour": 97.3478069781016,
-                "en:yellow": 1.92539173005476
-            },
-            "mass_ratio_uncharacterized": 0.144795805897329,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:yellow",
-                    "en:e471"
-                ],
-                "nutrition": [
-                    "en:yellow"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.144795805897329,
-                "nutrition": 0.133323723706049
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.166666666666667
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "The impact relative interquartile is high for Climate change (27%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 81,
     "ecoscore_tags": [
@@ -2469,6 +2425,7 @@
             "ciqual_food_code": "9200",
             "difference": 0,
             "id": "en:white-corn",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 60,
             "percent_max": 100,
@@ -2480,6 +2437,7 @@
             "ciqual_food_code": "9200",
             "difference": 9.5,
             "id": "en:yellow-corn",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_hidden": 29.5,
             "percent_max": 50,
@@ -2488,8 +2446,11 @@
             "text": "жълта царевица"
         },
         {
+            "ciqual_food_code": "9520",
             "difference": 0,
-            "id": "bg:брашно-от-пълнозърнест-ориз",
+            "ecobalyse_proxy_code": "flour",
+            "id": "en:brown-rice-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_hidden": 10,
             "percent_max": 33.3333333333333,
@@ -2498,7 +2459,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -2509,12 +2472,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "моно и диглицериди на мастни киселини"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -2612,7 +2577,7 @@
     ],
     "ingredients_lc": "bg",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
+        "number_of_ingredients_without_ciqual_code": 1,
         "relative_difference": 0.0955,
         "total_difference": 9.5,
         "total_specified_input_percent": 99.5
@@ -2688,11 +2653,17 @@
     "ingredients_with_unspecified_percent_n": 2,
     "ingredients_with_unspecified_percent_sum": 0.5,
     "ingredients_without_ciqual_codes": [
-        "bg:брашно-от-пълнозърнест-ориз",
         "en:e471",
         "en:emulsifier"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e471",
+        "en:emulsifier",
+        "en:white-corn",
+        "en:yellow-corn"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -3192,7 +3163,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3201,7 +3174,9 @@
             "quantity_per_unit_value": 400,
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 16.9

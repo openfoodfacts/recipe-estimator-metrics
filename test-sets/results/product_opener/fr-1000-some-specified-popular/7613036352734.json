@@ -256,7 +256,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -702,56 +702,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0597266688040755,
-            "likeliest_impacts": {
-                "Climate_change": 1.19626337522419,
-                "EF_single_score": 0.0786457944895782
-            },
-            "likeliest_recipe": {
-                "en:cinnamon": 0.683789898319151,
-                "en:e300": 2.41427212692048,
-                "en:fat_reduced_cocoa_powder": 28.1903855363756,
-                "en:natural_flavouring": 2.51079210322156,
-                "en:oat_flour": 14.1641603976808,
-                "en:soya_lecithin": 2.51079210322156,
-                "en:sugar": 14.164160397681,
-                "en:vitamin_d": 2.33711869429699,
-                "en:vitamins": 2.51079210322156,
-                "en:water": 3.06347173603487,
-                "fr:fibres_solubles_de_ma_s": 28.1302132472251
-            },
-            "mass_ratio_uncharacterized": 0.347471421241767,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:fibres solubles de maïs",
-                    "en:vitamin-d",
-                    "en:natural-flavouring",
-                    "en:e300",
-                    "en:vitamins"
-                ],
-                "nutrition": [
-                    "fr:fibres solubles de maïs",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.347471421241767,
-                "nutrition": 0.271222786865735
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 27%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 35%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 46,
     "ecoscore_tags": [
@@ -1887,6 +1837,7 @@
             "ciqual_food_code": "18100",
             "difference": 26.5,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 28,
             "percent_max": 100,
@@ -1895,6 +1846,7 @@
         },
         {
             "id": "fr:fibres-solubles-de-mais",
+            "is_in_taxonomy": 0,
             "percent_estimate": 22.7,
             "percent_max": 50,
             "percent_min": 0,
@@ -1902,7 +1854,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 25,
             "percent_min": 0,
@@ -1910,7 +1864,9 @@
         },
         {
             "ciqual_food_code": "9310",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:oat-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:no-gluten",
             "percent_estimate": 5.68,
             "percent_max": 25,
@@ -1923,12 +1879,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.84,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "lécithine de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1936,43 +1894,49 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.42,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.71,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "vitamines"
         },
         {
             "id": "en:e300",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "vitamine C"
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "vitamine D"
         },
         {
             "id": "fr:bilan-massique-certifie-rainforest-alliance-www-ra-org",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0888,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Bilan massique certifié Rainforest Alliance www.ra.org"
         },
         {
             "id": "fr:fr",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0888,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "fr"
         }
@@ -2141,7 +2105,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.946,
+        "relative_difference": 0.948,
         "total_difference": 26.5,
         "total_specified_input_percent": 28
     },
@@ -2216,6 +2180,19 @@
         "fr:fr"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e300",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:natural-flavouring",
+        "en:soya-lecithin",
+        "en:vitamin-d",
+        "en:vitamins",
+        "fr:bilan-massique-certifie-rainforest-alliance-www-ra-org",
+        "fr:fibres-solubles-de-mais",
+        "fr:fr"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -2855,68 +2832,92 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         }

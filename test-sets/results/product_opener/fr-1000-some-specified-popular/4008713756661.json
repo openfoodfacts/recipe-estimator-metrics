@@ -229,7 +229,7 @@
                         "epi_score": "85",
                         "origin": "en:germany",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 85,
@@ -649,10 +649,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 85,
     "ecoscore_tags": [
@@ -1285,6 +1281,7 @@
             "ciqual_food_code": "9310",
             "difference": 0,
             "id": "en:wholemeal-oat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -1352,6 +1349,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:wholemeal-oat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 3,
@@ -1836,17 +1837,23 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "es:Ecoponto-azul"
+                    "id": {
+                        "id": "es:Ecoponto-azul"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

@@ -248,13 +248,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 54.4,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 45.6,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 42.408,
@@ -677,68 +677,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.108075043480627,
-            "likeliest_impacts": {
-                "Climate_change": 0.929338234049029,
-                "EF_single_score": 0.0645740329578031
-            },
-            "likeliest_recipe": {
-                "en:citrus_fruit": 0.0741973243681205,
-                "en:cocoa_butter": 7.21672123353689,
-                "en:cocoa_paste": 18.6600573723364,
-                "en:concentrated_lemon_juice": 0.000499246935644923,
-                "en:e501": 0.00370255106827233,
-                "en:e503": 0,
-                "en:e965": 15.9136115748356,
-                "en:egg_yolk_powder": 1.62606560637203,
-                "en:high_oleic_sunflower_oil": 3.77838809988496,
-                "en:maltodextrins": 0.000510789488017556,
-                "en:natural_vanilla_flavouring": 0.873401018137746,
-                "en:pea": 0.0741973243681204,
-                "en:potato": 0.0740389271088505,
-                "en:psyllium": 0.0740389271088505,
-                "en:rice_starch": 3.77838809988496,
-                "en:salt": 0.00366215386690133,
-                "en:skimmed_milk_powder": 3.77838809988496,
-                "en:soya_lecithin": 3.02803298914006,
-                "en:water": 0,
-                "en:wheat_fiber": 3.77838809988496,
-                "en:wheat_flour": 52.6498340709301,
-                "fr:algue_brune": 0.0740389271088473
-            },
-            "mass_ratio_uncharacterized": 0.156726347460767,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:algue brune",
-                    "en:e965",
-                    "en:maltodextrins",
-                    "en:rice-starch",
-                    "en:e503",
-                    "en:psyllium",
-                    "en:e501"
-                ],
-                "nutrition": [
-                    "fr:algue brune"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.156726347460767,
-                "nutrition": 0.000688635926896024
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.347826086956522,
-                "nutrition": 0.0434782608695652
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 35%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 16%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 50,
     "ecoscore_tags": [
@@ -1545,8 +1483,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 7.7,
+            "difference": 7.73,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 53.3,
             "percent_hidden": 45.6,
@@ -1561,6 +1501,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.7,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1571,12 +1512,14 @@
                     "ingredients": [
                         {
                             "id": "en:e965",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 5.83,
                             "percent_max": 25,
                             "percent_min": 0,
                             "text": "maltitols"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.83,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1585,6 +1528,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.92,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1596,12 +1540,14 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.46,
                             "percent_max": 12.5,
                             "percent_min": 0,
                             "text": "lécithines de soja"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.46,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1609,12 +1555,14 @@
                 },
                 {
                     "id": "en:natural-vanilla-flavouring",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.46,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "arôme naturel de vanille"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 23.3,
             "percent_hidden": 36.3,
             "percent_max": 50,
@@ -1626,12 +1574,14 @@
             "ingredients": [
                 {
                     "id": "en:e965",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.7,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "maltitols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1639,7 +1589,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:high-oleic-sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.83,
             "percent_max": 25,
             "percent_min": 0,
@@ -1647,6 +1599,7 @@
         },
         {
             "id": "en:wheat-fiber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.92,
             "percent_max": 20,
             "percent_min": 0,
@@ -1654,7 +1607,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1663,6 +1618,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.729,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1670,7 +1626,9 @@
         },
         {
             "ciqual_food_code": "22003",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.365,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1681,6 +1639,7 @@
             "ingredients": [
                 {
                     "id": "en:citrus-fruit",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0911,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
@@ -1688,6 +1647,7 @@
                 },
                 {
                     "id": "en:pea",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0456,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
@@ -1695,7 +1655,9 @@
                 },
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0228,
                     "percent_max": 3.7037037037037,
                     "percent_min": 0,
@@ -1703,6 +1665,7 @@
                 },
                 {
                     "id": "en:psyllium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0114,
                     "percent_max": 2.77777777777778,
                     "percent_min": 0,
@@ -1710,12 +1673,14 @@
                 },
                 {
                     "id": "fr:algue-brune",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.0114,
                     "percent_max": 2.22222222222222,
                     "percent_min": 0,
                     "text": "algue brune"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.182,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1724,6 +1689,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0911,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -1734,6 +1700,7 @@
             "ingredients": [
                 {
                     "id": "en:e501",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0228,
                     "percent_max": 0.26,
                     "percent_min": 0,
@@ -1741,12 +1708,14 @@
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0228,
                     "percent_max": 0.13,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0456,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -1754,6 +1723,7 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0228,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -1762,6 +1732,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0114,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -1769,6 +1740,7 @@
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0057,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -1776,6 +1748,7 @@
         },
         {
             "id": "fr:plus-d-informations-sur-ra-org",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0057,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -2149,6 +2122,31 @@
         "fr:plus-d-informations-sur-ra-org"
     ],
     "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:citrus-fruit",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:concentrated-lemon-juice",
+        "en:e501",
+        "en:e503",
+        "en:e965",
+        "en:emulsifier",
+        "en:maltodextrin",
+        "en:natural-vanilla-flavouring",
+        "en:pea",
+        "en:psyllium",
+        "en:raising-agent",
+        "en:rice-starch",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:sweetener",
+        "en:vegetable-fiber",
+        "en:wheat-fiber",
+        "fr:algue-brune",
+        "fr:chocolat-noir-de-couverture-avec-edulcorant",
+        "fr:plus-d-informations-sur-ra-org"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 54,
@@ -2617,24 +2615,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

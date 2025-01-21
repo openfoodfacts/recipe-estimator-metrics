@@ -50,7 +50,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:milk,en:nuts,en:soybeans, en:milk",
+    "allergens": "en:milk,en:nuts,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:nuts, NOISETTES, LAIT , LAIT, BEURRE , SOJA, NOISETTE, NOISETTES, LAIT, LAIT, BEURRE, SOJA, NOISETTE",
     "allergens_from_user": "(fr) en:milk,en:nuts,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -254,7 +254,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -679,45 +679,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.131148555625715,
-            "likeliest_impacts": {
-                "Climate_change": 0.871933723946875,
-                "EF_single_score": 0.071477348187679
-            },
-            "likeliest_recipe": {
-                "en:butterfat": 3.46139266090464,
-                "en:cocoa_butter": 14.6421445267976,
-                "en:cocoa_paste": 4.43489378806901,
-                "en:hazelnut": 20.3996283766825,
-                "en:hazelnut_paste": 2.27973101954932,
-                "en:skimmed_milk_powder": 10.4734127177868,
-                "en:soya_lecithin": 0.880786337004678,
-                "en:sugar": 38.7353100948509,
-                "en:vanilla": 0.120504558845371,
-                "en:water": 2.46458838436794,
-                "en:whey_powder": 4.10574941855375
-            },
-            "mass_ratio_uncharacterized": 0.0481743586893574,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:butterfat"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0481743586893574,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.1,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 32,
     "ecoscore_tags": [
@@ -1945,7 +1906,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_max": 100,
             "percent_min": 10,
@@ -1954,7 +1917,9 @@
         {
             "ciqual_food_code": "15004",
             "difference": 2.5,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 20,
             "percent_max": 50,
@@ -1964,6 +1929,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1972,6 +1938,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1979,7 +1946,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 20,
             "percent_min": 0,
@@ -1987,6 +1956,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1995,6 +1965,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2006,12 +1977,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.352,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "lécithines de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.352,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2019,7 +1992,9 @@
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2027,8 +2002,9 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme"
         }
@@ -2225,6 +2201,16 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:soya-lecithin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
     "labels": "Sans arômes artificiels, Sans conservateurs, Cocoa Life, Sans colorants, Tidy man",
@@ -2676,7 +2662,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2685,12 +2673,16 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         }

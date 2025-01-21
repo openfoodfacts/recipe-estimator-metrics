@@ -312,7 +312,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -743,60 +743,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0961245666156539,
-            "likeliest_impacts": {
-                "Climate_change": 0.0133839562732673,
-                "EF_single_score": 0.00200488400997945
-            },
-            "likeliest_recipe": {
-                "en:e101": 0.0802860833434548,
-                "en:e341": 1.29690281305726,
-                "en:e410": 0.0554890585321979,
-                "en:e418": 0.0247970248112439,
-                "en:emulsifier": 0.0802860833434548,
-                "en:ergocalciferol": 0.0802860833434585,
-                "en:hazelnut": 2.80104944754238,
-                "en:sea_salt": 0.18624819871145,
-                "en:sugar": 3.03984436246966,
-                "en:sunflower_lecithin": 0.0802860833434548,
-                "en:vitamin_b12": 0.0802860833434585,
-                "en:vitamin_e": 0.0802860833434585,
-                "en:vitamins": 0.0802860833434585,
-                "en:water": 92.0711467808424
-            },
-            "mass_ratio_uncharacterized": 0.0412216509788162,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e341",
-                    "en:vitamins",
-                    "en:e101",
-                    "en:vitamin-b12",
-                    "en:vitamin-e",
-                    "en:ergocalciferol",
-                    "en:e418",
-                    "en:e410"
-                ],
-                "nutrition": [
-                    "en:e418"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0412216509788162,
-                "nutrition": 0.00212739845661966
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.571428571428571,
-                "nutrition": 0.0714285714285714
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 57%",
-                "The impact relative interquartile is high for Climate change (26%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 69,
     "ecoscore_tags": [
@@ -2627,7 +2573,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 94.6,
             "percent_max": 100,
             "percent_min": 89.28,
@@ -2635,7 +2583,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.6,
             "percent_max": 3.2,
             "percent_min": 0,
@@ -2644,7 +2594,9 @@
         {
             "ciqual_food_code": "15004",
             "difference": 1.2,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.6,
             "percent_hidden": 2.8,
             "percent_max": 3.2,
@@ -2653,6 +2605,7 @@
         },
         {
             "id": "en:e341",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.08,
             "percent_max": 3.2,
             "percent_min": 0,
@@ -2661,6 +2614,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2671,7 +2625,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.035,
                     "percent_max": 0.14,
                     "percent_min": 0,
@@ -2679,12 +2635,14 @@
                 },
                 {
                     "id": "en:e418",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.035,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "gomme gellane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2695,12 +2653,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.07,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2708,6 +2668,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2715,6 +2676,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2722,6 +2684,7 @@
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2729,6 +2692,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2736,6 +2700,7 @@
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.59,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3027,6 +2992,20 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e101",
+        "en:e341",
+        "en:e418",
+        "en:emulsifier",
+        "en:ergocalciferol",
+        "en:sea-salt",
+        "en:stabiliser",
+        "en:sunflower-lecithin",
+        "en:vitamin-b12",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,
@@ -3635,36 +3614,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": "en:recyclable-plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-brik-aseptic"
+                    "id": {
+                        "id": "en:tetra-brik-aseptic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         }

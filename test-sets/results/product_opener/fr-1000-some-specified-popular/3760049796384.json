@@ -208,7 +208,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -632,79 +632,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0812753927932108,
-            "likeliest_impacts": {
-                "Climate_change": 0.0265883459689547,
-                "EF_single_score": 0.00584794812145802
-            },
-            "likeliest_recipe": {
-                "en:alcohol": 0.198895112778423,
-                "en:blue_poppy_seed": 2.50324696153268,
-                "en:deactivated_yeast": 0.198895112778429,
-                "en:durum_wheat_semolina": 1.49171334583822,
-                "en:e282": 0.0591354635250735,
-                "en:e300": 0,
-                "en:e412": 0.19889511277844,
-                "en:e415": 0.198895112778426,
-                "en:emulsifier": 0.198895112778429,
-                "en:millet_seed": 2.54595204341243,
-                "en:quinoa_seeds": 0.0710133702585685,
-                "en:rapeseed_lecithin": 0.189887024399259,
-                "en:rye_flour": 0.198895112778429,
-                "en:salt": 0.198895112778429,
-                "en:spelt_flour": 0.298342669167643,
-                "en:water": 29.4421114323429,
-                "en:wheat_flour": 49.7158444614984,
-                "fr:farine_d_orge_malte_toaste": 0.198895112778429,
-                "fr:graines_d_amaranthe": 2.44245730324137,
-                "fr:graines_d_cortiqu_es_de_tournesol_45___graines_de_lin_brun": 2.58098107325482,
-                "fr:huile_de_col_levure": 5.32233966184502,
-                "fr:levains_de_bl__d_vitalis_s_1_1___flocons_d__avoine_": 0.994475563892144,
-                "fr:malt_torr_fi__0_": 0.198895112778429
-            },
-            "mass_ratio_uncharacterized": 0.168563244640121,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:graines d'amaranthe",
-                    "en:e300",
-                    "en:e412",
-                    "fr:levains de blé dévitalisés 1,1 % flocons d'_avoine_",
-                    "en:e282",
-                    "en:millet-seed",
-                    "en:quinoa-seeds",
-                    "en:e415",
-                    "fr:huile de col levure",
-                    "fr:graines décortiquées de tournesol 45 % graines de lin brun",
-                    "en:deactivated-yeast",
-                    "fr:malt torréfié 0‚"
-                ],
-                "nutrition": [
-                    "fr:graines d'amaranthe",
-                    "fr:levains de blé dévitalisés 1,1 % flocons d'_avoine_",
-                    "fr:huile de col levure",
-                    "fr:graines décortiquées de tournesol 45 % graines de lin brun",
-                    "fr:malt torréfié 0‚"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.168563244640121,
-                "nutrition": 0.137577252180148
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.208333333333333
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 14%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 17%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -1330,8 +1257,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 2.2,
+            "difference": 2.17,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
             "percent_estimate": 52.2,
             "percent_hidden": 50,
@@ -1341,7 +1270,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1349,7 +1280,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.0,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1358,7 +1291,9 @@
         {
             "ciqual_food_code": "15011",
             "difference": 1.38,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.98,
             "percent_hidden": 4.6,
             "percent_max": 25,
@@ -1370,6 +1305,7 @@
             "ciqual_food_code": "9330",
             "difference": 1.09,
             "id": "en:millet-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.99,
             "percent_hidden": 1.9,
             "percent_max": 20,
@@ -1380,6 +1316,7 @@
         {
             "ciqual_food_code": "15052",
             "id": "en:brown-flax-seeds",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1388,7 +1325,9 @@
         {
             "ciqual_food_code": "9610",
             "difference": 0.853,
+            "ecobalyse_code": "durum-wheat-semolina",
             "id": "en:durum-wheat-semolina",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.747,
             "percent_hidden": 1.6,
             "percent_max": 14.2857142857143,
@@ -1397,6 +1336,7 @@
         },
         {
             "id": "fr:levain-de-ble-devitalise",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.374,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1405,6 +1345,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.187,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1412,6 +1353,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 0.0934,
             "percent_max": 1.1,
@@ -1422,6 +1364,7 @@
             "ciqual_food_code": "11061",
             "difference": 0.653,
             "id": "en:blue-poppy-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0467,
             "percent_hidden": 0.7,
             "percent_max": 1.1,
@@ -1432,6 +1375,7 @@
             "ciqual_food_code": "9311",
             "difference": 0.677,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0234,
             "percent_hidden": 0.7,
             "percent_max": 1.1,
@@ -1439,7 +1383,9 @@
             "text": "flocons d'_avoine_"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0117,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1448,7 +1394,9 @@
         {
             "ciqual_food_code": "9480",
             "difference": 0.494,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:spelt-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00584,
             "percent_hidden": 0.5,
             "percent_max": 1.1,
@@ -1459,6 +1407,7 @@
             "ciqual_food_code": "9340",
             "difference": 0.397,
             "id": "en:quinoa-seeds",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00292,
             "percent_hidden": 0.4,
             "percent_max": 1.1,
@@ -1468,6 +1417,7 @@
         {
             "difference": 0.399,
             "id": "en:e123",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00146,
             "percent_hidden": 0.4,
             "percent_max": 1.1,
@@ -1480,12 +1430,14 @@
             "ingredients": [
                 {
                     "id": "en:e282",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00073,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "propionate de calcium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00073,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1493,6 +1445,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000365,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1501,7 +1454,9 @@
         {
             "ciqual_proxy_food_code": "9532",
             "difference": 0.2,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rye-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000182,
             "percent_hidden": 0.2,
             "percent_max": 1.1,
@@ -1509,7 +1464,9 @@
             "text": "farine de _seigle_"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:deactivated-yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.12e-05,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1518,7 +1475,9 @@
         {
             "ciqual_food_code": "9550",
             "difference": 0.1,
+            "ecobalyse_proxy_code": "flour",
             "id": "fr:farine-d-orge-malte-toaste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.56e-05,
             "percent_hidden": 0.1,
             "percent_max": 1.1,
@@ -1528,7 +1487,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 0.1,
+            "ecobalyse_code": "flour",
             "id": "fr:farine-de-ble-malte-torrefie",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.28e-05,
             "percent_hidden": 0.1,
             "percent_max": 1.1,
@@ -1540,12 +1501,14 @@
             "ingredients": [
                 {
                     "id": "fr:acide-ascorbique-francais",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.28e-05,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "acide ascorbique français"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.28e-05,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1874,9 +1837,9 @@
         "acide-ascorbique"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.14,
-        "total_difference": 8.54,
+        "number_of_ingredients_without_ciqual_code": 6,
+        "relative_difference": 0.139,
+        "total_difference": 8.51,
         "total_specified_input_percent": 61.2
     },
     "ingredients_n": 25,
@@ -1980,17 +1943,34 @@
     "ingredients_with_unspecified_percent_sum": 39.2333333333333,
     "ingredients_without_ciqual_codes": [
         "en:antioxidant",
-        "en:deactivated-yeast",
         "en:e123",
         "en:e282",
         "en:natural-flavouring",
         "en:preservative",
         "en:wheat-gluten",
+        "fr:acide-ascorbique-francais",
+        "fr:levain-de-ble-devitalise"
+    ],
+    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:blue-poppy-seed",
+        "en:brown-flax-seeds",
+        "en:deactivated-yeast",
+        "en:e123",
+        "en:e282",
+        "en:millet-seed",
+        "en:natural-flavouring",
+        "en:oat-flakes",
+        "en:preservative",
+        "en:quinoa-seeds",
+        "en:salt",
+        "en:wheat-gluten",
         "en:yeast",
         "fr:acide-ascorbique-francais",
         "fr:levain-de-ble-devitalise"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 51,
@@ -2410,18 +2390,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

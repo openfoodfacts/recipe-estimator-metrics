@@ -22,7 +22,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_debug_tags": [],
     "allergens_from_ingredients": "en:milk, Lait entier, crème, lait, ferments lactiques",
     "allergens_from_user": "(fr) en:milk",
@@ -205,7 +205,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -641,46 +641,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0135538767422592,
-            "likeliest_impacts": {
-                "Climate_change": 0.188876084845271,
-                "EF_single_score": 0.016777447136394
-            },
-            "likeliest_recipe": {
-                "en:lactic_ferments": 1.63792491140313,
-                "en:milk": 15.7774938960625,
-                "en:skimmed_milk_powder": 2.05159032871409,
-                "en:water": 0.327171187729646,
-                "en:whole_milk": 109.259145230233,
-                "fr:Fabriqu__en_France_avec_du_lait_fran_ais": 2.42579024637867
-            },
-            "mass_ratio_uncharacterized": 0.0306202003031217,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lactic-ferments",
-                    "fr:Fabriqué en France avec du lait français"
-                ],
-                "nutrition": [
-                    "fr:Fabriqué en France avec du lait français"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0306202003031217,
-                "nutrition": 0.0152761570906113
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 40%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 70,
     "ecoscore_tags": [
@@ -1306,7 +1266,9 @@
         {
             "ciqual_food_code": "19023",
             "difference": 23.1,
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 83.1,
             "percent_max": 100,
@@ -1315,17 +1277,20 @@
         },
         {
             "ciqual_food_code": "19402",
-            "difference": 8,
+            "difference": 8.0,
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
-            "percent_hidden": 12,
+            "percent_hidden": 12.0,
             "percent_max": 50,
             "percent_min": 0,
             "text": "crème"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1333,6 +1298,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1340,6 +1306,7 @@
         },
         {
             "id": "fr:fabrique-en-france-avec-du-lait-francais",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -1465,6 +1432,12 @@
         "fr:fabrique-en-france-avec-du-lait-francais"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments",
+        "fr:fabrique-en-france-avec-du-lait-francais"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1856,31 +1829,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

@@ -707,53 +707,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0614186590626998,
-            "likeliest_impacts": {
-                "Climate_change": 0.336459098414016,
-                "EF_single_score": 0.0382021581573758
-            },
-            "likeliest_recipe": {
-                "de:weizenvollkornflocken": 17.580674436066,
-                "en:barley_malt_flour": 1.43972197992678,
-                "en:cane_sugar": 3.23714733502584,
-                "en:cocoa_butter": 2.38902474577445,
-                "en:cocoa_paste": 4.71540111688557,
-                "en:flax_seed": 3.61955061919005,
-                "en:high_oleic_sunflower_oil": 6.17137410080024,
-                "en:rice_flour": 7.56841268776902,
-                "en:sea_salt": 0.299281210221458,
-                "en:unrefined_cane_sugar": 12.409887837223,
-                "en:water": 0.297440410410648,
-                "en:wheat_flour": 7.2391012383801,
-                "en:whole_grain_oat_flakes": 35.1613488721319,
-                "fr:Noix_de_coco_rap_e": 1.28736538705351
-            },
-            "mass_ratio_uncharacterized": 0.183005005482684,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:Noix de coco rapée",
-                    "de:weizenvollkornflocken"
-                ],
-                "nutrition": [
-                    "fr:Noix de coco rapée"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.183005005482684,
-                "nutrition": 0.0130050054826837
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.153846153846154,
-                "nutrition": 0.0769230769230769
-            },
-            "warnings": [
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 48,
     "ecoscore_tags": [
@@ -2535,6 +2488,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_max": 100,
             "percent_min": 7.14285714285714,
@@ -2543,6 +2497,7 @@
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -2550,12 +2505,14 @@
         },
         {
             "ciqual_proxy_food_code": "31074",
-            "difference": 1.6,
+            "difference": 1.61,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.8,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -2563,7 +2520,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.9,
                     "percent_max": 15,
                     "percent_min": 0,
@@ -2572,12 +2531,14 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.9,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_hidden": 10,
             "percent_max": 33.3333333333333,
@@ -2590,13 +2551,16 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.8,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "farine de riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
@@ -2604,7 +2568,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_max": 15,
             "percent_min": 0,
@@ -2612,7 +2578,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_max": 15,
             "percent_min": 0,
@@ -2620,7 +2588,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2629,6 +2599,7 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.363,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2639,12 +2610,14 @@
             "ingredients": [
                 {
                     "id": "en:e414",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.181,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "gomme d'acacia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2652,7 +2625,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
             "percent_max": 10,
             "percent_min": 0,
@@ -2661,6 +2636,7 @@
         {
             "ciqual_proxy_food_code": "15006",
             "id": "en:coconut-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2669,6 +2645,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -2676,6 +2653,7 @@
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -2686,12 +2664,14 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0113,
                     "percent_max": 0.48,
                     "percent_min": 0,
                     "text": "extrait riche en tocophérols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -2873,8 +2853,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.16,
-        "total_difference": 1.6,
+        "relative_difference": 0.161,
+        "total_difference": 1.61,
         "total_specified_input_percent": 10
     },
     "ingredients_n": 20,
@@ -2972,6 +2952,22 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cinnamon",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:coconut-flakes",
+        "en:e306",
+        "en:e414",
+        "en:extruded-rice",
+        "en:honey",
+        "en:sea-salt",
+        "en:stabiliser",
+        "en:whole-grain-oat-flakes",
+        "en:whole-wheat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 43,
@@ -3409,7 +3405,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

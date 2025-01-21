@@ -203,7 +203,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -624,49 +624,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0938981897933368,
-            "likeliest_impacts": {
-                "Climate_change": 0.034069695826041,
-                "EF_single_score": 0.00695054580352109
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0.136689608033861,
-                "en:alcohol": 1.35375233221141,
-                "en:colza_oil": 3.72008025368409,
-                "en:salt": 1.01168194104402,
-                "en:water": 17.6161921736195,
-                "en:wheat_flour": 17.0283218631531,
-                "en:wheat_gluten": 0.927116076185503,
-                "en:whole_wheat_flour": 48.2469119456005,
-                "en:yeast": 3.59400391242361,
-                "fr:farine_de_ma_s_ferment_e": 0.967038022672803
-            },
-            "mass_ratio_uncharacterized": 0.0115542637516939,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:farine de maïs fermentée",
-                    "en:acerola-juice"
-                ],
-                "nutrition": [
-                    "fr:farine de maïs fermentée"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0115542637516939,
-                "nutrition": 0.00793345059390397
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 93,
     "ecoscore_tags": [
@@ -1044,7 +1001,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 8,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_hidden": 47,
             "percent_max": 100,
@@ -1053,7 +1012,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -1061,7 +1022,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1070,7 +1033,9 @@
         {
             "ciqual_proxy_food_code": "31016",
             "difference": 13.3,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.65,
             "percent_hidden": 16,
             "percent_max": 5.3,
@@ -1078,7 +1043,10 @@
             "text": "sugar"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.65,
             "percent_max": 5.3,
             "percent_min": 0,
@@ -1086,13 +1054,16 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.65,
             "percent_max": 5.3,
             "percent_min": 0,
             "text": "wheat gluten"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.65,
             "percent_max": 5.3,
             "percent_min": 0,
@@ -1100,15 +1071,17 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 0.825,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "aroma"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.412,
             "percent_max": 1,
             "percent_min": 0,
@@ -1116,6 +1089,7 @@
         },
         {
             "id": "en:acerela-extract",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.412,
             "percent_max": 1,
             "percent_min": 0,
@@ -1231,7 +1205,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.339,
         "total_difference": 21.4,
         "total_specified_input_percent": 63
@@ -1293,11 +1267,17 @@
     "ingredients_without_ciqual_codes": [
         "en:acerela-extract",
         "en:flavouring",
-        "en:rapeseed-oil",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerela-extract",
+        "en:flavouring",
+        "en:salt",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -1806,7 +1786,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": "en:fastener"
+                    }
                 }
             }
         }

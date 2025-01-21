@@ -226,7 +226,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1222,66 +1222,98 @@
     ],
     "ingredients": [
         {
-            "difference": 0.1,
+            "difference": 3.75,
             "id": "en:cereal",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.0,
+                    "difference": 5.85,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 34.7,
-                    "percent_estimate": 34.7,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 28.8,
+                    "percent_hidden": 34.7,
+                    "percent_max": 100,
+                    "percent_min": 3.84615384615385,
                     "text": "farine de _blé_"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.1,
+                    "difference": 9.6,
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
-                    "percent": 15.4,
-                    "percent_estimate": 15.3,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 15.4,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "farine complète de _blé_"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.8,
             "percent_hidden": 50.1,
+            "percent_max": 100,
+            "percent_min": 7.69230769230769,
             "text": "Céréale"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 16.0,
+            "percent_max": 32,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 15.1,
+            "percent_max": 32,
+            "percent_min": 0,
             "text": "huile végétales de palme"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 7.54,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "huile végétales de colza"
         },
         {
             "ciqual_food_code": "18100",
-            "difference": 1.38,
+            "difference": 0.731,
             "id": "en:fat-reduced-cocoa-powder",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.77,
             "percent_hidden": 4.5,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "cacao maigre en poudre"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.88,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "sirop de glucose"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.942,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "amidon de _blé_"
         },
         {
@@ -1289,21 +1321,33 @@
             "ingredients": [
                 {
                     "id": "en:e503ii",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.236,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "carbonate acide d'ammonium"
                 },
                 {
                     "id": "en:e500i",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.118,
+                    "percent_max": 6.25,
+                    "percent_min": 0,
                     "text": "carbonate de sodium"
                 },
                 {
                     "id": "en:e450i",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.118,
+                    "percent_max": 4.16666666666667,
+                    "percent_min": 0,
                     "text": "diphosphate disodique"
                 }
             ],
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.471,
+            "percent_max": 12.5,
+            "percent_min": 0,
             "text": "poudre à lever"
         },
         {
@@ -1312,38 +1356,60 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.118,
+                    "percent_max": 11.1111111111111,
+                    "percent_min": 0,
                     "text": "lécithine de _soja_"
                 },
                 {
                     "id": "en:sunflower-lecithin",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.118,
+                    "percent_max": 5.55555555555556,
+                    "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.236,
+            "percent_max": 11.1111111111111,
+            "percent_min": 0,
             "text": "émulsifiants"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.118,
+            "percent_max": 0.49,
+            "percent_min": 0,
             "text": "sel"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0589,
+            "percent_max": 0.49,
+            "percent_min": 0,
             "text": "_lait_ écrémé en poudre"
         },
         {
             "id": "en:lactose-and-milk-proteins",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0294,
+            "percent_max": 0.49,
+            "percent_min": 0,
             "text": "lactose et protéines de lait"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0294,
+            "percent_max": 0.49,
+            "percent_min": 0,
             "text": "arôme"
         }
     ],
@@ -1578,8 +1644,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.0151,
-        "total_difference": 1.58,
+        "relative_difference": 0.19,
+        "total_difference": 19.9,
         "total_specified_input_percent": 105.0
     },
     "ingredients_n": 20,
@@ -1609,7 +1675,7 @@
         "en:soya-lecithin",
         "en:sunflower-lecithin"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:cereal",
         "en:sugar",
@@ -1685,6 +1751,23 @@
         "en:sunflower-lecithin"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cereal",
+        "en:e450i",
+        "en:e500i",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:glucose-syrup",
+        "en:lactose-and-milk-proteins",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:sunflower-lecithin",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 47,
@@ -1758,8 +1841,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2111,12 +2193,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

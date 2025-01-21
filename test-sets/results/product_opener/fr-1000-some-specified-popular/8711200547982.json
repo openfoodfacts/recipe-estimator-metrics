@@ -215,7 +215,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -649,56 +649,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0386780012617666,
-            "likeliest_impacts": {
-                "Climate_change": 0.185409909229004,
-                "EF_single_score": 0.0341310047068554
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 0.0829339453976523,
-                "en:colza_oil": 33.7944307522879,
-                "en:e1400": 1.6855374872685,
-                "en:e160c": 0.00213316134019701,
-                "en:e161b": 0.107688294807259,
-                "en:e415": 1.59883139842601,
-                "en:flavouring": 1.59883139842601,
-                "en:free_range_chicken_egg_yolk": 5.0758817255732,
-                "en:mustard_seed": 0.0829339453976523,
-                "en:salt": 2.14770385151119,
-                "en:sugar": 1.75944098947966,
-                "en:sunflower_oil": 33.7944307522879,
-                "en:water": 10.8603215151463,
-                "en:white_wine_vinegar": 6.93599344094861
-            },
-            "mass_ratio_uncharacterized": 0.0359209883972246,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:e161b",
-                    "en:e1400",
-                    "en:e160c",
-                    "en:e415"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0359209883972246,
-                "nutrition": 0.0106619866089378
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3125,
-                "nutrition": 0.0625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 31%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 46,
     "ecoscore_tags": [
@@ -1616,14 +1566,19 @@
     "ingredients": [
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_max": 100,
             "percent_min": 7.69230769230769,
             "text": "sunflower vegetable oils"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_max": 50,
             "percent_min": 0,
@@ -1632,6 +1587,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:white-wine-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1639,7 +1595,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.77,
             "percent_max": 25,
             "percent_min": 0,
@@ -1651,7 +1609,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.44,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1660,6 +1620,7 @@
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.721,
                     "percent_max": 10,
                     "percent_min": 0,
@@ -1668,6 +1629,7 @@
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:spirit-vinegar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.361,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
@@ -1676,12 +1638,14 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.361,
                     "percent_max": 1.8,
                     "percent_min": 0,
                     "text": "salt"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.88,
             "percent_max": 20,
             "percent_min": 0,
@@ -1689,6 +1653,7 @@
         },
         {
             "id": "en:egg-yolk-from-hens-raised-outdoors",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.44,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1697,6 +1662,7 @@
         {
             "difference": 4.38,
             "id": "en:or",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.721,
             "percent_hidden": 5.1,
             "percent_max": 14.2857142857143,
@@ -1706,6 +1672,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.361,
             "percent_max": 1.8,
             "percent_min": 0,
@@ -1713,7 +1680,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.18,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1721,6 +1690,7 @@
         },
         {
             "id": "en:e1400",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0901,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1731,12 +1701,14 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0451,
                     "percent_max": 1.5,
                     "percent_min": 0,
                     "text": "xanthan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0451,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1744,6 +1716,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0225,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1754,6 +1727,7 @@
             "ingredients": [
                 {
                     "id": "en:e161b",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0113,
                     "percent_max": 1.5,
                     "percent_min": 0,
@@ -1761,12 +1735,14 @@
                 },
                 {
                     "id": "en:e160c",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0113,
                     "percent_max": 0.75,
                     "percent_min": 0,
                     "text": "paprika extract"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0225,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1949,7 +1925,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 8,
+        "number_of_ingredients_without_ciqual_code": 7,
         "relative_difference": 0.859,
         "total_difference": 4.38,
         "total_specified_input_percent": 5.1
@@ -2035,10 +2011,26 @@
         "en:egg-yolk-from-hens-raised-outdoors",
         "en:flavouring",
         "en:or",
-        "en:rapeseed-oil",
         "en:thickener"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:dijon-mustard",
+        "en:e1400",
+        "en:e160c",
+        "en:e161b",
+        "en:e415",
+        "en:egg-yolk-from-hens-raised-outdoors",
+        "en:flavouring",
+        "en:mustard-seed",
+        "en:or",
+        "en:salt",
+        "en:spirit-vinegar",
+        "en:thickener",
+        "en:white-wine-vinegar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2537,26 +2529,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

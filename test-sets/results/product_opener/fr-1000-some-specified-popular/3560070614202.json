@@ -276,7 +276,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -713,34 +713,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 1.33226762955019e-15,
-            "likeliest_impacts": {
-                "Climate_change": 0.0942654878227979,
-                "EF_single_score": 0.0230120275262176
-            },
-            "likeliest_recipe": {
-                "en:water": 0,
-                "en:whole_grain_oat_flakes": 100.082901554404
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -2171,6 +2143,7 @@
             "ciqual_food_code": "9311",
             "difference": 0,
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -2264,6 +2237,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:whole-grain-oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 4,
@@ -2838,7 +2815,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2847,12 +2826,16 @@
             "quantity_per_unit_value": 500,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 32.5
@@ -2860,7 +2843,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2869,12 +2854,16 @@
             "quantity_per_unit_value": 500,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 9.4

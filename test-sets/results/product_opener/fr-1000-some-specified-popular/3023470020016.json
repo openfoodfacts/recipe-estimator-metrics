@@ -246,7 +246,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -681,49 +681,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0166926984414027,
-            "likeliest_impacts": {
-                "Climate_change": 0.521581681638432,
-                "EF_single_score": 0.0432171315284345
-            },
-            "likeliest_recipe": {
-                "en:butter": 33.4178353120305,
-                "en:e330": 0.0624845304660678,
-                "en:e500": 0.0624845304660678,
-                "en:e503": 0.500573196509957,
-                "en:free_range_chicken_eggs": 5.28217396867579,
-                "en:salt": 0.625542257442097,
-                "en:sugar": 13.9486405786523,
-                "en:water": 0,
-                "en:wheat_flour": 53.8997343742428
-            },
-            "mass_ratio_uncharacterized": 0.00923179475959267,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e503",
-                    "en:e330",
-                    "en:e500"
-                ],
-                "nutrition": [
-                    "en:free-range-chicken-eggs"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00923179475959267,
-                "nutrition": 0.0490000001632249
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.375,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 38%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 62,
     "ecoscore_tags": [
@@ -1895,7 +1852,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 3,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_hidden": 52,
             "percent_max": 100,
@@ -1905,7 +1864,9 @@
         {
             "ciqual_proxy_food_code": "16400",
             "difference": 7.5,
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 30,
             "percent_max": 50,
@@ -1914,7 +1875,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 26,
             "percent_min": 0,
@@ -1922,7 +1885,9 @@
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1931,6 +1896,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1941,12 +1907,14 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.55,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1954,6 +1922,7 @@
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1961,6 +1930,7 @@
         },
         {
             "id": "en:e330",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1968,6 +1938,7 @@
         },
         {
             "id": "fr:tenir-au-sec",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1975,6 +1946,7 @@
         },
         {
             "id": "fr:a-l-abri-de-la-chaleur-et-de-la-lumiere",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.88,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2154,6 +2126,16 @@
         "fr:tenir-au-sec"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e330",
+        "en:e500",
+        "en:e503",
+        "en:raising-agent",
+        "en:salt",
+        "fr:a-l-abri-de-la-chaleur-et-de-la-lumiere",
+        "fr:tenir-au-sec"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 16,
@@ -2621,18 +2603,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 3,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 0.87
@@ -2640,7 +2628,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2649,12 +2639,16 @@
             "quantity_per_unit_value": 150,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 30

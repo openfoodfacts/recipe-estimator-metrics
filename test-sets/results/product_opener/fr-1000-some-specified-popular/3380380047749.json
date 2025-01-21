@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -625,43 +625,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0104961710369278,
-            "likeliest_impacts": {
-                "Climate_change": 0.0549793878951899,
-                "EF_single_score": 0.0112098852295021
-            },
-            "likeliest_recipe": {
-                "en:buckwheat_flour": 102.628116648993,
-                "en:lt": 2.10303659970797,
-                "en:sea_salt": 0.323781080391608,
-                "en:water": 0.0968956563062874
-            },
-            "mass_ratio_uncharacterized": 0.02,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lt"
-                ],
-                "nutrition": [
-                    "en:lt"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.02,
-                "nutrition": 0.02
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1760,36 +1723,41 @@
     "ingredients": [
         {
             "ciqual_food_code": "9540",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 97.7,
-            "percent_max": 98,
-            "percent_min": 97.32,
+            "percent_estimate": 74.7,
+            "percent_max": 100,
+            "percent_min": 49.32,
             "text": "buckwheat flour"
         },
         {
             "id": "en:cane-sugar-complete",
             "ingredients": [
                 {
-                    "difference": 0,
+                    "difference": 10.7,
                     "id": "en:lt",
-                    "percent": 2,
-                    "percent_estimate": 2,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 12.7,
+                    "percent_hidden": 2,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "lt"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
-            "percent_estimate": 2,
-            "percent_max": 2,
-            "percent_min": 2,
+            "percent_estimate": 12.7,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "cane sugar complete"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 0.34,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 12.7,
             "percent_max": 0.68,
             "percent_min": 0,
             "text": "sea salt"
@@ -1866,8 +1834,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0,
-        "total_difference": 0,
+        "relative_difference": 5.33,
+        "total_difference": 10.7,
         "total_specified_input_percent": 2
     },
     "ingredients_n": 4,
@@ -1910,6 +1878,12 @@
         "en:lt"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cane-sugar-complete",
+        "en:lt",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
     "labels": "No gluten, Organic, Vegetarian, EU Organic, Kosher, Vegan, EU Agriculture, FR-BIO-01, Green Dot, Nutriscore, Nutriscore Grade A, The Vegan Society, AB Agriculture Biologique, fr:K",
@@ -2014,8 +1988,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-missing-data-no-packagings",
-        "en:ecoscore-computed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-computed"
     ],
     "new_additives_n": 0,
     "no_nutrition_data": "null",

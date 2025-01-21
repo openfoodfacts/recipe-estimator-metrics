@@ -250,7 +250,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -682,62 +682,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.191197078111183,
-            "likeliest_impacts": {
-                "Climate_change": 0.685723592009134,
-                "EF_single_score": 0.0500908993792928
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 3.97423506355046,
-                "en:cocoa_paste": 16.7496494789762,
-                "en:dextrose": 3.98150728210171,
-                "en:e500ii": 2.03197577013274,
-                "en:e503ii": 2.03197577013274,
-                "en:flavouring": 3.84375316715609,
-                "en:fructose_syrup": 3.82585729207847,
-                "en:glucose_syrup": 3.84375316715616,
-                "en:high_oleic_sunflower_oil": 3.84375316715618,
-                "en:oat": 20.8236339102338,
-                "en:salt": 0,
-                "en:soya_lecithin": 3.84375316715617,
-                "en:sugar": 18.6051502483057,
-                "en:water": 0.0577437165849265,
-                "en:whole_wheat_flour": 20.8236339102338
-            },
-            "mass_ratio_uncharacterized": 0.16591683274848,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e503ii",
-                    "en:e500ii",
-                    "en:flavouring",
-                    "en:dextrose",
-                    "en:glucose-syrup"
-                ],
-                "nutrition": [
-                    "en:dextrose",
-                    "en:glucose-syrup",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.16591683274848,
-                "nutrition": 0.132939175283959
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.357142857142857,
-                "nutrition": 0.214285714285714
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 36%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 17%",
-                "The impact relative interquartile is high for Climate change (30%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 61,
     "ecoscore_tags": [
@@ -1596,6 +1540,7 @@
             "ciqual_food_code": "9311",
             "difference": 22.2,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_hidden": 34,
             "percent_max": 100,
@@ -1604,8 +1549,10 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0.1,
+            "difference": 0.125,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_hidden": 22,
             "percent_max": 50,
@@ -1613,12 +1560,14 @@
             "text": "whole wheat flour"
         },
         {
-            "difference": 4.1,
+            "difference": 4.06,
             "id": "en:dark-chocolate-drops",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.47,
                     "percent_max": 22,
                     "percent_min": 0,
@@ -1627,6 +1576,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.73,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1635,6 +1585,7 @@
                 {
                     "ciqual_proxy_food_code": "31016",
                     "id": "en:dextrose",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.37,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
@@ -1643,6 +1594,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.684,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
@@ -1654,12 +1606,14 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.342,
                             "percent_max": 6.66666666666667,
                             "percent_min": 0,
                             "text": "soy lecithin"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.342,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
@@ -1667,12 +1621,14 @@
                 },
                 {
                     "id": "en:flavouring",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.342,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
                     "text": "flavourings"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 10.9,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
@@ -1685,13 +1641,16 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:high-oleic-sunflower",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.47,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "high oleic sunflower"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_hidden": 14.5,
             "percent_max": 25,
@@ -1700,7 +1659,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_max": 20,
             "percent_min": 0,
@@ -1709,6 +1670,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1719,6 +1681,7 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.342,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
@@ -1726,12 +1689,14 @@
                 },
                 {
                     "id": "en:ammonium-acid-carbonate",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.342,
                     "percent_max": 7.14285714285714,
                     "percent_min": 0,
                     "text": "ammonium acid carbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1740,6 +1705,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_max": 1,
             "percent_min": 0,
@@ -1924,8 +1890,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.414,
-        "total_difference": 35.4,
+        "relative_difference": 0.415,
+        "total_difference": 35.5,
         "total_specified_input_percent": 85.5
     },
     "ingredients_n": 18,
@@ -2018,6 +1984,23 @@
         "en:vegetable-oil"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:ammonium-acid-carbonate",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:dark-chocolate-drops",
+        "en:dextrose",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:glucose-fructose-syrup",
+        "en:oat-flakes",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -2488,26 +2471,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": "en:Container"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

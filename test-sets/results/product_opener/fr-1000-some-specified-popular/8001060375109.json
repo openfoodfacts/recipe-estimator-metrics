@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -628,58 +628,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0482371474113134,
-            "likeliest_impacts": {
-                "Climate_change": 0.156363218955395,
-                "EF_single_score": 0.0245610250607473
-            },
-            "likeliest_recipe": {
-                "en:basil": 46.8704081644059,
-                "en:cashew_nuts": 1.63830843404676,
-                "en:e270": 0.167663387827885,
-                "en:extra_virgin_olive_oil": 2.75712083373324,
-                "en:garlic": 1.62456824180227,
-                "en:glucose_syrup": 0.547025256534865,
-                "en:grana_padano": 1.8259088686016,
-                "en:natural_flavouring": 2.86252712423398,
-                "en:pecorino_romano": 1.69349461971403,
-                "en:pine_nuts": 1.63830843404676,
-                "en:potato": 1.62456824180227,
-                "en:sea_salt": 3.51148383168422,
-                "en:sunflower_oil": 30.7640761112089,
-                "en:vegetable_fiber": 0.232900890413611,
-                "en:water": 1.96591025016901
-            },
-            "mass_ratio_uncharacterized": 0.0806415312812076,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:pecorino-romano",
-                    "en:vegetable-fiber",
-                    "en:glucose-syrup",
-                    "en:e270",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0806415312812076,
-                "nutrition": 0.0431260466592776
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.357142857142857,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 36%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 39,
     "ecoscore_tags": [
@@ -1558,8 +1506,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "11033",
-            "difference": 7.6,
+            "difference": 7.57,
             "id": "en:basil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_hidden": 46,
             "percent_max": 100,
@@ -1572,7 +1521,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.6,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1580,13 +1531,16 @@
                 },
                 {
                     "ciqual_proxy_food_code": "17270",
+                    "ecobalyse_code": "olive-oil-eu",
                     "id": "en:olive-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.6,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "olive oil"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1598,6 +1552,7 @@
                 {
                     "ciqual_proxy_food_code": "12999",
                     "id": "en:cheese",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.8,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1606,6 +1561,7 @@
                 {
                     "ciqual_food_code": "12120",
                     "id": "en:parmigiano-reggiano",
+                    "is_in_taxonomy": 1,
                     "labels": "en:pdo",
                     "percent_estimate": 2.9,
                     "percent_max": 16.6666666666667,
@@ -1615,6 +1571,7 @@
                 {
                     "ciqual_proxy_food_code": "12999",
                     "id": "en:pecorino-romano",
+                    "is_in_taxonomy": 1,
                     "labels": "en:pdo",
                     "percent_estimate": 2.9,
                     "percent_max": 11.1111111111111,
@@ -1622,6 +1579,7 @@
                     "text": "pecorino romano cheese"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1629,7 +1587,9 @@
         },
         {
             "ciqual_proxy_food_code": "17270",
+            "ecobalyse_code": "olive-oil-eu",
             "id": "en:olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
@@ -1638,6 +1598,7 @@
         {
             "ciqual_proxy_food_code": "15055",
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_max": 20,
             "percent_min": 0,
@@ -1646,6 +1607,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_max": 3,
             "percent_min": 0,
@@ -1654,6 +1616,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 3,
             "percent_min": 0,
@@ -1661,7 +1624,9 @@
         },
         {
             "ciqual_food_code": "4003",
+            "ecobalyse_code": "potato-industry-fr",
             "id": "en:potato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.363,
             "percent_max": 3,
             "percent_min": 0,
@@ -1669,6 +1634,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_max": 3,
             "percent_min": 0,
@@ -1677,6 +1643,7 @@
         {
             "ciqual_food_code": "15025",
             "id": "en:pine-nuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
             "percent_max": 3,
             "percent_min": 0,
@@ -1687,12 +1654,14 @@
             "ingredients": [
                 {
                     "id": "en:e270",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0453,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "lactic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
             "percent_max": 3,
             "percent_min": 0,
@@ -1700,6 +1669,7 @@
         },
         {
             "id": "en:natural-garlic-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
             "percent_max": 3,
             "percent_min": 0,
@@ -1707,7 +1677,9 @@
         },
         {
             "ciqual_food_code": "17270",
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 3,
             "percent_min": 0,
@@ -1715,6 +1687,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 3,
             "percent_min": 0,
@@ -1889,7 +1862,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.165,
-        "total_difference": 7.6,
+        "total_difference": 7.57,
         "total_specified_input_percent": 46
     },
     "ingredients_n": 20,
@@ -1982,6 +1955,24 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:basil",
+        "en:cashew-nuts",
+        "en:cheese",
+        "en:cheeses-milk",
+        "en:e270",
+        "en:flavouring",
+        "en:glucose",
+        "en:natural-garlic-flavouring",
+        "en:parmigiano-reggiano",
+        "en:pecorino-romano",
+        "en:pine-nuts",
+        "en:salt",
+        "en:spice",
+        "en:vegetable-oil-blend"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -2385,31 +2376,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

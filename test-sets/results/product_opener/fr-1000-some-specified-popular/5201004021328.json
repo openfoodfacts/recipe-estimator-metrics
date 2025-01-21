@@ -235,7 +235,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -662,68 +662,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0377981575178054,
-            "likeliest_impacts": {
-                "Climate_change": 0.237387287146786,
-                "EF_single_score": 0.0216958135939085
-            },
-            "likeliest_recipe": {
-                "en:antioxidant": 0.046516717547503,
-                "en:cocoa": 3.4867126976082,
-                "en:e150a": 0.0465167175475042,
-                "en:e420ii": 0.0465167175475041,
-                "en:fiber": 0.046516717547503,
-                "en:flavouring": 0.046516717547503,
-                "en:fructose": 0.046516717547503,
-                "en:hazelnut": 5.97722176732833,
-                "en:lactose": 13.9526043578313,
-                "en:milk_proteins": 0.0465167175475041,
-                "en:palm_kernel_oil": 3.79311647943145,
-                "en:palm_oil": 9.67544215660804,
-                "en:salt": 0.046516717547503,
-                "en:shea_butter": 0.814915424067815,
-                "en:skimmed_milk_powder": 0.046516717547503,
-                "en:soya_lecithin": 0.046516717547503,
-                "en:starch": 0.0465167175475041,
-                "en:sugar": 42.495123463311,
-                "en:water": 3.64885077356582,
-                "en:wheat_flour": 15.2646917760312
-            },
-            "mass_ratio_uncharacterized": 0.13165159552071,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:milk-proteins",
-                    "en:flavouring",
-                    "en:e150a",
-                    "en:lactose",
-                    "en:fiber",
-                    "en:antioxidant",
-                    "en:e420ii",
-                    "en:shea-butter"
-                ],
-                "nutrition": [
-                    "en:antioxidant",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.13165159552071,
-                "nutrition": 0.00389300807118966
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.421052631578947,
-                "nutrition": 0.105263157894737
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 42%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 35,
     "ecoscore_tags": [
@@ -1243,7 +1181,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.9,
             "percent_max": 100,
             "percent_min": 5.88235294117647,
@@ -1251,7 +1191,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -1262,7 +1204,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.88,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1270,19 +1214,23 @@
                 },
                 {
                     "id": "en:palm-kernel-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.94,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "palm kernel oil"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.94,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "shea"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1290,6 +1238,7 @@
         },
         {
             "id": "en:lactose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.88,
             "percent_max": 25,
             "percent_min": 0,
@@ -1298,7 +1247,9 @@
         {
             "ciqual_food_code": "15004",
             "difference": 3.06,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.94,
             "percent_hidden": 6,
             "percent_max": 20,
@@ -1310,6 +1261,7 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 2.03,
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.47,
             "percent_hidden": 3.5,
             "percent_max": 16.6666666666667,
@@ -1319,6 +1271,7 @@
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.735,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1329,12 +1282,14 @@
             "ingredients": [
                 {
                     "id": "en:e420ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.368,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "sorbitol syrup"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.368,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1343,6 +1298,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.184,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1351,6 +1307,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0919,
             "percent_max": 10,
             "percent_min": 0,
@@ -1358,7 +1315,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.046,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1369,12 +1328,14 @@
             "ingredients": [
                 {
                     "id": "en:e150a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.023,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "ammonia caramel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.023,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1382,6 +1343,7 @@
         },
         {
             "id": "en:fiber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0115,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1390,6 +1352,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00574,
             "percent_max": 0.39,
             "percent_min": 0,
@@ -1401,12 +1364,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00287,
                     "percent_max": 0.39,
                     "percent_min": 0,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00287,
             "percent_max": 0.39,
             "percent_min": 0,
@@ -1417,6 +1382,7 @@
             "ingredients": [
                 {
                     "id": "en:palmitate-ascorbyle",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.000718,
                     "percent_max": 0.39,
                     "percent_min": 0,
@@ -1424,12 +1390,14 @@
                 },
                 {
                     "id": "en:extracts-rich-in-tocopherols",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.000718,
                     "percent_max": 0.195,
                     "percent_min": 0,
                     "text": "extracts rich in tocopherols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00144,
             "percent_max": 0.39,
             "percent_min": 0,
@@ -1437,6 +1405,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00144,
             "percent_max": 0.39,
             "percent_min": 0,
@@ -1699,7 +1668,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 10,
+        "number_of_ingredients_without_ciqual_code": 9,
         "relative_difference": 0.536,
         "total_difference": 5.09,
         "total_specified_input_percent": 9.5
@@ -1814,11 +1783,33 @@
         "en:milk-proteins",
         "en:palm-kernel-oil",
         "en:palmitate-ascorbyle",
-        "en:shea-butter",
         "en:stabiliser",
         "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cocoa",
+        "en:colour",
+        "en:e150a",
+        "en:e420ii",
+        "en:emulsifier",
+        "en:extracts-rich-in-tocopherols",
+        "en:fiber",
+        "en:flavouring",
+        "en:fructose",
+        "en:lactose",
+        "en:milk-proteins",
+        "en:palm-kernel-oil",
+        "en:palmitate-ascorbyle",
+        "en:salt",
+        "en:shea-butter",
+        "en:soya-lecithin",
+        "en:stabiliser",
+        "en:starch",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -2255,18 +2246,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

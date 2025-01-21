@@ -224,7 +224,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -651,50 +651,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00580399997089284,
-            "likeliest_impacts": {
-                "Climate_change": 0.152084174338263,
-                "EF_single_score": 0.0237537139897684
-            },
-            "likeliest_recipe": {
-                "en:colour": 0.663233301397413,
-                "en:flavouring": 1.15583873943871,
-                "en:flax": 5.49693383044874,
-                "en:palm": 1.18287584170069,
-                "en:palm_kernel_oil": 15.6133108624481,
-                "en:rapeseed": 30.640316351205,
-                "en:sea_salt": 1.32333592214507,
-                "en:soya_lecithin": 1.30600481646737,
-                "en:thiamin": 0.640748356907194,
-                "en:water": 43.7724729120776
-            },
-            "mass_ratio_uncharacterized": 0.0170715161009876,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:thiamin",
-                    "en:colour"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0170715161009876,
-                "nutrition": 0.00686153572217237
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 30%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 50,
     "ecoscore_tags": [
@@ -1090,62 +1046,81 @@
     ],
     "ingredients": [
         {
-            "difference": 6.1,
-            "id": "fr:huiles-et-stearines-vegetales",
+            "difference": 5.25,
+            "id": "en:oil",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 56.2,
+            "percent_hidden": 51,
+            "percent_max": 100,
+            "percent_min": 12.5,
+            "text": "Huiles"
+        },
+        {
+            "difference": 29.1,
+            "id": "fr:stearines-vegetales",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "difference": 0,
-                    "id": "en:colza-oil",
-                    "percent": 30,
-                    "percent_estimate": 30,
-                    "percent_max": 30,
-                    "percent_min": 30,
+                    "difference": 19.1,
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10.9,
+                    "percent_hidden": 30,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "colza"
                 },
                 {
                     "id": "en:palm-kernel-oil",
-                    "percent_estimate": 16.3,
-                    "percent_max": 30,
-                    "percent_min": 5.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.47,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "palmiste"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 2.67,
                     "id": "en:flax",
-                    "percent": 5.4,
-                    "percent_estimate": 5.4,
-                    "percent_max": 5.4,
-                    "percent_min": 5.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.73,
+                    "percent_hidden": 5.4,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "lin"
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
-                    "percent_estimate": 5.47,
-                    "percent_max": 5.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.73,
+                    "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "palme"
                 }
             ],
-            "percent_estimate": 57.1,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 21.9,
             "percent_hidden": 51,
-            "percent_max": 70.8,
-            "percent_min": 43.5,
-            "text": "Huiles et stéarines végétales"
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "stéarines végétales"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 32.8,
-            "percent_max": 50,
-            "percent_min": 22.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10.9,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "eau"
         },
         {
             "ciqual_food_code": "11082",
             "difference": 0.65,
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.65,
             "percent_hidden": 1.3,
             "percent_max": 1.3,
@@ -1158,12 +1133,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.65,
                     "percent_max": 1.3,
                     "percent_min": 0,
                     "text": "lécithine de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.65,
             "percent_max": 1.3,
             "percent_min": 0,
@@ -1171,6 +1148,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.65,
             "percent_max": 1.3,
             "percent_min": 0,
@@ -1181,12 +1159,14 @@
             "ingredients": [
                 {
                     "id": "en:e160ai",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.65,
                     "percent_max": 1.3,
                     "percent_min": 0,
                     "text": "bêta-carotène"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.65,
             "percent_max": 1.3,
             "percent_min": 0,
@@ -1194,7 +1174,8 @@
         },
         {
             "id": "en:thiamin",
-            "percent_estimate": 7.47,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 8.34,
             "percent_max": 1.3,
             "percent_min": 0,
             "text": "vitamine B1"
@@ -1253,10 +1234,10 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.077,
-        "total_difference": 6.75,
-        "total_specified_input_percent": 87.7
+        "number_of_ingredients_without_ciqual_code": 7,
+        "relative_difference": 0.409,
+        "total_difference": 56.8,
+        "total_specified_input_percent": 139.0
     },
     "ingredients_n": 13,
     "ingredients_n_tags": [
@@ -1325,11 +1306,27 @@
         "en:emulsifier",
         "en:flavouring",
         "en:flax",
+        "en:oil",
         "en:palm-kernel-oil",
+        "en:rapeseed",
         "en:thiamin",
-        "fr:huiles-et-stearines-vegetales"
+        "fr:stearines-vegetales"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:colour",
+        "en:e160ai",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:flax",
+        "en:oil",
+        "en:palm-kernel-oil",
+        "en:sea-salt",
+        "en:soya-lecithin",
+        "en:thiamin",
+        "fr:stearines-vegetales"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -1408,8 +1405,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1805,7 +1801,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         }

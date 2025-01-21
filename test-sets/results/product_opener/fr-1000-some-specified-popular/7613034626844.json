@@ -321,7 +321,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -759,42 +759,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.28895495274793,
-            "likeliest_impacts": {
-                "Climate_change": 0.135061890743973,
-                "EF_single_score": 0.0158918641142388
-            },
-            "likeliest_recipe": {
-                "en:barley": 1.32591050970549,
-                "en:cocoa_powder": 3.39913871705943,
-                "en:cornmeal": 16.6133312166688,
-                "en:e101": 0.103105546912652,
-                "en:e170i": 1.27979574445803,
-                "en:e375": 0.103105546912654,
-                "en:folic_acid": 0.103105546912652,
-                "en:glucose_syrup": 2.61178276859323,
-                "en:iron": 0.103105546912653,
-                "en:malted_barley": 0.0380260447803029,
-                "en:natural_flavouring": 0.121473154974674,
-                "en:pantothenic_acid": 0.103105546912653,
-                "en:salt": 0.261239994428095,
-                "en:sugar": 21.9331701618572,
-                "en:sunflower_lecithin": 1.06218750519969,
-                "en:sunflower_oil": 1.36393655448579,
-                "en:thiamin": 0.103105546912652,
-                "en:vitamin_b6": 0.103105546912652,
-                "en:vitamin_d": 0.103105546912653,
-                "en:vitamins": 0.103105546912653,
-                "en:water": 1.30890439523413,
-                "en:wheat_flour": 17.6609059232649,
-                "en:whole_wheat": 35.2166874065104
-            },
-            "mass_ratio_uncharacterized": 0.0858076449377951
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -3091,8 +3055,9 @@
             "ciqual_food_code": "9010",
             "difference": 17.3,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.3,
-            "percent_hidden": 35,
+            "percent_hidden": 35.0,
             "percent_max": 100,
             "percent_min": 4.54545454545455,
             "text": "Blé complet"
@@ -3104,7 +3069,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.2,
                     "percent_max": 22.4,
                     "percent_min": 0,
@@ -3113,12 +3080,14 @@
                 {
                     "ciqual_food_code": "18100",
                     "id": "en:cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.2,
                     "percent_max": 22.4,
                     "percent_min": 0,
                     "text": "cacao en poudre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.4,
             "percent_hidden": 22.5,
             "percent_max": 44.8,
@@ -3127,10 +3096,12 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 4.3,
+            "difference": 4.34,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.7,
-            "percent_hidden": 17,
+            "percent_hidden": 17.0,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "farine de blé"
@@ -3138,6 +3109,7 @@
         {
             "ciqual_food_code": "9615",
             "id": "en:cornmeal",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.33,
             "percent_max": 25,
             "percent_min": 0,
@@ -3146,6 +3118,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.17,
             "percent_max": 20,
             "percent_min": 0,
@@ -3153,7 +3126,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.58,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -3164,6 +3139,7 @@
             "ingredients": [
                 {
                     "id": "en:barley",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.396,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
@@ -3171,19 +3147,24 @@
                 },
                 {
                     "id": "en:malted-barley",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.396,
                     "percent_max": 7.14285714285714,
                     "percent_min": 0,
                     "text": "orge malté"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.791,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "extrait de malt d'orge"
         },
         {
-            "id": "fr:contient-de-l-huile-de-tournesol",
+            "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
+            "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.396,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -3191,7 +3172,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.198,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -3199,6 +3182,7 @@
         },
         {
             "id": "en:e170i",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0989,
             "percent_max": 10,
             "percent_min": 0,
@@ -3209,12 +3193,14 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0495,
                     "percent_max": 9.09090909090909,
                     "percent_min": 0,
                     "text": "lécithines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0495,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -3223,6 +3209,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0247,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3230,6 +3217,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0124,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3237,6 +3225,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00618,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3244,6 +3233,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00309,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3251,6 +3241,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00155,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3258,6 +3249,7 @@
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000773,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3265,6 +3257,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000386,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3272,6 +3265,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000193,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3279,6 +3273,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.66e-05,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3286,6 +3281,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.83e-05,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3293,6 +3289,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.83e-05,
             "percent_max": 0.22,
             "percent_min": 0,
@@ -3456,7 +3453,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 15,
+        "number_of_ingredients_without_ciqual_code": 14,
         "relative_difference": 0.291,
         "total_difference": 21.7,
         "total_specified_input_percent": 74.5
@@ -3575,10 +3572,34 @@
         "en:thiamin",
         "en:vitamin-b6",
         "en:vitamin-d",
-        "en:vitamins",
-        "fr:contient-de-l-huile-de-tournesol"
+        "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 17,
+    "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley",
+        "en:barley-malt-extract",
+        "en:chocolate-powder",
+        "en:cocoa-powder",
+        "en:cornmeal",
+        "en:e101",
+        "en:e170i",
+        "en:e322",
+        "en:e375",
+        "en:emulsifier",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:iron",
+        "en:malted-barley",
+        "en:natural-flavouring",
+        "en:pantothenic-acid",
+        "en:salt",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 45,
@@ -4289,7 +4310,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -4298,12 +4321,16 @@
             "quantity_per_unit_value": 430,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 8.8
@@ -4311,18 +4338,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 44.46

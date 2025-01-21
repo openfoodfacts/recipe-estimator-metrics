@@ -183,7 +183,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -611,59 +611,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.154563285882797,
-            "likeliest_impacts": {
-                "Climate_change": 0.220794508811349,
-                "EF_single_score": 0.0241578447658222
-            },
-            "likeliest_recipe": {
-                "de:weichweizenmehl": 33.1209547408928,
-                "en:corn": 3.75594345182685,
-                "en:durum_wheat_semolina": 1.03264854288673,
-                "en:egg": 14.1528954352416,
-                "en:garlic": 3.29024011447956,
-                "en:mascarpone": 3.29024011447958,
-                "en:natural_flavouring": 0.109068157894022,
-                "en:nutmeg_nut": 3.28693162341999,
-                "en:potato": 0.763295110898814,
-                "en:potato_flakes": 3.29024011447956,
-                "en:ricotta": 10.7537645300627,
-                "en:salt": 1.06776579619417,
-                "en:spinach": 10.4968121901629,
-                "en:starch": 3.29024011447956,
-                "en:sunflower_oil": 3.81643482034027,
-                "en:water": 1.06776579619417,
-                "en:whey_powder": 3.37117988561285,
-                "en:yeast": 0.418724391245553
-            },
-            "mass_ratio_uncharacterized": 0.0228280388822137,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring",
-                    "en:nutmeg-nut"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:nutmeg-nut"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0228280388822137,
-                "nutrition": 0.0228280388822137
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.1,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "1 compound ingredients whose percentage type is undefined."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 54,
     "ecoscore_tags": [
@@ -986,39 +933,55 @@
     ],
     "ingredients": [
         {
-            "difference": 3,
+            "difference": 39.3,
             "id": "en:filling",
             "ingredients": [
                 {
                     "ciqual_food_code": "19585",
-                    "difference": 0,
+                    "difference": 32.3,
                     "id": "en:ricotta",
-                    "percent": 35,
-                    "percent_estimate": 35,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 67.3,
+                    "percent_hidden": 35,
+                    "percent_max": 100,
+                    "percent_min": 42.3,
                     "text": "ricotta"
                 },
                 {
                     "id": "fr:serum-de-lait-lait",
-                    "percent_estimate": 15,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 25.0,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "sérum de lait lait"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 92.3,
             "percent_hidden": 53,
+            "percent_max": 100,
+            "percent_min": 84.6,
             "text": "Farce"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "sel"
         },
         {
             "ciqual_food_code": "20059",
-            "difference": 7.5,
+            "difference": 19.4,
+            "ecobalyse_code": "spinach-non-eu",
             "id": "en:spinach",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
             "percent_hidden": 20,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "épinards"
         },
         {
@@ -1027,23 +990,37 @@
                 {
                     "ciqual_food_code": "9200",
                     "id": "en:corn",
-                    "percent_estimate": 3.12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.275,
+                    "percent_max": 1.1,
+                    "percent_min": 0,
                     "text": "mais"
                 },
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato",
-                    "percent_estimate": 3.12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.275,
+                    "percent_max": 0.55,
+                    "percent_min": 0,
                     "text": "pommes de terre"
                 }
             ],
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "fibres végétales"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "huile de tournesol"
         },
         {
@@ -1051,65 +1028,102 @@
             "id": "en:breadcrumbs",
             "ingredients": [
                 {
-                    "ciqual_food_code": "9410",
+                    "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:soft-wheat-flour",
-                    "percent_estimate": 0.781,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.275,
+                    "percent_max": 1.1,
+                    "percent_min": 0,
                     "text": "farine de blé tendre"
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.138,
+                    "percent_max": 0.55,
+                    "percent_min": 0,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0688,
+                    "percent_max": 0.366666666666667,
+                    "percent_min": 0,
                     "text": "sel"
                 },
                 {
+                    "ciqual_proxy_food_code": "11009",
                     "id": "en:yeast",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0688,
+                    "percent_max": 0.275,
+                    "percent_min": 0,
                     "text": "levure"
                 }
             ],
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "chapelure"
         },
         {
             "id": "en:whey-powder",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "sérum de lait en poudre"
         },
         {
             "ciqual_food_code": "19584",
             "id": "en:mascarpone",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "fromage mascarpone"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "amidons"
         },
         {
             "ciqual_food_code": "4003",
+            "ecobalyse_code": "potato-industry-fr",
             "id": "en:potato-flakes",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "flocons de pomme de terre"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "ail"
         },
         {
             "ciqual_food_code": "11048",
             "id": "en:nutmeg-nut",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "noix de muscade"
         },
         {
@@ -1117,51 +1131,79 @@
             "ingredients": [
                 {
                     "id": "fr:contiennent-lait",
-                    "percent_estimate": 0.0061,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.275,
+                    "percent_max": 1.1,
+                    "percent_min": 0,
                     "text": "contiennent lait"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
-                    "percent_estimate": 0.0061,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.275,
+                    "percent_max": 0.55,
+                    "percent_min": 0,
                     "text": "blé"
                 }
             ],
-            "percent_estimate": 0.0122,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "aromes naturels"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.0061,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "sel"
         },
         {
-            "difference": 47.0,
+            "difference": 46.4,
             "id": "en:dough",
             "ingredients": [
                 {
-                    "ciqual_food_code": "9410",
+                    "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:soft-wheat-flour",
-                    "percent_estimate": 0.00305,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.275,
+                    "percent_max": 1.1,
+                    "percent_min": 0,
                     "text": "farine de blé tendre"
                 },
                 {
                     "ciqual_food_code": "22000",
-                    "difference": 30.0,
+                    "difference": 29.9,
+                    "ecobalyse_code": "egg-indoor-code3",
                     "id": "en:egg",
-                    "percent_estimate": 0.00153,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.138,
+                    "percent_hidden": 30,
+                    "percent_max": 0.55,
+                    "percent_min": 0,
                     "text": "oeufs"
                 },
                 {
                     "ciqual_food_code": "9610",
+                    "ecobalyse_code": "durum-wheat-semolina",
                     "id": "en:durum-wheat-semolina",
-                    "percent_estimate": 0.00153,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.138,
+                    "percent_max": 0.366666666666667,
+                    "percent_min": 0,
                     "text": "semoule de blé dur"
                 }
             ],
-            "percent_estimate": 0.0061,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.55,
             "percent_hidden": 47,
+            "percent_max": 1.1,
+            "percent_min": 0,
             "text": "Pâte"
         }
     ],
@@ -1247,9 +1289,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.473,
-        "total_difference": 87.5,
+        "number_of_ingredients_without_ciqual_code": 3,
+        "relative_difference": 0.905,
+        "total_difference": 167.0,
         "total_specified_input_percent": 185
     },
     "ingredients_n": 28,
@@ -1287,7 +1329,7 @@
         "en:egg",
         "en:durum-wheat-semolina"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:filling",
         "en:salt",
@@ -1354,11 +1396,30 @@
         "en:natural-flavouring",
         "en:vegetable-fiber",
         "en:whey-powder",
+        "fr:contiennent-lait",
+        "fr:serum-de-lait-lait"
+    ],
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:breadcrumbs",
+        "en:corn",
+        "en:dough",
+        "en:filling",
+        "en:garlic",
+        "en:mascarpone",
+        "en:natural-flavouring",
+        "en:nutmeg-nut",
+        "en:ricotta",
+        "en:salt",
+        "en:starch",
+        "en:vegetable-fiber",
+        "en:wheat",
+        "en:whey-powder",
         "en:yeast",
         "fr:contiennent-lait",
         "fr:serum-de-lait-lait"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 46,
@@ -1442,8 +1503,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1778,7 +1838,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1787,12 +1849,16 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 10

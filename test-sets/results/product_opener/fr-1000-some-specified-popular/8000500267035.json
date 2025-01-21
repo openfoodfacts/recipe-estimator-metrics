@@ -52,7 +52,7 @@
         "en:e503",
         "en:e503i"
     ],
-    "allergens": "en:soybeans, en:soybeans",
+    "allergens": "en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:milk, wheat flour, egg, milk powder, soy",
     "allergens_from_user": "(pt) en:soybeans",
     "allergens_hierarchy": [
@@ -275,7 +275,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -693,90 +693,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0875569739496125,
-            "likeliest_impacts": {
-                "Climate_change": 0.650558345204493,
-                "EF_single_score": 0.0556955544223904
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 2.95786271333552,
-                "en:cocoa_butter": 0.0014004371895089,
-                "en:cocoa_paste": 0.0014004371895089,
-                "en:concentrated_lemon_juice": 0.0014004371895089,
-                "en:dextrose": 4.45040227012339,
-                "en:e422": 14.1367984781638,
-                "en:e471": 0.0903535464888715,
-                "en:e500ii": 0.010302067300988,
-                "en:e503i": 0.170405025676755,
-                "en:egg": 2.46628603163577,
-                "en:flavouring": 0.0014004371895089,
-                "en:glucose_fructose_syrup": 15.3699574930418,
-                "en:gluten": 0.00140043718950891,
-                "en:lactoserum_powder": 0.514945094885687,
-                "en:lean_cocoa": 2.95786271333552,
-                "en:list_of_ingredients_sugar": 16.3044808054813,
-                "en:milk": 0,
-                "en:milk_powder": 7.39465678333879,
-                "en:palm": 8.80423270519085,
-                "en:pear_juice": 0.492977118889895,
-                "en:sal_tree": 0.407098083755898,
-                "en:salt": 0.00140043718951006,
-                "en:shea_butter": 6.86694810872152,
-                "en:skimmed_milk_powder": 4.92977118889253,
-                "en:soya": 0.0903535464888728,
-                "en:soybeans_ingredients_analysis": 0,
-                "en:water": 3.26964771551573,
-                "en:wheat_flour": 6.40870254556028,
-                "en:wheat_starch": 0.492977118889895
-            },
-            "mass_ratio_uncharacterized": 0.52553383929456,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lean cocoa",
-                    "en:e503i",
-                    "en:e422",
-                    "en:list of ingredients sugar",
-                    "en:e500ii",
-                    "en:flavouring",
-                    "en:gluten",
-                    "en:pear-juice",
-                    "en:soybeans ingredients analysis",
-                    "en:lactoserum powder",
-                    "en:e471",
-                    "en:dextrose",
-                    "en:shea-butter",
-                    "en:wheat-starch",
-                    "en:sal-tree"
-                ],
-                "nutrition": [
-                    "en:lean cocoa",
-                    "en:list of ingredients sugar",
-                    "en:flavouring",
-                    "en:soybeans ingredients analysis",
-                    "en:lactoserum powder",
-                    "en:dextrose",
-                    "en:sal-tree"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.52553383929456,
-                "nutrition": 0.36923532600794
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.233333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 37%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 53%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 16,
     "ecoscore_tags": [
@@ -1758,7 +1674,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.2,
             "percent_max": 100,
             "percent_min": 4.34782608695652,
@@ -1769,14 +1687,18 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 12.0,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "palm"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.98,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1784,12 +1706,14 @@
                 },
                 {
                     "id": "en:sal-tree",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.98,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "sal"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1798,6 +1722,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.0,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1808,12 +1733,14 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.98,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "glycerol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.98,
             "percent_max": 25,
             "percent_min": 0,
@@ -1822,7 +1749,9 @@
         {
             "ciqual_proxy_food_code": "19044",
             "difference": 4.01,
+            "ecobalyse_code": "milk-powder",
             "id": "en:milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.99,
             "percent_hidden": 7,
             "percent_max": 20,
@@ -1833,7 +1762,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 5.01,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
             "percent_hidden": 6.5,
             "percent_max": 16.6666666666667,
@@ -1843,7 +1774,9 @@
         {
             "ciqual_food_code": "19054",
             "difference": 4.25,
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.747,
             "percent_hidden": 5,
             "percent_max": 14.2857142857143,
@@ -1853,14 +1786,17 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.374,
             "percent_max": 12.5,
             "percent_min": 0,
             "text": "dextrose"
         },
         {
+            "ciqual_proxy_food_code": "18100",
             "difference": 2.81,
-            "id": "en:lean-cocoa",
+            "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.187,
             "percent_hidden": 3,
             "percent_max": 11.1111111111111,
@@ -1871,6 +1807,7 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 2.91,
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0934,
             "percent_hidden": 3,
             "percent_max": 10,
@@ -1880,7 +1817,9 @@
         {
             "ciqual_food_code": "22000",
             "difference": 2.45,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0467,
             "percent_hidden": 2.5,
             "percent_max": 9.09090909090909,
@@ -1889,13 +1828,16 @@
         },
         {
             "id": "en:lactoserum-powder",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0234,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
             "text": "lactoserum powder"
         },
         {
+            "ecobalyse_code": "pear-eu",
             "id": "en:pear-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0117,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1905,6 +1847,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00584,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1913,7 +1856,9 @@
         {
             "ciqual_proxy_food_code": "19044",
             "difference": 0.497,
+            "ecobalyse_code": "milk-powder",
             "id": "en:milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00292,
             "percent_hidden": 0.5,
             "percent_max": 6.66666666666667,
@@ -1925,6 +1870,7 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00073,
                     "percent_max": 6.25,
                     "percent_min": 0,
@@ -1932,12 +1878,14 @@
                 },
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00073,
                     "percent_max": 3.125,
                     "percent_min": 0,
                     "text": "mono- and diglycerides of fatty acids"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00146,
             "percent_max": 6.25,
             "percent_min": 0,
@@ -1949,6 +1897,7 @@
             "ingredients": [
                 {
                     "id": "en:e503i",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000365,
                     "percent_max": 5.88235294117647,
                     "percent_min": 0,
@@ -1956,12 +1905,14 @@
                 },
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000365,
                     "percent_max": 2.94117647058824,
                     "percent_min": 0,
                     "text": "sodium acid carbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00073,
             "percent_max": 5.88235294117647,
             "percent_min": 0,
@@ -1970,6 +1921,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000365,
             "percent_max": 5.55555555555556,
             "percent_min": 0,
@@ -1977,22 +1929,25 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000182,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flavourings"
         },
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.12e-05,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "cocoa butter"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.56e-05,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -2001,6 +1956,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.28e-05,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -2009,6 +1965,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.28e-05,
             "percent_max": 0.26,
             "percent_min": 0,
@@ -2281,7 +2238,7 @@
         "grasa-de-la-leche-anhidra"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 11,
+        "number_of_ingredients_without_ciqual_code": 9,
         "relative_difference": 0.798,
         "total_difference": 21.9,
         "total_specified_input_percent": 27.5
@@ -2409,13 +2366,37 @@
         "en:flavouring",
         "en:humectant",
         "en:lactoserum-powder",
-        "en:lean-cocoa",
         "en:pear-juice",
         "en:sal-tree",
-        "en:shea-butter",
         "en:vegetable-fat"
     ],
-    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:baking-powder",
+        "en:butterfat",
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:concentrated-lemon-juice",
+        "en:dextrose",
+        "en:e322",
+        "en:e422",
+        "en:e471",
+        "en:e500ii",
+        "en:e503i",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:flavouring",
+        "en:glucose-fructose-syrup",
+        "en:humectant",
+        "en:lactoserum-powder",
+        "en:sal-tree",
+        "en:salt",
+        "en:shea-butter",
+        "en:vegetable-fat",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 23,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 53,

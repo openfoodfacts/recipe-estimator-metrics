@@ -54,7 +54,7 @@
         "en:e500ii",
         "en:e502"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:gluten, spelt, soja, soja",
     "allergens_from_user": "(fr) en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -282,7 +282,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -712,77 +712,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.415035597460228,
-            "likeliest_impacts": {
-                "Climate_change": 0.390102483869354,
-                "EF_single_score": 0.0330164591808493
-            },
-            "likeliest_recipe": {
-                "en:barley": 1.74326202900043,
-                "en:barley_malt_extract": 0.463777853778916,
-                "en:buckwheat": 0.246022358591094,
-                "en:butterfat": 3.24130983205745,
-                "en:cane_sugar": 3.5170030140476,
-                "en:cocoa_butter": 3.5170030140476,
-                "en:cocoa_paste": 3.57594981812459,
-                "en:corn": 0.246022358591094,
-                "en:corn_flour": 2.2473410227031,
-                "en:dark_chocolate": 3.57594981812459,
-                "en:dextrose": 3.5170030140476,
-                "en:e500ii": 0.668240422835578,
-                "en:e503ii": 1.14277061175198,
-                "en:oat_flakes": 1.54829466313663,
-                "en:palm_oil": 3.24130983205744,
-                "en:rice": 12.4064052766137,
-                "en:rice_flour": 1.1220758847323,
-                "en:rye": 1.54829466313663,
-                "en:salt": 0,
-                "en:skimmed_milk_powder": 1.81101103458756,
-                "en:soya_lecithin": 3.5170030140476,
-                "en:spelt": 12.5785788503029,
-                "en:sugar": 4.79507592355528,
-                "en:vanillin": 0,
-                "en:water": 0,
-                "en:wheat": 12.5785788503029,
-                "en:wheat_starch": 3.24130983205745,
-                "en:whole_grain_durum_wheat": 12.5785788503029,
-                "en:whole_wheat": 12.5785788503029
-            },
-            "mass_ratio_uncharacterized": 0.138078723715138,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:barley-malt-extract",
-                    "en:e503ii",
-                    "en:e500ii",
-                    "en:dextrose",
-                    "en:vanillin",
-                    "en:wheat-starch",
-                    "en:butterfat"
-                ],
-                "nutrition": [
-                    "en:dextrose"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.138078723715138,
-                "nutrition": 0.0505675278795614
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.212121212121212,
-                "nutrition": 0.0303030303030303
-            },
-            "warnings": [
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "The impact relative interquartile is high for EF single score (58%)",
-                "The impact relative interquartile is high for Climate change (71%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 39,
     "ecoscore_tags": [
@@ -1603,124 +1532,179 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 20.2,
+            "difference": 22.7,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
-                    "difference": 0,
+                    "difference": 16.5,
                     "id": "en:ble",
-                    "percent": 10,
-                    "percent_estimate": 10,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 26.5,
+                    "percent_hidden": 10,
+                    "percent_max": 100,
+                    "percent_min": 0.555555555555556,
                     "text": "ble"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 4.59,
                     "id": "en:complete-ble",
                     "ingredients": [
                         {
                             "ciqual_food_code": "9001",
                             "id": "en:spelt",
-                            "percent_estimate": 8.4,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 13.0,
+                            "percent_max": 50,
+                            "percent_min": 0,
                             "text": "spelt"
                         }
                     ],
-                    "percent": 8.4,
-                    "percent_estimate": 8.4,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 13.0,
+                    "percent_hidden": 8.4,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "complete ble"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 0.393,
                     "id": "en:complete-ble",
-                    "percent": 6.1,
-                    "percent_estimate": 6.1,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 6.49,
+                    "percent_hidden": 6.1,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "complete ble"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 2.05,
                     "id": "en:complete-hard-ble",
-                    "percent": 1.2,
-                    "percent_estimate": 1.2,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 3.25,
+                    "percent_hidden": 1.2,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "complete hard ble"
                 },
                 {
                     "ciqual_proxy_food_code": "9100",
-                    "difference": 0.0,
+                    "difference": 0.723,
                     "id": "en:rice",
-                    "percent": 0.9,
-                    "percent_estimate": 0.9,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.62,
+                    "percent_hidden": 0.9,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "text": "rice"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 0.0884,
                     "id": "en:seigle",
-                    "percent": 0.9,
-                    "percent_estimate": 0.9,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.812,
+                    "percent_hidden": 0.9,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "seigle"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 0.394,
                     "id": "en:avoine-flakes",
-                    "percent": 0.8,
-                    "percent_estimate": 0.8,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.406,
+                    "percent_hidden": 0.8,
+                    "percent_max": 14.2857142857143,
+                    "percent_min": 0,
                     "text": "avoine flakes"
                 },
                 {
                     "ciqual_food_code": "9200",
-                    "difference": 0.0,
+                    "difference": 0.597,
                     "id": "en:corn",
-                    "percent": 0.8,
-                    "percent_estimate": 0.8,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.203,
+                    "percent_hidden": 0.8,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "corn"
                 },
                 {
                     "ciqual_proxy_food_code": "9380",
-                    "difference": 20.2,
+                    "difference": 0.497,
                     "id": "en:buckwheat",
-                    "percent": 0.7,
-                    "percent_estimate": 20.9,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.203,
+                    "percent_hidden": 0.7,
+                    "percent_max": 11.1111111111111,
+                    "percent_min": 0,
                     "text": "buckwheat"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.5,
             "percent_hidden": 29.8,
+            "percent_max": 100,
+            "percent_min": 5,
             "text": "flour"
         },
         {
             "ciqual_proxy_food_code": "31074",
-            "difference": 10,
+            "difference": 8.75,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.8,
             "percent_hidden": 15,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "dark chocolate"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.9,
+            "percent_max": 27.1,
+            "percent_min": 0,
             "text": "sugar"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.94,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "sugar"
         },
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.97,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "cocoa paste"
         },
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.48,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "cocoa butter"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.742,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "dextrose"
         },
         {
@@ -1728,23 +1712,37 @@
             "ingredients": [
                 {
                     "id": "en:e322",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.371,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "lecithins"
                 }
             ],
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.371,
+            "percent_max": 12.5,
+            "percent_min": 0,
             "text": "emulsifiers"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.186,
+            "percent_max": 11.1111111111111,
+            "percent_min": 0,
             "text": "cane sugar"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0928,
+            "percent_max": 10,
+            "percent_min": 0,
             "text": "palm oil"
         },
         {
@@ -1754,48 +1752,74 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9545",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:corn-flour",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0232,
+                    "percent_max": 9.09090909090909,
+                    "percent_min": 0,
                     "text": "corn flour"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent_estimate": 0.0122,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0116,
+                    "percent_max": 4.54545454545455,
+                    "percent_min": 0,
                     "text": "sugar"
                 },
                 {
                     "id": "en:orge-malt-extract",
-                    "percent_estimate": 0.0061,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.0058,
+                    "percent_max": 3.03030303030303,
+                    "percent_min": 0,
                     "text": "orge malt extract"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 0.0061,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0058,
+                    "percent_max": 0.483,
+                    "percent_min": 0,
                     "text": "salt"
                 }
             ],
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0464,
             "percent_hidden": 8.5,
+            "percent_max": 9.09090909090909,
+            "percent_min": 0,
             "text": "corn flakes"
         },
         {
             "id": "en:ble-starch",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0232,
+            "percent_max": 8.33333333333333,
+            "percent_min": 0,
             "text": "ble starch"
         },
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
-            "percent_estimate": 0.0122,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0116,
+            "percent_max": 7.69230769230769,
+            "percent_min": 0,
             "text": "concentrated butter"
         },
         {
             "difference": 2.99,
             "id": "en:milk-skimmed-powder",
-            "percent_estimate": 0.0061,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0058,
             "percent_hidden": 3,
+            "percent_max": 7.14285714285714,
+            "percent_min": 0,
             "text": "milk skimmed powder"
         },
         {
@@ -1805,19 +1829,30 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
-                    "percent_estimate": 0.00153,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00145,
+                    "percent_max": 6.66666666666667,
+                    "percent_min": 0,
                     "text": "rice flour"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent_estimate": 0.00153,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00145,
+                    "percent_max": 3.33333333333333,
+                    "percent_min": 0,
                     "text": "sugar"
                 }
             ],
-            "percent_estimate": 0.00305,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0029,
             "percent_hidden": 2.5,
+            "percent_max": 6.66666666666667,
+            "percent_min": 0,
             "processing": "en:caramelized",
             "text": "rice flakes"
         },
@@ -1827,16 +1862,25 @@
             "ingredients": [
                 {
                     "id": "en:ammonium-acid-carbonate",
-                    "percent_estimate": 0.000763,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.000725,
+                    "percent_max": 6.25,
+                    "percent_min": 0,
                     "text": "ammonium acid carbonate"
                 },
                 {
                     "id": "en:e500ii",
-                    "percent_estimate": 0.000763,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000725,
+                    "percent_max": 3.125,
+                    "percent_min": 0,
                     "text": "sodium acid carbonate"
                 }
             ],
-            "percent_estimate": 0.00153,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00145,
+            "percent_max": 6.25,
+            "percent_min": 0,
             "text": "baking powders"
         },
         {
@@ -1844,29 +1888,44 @@
             "ingredients": [
                 {
                     "id": "en:orge",
-                    "percent_estimate": 0.000381,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.000362,
+                    "percent_max": 5.88235294117647,
+                    "percent_min": 0,
                     "text": "orge"
                 },
                 {
                     "ciqual_food_code": "9200",
                     "id": "en:corn",
-                    "percent_estimate": 0.000381,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000362,
+                    "percent_max": 2.94117647058824,
+                    "percent_min": 0,
                     "text": "corn"
                 }
             ],
-            "percent_estimate": 0.000763,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000725,
+            "percent_max": 5.88235294117647,
+            "percent_min": 0,
             "processing": "en:extract,en:powder",
             "text": "malt"
         },
         {
             "id": "en:vanillin",
-            "percent_estimate": 0.000381,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000362,
+            "percent_max": 5.55555555555556,
+            "percent_min": 0,
             "text": "vanillin"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.000191,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000181,
+            "percent_max": 0.483,
+            "percent_min": 0,
             "text": "salt"
         },
         {
@@ -1874,11 +1933,17 @@
             "ingredients": [
                 {
                     "id": "en:e322",
-                    "percent_estimate": 0.000191,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000181,
+                    "percent_max": 0.483,
+                    "percent_min": 0,
                     "text": "lecithins"
                 }
             ],
-            "percent_estimate": 0.000191,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000181,
+            "percent_max": 0.483,
+            "percent_min": 0,
             "text": "emulsifiers"
         }
     ],
@@ -1980,8 +2045,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 14,
-        "relative_difference": 0.726,
-        "total_difference": 64.3,
+        "relative_difference": 0.804,
+        "total_difference": 71.2,
         "total_specified_input_percent": 88.6
     },
     "ingredients_n": 42,
@@ -2033,7 +2098,7 @@
         "en:e322",
         "en:spelt"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:flour",
         "en:dark-chocolate",
@@ -2120,6 +2185,36 @@
         "en:vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:ammonium-acid-carbonate",
+        "en:avoine-flakes",
+        "en:baking-powder",
+        "en:ble",
+        "en:ble-starch",
+        "en:buckwheat",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:complete-ble",
+        "en:complete-hard-ble",
+        "en:corn",
+        "en:corn-flakes",
+        "en:dextrose",
+        "en:e322",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:malt",
+        "en:milk-skimmed-powder",
+        "en:orge",
+        "en:orge-malt-extract",
+        "en:rice",
+        "en:rice-flakes",
+        "en:salt",
+        "en:seigle",
+        "en:spelt",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 27,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2218,9 +2313,7 @@
         "en:main-countries-de-unexpectedly-low-scans",
         "en:main-countries-de-unexpectedly-low-scans-10-20-percent-of-expected",
         "en:main-countries-it-product-name-not-in-country-language",
-        "en:main-countries-it-only-1-field-in-country-language",
-        "en:some-ingredients-with-specified-percent",
-        "en:at-least-5-ingredients-with-specified-percent"
+        "en:main-countries-it-only-1-field-in-country-language"
     ],
     "no_nutrition_data": "",
     "no_nutrition_data_imported": "false",
@@ -2651,14 +2744,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

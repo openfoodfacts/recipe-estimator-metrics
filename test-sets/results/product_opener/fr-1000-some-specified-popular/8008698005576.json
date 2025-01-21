@@ -254,7 +254,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -678,58 +678,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.126697813794256,
-            "likeliest_impacts": {
-                "Climate_change": 0.0665132585038231,
-                "EF_single_score": 0.010339757202346
-            },
-            "likeliest_recipe": {
-                "en:corn_starch": 17.1060025001897,
-                "en:e464": 1.8337988633934,
-                "en:honey": 0.0919903643864702,
-                "en:millet_flour": 1.76200374038403,
-                "en:potassium_iodide": 0,
-                "en:psyllium": 14.6475178527719,
-                "en:quinoa_flour": 1.20558150657854,
-                "en:rice_flour": 8.86167017161292,
-                "en:rice_starch": 14.6475178527719,
-                "en:rice_syrup": 4.03058079829507,
-                "en:salt": 0.0919903643864702,
-                "en:soy_protein": 2.30544886860551,
-                "en:sunflower_oil": 2.39575651214613,
-                "en:water": 23.0595525210159,
-                "en:yeast": 0.697627051042293
-            },
-            "mass_ratio_uncharacterized": 0.32694536506826,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:rice-starch",
-                    "en:e464",
-                    "en:psyllium",
-                    "en:rice-syrup",
-                    "en:quinoa-flour",
-                    "en:potassium-iodide"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.32694536506826,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.375,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 38%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -1876,6 +1824,7 @@
     "ingredients": [
         {
             "id": "fr:almidon-de-maiz",
+            "is_in_taxonomy": 0,
             "percent_estimate": 53.1,
             "percent_max": 100,
             "percent_min": 6.25,
@@ -1883,17 +1832,19 @@
         },
         {
             "id": "fr:agua",
+            "is_in_taxonomy": 0,
             "percent_estimate": 23.4,
             "percent_max": 50,
             "percent_min": 0,
             "text": "agua"
         },
         {
-            "difference": 4.3,
+            "difference": 4.28,
             "id": "fr:masa-madre",
             "ingredients": [
                 {
                     "id": "fr:harina-de-arroz",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 5.86,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1901,12 +1852,14 @@
                 },
                 {
                     "id": "fr:agua",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 5.86,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "agua"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.7,
             "percent_hidden": 16,
             "percent_max": 33.3333333333333,
@@ -1915,6 +1868,7 @@
         },
         {
             "id": "fr:almidon-de-arroz",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.86,
             "percent_max": 25,
             "percent_min": 0,
@@ -1925,12 +1879,14 @@
             "ingredients": [
                 {
                     "id": "en:psyllium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.93,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "psyllium"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:vegan",
             "percent_estimate": 2.93,
             "percent_max": 20,
@@ -1941,6 +1897,7 @@
         },
         {
             "id": "fr:jarabe-de-arroz-aceite-de-girasol",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.46,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1948,6 +1905,7 @@
         },
         {
             "id": "fr:proteina-de-soja",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.732,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1958,12 +1916,14 @@
             "ingredients": [
                 {
                     "id": "fr:hidroxipropilmetilcelulosa",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.366,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "hidroxipropilmetilcelulosa"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.366,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1972,6 +1932,7 @@
         {
             "difference": 1.72,
             "id": "fr:harina-de-mijo",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.183,
             "percent_hidden": 1.9,
             "percent_max": 11.1111111111111,
@@ -1981,6 +1942,7 @@
         {
             "difference": 1.21,
             "id": "fr:harina-de-quinoa",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0916,
             "percent_hidden": 1.3,
             "percent_max": 10,
@@ -1989,6 +1951,7 @@
         },
         {
             "id": "fr:levadura",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0458,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1997,6 +1960,7 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0229,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -2007,6 +1971,7 @@
             "ingredients": [
                 {
                     "id": "en:sal-tree",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00572,
                     "percent_max": 7.69230769230769,
                     "percent_min": 0,
@@ -2014,12 +1979,14 @@
                 },
                 {
                     "id": "fr:yoduro-de-potasio",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.00572,
                     "percent_max": 3.84615384615385,
                     "percent_min": 0,
                     "text": "yoduro de potasio"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0114,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -2027,6 +1994,7 @@
         },
         {
             "id": "fr:puede-contener-trazas-de-altramuz-y-mostaza",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.00572,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -2034,6 +2002,7 @@
         },
         {
             "id": "fr:sin-lactosa",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.00286,
             "percent_max": 6.66666666666667,
             "percent_min": 0,
@@ -2041,6 +2010,7 @@
         },
         {
             "id": "fr:sin-trigo",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.00286,
             "percent_max": 6.25,
             "percent_min": 0,
@@ -2265,8 +2235,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 17,
-        "relative_difference": 0.376,
-        "total_difference": 7.23,
+        "relative_difference": 0.375,
+        "total_difference": 7.21,
         "total_specified_input_percent": 19.2
     },
     "ingredients_n": 22,
@@ -2370,6 +2340,30 @@
         "fr:yoduro-de-potasio"
     ],
     "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ecobalyse_ids": [
+        "en:honey",
+        "en:psyllium",
+        "en:sal-tree",
+        "fr:agua",
+        "fr:almidon-de-arroz",
+        "fr:almidon-de-maiz",
+        "fr:espesante",
+        "fr:fibra",
+        "fr:harina-de-arroz",
+        "fr:harina-de-mijo",
+        "fr:harina-de-quinoa",
+        "fr:hidroxipropilmetilcelulosa",
+        "fr:jarabe-de-arroz-aceite-de-girasol",
+        "fr:levadura",
+        "fr:masa-madre",
+        "fr:proteina-de-soja",
+        "fr:puede-contener-trazas-de-altramuz-y-mostaza",
+        "fr:sal-yodada",
+        "fr:sin-lactosa",
+        "fr:sin-trigo",
+        "fr:yoduro-de-potasio"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 21,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -2797,18 +2791,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

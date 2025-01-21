@@ -329,7 +329,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -600,10 +600,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process timed out after 600 seconds"
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -3462,7 +3458,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.7,
             "percent_max": 100,
             "percent_min": 15.4066666666667,
@@ -3472,6 +3470,7 @@
             "ciqual_food_code": "15041",
             "difference": 18.8,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.1,
             "percent_hidden": 2.3,
             "percent_max": 50,
@@ -3483,12 +3482,14 @@
             "ingredients": [
                 {
                     "id": "en:e341iii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 10.6,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "tricalcium phosphate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -3497,6 +3498,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3507,6 +3509,7 @@
             "ingredients": [
                 {
                     "id": "en:e410",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.035,
                     "percent_max": 0.14,
                     "percent_min": 0,
@@ -3514,12 +3517,14 @@
                 },
                 {
                     "id": "en:e418",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.035,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "gellan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3527,6 +3532,7 @@
         },
         {
             "id": "en:emulsifier",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3536,13 +3542,16 @@
             "id": "en:e322",
             "ingredients": [
                 {
+                    "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.07,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "sunflower"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3550,6 +3559,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3557,6 +3567,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3564,6 +3575,7 @@
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3571,6 +3583,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3578,6 +3591,7 @@
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.0,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -3760,7 +3774,7 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 8.17,
+        "relative_difference": 8.19,
         "total_difference": 18.8,
         "total_specified_input_percent": 2.3
     },
@@ -3862,6 +3876,23 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:calcium",
+        "en:e101",
+        "en:e322",
+        "en:e341iii",
+        "en:e410",
+        "en:e418",
+        "en:emulsifier",
+        "en:ergocalciferol",
+        "en:sea-salt",
+        "en:stabiliser",
+        "en:vitamin-b12",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,

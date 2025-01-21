@@ -242,7 +242,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -666,49 +666,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0295385377403528,
-            "likeliest_impacts": {
-                "Climate_change": 0.0309436753315334,
-                "EF_single_score": 0.00566124637363472
-            },
-            "likeliest_recipe": {
-                "en:e282": 0.315589778610704,
-                "en:e300": 0.315589778610704,
-                "en:e471": 0.35977521120085,
-                "en:salt": 1.67876196766517,
-                "en:vinegar": 0.359777777240128,
-                "en:water": 28.5981333317131,
-                "en:wheat_flour": 5.93094652835362,
-                "en:wheat_gluten": 1.67876196766517,
-                "en:whole_wheat_flour": 57.4869022042939,
-                "en:yeast": 5.93094652835362
-            },
-            "mass_ratio_uncharacterized": 0.0246278590729434,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e282",
-                    "en:e471",
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0246278590729434,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 30%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -1767,7 +1724,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 1,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_hidden": 56,
             "percent_max": 100,
@@ -1776,7 +1735,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -1784,14 +1745,18 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "farine de _blé_"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1799,6 +1764,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 20,
             "percent_min": 0,
@@ -1807,6 +1773,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1815,6 +1782,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1825,12 +1793,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.6,
                     "percent_max": 1.2,
                     "percent_min": 0,
                     "text": "mono- et diglycérides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1841,12 +1811,14 @@
             "ingredients": [
                 {
                     "id": "en:e282",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.506,
                     "percent_max": 1.2,
                     "percent_min": 0,
                     "text": "propionate de calcium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.506,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1857,12 +1829,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.506,
                     "percent_max": 1.2,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.506,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1989,7 +1963,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.0179,
         "total_difference": 1,
         "total_specified_input_percent": 56
@@ -2058,10 +2032,22 @@
         "en:emulsifier",
         "en:flour-treatment-agent",
         "en:preservative",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e282",
+        "en:e300",
+        "en:e471",
+        "en:emulsifier",
+        "en:flour-treatment-agent",
+        "en:preservative",
+        "en:salt",
+        "en:vinegar",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 19,
@@ -2494,7 +2480,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         }

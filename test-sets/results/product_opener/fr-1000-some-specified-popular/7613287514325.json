@@ -249,13 +249,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 63.8,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 36.2,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 59.334,
@@ -699,89 +699,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.111123336604344,
-            "likeliest_impacts": {
-                "Climate_change": 0.104461631030057,
-                "EF_single_score": 0.0193030042596851
-            },
-            "likeliest_recipe": {
-                "en:antioxidant": 0.113326519270703,
-                "en:barley_malt_extract": 0.273578623108812,
-                "en:e101": 0.0793668503650378,
-                "en:e170i": 0.24400818986803,
-                "en:e375": 0.0793668503650392,
-                "en:emulsifier": 0.113326519270703,
-                "en:folic_acid": 0.0793668503650392,
-                "en:glucose_syrup": 0.113326519270706,
-                "en:invert_sugar_syrup": 0.360871764189612,
-                "en:iron": 0.113326519270703,
-                "en:molasses": 0.113326519270703,
-                "en:pantothenic_acid": 0.0793668503650392,
-                "en:rice": 33.0383138261245,
-                "en:salt": 0.113326519270706,
-                "en:sugar": 13.266734360851,
-                "en:vitamin_b6": 0.0793668503650392,
-                "en:vitamins": 0.113326519270703,
-                "en:water": 4.08637499503782,
-                "en:whole_grain_oat_flakes": 10.1782636839424,
-                "fr:Ingr_dients_Bl__complet": 36.2662309413047,
-                "fr:Nous_avons_utilis__58_g_de_c_r_ales_compl_tes_pour_produire_100_g_de_c_r_ales_FITNESS__Nature_Ce_paquet_contient_environ_15_portions_de": 0.0793668503650378,
-                "fr:Portions___adapter_selon_l__ge": 0.0793668503650378,
-                "fr:Une_portion_de_30_g__quivaut_environ___5_Cuilleres___soupe": 0.0793668503652636,
-                "fr:le_sexe_et_l_activit__physique": 0.0793668503649497
-            },
-            "mass_ratio_uncharacterized": 0.609805405014689,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "en:vitamin-b6",
-                    "fr:Une portion de 30 g équivaut environ à 5 Cuilleres à soupe",
-                    "en:iron",
-                    "en:e170i",
-                    "en:antioxidant",
-                    "fr:Nous avons utilisé 58 g de céréales complêtes pour produire 100 g de céréales FITNESS° Nature Ce paquet contient environ 15 portions de",
-                    "fr:le sexe et l'activitë physique",
-                    "en:glucose-syrup",
-                    "en:barley-malt-extract",
-                    "en:folic-acid",
-                    "en:pantothenic-acid",
-                    "en:e375",
-                    "fr:Ingrédients Blé complet",
-                    "fr:Portions à adapter selon l'âge",
-                    "en:e101"
-                ],
-                "nutrition": [
-                    "fr:Une portion de 30 g équivaut environ à 5 Cuilleres à soupe",
-                    "en:antioxidant",
-                    "fr:Nous avons utilisé 58 g de céréales complêtes pour produire 100 g de céréales FITNESS° Nature Ce paquet contient environ 15 portions de",
-                    "fr:le sexe et l'activitë physique",
-                    "en:glucose-syrup",
-                    "fr:Ingrédients Blé complet",
-                    "fr:Portions à adapter selon l'âge"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.609805405014689,
-                "nutrition": 0.463273944687385
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.695652173913043,
-                "nutrition": 0.304347826086957
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 30%",
-                "The product has a high number of impact uncharacterized ingredients: 70%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"fr:Nous avons utilisé 58 g de céréales complêtes pour produire 100 g de céréales FITNESS° Nature Ce paquet contient environ 15 portions de\" (30%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 46%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 61%",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 31,
     "ecoscore_tags": [
@@ -1761,8 +1678,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9010",
-            "difference": 8.5,
+            "difference": 8.48,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 55.3,
             "percent_hidden": 63.8,
@@ -1774,6 +1692,7 @@
             "ciqual_proxy_food_code": "9100",
             "difference": 13.7,
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.3,
             "percent_hidden": 36,
             "percent_max": 50,
@@ -1782,14 +1701,18 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
             "text": "sucre"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:invert-sugar-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
@@ -1800,6 +1723,7 @@
             "ingredients": [
                 {
                     "id": "en:barley",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.08,
                     "percent_max": 8.3,
                     "percent_min": 0,
@@ -1807,12 +1731,14 @@
                 },
                 {
                     "id": "en:malted-barley",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.08,
                     "percent_max": 4.15,
                     "percent_min": 0,
                     "text": "ORGE malté"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
@@ -1820,6 +1746,7 @@
         },
         {
             "id": "en:e170i",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
@@ -1828,6 +1755,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1836,6 +1764,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1843,7 +1772,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1851,6 +1782,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1861,12 +1793,14 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.28,
                     "percent_max": 0.56,
                     "percent_min": 0,
                     "text": "extrait riche en tocophérols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1874,6 +1808,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1881,6 +1816,7 @@
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1888,6 +1824,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1895,6 +1832,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1902,6 +1840,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1909,6 +1848,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.94,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1969,9 +1909,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 12,
+        "number_of_ingredients_without_ciqual_code": 11,
         "relative_difference": 0.222,
-        "total_difference": 22.2,
+        "total_difference": 22.1,
         "total_specified_input_percent": 99.8
     },
     "ingredients_n": 20,
@@ -2058,14 +1998,34 @@
         "en:e306",
         "en:e375",
         "en:folic-acid",
-        "en:invert-sugar-syrup",
         "en:iron",
         "en:malted-barley",
         "en:pantothenic-acid",
         "en:vitamin-b6",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:barley",
+        "en:barley-malt-extract",
+        "en:e101",
+        "en:e170i",
+        "en:e306",
+        "en:e375",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:invert-sugar-syrup",
+        "en:iron",
+        "en:malted-barley",
+        "en:pantothenic-acid",
+        "en:rice",
+        "en:salt",
+        "en:vitamin-b6",
+        "en:vitamins",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -2668,50 +2628,66 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

@@ -203,7 +203,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1095,6 +1095,7 @@
         {
             "ciqual_food_code": "18154",
             "id": "en:black-tea",
+            "is_in_taxonomy": 1,
             "percent_estimate": 97.5,
             "percent_max": 100,
             "percent_min": 95,
@@ -1103,9 +1104,10 @@
         {
             "difference": 0.5,
             "id": "en:bergamot-orange-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
             "percent_hidden": 3,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme bergamote"
         }
@@ -1193,6 +1195,11 @@
         "en:bergamot-orange-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bergamot-orange-flavouring",
+        "en:black-tea"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1605,43 +1612,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:envelope"
+                    "id": {
+                        "id": "en:envelope"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

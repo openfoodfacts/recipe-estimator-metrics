@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -645,69 +645,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.124365555430434,
-            "likeliest_impacts": {
-                "Climate_change": 0.315371333069751,
-                "EF_single_score": 0.0355749703833046
-            },
-            "likeliest_recipe": {
-                "en:cocoa_paste": 0.44973658754061,
-                "en:dark_chocolate_chunks": 10.9967548923747,
-                "en:oat_flakes": 43.9972406513763,
-                "en:soya_lecithin": 0.373591282912212,
-                "en:sugar": 0.449736587540896,
-                "en:sunflower_seed": 0.292071831470438,
-                "en:walnut": 0.0829201357555727,
-                "en:water": 3.93210002778838,
-                "en:wheat": 0.0829201357555702,
-                "en:wheat_flakes": 15.9633293145477,
-                "fr:FR___01": 0,
-                "fr:Informations_sur_les_allerg_nes": 0.0829201357555697,
-                "fr:autres_sources_de_gluten_Distribution_certifi_e_par_Ecocert_SAS": 0.0829201357555727,
-                "fr:petales_de_ble": 29.8283797074958,
-                "fr:souffl_": 0.0829201357555702,
-                "fr:y_compris_les_c_r_ales_contenant_du_gluten_sont_indiqu_s_en_gras": 0.0829201357555727
-            },
-            "mass_ratio_uncharacterized": 0.182375548784419,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:Informations sur les allergènes",
-                    "fr:FR- -01",
-                    "en:wheat-flakes",
-                    "fr:y compris les céréales contenant du gluten sont indiqués en gras",
-                    "fr:autres sources de gluten Distribution certifiée par Ecocert SAS",
-                    "fr:soufflé"
-                ],
-                "nutrition": [
-                    "fr:Informations sur les allergènes",
-                    "fr:FR- -01",
-                    "fr:y compris les céréales contenant du gluten sont indiqués en gras",
-                    "fr:autres sources de gluten Distribution certifiée par Ecocert SAS",
-                    "fr:soufflé"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.182375548784419,
-                "nutrition": 0.132004724534379
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 40%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (48.5%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1340,6 +1277,7 @@
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 30.2,
                     "percent_max": 100,
                     "percent_min": 4.16666666666667,
@@ -1348,6 +1286,7 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.0,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1357,12 +1296,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.0,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "Flocons de Blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_hidden": 78,
             "percent_max": 100,
@@ -1371,8 +1312,10 @@
         },
         {
             "ciqual_proxy_food_code": "31074",
-            "difference": 8.9,
+            "difference": 8.88,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate-chunks",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_hidden": 13,
             "percent_max": 50,
@@ -1387,12 +1330,14 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 10.9,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "Masse de Cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_hidden": 48.5,
             "percent_max": 33.3333333333333,
@@ -1401,7 +1346,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.45,
             "percent_max": 8.9,
             "percent_min": 0,
@@ -1413,12 +1360,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.24,
                     "percent_max": 8.9,
                     "percent_min": 0,
                     "text": "Lécithine de Soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.24,
             "percent_max": 8.9,
             "percent_min": 0,
@@ -1427,7 +1376,9 @@
         {
             "ciqual_food_code": "15011",
             "difference": 4.38,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.62,
             "percent_hidden": 6,
             "percent_max": 8.9,
@@ -1441,12 +1392,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.811,
                     "percent_max": 8.9,
                     "percent_min": 0,
                     "text": "Blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.811,
             "percent_max": 8.9,
             "percent_min": 0,
@@ -1455,6 +1408,7 @@
         {
             "difference": 2.19,
             "id": "fr:souffle",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.811,
             "percent_hidden": 3,
             "percent_max": 8.9,
@@ -1623,8 +1577,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.504,
-        "total_difference": 74.9,
+        "relative_difference": 0.503,
+        "total_difference": 74.8,
         "total_specified_input_percent": 148.0
     },
     "ingredients_n": 14,
@@ -1694,6 +1648,19 @@
         "fr:souffle"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:oat-flakes",
+        "en:soya-lecithin",
+        "en:spelt",
+        "en:wheat",
+        "en:wheat-flakes",
+        "en:wholemeal-cereal",
+        "fr:souffle"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2099,24 +2066,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

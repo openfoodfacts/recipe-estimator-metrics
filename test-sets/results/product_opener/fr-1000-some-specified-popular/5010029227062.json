@@ -209,7 +209,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1794,106 +1794,121 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0,
+            "difference": 13.2,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:cereal-flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0,
+                    "difference": 17.2,
                     "id": "en:wheat",
-                    "percent": 45,
-                    "percent_estimate": 45,
-                    "percent_max": 45,
-                    "percent_min": 45,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 27.8,
+                    "percent_hidden": 45,
+                    "percent_max": 100,
+                    "percent_min": 2.77777777777778,
                     "text": "BLÉ"
                 },
                 {
                     "ciqual_proxy_food_code": "9100",
-                    "difference": 0,
+                    "difference": 4.0,
                     "id": "en:rice",
-                    "percent": 21,
-                    "percent_estimate": 21,
-                    "percent_max": 21,
-                    "percent_min": 21,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 21,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "riz"
                 }
             ],
-            "percent_estimate": 66,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.8,
             "percent_hidden": 66,
-            "percent_max": 66,
-            "percent_min": 66,
+            "percent_max": 100,
+            "percent_min": 5.55555555555556,
             "text": "Farines de céréales"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 14.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.5,
             "percent_max": 27,
-            "percent_min": 2,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
-            "percent_estimate": 10.2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.5,
             "percent_max": 27,
-            "percent_min": 0.8,
+            "percent_min": 0,
             "processing": "en:powder,en:defatted",
             "text": "cacao"
         },
         {
-            "difference": 2.28,
+            "difference": 7.31,
             "id": "fr:brisure-de-biscuits-oreo",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent_estimate": 2.64,
-                    "percent_max": 15.4,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.06,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "farine de BLÉ"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent_estimate": 1.32,
-                    "percent_max": 7.8,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.53,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "sucre"
                 },
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
-                    "percent_estimate": 0.659,
-                    "percent_max": 5.26666666666667,
-                    "percent_min": 0.2,
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.26,
+                    "percent_max": 8.33333333333333,
+                    "percent_min": 0,
                     "processing": "en:oiled,en:seed",
                     "text": "de de colza"
                 },
                 {
                     "ciqual_proxy_food_code": "18100",
-                    "difference": 0.0,
+                    "difference": 0.432,
                     "id": "en:cocoa",
-                    "percent": 0.2,
-                    "percent_estimate": 0.2,
-                    "percent_max": 0.2,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.632,
+                    "percent_hidden": 0.2,
+                    "percent_max": 6.25,
+                    "percent_min": 0,
                     "processing": "en:powder,en:defatted",
                     "text": "cacao"
                 },
                 {
                     "ciqual_food_code": "31077",
                     "id": "en:glucose-fructose-syrup",
-                    "percent_estimate": 0.1,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.316,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "sirop de glucose-fructose"
                 },
                 {
                     "ciqual_proxy_food_code": "9510",
                     "id": "en:wheat-starch",
-                    "percent_estimate": 0.0797,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.158,
+                    "percent_max": 4.16666666666667,
                     "percent_min": 0,
                     "text": "amidon de BLÉ"
                 },
@@ -1902,44 +1917,51 @@
                     "ingredients": [
                         {
                             "id": "en:e501i",
-                            "percent_estimate": 0.0199,
-                            "percent_max": 0.2,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0395,
+                            "percent_max": 3.57142857142857,
                             "percent_min": 0,
                             "text": "carbonate de potassium"
                         },
                         {
                             "id": "en:e503i",
-                            "percent_estimate": 0.00996,
-                            "percent_max": 0.2,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0197,
+                            "percent_max": 1.78571428571429,
                             "percent_min": 0,
                             "text": "carbonate d'ammonium"
                         },
                         {
                             "id": "en:e500i",
-                            "percent_estimate": 0.00996,
-                            "percent_max": 0.0666666666666667,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0197,
+                            "percent_max": 1.19047619047619,
                             "percent_min": 0,
                             "text": "carbonate de sodium"
                         }
                     ],
-                    "percent_estimate": 0.0398,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.079,
+                    "percent_max": 3.57142857142857,
                     "percent_min": 0,
                     "text": "poudres à lever"
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
-                    "percent_estimate": 0.0199,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0395,
+                    "percent_max": 3.125,
                     "percent_min": 0,
                     "text": "huile de palme"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 0.00996,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0197,
+                    "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "sel"
                 },
@@ -1949,51 +1971,58 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
-                            "percent_estimate": 0.00498,
-                            "percent_max": 0.2,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.00987,
+                            "percent_max": 0.5,
                             "percent_min": 0,
                             "text": "lécithine de SOJA"
                         }
                     ],
-                    "percent_estimate": 0.00498,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00987,
+                    "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "émulsifiant"
                 },
                 {
                     "id": "fr:aromatisant",
-                    "percent_estimate": 0.00498,
-                    "percent_max": 0.2,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.00987,
+                    "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "aromatisant"
                 }
             ],
-            "percent_estimate": 5.08,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 10.1,
             "percent_hidden": 2.8,
-            "percent_max": 16,
-            "percent_min": 0.8,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "brisure de biscuits Oreo"
         },
         {
             "ciqual_proxy_food_code": "9510",
-            "difference": 0.36,
+            "difference": 2.56,
             "id": "en:wheat-starch",
-            "percent_estimate": 2.14,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.06,
             "percent_hidden": 2.5,
-            "percent_max": 10.4,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "Amidon de BLÉ"
         },
         {
             "id": "fr:aromatisants",
-            "percent_estimate": 1.07,
-            "percent_max": 7.8,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 2.53,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "aromatisants"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -2001,6 +2030,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -2008,6 +2038,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -2018,62 +2049,71 @@
             "ingredients": [
                 {
                     "id": "en:e101",
-                    "percent_estimate": 0.159,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.25,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "B2"
                 }
             ],
-            "percent_estimate": 0.159,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "riboflavine"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.0797,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "vitamines"
         },
         {
             "id": "en:vitamin-b6",
-            "percent_estimate": 0.0398,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "vitamine B6"
         },
         {
             "id": "en:thiamin",
-            "percent_estimate": 0.0199,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "thiamine"
         },
         {
             "id": "en:thiamin",
-            "percent_estimate": 0.00996,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "vitamine B1"
         },
         {
             "id": "en:folic-acid",
-            "percent_estimate": 0.00498,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "acide folique"
         },
         {
             "id": "en:vitamin-d",
-            "percent_estimate": 0.00249,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.139,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "vitamine D"
         },
         {
             "id": "en:vitamin-b12",
-            "percent_estimate": 0.00125,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0694,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "vitamine B12"
@@ -2083,13 +2123,15 @@
             "ingredients": [
                 {
                     "id": "fr:les-ingredients-potentiellement-allergenes-sont-indiques-en-caracteres-gras",
-                    "percent_estimate": 0.00125,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.0694,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "les ingrédients potentiellement allergènes sont indiqués en CARACTÈRES GRAS"
                 }
             ],
-            "percent_estimate": 0.00125,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0694,
             "percent_max": 0.5,
             "percent_min": 0,
             "text": "Conseil relatif aux allergies"
@@ -2192,9 +2234,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 16,
-        "relative_difference": 0.0192,
-        "total_difference": 2.64,
+        "number_of_ingredients_without_ciqual_code": 17,
+        "relative_difference": 0.325,
+        "total_difference": 44.7,
         "total_specified_input_percent": 138.0
     },
     "ingredients_n": 37,
@@ -2320,6 +2362,7 @@
         "en:folic-acid",
         "en:iron",
         "en:raising-agent",
+        "en:rapeseed",
         "en:thiamin",
         "en:vitamin-b12",
         "en:vitamin-b6",
@@ -2331,7 +2374,36 @@
         "fr:conseil-relatif-aux-allergies",
         "fr:les-ingredients-potentiellement-allergenes-sont-indiques-en-caracteres-gras"
     ],
-    "ingredients_without_ciqual_codes_n": 19,
+    "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:e101",
+        "en:e375",
+        "en:e500i",
+        "en:e501i",
+        "en:e503i",
+        "en:emulsifier",
+        "en:folic-acid",
+        "en:glucose-fructose-syrup",
+        "en:iron",
+        "en:raising-agent",
+        "en:rice",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:thiamin",
+        "en:vitamin-b12",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:wheat",
+        "en:wheat-starch",
+        "fr:aromatisant",
+        "fr:aromatisants",
+        "fr:brisure-de-biscuits-oreo",
+        "fr:conseil-relatif-aux-allergies",
+        "fr:les-ingredients-potentiellement-allergenes-sont-indiques-en-caracteres-gras"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 26,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 44,
@@ -2416,8 +2488,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2799,36 +2870,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

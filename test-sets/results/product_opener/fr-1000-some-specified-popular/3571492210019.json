@@ -198,7 +198,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -602,53 +602,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0295436249011618,
-            "likeliest_impacts": {
-                "Climate_change": 0.446483373618845,
-                "EF_single_score": 0.0771523256967205
-            },
-            "likeliest_recipe": {
-                "en:cod": 38.1092378655818,
-                "en:e100": 0.632691118165489,
-                "en:milk_powder": 2.52893447303242,
-                "en:onion": 7.87048787248499,
-                "en:parsley": 0.354705522442224,
-                "en:pepper": 0.281104990938183,
-                "en:potato": 39.2899458973604,
-                "en:salt": 0.933199181029521,
-                "en:sunflower_oil": 8.17306772659568,
-                "en:water": 0.0904783294177457,
-                "fr:Notre_morue_est_p_ch_e_en_Atlantique_Nord_Est_FAO_27_et_en_Pacifique_Nord_Est_FAO_67": 0.130086572158918,
-                "fr:ail_sec": 1.89352851811309
-            },
-            "mass_ratio_uncharacterized": 0.0335797563382711,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:ail sec",
-                    "fr:Notre morue est pêchée en Atlantique Nord Est FAO 27 et en Pacifique Nord Est FAO 67",
-                    "en:e100"
-                ],
-                "nutrition": [
-                    "fr:ail sec",
-                    "fr:Notre morue est pêchée en Atlantique Nord Est FAO 27 et en Pacifique Nord Est FAO 67"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0335797563382711,
-                "nutrition": 0.0221036652747108
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.166666666666667
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 5,
     "ecoscore_tags": [
@@ -1101,12 +1054,14 @@
             "ingredients": [
                 {
                     "id": "fr:gadus-spp",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 54.5,
                     "percent_max": 100,
                     "percent_min": 9.09090909090909,
                     "text": "gadus spp"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 38,
             "percent_max": 100,
@@ -1116,7 +1071,9 @@
         {
             "ciqual_food_code": "4003",
             "difference": 14.3,
+            "ecobalyse_code": "potato-industry-fr",
             "id": "en:potato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 37,
             "percent_max": 50,
@@ -1125,7 +1082,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1133,7 +1092,9 @@
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_max": 25,
             "percent_min": 0,
@@ -1141,11 +1102,14 @@
         },
         {
             "ciqual_food_code": "4003",
+            "ecobalyse_code": "potato-industry-fr",
             "id": "en:potato-flakes",
             "ingredients": [
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.42,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1153,12 +1117,14 @@
                 },
                 {
                     "id": "en:e100",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.42,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "extrait de curcuma"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1166,7 +1132,9 @@
         },
         {
             "ciqual_proxy_food_code": "19044",
+            "ecobalyse_code": "milk-powder",
             "id": "en:milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.42,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1174,6 +1142,7 @@
         },
         {
             "id": "fr:ail-sec",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.71,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1182,6 +1151,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1190,13 +1160,16 @@
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
             "percent_max": 0.8,
             "percent_min": 0,
             "text": "persil"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1204,6 +1177,7 @@
         },
         {
             "id": "fr:notre-morue-est-pechee-en-atlantique-nord-est-fao-27-et-en-pacifique-nord-est-fao-67",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0888,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1349,7 +1323,7 @@
         "poivre"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.411,
         "total_difference": 30.8,
         "total_specified_input_percent": 75
@@ -1418,12 +1392,22 @@
     "ingredients_with_unspecified_percent_sum": 63,
     "ingredients_without_ciqual_codes": [
         "en:e100",
-        "en:pepper",
         "fr:ail-sec",
         "fr:gadus-spp",
         "fr:notre-morue-est-pechee-en-atlantique-nord-est-fao-27-et-en-pacifique-nord-est-fao-67"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cod",
+        "en:e100",
+        "en:parsley",
+        "en:pepper",
+        "en:salt",
+        "fr:ail-sec",
+        "fr:gadus-spp",
+        "fr:notre-morue-est-pechee-en-atlantique-nord-est-fao-27-et-en-pacifique-nord-est-fao-67"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 23,
@@ -1866,19 +1850,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         }

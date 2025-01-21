@@ -202,13 +202,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 56.6243696581197,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 43.3756303418803,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 52.6606637820513,
@@ -648,60 +648,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0392442415948162,
-            "likeliest_impacts": {
-                "Climate_change": 0.0614349015517706,
-                "EF_single_score": 0.0143184095080044
-            },
-            "likeliest_recipe": {
-                "en:butterfat": 4.78145922202276,
-                "en:colza_oil": 4.78145922202276,
-                "en:e160": 0.0409990808900758,
-                "en:e300": 0.0409990808900758,
-                "en:e410": 0.373996473127219,
-                "en:e471": 0.525315354228558,
-                "en:flavouring": 0.212045679140087,
-                "en:fresh_egg": 12.4576732327602,
-                "en:glucose_fructose_syrup": 6.65423647755151,
-                "en:rum": 0.538491526006986,
-                "en:salt": 1.47586870037086,
-                "en:sugar": 10.9925212874648,
-                "en:water": 5.34640630170081,
-                "en:wheat_flour": 49.8306929310408,
-                "en:wheat_gluten": 1.07072976685703,
-                "en:yeast": 0.538491526007053
-            },
-            "mass_ratio_uncharacterized": 0.0688987066013982,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e410",
-                    "en:e160",
-                    "en:e300",
-                    "en:flavouring",
-                    "en:e471",
-                    "en:butterfat"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0688987066013982,
-                "nutrition": 0.00657508466098452
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.315789473684211,
-                "nutrition": 0.0526315789473684
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 32%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1440,8 +1386,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 1.7,
+            "difference": 1.67,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 53.3,
             "percent_hidden": 55,
@@ -1452,6 +1400,7 @@
         {
             "difference": 10.3,
             "id": "fr:ceufs-frais",
+            "is_in_taxonomy": 0,
             "percent_estimate": 23.3,
             "percent_hidden": 13,
             "percent_max": 50,
@@ -1460,7 +1409,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.6,
             "percent_max": 11.2,
             "percent_min": 0,
@@ -1468,7 +1419,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.6,
             "percent_max": 11.2,
             "percent_min": 0,
@@ -1477,13 +1430,16 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.6,
             "percent_max": 11.2,
             "percent_min": 0,
             "text": "beurre concentré"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.27,
             "percent_max": 11.2,
             "percent_min": 0,
@@ -1492,6 +1448,7 @@
         {
             "ciqual_food_code": "1004",
             "id": "en:rum",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.63,
             "percent_max": 11.2,
             "percent_min": 0,
@@ -1500,6 +1457,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.47,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -1510,12 +1468,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.47,
                     "percent_max": 0.94,
                     "percent_min": 0,
                     "text": "mono- et diglycérides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.47,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -1523,6 +1483,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -1530,7 +1491,9 @@
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.173,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -1538,6 +1501,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0867,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -1545,6 +1509,7 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 0.0433,
             "percent_max": 0.94,
@@ -1553,6 +1518,7 @@
         },
         {
             "id": "fr:issus-de-poules-elevees-au-sol",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0217,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -1560,7 +1526,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 0.0217,
             "percent_max": 0.94,
@@ -1868,11 +1836,24 @@
         "en:natural-flavouring",
         "en:natural-vanilla-flavouring",
         "en:wheat-gluten",
+        "fr:ceufs-frais",
+        "fr:issus-de-poules-elevees-au-sol"
+    ],
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:e471",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:natural-vanilla-flavouring",
+        "en:rum",
+        "en:salt",
+        "en:wheat-gluten",
         "en:yeast",
         "fr:ceufs-frais",
         "fr:issus-de-poules-elevees-au-sol"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 33,
@@ -2293,33 +2274,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

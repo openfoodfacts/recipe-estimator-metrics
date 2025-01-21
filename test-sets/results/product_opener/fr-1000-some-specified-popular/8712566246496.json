@@ -259,7 +259,7 @@
                         "epi_score": "0",
                         "origin": "en:india",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -515,51 +515,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0578713399583182,
-            "likeliest_impacts": {
-                "Climate_change": 0.0210036670415346,
-                "EF_single_score": 0.0066161088568238
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 41.8660124332667,
-                "en:coriander_seed": 0.46229838342909,
-                "en:mustard_seed": 0.59808589190381,
-                "en:natural_flavouring": 0.349621442245622,
-                "en:onion": 8.55783938523472,
-                "en:salt": 2.53313924738715,
-                "en:sulfite": 44.4713505066259,
-                "en:water": 0.842634693875329
-            },
-            "mass_ratio_uncharacterized": 0.48184505440027,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring",
-                    "en:sulfite",
-                    "en:coriander-seed"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:coriander-seed"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.48184505440027,
-                "nutrition": 0.00667180890650893
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.428571428571429,
-                "nutrition": 0.285714285714286
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 29%",
-                "The product has a high number of impact uncharacterized ingredients: 43%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 48%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1504,16 +1459,19 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "11004",
+            "ecobalyse_code": "cucumber-eu",
             "id": "en:gherkin",
             "ingredients": [
                 {
                     "id": "en:sulfite",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 57.1,
                     "percent_max": 100,
                     "percent_min": 14.2857142857143,
                     "text": "dont SULFITES"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -1523,6 +1481,7 @@
             "ciqual_food_code": "11018",
             "difference": 20.6,
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_hidden": 42,
             "percent_max": 50,
@@ -1531,7 +1490,9 @@
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1540,6 +1501,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15,
             "percent_max": 2.3,
             "percent_min": 0,
@@ -1549,6 +1511,7 @@
             "ciqual_food_code": "11013",
             "difference": 0.55,
             "id": "en:mustard-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15,
             "percent_hidden": 0.6,
             "percent_max": 2.3,
@@ -1558,6 +1521,7 @@
         {
             "ciqual_food_code": "11026",
             "id": "en:coriander-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15,
             "percent_max": 2.3,
             "percent_min": 0,
@@ -1565,6 +1529,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.26,
             "percent_max": 2.3,
             "percent_min": 0,
@@ -1668,7 +1633,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
         "relative_difference": 0.496,
-        "total_difference": 21.2,
+        "total_difference": 21.1,
         "total_specified_input_percent": 42.6
     },
     "ingredients_n": 8,
@@ -1729,6 +1694,15 @@
         "en:sulfite"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:coriander-seed",
+        "en:mustard-seed",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:sulfite"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2243,36 +2217,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

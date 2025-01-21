@@ -199,7 +199,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1193,16 +1193,19 @@
         {
             "ciqual_food_code": "13050",
             "difference": 24.9,
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple",
             "ingredients": [
                 {
                     "id": "fr:puree-et-puree-concentree",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 75,
                     "percent_max": 100,
                     "percent_min": 50,
                     "text": "purée et purée concentrée"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 75,
             "percent_hidden": 99.9,
             "percent_max": 100,
@@ -1211,6 +1214,7 @@
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 25,
             "percent_max": 50,
             "percent_min": 0,
@@ -1324,6 +1328,11 @@
         "fr:puree-et-puree-concentree"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "fr:puree-et-puree-concentree"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -1706,24 +1715,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

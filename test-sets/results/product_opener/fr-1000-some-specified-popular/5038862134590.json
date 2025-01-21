@@ -192,7 +192,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1093,6 +1093,7 @@
         {
             "difference": 18.8,
             "id": "fr:4-oranges-pressees",
+            "is_in_taxonomy": 0,
             "percent_estimate": 53.8,
             "percent_hidden": 35,
             "percent_max": 100,
@@ -1100,8 +1101,9 @@
             "text": "4 oranges pressées"
         },
         {
-            "difference": 4.9,
+            "difference": 4.92,
             "id": "fr:2-pommes-pressees",
+            "is_in_taxonomy": 0,
             "percent_estimate": 23.1,
             "percent_hidden": 28,
             "percent_max": 50,
@@ -1109,8 +1111,9 @@
             "text": "2½ pommes pressées"
         },
         {
-            "difference": 3.5,
+            "difference": 3.46,
             "id": "fr:34-raisins-blancs-presses",
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.5,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
@@ -1120,6 +1123,7 @@
         {
             "difference": 1.83,
             "id": "fr:un-morceau-d-ananas-presse",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.77,
             "percent_hidden": 7.6,
             "percent_max": 25,
@@ -1128,6 +1132,7 @@
         },
         {
             "id": "fr:1",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.88,
             "percent_max": 20,
             "percent_min": 0,
@@ -1136,6 +1141,7 @@
         {
             "difference": 3.06,
             "id": "fr:3-d-une-carotte-pressee",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.44,
             "percent_hidden": 4.5,
             "percent_max": 16.6666666666667,
@@ -1144,6 +1150,7 @@
         },
         {
             "id": "fr:1",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.721,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1151,6 +1158,7 @@
         },
         {
             "id": "fr:5-de-peche-mixee",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.361,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1159,6 +1167,7 @@
         {
             "difference": 1.62,
             "id": "fr:un-morceau-de-mangue-mixee",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.18,
             "percent_hidden": 1.8,
             "percent_max": 11.1111111111111,
@@ -1167,6 +1176,7 @@
         },
         {
             "id": "fr:une-once-de-poire-mixee",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0901,
             "percent_max": 10,
             "percent_min": 0,
@@ -1175,6 +1185,7 @@
         {
             "difference": 1.65,
             "id": "fr:un-peu-de-jus-de-fruit-de-la-passion",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0451,
             "percent_hidden": 1.7,
             "percent_max": 9.09090909090909,
@@ -1182,8 +1193,9 @@
             "text": "un peu de jus de fruit de la passion"
         },
         {
-            "difference": 0.978,
+            "difference": 0.977,
             "id": "fr:un-peu-de-jus-de-citron",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0225,
             "percent_hidden": 1,
             "percent_max": 8.33333333333333,
@@ -1192,6 +1204,7 @@
         },
         {
             "id": "fr:un-zeste-de-vitamine-c",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0225,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1373,7 +1386,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 13,
         "relative_difference": 0.384,
-        "total_difference": 36.3,
+        "total_difference": 36.4,
         "total_specified_input_percent": 94.6
     },
     "ingredients_n": 13,
@@ -1438,6 +1451,21 @@
         "fr:une-once-de-poire-mixee"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "fr:1",
+        "fr:2-pommes-pressees",
+        "fr:3-d-une-carotte-pressee",
+        "fr:34-raisins-blancs-presses",
+        "fr:4-oranges-pressees",
+        "fr:5-de-peche-mixee",
+        "fr:un-morceau-d-ananas-presse",
+        "fr:un-morceau-de-mangue-mixee",
+        "fr:un-peu-de-jus-de-citron",
+        "fr:un-peu-de-jus-de-fruit-de-la-passion",
+        "fr:un-zeste-de-vitamine-c",
+        "fr:une-once-de-poire-mixee"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -1816,12 +1844,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         }

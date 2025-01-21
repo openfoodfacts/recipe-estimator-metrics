@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -669,58 +669,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.10807888768479,
-            "likeliest_impacts": {
-                "Climate_change": 0.415263867547247,
-                "EF_single_score": 0.0382442375097646
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 9.61474524408936,
-                "en:cocoa_paste": 1.07691343064185,
-                "en:e392": 0.0420901949807182,
-                "en:e500": 0.508840282682378,
-                "en:e503": 0.605281523521586,
-                "en:hazelnut_oil": 5.1748999629852,
-                "en:high_oleic_sunflower_oil": 5.80138127365443,
-                "en:milk_powder": 1.59380035616842,
-                "en:skimmed_milk_powder": 1.49391054856441,
-                "en:thickener": 0.465499583886944,
-                "en:unrefined_cane_sugar": 23.5442035380227,
-                "en:unrefined_sea_salt": 0.626794105968557,
-                "en:water": 1.72677929460011,
-                "en:wheat_flour": 35.1893197482994,
-                "en:whole_wheat_flour": 15.5246998889556,
-                "fr:arome_naturel_de_noisette": 0.50884028268242
-            },
-            "mass_ratio_uncharacterized": 0.0262360937708657,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thickener",
-                    "en:e500",
-                    "en:e392",
-                    "en:unrefined-sea-salt",
-                    "en:e503"
-                ],
-                "nutrition": [
-                    "en:thickener"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0262360937708657,
-                "nutrition": 0.0033347507143307
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3125,
-                "nutrition": 0.0625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 31%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 64,
     "ecoscore_tags": [
@@ -1570,7 +1518,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 19.8,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_hidden": 34,
             "percent_max": 100,
@@ -1579,12 +1529,14 @@
         },
         {
             "ciqual_food_code": "31004",
-            "difference": 1.9,
+            "difference": 1.92,
             "id": "en:milk-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.5,
                     "percent_max": 28,
                     "percent_min": 0,
@@ -1593,6 +1545,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.77,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1600,7 +1553,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "19044",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:milk-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.88,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1609,12 +1564,14 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.88,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "pâte de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_hidden": 25,
             "percent_max": 50,
@@ -1623,8 +1580,10 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 3.5,
+            "difference": 3.46,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
@@ -1633,7 +1592,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.77,
             "percent_max": 25,
             "percent_min": 0,
@@ -1641,7 +1602,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:high-oleic-sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.88,
             "percent_max": 20,
             "percent_min": 0,
@@ -1650,7 +1613,9 @@
         {
             "ciqual_food_code": "15004",
             "difference": 3.56,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:roasted-nibbed-hazelnuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.44,
             "percent_hidden": 5,
             "percent_max": 16.6666666666667,
@@ -1659,7 +1624,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.721,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1668,6 +1635,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:unrefined-sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.28,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1678,12 +1646,14 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.221,
                     "percent_max": 0.56,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.221,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1691,6 +1661,7 @@
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.11,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1698,6 +1669,7 @@
         },
         {
             "id": "fr:arome-naturel-de-noisette",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0551,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1708,12 +1680,14 @@
             "ingredients": [
                 {
                     "id": "en:e414",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0276,
                     "percent_max": 0.56,
                     "percent_min": 0,
                     "text": "gomme d'acacia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0276,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -1724,12 +1698,14 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0276,
                     "percent_max": 0.56,
                     "percent_min": 0,
                     "text": "extrait de romarin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0276,
             "percent_max": 0.56,
             "percent_min": 0,
@@ -2065,6 +2041,21 @@
         "fr:arome-naturel-de-noisette"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e392",
+        "en:e414",
+        "en:e500",
+        "en:e503",
+        "en:milk-chocolate",
+        "en:raising-agent",
+        "en:thickener",
+        "en:unrefined-sea-salt",
+        "fr:arome-naturel-de-noisette"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -2557,7 +2548,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 3,
@@ -2566,12 +2559,16 @@
             "quantity_per_unit_value": 75,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             },
             "weight_measured": 0.71
@@ -2579,7 +2576,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2588,12 +2587,16 @@
             "quantity_per_unit_value": 225,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 19.26

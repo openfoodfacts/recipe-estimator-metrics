@@ -261,7 +261,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -667,65 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0411193290272204,
-            "likeliest_impacts": {
-                "Climate_change": 0.140277453705756,
-                "EF_single_score": 0.0299788667168678
-            },
-            "likeliest_recipe": {
-                "en:coconut": 3.67340042475574,
-                "en:hazelnut": 3.14862893550492,
-                "en:oat_flakes": 16.0890639863193,
-                "en:raisin": 11.2005285819905,
-                "en:sunflower_oil": 0.519197952573301,
-                "en:sunflower_seed": 2.6238574462541,
-                "en:walnut": 0,
-                "en:water": 0,
-                "en:wheat_flakes": 49.6718098318672,
-                "fr:FR___01": 0,
-                "fr:Informations_sur_les_allerg_nes": 0,
-                "fr:Ingr_dient": 0,
-                "fr:petales_de_ble": 1.40987680591844,
-                "fr:raisins_de_sultane": 16.6179338849805,
-                "fr:y_compris_les_c_r_ales_contenant_du_gluten_sont_indiqu_s_en_gras": 0
-            },
-            "mass_ratio_uncharacterized": 0.531294061848724,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:raisins de sultane",
-                    "fr:Ingrédient",
-                    "fr:Informations sur les allergènes",
-                    "fr:FR- -01",
-                    "en:wheat-flakes",
-                    "fr:y compris les céréales contenant du gluten sont indiqués en gras"
-                ],
-                "nutrition": [
-                    "fr:raisins de sultane",
-                    "fr:Ingrédient",
-                    "fr:Informations sur les allergènes",
-                    "fr:FR- -01",
-                    "fr:y compris les céréales contenant du gluten sont indiqués en gras"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.531294061848724,
-                "nutrition": 0.148711411156607
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 40%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 15%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 53%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2008,12 +1949,13 @@
     ],
     "ingredients": [
         {
-            "difference": 5.7,
+            "difference": 5.67,
             "id": "en:wholemeal-cereal",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 31.9,
                     "percent_max": 100,
                     "percent_min": 5.55555555555556,
@@ -2022,6 +1964,7 @@
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.2,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -2030,6 +1973,7 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.2,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -2037,6 +1981,7 @@
                     "text": "pétales de blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.3,
             "percent_hidden": 64,
             "percent_max": 100,
@@ -2044,11 +1989,12 @@
             "text": "Céréales complètes"
         },
         {
-            "difference": 4.8,
+            "difference": 4.83,
             "id": "fr:raisins-de-sultane",
             "ingredients": [
                 {
                     "id": "fr:raisins-de-sultane",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 10.4,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -2056,13 +2002,16 @@
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 10.4,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 20.8,
             "percent_hidden": 16,
             "percent_max": 50,
@@ -2071,12 +2020,13 @@
         },
         {
             "ciqual_food_code": "13046",
-            "difference": 0.6,
+            "difference": 0.583,
             "id": "en:raisin",
             "ingredients": [
                 {
                     "ciqual_food_code": "13046",
                     "id": "en:raisin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.21,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -2084,13 +2034,16 @@
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.21,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_hidden": 11,
             "percent_max": 33.3333333333333,
@@ -2101,6 +2054,7 @@
             "ciqual_proxy_food_code": "15006",
             "difference": 1.71,
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.21,
             "percent_hidden": 3.5,
             "percent_max": 25,
@@ -2110,8 +2064,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 0.4,
+            "difference": 0.396,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_hidden": 3,
             "percent_max": 20,
@@ -2121,8 +2077,10 @@
         },
         {
             "ciqual_food_code": "15011",
-            "difference": 0.1,
+            "difference": 0.104,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_hidden": 2.5,
             "percent_max": 16.6666666666667,
@@ -2417,6 +2375,15 @@
         "fr:raisins-de-sultane"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:oat-flakes",
+        "en:raisin",
+        "en:wheat-flakes",
+        "en:wholemeal-cereal",
+        "fr:raisins-de-sultane"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2879,34 +2846,46 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

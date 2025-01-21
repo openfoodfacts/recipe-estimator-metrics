@@ -216,7 +216,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -462,53 +462,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0276725831415587,
-            "likeliest_impacts": {
-                "Climate_change": 0.0456023672304425,
-                "EF_single_score": 0.0066837551528807
-            },
-            "likeliest_recipe": {
-                "de:Rainforest_Alliance_zertifizert": 0.0972803549524054,
-                "en:bell_pepper": 6.58998784806898,
-                "en:chili_pepper": 8.01228713768153,
-                "en:e202": 0.0972803549524054,
-                "en:e260": 2.87534033041807,
-                "en:e415": 0.333240664513055,
-                "en:garlic": 0.618649885465915,
-                "en:modified_starch": 4.76779910719465,
-                "en:onion": 0.584738646057108,
-                "en:salt": 3.12387922039913,
-                "en:sugar": 30.0460767663057,
-                "en:water": 43.0070289050101
-            },
-            "mass_ratio_uncharacterized": 0.0581932415693255,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "de:Rainforest Alliance zertifizert",
-                    "en:e415",
-                    "en:e202",
-                    "en:e260"
-                ],
-                "nutrition": [
-                    "de:Rainforest Alliance zertifizert"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0581932415693255,
-                "nutrition": 0.00364721231219731
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1578,15 +1531,19 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_max": 100,
             "percent_min": 10,
             "text": "sugar"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "difference": 14.5,
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 8,
             "percent_max": 50,
@@ -1595,7 +1552,9 @@
         },
         {
             "ciqual_food_code": "20041",
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:bell-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1604,6 +1563,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1612,6 +1572,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.56,
             "percent_max": 3.13,
             "percent_min": 0,
@@ -1622,12 +1583,14 @@
             "ingredients": [
                 {
                     "id": "en:e260",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.56,
                     "percent_max": 3.13,
                     "percent_min": 0,
                     "text": "acetic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.56,
             "percent_max": 3.13,
             "percent_min": 0,
@@ -1636,6 +1599,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.25,
             "percent_max": 3.13,
             "percent_min": 0,
@@ -1643,7 +1607,9 @@
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.624,
             "percent_max": 3.13,
             "percent_min": 0,
@@ -1654,12 +1620,14 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.312,
                     "percent_max": 3.13,
                     "percent_min": 0,
                     "text": "xanthan gum"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.312,
             "percent_max": 3.13,
             "percent_min": 0,
@@ -1670,12 +1638,14 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.312,
                     "percent_max": 3.13,
                     "percent_min": 0,
                     "text": "potassium sorbate"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.312,
             "percent_max": 3.13,
             "percent_min": 0,
@@ -1872,10 +1842,22 @@
         "en:e202",
         "en:e260",
         "en:e415",
-        "en:pepper",
         "en:thickener"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:consewateur",
+        "en:e202",
+        "en:e260",
+        "en:e415",
+        "en:garlic",
+        "en:pepper",
+        "en:salt",
+        "en:starch",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -2301,7 +2283,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             }
         }

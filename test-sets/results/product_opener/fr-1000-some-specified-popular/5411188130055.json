@@ -273,7 +273,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -696,69 +696,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.705486421662478,
-            "likeliest_impacts": {
-                "Climate_change": 0.111787521394862,
-                "EF_single_score": 0.00535771849939365
-            },
-            "likeliest_recipe": {
-                "de:Calcium_arbonat": 0.540938346421842,
-                "de:Meer": 0.472820866378945,
-                "de:S_ureregulator": 0.0284950646057037,
-                "de:Von_Natur_aus_gluten": 0.512837077722258,
-                "de:und_laktosefreli": 0.433268657999263,
-                "en:e340": 0,
-                "en:flavouring": 0.472820866378945,
-                "en:salt": 0.0861754110679208,
-                "en:soya_bean": 32.1704927075688,
-                "en:stabiliser": 0.998011317243139,
-                "en:sugar": 1.66161302142721,
-                "en:vitamins": 0.664719946178357,
-                "en:water": 62.0359663953424
-            },
-            "mass_ratio_uncharacterized": 0.0462731225392355,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:stabiliser",
-                    "de:Meer",
-                    "de:und laktosefreli",
-                    "en:vitamins",
-                    "en:flavouring",
-                    "de:Sāureregulator",
-                    "de:Von Natur aus gluten",
-                    "en:e340",
-                    "de:Calciumçarbonat"
-                ],
-                "nutrition": [
-                    "en:stabiliser",
-                    "de:Meer",
-                    "de:und laktosefreli",
-                    "en:flavouring",
-                    "de:Sāureregulator",
-                    "de:Von Natur aus gluten",
-                    "de:Calciumçarbonat"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0462731225392355,
-                "nutrition": 0.0368486606746993
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.692307692307692,
-                "nutrition": 0.538461538461538
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of nutrition uncharacterized ingredients: 54%",
-                "The product has a high number of impact uncharacterized ingredients: 69%",
-                "The impact relative interquartile is high for EF single score (108%)",
-                "The impact relative interquartile is high for Climate change (134%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 101,
     "ecoscore_tags": [
@@ -2155,56 +2092,82 @@
     ],
     "ingredients": [
         {
-            "difference": 42.9,
+            "difference": 3.38,
             "id": "en:soy-base",
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 64.5,
+                    "percent_max": 100,
+                    "percent_min": 39.52,
                     "text": "vesi"
                 },
                 {
                     "ciqual_food_code": "20901",
-                    "difference": 13,
+                    "difference": 13.0,
                     "id": "en:soya-bean",
-                    "percent": 12,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 12,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "soijapavut"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 89.5,
             "percent_hidden": 92.9,
+            "percent_max": 100,
+            "percent_min": 79.04,
             "text": "Soijapohja"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "sokeri"
         },
         {
             "ciqual_food_code": "18100",
-            "difference": 10.9,
+            "difference": 0.9,
             "id": "en:fat-reduced-cocoa-powder",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
             "percent_hidden": 1.6,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "vähärasvainen kaakaojauhe"
         },
         {
             "id": "en:e170i",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "kalsiumkarbonaatti"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.49,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "aromi"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.08,
+            "percent_max": 0.16,
+            "percent_min": 0,
             "text": "merisuola"
         },
         {
@@ -2212,11 +2175,17 @@
             "ingredients": [
                 {
                     "id": "en:e340",
-                    "percent_estimate": 0.781,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.08,
+                    "percent_max": 0.16,
+                    "percent_min": 0,
                     "text": "kaliumfosfaatit"
                 }
             ],
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.08,
+            "percent_max": 0.16,
+            "percent_min": 0,
             "text": "happamuudensäätöaine"
         },
         {
@@ -2224,26 +2193,41 @@
             "ingredients": [
                 {
                     "id": "en:e418",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.08,
+                    "percent_max": 0.16,
+                    "percent_min": 0,
                     "text": "gellaanikumi"
                 }
             ],
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.08,
+            "percent_max": 0.16,
+            "percent_min": 0,
             "text": "stabilointiaine"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.08,
+            "percent_max": 0.16,
+            "percent_min": 0,
             "text": "vitamiinit"
         },
         {
             "id": "en:e101",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.08,
+            "percent_max": 0.16,
+            "percent_min": 0,
             "text": "B2-vitamiini"
         },
         {
             "id": "en:ergocalciferol",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.09,
+            "percent_max": 0.16,
+            "percent_min": 0,
             "text": "D2-vitamiini"
         }
     ],
@@ -2295,8 +2279,8 @@
     "ingredients_lc": "fi",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.627,
-        "total_difference": 66.8,
+        "relative_difference": 0.162,
+        "total_difference": 17.3,
         "total_specified_input_percent": 106.0
     },
     "ingredients_n": 15,
@@ -2321,7 +2305,7 @@
         "en:e340",
         "en:e418"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:soy-base",
         "en:sugar",
@@ -2393,6 +2377,22 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:e101",
+        "en:e170i",
+        "en:e340",
+        "en:e418",
+        "en:ergocalciferol",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:sea-salt",
+        "en:soy-base",
+        "en:soya-bean",
+        "en:stabiliser",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,
@@ -2536,8 +2536,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2902,12 +2901,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-brik-aseptic"
+                    "id": {
+                        "id": "en:tetra-brik-aseptic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         }

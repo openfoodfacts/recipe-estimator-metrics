@@ -60,7 +60,7 @@
         "en:e950",
         "en:e955"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, Lait écrémé, ferments lactiques, lait",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -204,7 +204,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -465,45 +465,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0382056707027068,
-            "likeliest_impacts": {
-                "Climate_change": 0.118938536855594,
-                "EF_single_score": 0.0108820238122955
-            },
-            "likeliest_recipe": {
-                "en:coconut": 1.32683191956032,
-                "en:skimmed_milk": 78.9258975917638,
-                "en:water": 0.18159391069742,
-                "fr:oligo_fructose": 19.5656765779785
-            },
-            "mass_ratio_uncharacterized": 0.242114482324229,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:oligo-fructose"
-                ],
-                "nutrition": [
-                    "fr:oligo-fructose"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.242114482324229,
-                "nutrition": 0.242114482324229
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 24%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 24%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1000,7 +961,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 56.2,
             "percent_max": 100,
@@ -1009,6 +972,7 @@
         },
         {
             "id": "fr:oligo-fructose",
+            "is_in_taxonomy": 0,
             "percent_estimate": 21.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1018,6 +982,7 @@
             "ciqual_proxy_food_code": "15006",
             "difference": 10.4,
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_hidden": 0.5,
             "percent_max": 33.3333333333333,
@@ -1029,6 +994,7 @@
             "ingredients": [
                 {
                     "id": "en:e950",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.73,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1036,12 +1002,14 @@
                 },
                 {
                     "id": "en:e955",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.73,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "sucralose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_max": 25,
             "percent_min": 0,
@@ -1053,6 +1021,7 @@
                 {
                     "ciqual_food_code": "9510",
                     "id": "en:modified-corn-starch",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.37,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1060,12 +1029,14 @@
                 },
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.37,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "carraghénanes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_max": 20,
             "percent_min": 0,
@@ -1076,6 +1047,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.684,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1083,12 +1055,14 @@
                 },
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.684,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "citrate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1096,15 +1070,17 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "ferments lactiques"
         }
@@ -1162,7 +1138,7 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 20.8,
+        "relative_difference": 20.9,
         "total_difference": 10.4,
         "total_specified_input_percent": 0.5
     },
@@ -1241,6 +1217,22 @@
         "fr:oligo-fructose"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:coconut",
+        "en:e330",
+        "en:e407",
+        "en:e950",
+        "en:e955",
+        "en:lactic-ferments",
+        "en:modified-corn-starch",
+        "en:natural-flavouring",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "en:thickener",
+        "fr:oligo-fructose"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 24,
@@ -1678,37 +1670,49 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 2,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 2,
             "quantity_per_unit": "160",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

@@ -256,7 +256,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -696,41 +696,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0593446217283353,
-            "likeliest_impacts": {
-                "Climate_change": 0.0589440724314461,
-                "EF_single_score": 0.0143538622926014
-            },
-            "likeliest_recipe": {
-                "en:antioxidant": 0.488988402931997,
-                "en:barley_malt_extract": 3.31027992432824,
-                "en:colza_oil": 12.2618921626733,
-                "en:e503": 0.102278478451544,
-                "en:folic_acid": 0.033781276074205,
-                "en:lactose": 0.0168906380371185,
-                "en:magnesium": 0.488988402931996,
-                "en:milk_proteins": 0.267669656766023,
-                "en:oat_fibre": 3.67651722728643,
-                "en:rapeseed_lecithin": 0.488988402931996,
-                "en:rye_sourdough": 3.40486962887452,
-                "en:sea_salt": 0.488988402931997,
-                "en:thiamin": 0.0337812760742346,
-                "en:unrefined_cane_sugar": 13.4419725435136,
-                "en:vitamin_b6": 0.0337812760742346,
-                "en:vitamin_d": 0.102278478451544,
-                "en:vitamins": 0.102278478451544,
-                "en:water": 0,
-                "en:wheat_flour": 13.4419725435137,
-                "en:wheat_germ": 5.87076715517581,
-                "en:wheat_starch": 0.23136668520013,
-                "en:whole_wheat_flour": 46.5467967303225
-            },
-            "mass_ratio_uncharacterized": 0.093041298175208
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 60,
     "ecoscore_tags": [
@@ -1686,8 +1651,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 7.9,
+            "difference": 7.88,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.4,
             "percent_hidden": 44.5,
             "percent_max": 100,
@@ -1696,7 +1663,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1704,7 +1673,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.5,
             "percent_max": 21,
             "percent_min": 0,
@@ -1712,7 +1683,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.65,
             "percent_max": 21,
             "percent_min": 0,
@@ -1722,6 +1695,7 @@
             "ciqual_food_code": "9660",
             "difference": 2.37,
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.33,
             "percent_hidden": 5.7,
             "percent_max": 20,
@@ -1731,6 +1705,7 @@
         {
             "ciqual_food_code": "9310",
             "id": "en:oat-fibre",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.66,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1738,6 +1713,7 @@
         },
         {
             "id": "fr:levain-de-seigle-devitalise",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.832,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1749,21 +1725,24 @@
             "ingredients": [
                 {
                     "id": "en:barley-malt-extract",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.416,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "extrait de malt d'orge"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.416,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
         {
             "id": "en:magnesium",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.208,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "magnésium"
         },
@@ -1772,20 +1751,23 @@
             "ingredients": [
                 {
                     "id": "en:rapeseed-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.104,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "lécithines de colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.104,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "émulsifiant"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.052,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1796,12 +1778,14 @@
             "ingredients": [
                 {
                     "id": "fr:extrait-naturel-riche-en-ticopherols",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.026,
                     "percent_max": 0.2,
                     "percent_min": 0,
                     "text": "extrait naturel riche en ticophérols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.026,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1809,6 +1793,7 @@
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.013,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1817,6 +1802,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0065,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1824,6 +1810,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00325,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1831,6 +1818,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00162,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1838,6 +1826,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000812,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1845,6 +1834,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000406,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1852,6 +1842,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000203,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1859,6 +1850,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000102,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -1869,12 +1861,14 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000102,
                     "percent_max": 0.2,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000102,
             "percent_max": 0.2,
             "percent_min": 0,
@@ -2118,7 +2112,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 13,
-        "relative_difference": 0.205,
+        "relative_difference": 0.204,
         "total_difference": 10.3,
         "total_specified_input_percent": 50.2
     },
@@ -2244,6 +2238,30 @@
         "fr:levain-de-seigle-devitalise"
     ],
     "ingredients_without_ciqual_codes_n": 17,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:barley-malt-extract",
+        "en:e503",
+        "en:emulsifier",
+        "en:folic-acid",
+        "en:magnesium",
+        "en:milk-proteins",
+        "en:natural-flavouring",
+        "en:oat-fibre",
+        "en:raising-agent",
+        "en:rapeseed-lecithin",
+        "en:sea-salt",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamin-e",
+        "en:vitamins",
+        "en:wheat-germ",
+        "en:wheat-starch",
+        "fr:extrait-naturel-riche-en-ticopherols",
+        "fr:levain-de-seigle-devitalise"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 21,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 53,
@@ -2790,48 +2808,64 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

@@ -247,7 +247,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1780,6 +1780,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_max": 100,
             "percent_min": 9.09090909090909,
@@ -1787,8 +1788,10 @@
         },
         {
             "ciqual_food_code": "13014",
-            "difference": 5.1,
+            "difference": 5.07,
+            "ecobalyse_code": "strawberry-non-eu",
             "id": "en:strawberry-puree",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 27.8,
             "percent_max": 50,
@@ -1797,7 +1800,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1806,7 +1811,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 13.5,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_hidden": 19.2,
             "percent_max": 25,
@@ -1816,7 +1823,9 @@
         {
             "ciqual_food_code": "22000",
             "difference": 14.0,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_hidden": 16.8,
             "percent_max": 20,
@@ -1826,6 +1835,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.42,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1836,12 +1846,14 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.71,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "pectins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.71,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1852,12 +1864,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.355,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1865,15 +1879,18 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flavourings"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "processing": "en:dried",
             "text": "yeast"
@@ -1881,9 +1898,10 @@
         {
             "difference": 49.7,
             "id": "en:strawberries-in-the-filling",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0888,
             "percent_hidden": 49.8,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "strawberries in the filling"
         }
@@ -2040,7 +2058,7 @@
         "levure-seche"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.724,
         "total_difference": 82.3,
         "total_specified_input_percent": 114.0
@@ -2115,10 +2133,21 @@
         "en:e440a",
         "en:flavouring",
         "en:gelling-agent",
+        "en:strawberries-in-the-filling"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:e330",
+        "en:e440a",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
         "en:strawberries-in-the-filling",
+        "en:wheat-starch",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
     "labels": "No artificial preservatives, No artificial colors",
@@ -2545,7 +2574,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

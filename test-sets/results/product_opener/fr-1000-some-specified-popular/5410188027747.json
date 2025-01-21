@@ -221,7 +221,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1515,7 +1515,9 @@
         {
             "ciqual_food_code": "20047",
             "difference": 33,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_hidden": 88,
             "percent_max": 100,
@@ -1524,7 +1526,9 @@
         },
         {
             "ciqual_food_code": "20020",
+            "ecobalyse_code": "zucchini-eu",
             "id": "en:courgette",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -1533,6 +1537,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1540,7 +1545,9 @@
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1549,7 +1556,9 @@
         {
             "ciqual_food_code": "17270",
             "difference": 1.91,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_hidden": 0.9,
             "percent_max": 20,
@@ -1559,6 +1568,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1568,6 +1578,7 @@
             "ciqual_food_code": "11033",
             "difference": 0.203,
             "id": "en:basil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_hidden": 0.5,
             "percent_max": 14.2857142857143,
@@ -1577,6 +1588,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.23,
             "percent_max": 0.46,
             "percent_min": 0,
@@ -1586,6 +1598,7 @@
             "ciqual_food_code": "11027",
             "difference": 0.08,
             "id": "en:mint",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.23,
             "percent_hidden": 0.15,
             "percent_max": 0.46,
@@ -1595,6 +1608,7 @@
         {
             "ciqual_food_code": "11019",
             "id": "en:white-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.243,
             "percent_max": 0.46,
             "percent_min": 0,
@@ -1786,6 +1800,15 @@
     "ingredients_with_unspecified_percent_sum": 11.2958333333333,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:basil",
+        "en:garlic",
+        "en:lemon-juice",
+        "en:mint",
+        "en:salt",
+        "en:white-pepper"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2295,36 +2318,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pure-pak-classic"
+                    "id": {
+                        "id": "en:pure-pak-classic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         }
@@ -2618,6 +2653,12 @@
         }
     },
     "specific_ingredients": [
+        {
+            "id": "en:vegetable",
+            "ingredient": "légumes",
+            "percent": 93,
+            "text": "teneur en légumes: 93%"
+        },
         {
             "id": "en:vegetable",
             "ingredient": "légumes",

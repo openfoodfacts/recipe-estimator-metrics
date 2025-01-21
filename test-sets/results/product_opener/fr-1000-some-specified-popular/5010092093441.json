@@ -203,7 +203,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -628,64 +628,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.182223147323576,
-            "likeliest_impacts": {
-                "Climate_change": 0.0645825695875583,
-                "EF_single_score": 0.0104050639952667
-            },
-            "likeliest_recipe": {
-                "en:Sustainable__Soya__Flour": 0.601400508149623,
-                "en:calcium": 19.819091578059,
-                "en:e282": 0.588621649516645,
-                "en:e375": 5.01080605544856,
-                "en:e472e": 0.601400508149623,
-                "en:iron": 18.9632562993449,
-                "en:palm_oil": 0.102614755618,
-                "en:rapeseed": 1.00316797016711,
-                "en:salt": 1.10578272578512,
-                "en:thiamin": 0.85998596389957,
-                "en:vinegar": 1.09750701830179,
-                "en:vitamin_c": 0.588621649516608,
-                "en:water": 20.3808866036879,
-                "en:whole_wheat_flour": 44.6531398967521,
-                "en:yeast": 19.9362619592764
-            },
-            "mass_ratio_uncharacterized": 0.353616509903229,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:calcium",
-                    "en:iron",
-                    "en:vitamin-c",
-                    "en:e282",
-                    "en:e472e",
-                    "en:e375",
-                    "en:thiamin",
-                    "en:Sustainable _Soya_ Flour"
-                ],
-                "nutrition": [
-                    "en:Sustainable _Soya_ Flour"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.353616509903229,
-                "nutrition": 0.00798934405992997
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.533333333333333,
-                "nutrition": 0.0666666666666667
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 53%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 35%",
-                "The impact relative interquartile is high for EF single score (34%)",
-                "The impact relative interquartile is high for Climate change (45%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 67,
     "ecoscore_tags": [
@@ -1175,10 +1117,12 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 21.5,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
             "ingredients": [
                 {
                     "id": "en:calcium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 28.4,
                     "percent_max": 100,
                     "percent_min": 2.27272727272727,
@@ -1186,6 +1130,7 @@
                 },
                 {
                     "id": "en:iron",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.1,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1196,12 +1141,14 @@
                     "ingredients": [
                         {
                             "id": "en:e375",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 6.53,
                             "percent_max": 33.3333333333333,
                             "percent_min": 0,
                             "text": "b3"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.53,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1212,18 +1159,21 @@
                     "ingredients": [
                         {
                             "id": "en:thiamin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 6.53,
                             "percent_max": 25,
                             "percent_min": 0,
                             "text": "b1"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.53,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "thiamin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 33,
             "percent_max": 100,
@@ -1233,7 +1183,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 10.3,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 33,
             "percent_max": 50,
@@ -1242,14 +1194,18 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "water"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_max": 25,
             "percent_min": 0,
@@ -1258,6 +1214,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.475,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1267,7 +1224,9 @@
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.237,
                     "percent_max": 0.95,
                     "percent_min": 0,
@@ -1275,13 +1234,16 @@
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.237,
                     "percent_max": 0.475,
                     "percent_min": 0,
                     "text": "sustainable palm"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.475,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1290,6 +1252,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.475,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1297,6 +1260,7 @@
         },
         {
             "id": "en:sustainable-soya-flour",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.475,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1307,12 +1271,14 @@
             "ingredients": [
                 {
                     "id": "en:e472e",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.475,
                     "percent_max": 0.95,
                     "percent_min": 0,
                     "text": "e472e"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.475,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1323,12 +1289,14 @@
             "ingredients": [
                 {
                     "id": "en:e282",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.475,
                     "percent_max": 0.95,
                     "percent_min": 0,
                     "text": "calcium propionate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.475,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1342,18 +1310,21 @@
                     "ingredients": [
                         {
                             "id": "en:vitamin-c",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 2.83,
                             "percent_max": 0.95,
                             "percent_min": 0,
                             "text": "vitamin c"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.83,
                     "percent_max": 0.95,
                     "percent_min": 0,
                     "text": "ascorbic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.83,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1426,7 +1397,7 @@
     ],
     "ingredients_ids_debug": [],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 10,
+        "number_of_ingredients_without_ciqual_code": 9,
         "relative_difference": 0.482,
         "total_difference": 31.8,
         "total_specified_input_percent": 66
@@ -1524,10 +1495,28 @@
         "en:sustainable-soya-flour",
         "en:thiamin",
         "en:vegetable-oil",
+        "en:vitamin-c"
+    ],
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:e282",
+        "en:e300",
+        "en:e375",
+        "en:e472e",
+        "en:emulsifier",
+        "en:flour-treatment-agent",
+        "en:iron",
+        "en:preservative",
+        "en:salt",
+        "en:sustainable-soya-flour",
+        "en:thiamin",
+        "en:vegetable-oil",
+        "en:vinegar",
         "en:vitamin-c",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 31,
@@ -1938,12 +1927,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:ldpe-4-low-density-polyethylene"
+                    "id": {
+                        "id": "en:ldpe-4-low-density-polyethylene"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

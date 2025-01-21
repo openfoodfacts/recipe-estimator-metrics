@@ -234,7 +234,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -659,40 +659,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0877425541809177,
-            "likeliest_impacts": {
-                "Climate_change": 0.0291575237276223,
-                "EF_single_score": 0.00655235085640573
-            },
-            "likeliest_recipe": {
-                "en:e330": 0.228095408455684,
-                "en:salt": 0.228095408455693,
-                "en:tomato": 99.1792092714317,
-                "en:water": 0.0421971693772265
-            },
-            "mass_ratio_uncharacterized": 0.000719171319908643,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e330"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.000719171319908643,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 91,
     "ecoscore_tags": [
@@ -2328,7 +2294,9 @@
         {
             "ciqual_food_code": "20047",
             "difference": 0.2,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99.5,
             "percent_hidden": 99.7,
             "percent_max": 100,
@@ -2338,6 +2306,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -2348,12 +2317,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.25,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "Citronensäure"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -2458,6 +2429,12 @@
         "en:e330"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -2946,7 +2923,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:fsc-cardboard"
+                    "id": {
+                        "id": "en:fsc-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2955,7 +2934,9 @@
             "quantity_per_unit_value": 500,
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             },
             "weight_measured": 19.44

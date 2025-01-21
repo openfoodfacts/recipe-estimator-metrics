@@ -225,13 +225,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 65,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 35,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 60.45,
@@ -678,47 +678,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0850216799374698,
-            "likeliest_impacts": {
-                "Climate_change": 0.0303091231126119,
-                "EF_single_score": 0.00638080269942043
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0.302782627818318,
-                "en:alcohol": 0.594181557003697,
-                "en:broad_bean_flour": 0.9481496477382,
-                "en:colza_oil": 2.44687395046309,
-                "en:salt": 1.36161055415942,
-                "en:sugar": 3.72767385819172,
-                "en:vinegar": 1.36043901382747,
-                "en:water": 21.9772854577643,
-                "en:wheat_flour": 63.8474381337268,
-                "en:wheat_gluten": 0.595300188138555,
-                "en:yeast": 1.06509290920964
-            },
-            "mass_ratio_uncharacterized": 0.00485924794051919,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:acerola-juice"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00485924794051919,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0909090909090909,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 76,
     "ecoscore_tags": [
@@ -2152,8 +2111,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 2.6,
+            "difference": 2.65,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 62.4,
             "percent_hidden": 65,
@@ -2163,7 +2124,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -2171,14 +2134,19 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.85,
             "percent_max": 7.7,
             "percent_min": 0,
             "text": "sugar"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.85,
             "percent_max": 7.7,
             "percent_min": 0,
@@ -2187,6 +2155,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2195,13 +2164,16 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
             "text": "vinegar"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2209,6 +2181,7 @@
         },
         {
             "id": "en:beans",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2217,6 +2190,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2224,6 +2198,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 0.55,
             "percent_max": 1.1,
@@ -2232,6 +2207,7 @@
         },
         {
             "id": "en:acerola",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2240,6 +2216,7 @@
         },
         {
             "id": "en:fruit-shell",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2248,6 +2225,7 @@
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame-seeds",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.73,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2407,9 +2385,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.04,
-        "total_difference": 2.6,
+        "number_of_ingredients_without_ciqual_code": 5,
+        "relative_difference": 0.0408,
+        "total_difference": 2.65,
         "total_specified_input_percent": 65
     },
     "ingredients_n": 13,
@@ -2484,11 +2462,21 @@
         "en:beans",
         "en:flavouring",
         "en:fruit-shell",
-        "en:rapeseed-oil",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola",
+        "en:beans",
+        "en:flavouring",
+        "en:fruit-shell",
+        "en:salt",
+        "en:sesame-seeds",
+        "en:vinegar",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 27,
@@ -2975,25 +2963,33 @@
         {
             "material": {
                 "id": {
-                    "id": "fr:plastique et métal"
+                    "id": {
+                        "id": "fr:plastique et métal"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": "en:fastener"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3002,12 +2998,16 @@
             "quantity_per_unit_value": 500,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 7.23
@@ -3015,18 +3015,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

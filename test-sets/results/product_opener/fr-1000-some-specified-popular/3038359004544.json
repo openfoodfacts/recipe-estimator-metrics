@@ -34,7 +34,7 @@
         "en:e160b"
     ],
     "additives_tags": [],
-    "allergens": "en:gluten,en:milk, en:milk",
+    "allergens": "en:gluten,en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, BLÉ, LAIT, BLÉ, LAIT",
     "allergens_from_user": "(fr) en:gluten,en:milk, en:milk",
     "allergens_hierarchy": [
@@ -231,7 +231,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -681,57 +681,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.242805490508225,
-            "likeliest_impacts": {
-                "Climate_change": 0.0231365352437794,
-                "EF_single_score": 0.00620392358092455
-            },
-            "likeliest_recipe": {
-                "en:carrot": 2.39951171599567,
-                "en:colza_oil": 4.37830843703895,
-                "en:concentrated_lemon_juice": 1.27449805403886,
-                "en:milk": 2.01430631998872,
-                "en:natural_spice_flavouring": 2.01430631998872,
-                "en:onion": 7.60048828400433,
-                "en:salt": 2.8819494014602,
-                "en:spice": 1.98386545573533,
-                "en:sugar": 2.32097614125352,
-                "en:tomato_concentrate": 38,
-                "en:water": 30.2784047128811,
-                "en:wheat_flour": 3.76610592389228,
-                "fr:_": 1.08727923372238
-            },
-            "mass_ratio_uncharacterized": 0.413232743466065,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:»",
-                    "en:natural-spice-flavouring",
-                    "en:tomato-concentrate"
-                ],
-                "nutrition": [
-                    "fr:»",
-                    "en:tomato-concentrate"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.413232743466065,
-                "nutrition": 0.390498322720444
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.230769230769231,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 39%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 41%",
-                "The impact relative interquartile is high for EF single score (31%)",
-                "The impact relative interquartile is high for Climate change (36%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 69,
     "ecoscore_tags": [
@@ -1488,7 +1437,9 @@
         {
             "ciqual_food_code": "20068",
             "difference": 16.5,
+            "ecobalyse_code": "tomato-concentrated",
             "id": "en:tomato-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 38,
             "percent_max": 100,
@@ -1497,19 +1448,23 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_max": 50,
             "percent_min": 0,
             "text": "eau"
         },
         {
-            "difference": 1.4,
+            "difference": 1.36,
             "id": "en:vegetable",
             "ingredients": [
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.68,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1517,13 +1472,16 @@
                 },
                 {
                     "ciqual_food_code": "20009",
+                    "ecobalyse_code": "carrot-non-eu",
                     "id": "en:carrot",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.68,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "carottes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_hidden": 10,
             "percent_max": 33.3333333333333,
@@ -1532,7 +1490,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_max": 25,
             "percent_min": 0,
@@ -1540,7 +1500,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1549,6 +1511,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.42,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -1556,7 +1519,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.71,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -1565,6 +1530,7 @@
         {
             "ciqual_food_code": "12729",
             "id": "en:edam",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -1572,6 +1538,7 @@
         },
         {
             "id": "en:natural-spice-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -1579,6 +1546,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -1587,6 +1555,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 2.9,
             "percent_min": 0,
@@ -1824,6 +1793,15 @@
         "en:vegetable"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-lemon-juice",
+        "en:edam",
+        "en:natural-spice-flavouring",
+        "en:salt",
+        "en:spice",
+        "en:vegetable"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 36,
@@ -2279,25 +2257,33 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": "1",
@@ -2306,19 +2292,25 @@
             "quantity_per_unit_value": "180",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tube"
+                    "id": {
+                        "id": "en:tube"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
@@ -2326,12 +2318,16 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "fr:bouchon-mecanique"
+                    "id": {
+                        "id": "fr:bouchon-mecanique"
+                    }
                 }
             }
         }

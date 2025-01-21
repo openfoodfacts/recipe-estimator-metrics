@@ -49,7 +49,7 @@
         "en:e224",
         "en:e330"
     ],
-    "allergens": "en:celery,en:gluten,en:mustard,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
+    "allergens": "en:celery,en:gluten,en:mustard,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_from_ingredients": "en:mustard, SULFITES, ORGE, BLÉ, CÉLERI, SULFITES, ORGE, BLÉ, CÉLERI",
     "allergens_from_user": "(fr) en:celery,en:gluten,en:mustard,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_hierarchy": [
@@ -235,7 +235,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -679,67 +679,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0747194347862553,
-            "likeliest_impacts": {
-                "Climate_change": 0.0155257251379476,
-                "EF_single_score": 0.0037345868970771
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 1.94200217642439,
-                "en:barley": 26.9162690219469,
-                "en:brown_mustard_seed": 2.02703448269317,
-                "en:cayenne_pepper": 0,
-                "en:celery_seed": 0,
-                "en:cinnamon": 0.18278801767185,
-                "en:clove": 0,
-                "en:e330": 0.150140379352567,
-                "en:garlic": 0.0937963397352368,
-                "en:honey": 1.39565839373058,
-                "en:nutmeg_nut": 0.0876844222654575,
-                "en:onion": 0.0876844222654575,
-                "en:salt": 1.27941027744263,
-                "en:spice": 1.79408890822996,
-                "en:sugar": 0.32791356482565,
-                "en:sulfite": 0.141681113694589,
-                "en:tarragon": 0,
-                "en:turmeric": 0.345565880193759,
-                "en:water": 61.4317030816167,
-                "en:wheat_flour": 1.48646478438118,
-                "fr:graines_de_MOUTARDE_blanches": 0
-            },
-            "mass_ratio_uncharacterized": 0.0607426570919482,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:brown-mustard-seed",
-                    "en:nutmeg-nut",
-                    "fr:graines de MOUTARDE blanches",
-                    "en:sulfite",
-                    "en:e330",
-                    "en:celery-seed"
-                ],
-                "nutrition": [
-                    "fr:graines de MOUTARDE blanches",
-                    "en:nutmeg-nut"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0607426570919482,
-                "nutrition": 0.00120904763758233
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 66,
     "ecoscore_tags": [
@@ -1878,33 +1817,46 @@
     "ingredients": [
         {
             "ciqual_food_code": "11013",
-            "difference": 10,
+            "difference": 15,
             "id": "en:dijon-mustard",
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 28.3,
+                    "percent_max": 100,
+                    "percent_min": 1.66666666666667,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "11013",
-                    "difference": 0,
+                    "difference": 0.667,
                     "id": "en:brown-mustard-seed",
-                    "percent": 14,
-                    "percent_estimate": 14,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 13.3,
+                    "percent_hidden": 14,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "graines de moutarde brunes"
                 },
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:alcohol-vinegar",
-                    "percent_estimate": 5.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 6.67,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "vinaigre d'alcool"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 2.75,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.35,
+                    "percent_max": 4.7,
+                    "percent_min": 0,
                     "text": "sel"
                 },
                 {
@@ -1912,11 +1864,17 @@
                     "ingredients": [
                         {
                             "id": "en:e330",
-                            "percent_estimate": 1.38,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 2.16,
+                            "percent_max": 4.7,
+                            "percent_min": 0,
                             "text": "acide citrique"
                         }
                     ],
-                    "percent_estimate": 1.38,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.16,
+                    "percent_max": 4.7,
+                    "percent_min": 0,
                     "text": "acidifiant"
                 },
                 {
@@ -1924,141 +1882,215 @@
                     "ingredients": [
                         {
                             "id": "en:e224",
-                            "percent_estimate": 1.38,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 2.16,
+                            "percent_max": 4.7,
+                            "percent_min": 0,
                             "text": "e224"
                         }
                     ],
-                    "percent_estimate": 1.38,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.16,
+                    "percent_max": 4.7,
+                    "percent_min": 0,
                     "text": "conservateur"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 55,
             "percent_hidden": 40,
+            "percent_max": 100,
+            "percent_min": 10,
             "text": "moutarde de Dijon"
         },
         {
             "ciqual_food_code": "11018",
-            "difference": 2,
+            "difference": 4.5,
             "id": "en:malt-vinegar",
             "ingredients": [
                 {
                     "id": "en:barley",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 22.5,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "ORGE"
                 }
             ],
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.5,
             "percent_hidden": 27,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "vinaigre de malt"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.2,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "eau"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.62,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "farine de BLÉ"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.81,
+            "percent_max": 5.9,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.41,
+            "percent_max": 5.9,
+            "percent_min": 0,
             "text": "vinaigre d'alcool"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.703,
+            "percent_max": 4.7,
+            "percent_min": 0,
             "text": "sel"
         },
         {
             "ciqual_food_code": "31008",
-            "difference": 1.01,
+            "difference": 1.05,
             "id": "en:honey",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.352,
             "percent_hidden": 1.4,
+            "percent_max": 4.7,
+            "percent_min": 0,
             "text": "miel"
         },
         {
             "id": "en:spice",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.176,
+            "percent_max": 4.7,
+            "percent_min": 0,
             "text": "épices"
         },
         {
-            "difference": 0.605,
+            "difference": 0.624,
             "id": "en:spice",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "11089",
                     "id": "en:turmeric",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0879,
+                    "percent_max": 4.7,
+                    "percent_min": 0,
                     "text": "curcuma"
                 },
                 {
                     "id": "en:cinnamon",
-                    "percent_estimate": 0.0488,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0439,
+                    "percent_max": 2.35,
+                    "percent_min": 0,
                     "text": "cannelle"
                 },
                 {
                     "ciqual_food_code": "11000",
                     "id": "en:garlic",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.022,
+                    "percent_max": 1.56666666666667,
+                    "percent_min": 0,
                     "text": "ail"
                 },
                 {
                     "ciqual_food_code": "11048",
                     "id": "en:nutmeg-nut",
-                    "percent_estimate": 0.0122,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.011,
+                    "percent_max": 1.175,
+                    "percent_min": 0,
                     "text": "noix de muscade"
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
-                    "percent_estimate": 0.0061,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00549,
+                    "percent_max": 0.94,
+                    "percent_min": 0,
                     "text": "oignon"
                 },
                 {
                     "ciqual_food_code": "11088",
                     "id": "en:cayenne-pepper",
-                    "percent_estimate": 0.00305,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00275,
+                    "percent_max": 0.783333333333333,
+                    "percent_min": 0,
                     "text": "piment de Cayenne"
                 },
                 {
                     "ciqual_proxy_food_code": "20055",
+                    "ecobalyse_code": "celery-eu",
                     "id": "en:celery-seed",
-                    "percent_estimate": 0.00153,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00137,
+                    "percent_max": 0.671428571428571,
+                    "percent_min": 0,
                     "text": "graines de CÉLERI"
                 },
                 {
                     "ciqual_food_code": "11052",
                     "id": "en:clove",
-                    "percent_estimate": 0.000763,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000687,
+                    "percent_max": 0.5875,
+                    "percent_min": 0,
                     "text": "clou de girofle"
                 },
                 {
                     "id": "fr:graines-de-moutarde-blanches",
-                    "percent_estimate": 0.000381,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.000343,
+                    "percent_max": 0.522222222222222,
+                    "percent_min": 0,
                     "text": "graines de moutarde blanches"
                 },
                 {
                     "ciqual_food_code": "11092",
                     "id": "en:tarragon",
-                    "percent_estimate": 0.000381,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000343,
+                    "percent_max": 0.47,
+                    "percent_min": 0,
                     "text": "estragon"
                 }
             ],
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.176,
             "percent_hidden": 0.8,
+            "percent_max": 4.7,
+            "percent_min": 0,
             "text": "aromates"
         }
     ],
@@ -2324,8 +2356,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.164,
-        "total_difference": 13.6,
+        "relative_difference": 0.262,
+        "total_difference": 21.8,
         "total_specified_input_percent": 83.2
     },
     "ingredients_n": 29,
@@ -2364,7 +2396,7 @@
         "en:e330",
         "en:e224"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:dijon-mustard",
         "en:mustard",
@@ -2433,6 +2465,29 @@
         "fr:graines-de-moutarde-blanches"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:alcohol-vinegar",
+        "en:barley",
+        "en:brown-mustard-seed",
+        "en:cayenne-pepper",
+        "en:cinnamon",
+        "en:clove",
+        "en:dijon-mustard",
+        "en:e224",
+        "en:e330",
+        "en:garlic",
+        "en:honey",
+        "en:malt-vinegar",
+        "en:nutmeg-nut",
+        "en:preservative",
+        "en:salt",
+        "en:spice",
+        "en:tarragon",
+        "en:turmeric",
+        "fr:graines-de-moutarde-blanches"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -2513,8 +2568,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "no_nutrition_data_imported": "false",
@@ -2940,18 +2994,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:steel"
+                    "id": {
+                        "id": "en:steel"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 8.18
@@ -2959,7 +3019,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2968,12 +3030,16 @@
             "quantity_per_unit_value": "385",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_measured": "209"
@@ -2981,7 +3047,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

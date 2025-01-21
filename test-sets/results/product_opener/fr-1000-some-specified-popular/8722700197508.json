@@ -47,7 +47,7 @@
         "en:e220",
         "en:e415"
     ],
-    "allergens": "en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
+    "allergens": "en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_from_ingredients": "SULFITES, SULFITES",
     "allergens_from_user": "(en) en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_hierarchy": [
@@ -245,7 +245,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -680,48 +680,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.140300061939157,
-            "likeliest_impacts": {
-                "Climate_change": 0.0265268310094191,
-                "EF_single_score": 0.00659381281291282
-            },
-            "likeliest_recipe": {
-                "en:concentrated_grape_must": 24.1269402846188,
-                "en:e150d": 7.70875597461806,
-                "en:e415": 1.91191556456267,
-                "en:modified_starch": 12.6027500038746,
-                "en:sulfite": 0.207222165478914,
-                "en:water": 13.7724092869089,
-                "en:wine_vinegar": 24.1303092851722,
-                "fr:mout_de_raisin_cuit": 22.1422851603911
-            },
-            "mass_ratio_uncharacterized": 0.285272633024817,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e415",
-                    "en:e150d",
-                    "en:sulfite",
-                    "en:concentrated-grape-must"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.285272633024817,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.444444444444444,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 44%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 29%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 89,
     "ecoscore_tags": [
@@ -1779,12 +1737,14 @@
                         {
                             "ciqual_food_code": "11018",
                             "id": "en:wine-vinegar",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 32,
                             "percent_max": 100,
                             "percent_min": 4,
                             "text": "vinaigre de vin"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 32,
                     "percent_max": 100,
                     "percent_min": 4,
@@ -1792,6 +1752,7 @@
                 },
                 {
                     "id": "en:concentrated-grape-must",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 14,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1799,6 +1760,7 @@
                 },
                 {
                     "id": "en:cooked-grape-must",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 7,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1809,12 +1771,14 @@
                     "ingredients": [
                         {
                             "id": "en:e150d",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 3.5,
                             "percent_max": 25,
                             "percent_min": 0,
                             "text": "e150d"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.5,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1825,18 +1789,21 @@
                     "ingredients": [
                         {
                             "id": "en:e220",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 3.5,
                             "percent_max": 20,
                             "percent_min": 0,
                             "text": "e220"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.5,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "antioxydant"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:pgi, en:pgi",
             "percent_estimate": 60,
             "percent_hidden": 60,
@@ -1846,6 +1813,7 @@
         },
         {
             "id": "en:cooked-grape-must",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_max": 50,
             "percent_min": 0,
@@ -1853,7 +1821,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1862,6 +1832,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1872,12 +1843,14 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -2105,6 +2078,21 @@
         "fr:aceto-balsamico-di-modena"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:balsamic-vinegar-of-modena",
+        "en:colour",
+        "en:concentrated-grape-must",
+        "en:cooked-grape-must",
+        "en:e150d",
+        "en:e220",
+        "en:e415",
+        "en:modified-starch",
+        "en:thickener",
+        "en:wine-vinegar",
+        "fr:aceto-balsamico-di-modena"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,
@@ -2471,36 +2459,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:spout"
+                    "id": {
+                        "id": "en:spout"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

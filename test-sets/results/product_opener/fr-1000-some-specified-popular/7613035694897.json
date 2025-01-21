@@ -67,7 +67,7 @@
     "additives_tags": [
         "en:e525"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk, en:milk, en:milk",
+    "allergens": "en:eggs,en:gluten,en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, GOUDA , LAIT, BLE, BLE, FROMAGE , LAIT, OEUF, GOUDA, LAIT, BLE, BLE, FROMAGE, LAIT, OEUF",
     "allergens_from_user": "(en) en:eggs,en:gluten,en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -256,7 +256,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -519,67 +519,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.158821626446565,
-            "likeliest_impacts": {
-                "Climate_change": 0.119993137531254,
-                "EF_single_score": 0.0148448256422081
-            },
-            "likeliest_recipe": {
-                "en:basil": 0.786017985285103,
-                "en:corn_starch": 0.774592637358986,
-                "en:dried_high_ground_chickens": 0.706128620107601,
-                "en:edam": 0,
-                "en:gouda": 13.1627600605807,
-                "en:paprika": 0.249609836863708,
-                "en:pea_fiber": 0.786017985285104,
-                "en:pea_starch": 0.786017985285104,
-                "en:powdered_egg_white": 0.786017985285103,
-                "en:rapeseed_oil": 3.67721868006728,
-                "en:rapeseed_vegetable_oil": 3.49736400183278,
-                "en:rice": 14.9768727856595,
-                "en:salt": 1.02420247422269,
-                "en:spinach": 35.487589473576,
-                "en:sunflower_vegetable_oil": 3.49736400183278,
-                "en:turmeric": 0.188121690983741,
-                "en:vinegar": 0.786017985285104,
-                "en:water": 12.6323244295029,
-                "en:wheat_flour": 4.99012860699497,
-                "en:yeast": 1.31815137326446
-            },
-            "mass_ratio_uncharacterized": 0.148050471623917,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:rapeseed vegetable oil",
-                    "en:pea-fiber",
-                    "en:dried high-ground chickens",
-                    "en:sunflower vegetable oil",
-                    "en:pea-starch"
-                ],
-                "nutrition": [
-                    "en:sunflower vegetable oil",
-                    "en:rapeseed vegetable oil",
-                    "en:dried high-ground chickens"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.148050471623917,
-                "nutrition": 0.115272277202607
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.217391304347826,
-                "nutrition": 0.130434782608696
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 12%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1416,7 +1355,9 @@
         {
             "ciqual_food_code": "20059",
             "difference": 30.3,
+            "ecobalyse_code": "spinach-non-eu",
             "id": "en:spinach",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.8,
             "percent_hidden": 22.5,
             "percent_max": 100,
@@ -1429,7 +1370,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.8,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1438,12 +1381,14 @@
                 {
                     "ciqual_proxy_food_code": "9100",
                     "id": "en:rice",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.8,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.6,
             "percent_max": 50,
             "percent_min": 0,
@@ -1451,8 +1396,9 @@
         },
         {
             "ciqual_food_code": "12736",
-            "difference": 0.6,
+            "difference": 0.594,
             "id": "en:gouda",
+            "is_in_taxonomy": 1,
             "labels": "en:vegetarian",
             "percent_estimate": 11.8,
             "percent_hidden": 12.4,
@@ -1467,7 +1413,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.95,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1475,7 +1423,9 @@
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.48,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1483,14 +1433,18 @@
                 },
                 {
                     "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.738,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "huile de colza"
                 },
                 {
+                    "ciqual_proxy_food_code": "11009",
                     "id": "en:yeast",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.369,
                     "percent_max": 6.25,
                     "percent_min": 0,
@@ -1499,6 +1453,7 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.184,
                     "percent_max": 1.1,
                     "percent_min": 0,
@@ -1510,6 +1465,7 @@
                         {
                             "ciqual_food_code": "11049",
                             "id": "en:paprika",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.0922,
                             "percent_max": 1.1,
                             "percent_min": 0,
@@ -1518,18 +1474,21 @@
                         {
                             "ciqual_proxy_food_code": "11089",
                             "id": "en:turmeric",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.0922,
                             "percent_max": 0.55,
                             "percent_min": 0,
                             "text": "curcuma"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.184,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "épices"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.9,
             "percent_max": 25,
             "percent_min": 0,
@@ -1537,7 +1496,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.95,
             "percent_max": 20,
             "percent_min": 0,
@@ -1545,7 +1506,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1553,7 +1516,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.738,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1561,7 +1526,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.369,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1571,6 +1538,7 @@
             "ciqual_proxy_food_code": "12999",
             "difference": 4.82,
             "id": "en:cheese",
+            "is_in_taxonomy": 1,
             "labels": "en:vegetarian",
             "percent_estimate": 0.184,
             "percent_hidden": 5,
@@ -1582,16 +1550,19 @@
         },
         {
             "ciqual_food_code": "22001",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-white",
             "ingredients": [
                 {
                     "id": "fr:1",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.0922,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "1"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0922,
             "percent_max": 10,
             "percent_min": 0,
@@ -1599,6 +1570,7 @@
         },
         {
             "id": "fr:en-poudre",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0461,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1610,6 +1582,7 @@
                 {
                     "ciqual_food_code": "11033",
                     "id": "en:basil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0115,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
@@ -1618,6 +1591,7 @@
                 {
                     "ciqual_food_code": "11093",
                     "id": "en:dill",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00576,
                     "percent_max": 4.16666666666667,
                     "percent_min": 0,
@@ -1625,13 +1599,16 @@
                 },
                 {
                     "ciqual_food_code": "11015",
+                    "ecobalyse_code": "black-pepper",
                     "id": "en:black-pepper",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00576,
                     "percent_max": 2.77777777777778,
                     "percent_min": 0,
                     "text": "poivre noir"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0231,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1640,6 +1617,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0115,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1647,6 +1625,7 @@
         },
         {
             "id": "en:fiber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00576,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1655,6 +1634,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:pea-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00288,
             "percent_max": 6.66666666666667,
             "percent_min": 0,
@@ -1663,6 +1643,7 @@
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00144,
             "percent_max": 6.25,
             "percent_min": 0,
@@ -1671,6 +1652,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1684,12 +1666,14 @@
                     "ingredients": [
                         {
                             "id": "fr:1",
+                            "is_in_taxonomy": 0,
                             "percent_estimate": 0.00036,
                             "percent_max": 1.1,
                             "percent_min": 0,
                             "text": "1"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00036,
                     "percent_max": 1.1,
                     "percent_min": 0,
@@ -1697,13 +1681,16 @@
                 },
                 {
                     "ciqual_food_code": "22000",
+                    "ecobalyse_code": "egg-indoor-code3",
                     "id": "en:barn-eggs",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00036,
                     "percent_max": 0.55,
                     "percent_min": 0,
                     "text": "Œufs de poules élevées au sol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1968,8 +1955,8 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.895,
+        "number_of_ingredients_without_ciqual_code": 4,
+        "relative_difference": 0.894,
         "total_difference": 35.7,
         "total_specified_input_percent": 39.9
     },
@@ -2090,11 +2077,34 @@
         "en:fiber",
         "en:herbs-and-spices",
         "en:spice",
+        "fr:1",
+        "fr:en-poudre"
+    ],
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:alcohol-vinegar",
+        "en:basil",
+        "en:breadcrumbs",
+        "en:cheese",
+        "en:cooked-rice",
+        "en:corn-starch",
+        "en:dill",
+        "en:e525",
+        "en:fiber",
+        "en:gouda",
+        "en:herbs-and-spices",
+        "en:paprika",
+        "en:pea-starch",
+        "en:rice",
+        "en:salt",
+        "en:spice",
+        "en:turmeric",
         "en:yeast",
         "fr:1",
         "fr:en-poudre"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids_n": 21,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 46,
@@ -2574,12 +2584,16 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
@@ -2587,30 +2601,40 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

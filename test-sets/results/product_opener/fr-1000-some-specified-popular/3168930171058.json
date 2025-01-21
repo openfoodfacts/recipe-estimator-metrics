@@ -199,7 +199,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1029,7 +1029,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 82,
             "percent_max": 100,
             "percent_min": 64,
@@ -1037,7 +1039,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1046,6 +1050,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1056,6 +1061,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.75,
                     "percent_max": 3,
                     "percent_min": 0,
@@ -1063,12 +1069,14 @@
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.75,
                     "percent_max": 1.5,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1077,6 +1085,7 @@
         {
             "difference": 1.38,
             "id": "fr:extrait-de-the-noir⁽-⁾",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_hidden": 0.12,
             "percent_max": 3,
@@ -1085,7 +1094,9 @@
         },
         {
             "difference": 1.4,
+            "ecobalyse_code": "peach-eu",
             "id": "en:peach",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_hidden": 0.1,
             "percent_max": 3,
@@ -1098,12 +1109,14 @@
             "ingredients": [
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "citrate trisodique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1111,6 +1124,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1121,12 +1135,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1137,12 +1153,14 @@
             "ingredients": [
                 {
                     "id": "en:e960a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "Glycosides de stéviol issus de Stevia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1150,6 +1168,7 @@
         },
         {
             "id": "fr:⁽-⁾-certifie-rainforest-alliance",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1157,6 +1176,7 @@
         },
         {
             "id": "fr:plus-d-informations-sur-ra-org",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1164,6 +1184,7 @@
         },
         {
             "id": "fr:people-and-nature-l-humain-et-la-nature",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1316,6 +1337,24 @@
         "fr:⁽-⁾-certifie-rainforest-alliance"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:e960a",
+        "en:flavouring",
+        "en:fructose",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "fr:extrait-de-the-noir⁽-⁾",
+        "fr:people-and-nature-l-humain-et-la-nature",
+        "fr:plus-d-informations-sur-ra-org",
+        "fr:⁽-⁾-certifie-rainforest-alliance"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -1720,14 +1759,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         }

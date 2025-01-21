@@ -234,7 +234,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -664,35 +664,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0571053924463674,
-            "likeliest_impacts": {
-                "Climate_change": 0.0294231085699731,
-                "EF_single_score": 0.0066039024071231
-            },
-            "likeliest_recipe": {
-                "en:salt": 0.49161426645356,
-                "en:tomato": 100.032034220532,
-                "en:water": 0.011059272343088
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 96,
     "ecoscore_tags": [
@@ -1874,8 +1845,10 @@
     "ingredients": [
         {
             "ciqual_food_code": "20047",
-            "difference": 0.3,
+            "difference": 0.25,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99.8,
             "percent_hidden": 99.5,
             "percent_max": 100,
@@ -1885,6 +1858,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1993,8 +1967,8 @@
     "ingredients_lc": "it",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.00302,
-        "total_difference": 0.3,
+        "relative_difference": 0.00251,
+        "total_difference": 0.25,
         "total_specified_input_percent": 99.5
     },
     "ingredients_n": 2,
@@ -2033,6 +2007,10 @@
     "ingredients_with_unspecified_percent_sum": 0.5,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -2515,31 +2493,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:clear-glass"
+                    "id": {
+                        "id": "en:clear-glass"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "it:C/FE 91"
+                    "id": {
+                        "id": "it:C/FE 91"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

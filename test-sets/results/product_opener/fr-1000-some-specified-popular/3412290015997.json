@@ -222,7 +222,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -648,35 +648,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00298222217591336,
-            "likeliest_impacts": {
-                "Climate_change": 1.42230656096834,
-                "EF_single_score": 0.103484296879132
-            },
-            "likeliest_recipe": {
-                "en:butter": 98.0834140626475,
-                "en:salt": 2.00822434394672,
-                "en:water": 0.319578790741591
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 43,
     "ecoscore_tags": [
@@ -1333,7 +1304,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99,
             "percent_max": 100,
             "percent_min": 98,
@@ -1343,6 +1316,7 @@
             "ciqual_food_code": "11058",
             "difference": 1,
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1,
             "percent_hidden": 2,
             "percent_max": 2,
@@ -1434,6 +1408,10 @@
     "ingredients_with_unspecified_percent_sum": 98,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -1926,7 +1904,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1935,12 +1915,16 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             },
             "weight_measured": "4"

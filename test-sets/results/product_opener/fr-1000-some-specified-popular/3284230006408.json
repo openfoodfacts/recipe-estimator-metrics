@@ -233,13 +233,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 86,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 14,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 13.02,
@@ -664,56 +664,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.193468817047541,
-            "likeliest_impacts": {
-                "Climate_change": 0.0754997529349011,
-                "EF_single_score": 0.0145352549425845
-            },
-            "likeliest_recipe": {
-                "en:alcohol": 1.48110434469423,
-                "en:deactivated_yeast": 0.541055222639901,
-                "en:rye_flour": 0.0902444041063846,
-                "en:salt": 0.766920092498704,
-                "en:sunflower_oil": 8.27404964258603,
-                "en:unrefined_cane_sugar": 8.58696474406841,
-                "en:vanilla_extract": 0.541055222639901,
-                "en:water": 9.3584776185082,
-                "en:wheat_flour": 57.4783432552967,
-                "en:wheat_gluten": 1.75369843209489,
-                "en:whole_fresh_eggs": 8.65063210909527,
-                "en:yeast": 1.66616941787694,
-                "fr:fran_ais": 0.482886776813415
-            },
-            "mass_ratio_uncharacterized": 0.00856603068172428,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:français",
-                    "en:deactivated-yeast"
-                ],
-                "nutrition": [
-                    "fr:français",
-                    "en:whole-fresh-eggs"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00856603068172428,
-                "nutrition": 0.171193311993975
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast, en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 17%",
-                "The impact relative interquartile is high for EF single score (39%)",
-                "The impact relative interquartile is high for Climate change (27%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 64,
     "ecoscore_tags": [
@@ -1690,39 +1640,47 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 11.5,
+            "difference": 0.545,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 42.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.5,
             "percent_hidden": 54,
-            "percent_max": 76,
+            "percent_max": 100,
             "percent_min": 9.09090909090909,
             "text": "Farine de blé"
         },
         {
             "ciqual_food_code": "22000",
-            "difference": 9.5,
+            "difference": 8.73,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:whole-egg",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
-            "percent_estimate": 23.5,
+            "percent_estimate": 22.7,
             "percent_hidden": 14,
-            "percent_max": 41,
-            "percent_min": 6,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "œufs entiers"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
-            "percent_estimate": 9.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.5,
             "percent_max": 13,
-            "percent_min": 6,
+            "percent_min": 0,
             "text": "sucre de canne roux"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
-            "percent_estimate": 9.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.5,
             "percent_max": 13,
-            "percent_min": 6,
+            "percent_min": 0,
             "text": "huile de tournesol"
         },
         {
@@ -1730,71 +1688,84 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 5.5,
-                    "percent_max": 9,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.43,
+                    "percent_max": 13,
+                    "percent_min": 0,
                     "text": "eau"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0,
+                    "difference": 0.784,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 2,
-                    "percent_estimate": 2,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.22,
+                    "percent_hidden": 2,
+                    "percent_max": 6.5,
+                    "percent_min": 0,
                     "text": "farines de ble"
                 },
                 {
                     "ciqual_food_code": "9390",
-                    "difference": 0,
+                    "difference": 1.39,
                     "id": "en:rye",
-                    "percent": 2,
-                    "percent_estimate": 2,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.608,
+                    "percent_hidden": 2,
+                    "percent_max": 4.33333333333333,
+                    "percent_min": 0,
                     "text": "de seigle"
                 },
                 {
+                    "ciqual_proxy_food_code": "11009",
                     "id": "en:yeast",
-                    "percent_estimate": 0,
-                    "percent_max": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.608,
+                    "percent_max": 3.25,
                     "percent_min": 0,
                     "text": "levures"
                 }
             ],
-            "percent_estimate": 9.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 4.86,
             "percent_max": 13,
-            "percent_min": 6,
+            "percent_min": 0,
             "text": "levain"
         },
         {
             "id": "en:wheat-gluten",
-            "percent_estimate": 2.73,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.43,
             "percent_max": 13,
             "percent_min": 0,
             "text": "gluten de blé"
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
-            "percent_estimate": 1.36,
-            "percent_max": "5",
+            "percent_estimate": 1.22,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de vanille"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.45,
             "percent_max": 0.9,
             "percent_min": 0,
             "text": "sel"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
-            "percent_estimate": 0.45,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.383,
             "percent_max": 0.9,
             "percent_min": 0,
             "text": "levure"
@@ -1802,14 +1773,17 @@
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
-            "percent_estimate": 0.232,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.191,
             "percent_max": 0.9,
             "percent_min": 0,
             "text": "extrait de vanille"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:deactivated-yeast",
-            "percent_estimate": 0.232,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.191,
             "percent_max": 0.9,
             "percent_min": 0,
             "text": "levure désactivée"
@@ -1967,9 +1941,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.292,
-        "total_difference": 21.0,
+        "number_of_ingredients_without_ciqual_code": 2,
+        "relative_difference": 0.159,
+        "total_difference": 11.4,
         "total_specified_input_percent": 72
     },
     "ingredients_n": 15,
@@ -2044,13 +2018,22 @@
     "ingredients_with_unspecified_percent_n": 10,
     "ingredients_with_unspecified_percent_sum": 28,
     "ingredients_without_ciqual_codes": [
-        "en:deactivated-yeast",
         "en:natural-vanilla-flavouring",
         "en:sourdough",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:deactivated-yeast",
+        "en:natural-vanilla-flavouring",
+        "en:rye",
+        "en:salt",
+        "en:sourdough",
+        "en:vanilla-extract",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 33,
@@ -2160,8 +2143,7 @@
         "en:ecoscore-extended-data-computed",
         "en:ecoscore-extended-data-version-4",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2503,24 +2485,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

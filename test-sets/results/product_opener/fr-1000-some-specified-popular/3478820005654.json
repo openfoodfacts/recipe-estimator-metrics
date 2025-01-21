@@ -255,7 +255,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.375,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -513,38 +513,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00401584503672448,
-            "likeliest_impacts": {
-                "Climate_change": 0.908432458944294,
-                "EF_single_score": 0.069672251605208
-            },
-            "likeliest_recipe": {
-                "en:bourbon_vanilla_extract": 0.0428049663230552,
-                "en:fat_reduced_cocoa_powder": 30.0891021105081,
-                "en:soya": 0.100874309530015,
-                "en:sunflower_oil": 31.1991543012935,
-                "en:unrefined_cane_sugar": 38.8650713473722,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1887,7 +1855,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 58.3,
             "percent_max": 100,
@@ -1896,7 +1866,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 20.8,
             "percent_max": 50,
@@ -1907,6 +1879,7 @@
             "ciqual_food_code": "18100",
             "difference": 19.6,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 10.4,
             "percent_hidden": 30,
@@ -1920,6 +1893,7 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 5.21,
                     "percent_max": 25,
@@ -1927,6 +1901,7 @@
                     "text": "lécithines de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.21,
             "percent_max": 25,
             "percent_min": 0,
@@ -1935,6 +1910,7 @@
         {
             "ciqual_food_code": "11065",
             "id": "en:bourbon-vanilla-extract",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 2.6,
             "percent_max": 20,
@@ -1944,6 +1920,7 @@
         {
             "id": "fr:souligne",
             "ingredients": [],
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.6,
             "percent_max": 0,
             "percent_min": 0,
@@ -2099,6 +2076,14 @@
         "fr:souligne"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bourbon-vanilla-extract",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:soya-lecithin",
+        "fr:souligne"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 20,
@@ -2608,18 +2593,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_specified": 170
@@ -2627,18 +2618,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:steel"
+                    "id": {
+                        "id": "en:steel"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_specified": 8.5

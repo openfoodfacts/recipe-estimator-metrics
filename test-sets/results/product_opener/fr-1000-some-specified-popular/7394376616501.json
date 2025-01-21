@@ -243,7 +243,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -675,56 +675,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.155063986078117,
-            "likeliest_impacts": {
-                "Climate_change": 0.0108465366676236,
-                "EF_single_score": 0.00268243360354769
-            },
-            "likeliest_recipe": {
-                "de:B12": 0.434107524326468,
-                "de:D2": 0.85198068717389,
-                "en:e101": 0.491403023917099,
-                "en:e170": 1.17786239897393,
-                "en:e340ii": 1.34258126308972,
-                "en:oat": 10.0225637303103,
-                "en:potassium_iodide": 0.87713000120438,
-                "en:rapeseed_oil": 1.34258126308972,
-                "en:salt": 0.85198068717389,
-                "en:water": 82.8334467238432
-            },
-            "mass_ratio_uncharacterized": 0.106695415534448,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e170",
-                    "de:B12",
-                    "de:D2",
-                    "en:e340ii",
-                    "en:e101",
-                    "en:potassium-iodide"
-                ],
-                "nutrition": [
-                    "de:B12",
-                    "de:D2"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.106695415534448,
-                "nutrition": 0.0225899952327222
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 61,
     "ecoscore_tags": [
@@ -1776,7 +1726,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -1786,6 +1738,7 @@
             "ciqual_food_code": "9310",
             "difference": 11.4,
             "id": "en:oat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_hidden": 10,
             "percent_max": 50,
@@ -1793,7 +1746,10 @@
             "text": "_Hafer_"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1804,12 +1760,14 @@
             "ingredients": [
                 {
                     "id": "en:e340ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.36,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "Dikaliumphosphat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.36,
             "percent_max": 25,
             "percent_min": 0,
@@ -1820,6 +1778,7 @@
             "ingredients": [
                 {
                     "id": "en:e170i",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.34,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1828,12 +1787,14 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:potassium-iodide",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.34,
                     "percent_max": 0.1,
                     "percent_min": 0,
                     "text": "Kaliumiodid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.68,
             "percent_max": 20,
             "percent_min": 0,
@@ -1842,6 +1803,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.05,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -1852,6 +1814,7 @@
             "ingredients": [
                 {
                     "id": "en:ergocalciferol",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.05,
                     "percent_max": 0.1,
                     "percent_min": 0,
@@ -1859,6 +1822,7 @@
                 },
                 {
                     "id": "en:e101",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.05,
                     "percent_max": 0.1,
                     "percent_min": 0,
@@ -1866,12 +1830,14 @@
                 },
                 {
                     "id": "en:vitamin-b12",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.53,
                     "percent_max": 0.1,
                     "percent_min": 0,
                     "text": "Vitamin B12"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.63,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -2007,7 +1973,7 @@
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 6,
+        "number_of_ingredients_without_ciqual_code": 5,
         "relative_difference": 1.14,
         "total_difference": 11.4,
         "total_specified_input_percent": 10
@@ -2081,11 +2047,24 @@
         "en:e340ii",
         "en:ergocalciferol",
         "en:minerals",
-        "en:rapeseed-oil",
         "en:vitamin-b12",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:e101",
+        "en:e170i",
+        "en:e340ii",
+        "en:ergocalciferol",
+        "en:minerals",
+        "en:oat",
+        "en:potassium-iodide",
+        "en:salt",
+        "en:vitamin-b12",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 20,
@@ -2554,31 +2533,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-brik-aseptic"
+                    "id": {
+                        "id": "en:tetra-brik-aseptic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

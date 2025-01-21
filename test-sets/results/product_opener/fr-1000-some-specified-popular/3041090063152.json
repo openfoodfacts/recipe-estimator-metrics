@@ -244,7 +244,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -671,52 +671,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.418010939358211,
-            "likeliest_impacts": {
-                "Climate_change": 0.234285695597022,
-                "EF_single_score": 0.0218036417136532
-            },
-            "likeliest_recipe": {
-                "en:ferric_diphosphate": 0.364995128539292,
-                "en:palm_oil": 0.592473010775144,
-                "en:rye_flour": 0.645286748794438,
-                "en:salt": 0.562688038360595,
-                "en:sugar": 0.607566060927345,
-                "en:sunflower_lecithin": 0.364995128539327,
-                "en:water": 4.63740519808026,
-                "en:wheat_flour_90": 91.3547132512056,
-                "en:whey_powder": 0.869877434778034
-            },
-            "mass_ratio_uncharacterized": 0.866530501703063,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:wheat flour 90",
-                    "en:ferric-diphosphate"
-                ],
-                "nutrition": [
-                    "en:wheat flour 90"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.866530501703063,
-                "nutrition": 0.862576321522988
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 86%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 87%",
-                "The impact relative interquartile is high for EF single score (62%)",
-                "The impact relative interquartile is high for Climate change (68%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 66,
     "ecoscore_tags": [
@@ -1659,6 +1613,7 @@
             "ingredients": [
                 {
                     "id": "fr:farine-de-ble-90",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 34.1,
                     "percent_max": 100,
                     "percent_min": 7.26666666666667,
@@ -1666,6 +1621,7 @@
                 },
                 {
                     "id": "fr:",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 13.4,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1673,13 +1629,16 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9532",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rye-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.4,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "farine de seigle"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 60.9,
             "percent_hidden": 92,
             "percent_max": 100,
@@ -1688,6 +1647,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 19.6,
             "percent_max": 50,
             "percent_min": 0,
@@ -1695,16 +1655,20 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.0,
             "percent_max": 12,
             "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.0,
             "percent_max": 12,
             "percent_min": 0,
             "text": "huile de palme"
@@ -1712,6 +1676,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1722,12 +1687,14 @@
             "ingredients": [
                 {
                     "id": "en:ferric-diphosphate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.7,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "diphosphate ferrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1738,12 +1705,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.15,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.15,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1954,6 +1923,18 @@
         "fr:farine-de-ble-90"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cereal",
+        "en:emulsifier",
+        "en:ferric-diphosphate",
+        "en:minerals",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:whey-powder",
+        "fr:",
+        "fr:farine-de-ble-90"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2379,7 +2360,9 @@
             "number_of_units": "2",
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

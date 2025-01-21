@@ -248,13 +248,13 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 46.5,
@@ -678,65 +678,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0668221193522977,
-            "likeliest_impacts": {
-                "Climate_change": 0.137818948923623,
-                "EF_single_score": 0.021911473052223
-            },
-            "likeliest_recipe": {
-                "de:weizenvollkornflocken": 5,
-                "en:beetroot_powder": 0,
-                "en:corn": 2.98016574390655,
-                "en:fat_reduced_cocoa_powder": 0,
-                "en:garlic": 2.98016574390655,
-                "en:high_oleic_sunflower_oil": 5.04574607593776,
-                "en:onion": 5.00621949323326,
-                "en:red_bell_pepper": 5.04574607593776,
-                "en:rice_flour": 2.98016574390654,
-                "en:sea_salt": 0,
-                "en:sunflower_oil": 5.04574607593776,
-                "en:tomato_concentrate": 3.3,
-                "en:water": 0.316045047233805,
-                "en:wheat_gluten": 0,
-                "en:whole_grain_oat_flakes": 4.9,
-                "fr:Boulgour_de_bl__complet": 45.5,
-                "fr:_pices_chili": 0,
-                "fr:quinoa": 11.9
-            },
-            "mass_ratio_uncharacterized": 0.663522855426176,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:Boulgour de blé complet",
-                    "fr:quinoa",
-                    "en:tomato-concentrate",
-                    "de:weizenvollkornflocken",
-                    "fr:épices chili"
-                ],
-                "nutrition": [
-                    "en:tomato-concentrate",
-                    "fr:quinoa",
-                    "fr:Boulgour de blé complet",
-                    "fr:épices chili"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.663522855426176,
-                "nutrition": 0.613522855426176
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.294117647058824,
-                "nutrition": 0.235294117647059
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 29%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 61%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 66%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2109,8 +2050,10 @@
     "ingredients": [
         {
             "ciqual_food_code": "9690",
-            "difference": 7.6,
+            "difference": 7.62,
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:whole-wheat-bulgur",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.1,
             "percent_hidden": 45.5,
             "percent_max": 100,
@@ -2121,6 +2064,7 @@
             "ciqual_food_code": "9340",
             "difference": 11.5,
             "id": "en:quinoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.4,
             "percent_hidden": 11.9,
             "percent_max": 50,
@@ -2131,13 +2075,24 @@
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "id": "en:oleic-sunflower-and-sunflower",
-                    "percent_estimate": 11.7,
+                    "id": "en:oleic-sunflower",
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 5.86,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
-                    "text": "oleic sunflower and sunflower"
+                    "text": "oleic sunflower"
+                },
+                {
+                    "ecobalyse_code": "sunflower-non-eu",
+                    "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.86,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
+                    "text": "sunflower"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2145,7 +2100,9 @@
         },
         {
             "ciqual_food_code": "20087",
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:red-bell-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.86,
             "percent_max": 25,
             "percent_min": 0,
@@ -2153,7 +2110,9 @@
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.93,
             "percent_max": 20,
             "percent_min": 0,
@@ -2163,6 +2122,7 @@
             "ciqual_proxy_food_code": "9410",
             "difference": 3.54,
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_hidden": 5,
             "percent_max": 16.6666666666667,
@@ -2172,6 +2132,7 @@
         {
             "difference": 4.17,
             "id": "en:whole-oatmeal",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.732,
             "percent_hidden": 4.9,
             "percent_max": 14.2857142857143,
@@ -2181,7 +2142,9 @@
         {
             "ciqual_food_code": "20068",
             "difference": 2.93,
+            "ecobalyse_code": "tomato-concentrated",
             "id": "en:tomato-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.366,
             "percent_hidden": 3.3,
             "percent_max": 12.5,
@@ -2190,7 +2153,9 @@
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.183,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2199,6 +2164,7 @@
         {
             "ciqual_food_code": "9200",
             "id": "en:corn",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0916,
             "percent_max": 10,
             "percent_min": 0,
@@ -2207,6 +2173,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0458,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2214,6 +2181,7 @@
         },
         {
             "id": "en:chili-spices",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0229,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -2222,6 +2190,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0114,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -2229,6 +2198,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00572,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -2236,7 +2206,9 @@
         },
         {
             "ciqual_proxy_food_code": "20091",
+            "ecobalyse_code": "beetroot-fr",
             "id": "en:beetroot",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00286,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -2244,7 +2216,9 @@
             "text": "beet"
         },
         {
-            "id": "en:lean-cocoa-powder",
+            "ciqual_food_code": "18100",
+            "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00286,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -2488,8 +2462,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.421,
-        "total_difference": 29.7,
+        "relative_difference": 0.422,
+        "total_difference": 29.8,
         "total_specified_input_percent": 70.6
     },
     "ingredients_n": 17,
@@ -2571,13 +2545,27 @@
     "ingredients_with_unspecified_percent_sum": 29.4,
     "ingredients_without_ciqual_codes": [
         "en:chili-spices",
-        "en:lean-cocoa-powder",
-        "en:oleic-sunflower-and-sunflower",
+        "en:oleic-sunflower",
+        "en:sunflower",
         "en:vegetable-oil",
         "en:wheat-gluten",
         "en:whole-oatmeal"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chili-spices",
+        "en:corn",
+        "en:fat-reduced-cocoa-powder",
+        "en:garlic",
+        "en:oleic-sunflower",
+        "en:quinoa",
+        "en:sea-salt",
+        "en:vegetable-oil",
+        "en:wheat-gluten",
+        "en:whole-oatmeal",
+        "en:whole-wheat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
     "labels": "Organic, Vegetarian, EU Organic, No preservatives, Source of fibre, Vegan, Cooked in France, EU Agriculture, FR-BIO-01, Made in France, Natural colorings, No additives, No colorings, Nutriscore, Nutriscore Grade A, AB Agriculture Biologique",
@@ -3028,7 +3016,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 2,
@@ -3037,30 +3027,40 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 29.6
@@ -3068,18 +3068,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 2,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         }

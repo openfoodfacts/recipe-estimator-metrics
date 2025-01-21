@@ -262,7 +262,7 @@
                         "epi_score": "97",
                         "origin": "en:united-kingdom",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 97,
@@ -1863,6 +1863,7 @@
         {
             "difference": 0,
             "id": "en:oatmeal",
+            "is_in_taxonomy": 0,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -1935,6 +1936,10 @@
         "en:oatmeal"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:oatmeal"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 0,
@@ -2449,7 +2454,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2458,12 +2465,16 @@
             "quantity_per_unit_value": 800,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-drink-cartons"
+                    "id": {
+                        "id": "en:recycle-with-drink-cartons"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

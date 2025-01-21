@@ -214,7 +214,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -667,60 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0292436434101027,
-            "likeliest_impacts": {
-                "Climate_change": 0.0871880452830638,
-                "EF_single_score": 0.0221973754850737
-            },
-            "likeliest_recipe": {
-                "en:coconut": 0.444234082593292,
-                "en:colour": 0.917712915397455,
-                "en:e330": 1.20632754056488,
-                "en:emulsifier": 1.96925422387507,
-                "en:flax": 5.15131232411912,
-                "en:natural_flavouring": 1.0866336164117,
-                "en:rapeseed": 21.6355117613003,
-                "en:sea_salt": 2.01031342636637,
-                "en:shea_butter": 11.9189154952926,
-                "en:sunflower": 12.3631495778859,
-                "en:vitamin_a": 0.324076956907199,
-                "en:vitamin_d": 0.320655752416959,
-                "en:vitamins": 0.475054342692729,
-                "en:water": 43.2030944665588
-            },
-            "mass_ratio_uncharacterized": 0.141013630723758,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamin-d",
-                    "en:shea-butter",
-                    "en:e330",
-                    "en:vitamins",
-                    "en:vitamin-a",
-                    "en:colour",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.141013630723758,
-                "nutrition": 0.00765725086042986
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.0714285714285714
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -1294,69 +1240,81 @@
     ],
     "ingredients": [
         {
-            "difference": 0.1,
+            "difference": 22.6,
             "id": "en:non-hydrogenated-vegetable-oils",
             "ingredients": [
                 {
-                    "difference": 0,
+                    "difference": 19.8,
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
-                    "percent": 21,
-                    "percent_estimate": 21,
-                    "percent_max": 21,
-                    "percent_min": 21,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 40.8,
+                    "percent_hidden": 21,
+                    "percent_max": 100,
+                    "percent_min": 9.04,
                     "text": "rapeseed"
                 },
                 {
-                    "difference": 0,
+                    "difference": 3.89,
+                    "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower",
-                    "percent": 12,
-                    "percent_estimate": 12,
-                    "percent_max": 12,
-                    "percent_min": 12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 15.9,
+                    "percent_hidden": 12,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "sunflower"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
-                    "percent_estimate": 8.5,
-                    "percent_max": 12,
-                    "percent_min": 5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 7.95,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "shea"
                 },
                 {
-                    "difference": 0,
+                    "difference": 1.03,
                     "id": "en:flax",
-                    "percent": 5,
-                    "percent_estimate": 5,
-                    "percent_max": 5,
-                    "percent_min": 5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.97,
+                    "percent_hidden": 5,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "flax"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
-                    "percent_estimate": 3.6,
-                    "percent_max": 5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.97,
+                    "percent_max": 20,
                     "percent_min": 0,
                     "text": "coconut"
                 }
             ],
-            "percent_estimate": 50.1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 72.6,
             "percent_hidden": 50,
-            "percent_max": 55,
+            "percent_max": 100,
             "percent_min": 45.2,
             "text": "non-hydrogenated vegetable oils"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 45.0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.7,
             "percent_max": 50,
-            "percent_min": 40.2,
+            "percent_min": 0,
             "text": "water"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1364,6 +1322,7 @@
         },
         {
             "id": "en:emulsifier",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1374,12 +1333,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.3,
                     "percent_max": 0.6,
                     "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1387,6 +1348,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1394,6 +1356,7 @@
         },
         {
             "id": "en:colour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1401,6 +1364,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1408,6 +1372,7 @@
         },
         {
             "id": "en:vitamin-a",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1415,7 +1380,8 @@
         },
         {
             "id": "en:vitamin-d",
-            "percent_estimate": 2.75,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.6,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "vitamin d"
@@ -1470,9 +1436,9 @@
     ],
     "ingredients_ids_debug": [],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 11,
-        "relative_difference": 0.00114,
-        "total_difference": 0.1,
+        "number_of_ingredients_without_ciqual_code": 10,
+        "relative_difference": 0.538,
+        "total_difference": 47.3,
         "total_specified_input_percent": 88
     },
     "ingredients_n": 16,
@@ -1548,13 +1514,28 @@
         "en:natural-flavouring",
         "en:non-hydrogenated-vegetable-oils",
         "en:rapeseed",
-        "en:shea-butter",
         "en:sunflower",
         "en:vitamin-a",
         "en:vitamin-d",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:coconut",
+        "en:colour",
+        "en:e330",
+        "en:emulsifier",
+        "en:flax",
+        "en:natural-flavouring",
+        "en:non-hydrogenated-vegetable-oils",
+        "en:sea-salt",
+        "en:shea-butter",
+        "en:vitamin-a",
+        "en:vitamin-d",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1644,8 +1625,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2017,7 +1997,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2026,12 +2008,16 @@
             "quantity_per_unit_value": 225,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             },
             "weight_measured": 0.87
@@ -2039,7 +2025,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2048,12 +2036,16 @@
             "quantity_per_unit_value": 225,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             },
             "weight_measured": 9.25
@@ -2061,7 +2053,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2070,12 +2064,16 @@
             "quantity_per_unit_value": 225,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 3.5

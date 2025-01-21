@@ -222,7 +222,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -625,64 +625,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.029205528638959,
-            "likeliest_impacts": {
-                "Climate_change": 0.0413184881637319,
-                "EF_single_score": 0.00895508381966311
-            },
-            "likeliest_recipe": {
-                "en:brown_flax_seeds": 1.19584231555217,
-                "en:buckwheat_flour": 0.199307052592029,
-                "en:colza_oil": 2.84527511572841,
-                "en:e282": 0.431252180868464,
-                "en:e300": 1.8987927514151,
-                "en:e471": 0.138018850455683,
-                "en:malted_barley": 0.199307052592029,
-                "en:oat_flakes": 0.6975746840721,
-                "en:rice_flour": 0.199307052592029,
-                "en:rye_flour": 2.88995226258442,
-                "en:salt": 1.82433329034732,
-                "en:sugar": 2.78630697515488,
-                "en:sunflower_seed": 4.08579457813659,
-                "en:water": 22.600389905007,
-                "en:wheat": 0.996535262960143,
-                "en:wheat_bran": 0.6975746840721,
-                "en:wheat_flour": 52.8163689368876,
-                "en:wheat_gluten": 0.334937229488053,
-                "en:yeast": 2.19930844208476,
-                "fr:farine_d_orge_0_2___germe_de__bl__": 0.199307052592029,
-                "fr:levain_de__seigle__d_sactiv__d_shydrat_": 0.418040620831391
-            },
-            "mass_ratio_uncharacterized": 0.0191669464175857,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e282",
-                    "en:e300",
-                    "en:e471",
-                    "fr:levain de _seigle_ désactivé déshydraté",
-                    "fr:farine d'orge 0,2 % germe de _blé_"
-                ],
-                "nutrition": [
-                    "fr:levain de _seigle_ désactivé déshydraté",
-                    "fr:farine d'orge 0,2 % germe de _blé_"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0191669464175857,
-                "nutrition": 0.00770720742268697
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.238095238095238,
-                "nutrition": 0.0952380952380952
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1181,8 +1123,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0.6,
+            "difference": 0.619,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.4,
             "percent_hidden": 53,
             "percent_max": 100,
@@ -1191,7 +1135,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1200,7 +1146,9 @@
         {
             "ciqual_food_code": "15011",
             "difference": 7.8,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.9,
             "percent_hidden": 4.1,
             "percent_max": 33.3333333333333,
@@ -1210,7 +1158,9 @@
         {
             "ciqual_proxy_food_code": "9532",
             "difference": 3.05,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rye-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.95,
             "percent_hidden": 2.9,
             "percent_max": 25,
@@ -1219,7 +1169,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.98,
             "percent_max": 20,
             "percent_min": 0,
@@ -1227,14 +1179,18 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
             "percent_max": 6.2,
             "percent_min": 0,
             "text": "sucre"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.744,
             "percent_max": 6.2,
             "percent_min": 0,
@@ -1244,6 +1200,7 @@
             "ciqual_food_code": "15052",
             "difference": 0.828,
             "id": "en:brown-flax-seeds",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.372,
             "percent_hidden": 1.2,
             "percent_max": 6.2,
@@ -1253,6 +1210,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.186,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1260,6 +1218,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.093,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1267,18 +1226,21 @@
         },
         {
             "ciqual_food_code": "9480",
-            "difference": 0.954,
+            "difference": 0.953,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:spelt-flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0465,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0465,
             "percent_hidden": 1,
             "percent_max": 1.1,
@@ -1289,6 +1251,7 @@
             "ciqual_food_code": "9311",
             "difference": 0.677,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0233,
             "percent_hidden": 0.7,
             "percent_max": 1.1,
@@ -1299,6 +1262,7 @@
             "ciqual_food_code": "9621",
             "difference": 0.688,
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0116,
             "percent_hidden": 0.7,
             "percent_max": 1.1,
@@ -1307,6 +1271,7 @@
         },
         {
             "id": "fr:levain-de-seigle-desactive-deshydrate",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.00581,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1317,12 +1282,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00291,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "mono- et diglycérides d'acides gras"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00291,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1333,12 +1300,14 @@
             "ingredients": [
                 {
                     "id": "en:e282",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00145,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "propionate de calcium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00145,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1347,6 +1316,7 @@
         {
             "difference": 0.199,
             "id": "fr:farine-d-orge-0-2-germe-de-ble",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.000727,
             "percent_hidden": 0.2,
             "percent_max": 1.1,
@@ -1356,7 +1326,9 @@
         {
             "ciqual_food_code": "9520",
             "difference": 0.2,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000363,
             "percent_hidden": 0.2,
             "percent_max": 1.1,
@@ -1366,6 +1338,7 @@
         {
             "difference": 0.2,
             "id": "en:malted-barley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000182,
             "percent_hidden": 0.2,
             "percent_max": 1.1,
@@ -1376,7 +1349,9 @@
         {
             "ciqual_food_code": "9540",
             "difference": 0.2,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.08e-05,
             "percent_hidden": 0.2,
             "percent_max": 1.1,
@@ -1388,12 +1363,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 9.08e-05,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.08e-05,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1821,11 +1798,29 @@
         "en:malted-barley",
         "en:preservative",
         "en:wheat-gluten",
+        "fr:farine-d-orge-0-2-germe-de-ble",
+        "fr:levain-de-seigle-desactive-deshydrate"
+    ],
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:brown-flax-seeds",
+        "en:e282",
+        "en:e300",
+        "en:e471",
+        "en:emulsifier",
+        "en:flour-treatment-agent",
+        "en:malted-barley",
+        "en:oat-flakes",
+        "en:preservative",
+        "en:salt",
+        "en:wheat",
+        "en:wheat-bran",
+        "en:wheat-gluten",
         "en:yeast",
         "fr:farine-d-orge-0-2-germe-de-ble",
         "fr:levain-de-seigle-desactive-deshydrate"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 41,
@@ -2253,17 +2248,23 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

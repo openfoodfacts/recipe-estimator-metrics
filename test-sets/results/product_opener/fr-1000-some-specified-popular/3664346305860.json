@@ -220,7 +220,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -646,53 +646,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.248032067877894,
-            "likeliest_impacts": {
-                "Climate_change": 1.09554278495557,
-                "EF_single_score": 0.0757544129624824
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 12.8998877468181,
-                "en:cocoa_paste": 17.3935963398028,
-                "en:flavouring": 7.22871323351873,
-                "en:lean_cocoa_powder": 8.54780208863456,
-                "en:skimmed_milk_powder": 6.94971330632174,
-                "en:soya_lecithin": 8.3834383657822,
-                "en:sugar": 39.1064595753179,
-                "en:water": 2.67084685254345
-            },
-            "mass_ratio_uncharacterized": 0.175424113275705,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:lean cocoa powder"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "en:lean cocoa powder"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.175424113275705,
-                "nutrition": 0.175424113275705
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0.285714285714286
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 29%",
-                "The product has a high number of impact uncharacterized ingredients: 29%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 18%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%",
-                "The impact relative interquartile is high for EF single score (29%)",
-                "The impact relative interquartile is high for Climate change (32%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -1557,7 +1510,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_max": 100,
             "percent_min": 12.5,
@@ -1566,6 +1521,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1574,13 +1530,16 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "cocoa butter"
         },
         {
-            "id": "en:lean-cocoa-powder",
+            "ciqual_food_code": "18100",
+            "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_max": 25,
             "percent_min": 0,
@@ -1592,12 +1551,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.73,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_max": 20,
             "percent_min": 0,
@@ -1605,16 +1566,19 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flavouring"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "skimmed milk powder"
         },
@@ -1622,9 +1586,10 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 46.3,
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_hidden": 47,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "cocoa"
         }
@@ -1724,7 +1689,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
+        "number_of_ingredients_without_ciqual_code": 1,
         "relative_difference": 0.985,
         "total_difference": 46.3,
         "total_specified_input_percent": 47
@@ -1780,10 +1745,19 @@
     "ingredients_with_unspecified_percent_sum": 99.21875,
     "ingredients_without_ciqual_codes": [
         "en:emulsifier",
-        "en:flavouring",
-        "en:lean-cocoa-powder"
+        "en:flavouring"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2239,7 +2213,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "quantity_per_unit": "100 g",
@@ -2247,12 +2223,16 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:return-to-store"
+                    "id": {
+                        "id": "en:return-to-store"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

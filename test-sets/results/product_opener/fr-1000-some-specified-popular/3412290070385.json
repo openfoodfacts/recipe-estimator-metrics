@@ -229,7 +229,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -676,41 +676,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.633728167834738,
-            "likeliest_impacts": {
-                "Climate_change": 0.570237308496823,
-                "EF_single_score": 0.0226683701239259
-            },
-            "likeliest_recipe": {
-                "en:salt_from_guerande": 0.599727141951157,
-                "en:soft_white_cheese": 95.8160761989532,
-                "en:water": 3.5387203176218
-            },
-            "mass_ratio_uncharacterized": 0.006,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:salt-from-guerande"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.006,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The impact relative interquartile is high for EF single score (74%)",
-                "The impact relative interquartile is high for Climate change (110%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 48,
     "ecoscore_tags": [
@@ -1125,6 +1090,7 @@
         {
             "ciqual_proxy_food_code": "12999",
             "id": "en:soft-white-cheese",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99.7,
             "percent_max": 100,
             "percent_min": 99.4,
@@ -1134,6 +1100,7 @@
             "ciqual_food_code": "11082",
             "difference": 0.3,
             "id": "en:salt-from-guerande",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_hidden": 0.6,
             "percent_max": 0.599999999999994,
@@ -1266,6 +1233,11 @@
     "ingredients_with_unspecified_percent_sum": 99.4,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt-from-guerande",
+        "en:soft-white-cheese"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -1728,61 +1700,81 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

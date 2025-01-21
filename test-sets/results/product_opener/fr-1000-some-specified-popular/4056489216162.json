@@ -227,7 +227,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -479,62 +479,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0429358673277701,
-            "likeliest_impacts": {
-                "Climate_change": 0.123022658748377,
-                "EF_single_score": 0.0108276377521163
-            },
-            "likeliest_recipe": {
-                "en:carboxymethylcellulose_sodium": 0.523704621776614,
-                "en:cream": 4.4375098573356,
-                "en:degreased_cocoa_powder": 2.00904189058149,
-                "en:e950": 0.292921735441016,
-                "en:e955": 0.156138999317531,
-                "en:lactase": 0.113642373477074,
-                "en:milk_proteins": 8.74551159961455,
-                "en:modified_starch": 0.55425469599635,
-                "en:natural_flavouring": 0.338675527822054,
-                "en:skimmed_milk": 79.6085225880755,
-                "en:thickener": 0.554254695996352,
-                "en:water": 3.11791594364042
-            },
-            "mass_ratio_uncharacterized": 0.153232219004749,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thickener",
-                    "en:lactase",
-                    "en:degreased cocoa powder",
-                    "en:carboxymethylcellulose sodium",
-                    "en:e950",
-                    "en:milk-proteins",
-                    "en:e955",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:thickener",
-                    "en:natural-flavouring",
-                    "en:carboxymethylcellulose sodium",
-                    "en:degreased cocoa powder"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.153232219004749,
-                "nutrition": 0.0545464436895493
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.727272727272727,
-                "nutrition": 0.363636363636364
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 36%",
-                "The product has a high number of impact uncharacterized ingredients: 73%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1973,7 +1917,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.2,
             "percent_max": 100,
             "percent_min": 8.33333333333333,
@@ -1981,6 +1927,7 @@
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1989,6 +1936,7 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1998,6 +1946,7 @@
             "ciqual_food_code": "18100",
             "difference": 3.73,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.73,
             "percent_hidden": 2,
             "percent_max": 25,
@@ -2007,6 +1956,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.86,
             "percent_max": 20,
             "percent_min": 0,
@@ -2017,12 +1967,14 @@
             "ingredients": [
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.43,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "Carrageen"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.43,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2030,6 +1982,7 @@
         },
         {
             "id": "en:e466",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.716,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2037,15 +1990,17 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.358,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "natürliches Aroma"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.179,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Aroma"
         },
@@ -2054,28 +2009,32 @@
             "ingredients": [
                 {
                     "id": "en:e950",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0895,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "Acesulfam K"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0895,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Süßungsmittel"
         },
         {
             "id": "en:e955",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0448,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Sucralose"
         },
         {
             "id": "en:lactase",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0448,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Laktase"
         }
@@ -2128,7 +2087,7 @@
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 1.87,
+        "relative_difference": 1.86,
         "total_difference": 3.73,
         "total_specified_input_percent": 2
     },
@@ -2212,6 +2171,22 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:e407",
+        "en:e466",
+        "en:e950",
+        "en:e955",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring",
+        "en:lactase",
+        "en:milk-proteins",
+        "en:modified-starch",
+        "en:natural-flavouring",
+        "en:sweetener",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -2703,14 +2678,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

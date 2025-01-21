@@ -259,7 +259,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -692,47 +692,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0223305977772179,
-            "likeliest_impacts": {
-                "Climate_change": 1.63809388819176,
-                "EF_single_score": 0.102155938983236
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 24.1109131339823,
-                "en:cocoa_paste": 24.4344969640441,
-                "en:natural_bourbon_vanilla_bean": 23.5980833637127,
-                "en:sugar": 24.4222103569717,
-                "en:water": 3.93899234482119
-            },
-            "mass_ratio_uncharacterized": 0.181087060245665,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural bourbon vanilla bean"
-                ],
-                "nutrition": [
-                    "en:natural bourbon vanilla bean"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.181087060245665,
-                "nutrition": 0.181087060245665
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 18%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 25,
     "ecoscore_tags": [
@@ -2540,6 +2499,7 @@
             "ciqual_proxy_food_code": "16030",
             "difference": 7.5,
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 62.5,
             "percent_hidden": 70,
             "percent_max": 100,
@@ -2548,8 +2508,10 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 15,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 15.0,
             "percent_max": 30,
             "percent_min": 0,
             "text": "sugar"
@@ -2557,6 +2519,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 30,
             "percent_min": 0,
@@ -2564,6 +2527,7 @@
         },
         {
             "id": "en:vanilla",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_max": 25,
             "percent_min": 0,
@@ -2702,6 +2666,12 @@
         "en:vanilla"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:vanilla"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -3266,31 +3236,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": "en:Container"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:card"
+                    "id": {
+                        "id": "en:card"
+                    }
                 }
             }
         }

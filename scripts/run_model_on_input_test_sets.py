@@ -18,10 +18,15 @@ Example:
 
 """
 
+"""
 import json
 import sys
 import os
 import subprocess
+
+import time
+
+import concurrent.futures
 
 from compute_metrics import compute_metrics_for_test_set
 
@@ -61,9 +66,13 @@ if "/" not in sys.argv[2]:
 
 results_path = sys.argv[2]
 
-if not os.path.exists(model):
-    print("Model executable does not exist")
-    sys.exit(1)
+command = model.split(";")
+for element in command:
+    if not os.path.exists(element):
+        print(f"{element} does not exist")
+        sys.exit(1)
+
+start_time = time.time()
 
 # Go through each input test set directory
 test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
@@ -104,7 +113,8 @@ for test_set_name in test_sets:
         print("Running model on product " + path)
 
         # Define the command to be executed
-        command = [model]
+        command = model.split(";")
+        #print(command)
 
         # Create a Popen object
         p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
@@ -112,10 +122,13 @@ for test_set_name in test_sets:
         # Pass the input to the command
         stdout, stderr = p.communicate(input=json.dumps(input_product))
 
+        # Handle errors if any
+        if stderr:
+            print(stderr.strip(), file=sys.stderr)
+
         # Get the output
         result_json = stdout.strip()
 
-        # convert json to object
         try:
             result = json.loads(result_json)
 
@@ -124,7 +137,149 @@ for test_set_name in test_sets:
             print("Saving output to " + result_path)
             with open(result_path, "w") as f:
                 json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
-        except:
-            print(result_json, file=sys.stderr)
+        except Exception as e:
+            #print(result_json, file=sys.stderr)
+            print("An issue occurred: " + str(e), file=sys.stderr)
+
+        elapsed_time = time.time() - start_time
+        print(f"\n -- Test set {test_set_name} completed in {elapsed_time:.2f} seconds. -- \n")
 
     compute_metrics_for_test_set(results_path, test_set_name)
+
+    elapsed_time = time.time() - start_time
+    print(f"\n -- Compute_metrics_for_test_set completed in {elapsed_time:.2f} seconds. -- \n")
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+import json
+import sys
+import os
+import subprocess
+import time
+from concurrent.futures import ProcessPoolExecutor
+from compute_metrics import compute_metrics_for_test_set
+
+start_time = time.time()
+# Function to remove percent fields from ingredients
+def remove_percent_fields(ingredients):
+    """
+    Recursively removes percentage-related fields from ingredients, including sub-ingredients.
+    If 'percent' is found, it is moved to 'percent_hidden' before deletion.
+    """
+    fields_to_remove = ["percent", "percent_min", "percent_max", "percent_estimate"]
+
+    for ingredient in ingredients:
+        if "percent" in ingredient:
+            ingredient["percent_hidden"] = ingredient["percent"]  # Store the hidden percentage
+        
+        for field in fields_to_remove:
+            ingredient.pop(field, None)  # Remove the field if it exists
+
+        # If the ingredient has sub-ingredients, apply the function recursively
+        if "ingredients" in ingredient and isinstance(ingredient["ingredients"], list):
+            remove_percent_fields(ingredient["ingredients"])
+
+    return ingredients  # Optional, for function chaining
+
+# Function to check is there are duplicates
+def find_ingredients_with_duplicates(ingredients):
+    ingredient_names = []
+    has_duplicates = False
+
+    # Recursive function
+    def check_ingredients(ingredients_list):
+        nonlocal has_duplicates
+        for ingredient in ingredients_list:
+            if isinstance(ingredient, dict) and "ingredients" in ingredient:
+                check_ingredients(ingredient["ingredients"])
+            else :
+                #print(ingredient["id"])
+                ingredient_names.append(ingredient["id"])
+
+    check_ingredients(ingredients)
+    
+    # Verification of duplicates
+    unique_ingredients = set(ingredient_names)
+    if len(unique_ingredients) < len(ingredient_names):
+        has_duplicates = True
+
+    return has_duplicates
+
+def process_product(path, model, results_path, test_set_name):
+    test_name = path.split("/")[-1]
+
+    with open(path, "r") as f:
+        input_product = json.load(f)
+
+    if "ingredients" not in input_product:
+        print("Skipping product without ingredients: " + path)
+
+    input_product["ingredients"] = remove_percent_fields(input_product["ingredients"])
+    print("Running model on product " + path)
+
+    command = model.split(";")
+    p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+    stdout, stderr = p.communicate(input=json.dumps(input_product))
+
+    if stderr:
+        print(stderr.strip(), file=sys.stderr)
+
+    result_json = stdout.strip()
+
+    try:
+        result = json.loads(result_json)
+
+        # Verification : we want to know if there are duplicate ingredients
+        result["pefap_data"]["pefap_duplicate_ingredients"] = find_ingredients_with_duplicates(input_product["ingredients"])
+        print(f"\n -- Past time for test [{test_name}] : {result["pefap_data"]["pefap_execution_time"]:.2f} seconds. -- \n")
+
+        result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
+        print("✅ Saving output to " + result_path + "\n")
+        with open(result_path, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=4, ensure_ascii=False, sort_keys=True)
+    
+    except Exception as e:
+        print("❌ An issue occurred: " + str(e) + "\n", file=sys.stderr)
+
+def main():
+    if len(sys.argv) < 3:
+        print("Usage: run_model_input_test_sets.py [full path or name of model executable] [full path or name for results] [full paths or names of one or more input test sets]")
+        sys.exit(1)
+
+    model = sys.argv[1]
+    results_path = sys.argv[2]
+    test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
+
+    for test_set_name in test_sets:
+        test_set_path = test_set_name 
+        if not os.path.exists(results_path):
+            os.makedirs(results_path)
+        if not os.path.exists(results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input")):
+            os.makedirs(results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input"))
+
+        paths = [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]
+
+        processed_count = 0
+        with ProcessPoolExecutor() as executor:
+            futures = [executor.submit(process_product, path, model, results_path, test_set_name) for path in paths]
+            for future in futures:
+                processed_count += 1
+                sys.stdout.write(f"\r -- Products processed: {processed_count} -- \n")
+                sys.stdout.flush()
+                time_execution = future.result()
+        
+        compute_metrics_for_test_set(results_path, os.path.relpath(test_set_name, start="test-sets/input"))
+
+if __name__ == '__main__':
+    main()

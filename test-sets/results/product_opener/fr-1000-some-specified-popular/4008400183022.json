@@ -37,7 +37,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:milk, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:milk, en:soybeans, en:milk, en:soybeans",
     "allergens_from_ingredients": "en:nuts, ALMOND, MILK , MILK, WHEAT , SOYA, ALMOND, MILK, MILK, WHEAT, SOYA",
     "allergens_from_user": "(pl) en:gluten,en:milk,en:nuts,en:soybeans, en:milk, en:soybeans",
     "allergens_hierarchy": [
@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -489,65 +489,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.104359088205421,
-            "likeliest_impacts": {
-                "Climate_change": 0.319879819481457,
-                "EF_single_score": 0.0499158773550394
-            },
-            "likeliest_recipe": {
-                "de:Backtriebmittel_Natriumhydrogencar": 1.55611411619294,
-                "de:bonat": 1.4498611741763,
-                "en:almond": 8.79960052453005,
-                "en:coconut": 28.0487266719395,
-                "en:natural_flavouring": 1.55611411619294,
-                "en:palm": 24.7365927407186,
-                "en:salt": 0.67167419070484,
-                "en:shea_butter": 3.21291656690088,
-                "en:skimmed_milk_powder": 3.36602563466417,
-                "en:soya": 1.72544614510238,
-                "en:sugar": 25.043080338712,
-                "en:sweet_whey_powder": 3.36602563466417,
-                "en:tapioca": 2.45749177791108,
-                "en:vanillin": 0.671674190704845,
-                "en:water": 0,
-                "en:wheat_flour": 3.33366273351091
-            },
-            "mass_ratio_uncharacterized": 0.201699363663977,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "de:bonat",
-                    "en:sweet-whey-powder",
-                    "en:shea-butter",
-                    "en:tapioca",
-                    "de:Backtriebmittel Natriumhydrogencar",
-                    "en:natural-flavouring",
-                    "en:vanillin"
-                ],
-                "nutrition": [
-                    "en:tapioca",
-                    "de:Backtriebmittel Natriumhydrogencar",
-                    "de:bonat",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.201699363663977,
-                "nutrition": 0.086545666703474
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.466666666666667,
-                "nutrition": 0.266666666666667
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 27%",
-                "The product has a high number of impact uncharacterized ingredients: 47%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 20%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1627,6 +1568,7 @@
             "ciqual_food_code": "15007",
             "difference": 28.7,
             "id": "en:desiccated-coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.2,
             "percent_hidden": 25.5,
             "percent_max": 100,
@@ -1638,20 +1580,25 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.5,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "palm"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.5,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "shea"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1659,7 +1606,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1669,6 +1618,7 @@
             "ciqual_food_code": "15041",
             "difference": 2.27,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.73,
             "percent_hidden": 8,
             "percent_max": 25,
@@ -1677,7 +1627,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.86,
             "percent_max": 20,
             "percent_min": 0,
@@ -1685,6 +1637,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.43,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1692,7 +1645,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.716,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1701,6 +1656,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:tapioca",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.358,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1708,8 +1664,9 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.179,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flavourings"
         },
@@ -1718,14 +1675,16 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0895,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0895,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "emulsifier"
         },
@@ -1734,20 +1693,23 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0448,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "sodium bicarbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0448,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "raising agent"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0448,
             "percent_max": 0.275,
             "percent_min": 0,
@@ -1928,9 +1890,9 @@
         "salz"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.924,
-        "total_difference": 31.0,
+        "total_difference": 30.9,
         "total_specified_input_percent": 33.5
     },
     "ingredients_n": 16,
@@ -2025,11 +1987,25 @@
         "en:emulsifier",
         "en:flavouring",
         "en:raising-agent",
-        "en:shea-butter",
         "en:vegetable-fat",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:desiccated-coconut",
+        "en:e322",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:shea-butter",
+        "en:tapioca",
+        "en:vegetable-fat",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 35,
@@ -2493,26 +2469,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": "en:paperboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             }
         }

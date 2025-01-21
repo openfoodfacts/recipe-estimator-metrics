@@ -182,7 +182,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -758,7 +758,9 @@
         {
             "ciqual_food_code": "15037",
             "difference": 22.5,
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 74.5,
             "percent_hidden": 97,
             "percent_max": 100,
@@ -767,7 +769,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -776,6 +780,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.8,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -872,6 +877,10 @@
     "ingredients_with_unspecified_percent_sum": 3,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1270,12 +1279,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

@@ -218,7 +218,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -1446,7 +1446,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20047",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 32,
                     "percent_max": 100,
                     "percent_min": 4,
@@ -1454,7 +1456,9 @@
                 },
                 {
                     "ciqual_food_code": "20041",
+                    "ecobalyse_code": "bellpepper-unheated-greehouse",
                     "id": "en:bell-pepper",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 14,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1462,7 +1466,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "20019",
+                    "ecobalyse_code": "cucumber-eu",
                     "id": "en:cucumber",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 7,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1470,7 +1476,9 @@
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.5,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1479,12 +1487,14 @@
                 {
                     "ciqual_food_code": "11000",
                     "id": "en:garlic",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.5,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "ajo"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 95,
             "percent_max": 100,
@@ -1495,7 +1505,9 @@
         {
             "ciqual_food_code": "17270",
             "difference": 17.4,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_hidden": 2.6,
             "percent_max": 50,
@@ -1505,6 +1517,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:sherry-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1513,6 +1526,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.35,
             "percent_max": 0.7,
             "percent_min": 0,
@@ -1521,6 +1535,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.65,
             "percent_max": 0.7,
             "percent_min": 0,
@@ -1687,6 +1702,14 @@
         "en:vegetable"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:garlic",
+        "en:lemon-juice",
+        "en:salt",
+        "en:sherry-vinegar",
+        "en:vegetable"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2099,19 +2122,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:composite-material"
+                    "id": {
+                        "id": "en:composite-material"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         }

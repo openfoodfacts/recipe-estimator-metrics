@@ -252,7 +252,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -691,69 +691,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0515401557750494,
-            "likeliest_impacts": {
-                "Climate_change": 0.210132882081195,
-                "EF_single_score": 0.0331401424423486
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 0.110159666182432,
-                "en:colza_oil": 3.48190262400396,
-                "en:corn": 10.8841675777796,
-                "en:dextrose": 0.427454990205588,
-                "en:e330": 0.11015966618245,
-                "en:e420": 15.0977624334845,
-                "en:flavouring": 0.197565841616814,
-                "en:glucose_syrup": 23.2810846719108,
-                "en:hazelnut": 17.1855277543888,
-                "en:malted_rye_flakes": 5.0410881412874,
-                "en:malted_wheat_flour": 0.572850925146295,
-                "en:oat_flakes": 13.7484222035111,
-                "en:palm_oil": 3.34989423309865,
-                "en:rice_flour": 8.9364744322822,
-                "en:salt": 0.570303602437079,
-                "en:sugar": 3.31258269815192,
-                "en:sunflower_lecithin": 0.197565841616814,
-                "en:water": 2.03936474500865,
-                "en:wheat_flour": 5.49936888140443,
-                "en:wheat_gluten": 0.526484099559488
-            },
-            "mass_ratio_uncharacterized": 0.356985788913634,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e420",
-                    "en:glucose-syrup",
-                    "en:malted-rye-flakes",
-                    "en:barley-malt-extract",
-                    "en:flavouring",
-                    "en:dextrose",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "en:dextrose",
-                    "en:flavouring",
-                    "en:glucose-syrup",
-                    "en:malted-rye-flakes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.356985788913634,
-                "nutrition": 0.273330604871816
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.368421052631579,
-                "nutrition": 0.210526315789474
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 37%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 27%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 36%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 23,
     "ecoscore_tags": [
@@ -1798,66 +1735,103 @@
     ],
     "ingredients": [
         {
-            "difference": 11,
+            "difference": 14.6,
             "id": "en:cereal",
             "ingredients": [
                 {
-                    "difference": 13,
+                    "difference": 15.4,
                     "id": "en:oatmeal",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 27.4,
+                    "percent_hidden": 12,
+                    "percent_max": 100,
+                    "percent_min": 1.19047619047619,
                     "text": "oatmeal"
                 },
                 {
-                    "difference": 3.0,
+                    "difference": 3.6,
                     "id": "en:but",
-                    "percent_estimate": 12.5,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 13.1,
+                    "percent_hidden": 9.5,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "but"
                 },
                 {
                     "ciqual_food_code": "9520",
-                    "difference": 1.55,
+                    "difference": 1.25,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 6.55,
+                    "percent_hidden": 7.8,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "rice flour"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 1.68,
+                    "difference": 1.53,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent_estimate": 3.12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.27,
+                    "percent_hidden": 4.8,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "wheat flour"
                 },
                 {
                     "ciqual_food_code": "9390",
-                    "difference": 2.84,
+                    "difference": 2.76,
                     "id": "en:malted-rye-flakes",
-                    "percent_estimate": 1.56,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.64,
+                    "percent_hidden": 4.4,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "text": "malted rye flakes"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 1.06,
+                    "difference": 1.14,
+                    "ecobalyse_code": "flour",
                     "id": "en:malted-wheat-flour",
-                    "percent_estimate": 1.56,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.64,
+                    "percent_hidden": 0.5,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "malted wheat flour"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.6,
             "percent_hidden": 39,
+            "percent_max": 100,
+            "percent_min": 7.14285714285714,
             "text": "cereals"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.2,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "glucose syrup"
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 2.5,
+            "difference": 3.39,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.6,
             "percent_hidden": 15,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "hazelnuts"
         },
         {
@@ -1865,45 +1839,73 @@
             "ingredients": [
                 {
                     "id": "en:e420",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.8,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "sorbitols"
                 }
             ],
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.8,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "stabilizer"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.9,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "rapeseed vegetable oils"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.45,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "palm vegetable oils"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.725,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "sugar"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.29,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "salt"
         },
         {
             "id": "en:wheat-gluten",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.218,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "wheat gluten"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.109,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "dextrose"
         },
         {
@@ -1911,21 +1913,33 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
-                    "percent_estimate": 0.0488,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0544,
+                    "percent_max": 0.58,
+                    "percent_min": 0,
                     "text": "sunflower lecithins"
                 }
             ],
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0544,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "emulsifier"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0272,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "flavour"
         },
         {
             "id": "en:barley-malt-extract",
-            "percent_estimate": 0.0122,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0136,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "barley malt extract"
         },
         {
@@ -1933,11 +1947,17 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 0.0122,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0136,
+                    "percent_max": 0.58,
+                    "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
-            "percent_estimate": 0.0122,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0136,
+            "percent_max": 0.58,
+            "percent_min": 0,
             "text": "acidity regulator"
         }
     ],
@@ -2235,9 +2255,9 @@
         "acide-citrique"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 9,
-        "relative_difference": 0.394,
-        "total_difference": 36.6,
+        "number_of_ingredients_without_ciqual_code": 8,
+        "relative_difference": 0.469,
+        "total_difference": 43.6,
         "total_specified_input_percent": 93.0
     },
     "ingredients_n": 23,
@@ -2270,7 +2290,7 @@
         "en:sunflower-lecithin",
         "en:e330"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:cereal",
         "en:glucose-syrup",
@@ -2339,12 +2359,30 @@
         "en:emulsifier",
         "en:flavouring",
         "en:oatmeal",
-        "en:rapeseed-oil",
         "en:stabiliser",
         "en:sunflower-lecithin",
         "en:wheat-gluten"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:barley-malt-extract",
+        "en:but",
+        "en:cereal",
+        "en:dextrose",
+        "en:e330",
+        "en:e420",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:glucose-syrup",
+        "en:malted-rye-flakes",
+        "en:oatmeal",
+        "en:salt",
+        "en:stabiliser",
+        "en:sunflower-lecithin",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 41,
@@ -2791,21 +2829,27 @@
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": "en:Container"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:unknown"
+                    "id": {
+                        "id": "en:unknown"
+                    }
                 }
             }
         }

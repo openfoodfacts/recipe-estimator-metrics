@@ -35,7 +35,7 @@
     "additives_tags": [
         "en:e322"
     ],
-    "allergens": "en:milk,en:soybeans, en:soybeans, en:soybeans",
+    "allergens": "en:milk,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:milk, СОЯ, СОЯ",
     "allergens_from_user": "(en) en:milk,en:soybeans, en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -247,7 +247,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -686,44 +686,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0503268019006339,
-            "likeliest_impacts": {
-                "Climate_change": 0.894262709886913,
-                "EF_single_score": 0.0728913685932644
-            },
-            "likeliest_recipe": {
-                "en:butter": 7.37877418865731,
-                "en:cocoa_butter": 8.72371490551211,
-                "en:cocoa_paste": 0.351672596886689,
-                "en:palm_oil": 13.2681425879237,
-                "en:skimmed_milk_powder": 18.2807644183923,
-                "en:soya": 2.1688250348031,
-                "en:sugar": 41.0857888398112,
-                "en:vanillin": 1.15985432997365,
-                "en:water": 0.113653204556579,
-                "en:whole_milk_powder": 9.02861221788492
-            },
-            "mass_ratio_uncharacterized": 0.0138848975080253,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vanillin"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0138848975080253,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 37,
     "ecoscore_tags": [
@@ -2639,7 +2601,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 29.8,
                     "percent_max": 100,
                     "percent_min": 2.38095238095238,
@@ -2647,7 +2611,9 @@
                 },
                 {
                     "ciqual_food_code": "19021",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:whole-milk-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.7,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -2656,6 +2622,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.85,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -2664,6 +2631,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.42,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -2674,12 +2642,14 @@
                     "ingredients": [
                         {
                             "id": "en:e322",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.71,
                             "percent_max": 20,
                             "percent_min": 0,
                             "text": "лецитини"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.71,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -2687,12 +2657,14 @@
                 },
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.71,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "ванилин"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_hidden": 40,
             "percent_max": 100,
@@ -2701,7 +2673,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_max": 50,
             "percent_min": 0,
@@ -2709,8 +2683,10 @@
         },
         {
             "ciqual_food_code": "19054",
-            "difference": 7.3,
+            "difference": 7.29,
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_hidden": 18,
             "percent_max": 33.3333333333333,
@@ -2719,7 +2695,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.36,
             "percent_max": 25,
             "percent_min": 0,
@@ -2727,6 +2705,7 @@
         },
         {
             "id": "bg:обезвoдненo-масло",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.68,
             "percent_max": 20,
             "percent_min": 0,
@@ -2737,12 +2716,14 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.34,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "лецитини"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.34,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2750,6 +2731,7 @@
         },
         {
             "id": "en:vanillin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.34,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -3006,6 +2988,16 @@
         "en:vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "bg:обезвoдненo-масло",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e322",
+        "en:emulsifier",
+        "en:milk-chocolate",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 20,
@@ -3483,18 +3475,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 8.4
@@ -3502,7 +3500,9 @@
         {
             "material": {
                 "id": {
-                    "id": "xx:82-c-pap"
+                    "id": {
+                        "id": "xx:82-c-pap"
+                    }
                 }
             },
             "number_of_units": 8,
@@ -3511,12 +3511,16 @@
             "quantity_per_unit_value": 12.5,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             },
             "weight_measured": 0.35

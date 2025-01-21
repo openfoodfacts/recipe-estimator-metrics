@@ -220,7 +220,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -643,39 +643,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0151431397629097,
-            "likeliest_impacts": {
-                "Climate_change": 0.095286045485565,
-                "EF_single_score": 0.029352027058152
-            },
-            "likeliest_recipe": {
-                "en:gluten": 1.40819674951584,
-                "en:quinoa": 104.195782603707,
-                "en:water": 0.349571739079622
-            },
-            "mass_ratio_uncharacterized": 0.0639029287970094,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:gluten"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0639029287970094,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.75,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 75%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 23,
     "ecoscore_tags": [
@@ -1372,6 +1339,7 @@
             "ciqual_food_code": "9340",
             "difference": 9,
             "id": "en:quinoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 51,
             "percent_max": 100,
@@ -1381,7 +1349,9 @@
         {
             "ciqual_food_code": "9690",
             "difference": 11.5,
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:bulgur",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_hidden": 31.5,
             "percent_max": 50,
@@ -1391,7 +1361,9 @@
         {
             "ciqual_food_code": "9610",
             "difference": 5,
+            "ecobalyse_code": "durum-wheat-semolina",
             "id": "en:durum-wheat-semolina",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
@@ -1401,6 +1373,7 @@
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1409,6 +1382,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -1545,6 +1519,12 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:quinoa",
+        "en:spice",
+        "en:wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 10,
@@ -1972,7 +1952,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

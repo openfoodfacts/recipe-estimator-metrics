@@ -214,7 +214,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -496,83 +496,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.202861131113182,
-            "likeliest_impacts": {
-                "Climate_change": 0.0179862637220393,
-                "EF_single_score": 0.00305535144868946
-            },
-            "likeliest_recipe": {
-                "de:100_ml___": 0.139287767978823,
-                "de:Getr_nk_auf_Kokos": 34.0890951843063,
-                "de:LDL_N_hrwerte__": 0.139287767978823,
-                "de:Nach_dem__ffnen_im_K_hlschrank_lagern_und_innerhalb_von_4_5_Tagen_verzehren": 0.139287767978823,
-                "de:Portion_200_ml__RI_179_kJ": 0.0934030895439718,
-                "de:Ultrahocherhitzt": 16.9253126576935,
-                "de:Unge_ffnet_mindestens_haltbar_bis": 0.149252821170055,
-                "de:Vor_Gebrauch_sch_tteln": 0.149252821170056,
-                "de:Vor_W_rme_sch_tzen_und_trocken_lagern": 0.262306447639246,
-                "de:und_Reisbasis": 17.8788912609453,
-                "en:coconut_milk": 5,
-                "en:e412": 0.431541641805905,
-                "en:e415": 0.324756132309793,
-                "en:e418": 0.271538526071099,
-                "en:natural_flavouring": 0.431541641805905,
-                "en:rice": 3,
-                "en:sea_salt": 0.491888334838719,
-                "en:water": 20.0833561367636
-            },
-            "mass_ratio_uncharacterized": 0.815998627421108,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e412",
-                    "de:Ungeöffnet mindestens haltbar bis",
-                    "de:Nach dem Öffnen im Kühlschrank lagern und innerhalb von 4-5 Tagen verzehren",
-                    "de:LDL Nährwerte ø",
-                    "de:100 ml| ø",
-                    "en:e418",
-                    "en:natural-flavouring",
-                    "de:Vor Gebrauch schütteln",
-                    "en:e415",
-                    "de:Ultrahocherhitzt",
-                    "de:Getränk auf Kokos",
-                    "de:Portion 200 ml %RI 179 kJ",
-                    "de:Vor Wärme schützen und trocken lagern",
-                    "de:und Reisbasis"
-                ],
-                "nutrition": [
-                    "de:Ungeöffnet mindestens haltbar bis",
-                    "de:Nach dem Öffnen im Kühlschrank lagern und innerhalb von 4-5 Tagen verzehren",
-                    "de:LDL Nährwerte ø",
-                    "de:100 ml| ø",
-                    "en:e418",
-                    "en:natural-flavouring",
-                    "de:Vor Gebrauch schütteln",
-                    "de:Ultrahocherhitzt",
-                    "de:Getränk auf Kokos",
-                    "de:Portion 200 ml %RI 179 kJ",
-                    "de:Vor Wärme schützen und trocken lagern",
-                    "de:und Reisbasis"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.815998627421108,
-                "nutrition": 0.808590516705367
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.777777777777778,
-                "nutrition": 0.666666666666667
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 67%",
-                "The product has a high number of impact uncharacterized ingredients: 78%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 81%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 82%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1415,7 +1338,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.1,
             "percent_max": 100,
             "percent_min": 16.1666666666667,
@@ -1425,6 +1350,7 @@
             "ciqual_food_code": "18041",
             "difference": 15.4,
             "id": "en:coconut-milk",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 21.0,
             "percent_hidden": 5.6,
@@ -1434,8 +1360,9 @@
         },
         {
             "ciqual_proxy_food_code": "9100",
-            "difference": 7.0,
+            "difference": 6.98,
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 10.5,
             "percent_hidden": 3.5,
@@ -1446,6 +1373,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.05,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -1456,6 +1384,7 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 0.05,
                     "percent_max": 0.1,
@@ -1463,6 +1392,7 @@
                     "text": "Guarkernmehl"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.05,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -1470,6 +1400,7 @@
         },
         {
             "id": "en:e418",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.05,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -1477,6 +1408,7 @@
         },
         {
             "id": "en:e415",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.05,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -1484,6 +1416,7 @@
         },
         {
             "id": "en:natural-coconut-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.3,
             "percent_max": 0.1,
             "percent_min": 0,
@@ -1519,8 +1452,8 @@
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 2.46,
-        "total_difference": 22.4,
+        "relative_difference": 2.45,
+        "total_difference": 22.3,
         "total_specified_input_percent": 9.1
     },
     "ingredients_n": 9,
@@ -1579,6 +1512,17 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut-milk",
+        "en:e412",
+        "en:e415",
+        "en:e418",
+        "en:natural-coconut-flavouring",
+        "en:rice",
+        "en:sea-salt",
+        "en:stabiliser"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2100,7 +2044,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-brik-aseptic"
+                    "id": {
+                        "id": "en:tetra-brik-aseptic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2109,20 +2055,26 @@
             "quantity_per_unit_value": 1,
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": "en:hdpe-2-high-density-polyethylene"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

@@ -244,7 +244,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -676,65 +676,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.104183267376905,
-            "likeliest_impacts": {
-                "Climate_change": 0.428698550943243,
-                "EF_single_score": 0.0389795597078059
-            },
-            "likeliest_recipe": {
-                "en:barley_flakes": 2.3748814499491,
-                "en:cocoa_butter": 2.3916087197102,
-                "en:cocoa_paste": 2.72859181990921,
-                "en:dark_chocolate_chunks": 12.3525192466834,
-                "en:desiccated_coconut": 0.0968230790495428,
-                "en:natural_flavouring": 2.47170452899864,
-                "en:oat_flakes": 32.6319751087582,
-                "en:oat_flour": 16.7781018779755,
-                "en:rice_flour": 2.3748814499491,
-                "en:soya_lecithin": 2.3916087197102,
-                "en:sugar": 23.9700829383863,
-                "en:sunflower_oil": 2.3748814499491,
-                "en:walnut": 0,
-                "en:water": 0,
-                "fr:Informations_sur_les_allerg_nes": 0,
-                "fr:autres_sources_de_gluten": 0,
-                "fr:y_compris_les_c_r_ales_contenant_du_gluten_sont_indiqu_s_en_gras": 0
-            },
-            "mass_ratio_uncharacterized": 0.0488202505488732,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:autres sources de gluten",
-                    "fr:Informations sur les allergènes",
-                    "en:barley-flakes",
-                    "fr:y compris les céréales contenant du gluten sont indiqués en gras",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "fr:autres sources de gluten",
-                    "fr:y compris les céréales contenant du gluten sont indiqués en gras",
-                    "en:natural-flavouring",
-                    "fr:Informations sur les allergènes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0488202505488732,
-                "nutrition": 0.035947877614084
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.277777777777778
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 28%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (70%) has not been used.",
-                "The impact relative interquartile is high for Climate change (26%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -1627,12 +1568,13 @@
     ],
     "ingredients": [
         {
-            "difference": 5.3,
+            "difference": 5.33,
             "id": "en:wholemeal-cereal",
             "ingredients": [
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 28.3,
                     "percent_max": 100,
                     "percent_min": 3.33333333333333,
@@ -1640,13 +1582,16 @@
                 },
                 {
                     "ciqual_food_code": "9310",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:oat-flour",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "farine d'avoine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.3,
             "percent_hidden": 48,
             "percent_max": 100,
@@ -1655,7 +1600,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_max": 20.8,
             "percent_min": 0,
@@ -1664,7 +1611,9 @@
         {
             "ciqual_proxy_food_code": "31074",
             "difference": 1.6,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate-chunks",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_hidden": 12,
             "percent_max": 20.8,
@@ -1679,12 +1628,14 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 10.4,
                     "percent_max": 20.8,
                     "percent_min": 0,
                     "text": "masse de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_hidden": 70,
             "percent_max": 20.8,
@@ -1693,7 +1644,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.73,
             "percent_max": 20,
             "percent_min": 0,
@@ -1702,6 +1655,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.87,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1713,12 +1667,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.93,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "lécithine de soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.93,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1726,61 +1682,72 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.967,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.483,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flocons d'orge"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.242,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.121,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "farine de riz"
         },
         {
             "ciqual_food_code": "15007",
             "id": "en:desiccated-coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0604,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "noix de coco séchée"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0302,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
         {
             "ciqual_food_code": "15023",
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0151,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "noix"
         },
         {
             "id": "fr:autres-sources-de-gluten",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0151,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "autres sources de gluten"
         }
@@ -2070,6 +2037,20 @@
         "fr:autres-sources-de-gluten"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-flakes",
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:desiccated-coconut",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:oat-flakes",
+        "en:soya-lecithin",
+        "en:wholemeal-cereal",
+        "fr:autres-sources-de-gluten"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 37,
@@ -2515,36 +2496,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

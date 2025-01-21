@@ -194,7 +194,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -604,58 +604,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.494474652843005,
-            "likeliest_impacts": {
-                "Climate_change": 0.140230983305366,
-                "EF_single_score": 0.0489974609363261
-            },
-            "likeliest_recipe": {
-                "en:almond": 18.5824596918328,
-                "en:colza_oil": 9.81849139760558,
-                "en:concentrated_lemon_juice": 1.69141090613155,
-                "en:inulin": 1.89279716161075,
-                "en:natural_garlic_flavouring": 1.69141090613155,
-                "en:parsley": 1.68809203543335,
-                "en:pepper": 1.68809203543333,
-                "en:rice_flour": 9.81849139760558,
-                "en:salt": 1.69141090613155,
-                "en:water": 47.2595204646749,
-                "fr:ail_et_fines_herbes": 2.70583480095237,
-                "fr:des_ingr_dients_agricoles_sont": 1.68809203543335
-            },
-            "mass_ratio_uncharacterized": 0.055320817092054,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-garlic-flavouring",
-                    "en:inulin",
-                    "fr:des ingrédients agricoles sont",
-                    "fr:ail-et-fines-herbes"
-                ],
-                "nutrition": [
-                    "en:natural-garlic-flavouring",
-                    "fr:des ingrédients agricoles sont"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.055320817092054,
-                "nutrition": 0.0112400278489303
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.307692307692308,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 31%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"fr:des ingrédients agricoles sont\" (100%) has not been used.",
-                "The impact relative interquartile is high for EF single score (71%)",
-                "The impact relative interquartile is high for Climate change (57%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 39,
     "ecoscore_tags": [
@@ -1280,94 +1228,151 @@
     ],
     "ingredients": [
         {
-            "difference": 13,
+            "difference": 9.15,
             "id": "en:almond-milk",
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 28.8,
+                    "percent_max": 100,
+                    "percent_min": 3.84615384615385,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "15041",
-                    "difference": 10,
+                    "difference": 10.0,
                     "id": "en:almond",
-                    "percent": 15,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 15,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "processing": "en:pureed",
                     "text": "almond"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 53.8,
             "percent_hidden": 63,
+            "percent_max": 100,
+            "percent_min": 7.69230769230769,
             "text": "almond milk"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.1,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "rapeseed oil"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.5,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "rice flour"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.77,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "water"
         },
         {
             "ciqual_food_code": "11000",
-            "difference": 0.42,
+            "difference": 0.185,
             "id": "en:garlic",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.88,
             "percent_hidden": 2.7,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "garlic"
         },
         {
-            "difference": 1.14,
+            "difference": 1.26,
             "id": "en:herb",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.44,
             "percent_hidden": 2.7,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "herbs"
         },
         {
             "id": "en:inulin",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.721,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "inulin"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.361,
+            "percent_max": 12.5,
+            "percent_min": 0,
             "text": "lemon juice concentrate"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.18,
+            "percent_max": 1,
+            "percent_min": 0,
             "text": "salt"
         },
         {
-            "id": "en:natural-flavours-of-garlic-and-parsley",
-            "percent_estimate": 0.0977,
-            "text": "natural flavours of garlic and parsley"
+            "id": "en:natural-flavours-of-garlic",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0901,
+            "percent_max": 1,
+            "percent_min": 0,
+            "text": "natural flavours of garlic"
         },
         {
+            "ciqual_proxy_food_code": "11014",
+            "id": "en:parsley",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0451,
+            "percent_max": 1,
+            "percent_min": 0,
+            "text": "parsley"
+        },
+        {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0225,
+            "percent_max": 1,
+            "percent_min": 0,
             "text": "pepper"
         },
         {
             "difference": 100.0,
             "id": "en:agricultural-ingredients-are-of-plant",
+            "is_in_taxonomy": 0,
             "origins": "",
-            "percent_estimate": 0.0488,
+            "percent_estimate": 0.0225,
             "percent_hidden": 100,
+            "percent_max": 1,
+            "percent_min": 0,
             "text": "agricultural ingredients are of plant"
         }
     ],
@@ -1429,9 +1434,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.679,
-        "total_difference": 125.0,
+        "number_of_ingredients_without_ciqual_code": 4,
+        "relative_difference": 0.657,
+        "total_difference": 121.0,
         "total_specified_input_percent": 183.0
     },
     "ingredients_n": 14,
@@ -1455,7 +1460,7 @@
         "en:water",
         "en:almond"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:almond-milk",
         "en:rapeseed-oil",
@@ -1506,11 +1511,23 @@
         "en:almond-milk",
         "en:herb",
         "en:inulin",
-        "en:natural-flavours-of-garlic-and-parsley",
-        "en:pepper",
-        "en:rapeseed-oil"
+        "en:natural-flavours-of-garlic"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:agricultural-ingredients-are-of-plant",
+        "en:almond",
+        "en:almond-milk",
+        "en:concentrated-lemon-juice",
+        "en:garlic",
+        "en:herb",
+        "en:inulin",
+        "en:natural-flavours-of-garlic",
+        "en:parsley",
+        "en:pepper",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1590,8 +1607,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,
@@ -1893,14 +1909,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

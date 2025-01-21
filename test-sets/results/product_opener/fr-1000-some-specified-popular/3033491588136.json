@@ -48,7 +48,7 @@
         "en:e950",
         "en:e955"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT, LAIT, LAIT, ferments lactiques",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -233,13 +233,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.6521590909091,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 0.347840909090905,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0.323492045454542,
@@ -654,62 +654,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.224483016160893,
-            "likeliest_impacts": {
-                "Climate_change": 0.11175482156519,
-                "EF_single_score": 0.00997131798668172
-            },
-            "likeliest_recipe": {
-                "en:bourbon_vanilla_powder": 0.030005498426887,
-                "en:concentrated_lemon_juice": 0.030005498426887,
-                "en:e407": 0.421078010159277,
-                "en:e950": 0.0300054984268837,
-                "en:e955": 0,
-                "en:milk": 0.0300054984268837,
-                "en:modified_corn_starch": 0.938675828484398,
-                "en:natural_vanilla_flavouring": 0.181371019112974,
-                "en:skimmed_milk": 87.5107129908193,
-                "en:sodium_citrate": 0.0300054984268837,
-                "en:water": 4.771771397818,
-                "fr:O_ar_me_naturel": 0.0300054984268837,
-                "fr:concentre_de_carotte": 0.290059459258172,
-                "fr:oligo_fructose": 5.72462639340994
-            },
-            "mass_ratio_uncharacterized": 0.334064117033794,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:concentre-de-carotte",
-                    "fr:O arôme naturel",
-                    "en:e950",
-                    "en:e407",
-                    "en:e955",
-                    "fr:oligo-fructose"
-                ],
-                "nutrition": [
-                    "fr:O arôme naturel",
-                    "fr:oligo-fructose",
-                    "en:e407"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.334064117033794,
-                "nutrition": 0.276800189965063
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.461538461538462,
-                "nutrition": 0.230769230769231
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 46%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 28%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 67,
     "ecoscore_tags": [
@@ -1504,7 +1448,9 @@
         {
             "ciqual_proxy_food_code": "19051",
             "difference": 37.5,
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.2,
             "percent_hidden": 91.7,
             "percent_max": 100,
@@ -1513,6 +1459,7 @@
         },
         {
             "id": "fr:oligo-fructose",
+            "is_in_taxonomy": 0,
             "percent_estimate": 22.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1527,12 +1474,14 @@
                     "ingredients": [
                         {
                             "id": "en:e1422",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 5.73,
                             "percent_max": 33.3333333333333,
                             "percent_min": 0,
                             "text": "e1422"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.73,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1543,18 +1492,21 @@
                     "ingredients": [
                         {
                             "id": "en:e407",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 5.73,
                             "percent_max": 16.6666666666667,
                             "percent_min": 0,
                             "text": "e407"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.73,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "carraghénanes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1562,7 +1514,9 @@
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.73,
             "percent_max": 25,
             "percent_min": 0,
@@ -1570,32 +1524,36 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de vanille"
         },
         {
             "difference": 1.58,
             "id": "en:bourbon-vanilla-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.61,
             "percent_hidden": 0.03,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "poudre de vanille bourbon"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.807,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "jus de citron concentré"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.404,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
@@ -1607,14 +1565,16 @@
                     "ingredients": [
                         {
                             "id": "en:e950",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.101,
-                            "percent_max": "5",
+                            "percent_max": 5,
                             "percent_min": 0,
                             "text": "e950"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.101,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acésulfame-k"
                 },
@@ -1623,20 +1583,23 @@
                     "ingredients": [
                         {
                             "id": "en:e955",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.101,
                             "percent_max": 2.5,
                             "percent_min": 0,
                             "text": "e955"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.101,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "sucralose"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.202,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "édulcorants"
         },
@@ -1648,36 +1611,42 @@
                     "ingredients": [
                         {
                             "id": "en:e331",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.101,
-                            "percent_max": "5",
+                            "percent_max": 5,
                             "percent_min": 0,
                             "text": "e331"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.101,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "citrate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.101,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "correcteur d'acidité"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0505,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "ferments lactiques"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 0.0505,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Lait"
         }
@@ -1858,6 +1827,25 @@
         "fr:oligo-fructose"
     ],
     "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:bourbon-vanilla-powder",
+        "en:concentrated-lemon-juice",
+        "en:e1422",
+        "en:e331",
+        "en:e407",
+        "en:e950",
+        "en:e955",
+        "en:lactic-ferments",
+        "en:modified-corn-starch",
+        "en:natural-flavouring",
+        "en:natural-vanilla-flavouring",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "en:thickener",
+        "fr:oligo-fructose"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -2330,31 +2318,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:unknown"
+                    "id": {
+                        "id": "en:unknown"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:unknown"
+                    "id": {
+                        "id": "en:unknown"
+                    }
                 }
             }
         }

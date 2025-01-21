@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -473,69 +473,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.413567907837901,
-            "likeliest_impacts": {
-                "Climate_change": 0.00217936425637876,
-                "EF_single_score": 0.000587463325462011
-            },
-            "likeliest_recipe": {
-                "en:caffeine": 0.0200362632536366,
-                "en:carbonated_water": 86.5419808679243,
-                "en:e101": 0,
-                "en:e150": 0,
-                "en:e330": 0.738751584661736,
-                "en:e375": 0.0200362632536344,
-                "en:e504i": 0,
-                "en:flavouring": 0.0200362632536344,
-                "en:glucose": 4.94700586210399,
-                "en:pantothenic_acid": 0.0200362632536344,
-                "en:sodium_citrate": 0.0202759762742835,
-                "en:sucrose": 5.26250206513282,
-                "en:taurine": 0.400725265072732,
-                "en:vitamin_b12": 0.0200362632536344,
-                "en:vitamin_b6": 0.0200362632536344,
-                "en:vitamins": 0.0200362632536344,
-                "en:water": 2.12982080423771
-            },
-            "mass_ratio_uncharacterized": 0.0854288322471312,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "en:sucrose",
-                    "en:vitamin-b12",
-                    "en:e375",
-                    "en:flavouring",
-                    "en:e150",
-                    "en:pantothenic-acid",
-                    "en:caffeine",
-                    "en:e101",
-                    "en:e330",
-                    "en:vitamin-b6",
-                    "en:taurine",
-                    "en:e504i"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0854288322471312,
-                "nutrition": 0.000284253663150878
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.8125,
-                "nutrition": 0.0625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 81%",
-                "The impact relative interquartile is high for EF single score (76%)",
-                "The impact relative interquartile is high for Climate change (64%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "not-applicable",
     "ecoscore_tags": [
         "not-applicable"
@@ -1563,7 +1500,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:carbonated-water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_max": 100,
             "percent_min": 7.14285714285714,
@@ -1571,7 +1510,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sucrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_max": 11,
             "percent_min": 0,
@@ -1580,6 +1521,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_max": 11,
             "percent_min": 0,
@@ -1590,12 +1532,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.5,
                     "percent_max": 11,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_max": 11,
             "percent_min": 0,
@@ -1604,6 +1548,7 @@
         {
             "difference": 5.1,
             "id": "en:taurine",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_hidden": 0.4,
             "percent_max": 11,
@@ -1615,6 +1560,7 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.75,
                     "percent_max": 11,
                     "percent_min": 0,
@@ -1622,12 +1568,14 @@
                 },
                 {
                     "id": "en:e504",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.75,
                     "percent_max": 5.5,
                     "percent_min": 0,
                     "text": "carbonates de magnésium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_max": 11,
             "percent_min": 0,
@@ -1636,6 +1584,7 @@
         {
             "difference": 5.47,
             "id": "en:caffeine",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_hidden": 0.03,
             "percent_max": 11,
@@ -1644,6 +1593,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.5,
             "percent_max": 11,
             "percent_min": 0,
@@ -1651,6 +1601,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.96,
             "percent_max": 11,
             "percent_min": 0,
@@ -1658,6 +1609,7 @@
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.98,
             "percent_max": 10,
             "percent_min": 0,
@@ -1665,6 +1617,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.991,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1672,6 +1625,7 @@
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.496,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1679,8 +1633,9 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.248,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes"
         },
@@ -1689,21 +1644,24 @@
             "ingredients": [
                 {
                     "id": "en:e150a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.124,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "caramel ordinaire"
                 },
                 {
                     "id": "en:e101",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.124,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "riboflavines"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.248,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "colorants"
         }
@@ -2009,6 +1967,26 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:caffeine",
+        "en:colour",
+        "en:e101",
+        "en:e150a",
+        "en:e330",
+        "en:e375",
+        "en:e500",
+        "en:e504",
+        "en:flavouring",
+        "en:glucose",
+        "en:pantothenic-acid",
+        "en:taurine",
+        "en:vitamin-b12",
+        "en:vitamin-b6",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 24,
@@ -2472,7 +2450,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2481,7 +2461,9 @@
             "quantity_per_unit_value": 250,
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": "en:drink-can"
+                    }
                 }
             }
         }

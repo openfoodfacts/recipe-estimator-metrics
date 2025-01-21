@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -633,54 +633,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.95542512898661,
-            "likeliest_impacts": {
-                "Climate_change": 0.00765930851654082,
-                "EF_single_score": 0.000973872514109904
-            },
-            "likeliest_recipe": {
-                "en:sea_salt": 1.9774279311776,
-                "en:water": 35.0451441376448,
-                "en:yeast": 1.9774279311776,
-                "fr:gruau_d__peautre_complet": 8,
-                "fr:gruau_d__peautre_vert_complet": 2,
-                "fr:gruau_de_seigle_complet": 51
-            },
-            "mass_ratio_uncharacterized": 0.61,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:gruau d'épeautre vert complet",
-                    "fr:gruau d'épeautre complet",
-                    "fr:gruau de seigle complet"
-                ],
-                "nutrition": [
-                    "fr:gruau d'épeautre vert complet",
-                    "fr:gruau d'épeautre complet",
-                    "fr:gruau de seigle complet"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.61,
-                "nutrition": 0.61
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.5
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of nutrition uncharacterized ingredients: 50%",
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 61%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 61%",
-                "The impact relative interquartile is high for EF single score (123%)",
-                "The impact relative interquartile is high for Climate change (121%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1408,8 +1360,9 @@
     ],
     "ingredients": [
         {
-            "difference": 4.6,
+            "difference": 4.56,
             "id": "fr:seigle-complet-egruge",
+            "is_in_taxonomy": 0,
             "percent_estimate": 55.6,
             "percent_hidden": 51,
             "percent_max": 100,
@@ -1418,15 +1371,18 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_max": 50,
             "percent_min": 0,
             "text": "eau"
         },
         {
-            "difference": 3.1,
+            "difference": 3.11,
             "id": "fr:gruau-d-epeautre-complet",
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.1,
             "percent_hidden": 8,
             "percent_max": 33.3333333333333,
@@ -1436,6 +1392,7 @@
         {
             "difference": 3.56,
             "id": "fr:gruau-d-epeautre-vert-complet",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.56,
             "percent_hidden": 2,
             "percent_max": 25,
@@ -1445,13 +1402,16 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "sel marin"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1459,6 +1419,7 @@
         },
         {
             "id": "fr:production",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent_estimate": 0.6,
             "percent_max": 1.2,
@@ -1467,6 +1428,7 @@
         },
         {
             "id": "fr:a-conserver-a-l-abri-de-la-chaleur-et-de-l-humidite",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1474,6 +1436,7 @@
         },
         {
             "id": "fr:non-ouvert",
+            "is_in_taxonomy": 0,
             "percent_estimate": 3.16,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1535,8 +1498,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.185,
-        "total_difference": 11.3,
+        "relative_difference": 0.184,
+        "total_difference": 11.2,
         "total_specified_input_percent": 61
     },
     "ingredients_n": 9,
@@ -1586,6 +1549,16 @@
     "ingredients_with_unspecified_percent_n": 6,
     "ingredients_with_unspecified_percent_sum": 39,
     "ingredients_without_ciqual_codes": [
+        "fr:a-conserver-a-l-abri-de-la-chaleur-et-de-l-humidite",
+        "fr:gruau-d-epeautre-complet",
+        "fr:gruau-d-epeautre-vert-complet",
+        "fr:non-ouvert",
+        "fr:production",
+        "fr:seigle-complet-egruge"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:sea-salt",
         "en:yeast",
         "fr:a-conserver-a-l-abri-de-la-chaleur-et-de-l-humidite",
         "fr:gruau-d-epeautre-complet",
@@ -1594,7 +1567,7 @@
         "fr:production",
         "fr:seigle-complet-egruge"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -1981,7 +1954,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         }

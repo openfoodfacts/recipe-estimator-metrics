@@ -244,7 +244,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -677,65 +677,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.102932366698451,
-            "likeliest_impacts": {
-                "Climate_change": 0.457261176979972,
-                "EF_single_score": 0.0373897020495702
-            },
-            "likeliest_recipe": {
-                "en:cocoa_paste": 11.1090663264218,
-                "en:e415": 0.776097836249426,
-                "en:e422": 4.68782491808961,
-                "en:e450i": 0.639859425892102,
-                "en:e472b": 0.388173783524002,
-                "en:e475": 0.102811498654954,
-                "en:e500ii": 0.162392882326655,
-                "en:egg": 14.399005307138,
-                "en:flavouring": 0.490985282178956,
-                "en:glucose_fructose_syrup": 4.68782491808961,
-                "en:glucose_syrup": 0.556479855122863,
-                "en:palm_oil": 16.9895097825712,
-                "en:salt": 0.802252308218762,
-                "en:skimmed_milk_powder": 0.275767004133663,
-                "en:soya_lecithin": 0.430359228221125,
-                "en:sugar": 21.4342644361936,
-                "en:water": 0,
-                "en:wheat_flour": 24.0734440460134
-            },
-            "mass_ratio_uncharacterized": 0.126314586035309,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e475",
-                    "en:glucose-syrup",
-                    "en:e500ii",
-                    "en:e450i",
-                    "en:flavouring",
-                    "en:e472b",
-                    "en:e422",
-                    "en:e415"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.126314586035309,
-                "nutrition": 0.014649216636404
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.444444444444444,
-                "nutrition": 0.111111111111111
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 44%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 21,
     "ecoscore_tags": [
@@ -1382,7 +1323,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 30.0,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_hidden": 23.6,
             "percent_max": 100,
@@ -1391,12 +1334,13 @@
         },
         {
             "ciqual_proxy_food_code": "31005",
-            "difference": 4.6,
+            "difference": 4.61,
             "id": "en:chocolate-chunk",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.6,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1404,7 +1348,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.8,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1416,18 +1362,21 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 5.8,
                             "percent_max": 16.6666666666667,
                             "percent_min": 0,
                             "text": "lécithine de soja"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.8,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "émulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_hidden": 18.6,
             "percent_max": 50,
@@ -1436,7 +1385,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1444,7 +1395,9 @@
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
@@ -1452,7 +1405,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_max": 20,
             "percent_min": 0,
@@ -1461,6 +1416,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1471,12 +1427,14 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.725,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "glycérol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1487,6 +1445,7 @@
             "ingredients": [
                 {
                     "id": "en:e450i",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.181,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1494,12 +1453,14 @@
                 },
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.181,
                     "percent_max": 6.25,
                     "percent_min": 0,
                     "text": "carbonate acide de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.363,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1508,6 +1469,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1518,12 +1480,14 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0907,
                     "percent_max": 0.8,
                     "percent_min": 0,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1532,6 +1496,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1542,6 +1507,7 @@
             "ingredients": [
                 {
                     "id": "en:e472b",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0113,
                     "percent_max": 0.8,
                     "percent_min": 0,
@@ -1549,12 +1515,14 @@
                 },
                 {
                     "id": "en:e475",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0113,
                     "percent_max": 0.4,
                     "percent_min": 0,
                     "text": "e475"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1562,6 +1530,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1569,7 +1538,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.8,
             "percent_min": 0,
@@ -1963,6 +1934,26 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate-chunk",
+        "en:cocoa-paste",
+        "en:e415",
+        "en:e422",
+        "en:e450i",
+        "en:e472b",
+        "en:e475",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:glucose-fructose-syrup",
+        "en:glucose-syrup",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:stabiliser",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 43,
@@ -2389,14 +2380,18 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             }
         }

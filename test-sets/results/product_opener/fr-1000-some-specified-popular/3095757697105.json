@@ -218,7 +218,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -654,57 +654,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.058409341118712,
-            "likeliest_impacts": {
-                "Climate_change": 0.358708920334873,
-                "EF_single_score": 0.0652986874199433
-            },
-            "likeliest_recipe": {
-                "en:celery": 0.786621871782139,
-                "en:chicken_fillet": 93.6335093516483,
-                "en:concentrated_celery_juice": 0.0471939981226336,
-                "en:corn_dextrose": 0.0426233063911578,
-                "en:e150a": 0,
-                "en:e301": 0,
-                "en:ferment": 0,
-                "en:herb": 0.786621871782139,
-                "en:onion": 0.786621871782139,
-                "en:salt": 1.48646627616245,
-                "en:spice": 0.752666286367003,
-                "en:sunflower_oil": 0.3616442545078,
-                "en:water": 0.926147242994979
-            },
-            "mass_ratio_uncharacterized": 0.0126972027961853,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e301",
-                    "en:corn-dextrose",
-                    "en:e150a",
-                    "en:herb",
-                    "en:ferment"
-                ],
-                "nutrition": [
-                    "en:concentrated-celery-juice",
-                    "en:corn-dextrose"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0126972027961853,
-                "nutrition": 0.00888548716568348
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.384615384615385,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:ferment). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 38%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 15,
     "ecoscore_tags": [
@@ -1744,6 +1693,7 @@
             "ciqual_food_code": "36018",
             "difference": 23.2,
             "id": "en:chicken-fillet",
+            "is_in_taxonomy": 1,
             "percent_estimate": 70.8,
             "percent_hidden": 94,
             "percent_max": 100,
@@ -1755,7 +1705,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 7.3,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1763,7 +1715,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "20055",
+                    "ecobalyse_code": "celery-eu",
                     "id": "en:celery",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.65,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1771,6 +1725,7 @@
                 },
                 {
                     "id": "en:herb",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.82,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1778,7 +1733,9 @@
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.912,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1786,6 +1743,7 @@
                 },
                 {
                     "id": "en:spice",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.456,
                     "percent_max": 10,
                     "percent_min": 0,
@@ -1793,13 +1751,16 @@
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.456,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 14.6,
             "percent_max": 50,
             "percent_min": 0,
@@ -1808,6 +1769,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1815,7 +1777,9 @@
         },
         {
             "ciqual_proxy_food_code": "20055",
+            "ecobalyse_code": "celery-eu",
             "id": "en:concentrated-celery-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1824,6 +1788,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:corn-dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1831,6 +1796,7 @@
         },
         {
             "id": "en:ferment",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1841,12 +1807,14 @@
             "ingredients": [
                 {
                     "id": "en:e301",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.7,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "ascorbate de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1857,12 +1825,14 @@
             "ingredients": [
                 {
                     "id": "en:e150a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.1,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "caramel ordinaire"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -2110,6 +2080,20 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:broth",
+        "en:chicken-fillet",
+        "en:colour",
+        "en:corn-dextrose",
+        "en:e150a",
+        "en:e301",
+        "en:ferment",
+        "en:herb",
+        "en:salt",
+        "en:spice"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 32,
@@ -2610,26 +2594,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:blister"
+                    "id": {
+                        "id": "en:blister"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         }

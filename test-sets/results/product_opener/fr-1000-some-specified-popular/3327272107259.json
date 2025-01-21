@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -688,47 +688,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.158944423163491,
-            "likeliest_impacts": {
-                "Climate_change": 0.528197312628617,
-                "EF_single_score": 0.0342718056715022
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 2.80459479818751,
-                "en:roasted_peanuts_of_the_americas": 84.28,
-                "en:salt": 2.9891583553303,
-                "en:sugar": 3.10400549270632,
-                "en:water": 4.82224135377588
-            },
-            "mass_ratio_uncharacterized": 0.860000000031691,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:roasted peanuts of the americas"
-                ],
-                "nutrition": [
-                    "en:roasted peanuts of the americas"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.860000000031691,
-                "nutrition": 0.860000000031691
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 86%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 86%",
-                "The impact relative interquartile is high for EF single score (31%)",
-                "The impact relative interquartile is high for Climate change (36%)",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 31,
     "ecoscore_tags": [
@@ -1248,6 +1207,7 @@
         {
             "difference": 15.8,
             "id": "fr:cacahuetes-des-ameriques-grillees",
+            "is_in_taxonomy": 0,
             "percent_estimate": 70.2,
             "percent_hidden": 86,
             "percent_max": 100,
@@ -1256,10 +1216,12 @@
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
             "ingredients": [
                 {
                     "id": "en:sal-tree",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 7.45,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1268,12 +1230,14 @@
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 7.45,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:vegan",
             "percent_estimate": 14.9,
             "percent_max": 50,
@@ -1284,7 +1248,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.35,
             "percent_max": 8.7,
             "percent_min": 0,
@@ -1293,6 +1259,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.5,
             "percent_max": 0.86,
             "percent_min": 0,
@@ -1334,7 +1301,7 @@
     "ingredients_ids_debug": [],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.184,
+        "relative_difference": 0.183,
         "total_difference": 15.8,
         "total_specified_input_percent": 86
     },
@@ -1382,6 +1349,13 @@
         "fr:cacahuetes-des-ameriques-grillees"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:sal-tree",
+        "en:salt",
+        "fr:cacahuetes-des-ameriques-grillees"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 9,
@@ -1813,7 +1787,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1822,12 +1798,16 @@
             "quantity_per_unit_value": 454,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             },
             "weight_measured": 0.48
@@ -1835,7 +1815,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1844,12 +1826,16 @@
             "quantity_per_unit_value": 454,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_measured": 40.6
@@ -1857,7 +1843,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1866,12 +1854,16 @@
             "quantity_per_unit_value": 454,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 11.9

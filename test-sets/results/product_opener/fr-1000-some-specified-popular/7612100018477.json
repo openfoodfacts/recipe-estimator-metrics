@@ -59,7 +59,7 @@
         "en:e307",
         "en:e471"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts, en:milk",
+    "allergens": "en:gluten,en:milk,en:nuts, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, milk, hazelnuts",
     "allergens_from_user": "(en) en:gluten,en:milk,en:nuts, en:milk",
     "allergens_hierarchy": [
@@ -231,7 +231,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -490,105 +490,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.029650266707878,
-            "likeliest_impacts": {
-                "Climate_change": 0.275396535397416,
-                "EF_single_score": 0.0233486690666428
-            },
-            "likeliest_recipe": {
-                "en:b12": 0.411434536304928,
-                "en:condensed_skimmed_milk": 16.7440349701768,
-                "en:condensed_whey": 16.7440349701767,
-                "en:e101": 0,
-                "en:e307a": 0,
-                "en:e341": 0.324450754153907,
-                "en:e375": 0,
-                "en:e504i": 0.621593091130654,
-                "en:emulsifians": 0.93990891119029,
-                "en:folic_acid": 1.08095836230563,
-                "en:fructose": 2.86618348782039,
-                "en:l_ascorbyl_6_palmitate": 0,
-                "en:lean_cocoa_powder": 17.2404081428614,
-                "en:mono__and_fatty_acids": 0,
-                "en:noisettes": 0,
-                "en:orge_and_cocoa_malt_extract_ovomaltine_33__matte_extract_orge": 65.6164787526813,
-                "en:pantothenic_acid": 0,
-                "en:rapeseed_oil": 0.777260550381266,
-                "en:salt": 0,
-                "en:sugar": 2.86618348782039,
-                "en:sunflower_lecithin": 0,
-                "en:thiamin": 0,
-                "en:totally_hydrogenated_rapeseed_oil": 0,
-                "en:vanillin_aroma": 0,
-                "en:vanillin_aroma__sugar": 0.0281688528082232,
-                "en:vitamin_a": 0,
-                "en:vitamin_b6": 0.514639049040638,
-                "en:vitamin_b8": 0,
-                "en:vitamin_c": 1.10948176450027,
-                "en:vitamin_e": 0.774542576806704,
-                "en:vitamins": 0,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0.848316939965358,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:vitamin-a",
-                    "en:mono- and fatty acids",
-                    "en:vanillin aroma) sugar",
-                    "en:l-ascorbyl-6-palmitate",
-                    "en:noisettes",
-                    "en:vitamin-e",
-                    "en:vitamin-c",
-                    "en:e307a",
-                    "en:lean cocoa powder",
-                    "en:e341",
-                    "en:folic-acid",
-                    "en:e101",
-                    "en:condensed-whey",
-                    "en:vitamin-b6",
-                    "en:vanillin aroma",
-                    "en:orge and cocoa malt extract ovomaltine 33% matte extract orge",
-                    "en:vitamins",
-                    "en:vitamin-b8",
-                    "en:b12",
-                    "en:e375",
-                    "en:emulsifians",
-                    "en:pantothenic-acid",
-                    "en:e504i",
-                    "en:totally hydrogenated rapeseed oil"
-                ],
-                "nutrition": [
-                    "en:noisettes",
-                    "en:b12",
-                    "en:lean cocoa powder",
-                    "en:emulsifians",
-                    "en:mono- and fatty acids",
-                    "en:vanillin aroma) sugar",
-                    "en:vanillin aroma",
-                    "en:totally hydrogenated rapeseed oil",
-                    "en:orge and cocoa malt extract ovomaltine 33% matte extract orge"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.848316939965358,
-                "nutrition": 0.667526577652386
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.818181818181818,
-                "nutrition": 0.303030303030303
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 30%",
-                "The product has a high number of impact uncharacterized ingredients: 82%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 67%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 85%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1610,45 +1511,66 @@
     ],
     "ingredients": [
         {
-            "difference": 17,
+            "difference": 65.9,
             "id": "en:malt-extract-from-orge-and-cocoa-ovomaltine",
             "ingredients": [
                 {
-                    "difference": 1,
+                    "difference": 1.02,
                     "id": "en:orge-malt-extract",
-                    "percent": 51,
-                    "percent_estimate": 50,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 52.0,
+                    "percent_hidden": 51,
+                    "percent_max": 100,
+                    "percent_min": 5.14736842105263,
                     "text": "orge malt extract"
                 },
                 {
                     "ciqual_proxy_food_code": "19051",
+                    "ecobalyse_code": "milk",
                     "id": "en:skimmed-milk",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 23.4,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "processing": "en:concentrated",
                     "text": "skimmed milk"
                 },
                 {
                     "id": "en:concentrated-whey",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.7,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "concentrated whey"
                 },
                 {
-                    "difference": 13,
-                    "id": "en:lean-cocoa-powder",
-                    "percent": 13,
-                    "percent_estimate": 0,
+                    "ciqual_food_code": "18100",
+                    "difference": 7.14,
+                    "id": "en:fat-reduced-cocoa-powder",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.86,
+                    "percent_hidden": 13,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "lean cocoa powder"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.93,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "text": "sugar"
                 },
                 {
                     "ciqual_food_code": "31077",
                     "id": "en:fructose",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.46,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "fructose"
                 },
                 {
@@ -1656,41 +1578,67 @@
                     "ingredients": [
                         {
                             "id": "en:e504i",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.366,
+                            "percent_max": 14.2857142857143,
+                            "percent_min": 0,
                             "text": "magnesium carbonate"
                         },
                         {
                             "id": "en:e341",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.366,
+                            "percent_max": 7.14285714285714,
+                            "percent_min": 0,
                             "text": "calcium phosphate"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.732,
+                    "percent_max": 14.2857142857143,
+                    "percent_min": 0,
                     "text": "mineral salts"
                 },
                 {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:rapeseed-oil",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.366,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "rapeseed oil"
                 },
                 {
                     "id": "en:vitamins",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.183,
+                    "percent_max": 11.1111111111111,
+                    "percent_min": 0,
                     "text": "vitamins"
                 },
                 {
                     "id": "en:vitamin-a",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0916,
+                    "percent_max": 10,
+                    "percent_min": 0,
                     "text": "vitamin a"
                 },
                 {
                     "id": "en:vitamin-e",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0458,
+                    "percent_max": 9.09090909090909,
+                    "percent_min": 0,
                     "text": "vitamin e"
                 },
                 {
                     "id": "en:vitamin-c",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0229,
+                    "percent_max": 8.33333333333333,
+                    "percent_min": 0,
                     "text": "vitamin c"
                 },
                 {
@@ -1698,11 +1646,17 @@
                     "ingredients": [
                         {
                             "id": "en:thiamin",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0114,
+                            "percent_max": 7.69230769230769,
+                            "percent_min": 0,
                             "text": "b1"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0114,
+                    "percent_max": 7.69230769230769,
+                    "percent_min": 0,
                     "text": "thiamine"
                 },
                 {
@@ -1710,11 +1664,17 @@
                     "ingredients": [
                         {
                             "id": "en:e101",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.00572,
+                            "percent_max": 7.14285714285714,
+                            "percent_min": 0,
                             "text": "b2"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00572,
+                    "percent_max": 7.14285714285714,
+                    "percent_min": 0,
                     "text": "riboflavin"
                 },
                 {
@@ -1722,11 +1682,17 @@
                     "ingredients": [
                         {
                             "id": "en:pp-b",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 0,
+                            "percent_estimate": 0.00286,
+                            "percent_max": 6.66666666666667,
+                            "percent_min": 0,
                             "text": "pp b"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00286,
+                    "percent_max": 6.66666666666667,
+                    "percent_min": 0,
                     "text": "niacin"
                 },
                 {
@@ -1734,16 +1700,25 @@
                     "ingredients": [
                         {
                             "id": "en:folic-acid",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.00143,
+                            "percent_max": 6.25,
+                            "percent_min": 0,
                             "text": "b9"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.00143,
+                    "percent_max": 6.25,
+                    "percent_min": 0,
                     "text": "foic ode"
                 },
                 {
                     "id": "en:vitamin-b12",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000715,
+                    "percent_max": 5.88235294117647,
+                    "percent_min": 0,
                     "text": "b12"
                 },
                 {
@@ -1751,11 +1726,17 @@
                     "ingredients": [
                         {
                             "id": "en:vitamin-b8",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.000358,
+                            "percent_max": 5.55555555555556,
+                            "percent_min": 0,
                             "text": "b8"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000358,
+                    "percent_max": 5.55555555555556,
+                    "percent_min": 0,
                     "text": "biotin"
                 },
                 {
@@ -1763,49 +1744,80 @@
                     "ingredients": [
                         {
                             "id": "en:pantothenic-acid",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.000358,
+                            "percent_max": 5.26315789473684,
+                            "percent_min": 0,
                             "text": "b5"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000358,
+                    "percent_max": 5.26315789473684,
+                    "percent_min": 0,
                     "text": "pantothenic acid"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 98.9,
             "percent_hidden": 33,
+            "percent_max": 100,
+            "percent_min": 97.8,
             "text": "malt extract from orge and cocoa ovomaltine"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "salt"
         },
         {
             "id": "en:vanilin-flavour",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vanilin flavour"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "sugar"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "rapeseed oil"
         },
         {
             "id": "en:totally-hydrogenated-rapeseed-oil",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "totally hydrogenated rapeseed oil"
         },
         {
             "ciqual_food_code": "15004",
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "hazelnuts"
         },
         {
@@ -1813,28 +1825,44 @@
             "ingredients": [
                 {
                     "id": "en:toumesol-lecitin",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "toumesol lecitin"
                 },
                 {
                     "id": "en:e471",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "mono- and diglycerides of fatty acids"
                 }
             ],
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "emulsifiers"
         },
         {
             "id": "en:e341",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "calcium phosphate"
         },
         {
-            "difference": 0.302,
-            "id": "en:lean-cocoa-powder",
-            "percent_estimate": 0.0977,
+            "ciqual_food_code": "18100",
+            "difference": 0.3,
+            "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
             "percent_hidden": 0.4,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "lean cocoa powder"
         },
         {
@@ -1842,21 +1870,33 @@
             "ingredients": [
                 {
                     "id": "en:e304i",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "ascorbyl palmitate"
                 },
                 {
                     "id": "en:e307",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "alpha-tocopherol"
                 }
             ],
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "antioxidants"
         },
         {
             "id": "en:vanilin-flavour",
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vanilin flavour"
         }
     ],
@@ -2257,9 +2297,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 27,
-        "relative_difference": 0.321,
-        "total_difference": 31.3,
+        "number_of_ingredients_without_ciqual_code": 23,
+        "relative_difference": 0.763,
+        "total_difference": 74.4,
         "total_specified_input_percent": 97.4
     },
     "ingredients_n": 43,
@@ -2312,7 +2352,7 @@
         "en:vitamin-b8",
         "en:pantothenic-acid"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:malt-extract-from-orge-and-cocoa-ovomaltine",
         "en:salt",
@@ -2394,13 +2434,11 @@
         "en:emulsifier",
         "en:foic-ode",
         "en:folic-acid",
-        "en:lean-cocoa-powder",
         "en:malt-extract-from-orge-and-cocoa-ovomaltine",
         "en:mineral-salts",
         "en:orge-malt-extract",
         "en:pantothenic-acid",
         "en:pp-b",
-        "en:rapeseed-oil",
         "en:thiamin",
         "en:totally-hydrogenated-rapeseed-oil",
         "en:toumesol-lecitin",
@@ -2412,7 +2450,41 @@
         "en:vitamin-e",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 30,
+    "ingredients_without_ciqual_codes_n": 28,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:biotin",
+        "en:concentrated-whey",
+        "en:e101",
+        "en:e304i",
+        "en:e307",
+        "en:e341",
+        "en:e375",
+        "en:e471",
+        "en:e504i",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:foic-ode",
+        "en:folic-acid",
+        "en:fructose",
+        "en:malt-extract-from-orge-and-cocoa-ovomaltine",
+        "en:mineral-salts",
+        "en:orge-malt-extract",
+        "en:pantothenic-acid",
+        "en:pp-b",
+        "en:salt",
+        "en:thiamin",
+        "en:totally-hydrogenated-rapeseed-oil",
+        "en:toumesol-lecitin",
+        "en:vanilin-flavour",
+        "en:vitamin-a",
+        "en:vitamin-b12",
+        "en:vitamin-b8",
+        "en:vitamin-c",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 31,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2508,8 +2580,7 @@
         "en:packagings-not-empty",
         "en:ecoscore-extended-data-computed",
         "en:ecoscore-extended-data-version-4",
-        "en:ecoscore-not-computed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-not-computed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2879,31 +2950,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": "en:recycle-in-glass-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         }

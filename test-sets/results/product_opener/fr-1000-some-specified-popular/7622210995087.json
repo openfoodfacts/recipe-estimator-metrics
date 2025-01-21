@@ -227,7 +227,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -666,48 +666,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0560425364373366,
-            "likeliest_impacts": {
-                "Climate_change": 1.02920221145232,
-                "EF_single_score": 0.0744875783072049
-            },
-            "likeliest_recipe": {
-                "en:butterfat": 4.82460582403471,
-                "en:cocoa_butter": 8.18748549853318,
-                "en:cocoa_paste": 24.5280423954684,
-                "en:flavouring": 1.75350020304505,
-                "en:hazelnut": 24.4539001694095,
-                "en:skimmed_milk_powder": 0.0656984042359217,
-                "en:soya_lecithin": 3.74468372658293,
-                "en:sugar": 33.9582837794797,
-                "en:water": 0.375050705083612
-            },
-            "mass_ratio_uncharacterized": 0.0646383463730488,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:butterfat"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0646383463730488,
-                "nutrition": 0.0159492270458168
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -2206,7 +2164,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_max": 100,
             "percent_min": 12.5,
@@ -2215,6 +2175,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -2223,7 +2184,9 @@
         {
             "ciqual_food_code": "15004",
             "difference": 13.1,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_hidden": 24,
             "percent_max": 33.3333333333333,
@@ -2233,6 +2196,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_max": 25,
             "percent_min": 0,
@@ -2241,6 +2205,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_max": 20,
             "percent_min": 0,
@@ -2252,12 +2217,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.37,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "lécithines de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2265,16 +2232,19 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de vanille"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "LAIT écrémé en poudre"
         }
@@ -2390,7 +2360,7 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.546,
+        "relative_difference": 0.544,
         "total_difference": 13.1,
         "total_specified_input_percent": 24
     },
@@ -2462,6 +2432,15 @@
         "en:natural-vanilla-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:natural-vanilla-flavouring",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2912,7 +2891,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2921,12 +2902,16 @@
             "quantity_per_unit_value": 180,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             },
             "weight_measured": 1.4
@@ -2934,7 +2919,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": "en:paperboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2943,12 +2930,16 @@
             "quantity_per_unit_value": 180,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 10.2

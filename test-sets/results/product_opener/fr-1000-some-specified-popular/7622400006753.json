@@ -215,7 +215,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1447,6 +1447,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_max": 100,
             "percent_min": 11.1111111111111,
@@ -1454,8 +1455,10 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 14,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 14.0,
             "percent_max": 28,
             "percent_min": 0,
             "text": "sugar"
@@ -1463,13 +1466,16 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
-            "percent_estimate": 14,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 14.0,
             "percent_max": 28,
             "percent_min": 0,
             "text": "cocoa butter"
         },
         {
-            "id": "en:lean-cocoa-powder",
+            "ciqual_food_code": "18100",
+            "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 8.22,
             "percent_max": 25,
             "percent_min": 0,
@@ -1478,6 +1484,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.11,
             "percent_max": 20,
             "percent_min": 0,
@@ -1489,12 +1496,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.06,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "soy lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.06,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1502,16 +1511,19 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.03,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "natural vanilla flavour"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.514,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "skim milk powder"
         },
@@ -1519,9 +1531,10 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 69.5,
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.514,
             "percent_hidden": 70,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "cocoa"
         }
@@ -1635,7 +1648,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
+        "number_of_ingredients_without_ciqual_code": 1,
         "relative_difference": 0.993,
         "total_difference": 69.5,
         "total_specified_input_percent": 70
@@ -1706,10 +1719,20 @@
     "ingredients_with_unspecified_percent_sum": 99.609375,
     "ingredients_without_ciqual_codes": [
         "en:emulsifier",
-        "en:lean-cocoa-powder",
         "en:natural-vanilla-flavouring"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:natural-vanilla-flavouring",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2171,29 +2194,39 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

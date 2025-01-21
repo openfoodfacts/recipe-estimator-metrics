@@ -262,7 +262,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -717,47 +717,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0744193246077882,
-            "likeliest_impacts": {
-                "Climate_change": 0.251447696696783,
-                "EF_single_score": 0.0211809398294878
-            },
-            "likeliest_recipe": {
-                "en:garlic": 4.67005375751368,
-                "en:herb": 1.8,
-                "en:lactic_ferments": 10.9176366475911,
-                "en:pasteurized_milk_and_cream": 77.6608887477879,
-                "en:pepper": 0.177118127588978,
-                "en:salt": 0.410000986869377,
-                "en:water": 4.36430173264904
-            },
-            "mass_ratio_uncharacterized": 0.216275225031771,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:herb",
-                    "en:lactic-ferments"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.216275225031771,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 22%",
-                "Parameter const_relax_coef has been set to 0.3 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 36,
     "ecoscore_tags": [
@@ -2343,6 +2302,7 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:pasteurized-milk-and-cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -2350,6 +2310,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_max": 50,
             "percent_min": 0,
@@ -2358,6 +2319,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2366,6 +2328,7 @@
         {
             "difference": 3.56,
             "id": "en:herb",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.36,
             "percent_hidden": 1.8,
             "percent_max": 25,
@@ -2375,13 +2338,16 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.615,
             "percent_max": 1.23,
             "percent_min": 0,
             "text": "salt"
         },
         {
+            "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.615,
             "percent_max": 1.23,
             "percent_min": 0,
@@ -2392,12 +2358,14 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 4.13,
                     "percent_max": 1.23,
                     "percent_min": 0,
                     "text": "potassium sorbate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.13,
             "percent_max": 1.23,
             "percent_min": 0,
@@ -2653,7 +2621,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 1.98,
         "total_difference": 3.56,
         "total_specified_input_percent": 1.8
@@ -2722,10 +2690,20 @@
         "en:e202",
         "en:herb",
         "en:lactic-ferments",
-        "en:pepper",
         "en:preservative"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e202",
+        "en:garlic",
+        "en:herb",
+        "en:lactic-ferments",
+        "en:pasteurized-milk-and-cream",
+        "en:pepper",
+        "en:preservative",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 16,
@@ -3224,52 +3202,68 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         }

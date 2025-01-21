@@ -281,7 +281,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -704,58 +704,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.214082211318851,
-            "likeliest_impacts": {
-                "Climate_change": 0.0013479460050249,
-                "EF_single_score": 0.00031139269109712
-            },
-            "likeliest_recipe": {
-                "en:black_tea_extract": 1.39573668347016,
-                "en:e296": 0.222723888921994,
-                "en:e300": 0,
-                "en:e330": 1.2125149403021,
-                "en:e960": 0,
-                "en:flavouring": 0.0980478581471614,
-                "en:fructose": 1.49874212961859,
-                "en:sodium_citrate": 0.099695477390726,
-                "en:sugar": 1.83846490285893,
-                "en:water": 93.2298560326255,
-                "fr:jus_de_p_che___base_de_concentra": 0.0996954773907259
-            },
-            "mass_ratio_uncharacterized": 0.0336100552057091,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:e296",
-                    "en:black-tea-extract",
-                    "en:e330",
-                    "en:e960",
-                    "en:e300",
-                    "fr:jus de pêche à base de concentra"
-                ],
-                "nutrition": [
-                    "fr:jus de pêche à base de concentra",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0336100552057091,
-                "nutrition": 0.00213487803026624
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.636363636363636,
-                "nutrition": 0.181818181818182
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 64%",
-                "The impact relative interquartile is high for EF single score (36%)",
-                "The impact relative interquartile is high for Climate change (30%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -2262,7 +2210,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 82,
             "percent_max": 100,
             "percent_min": 64,
@@ -2270,7 +2220,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2279,6 +2231,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2289,6 +2242,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.75,
                     "percent_max": 3,
                     "percent_min": 0,
@@ -2296,12 +2250,14 @@
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.75,
                     "percent_max": 1.5,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2310,6 +2266,7 @@
         {
             "difference": 1.38,
             "id": "fr:extrait-de-the-noir⁽-⁾",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_hidden": 0.12,
             "percent_max": 3,
@@ -2318,7 +2275,9 @@
         },
         {
             "difference": 1.4,
+            "ecobalyse_code": "peach-eu",
             "id": "en:peach",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_hidden": 0.1,
             "percent_max": 3,
@@ -2331,12 +2290,14 @@
             "ingredients": [
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "citrate trisodique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2344,6 +2305,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2354,12 +2316,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2370,12 +2334,14 @@
             "ingredients": [
                 {
                     "id": "en:e960a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "Glycosides de stéviol issus de Stevia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2383,6 +2349,7 @@
         },
         {
             "id": "fr:⁽-⁾-certifie-rainforest-alliance",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2390,6 +2357,7 @@
         },
         {
             "id": "fr:plus-d-informations-sur-ra-org",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2397,6 +2365,7 @@
         },
         {
             "id": "fr:people-and-nature-l-humain-et-la-nature",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2621,6 +2590,24 @@
         "fr:⁽-⁾-certifie-rainforest-alliance"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:e960a",
+        "en:flavouring",
+        "en:fructose",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "fr:extrait-de-the-noir⁽-⁾",
+        "fr:people-and-nature-l-humain-et-la-nature",
+        "fr:plus-d-informations-sur-ra-org",
+        "fr:⁽-⁾-certifie-rainforest-alliance"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
     "labels": "Sans conservateurs, Point Vert, Metal recycles forever, Sans colorants, Rainforest Alliance, Triman",
@@ -3087,18 +3074,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": "en:drink-can"
+                    }
                 }
             }
         }

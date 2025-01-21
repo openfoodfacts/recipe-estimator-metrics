@@ -278,7 +278,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -727,72 +727,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.792818254250768,
-            "likeliest_impacts": {
-                "Climate_change": 0.000247091326348674,
-                "EF_single_score": 2.66099498992368e-05
-            },
-            "likeliest_recipe": {
-                "en:calcium": 26.4477139217584,
-                "en:e304": 0.0291421120392989,
-                "en:e306": 0.318624861114504,
-                "en:e330": 0.0665142754288871,
-                "en:e331": 6.95764940183699,
-                "en:e440a": 5.72784021726778,
-                "en:ergocalciferol": 0.149263279000333,
-                "en:hulled_soya_bean": 6.77169425860203,
-                "en:natural_flavouring": 1.3289631426052,
-                "en:sea_salt": 0.347766973153803,
-                "en:vitamin_b12": 0.16584132373502,
-                "en:vitamins": 0.189472430796847,
-                "en:water": 51.3502505236607,
-                "en:yogurt_cultures": 0.149263279000248
-            },
-            "mass_ratio_uncharacterized": 0.591406896155681,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "en:e440a",
-                    "en:e331",
-                    "en:e304",
-                    "en:yogurt cultures",
-                    "en:calcium",
-                    "en:hulled-soya-bean",
-                    "en:e306",
-                    "en:vitamin-b12",
-                    "en:e330",
-                    "en:natural-flavouring",
-                    "en:ergocalciferol"
-                ],
-                "nutrition": [
-                    "en:e306",
-                    "en:hulled-soya-bean",
-                    "en:natural-flavouring",
-                    "en:yogurt cultures"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.591406896155681,
-                "nutrition": 0.154565810012029
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.857142857142857,
-                "nutrition": 0.285714285714286
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of nutrition uncharacterized ingredients: 29%",
-                "The product has a high number of impact uncharacterized ingredients: 86%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 15%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 59%",
-                "The impact relative interquartile is high for EF single score (105%)",
-                "The impact relative interquartile is high for Climate change (98%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 81,
     "ecoscore_tags": [
@@ -2616,20 +2550,30 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 29.5,
+                    "percent_max": 100,
+                    "percent_min": 4.54545454545455,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "20901",
                     "difference": 14.3,
                     "id": "en:hulled-soya-bean",
-                    "percent": 10.7,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 10.7,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "hulled soya beans"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.5,
+            "percent_max": 100,
+            "percent_min": 9.09090909090909,
             "text": "soya base"
         },
         {
@@ -2637,11 +2581,17 @@
             "ingredients": [
                 {
                     "id": "en:tri-calciumcitrate",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 22.7,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "tri-calciumcitrate"
                 }
             ],
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.7,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "calcium"
         },
         {
@@ -2649,16 +2599,25 @@
             "ingredients": [
                 {
                     "id": "en:e331",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.68,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "sodium citrates"
                 },
                 {
                     "id": "en:e330",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.68,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.4,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "acidity regulators"
         },
         {
@@ -2666,22 +2625,34 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.68,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "pectins"
                 }
             ],
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.68,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "stabiliser"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "natural flavouring"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.12,
+            "percent_max": 0.24,
+            "percent_min": 0,
             "text": "sea salt"
         },
         {
@@ -2689,31 +2660,49 @@
             "ingredients": [
                 {
                     "id": "en:e306",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.06,
+                    "percent_max": 0.24,
+                    "percent_min": 0,
                     "text": "tocopherol-rich extract"
                 },
                 {
                     "id": "en:e304",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.06,
+                    "percent_max": 0.12,
+                    "percent_min": 0,
                     "text": "fatty acid esters of ascorbic acid"
                 }
             ],
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.12,
+            "percent_max": 0.24,
+            "percent_min": 0,
             "text": "antioxidants"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.12,
+            "percent_max": 0.24,
+            "percent_min": 0,
             "text": "vitamins"
         },
         {
             "id": "en:vitamin-b12",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.12,
+            "percent_max": 0.24,
+            "percent_min": 0,
             "text": "vitamin b12"
         },
         {
             "id": "en:ergocalciferol",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.12,
+            "percent_max": 0.24,
+            "percent_min": 0,
             "text": "vitamin d2"
         },
         {
@@ -2721,26 +2710,41 @@
             "ingredients": [
                 {
                     "id": "en:s",
-                    "percent_estimate": 0.0488,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.12,
+                    "percent_max": 0.24,
+                    "percent_min": 0,
                     "text": "s"
                 },
                 {
                     "id": "en:thermophilus",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.06,
+                    "percent_max": 0.12,
+                    "percent_min": 0,
                     "text": "thermophilus"
                 },
                 {
                     "id": "en:l",
-                    "percent_estimate": 0.0122,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.04,
+                    "percent_max": 0.08,
+                    "percent_min": 0,
                     "text": "l"
                 },
                 {
                     "id": "en:bulgaricus",
-                    "percent_estimate": 0.0122,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 2.36,
+                    "percent_max": 0.08,
+                    "percent_min": 0,
                     "text": "bulgaricus"
                 }
             ],
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.58,
+            "percent_max": 0.24,
+            "percent_min": 0,
             "text": "yogurt cultures"
         }
     ],
@@ -2983,7 +2987,7 @@
         "en:l",
         "en:bulgaricus"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:soy-base",
         "en:calcium",
@@ -3075,6 +3079,31 @@
         "en:yogurt-cultures"
     ],
     "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:bulgaricus",
+        "en:calcium",
+        "en:e304",
+        "en:e306",
+        "en:e330",
+        "en:e331",
+        "en:e440a",
+        "en:ergocalciferol",
+        "en:hulled-soya-bean",
+        "en:l",
+        "en:natural-flavouring",
+        "en:s",
+        "en:sea-salt",
+        "en:soy-base",
+        "en:stabiliser",
+        "en:thermophilus",
+        "en:tri-calciumcitrate",
+        "en:vitamin-b12",
+        "en:vitamins",
+        "en:yogurt-cultures"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 30,
@@ -3224,8 +3253,7 @@
         "en:main-countries-es-ingredients-not-in-country-language",
         "en:main-countries-es-only-1-field-in-country-language",
         "en:main-countries-uk-unexpectedly-low-scans",
-        "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -3616,65 +3644,87 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": "en:paperboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

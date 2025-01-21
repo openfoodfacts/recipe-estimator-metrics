@@ -249,7 +249,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -678,55 +678,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00742063455315911,
-            "likeliest_impacts": {
-                "Climate_change": 0.104792249621983,
-                "EF_single_score": 0.0161890744604553
-            },
-            "likeliest_recipe": {
-                "en:bay_leaf": 0.05,
-                "en:black_pepper": 0.05,
-                "en:carrot": 6,
-                "en:celery": 3,
-                "en:corn_starch": 1.50009321827584,
-                "en:pork_meat": 8,
-                "en:salt": 1.57276354613375,
-                "en:sugar": 2.6362940428799,
-                "en:sunflower_oil": 2.78576175123845,
-                "en:thyme": 1.50009321827584,
-                "en:tomato_concentrate": 17,
-                "en:tomato_pulp": 24,
-                "en:water": 23.9049942231962,
-                "fr:oignons_85___viande_de_b_uf": 8
-            },
-            "mass_ratio_uncharacterized": 0.250000006633705,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:oignons 85 % viande de bœuf",
-                    "en:tomato-concentrate"
-                ],
-                "nutrition": [
-                    "fr:oignons 85 % viande de bœuf",
-                    "en:tomato-concentrate"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.250000006633705,
-                "nutrition": 0.250000006633705
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": [
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 25%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1741,7 +1692,9 @@
         {
             "ciqual_food_code": "20047",
             "difference": 29.3,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:chopped-tomatoes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.3,
             "percent_hidden": 24,
             "percent_max": 100,
@@ -1750,7 +1703,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.3,
             "percent_max": 50,
             "percent_min": 0,
@@ -1758,8 +1713,10 @@
         },
         {
             "ciqual_food_code": "20068",
-            "difference": 5.3,
+            "difference": 5.33,
+            "ecobalyse_code": "tomato-concentrated",
             "id": "en:tomato-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_hidden": 17,
             "percent_max": 33.3333333333333,
@@ -1769,7 +1726,9 @@
         {
             "ciqual_food_code": "20034",
             "difference": 2.67,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.83,
             "percent_hidden": 8.5,
             "percent_max": 25,
@@ -1780,6 +1739,7 @@
             "ciqual_proxy_food_code": "6101",
             "difference": 5.08,
             "id": "en:beef-meat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.92,
             "percent_hidden": 8,
             "percent_max": 20,
@@ -1790,6 +1750,7 @@
             "ciqual_proxy_food_code": "28205",
             "difference": 6.54,
             "id": "en:pork-meat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_hidden": 8,
             "percent_max": 16.6666666666667,
@@ -1799,7 +1760,9 @@
         {
             "ciqual_food_code": "20009",
             "difference": 5.27,
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.729,
             "percent_hidden": 6,
             "percent_max": 14.2857142857143,
@@ -1808,8 +1771,10 @@
         },
         {
             "ciqual_proxy_food_code": "20055",
-            "difference": 2.63,
+            "difference": 2.64,
+            "ecobalyse_code": "celery-eu",
             "id": "en:celery",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.365,
             "percent_hidden": 3,
             "percent_max": 12.5,
@@ -1818,7 +1783,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.182,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1826,7 +1793,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0911,
             "percent_max": 4.7,
             "percent_min": 0,
@@ -1835,6 +1804,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0456,
             "percent_max": 1,
             "percent_min": 0,
@@ -1843,6 +1813,7 @@
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0228,
             "percent_max": 1,
             "percent_min": 0,
@@ -1851,6 +1822,7 @@
         {
             "ciqual_food_code": "11070",
             "id": "en:thyme",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0114,
             "percent_max": 1,
             "percent_min": 0,
@@ -1860,6 +1832,7 @@
             "ciqual_food_code": "11053",
             "difference": 0.0443,
             "id": "en:bay-leaf",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0057,
             "percent_hidden": 0.05,
             "percent_max": 1,
@@ -1868,7 +1841,9 @@
         },
         {
             "ciqual_food_code": "11015",
+            "ecobalyse_code": "black-pepper",
             "id": "en:black-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0057,
             "percent_max": 1,
             "percent_min": 0,
@@ -2029,8 +2004,8 @@
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.762,
-        "total_difference": 56.8,
+        "relative_difference": 0.763,
+        "total_difference": 56.9,
         "total_specified_input_percent": 74.5
     },
     "ingredients_n": 15,
@@ -2117,6 +2092,15 @@
     "ingredients_with_unspecified_percent_sum": 25.45,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bay-leaf",
+        "en:beef-meat",
+        "en:corn-starch",
+        "en:pork-meat",
+        "en:salt",
+        "en:thyme"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 35,
@@ -2635,24 +2619,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

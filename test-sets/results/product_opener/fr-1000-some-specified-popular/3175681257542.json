@@ -193,7 +193,7 @@
                         "epi_score": "68",
                         "origin": "en:canada",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -1239,7 +1239,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 11.8,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_hidden": 68,
             "percent_max": 100,
@@ -1248,7 +1250,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1256,8 +1260,10 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
-            "percent_estimate": 9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.0,
             "percent_max": 18,
             "percent_min": 0,
             "text": "sucre de canne"
@@ -1266,6 +1272,7 @@
             "ciqual_food_code": "13113",
             "difference": 1.14,
             "id": "en:cranberry",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.44,
             "percent_hidden": 5.3,
             "percent_max": 18,
@@ -1275,6 +1282,7 @@
         {
             "ciqual_food_code": "9621",
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.22,
             "percent_max": 18,
             "percent_min": 0,
@@ -1282,8 +1290,9 @@
         },
         {
             "id": "en:natural-raspberry-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.61,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de framboise"
         },
@@ -1292,28 +1301,32 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.402,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acide citrique"
                 },
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.402,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.805,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "poudres à lever"
         },
         {
-            "id": "en:natural-sour-almond-flavouring",
+            "id": "en:natural-bitter-almond-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.805,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel d'amande amère"
         }
@@ -1364,7 +1377,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.177,
+        "relative_difference": 0.176,
         "total_difference": 12.9,
         "total_specified_input_percent": 73.3
     },
@@ -1425,11 +1438,21 @@
     "ingredients_without_ciqual_codes": [
         "en:e330",
         "en:e500",
+        "en:natural-bitter-almond-flavouring",
         "en:natural-raspberry-flavouring",
-        "en:natural-sour-almond-flavouring",
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cranberry",
+        "en:e330",
+        "en:e500",
+        "en:natural-bitter-almond-flavouring",
+        "en:natural-raspberry-flavouring",
+        "en:raising-agent",
+        "en:wheat-bran"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -1910,57 +1933,75 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:recycled-cardboard"
+                    "id": {
+                        "id": "en:recycled-cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

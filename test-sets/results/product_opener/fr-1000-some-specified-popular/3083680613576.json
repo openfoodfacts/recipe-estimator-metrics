@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -657,46 +657,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0478084893878019,
-            "likeliest_impacts": {
-                "Climate_change": 0.00394467209437132,
-                "EF_single_score": 0.00128779919704886
-            },
-            "likeliest_recipe": {
-                "en:bay_leaf": 0.0500175591254541,
-                "en:carrot": 4.00140473003633,
-                "en:chicken_fat": 0.0500175591254541,
-                "en:e392": 0,
-                "en:onion": 1.00035118250908,
-                "en:salt": 0.404748839010519,
-                "en:spice": 0,
-                "en:water": 61.4817943432273,
-                "en:wheat": 1.01553917393329,
-                "fr:graisse_de_porc": 0.0200070236501816,
-                "fr:lentilles_blondes": 32.0112378402906
-            },
-            "mass_ratio_uncharacterized": 0.000989378484825626,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:graisse-de-porc",
-                    "en:e392"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.000989378484825626,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.181818181818182,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 80,
     "ecoscore_tags": [
@@ -1394,7 +1354,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_max": 100,
             "percent_min": 9.09090909090909,
@@ -1402,8 +1364,10 @@
         },
         {
             "ciqual_food_code": "20505",
-            "difference": 9.3,
-            "id": "fr:lentilles-blondes",
+            "difference": 9.27,
+            "ecobalyse_code": "lentils-uncooked-eu",
+            "id": "de:gelbe-linsen",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 32,
             "percent_max": 50,
@@ -1413,8 +1377,10 @@
         },
         {
             "ciqual_food_code": "20009",
-            "difference": 7.4,
+            "difference": 7.36,
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_hidden": 4,
             "percent_max": 33.3333333333333,
@@ -1427,30 +1393,35 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "BLE"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes"
         },
         {
             "ciqual_food_code": "20034",
             "difference": 1.5,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
             "percent_hidden": 1,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "oignons"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.425,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1459,6 +1430,7 @@
         {
             "ciqual_food_code": "11053",
             "id": "en:bay-leaf",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.425,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1468,6 +1440,7 @@
             "ciqual_food_code": "16540",
             "difference": 0.375,
             "id": "en:chicken-fat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.425,
             "percent_hidden": 0.05,
             "percent_max": 0.85,
@@ -1477,6 +1450,7 @@
         {
             "difference": 0.405,
             "id": "fr:graisse-de-porc",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.425,
             "percent_hidden": 0.02,
             "percent_max": 0.85,
@@ -1486,6 +1460,7 @@
         },
         {
             "id": "en:e392",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.425,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1493,6 +1468,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.24,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1638,8 +1614,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.512,
-        "total_difference": 19.0,
+        "relative_difference": 0.51,
+        "total_difference": 18.9,
         "total_specified_input_percent": 37.1
     },
     "ingredients_n": 12,
@@ -1715,6 +1691,17 @@
         "fr:graisse-de-porc"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bay-leaf",
+        "en:chicken-fat",
+        "en:e392",
+        "en:flavouring",
+        "en:salt",
+        "en:spice",
+        "en:wheat",
+        "fr:graisse-de-porc"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 29,
@@ -2184,12 +2171,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

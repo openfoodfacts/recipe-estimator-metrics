@@ -225,13 +225,13 @@
                         "epi_score": "0",
                         "origin": "en:peru",
                         "percent": 63.75,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 36.25,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -665,24 +665,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0129585457461364,
-            "likeliest_impacts": {
-                "Climate_change": 2.20722669431634,
-                "EF_single_score": 0.137100540635564
-            },
-            "likeliest_recipe": {
-                "en:cane_sugar": 14.9346898101109,
-                "en:cocoa": 0.284926595418072,
-                "en:cocoa_butter": 41.6445984483894,
-                "en:cocoa_paste": 43.5966138025723,
-                "en:water": 0.1333320892497
-            },
-            "mass_ratio_uncharacterized": 0
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1724,6 +1706,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "origins": "en:peru",
                     "percent_estimate": 68,
                     "percent_max": 100,
@@ -1733,12 +1716,14 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 25,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 93,
             "percent_hidden": 85,
             "percent_max": 100,
@@ -1747,7 +1732,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7,
             "percent_max": 14,
             "percent_min": 0,
@@ -1871,6 +1858,12 @@
     "ingredients_with_unspecified_percent_sum": 100,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -2361,7 +2354,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2370,19 +2365,25 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2391,12 +2392,16 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         }

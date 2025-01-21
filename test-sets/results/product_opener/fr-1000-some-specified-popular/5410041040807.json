@@ -305,7 +305,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 97.7,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -745,89 +745,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.219638587343255,
-            "likeliest_impacts": {
-                "Climate_change": 0.418365931247567,
-                "EF_single_score": 0.0334888595669765
-            },
-            "likeliest_recipe": {
-                "en:ammonium_acid_carbonate": 1.00058793829719,
-                "en:cocoa_butter": 6.22292525484036,
-                "en:cocoa_paste": 6.22292525484036,
-                "en:e322i": 0.24540696065313,
-                "en:e330": 1.1663991810495,
-                "en:e333": 0.600585597559475,
-                "en:e415": 0.166890082746326,
-                "en:e440a": 0.478236429544716,
-                "en:e450i": 0.565277939187788,
-                "en:e500ii": 0.467960838938399,
-                "en:egg": 4.23558882516521,
-                "en:equivalent_redcover_juice": 1.43820316455667,
-                "en:flavouring": 0.529879843414226,
-                "en:glucose_fructose_syrup": 27.9660103032101,
-                "en:illipe_oil": 6.08527023744608,
-                "en:lactose_and_milk_proteins": 0,
-                "en:mango": 0.0461895579104087,
-                "en:rapeseed_oil": 2.03382671642338,
-                "en:raspberry": 1.98404901932095,
-                "en:raspberry_pulp_equivalent": 2.06461341791489,
-                "en:sal_tree": 0.046189557910409,
-                "en:salt": 0.39807827674149,
-                "en:shea_and_palm_in_varying_proportions": 0,
-                "en:sodium_citrate": 0.736009441814695,
-                "en:soya_lecithin": 0,
-                "en:sugar": 21.9514014865487,
-                "en:water": 0.788660654081549,
-                "en:wheat_flour": 12.8267363265054
-            },
-            "mass_ratio_uncharacterized": 0.227068257336457,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e440a",
-                    "en:illipe-oil",
-                    "en:e330",
-                    "en:lactose-and-milk-proteins",
-                    "en:e450i",
-                    "en:e322i",
-                    "en:sal-tree",
-                    "en:e333",
-                    "en:e415",
-                    "en:flavouring",
-                    "en:equivalent redcover juice",
-                    "en:ammonium acid carbonate",
-                    "en:raspberry pulp equivalent",
-                    "en:e500ii",
-                    "en:shea and palm in varying proportions"
-                ],
-                "nutrition": [
-                    "en:sal-tree",
-                    "en:flavouring",
-                    "en:equivalent redcover juice",
-                    "en:ammonium acid carbonate",
-                    "en:raspberry pulp equivalent",
-                    "en:shea and palm in varying proportions"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.227068257336457,
-                "nutrition": 0.148137804884875
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.516129032258065,
-                "nutrition": 0.225806451612903
-            },
-            "warnings": [
-                "3 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 52%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 15%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 23%",
-                "The impact relative interquartile is high for Climate change (32%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -2150,30 +2067,37 @@
                 {
                     "ciqual_food_code": "31077",
                     "id": "en:glucose-fructose-syrup",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 25,
                     "text": "sirop de glucose-fructose"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 12.5,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "13015",
-                    "difference": 0.0,
+                    "difference": 3.95,
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "fr:puree-de-framboise-concentree",
                     "ingredients": [],
-                    "percent": 2.3,
-                    "percent_estimate": 2.3,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 6.25,
+                    "percent_hidden": 2.3,
                     "text": "purée de framboise concentrée"
                 },
                 {
                     "ciqual_food_code": "13015",
-                    "difference": 0.0,
+                    "difference": 2.02,
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "en:raspberry-puree",
-                    "percent": 1.1,
-                    "percent_estimate": 1.1,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.12,
+                    "percent_hidden": 1.1,
                     "text": "purée de framboise"
                 },
                 {
@@ -2181,16 +2105,19 @@
                     "ingredients": [
                         {
                             "id": "en:e330",
-                            "percent_estimate": 4.55,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.56,
                             "text": "acide citrique"
                         }
                     ],
-                    "percent_estimate": 4.55,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.56,
                     "text": "acidifiant"
                 },
                 {
                     "id": "fr:jus-concentre-de-groseilles",
-                    "percent_estimate": 2.27,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.781,
                     "text": "jus concentré de groseilles"
                 },
                 {
@@ -2198,11 +2125,13 @@
                     "ingredients": [
                         {
                             "id": "en:e440a",
-                            "percent_estimate": 1.14,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.391,
                             "text": "pectines"
                         }
                     ],
-                    "percent_estimate": 1.14,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.391,
                     "text": "gélifiant"
                 },
                 {
@@ -2210,21 +2139,25 @@
                     "ingredients": [
                         {
                             "id": "en:e331",
-                            "percent_estimate": 0.284,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0977,
                             "text": "citrates de sodium"
                         },
                         {
                             "id": "en:e333",
-                            "percent_estimate": 0.284,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0977,
                             "text": "citrates de calcium"
                         }
                     ],
-                    "percent_estimate": 0.569,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.195,
                     "text": "correcteurs d'acidité"
                 },
                 {
                     "id": "en:flavouring",
-                    "percent_estimate": 0.284,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0977,
                     "text": "arôme"
                 },
                 {
@@ -2232,14 +2165,17 @@
                     "ingredients": [
                         {
                             "id": "en:e415",
-                            "percent_estimate": 0.284,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0977,
                             "text": "gomme xanthane"
                         }
                     ],
-                    "percent_estimate": 0.284,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0977,
                     "text": "épaississant"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 50,
             "percent_hidden": 41,
             "text": "Préparation à la framboise"
@@ -2247,46 +2183,57 @@
         {
             "difference": 1,
             "id": "en:chocolate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 25,
             "percent_hidden": 24,
             "text": "chocolat"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.5,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.25,
             "text": "pâte de cacao"
         },
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.12,
             "text": "beurre de cacao"
         },
         {
             "id": "en:mango-kernel-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.56,
             "text": "graisses végétales de noyaux de mangue"
         },
         {
             "id": "en:shorea-robusta-seed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.781,
             "text": "graisses végétales de sal"
         },
         {
+            "ciqual_food_code": "16110",
             "id": "en:shea-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.391,
             "text": "graisses végétales de karité"
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.195,
             "text": "graisses végétales de palme"
         },
@@ -2296,47 +2243,59 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0977,
                     "text": "lécithines de soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0977,
             "text": "émulsifiant"
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0488,
             "text": "arôme"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 15.0,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0244,
             "percent_hidden": 15,
             "text": "farine de blé"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0122,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0061,
             "text": "oeufs"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00305,
             "text": "sirop de glucose-fructose"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00153,
             "text": "huile de colza"
         },
@@ -2345,32 +2304,38 @@
             "ingredients": [
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000381,
                     "text": "carbonates d'ammonium"
                 },
                 {
                     "id": "en:e450",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000191,
                     "text": "diphosphates"
                 },
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000191,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000763,
             "text": "poudres à lever"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000381,
             "text": "amidon de blé"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000191,
             "text": "sel"
         },
@@ -2380,16 +2345,20 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 9.54e-05,
                     "text": "lécithines de soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.54e-05,
             "text": "émulsifiant"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.54e-05,
             "text": "lait écrémé en poudre"
         }
@@ -2813,9 +2782,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 15,
-        "relative_difference": 0.299,
-        "total_difference": 25.0,
+        "number_of_ingredients_without_ciqual_code": 14,
+        "relative_difference": 0.371,
+        "total_difference": 31.0,
         "total_specified_input_percent": 83.4
     },
     "ingredients_n": 41,
@@ -2963,13 +2932,42 @@
         "en:gelling-agent",
         "en:mango-kernel-oil",
         "en:raising-agent",
-        "en:shea-butter",
         "en:shorea-robusta-seed-oil",
         "en:thickener",
         "fr:jus-concentre-de-groseilles",
         "fr:preparation-a-la-framboise"
     ],
-    "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ciqual_codes_n": 20,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:chocolate",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e330",
+        "en:e331",
+        "en:e333",
+        "en:e415",
+        "en:e440a",
+        "en:e450",
+        "en:e500",
+        "en:e503",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
+        "en:mango-kernel-oil",
+        "en:raising-agent",
+        "en:salt",
+        "en:shea-butter",
+        "en:shorea-robusta-seed-oil",
+        "en:soya-lecithin",
+        "en:thickener",
+        "en:wheat-starch",
+        "fr:jus-concentre-de-groseilles",
+        "fr:preparation-a-la-framboise"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 27,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 59,
     "labels": "Labels de distributeurs, Sans conservateurs, en:Charte LU Harmony, Sans colorants, Sans colorants ou conservateurs, Pur beurre de cacao, Triman, en:fabrique-dans-l-ue, en:fabrique-en-belgique, en:snack-mindfully",
@@ -3072,8 +3070,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "new_additives_n": 8,
     "no_nutrition_data": "",
@@ -3456,18 +3453,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 17.85
@@ -3475,7 +3478,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3484,12 +3489,16 @@
             "quantity_per_unit_value": 150,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 1.26

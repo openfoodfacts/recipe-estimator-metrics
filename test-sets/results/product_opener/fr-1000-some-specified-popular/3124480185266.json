@@ -199,7 +199,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1451,59 +1451,70 @@
     ],
     "ingredients": [
         {
-            "difference": 0,
+            "difference": 9.56,
             "id": "en:fruit-juice-from-concentrate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13009",
-                    "difference": 0,
+                    "difference": 5.56,
+                    "ecobalyse_code": "lemon-eu",
                     "id": "en:lemon",
-                    "percent": 25,
-                    "percent_estimate": 25,
-                    "percent_max": 25,
-                    "percent_min": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 30.6,
+                    "percent_hidden": 25,
+                    "percent_max": 100,
+                    "percent_min": 5.55555555555556,
                     "text": "citron"
                 },
                 {
                     "ciqual_proxy_food_code": "13034",
-                    "difference": 0,
+                    "difference": 4.0,
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
-                    "percent": 21,
-                    "percent_estimate": 21,
-                    "percent_max": 21,
-                    "percent_min": 21,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 21,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "orange"
                 }
             ],
-            "percent_estimate": 46,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 55.6,
             "percent_hidden": 46,
-            "percent_max": 46,
-            "percent_min": 46,
+            "percent_max": 100,
+            "percent_min": 11.1111111111111,
             "text": "Jus de fruits à base de concentrés"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 21.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 18.4,
             "percent_max": 36.7,
-            "percent_min": 6.75,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 17.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.0,
             "percent_max": 33.3333333333333,
-            "percent_min": 2.47142857142857,
+            "percent_min": 0,
             "text": "eau"
         },
         {
             "ciqual_food_code": "13009",
-            "difference": 3.45,
+            "difference": 2.52,
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon-pulp",
-            "percent_estimate": 7.45,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.52,
             "percent_hidden": 4,
-            "percent_max": 23.625,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "pulpes de citron"
         },
@@ -1512,44 +1523,52 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 3.73,
-                    "percent_max": 15.75,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.26,
+                    "percent_max": 20,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 3.73,
-            "percent_max": 15.75,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.26,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "acidifiant"
         },
         {
             "id": "fr:aromes-naturels-d-orange-concentres-de-carotte",
-            "percent_estimate": 1.86,
-            "percent_max": 11.8125,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 1.63,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "arômes naturels d'orange concentrés de carotte"
         },
         {
             "ciqual_food_code": "13050",
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple",
-            "percent_estimate": 0.931,
-            "percent_max": 9.45,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.815,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "pomme"
         },
         {
             "id": "en:safflower-flower",
-            "percent_estimate": 0.466,
-            "percent_max": 7.875,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.408,
+            "percent_max": 12.5,
             "percent_min": 0,
             "text": "fleur de carthame"
         },
         {
             "ciqual_proxy_food_code": "13009",
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon",
-            "percent_estimate": 0.466,
-            "percent_max": 6.75,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.408,
+            "percent_max": 11.1111111111111,
             "percent_min": 0,
             "text": "citron"
         }
@@ -1634,8 +1653,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.0359,
-        "total_difference": 3.45,
+        "relative_difference": 0.225,
+        "total_difference": 21.6,
         "total_specified_input_percent": 96
     },
     "ingredients_n": 12,
@@ -1698,6 +1717,14 @@
         "fr:aromes-naturels-d-orange-concentres-de-carotte"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:fruit-juice-from-concentrate",
+        "en:safflower-flower",
+        "fr:aromes-naturels-d-orange-concentres-de-carotte"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,
@@ -1771,8 +1798,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2156,29 +2182,39 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:wine-cork"
+                    "id": {
+                        "id": "en:wine-cork"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         }

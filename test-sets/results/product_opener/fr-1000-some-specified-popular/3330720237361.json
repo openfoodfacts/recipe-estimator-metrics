@@ -250,7 +250,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -683,53 +683,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.144739774043644,
-            "likeliest_impacts": {
-                "Climate_change": 0.5967261894303,
-                "EF_single_score": 0.0540188554909275
-            },
-            "likeliest_recipe": {
-                "en:aroma_vanilla": 5.79248611506619,
-                "en:cocoa_powder": 7.01143421089861,
-                "en:coconut_oil": 9.07820277254061,
-                "en:hazel_nuts_of_the_lot_and_garonne": 16.0261353391968,
-                "en:milk_powder": 11.2554063084667,
-                "en:rapeseed_oil": 6.99682120451636,
-                "en:sugar": 35.0661579972856,
-                "en:sunflower_lecithin": 6.68653365978864,
-                "en:water": 2.25016826222047
-            },
-            "mass_ratio_uncharacterized": 0.292239477854498,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:aroma vanilla",
-                    "en:hazel-nuts of the lot and garonne",
-                    "en:coconut-oil"
-                ],
-                "nutrition": [
-                    "en:aroma vanilla",
-                    "en:hazel-nuts of the lot and garonne"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.292239477854498,
-                "nutrition": 0.184014357770941
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.375,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 38%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 18%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 29%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 43,
     "ecoscore_tags": [
@@ -1798,24 +1751,32 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_max": 100,
             "percent_min": 12.5,
             "text": "Sucre"
         },
         {
-            "difference": 5.9,
-            "id": "fr:noisette-du-lot-et-garonne",
+            "ciqual_food_code": "15004",
+            "difference": 5.88,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
+            "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
+            "origins": "en:lot-et-garonne",
             "percent_estimate": 21.9,
             "percent_hidden": 16,
             "percent_max": 50,
             "percent_min": 0,
-            "text": "_noisette_ du Lot et Garonne"
+            "text": "_noisette_"
         },
         {
             "ciqual_proxy_food_code": "19044",
+            "ecobalyse_code": "milk-powder",
             "id": "en:milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1824,6 +1785,7 @@
         {
             "ciqual_food_code": "16040",
             "id": "en:coconut-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_max": 25,
             "percent_min": 0,
@@ -1833,6 +1795,7 @@
             "ciqual_food_code": "18100",
             "difference": 4.27,
             "id": "en:cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_hidden": 7,
             "percent_max": 20,
@@ -1841,7 +1804,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1852,12 +1817,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.684,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1865,8 +1832,9 @@
         },
         {
             "id": "en:vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme vanille"
         }
@@ -1972,9 +1940,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.442,
-        "total_difference": 10.2,
+        "number_of_ingredients_without_ciqual_code": 2,
+        "relative_difference": 0.441,
+        "total_difference": 10.1,
         "total_specified_input_percent": 23
     },
     "ingredients_n": 9,
@@ -2034,10 +2002,17 @@
     "ingredients_without_ciqual_codes": [
         "en:emulsifier",
         "en:sunflower-lecithin",
-        "en:vanilla-flavouring",
-        "fr:noisette-du-lot-et-garonne"
+        "en:vanilla-flavouring"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-powder",
+        "en:coconut-oil",
+        "en:emulsifier",
+        "en:sunflower-lecithin",
+        "en:vanilla-flavouring"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 20,
@@ -2476,36 +2451,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:steel"
+                    "id": {
+                        "id": "en:steel"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": "en:recycle-in-glass-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

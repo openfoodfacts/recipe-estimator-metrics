@@ -200,7 +200,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -446,79 +446,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 4.44089209850063e-16,
-            "likeliest_impacts": {
-                "Climate_change": 0.463844384426645,
-                "EF_single_score": 0.118269381340724
-            },
-            "likeliest_recipe": {
-                "en:Additional_Information": 0,
-                "en:Although_every_care_has_been_taken_to_remove_shell": 0,
-                "en:Caution": 0,
-                "en:Contents_mav_attle_during_transit": 0,
-                "en:Once_opened": 0,
-                "en:Small_children_can_choke_on_settle_during_transit": 0,
-                "en:Storage_Instructions": 0,
-                "en:almond": 25.7532894736842,
-                "en:ame_small_pieces_may_remain": 0,
-                "en:cashew_nuts": 25.7532894736842,
-                "en:dry_place": 0,
-                "en:hazelnut": 25.7532894736842,
-                "en:local_council_for_further_recycling_information": 0,
-                "en:not_by_volume": 0,
-                "en:reseal_bag_to_retain_freshness": 0,
-                "en:walnut": 25.7532894736842,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:Once opened",
-                    "en:Contents mav attle during transit",
-                    "en:ame small pieces may remain",
-                    "en:reseal bag to retain freshness",
-                    "en:dry place",
-                    "en:Caution",
-                    "en:Storage Instructions",
-                    "en:Although every care has been taken to remove shell",
-                    "en:not by volume",
-                    "en:Additional Information",
-                    "en:Small children can choke on settle during transit",
-                    "en:local council for further recycling information"
-                ],
-                "nutrition": [
-                    "en:Once opened",
-                    "en:Contents mav attle during transit",
-                    "en:ame small pieces may remain",
-                    "en:reseal bag to retain freshness",
-                    "en:dry place",
-                    "en:Caution",
-                    "en:Storage Instructions",
-                    "en:Although every care has been taken to remove shell",
-                    "en:not by volume",
-                    "en:Additional Information",
-                    "en:Small children can choke on settle during transit",
-                    "en:local council for further recycling information"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.764705882352941,
-                "nutrition": 0.764705882352941
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 76%",
-                "The product has a high number of impact uncharacterized ingredients: 76%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1208,7 +1135,9 @@
         {
             "ciqual_food_code": "15023",
             "difference": 37.5,
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 62.5,
             "percent_hidden": 25,
             "percent_max": 100,
@@ -1217,8 +1146,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 6.2,
+            "difference": 6.25,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.8,
             "percent_hidden": 25,
             "percent_max": 50,
@@ -1229,6 +1160,7 @@
             "ciqual_proxy_food_code": "15055",
             "difference": 15.6,
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_hidden": 25,
             "percent_max": 33.3333333333333,
@@ -1239,6 +1171,7 @@
             "ciqual_food_code": "15041",
             "difference": 15.6,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_hidden": 25,
             "percent_max": 25,
@@ -1303,8 +1236,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.749,
-        "total_difference": 74.9,
+        "relative_difference": 0.75,
+        "total_difference": 75.0,
         "total_specified_input_percent": 100
     },
     "ingredients_n": 4,
@@ -1347,6 +1280,11 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:cashew-nuts"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 6,
@@ -1717,7 +1655,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         }
