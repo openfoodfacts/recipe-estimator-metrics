@@ -62,6 +62,7 @@ for test_set_path in sys.argv[1:]:
             if "product" in response_json:
 
                 # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
+                # do not replace UTF-8 characters by escape sequences
                 with open(path, "w") as f:
                     print("Updating with ingredients structure: " + path)
-                    json.dump(response_json["product"], f, indent=4)
+                    json.dump(response_json["product"], f, indent=4, ensure_ascii=False, sort_keys=True)
