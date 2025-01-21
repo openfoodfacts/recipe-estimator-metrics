@@ -195,7 +195,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -979,6 +979,7 @@
             "ciqual_food_code": "9200",
             "difference": 0.1,
             "id": "en:corn",
+            "is_in_taxonomy": 1,
             "percent_estimate": 99.9,
             "percent_hidden": 99.8,
             "percent_max": 100,
@@ -989,6 +990,7 @@
             "ciqual_food_code": "11082",
             "difference": 0.1,
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.1,
             "percent_hidden": 0.2,
             "percent_max": 0.2,
@@ -1048,6 +1050,11 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn",
+        "en:sea-salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -1463,12 +1470,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         }

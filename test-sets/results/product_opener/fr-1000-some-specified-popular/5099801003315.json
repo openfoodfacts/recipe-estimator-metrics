@@ -174,7 +174,7 @@
                         "epi_score": "73",
                         "origin": "en:ireland",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 73,
@@ -596,34 +596,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.010883246154899,
-            "likeliest_impacts": {
-                "Climate_change": 0.0986256166058741,
-                "EF_single_score": 0.0240764118924795
-            },
-            "likeliest_recipe": {
-                "en:oat_flakes": 104.71207525209,
-                "en:water": 0.0839007860063449
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 98,
     "ecoscore_tags": [
@@ -1009,6 +981,7 @@
             "ciqual_food_code": "9311",
             "difference": 0,
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 100,
             "percent_hidden": 100,
@@ -1069,6 +1042,10 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:whole-grain-oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 4,
@@ -1509,12 +1486,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

@@ -204,7 +204,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -620,79 +620,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.19072755261067,
-            "likeliest_impacts": {
-                "Climate_change": 0.205223281294504,
-                "EF_single_score": 0.0234661504164775
-            },
-            "likeliest_recipe": {
-                "en:antioxidant": 0.0834864269458708,
-                "en:caramelised_sugar": 1.7573691717158,
-                "en:cinnamon": 2.74194250823376,
-                "en:cocoa_butter": 0.239882886970353,
-                "en:cocoa_paste": 3.68305244806995,
-                "en:emulsifier": 0.118588533663883,
-                "en:glucose_syrup": 3.96446473083555,
-                "en:honey": 2.95099832243623,
-                "en:lactose": 0.118588533663886,
-                "en:malted_barley": 1.22578089952704,
-                "en:natural_flavouring": 0.273989009821062,
-                "en:oat": 14.0089414853446,
-                "en:rice_semolina": 3.0024713766291,
-                "en:salt": 1.22578089952704,
-                "en:sugar": 22.9760407616857,
-                "en:sunflower_lecithin": 2.17473795570064,
-                "en:sunflower_oil": 9.90206145531499,
-                "en:water": 2.96185282103422,
-                "en:wheat": 12.2968070376695,
-                "en:wheat_flour": 5.40386104817414,
-                "en:whey_powder": 0.118588533663886,
-                "en:whole_milk_powder": 0.239882886970353,
-                "fr:farime_de_ble": 2.93505931412046,
-                "fr:matiere_grasse_de_lait_anhydre": 2.37377997249214,
-                "fr:teneur_en_cacao": 2.14004979888573
-            },
-            "mass_ratio_uncharacterized": 0.144643171540227,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:matiere-grasse-de-lait-anhydre",
-                    "en:glucose-syrup",
-                    "fr:teneur en cacao",
-                    "en:lactose",
-                    "en:natural-flavouring",
-                    "en:antioxidant",
-                    "fr:farime de ble"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "fr:teneur en cacao",
-                    "en:natural-flavouring",
-                    "en:antioxidant",
-                    "fr:farime de ble"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.144643171540227,
-                "nutrition": 0.109668017132444
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.275862068965517,
-                "nutrition": 0.206896551724138
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 28%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 11%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "The impact relative interquartile is high for EF single score (28%)",
-                "The impact relative interquartile is high for Climate change (44%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 61,
     "ecoscore_tags": [
@@ -1159,12 +1086,13 @@
     ],
     "ingredients": [
         {
-            "difference": 4.8,
+            "difference": 4.85,
             "id": "en:wholemeal-cereal-flakes",
             "ingredients": [
                 {
                     "ciqual_food_code": "9310",
                     "id": "en:oat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 28.8,
                     "percent_max": 100,
                     "percent_min": 3.84615384615385,
@@ -1173,12 +1101,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_hidden": 49,
             "percent_max": 100,
@@ -1193,6 +1123,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.5,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1200,7 +1131,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.77,
                     "percent_max": 22,
                     "percent_min": 0,
@@ -1208,6 +1141,7 @@
                 },
                 {
                     "id": "fr:matiere-grasse-de-lait-anhydre",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.88,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1218,12 +1152,14 @@
                     "ingredients": [
                         {
                             "id": "en:sunflower-lecithin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.44,
                             "percent_max": 12.5,
                             "percent_min": 0,
                             "text": "lécithines de tournesol"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.44,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1232,12 +1168,15 @@
                 {
                     "difference": 62.6,
                     "id": "fr:teneur-en-cacao",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 1.44,
+                    "percent_hidden": 64,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "teneur en cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_hidden": 13,
             "percent_max": 50,
@@ -1246,15 +1185,19 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 11,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.0,
             "percent_max": 22,
             "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.04,
             "percent_max": 22,
             "percent_min": 0,
@@ -1266,7 +1209,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.51,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1275,6 +1220,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.755,
                     "percent_max": 10,
                     "percent_min": 0,
@@ -1282,7 +1228,9 @@
                 },
                 {
                     "ciqual_food_code": "19021",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:whole-milk-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.377,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
@@ -1291,6 +1239,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.189,
                     "percent_max": 5,
                     "percent_min": 0,
@@ -1298,6 +1247,7 @@
                 },
                 {
                     "id": "en:whey-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0944,
                     "percent_max": 4,
                     "percent_min": 0,
@@ -1305,6 +1255,7 @@
                 },
                 {
                     "id": "en:lactose",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0472,
                     "percent_max": 3.33333333333333,
                     "percent_min": 0,
@@ -1315,12 +1266,14 @@
                     "ingredients": [
                         {
                             "id": "fr:lecithines-de-soja-arome-naturel-de-vanille",
+                            "is_in_taxonomy": 0,
                             "percent_estimate": 0.0236,
                             "percent_max": 2.85714285714286,
                             "percent_min": 0,
                             "text": "lécithines de soja arome naturel de vanille"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0236,
                     "percent_max": 2.85714285714286,
                     "percent_min": 0,
@@ -1329,12 +1282,15 @@
                 {
                     "difference": 35.0,
                     "id": "fr:teneur-en-cacao",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.0236,
+                    "percent_hidden": 35,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "teneur en cacao"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 3.02,
             "percent_hidden": 7,
             "percent_max": 20,
@@ -1349,6 +1305,7 @@
                 {
                     "ciqual_proxy_food_code": "9100",
                     "id": "en:rice-semolina",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.755,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1356,6 +1313,7 @@
                 },
                 {
                     "id": "fr:farime-de-ble",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.377,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
@@ -1363,7 +1321,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.189,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
@@ -1371,6 +1331,7 @@
                 },
                 {
                     "id": "en:malted-barley",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0944,
                     "percent_max": 4.16666666666667,
                     "percent_min": 0,
@@ -1379,12 +1340,14 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0944,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.51,
             "percent_hidden": 5,
             "percent_max": 16.6666666666667,
@@ -1393,7 +1356,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.755,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1402,6 +1367,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.377,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1410,6 +1376,7 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.189,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1417,6 +1384,7 @@
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0944,
             "percent_max": 10,
             "percent_min": 0,
@@ -1424,7 +1392,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:caramelised-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0472,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1432,8 +1402,9 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0236,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arome naturel"
         },
@@ -1442,14 +1413,16 @@
             "ingredients": [
                 {
                     "id": "en:e306",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0236,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "extrait riche en tocophérols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0236,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "antioxydant"
         }
@@ -1903,6 +1876,34 @@
         "fr:teneur-en-cacao"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:chocolate-chunk",
+        "en:cinnamon",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e306",
+        "en:emulsifier",
+        "en:extruded-rice",
+        "en:glucose-syrup",
+        "en:honey",
+        "en:lactose",
+        "en:malted-barley",
+        "en:natural-flavouring",
+        "en:oat",
+        "en:rice-semolina",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:wheat",
+        "en:whey-powder",
+        "en:wholemeal-cereal-flakes",
+        "fr:carres-de-chocolat-au-lait",
+        "fr:farime-de-ble",
+        "fr:lecithines-de-soja-arome-naturel-de-vanille",
+        "fr:matiere-grasse-de-lait-anhydre",
+        "fr:teneur-en-cacao"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 25,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 51,

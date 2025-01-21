@@ -211,13 +211,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 98.125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 1.875,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 91.25625,
@@ -641,46 +641,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.116763536449743,
-            "likeliest_impacts": {
-                "Climate_change": 0.144453747154372,
-                "EF_single_score": 0.0127154854461795
-            },
-            "likeliest_recipe": {
-                "en:cream": 3.19980475393154,
-                "en:lactic_ferments": 1.40508629480979,
-                "en:milk_mineral_concentrate": 1.48181740418414,
-                "en:pasteurized_semi_skimmed_milk": 110.582111986426,
-                "en:vitamin_d": 0.368919300869686,
-                "en:water": 1.5264012595558
-            },
-            "mass_ratio_uncharacterized": 0.139592151729917,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamin-d",
-                    "en:lactic-ferments",
-                    "en:milk-mineral-concentrate"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.139592151729917,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1344,7 +1304,9 @@
         {
             "ciqual_food_code": "19042",
             "difference": 30,
+            "ecobalyse_code": "milk",
             "id": "en:pasteurized-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 60,
             "percent_hidden": 90,
@@ -1355,6 +1317,7 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 20,
             "percent_max": 50,
@@ -1364,6 +1327,7 @@
         },
         {
             "id": "en:milk-mineral-concentrate",
+            "is_in_taxonomy": 1,
             "origins": "en:european-union",
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
@@ -1372,6 +1336,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1379,6 +1344,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -1493,6 +1459,13 @@
         "en:vitamin-d"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments",
+        "en:milk-mineral-concentrate",
+        "en:vitamin-d"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -1940,12 +1913,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

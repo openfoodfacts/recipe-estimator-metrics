@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1270,7 +1270,9 @@
         {
             "ciqual_food_code": "15011",
             "difference": 15.5,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 74.5,
             "percent_hidden": 90,
             "percent_max": 100,
@@ -1279,7 +1281,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1289,6 +1293,7 @@
             "ciqual_food_code": "11058",
             "difference": 11.8,
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.8,
             "percent_hidden": 1,
             "percent_max": 1,
@@ -1325,8 +1330,8 @@
     "ingredients_lc": "cs",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.3,
-        "total_difference": 27.3,
+        "relative_difference": 0.299,
+        "total_difference": 27.2,
         "total_specified_input_percent": 91
     },
     "ingredients_n": 3,
@@ -1374,6 +1379,10 @@
     "ingredients_with_unspecified_percent_sum": 9,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 9,
@@ -1807,13 +1816,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:o-7-other-plastics"
+                    "id": {
+                        "id": "en:o-7-other-plastics"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

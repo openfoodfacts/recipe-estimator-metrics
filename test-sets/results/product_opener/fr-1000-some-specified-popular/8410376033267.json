@@ -232,7 +232,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -663,56 +663,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0201754442947296,
-            "likeliest_impacts": {
-                "Climate_change": 0.12622947649633,
-                "EF_single_score": 0.0226934172610475
-            },
-            "likeliest_recipe": {
-                "en:cinnamon": 0.558049178111646,
-                "en:e500ii": 2.8308217261475,
-                "en:e503ii": 0.0972982544666645,
-                "en:e965": 6.03306988461544,
-                "en:flavouring": 2.92811998061416,
-                "en:high_oleic_sunflower": 0.445348700237948,
-                "en:high_oleic_sunflower_oil": 17.5863068147916,
-                "en:oat_flakes": 39.143715168407,
-                "en:salt": 2.92811998061416,
-                "en:vegetable_fiber": 3.13251242038363,
-                "en:water": 0.334867349096378,
-                "en:wheat_flour": 37.4418145089111
-            },
-            "mass_ratio_uncharacterized": 0.127292339304077,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e503ii",
-                    "en:vegetable-fiber",
-                    "en:e965",
-                    "en:e500ii",
-                    "en:flavouring"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.127292339304077,
-                "nutrition": 0.00648658643154545
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.454545454545455,
-                "nutrition": 0.0909090909090909
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 45%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1466,6 +1416,7 @@
             "ciqual_food_code": "9311",
             "difference": 20.5,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_hidden": 34.5,
             "percent_max": 100,
@@ -1475,7 +1426,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 10.5,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 33,
             "percent_max": 50,
@@ -1483,18 +1436,21 @@
             "text": "harina de trigo"
         },
         {
-            "difference": 4.3,
+            "difference": 4.25,
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:high-oleic-sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.2,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "aceite girasol alto oleíco"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_hidden": 15.5,
             "percent_max": 33.3333333333333,
@@ -1506,12 +1462,14 @@
             "ingredients": [
                 {
                     "id": "en:e965",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.62,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "maltitol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1519,6 +1477,7 @@
         },
         {
             "id": "en:vegetable-fiber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 20,
             "percent_min": 0,
@@ -1529,6 +1488,7 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.703,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1536,12 +1496,14 @@
                 },
                 {
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.703,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "carbonato ácido de amonio"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1550,6 +1512,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.375,
             "percent_max": 0.75,
             "percent_min": 0,
@@ -1557,6 +1520,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.375,
             "percent_max": 0.75,
             "percent_min": 0,
@@ -1564,6 +1528,7 @@
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.328,
             "percent_max": 0.75,
             "percent_min": 0,
@@ -1571,7 +1536,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:high-oleic-sunflower",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.328,
             "percent_max": 0.75,
             "percent_min": 0,
@@ -1728,7 +1695,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
         "relative_difference": 0.425,
-        "total_difference": 35.3,
+        "total_difference": 35.2,
         "total_specified_input_percent": 83.0
     },
     "ingredients_n": 14,
@@ -1808,6 +1775,20 @@
         "en:vegetable-oil"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cinnamon",
+        "en:e500ii",
+        "en:e503ii",
+        "en:e965",
+        "en:flavouring",
+        "en:oat-flakes",
+        "en:raising-agent",
+        "en:salt",
+        "en:sweetener",
+        "en:vegetable-fiber",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 27,
@@ -2282,14 +2263,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

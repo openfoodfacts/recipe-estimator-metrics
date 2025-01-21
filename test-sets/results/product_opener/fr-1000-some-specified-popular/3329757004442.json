@@ -173,7 +173,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -613,10 +613,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1070,15 +1066,17 @@
             "ingredients": [
                 {
                     "id": "en:e968",
-                    "percent_estimate": 74.7,
-                    "percent_max": 99.6,
-                    "percent_min": 49.8,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 66.7,
+                    "percent_max": 100,
+                    "percent_min": 33.3333333333333,
                     "text": "erythritol"
                 }
             ],
-            "percent_estimate": 74.7,
-            "percent_max": 99.6,
-            "percent_min": 49.8,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 66.7,
+            "percent_max": 100,
+            "percent_min": 33.3333333333333,
             "text": "Agent de charge"
         },
         {
@@ -1086,33 +1084,37 @@
             "ingredients": [
                 {
                     "id": "en:e414",
-                    "percent_estimate": 12.8,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 16.7,
                     "percent_max": 50,
-                    "percent_min": 0.2,
+                    "percent_min": 0,
                     "text": "gomme d'acacia"
                 }
             ],
-            "percent_estimate": 12.8,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 16.7,
             "percent_max": 50,
-            "percent_min": 0.2,
+            "percent_min": 0,
             "text": "stabilisant"
         },
         {
             "id": "en:sweetener",
             "ingredients": [
                 {
-                    "difference": 12.4,
+                    "difference": 16.5,
                     "id": "en:e960",
-                    "percent": 0.2,
-                    "percent_estimate": 12.6,
-                    "percent_max": 0.2,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 16.7,
+                    "percent_hidden": 0.2,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "glycosides de stéviol"
                 }
             ],
-            "percent_estimate": 12.6,
-            "percent_max": 0.2,
-            "percent_min": 0.2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 16.7,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "édulcorant"
         }
     ],
@@ -1136,8 +1138,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 62.0,
-        "total_difference": 12.4,
+        "relative_difference": 82.3,
+        "total_difference": 16.5,
         "total_specified_input_percent": 0.2
     },
     "ingredients_n": 6,
@@ -1181,6 +1183,15 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bulking-agent",
+        "en:e414",
+        "en:e960",
+        "en:e968",
+        "en:stabiliser",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 6,
@@ -1245,8 +1256,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1463,48 +1473,64 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:kraft-paper"
+                    "id": {
+                        "id": "en:kraft-paper"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packaging"
+                    "id": {
+                        "id": "en:packaging"
+                    }
                 }
             }
         }

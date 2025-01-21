@@ -193,7 +193,7 @@
                         "epi_score": "85",
                         "origin": "en:germany",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 85,
@@ -1016,6 +1016,7 @@
             "ciqual_food_code": "9311",
             "difference": 11,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 55,
             "percent_hidden": 44,
@@ -1031,12 +1032,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 22.5,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 22.5,
             "percent_hidden": 15,
@@ -1046,12 +1049,13 @@
         },
         {
             "ciqual_food_code": "13112",
-            "difference": 1.2,
+            "difference": 1.25,
             "id": "en:grape",
             "ingredients": [
                 {
                     "ciqual_food_code": "13112",
                     "id": "en:grape",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.62,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1059,7 +1063,9 @@
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 5.62,
                     "percent_max": 16.6666666666667,
@@ -1067,6 +1073,7 @@
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 11.2,
             "percent_hidden": 10,
@@ -1077,6 +1084,7 @@
         {
             "ciqual_food_code": "9200",
             "id": "en:corn-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1089,7 +1097,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 2.81,
                     "percent_max": 20,
@@ -1097,6 +1107,7 @@
                     "text": "farine de riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 2.81,
             "percent_hidden": 9,
@@ -1107,11 +1118,14 @@
         {
             "ciqual_food_code": "13000",
             "difference": 2.59,
+            "ecobalyse_code": "apricot-eu",
             "id": "en:apricot",
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 1.41,
                     "percent_max": 16.6666666666667,
@@ -1119,6 +1133,7 @@
                     "text": "farine de riz"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 1.41,
             "percent_hidden": 4,
@@ -1128,7 +1143,9 @@
         },
         {
             "ciqual_food_code": "15011",
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1141,12 +1158,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.352,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent_estimate": 0.352,
             "percent_hidden": 3,
@@ -1156,6 +1175,7 @@
         },
         {
             "id": "fr:graines-de-lin-graines-de-courge",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent_estimate": 0.176,
             "percent_max": 11.1111111111111,
@@ -1164,6 +1184,7 @@
         },
         {
             "id": "fr:epo-fabrique-en-allemagne",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.176,
             "percent_max": 10,
             "percent_min": 0,
@@ -1229,8 +1250,8 @@
     "ingredients_ids_debug": [],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.366,
-        "total_difference": 31.1,
+        "relative_difference": 0.367,
+        "total_difference": 31.2,
         "total_specified_input_percent": 85
     },
     "ingredients_n": 16,
@@ -1303,6 +1324,18 @@
         "fr:petales-d-epeautre-complet"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn-flakes",
+        "en:fig",
+        "en:grape",
+        "en:oat-flakes",
+        "en:wheat",
+        "fr:epo-fabrique-en-allemagne",
+        "fr:flocons-d-epeautre",
+        "fr:graines-de-lin-graines-de-courge",
+        "fr:petales-d-epeautre-complet"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -1696,12 +1729,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

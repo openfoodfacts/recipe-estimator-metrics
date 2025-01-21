@@ -221,7 +221,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -498,54 +498,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.095564237749395,
-            "likeliest_impacts": {
-                "Climate_change": 0.234858146627589,
-                "EF_single_score": 0.0164507366715899
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 1.2,
-                "en:cocoa_mass_and_cocoa_butter": 0.5,
-                "en:e509": 0.442672496188018,
-                "en:partially_skimmed_pasteurized_milk": 32,
-                "en:renuret": 0.442672496188012,
-                "en:skimed_condensed_milk": 7.45103168835891,
-                "en:sugar": 5.5,
-                "en:water": 2.46362331926506
-            },
-            "mass_ratio_uncharacterized": 0.82742786363711,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:partially skimmed pasteurized milk",
-                    "en:renuret",
-                    "en:e509",
-                    "en:skimed condensed milk"
-                ],
-                "nutrition": [
-                    "en:partially skimmed pasteurized milk",
-                    "en:renuret",
-                    "en:skimed condensed milk"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.82742786363711,
-                "nutrition": 0.822626375115207
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.571428571428571,
-                "nutrition": 0.428571428571429
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 43%",
-                "The product has a high number of impact uncharacterized ingredients: 57%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 82%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 83%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1141,8 +1093,10 @@
     "ingredients": [
         {
             "ciqual_food_code": "19042",
-            "difference": 6.9,
+            "difference": 6.86,
+            "ecobalyse_code": "milk",
             "id": "en:pasteurized-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 57.1,
             "percent_hidden": 64,
@@ -1152,7 +1106,9 @@
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:condensed-skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 21.4,
             "percent_max": 50,
@@ -1161,9 +1117,11 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
-            "difference": 2,
+            "difference": 2.0,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.0,
             "percent_hidden": 11,
             "percent_max": 18,
             "percent_min": 0,
@@ -1173,6 +1131,7 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 3.81,
             "id": "en:cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.21,
             "percent_hidden": 2.4,
             "percent_max": 18,
@@ -1186,12 +1145,14 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-mass-and-cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.11,
                     "percent_max": 18,
                     "percent_min": 0,
                     "text": "pâte de cacao et beurre de cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.11,
             "percent_hidden": 1,
             "percent_max": 18,
@@ -1200,6 +1161,7 @@
         },
         {
             "id": "en:rennet",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.55,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1207,6 +1169,7 @@
         },
         {
             "id": "en:e509",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.55,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1368,6 +1331,14 @@
         "en:rennet"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate",
+        "en:cocoa",
+        "en:cocoa-mass-and-cocoa-butter",
+        "en:e509",
+        "en:rennet"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -1826,19 +1797,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

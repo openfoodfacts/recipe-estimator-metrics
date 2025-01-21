@@ -969,77 +969,112 @@
     ],
     "ingredients": [
         {
-            "difference": 38,
+            "difference": 25.5,
             "id": "en:muesli",
             "ingredients": [
                 {
                     "ciqual_food_code": "9311",
                     "id": "en:oat-flakes",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 33.0,
+                    "percent_max": 100,
+                    "percent_min": 3.57142857142857,
                     "text": "flocons d'avoine"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat-flakes",
-                    "percent_estimate": 12.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 14.7,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "flocons de blé"
                 },
                 {
                     "id": "fr:fibres-de-racine-de-chicoree-pomme-concentre",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 7.37,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "fibres de racine de chicorée pomme concentré"
                 },
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
-                    "percent_estimate": 3.12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.68,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "farine de riz"
                 },
                 {
                     "ciqual_food_code": "13011",
-                    "difference": 2.08,
+                    "difference": 3.36,
                     "id": "en:date",
-                    "percent": 5.2,
-                    "percent_estimate": 3.12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.84,
+                    "percent_hidden": 5.2,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "processing": "en:ground,en:dried",
                     "text": "dattes"
                 },
                 {
                     "id": "fr:graines-de-tournesol-de-courge",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.921,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "graines de tournesol de courge"
                 },
                 {
                     "id": "en:barley-malt-extract",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.921,
+                    "percent_max": 14.2857142857143,
+                    "percent_min": 0,
                     "text": "extrait de malt d'orge"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 62.5,
             "percent_hidden": 88,
+            "percent_max": 100,
+            "percent_min": 25,
             "text": "Granola"
         },
         {
             "ciqual_food_code": "13111",
-            "difference": 18,
+            "difference": 11.8,
+            "ecobalyse_code": "apple-fr",
             "id": "en:dried-apple",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 18.8,
             "percent_hidden": 7,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "pommes séchées"
         },
         {
             "ciqual_food_code": "13007",
-            "difference": 9.5,
+            "difference": 6.38,
             "id": "en:blackcurrant",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
             "percent_hidden": 3,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "processing": "en:freeze-dried",
             "text": "cassis"
         },
         {
             "ciqual_food_code": "13019",
             "id": "en:redcurrant",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "groseilles"
         }
     ],
@@ -1093,8 +1128,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.655,
-        "total_difference": 67.6,
+        "relative_difference": 0.455,
+        "total_difference": 47.0,
         "total_specified_input_percent": 103.0
     },
     "ingredients_n": 11,
@@ -1115,7 +1150,7 @@
         "fr:graines-de-tournesol-de-courge",
         "en:barley-malt-extract"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:muesli",
         "en:dried-apple",
@@ -1159,6 +1194,18 @@
         "fr:graines-de-tournesol-de-courge"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:blackcurrant",
+        "en:date",
+        "en:muesli",
+        "en:oat-flakes",
+        "en:redcurrant",
+        "en:wheat-flakes",
+        "fr:fibres-de-racine-de-chicoree-pomme-concentre",
+        "fr:graines-de-tournesol-de-courge"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 20,
@@ -1236,8 +1283,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 1,
@@ -1537,26 +1583,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             }
         }

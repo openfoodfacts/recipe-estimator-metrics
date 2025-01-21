@@ -221,7 +221,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -644,59 +644,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0494106385879799,
-            "likeliest_impacts": {
-                "Climate_change": 0.0889040955573871,
-                "EF_single_score": 0.0244151946815134
-            },
-            "likeliest_recipe": {
-                "en:coconut": 0.547398456411722,
-                "en:flax": 0.547398456411667,
-                "en:natural_flavouring": 0.337158841948571,
-                "en:rapeseed": 46.7049094175832,
-                "en:sea_salt": 0.497863215114522,
-                "en:shea_butter": 0.549805293896699,
-                "en:sunflower": 1.43680988714893,
-                "en:sunflower_lecithin": 0.380003205775724,
-                "en:vitamin_a": 0.337158841948576,
-                "en:vitamin_d": 0.0301723342375567,
-                "en:vitamins": 0.337158841948495,
-                "en:water": 36.9138154979592,
-                "fr:esters_de_phytost_rols": 10.9529907325195
-            },
-            "mass_ratio_uncharacterized": 0.167542095582935,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "en:natural-flavouring",
-                    "en:vitamin-a",
-                    "fr:esters de phytostérols",
-                    "en:vitamin-d",
-                    "en:shea-butter"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "fr:esters de phytostérols"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.167542095582935,
-                "nutrition": 0.11257882976622
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.461538461538462,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 46%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 11%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 17%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 60,
     "ecoscore_tags": [
@@ -1102,26 +1049,31 @@
     ],
     "ingredients": [
         {
-            "difference": 6.8,
+            "difference": 6.83,
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "id": "en:colza-oil",
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 29.8,
                     "percent_max": 100,
                     "percent_min": 2.73333333333333,
                     "text": "colza"
                 },
                 {
+                    "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.5,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "tournesol"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.76,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1130,6 +1082,7 @@
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.38,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1137,12 +1090,14 @@
                 },
                 {
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.38,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "lin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.8,
             "percent_hidden": 50,
             "percent_max": 100,
@@ -1151,15 +1106,18 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.6,
             "percent_max": 50,
             "percent_min": 0,
             "text": "eau"
         },
         {
-            "difference": 0.2,
+            "difference": 0.208,
             "id": "fr:esters-de-phytosterols",
+            "is_in_taxonomy": 0,
             "percent_estimate": 10.8,
             "percent_hidden": 11,
             "percent_max": 33.3333333333333,
@@ -1170,6 +1128,7 @@
             "ciqual_food_code": "11082",
             "difference": 0.25,
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_hidden": 0.5,
             "percent_max": 0.5,
@@ -1181,12 +1140,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.25,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1194,6 +1155,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1201,6 +1163,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1208,6 +1171,7 @@
         },
         {
             "id": "en:vitamin-a",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1215,6 +1179,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.54,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1405,8 +1370,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 9,
-        "relative_difference": 0.118,
-        "total_difference": 7.25,
+        "relative_difference": 0.119,
+        "total_difference": 7.29,
         "total_specified_input_percent": 61.5
     },
     "ingredients_n": 15,
@@ -1476,7 +1441,7 @@
         "en:emulsifier",
         "en:flax",
         "en:natural-flavouring",
-        "en:shea-butter",
+        "en:rapeseed",
         "en:sunflower",
         "en:sunflower-lecithin",
         "en:vegetable-oil",
@@ -1486,6 +1451,21 @@
         "fr:esters-de-phytosterols"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:emulsifier",
+        "en:flax",
+        "en:natural-flavouring",
+        "en:sea-salt",
+        "en:shea-butter",
+        "en:sunflower-lecithin",
+        "en:vegetable-oil",
+        "en:vitamin-a",
+        "en:vitamin-d",
+        "en:vitamins",
+        "fr:esters-de-phytosterols"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1935,7 +1915,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         }

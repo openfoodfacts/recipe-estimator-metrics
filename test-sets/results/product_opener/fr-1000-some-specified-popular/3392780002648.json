@@ -213,7 +213,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1370,28 +1370,31 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "26140",
-                    "difference": 0,
+                    "difference": 1.5,
                     "id": "en:rainbow-trout",
-                    "percent": 97,
-                    "percent_estimate": 97,
-                    "percent_max": 97,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 98.5,
+                    "percent_hidden": 97,
+                    "percent_max": 100,
                     "percent_min": 97,
                     "text": "Oncorhynchus mykiss"
                 }
             ],
-            "percent_estimate": 97,
-            "percent_max": 97,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 98.5,
+            "percent_max": 100,
             "percent_min": 97,
             "text": "Truite Arc-En-Ciel"
         },
         {
             "ciqual_food_code": "11058",
-            "difference": 0,
+            "difference": 1.5,
             "id": "en:salt",
-            "percent_estimate": 3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.5,
             "percent_hidden": 3,
             "percent_max": 3,
-            "percent_min": 3,
+            "percent_min": 0,
             "text": "sel"
         }
     ],
@@ -1441,8 +1444,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0,
-        "total_difference": 0,
+        "relative_difference": 0.03,
+        "total_difference": 3.0,
         "total_specified_input_percent": 100
     },
     "ingredients_n": 3,
@@ -1478,6 +1481,11 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:rainbow-trout",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1570,8 +1578,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "new_additives_n": 0,
     "no_nutrition_data": "",
@@ -1932,19 +1939,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

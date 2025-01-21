@@ -244,7 +244,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -688,35 +688,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0264624329059349,
-            "likeliest_impacts": {
-                "Climate_change": 0.0427693878470585,
-                "EF_single_score": 0.00790904652165816
-            },
-            "likeliest_recipe": {
-                "en:baker_s_yeast": 1.11388096130163,
-                "en:butterfat": 8.48,
-                "en:e300": 0.183960590274149,
-                "en:palm": 0.573840937141869,
-                "en:salt": 0.638787161494151,
-                "en:sesame_seeds": 0.0863377596424826,
-                "en:soya": 0.0863377596424826,
-                "en:water": 0,
-                "en:wheat_flour": 79.5,
-                "en:wheat_gluten": 1.11388096130163,
-                "en:wheat_semolina": 0.183960590274149,
-                "fr:Ce_produit_a_pu__tre_en_contact_avec_de_l_arachide": 0.0863377596424826,
-                "fr:EUFS_en_poudre": 5.3,
-                "fr:_ucre": 8.48,
-                "fr:des_EUFS_et_du_GLUTEN": 0.0863377596424782,
-                "fr:des_fruits___coque": 0.0863377596424826
-            },
-            "mass_ratio_uncharacterized": 0.220191451657146
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 64,
     "ecoscore_tags": [
@@ -1828,25 +1799,29 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 21.7,
+            "difference": 21.9,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 53.3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.1,
             "percent_hidden": 75,
             "percent_max": 100,
-            "percent_min": 6.66666666666667,
+            "percent_min": 6.25,
             "text": "Farine de BLE"
         },
         {
             "id": "fr:šucre",
-            "percent_estimate": 23.3,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 23.4,
             "percent_max": 50,
             "percent_min": 0,
             "text": "Šucre"
         },
         {
             "ciqual_food_code": "16401",
-            "difference": 3.7,
+            "difference": 3.72,
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_hidden": 8,
             "percent_max": 33.3333333333333,
@@ -1854,9 +1829,10 @@
             "text": "BEURRE pâtissier"
         },
         {
-            "difference": 0.83,
+            "difference": 0.859,
             "id": "fr:eufs-en-poudre",
-            "percent_estimate": 5.83,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 5.86,
             "percent_hidden": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1865,13 +1841,15 @@
         {
             "ciqual_food_code": "11045",
             "id": "en:baker-s-yeast",
-            "percent_estimate": 2.92,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.93,
             "percent_max": 20,
             "percent_min": 0,
             "text": "Levure boulangère"
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1880,6 +1858,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.6,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1887,8 +1866,10 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm",
-            "percent_estimate": 0.429,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.432,
             "percent_max": 1.2,
             "percent_min": 0,
             "processing": "en:powder,en:hydrogenated",
@@ -1897,7 +1878,8 @@
         {
             "ciqual_proxy_food_code": "9610",
             "id": "en:wheat-semolina",
-            "percent_estimate": 0.215,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.216,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "Semoule de BLÉ"
@@ -1907,34 +1889,47 @@
             "ingredients": [
                 {
                     "id": "en:e300",
-                    "percent_estimate": 0.107,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.108,
                     "percent_max": 1.2,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 0.107,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.108,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "Agent de traitement de la farine"
         },
         {
-            "id": "fr:des-eufs-et-du-gluten",
-            "percent_estimate": 0.0536,
+            "id": "fr:des-eufs",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0541,
             "percent_max": 1.2,
             "percent_min": 0,
-            "text": "des EUFS et du GLUTEN"
+            "text": "des EUFS"
+        },
+        {
+            "id": "en:gluten",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.027,
+            "percent_max": 1.2,
+            "percent_min": 0,
+            "text": "du GLUTEN"
         },
         {
             "id": "fr:ce-produit-a-pu-etre-en-contact-avec-de-l-arachide",
-            "percent_estimate": 0.0268,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0135,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "Ce produit a pu être en contact avec de l'arachide"
         },
         {
             "id": "fr:des-fruits-a-coque",
-            "percent_estimate": 0.0134,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.00676,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "des fruits à coque"
@@ -1942,14 +1937,16 @@
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame-seeds",
-            "percent_estimate": 0.00671,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00338,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "des graines de sésame"
         },
         {
             "id": "en:soya",
-            "percent_estimate": 0.00671,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00338,
             "percent_max": 1.2,
             "percent_min": 0,
             "text": "du soja"
@@ -2176,9 +2173,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.298,
-        "total_difference": 26.2,
+        "number_of_ingredients_without_ciqual_code": 9,
+        "relative_difference": 0.301,
+        "total_difference": 26.5,
         "total_specified_input_percent": 88
     },
     "ingredients_n": 16,
@@ -2258,15 +2255,34 @@
     "ingredients_without_ciqual_codes": [
         "en:e300",
         "en:flour-treatment-agent",
+        "en:gluten",
         "en:soya",
         "en:wheat-gluten",
         "fr:ce-produit-a-pu-etre-en-contact-avec-de-l-arachide",
-        "fr:des-eufs-et-du-gluten",
+        "fr:des-eufs",
         "fr:des-fruits-a-coque",
         "fr:eufs-en-poudre",
         "fr:šucre"
     ],
-    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:baker-s-yeast",
+        "en:butterfat",
+        "en:e300",
+        "en:flour-treatment-agent",
+        "en:gluten",
+        "en:salt",
+        "en:sesame-seeds",
+        "en:soya",
+        "en:wheat-gluten",
+        "en:wheat-semolina",
+        "fr:ce-produit-a-pu-etre-en-contact-avec-de-l-arachide",
+        "fr:des-eufs",
+        "fr:des-fruits-a-coque",
+        "fr:eufs-en-poudre",
+        "fr:šucre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,
@@ -2708,48 +2724,64 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

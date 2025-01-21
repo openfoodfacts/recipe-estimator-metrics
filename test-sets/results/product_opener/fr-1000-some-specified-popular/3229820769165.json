@@ -253,7 +253,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -649,57 +649,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0587685664659629,
-            "likeliest_impacts": {
-                "Climate_change": 0.278979151092934,
-                "EF_single_score": 0.0314702058963871
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 0.290712364474651,
-                "en:cocoa_butter": 3.52920826498124,
-                "en:cocoa_paste": 4.02157884818585,
-                "en:corn": 2.15494662914605,
-                "en:glazing_agent": 0,
-                "en:honey": 7.52839156699562,
-                "en:oat_flour": 0.351736619329358,
-                "en:sea_salt": 0.134037860602585,
-                "en:unrefined_cane_sugar": 4.62083012039739,
-                "en:water": 0,
-                "en:wheat": 5.08675105878082,
-                "en:wheat_flour": 1.90594846361499,
-                "en:whole_grain_oat_flakes": 45.7807595290274,
-                "en:whole_milk_powder": 0,
-                "en:wholemeal_oat": 26.0441654209578,
-                "fr:farine_de_malt__orge": 0.151916568520129,
-                "fr:malt_de_ma_s": 0.134037860602585
-            },
-            "mass_ratio_uncharacterized": 0.0060910227967604,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:malt de maïs",
-                    "en:glazing-agent",
-                    "fr:farine de malt ďorge"
-                ],
-                "nutrition": [
-                    "fr:malt de maïs",
-                    "en:glazing-agent",
-                    "fr:farine de malt ďorge"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0060910227967604,
-                "nutrition": 0.0060910227967604
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1825,6 +1774,7 @@
         {
             "difference": 10.6,
             "id": "en:whole-oatmeal",
+            "is_in_taxonomy": 0,
             "percent_estimate": 55.6,
             "percent_hidden": 45,
             "percent_max": 100,
@@ -1834,6 +1784,7 @@
         {
             "difference": 10.8,
             "id": "en:crispy-oatmeal",
+            "is_in_taxonomy": 0,
             "percent_estimate": 22.2,
             "percent_hidden": 33,
             "percent_max": 50,
@@ -1844,6 +1795,7 @@
             "ciqual_food_code": "9310",
             "difference": 14.9,
             "id": "en:wholemeal-oat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_hidden": 26,
             "percent_max": 33.3333333333333,
@@ -1853,6 +1805,7 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.56,
             "percent_max": 25,
             "percent_min": 0,
@@ -1864,6 +1817,7 @@
             "ingredients": [
                 {
                     "id": "en:corn-petals",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 1.39,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1871,7 +1825,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.694,
                     "percent_max": 9.1,
                     "percent_min": 0,
@@ -1880,6 +1836,7 @@
                 {
                     "ciqual_food_code": "11082",
                     "id": "en:sea-salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0375,
                     "percent_max": 0.075,
                     "percent_min": 0,
@@ -1887,6 +1844,7 @@
                 },
                 {
                     "id": "en:butt-malt",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.0375,
                     "percent_max": 0.075,
                     "percent_min": 0,
@@ -1894,7 +1852,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0375,
                     "percent_max": 0.075,
                     "percent_min": 0,
@@ -1903,6 +1863,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0375,
                     "percent_max": 0.075,
                     "percent_min": 0,
@@ -1911,6 +1872,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0375,
                     "percent_max": 0.075,
                     "percent_min": 0,
@@ -1918,7 +1880,9 @@
                 },
                 {
                     "ciqual_food_code": "19021",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:whole-milk-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0375,
                     "percent_max": 0.075,
                     "percent_min": 0,
@@ -1929,18 +1893,21 @@
                     "ingredients": [
                         {
                             "id": "en:e414",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.469,
                             "percent_max": 0.075,
                             "percent_min": 0,
                             "text": "gum arabic"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.469,
                     "percent_max": 0.075,
                     "percent_min": 0,
                     "text": "coating agent"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.78,
             "percent_hidden": 7,
             "percent_max": 20,
@@ -1954,6 +1921,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.694,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1961,13 +1929,16 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.694,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "raw cane sugar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.39,
             "percent_hidden": 7,
             "percent_max": 16.6666666666667,
@@ -1977,6 +1948,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.694,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1990,12 +1962,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.347,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "wheat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_hidden": 5,
             "percent_max": 12.5,
@@ -2008,7 +1982,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.174,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
@@ -2016,7 +1992,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0868,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
@@ -2024,13 +2002,16 @@
                 },
                 {
                     "id": "en:oatmeal",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.0434,
                     "percent_max": 3.7037037037037,
                     "percent_min": 0,
                     "text": "oatmeal"
                 },
                 {
-                    "id": "en:lean-cocoa-powder",
+                    "ciqual_food_code": "18100",
+                    "id": "en:fat-reduced-cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0217,
                     "percent_max": 2.77777777777778,
                     "percent_min": 0,
@@ -2038,13 +2019,16 @@
                 },
                 {
                     "ciqual_food_code": "9550",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:barley-malt-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0217,
                     "percent_max": 2.22222222222222,
                     "percent_min": 0,
                     "text": "barley malt flour"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.347,
             "percent_hidden": 3,
             "percent_max": 11.1111111111111,
@@ -2290,7 +2274,7 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 7,
+        "number_of_ingredients_without_ciqual_code": 6,
         "relative_difference": 0.424,
         "total_difference": 53.4,
         "total_specified_input_percent": 126
@@ -2396,11 +2380,31 @@
         "en:crispy-oatmeal",
         "en:e414",
         "en:glazing-agent",
-        "en:lean-cocoa-powder",
         "en:oatmeal",
         "en:whole-oatmeal"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butt-malt",
+        "en:chocolate",
+        "en:chocolate-corn-petals",
+        "en:cocoa-butter",
+        "en:cocoa-cents",
+        "en:cocoa-paste",
+        "en:corn-petals",
+        "en:crispy-oatmeal",
+        "en:e414",
+        "en:fat-reduced-cocoa-powder",
+        "en:glazing-agent",
+        "en:honey",
+        "en:oatmeal",
+        "en:sea-salt",
+        "en:wheat",
+        "en:whole-grain-spelt-flakes",
+        "en:whole-oatmeal",
+        "en:wholemeal-oat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -2854,18 +2858,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

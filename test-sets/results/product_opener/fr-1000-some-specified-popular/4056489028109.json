@@ -254,7 +254,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -679,10 +679,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 31,
     "ecoscore_tags": [
@@ -2635,7 +2631,9 @@
         {
             "ciqual_food_code": "2074",
             "difference": 2.5,
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 62.5,
             "percent_hidden": 65,
             "percent_max": 100,
@@ -2645,6 +2643,7 @@
         {
             "ciqual_food_code": "11074",
             "id": "en:ginger",
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -2653,8 +2652,9 @@
         },
         {
             "ciqual_food_code": "2028",
-            "difference": 0.62,
+            "difference": 0.625,
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_hidden": 10,
             "percent_max": 33.3333333333333,
@@ -2666,12 +2666,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 9.38,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "Ascorbinsäure"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_max": 25,
             "percent_min": 0,
@@ -2704,7 +2706,7 @@
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0416,
+        "relative_difference": 0.0417,
         "total_difference": 3.12,
         "total_specified_input_percent": 75
     },
@@ -2760,6 +2762,13 @@
         "en:e300"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:e300",
+        "en:ginger",
+        "en:lemon-juice"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -3258,7 +3267,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3267,12 +3278,16 @@
             "quantity_per_unit_value": 150,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": "en:drink-can"
+                    }
                 }
             },
             "weight_measured": 8.52

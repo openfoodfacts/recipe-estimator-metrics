@@ -199,7 +199,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -445,10 +445,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1252,6 +1248,7 @@
     "ingredients": [
         {
             "id": "de:fettarmer-kefir-mild",
+            "is_in_taxonomy": 0,
             "percent_estimate": 75,
             "percent_max": 100,
             "percent_min": 50,
@@ -1260,6 +1257,7 @@
         {
             "difference": 23.5,
             "id": "en:fat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 25,
             "percent_hidden": 1.5,
             "percent_max": 50,
@@ -1342,6 +1340,11 @@
         "en:fat"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "de:fettarmer-kefir-mild",
+        "en:fat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 2,
@@ -1737,7 +1740,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             }
         }

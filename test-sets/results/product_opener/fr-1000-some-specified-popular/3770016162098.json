@@ -207,7 +207,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -642,61 +642,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0475347002987593,
-            "likeliest_impacts": {
-                "Climate_change": 0.0805868934196846,
-                "EF_single_score": 0.0109516198659347
-            },
-            "likeliest_recipe": {
-                "en:broad_bean_protein": 3.75113453386648,
-                "en:e392": 0.228513433040308,
-                "en:e461": 1.29812811050722,
-                "en:gelling_agent": 0.955078160531359,
-                "en:herbes_de_provence": 0.598183156594746,
-                "en:maltodextrins": 0.908711610262947,
-                "en:natural_flavouring": 1.93706105839133,
-                "en:onion_extract": 0.598183156594746,
-                "en:pea_protein": 7.67840127150721,
-                "en:potato_starch": 1.73864983370832,
-                "en:red_beetroot": 1.55572953985907,
-                "en:spice": 0.598183156594746,
-                "en:sunflower_oil": 20.3289161477161,
-                "en:vegetable_fiber": 0.598183156594746,
-                "en:vinegar": 0.574691983761106,
-                "en:water": 56.3494444562605
-            },
-            "mass_ratio_uncharacterized": 0.196828505499764,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:maltodextrins",
-                    "en:e392",
-                    "en:vegetable-fiber",
-                    "en:natural-flavouring",
-                    "en:pea-protein",
-                    "en:gelling-agent",
-                    "en:e461"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.196828505499764,
-                "nutrition": 0.0064878537793801
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4375,
-                "nutrition": 0.0625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 44%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 20%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 74,
     "ecoscore_tags": [
@@ -1272,61 +1217,70 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 43.1,
-            "percent_max": 77.2,
-            "percent_min": 9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.9,
+            "percent_max": 100,
+            "percent_min": 5.88235294117647,
             "text": "Eau"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 26.1,
-            "percent_max": 43.1,
-            "percent_min": 9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.5,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "huile de colza"
         },
         {
             "id": "fr:proteines-texturees-de-pois",
             "ingredients": [
                 {
-                    "difference": 0,
+                    "difference": 3.12,
                     "id": "en:pea-protein",
-                    "percent": 9,
-                    "percent_estimate": 9,
-                    "percent_max": 9,
-                    "percent_min": 9,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.88,
+                    "percent_hidden": 9,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "protéines de pois"
                 },
                 {
                     "id": "fr:extaits-de-pois",
-                    "percent_estimate": 4.5,
-                    "percent_max": 9,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 5.88,
+                    "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "extaits de pois"
                 }
             ],
-            "percent_estimate": 13.5,
-            "percent_max": 18,
-            "percent_min": 9,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 11.8,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "protéines texturées de pois"
         },
         {
-            "difference": 6.97,
+            "difference": 3.88,
             "id": "en:pea-protein",
-            "percent_estimate": 8.97,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.88,
             "percent_hidden": 2,
-            "percent_max": 18,
-            "percent_min": 0.6,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "protéines de pois"
         },
         {
-            "difference": 2.49,
+            "difference": 0.941,
             "id": "en:broad-bean-protein",
-            "percent_estimate": 4.49,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.94,
             "percent_hidden": 2,
-            "percent_max": 18,
-            "percent_min": 0.6,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "protéines de féveroles"
         },
         {
@@ -1334,38 +1288,45 @@
             "ingredients": [
                 {
                     "id": "en:plantain",
-                    "percent_estimate": 1.22,
-                    "percent_max": 16.1666666666667,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.735,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "plantain"
                 },
                 {
                     "id": "en:bamboo",
-                    "percent_estimate": 0.511,
-                    "percent_max": 8.08333333333333,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.368,
+                    "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "bambou"
                 },
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato",
-                    "percent_estimate": 0.511,
-                    "percent_max": 5.38888888888889,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.368,
+                    "percent_max": 5.55555555555556,
                     "percent_min": 0,
                     "text": "pomme de terre"
                 }
             ],
-            "percent_estimate": 2.24,
-            "percent_max": 16.1666666666667,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.47,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "fibres végétales"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion-extract",
-            "percent_estimate": 1.12,
-            "percent_max": 13.9428571428571,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.735,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "extraits d'oignons"
         },
         {
@@ -1373,30 +1334,35 @@
             "ingredients": [
                 {
                     "id": "fr:vinaigre-tamponne",
-                    "percent_estimate": 0.561,
-                    "percent_max": 12.275,
-                    "percent_min": 0.6,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.368,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "vinaigre tamponné"
                 }
             ],
-            "percent_estimate": 0.561,
-            "percent_max": 12.275,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.368,
+            "percent_max": 12.5,
+            "percent_min": 0,
             "text": "correcteur d'acidité"
         },
         {
             "ciqual_proxy_food_code": "9510",
+            "ecobalyse_code": "potato-starch",
             "id": "en:potato-starch",
-            "percent_estimate": 0.28,
-            "percent_max": 10.9777777777778,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.184,
+            "percent_max": 11.1111111111111,
+            "percent_min": 0,
             "text": "amidon de pomme de terre"
         },
         {
             "id": "en:spice",
-            "percent_estimate": 0.14,
-            "percent_max": 9.8,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0919,
+            "percent_max": 10,
+            "percent_min": 0,
             "text": "épices"
         },
         {
@@ -1404,31 +1370,35 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "11060",
-                    "difference": 0.53,
+                    "difference": 0.554,
                     "id": "en:herbes-de-provence",
-                    "percent": 0.6,
-                    "percent_estimate": 0.0701,
-                    "percent_max": 0.6,
-                    "percent_min": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.046,
+                    "percent_hidden": 0.6,
+                    "percent_max": 9.09090909090909,
+                    "percent_min": 0,
                     "text": "dont herbes de Provence"
                 }
             ],
-            "percent_estimate": 0.0701,
-            "percent_max": 0.6,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.046,
+            "percent_max": 9.09090909090909,
+            "percent_min": 0,
             "text": "herbes aromatiques"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": -0.265,
-            "percent_max": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.023,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
         {
             "id": "en:maltodextrin",
-            "percent_estimate": -0.132,
-            "percent_max": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0115,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "maltodextrine"
         },
@@ -1437,14 +1407,16 @@
             "ingredients": [
                 {
                     "id": "en:e461",
-                    "percent_estimate": -0.0662,
-                    "percent_max": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00574,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "méthylcellulose"
                 }
             ],
-            "percent_estimate": -0.0662,
-            "percent_max": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00574,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "stabilisant"
         },
@@ -1453,16 +1425,19 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20091",
+                    "ecobalyse_code": "beetroot-fr",
                     "id": "en:red-beetroot",
-                    "percent_estimate": -0.0331,
-                    "percent_max": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00287,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "processing": "en:extract",
                     "text": "betterave rouge"
                 }
             ],
-            "percent_estimate": -0.0331,
-            "percent_max": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00287,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "colorant"
         },
@@ -1471,21 +1446,24 @@
             "ingredients": [
                 {
                     "id": "en:e392",
-                    "percent_estimate": -0.00828,
-                    "percent_max": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000718,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "extrait de romarin"
                 },
                 {
                     "id": "fr:enveloppe-vegetale",
-                    "percent_estimate": -0.00828,
-                    "percent_max": 0.3,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.000718,
+                    "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "Enveloppe végétale"
                 }
             ],
-            "percent_estimate": -0.0166,
-            "percent_max": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00144,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "antioxydant"
         },
@@ -1494,14 +1472,16 @@
             "ingredients": [
                 {
                     "id": "en:e404",
-                    "percent_estimate": -0.0166,
-                    "percent_max": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00144,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "alginate de calcium"
                 }
             ],
-            "percent_estimate": -0.0166,
-            "percent_max": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00144,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "gélifiant"
         }
@@ -1585,8 +1565,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 14,
-        "relative_difference": 0.735,
-        "total_difference": 9.99,
+        "relative_difference": 0.625,
+        "total_difference": 8.5,
         "total_specified_input_percent": 13.6
     },
     "ingredients_n": 29,
@@ -1710,6 +1690,31 @@
         "fr:vinaigre-tamponne"
     ],
     "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:bamboo",
+        "en:broad-bean-protein",
+        "en:colour",
+        "en:e392",
+        "en:e404",
+        "en:e461",
+        "en:gelling-agent",
+        "en:herb",
+        "en:herbes-de-provence",
+        "en:maltodextrin",
+        "en:natural-flavouring",
+        "en:pea-protein",
+        "en:plantain",
+        "en:spice",
+        "en:stabiliser",
+        "en:vegetable-fiber",
+        "fr:enveloppe-vegetale",
+        "fr:extaits-de-pois",
+        "fr:proteines-texturees-de-pois",
+        "fr:vinaigre-tamponne"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -1816,8 +1821,7 @@
         "en:ecoscore-computed",
         "en:ecoscore-changed",
         "en:ecoscore-grade-changed",
-        "en:main-countries-old-product-without-scans-in-2020",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-old-product-without-scans-in-2020"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2154,7 +2158,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2163,12 +2169,16 @@
             "quantity_per_unit_value": 200,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             },
             "weight_measured": 14
@@ -2176,18 +2186,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

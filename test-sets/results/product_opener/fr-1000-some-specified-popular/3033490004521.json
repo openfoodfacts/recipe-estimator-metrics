@@ -30,7 +30,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, LAIT , LAIT , LAIT, LAIT, LAIT, LAIT, LAIT, LAIT, ferments lactiques",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -231,7 +231,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -686,46 +686,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 1.33226762955019e-15,
-            "likeliest_impacts": {
-                "Climate_change": 0.272800405976152,
-                "EF_single_score": 0.0198605601820492
-            },
-            "likeliest_recipe": {
-                "en:condensed_skimmed_milk": 5.2,
-                "en:milk": 0.0530185301555686,
-                "en:water": 0.0469814698444214,
-                "fr:_Lait__partiellement__cr_m____1___de_Mati_res_Grasses": 94.7
-            },
-            "mass_ratio_uncharacterized": 0.947,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:_Lait_ partiellement écrémé à 1 % de Matières Grasses"
-                ],
-                "nutrition": [
-                    "fr:_Lait_ partiellement écrémé à 1 % de Matières Grasses"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.947,
-                "nutrition": 0.947
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 95%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 95%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 76,
     "ecoscore_tags": [
@@ -1363,6 +1323,7 @@
         {
             "difference": 32.2,
             "id": "fr:lait-partiellement-ecreme-a-1-matieres-grasses",
+            "is_in_taxonomy": 0,
             "percent_estimate": 62.5,
             "percent_hidden": 94.7,
             "percent_max": 100,
@@ -1372,6 +1333,7 @@
         {
             "difference": 13.6,
             "id": "fr:lait-ecreme-concentreou-en-poudre",
+            "is_in_taxonomy": 0,
             "percent_estimate": 18.8,
             "percent_hidden": 5.2,
             "percent_max": 50,
@@ -1380,6 +1342,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1387,7 +1350,9 @@
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 9.38,
             "percent_max": 25,
@@ -1538,6 +1503,12 @@
         "fr:lait-partiellement-ecreme-a-1-matieres-grasses"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:lactic-ferments",
+        "fr:lait-ecreme-concentreou-en-poudre",
+        "fr:lait-partiellement-ecreme-a-1-matieres-grasses"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 5,
@@ -2008,7 +1979,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             },
             "number_of_units": 4,
@@ -2017,12 +1990,16 @@
             "quantity_per_unit_value": "125",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             },
             "weight_measured": "4"
@@ -2030,43 +2007,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": "4",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": "4",
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:unknown"
+                    "id": {
+                        "id": "en:unknown"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:unknown"
+                    "id": {
+                        "id": "en:unknown"
+                    }
                 }
             }
         }

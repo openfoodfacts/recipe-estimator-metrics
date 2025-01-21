@@ -179,7 +179,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1291,27 +1291,30 @@
     "ingredients": [
         {
             "id": "en:maltodextrin",
-            "percent_estimate": 99.0,
-            "percent_max": 99.02,
-            "percent_min": 99.02,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 75,
+            "percent_max": 100,
+            "percent_min": 50,
             "text": "Maltodextrine"
         },
         {
             "id": "en:sweetener",
             "ingredients": [
                 {
-                    "difference": 0.0,
+                    "difference": 24.0,
                     "id": "en:e955",
-                    "percent": 0.98,
-                    "percent_estimate": 0.98,
-                    "percent_max": 0.98,
-                    "percent_min": 0.98,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25,
+                    "percent_hidden": 0.98,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "Sucralose"
                 }
             ],
-            "percent_estimate": 0.98,
-            "percent_max": 0.98,
-            "percent_min": 0.98,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 25,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "édulcorant"
         }
     ],
@@ -1355,8 +1358,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0,
-        "total_difference": 0.0,
+        "relative_difference": 24.5,
+        "total_difference": 24.0,
         "total_specified_input_percent": 0.98
     },
     "ingredients_n": 3,
@@ -1394,6 +1397,12 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e955",
+        "en:maltodextrin",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 3,
@@ -1455,8 +1464,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
-        "en:ecoscore-computed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-computed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1667,7 +1675,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         }

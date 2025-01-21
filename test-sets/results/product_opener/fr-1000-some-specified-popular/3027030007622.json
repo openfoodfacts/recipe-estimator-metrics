@@ -203,7 +203,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -627,47 +627,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0153573774883854,
-            "likeliest_impacts": {
-                "Climate_change": 0.0506278948443663,
-                "EF_single_score": 0.00901289640253334
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 31.8014802444107,
-                "en:e524": 2.31880553529962,
-                "en:sunflower_oil": 3.27467798562536,
-                "en:water": 0.799893203433334,
-                "en:wheat_flour": 61.7714732655104,
-                "fr:sel_levure": 2.36735681651294
-            },
-            "mass_ratio_uncharacterized": 0.278074262298835,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:sel levure",
-                    "en:e524",
-                    "en:barley-malt-extract"
-                ],
-                "nutrition": [
-                    "fr:sel levure"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.278074262298835,
-                "nutrition": 0.0223640305863122
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 28%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 72,
     "ecoscore_tags": [
@@ -1267,7 +1226,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_max": 100,
             "percent_min": 20,
@@ -1275,6 +1236,7 @@
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_max": 50,
             "percent_min": 0,
@@ -1283,7 +1245,9 @@
         {
             "ciqual_food_code": "17440",
             "difference": 6.8,
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_hidden": 3.2,
             "percent_max": 33.3333333333333,
@@ -1292,6 +1256,7 @@
         },
         {
             "id": "fr:sel-levure",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1302,12 +1267,14 @@
             "ingredients": [
                 {
                     "id": "en:e524",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "hydroxyde de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -1443,6 +1410,13 @@
         "fr:sel-levure"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:barley-malt-extract",
+        "en:e524",
+        "fr:sel-levure"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -1817,7 +1791,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         }

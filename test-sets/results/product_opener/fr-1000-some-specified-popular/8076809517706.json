@@ -239,7 +239,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -667,72 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.238266352678423,
-            "likeliest_impacts": {
-                "Climate_change": 0.1345289265863,
-                "EF_single_score": 0.0191472768314312
-            },
-            "likeliest_recipe": {
-                "en:e336": 0.107077395280646,
-                "en:e500ii": 0.793352922303892,
-                "en:e503ii": 0.795283169150604,
-                "en:egg": 4.68942344239824,
-                "en:flavouring": 1.61517588114451,
-                "en:glucose_fructose_syrup": 0.842892859542508,
-                "en:palm_kernel_fat": 0.809982618247299,
-                "en:pasteurised_whole_milk": 1.06131829168389,
-                "en:salt": 0.842892859542508,
-                "en:skimmed_milk_powder": 2.31724569894253,
-                "en:sugar": 16.6525662796056,
-                "en:sunflower_oil": 14.3020311537595,
-                "en:water": 1.92448664216508,
-                "en:wheat_flour": 51.8994870871365,
-                "en:wheat_starch": 1.65287547778981,
-                "fr:Fourrage___la__noisette__et_au_cacao": 0.809982618247299,
-                "fr:_noisettes__6_4___du_produit_fini": 0.809982618247299,
-                "fr:cacao_2_7___du_produit_fini": 0.809982618247299
-            },
-            "mass_ratio_uncharacterized": 0.150004812532171,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:Fourrage à la _noisette_ et au cacao",
-                    "en:e503ii",
-                    "fr:_noisettes_ 6,4 % du produit fini",
-                    "en:flavouring",
-                    "en:e500ii",
-                    "fr:cacao 2,7 % du produit fini",
-                    "en:wheat-starch",
-                    "en:e336"
-                ],
-                "nutrition": [
-                    "fr:cacao 2,7 % du produit fini",
-                    "en:flavouring",
-                    "fr:Fourrage à la _noisette_ et au cacao",
-                    "fr:_noisettes_ 6,4 % du produit fini"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.150004812532171,
-                "nutrition": 0.0523018506090897
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"fr:Fourrage à la _noisette_ et au cacao\" (26.5%) has not been used.",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%",
-                "The impact relative interquartile is high for EF single score (31%)",
-                "The impact relative interquartile is high for Climate change (40%)",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -1501,57 +1435,70 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.0,
+                    "difference": 0.9,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 51.6,
-                    "percent_estimate": 51.6,
-                    "percent_max": 51.6,
-                    "percent_min": 51.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 52.5,
+                    "percent_hidden": 51.6,
+                    "percent_max": 100,
+                    "percent_min": 5,
                     "text": "Farine de blé"
                 }
             ],
-            "percent_estimate": 51.6,
-            "percent_max": 51.6,
-            "percent_min": 51.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.5,
+            "percent_max": 100,
+            "percent_min": 5,
             "text": "Biscuit"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 12.8,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.5,
             "percent_max": 23,
-            "percent_min": 2.68888888888889,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
-            "percent_estimate": 12.2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.5,
             "percent_max": 23,
-            "percent_min": 1.49411764705882,
+            "percent_min": 0,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
-            "percent_max": 22.8555555555556,
-            "percent_min": 0.15,
+            "percent_max": 23,
+            "percent_min": 0,
             "text": "œufs"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 5.9,
-            "percent_max": 15.187037037037,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.5,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "lait en poudre écrémé"
         },
         {
             "ciqual_food_code": "19024",
+            "ecobalyse_code": "milk",
             "id": "en:pasteurised-whole-milk",
-            "percent_estimate": 2.95,
-            "percent_max": 11.3902777777778,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.25,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "lait entier pasteurisé"
         },
@@ -1560,34 +1507,39 @@
             "ingredients": [
                 {
                     "id": "en:e503ii",
-                    "percent_estimate": 0.738,
-                    "percent_max": 9.11222222222222,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.812,
+                    "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "carbonate acide d'ammonium"
                 },
                 {
                     "id": "en:e500ii",
-                    "percent_estimate": 0.369,
-                    "percent_max": 4.55611111111111,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.406,
+                    "percent_max": 7.14285714285714,
                     "percent_min": 0,
                     "text": "carbonate acide de sodium"
                 },
                 {
                     "id": "en:e336",
-                    "percent_estimate": 0.369,
-                    "percent_max": 3.03740740740741,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.406,
+                    "percent_max": 4.76190476190476,
                     "percent_min": 0,
                     "text": "tartrate monopotassique"
                 }
             ],
-            "percent_estimate": 1.48,
-            "percent_max": 9.11222222222222,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.62,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "poudres à lever"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1596,6 +1548,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1603,6 +1556,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1610,41 +1564,60 @@
         },
         {
             "difference": 27.7,
-            "id": "fr:fourrage-aux-noisettes-et-au-cacao",
-            "percent_estimate": 0.288,
+            "id": "fr:fourrage-aux-noisettes",
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.3,
             "percent_hidden": 28,
             "percent_max": 0.6,
             "percent_min": 0,
             "processing": "en:sugared",
-            "text": "Fourrage aux noisettes et au cacao"
+            "text": "Fourrage aux noisettes"
+        },
+        {
+            "ciqual_proxy_food_code": "18100",
+            "difference": 27.8,
+            "id": "en:cocoa",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.213,
+            "percent_hidden": 28,
+            "percent_max": 0.6,
+            "percent_min": 0,
+            "text": "au cacao"
         },
         {
             "id": "en:fat",
-            "percent_estimate": 0.144,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.106,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "graisses"
         },
         {
+            "ciqual_food_code": "16110",
             "id": "en:shea-butter",
-            "percent_estimate": 0.072,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0531,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "huiles végétales de karité"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
-            "percent_estimate": 0.036,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0266,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "huiles végétales de tournesol"
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 7.08,
+            "difference": 7.09,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
-            "percent_estimate": 0.018,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0133,
             "percent_hidden": 7.1,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1654,7 +1627,8 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 2.59,
             "id": "en:cocoa",
-            "percent_estimate": 0.009,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00664,
             "percent_hidden": 2.6,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1662,8 +1636,10 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 0.0045,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00332,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "lait en poudre écrémé"
@@ -1671,14 +1647,16 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
-            "percent_estimate": 0.00225,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00166,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "amidon de blé"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.00225,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00166,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "arôme"
@@ -1916,10 +1894,10 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.419,
-        "total_difference": 37.4,
-        "total_specified_input_percent": 89.3
+        "number_of_ingredients_without_ciqual_code": 7,
+        "relative_difference": 0.563,
+        "total_difference": 66.1,
+        "total_specified_input_percent": 117.0
     },
     "ingredients_n": 23,
     "ingredients_n_tags": [
@@ -2018,10 +1996,24 @@
         "en:fat",
         "en:flavouring",
         "en:raising-agent",
-        "en:shea-butter",
-        "fr:fourrage-aux-noisettes-et-au-cacao"
+        "fr:fourrage-aux-noisettes"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:biscuit",
+        "en:cocoa",
+        "en:e336",
+        "en:e500ii",
+        "en:e503ii",
+        "en:fat",
+        "en:flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:shea-butter",
+        "en:wheat-starch",
+        "fr:fourrage-aux-noisettes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2110,8 +2102,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "new_additives_n": 3,
     "no_nutrition_data": "",
@@ -2481,24 +2472,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

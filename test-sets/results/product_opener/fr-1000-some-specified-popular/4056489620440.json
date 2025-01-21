@@ -31,7 +31,7 @@
     "additives_tags": [
         "en:e325"
     ],
-    "allergens": "en:fish, en:fish",
+    "allergens": "en:fish, en:fish, en:fish",
     "allergens_from_ingredients": "en:fish, poissons",
     "allergens_from_user": "(fr) en:fish, en:fish",
     "allergens_hierarchy": [
@@ -167,7 +167,7 @@
                         "epi_score": "40",
                         "origin": "en:poland",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 40,
@@ -1067,8 +1067,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "26140",
-            "difference": 0.8,
+            "difference": 0.835,
             "id": "en:rainbow-trout",
+            "is_in_taxonomy": 1,
             "percent_estimate": 94.2,
             "percent_hidden": 95,
             "percent_max": 100,
@@ -1078,6 +1079,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.95,
             "percent_max": 3.89,
             "percent_min": 0,
@@ -1085,6 +1087,7 @@
         },
         {
             "id": "en:e325",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.95,
             "percent_max": 3.89,
             "percent_min": 0,
@@ -1092,6 +1095,7 @@
         },
         {
             "id": "en:beech-wood-smoke",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.95,
             "percent_max": 3.89,
             "percent_min": 0,
@@ -1127,8 +1131,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.00842,
-        "total_difference": 0.8,
+        "relative_difference": 0.00879,
+        "total_difference": 0.835,
         "total_specified_input_percent": 95
     },
     "ingredients_n": 4,
@@ -1170,6 +1174,13 @@
         "en:e325"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:beech-wood-smoke",
+        "en:e325",
+        "en:rainbow-trout",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
@@ -1591,54 +1602,72 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "fr:Planche"
+                    "id": {
+                        "id": "fr:Planche"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

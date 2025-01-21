@@ -229,7 +229,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 98.4375,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1476,6 +1476,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -1486,12 +1487,14 @@
             "ingredients": [
                 {
                     "id": "en:e965",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 21.4,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "maltitol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_max": 50,
             "percent_min": 0,
@@ -1500,6 +1503,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1508,6 +1512,7 @@
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.36,
             "percent_max": 25,
             "percent_min": 0,
@@ -1515,8 +1520,9 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
@@ -1526,14 +1532,16 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.43,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "lécithines de soja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.43,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "émulsifiant"
         },
@@ -1542,6 +1550,7 @@
             "difference": 68.6,
             "id": "en:cocoa",
             "ingredients": [],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.43,
             "percent_hidden": 70,
             "percent_max": 0,
@@ -1731,6 +1740,18 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e965",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:natural-flavouring",
+        "en:soya-lecithin",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 14,
@@ -2209,26 +2230,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         }

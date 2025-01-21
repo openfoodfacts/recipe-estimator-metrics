@@ -28,7 +28,7 @@
     "additives_old_tags": [],
     "additives_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, milk",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -177,7 +177,7 @@
                         "epi_score": "63",
                         "origin": "en:greece",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 63,
@@ -974,8 +974,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
-            "difference": 1.5,
+            "difference": 1.55,
+            "ecobalyse_code": "milk",
             "id": "en:sheeps-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 71.5,
             "percent_hidden": 70,
             "percent_max": 100,
@@ -986,7 +988,9 @@
         {
             "ciqual_proxy_food_code": "19051",
             "difference": 15.8,
+            "ecobalyse_code": "milk",
             "id": "en:pasteurised-goat-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 14.2,
             "percent_hidden": 30,
             "percent_max": 50,
@@ -996,6 +1000,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15,
             "percent_max": 2.3,
             "percent_min": 0,
@@ -1003,6 +1008,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15,
             "percent_max": 2.3,
             "percent_min": 0,
@@ -1010,6 +1016,7 @@
         },
         {
             "id": "en:rennet",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.9,
             "percent_max": 2.3,
             "percent_min": 0,
@@ -1098,6 +1105,12 @@
         "en:rennet"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:lactic-ferments",
+        "en:rennet",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 12,

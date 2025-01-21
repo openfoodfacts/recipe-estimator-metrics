@@ -258,13 +258,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.85,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 0.150000000000006,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0.139500000000005,
@@ -702,46 +702,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0209479148597612,
-            "likeliest_impacts": {
-                "Climate_change": 0.148501588088549,
-                "EF_single_score": 0.0129147377862275
-            },
-            "likeliest_recipe": {
-                "en:cream": 15.5016154459324,
-                "en:lactic_ferments": 0.252937463782354,
-                "en:skimmed_milk_powder": 0.282920737950816,
-                "en:water": 0.174615787738562,
-                "en:whole_milk": 83.6087129858034,
-                "fr:Lait_et_cr_me": 0.189619810614679
-            },
-            "mass_ratio_uncharacterized": 0.00234113994470724,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lactic-ferments",
-                    "fr:Lait et crème"
-                ],
-                "nutrition": [
-                    "fr:Lait et crème"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00234113994470724,
-                "nutrition": 0.000595799393596074
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 40%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 70,
     "ecoscore_tags": [
@@ -1797,19 +1757,22 @@
     "ingredients": [
         {
             "ciqual_food_code": "19023",
-            "difference": 23.6,
+            "difference": 25.3,
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
-            "percent_estimate": 60,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 58.3,
             "percent_hidden": 83.6,
             "percent_max": 100,
-            "percent_min": 20,
+            "percent_min": 16.6666666666667,
             "text": "_Lait_* entier"
         },
         {
             "ciqual_food_code": "19402",
-            "difference": 4.5,
+            "difference": 5.33,
             "id": "en:cream",
-            "percent_estimate": 20,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 20.8,
             "percent_hidden": 15.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -1817,26 +1780,42 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 10,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "poudre de _lait_ écrémé"
         },
         {
             "id": "en:lactic-ferments",
-            "percent_estimate": 5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.21,
             "percent_max": 25,
             "percent_min": 0,
             "text": "ferments _lactiques_"
         },
         {
-            "id": "fr:lait-et-creme",
+            "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
+            "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
-            "percent_estimate": 5,
+            "percent_estimate": 2.6,
             "percent_max": 20,
             "percent_min": 0,
-            "text": "Lait et crème"
+            "text": "Lait"
+        },
+        {
+            "ciqual_food_code": "19402",
+            "id": "en:cream",
+            "is_in_taxonomy": 1,
+            "origins": "en:france",
+            "percent_estimate": 2.6,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
+            "text": "crème"
         }
     ],
     "ingredients_analysis": {
@@ -1913,9 +1892,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.284,
-        "total_difference": 28.1,
+        "number_of_ingredients_without_ciqual_code": 1,
+        "relative_difference": 0.309,
+        "total_difference": 30.6,
         "total_specified_input_percent": 99.1
     },
     "ingredients_n": 5,
@@ -1961,10 +1940,14 @@
     "ingredients_with_unspecified_percent_n": 3,
     "ingredients_with_unspecified_percent_sum": 0.900000000000008,
     "ingredients_without_ciqual_codes": [
-        "en:lactic-ferments",
-        "fr:lait-et-creme"
+        "en:lactic-ferments"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -2503,53 +2486,71 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 4,
             "quantity_per_unit": "150 ",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

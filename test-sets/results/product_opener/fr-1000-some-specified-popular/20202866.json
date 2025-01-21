@@ -46,7 +46,7 @@
         "en:e220",
         "en:e330"
     ],
-    "allergens": "en:gluten,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
+    "allergens": "en:gluten,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_from_ingredients": "en:gluten, trigo",
     "allergens_from_user": "(en) en:gluten,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_hierarchy": [
@@ -227,7 +227,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -655,80 +655,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0166107203916885,
-            "likeliest_impacts": {
-                "Climate_change": 0.0735398945689016,
-                "EF_single_score": 0.021583807622695
-            },
-            "likeliest_recipe": {
-                "en:apricot": 0.0196812054811396,
-                "en:banana": 0.0146565053350012,
-                "en:barley_flakes": 5.40665805311715,
-                "en:coconut_fat": 0.00640285834951059,
-                "en:e220": 0.117293211931605,
-                "en:e330": 3.74331863299516,
-                "en:flax_seed": 5.40665805311715,
-                "en:malted_barley": 0.666513999174511,
-                "en:mango": 2.34608102089454,
-                "en:mixed_fruit": 58.1215740710093,
-                "en:oat_flakes": 5.40665805311715,
-                "en:peach": 0.0663476896094173,
-                "en:pear": 0.108133161062343,
-                "en:pineapple": 1.68307883762184,
-                "en:pumpkin_seed": 4.05499353983786,
-                "en:raisin": 6.75775253561915,
-                "en:rice_flour": 0.0566947965627408,
-                "en:sugar": 4.02925961978277,
-                "en:sultana": 11.5999311382961,
-                "en:sunflower": 8.3419255941904,
-                "en:sunflower_oil": 0.000570030777289246,
-                "en:water": 3.04124515487839,
-                "en:wheat": 4.74014405394264,
-                "en:wheat_flakes": 4.73082579647751,
-                "es:algod_n": 1.16670642639488,
-                "es:chips_de_pl_tano": 1.48007264204082,
-                "es:l": 2.05327464631234
-            },
-            "mass_ratio_uncharacterized": 0.234368747238041,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:wheat-flakes",
-                    "es:algodón",
-                    "en:e220",
-                    "en:sultana",
-                    "es:l",
-                    "en:barley-flakes",
-                    "en:e330",
-                    "es:chips de plátano",
-                    "en:coconut-fat"
-                ],
-                "nutrition": [
-                    "es:algodón",
-                    "es:l",
-                    "en:sultana",
-                    "es:chips de plátano"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.234368747238041,
-                "nutrition": 0.141275802219364
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.34375,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 34%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:barley-flakes\" (27%) has not been used.",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:oat-flakes\" (15.5%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 14%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 23%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 66,
     "ecoscore_tags": [
@@ -2357,25 +2283,27 @@
     ],
     "ingredients": [
         {
-            "difference": 7,
+            "difference": 13.2,
             "id": "en:mixed-fruit",
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 56.2,
             "percent_hidden": 43,
-            "percent_max": 63.25,
-            "percent_min": 36.75,
+            "percent_max": 100,
+            "percent_min": 12.5,
             "text": "mezcla de frutas"
         },
         {
             "ciqual_food_code": "13112",
-            "difference": 25.1,
+            "difference": 3.62,
             "id": "en:sultana",
             "ingredients": [
                 {
                     "ciqual_food_code": "13112",
                     "id": "en:sultana",
-                    "percent_estimate": 12.6,
-                    "percent_max": 19.25,
-                    "percent_min": 6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10.9,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "uvas pasas sultanas"
                 },
                 {
@@ -2383,107 +2311,126 @@
                     "ingredients": [
                         {
                             "ciqual_food_code": "17440",
+                            "ecobalyse_code": "sunflower-oil",
                             "id": "en:sunflower-oil",
-                            "percent_estimate": 6.16,
-                            "percent_max": 12.625,
-                            "percent_min": 3,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 2.73,
+                            "percent_max": 25,
+                            "percent_min": 0,
                             "text": "aceite de girasol"
                         },
                         {
                             "ciqual_food_code": "17170",
                             "id": "en:cottonseed-oil",
-                            "percent_estimate": 3.16,
-                            "percent_max": 6.3125,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 2.73,
+                            "percent_max": 12.5,
                             "percent_min": 0,
                             "text": "aceite de algodón"
                         }
                     ],
-                    "percent_estimate": 9.31,
-                    "percent_max": 12.625,
-                    "percent_min": 6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.47,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "aceites vegetales"
                 },
                 {
-                    "difference": 0,
+                    "difference": 3.27,
                     "id": "es:chips-de-platano",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13005",
+                            "ecobalyse_code": "banana-non-eu",
                             "id": "en:banana",
-                            "percent_estimate": 4,
-                            "percent_max": 6,
-                            "percent_min": 2,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.37,
+                            "percent_max": 16.6666666666667,
+                            "percent_min": 0,
                             "text": "plátano"
                         },
                         {
                             "ciqual_food_code": "16040",
                             "id": "en:coconut-fat",
-                            "percent_estimate": 1,
-                            "percent_max": 3,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.684,
+                            "percent_max": 8.33333333333333,
                             "percent_min": 0,
                             "text": "grasa de coco"
                         },
                         {
                             "ciqual_proxy_food_code": "31016",
+                            "ecobalyse_code": "sugar",
                             "id": "en:sugar",
-                            "percent_estimate": 1,
-                            "percent_max": 2,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.684,
+                            "percent_max": 5.55555555555556,
                             "percent_min": 0,
                             "text": "azúcar"
                         }
                     ],
-                    "percent": 6,
-                    "percent_estimate": 6,
-                    "percent_max": 6,
-                    "percent_min": 6,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 2.73,
+                    "percent_hidden": 6,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "chips de plátano"
                 },
                 {
                     "ciqual_food_code": "13046",
-                    "difference": 0,
+                    "difference": 3.63,
                     "id": "en:raisin",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13046",
                             "id": "en:raisin",
-                            "percent_estimate": 3.75,
-                            "percent_max": 5,
-                            "percent_min": 2.5,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.684,
+                            "percent_max": 12.5,
+                            "percent_min": 0,
                             "text": "uvas pasas"
                         },
                         {
                             "ciqual_food_code": "17440",
+                            "ecobalyse_code": "sunflower-oil",
                             "id": "en:sunflower-oil",
-                            "percent_estimate": 1.25,
-                            "percent_max": 2.5,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.684,
+                            "percent_max": 6.25,
                             "percent_min": 0,
                             "text": "aceite de girasol"
                         }
                     ],
-                    "percent": 5,
-                    "percent_estimate": 5,
-                    "percent_max": 5,
-                    "percent_min": 5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.37,
+                    "percent_hidden": 5,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "uvas pasas"
                 },
                 {
                     "ciqual_food_code": "13025",
-                    "difference": 0,
+                    "difference": 4.32,
+                    "ecobalyse_code": "mango-non-eu",
                     "id": "en:mango",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13025",
+                            "ecobalyse_code": "mango-non-eu",
                             "id": "en:mango",
-                            "percent_estimate": 3.33,
-                            "percent_max": 5,
-                            "percent_min": 1.66666666666667,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.342,
+                            "percent_max": 10,
+                            "percent_min": 0,
                             "text": "mango"
                         },
                         {
                             "ciqual_proxy_food_code": "31016",
+                            "ecobalyse_code": "sugar",
                             "id": "en:sugar",
-                            "percent_estimate": 0.833,
-                            "percent_max": 2.5,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.171,
+                            "percent_max": 5,
                             "percent_min": 0,
                             "text": "azúcar"
                         },
@@ -2492,41 +2439,49 @@
                             "ingredients": [
                                 {
                                     "id": "en:e330",
-                                    "percent_estimate": 0.833,
-                                    "percent_max": 1.66666666666667,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 0.171,
+                                    "percent_max": 3.33333333333333,
                                     "percent_min": 0,
                                     "text": "ácido cítrico"
                                 }
                             ],
-                            "percent_estimate": 0.833,
-                            "percent_max": 1.66666666666667,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.171,
+                            "percent_max": 3.33333333333333,
                             "percent_min": 0,
                             "text": "corrector de acidez"
                         }
                     ],
-                    "percent": 5,
-                    "percent_estimate": 5,
-                    "percent_max": 5,
-                    "percent_min": 5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.684,
+                    "percent_hidden": 5,
+                    "percent_max": 10,
+                    "percent_min": 0,
                     "processing": "en:candied,en:chopped",
                     "text": "de mango"
                 },
                 {
-                    "difference": 0,
+                    "difference": 3.66,
+                    "ecobalyse_code": "pineapple-non-eu",
                     "id": "en:pineapple",
                     "ingredients": [
                         {
+                            "ecobalyse_code": "pineapple-non-eu",
                             "id": "en:pineapple",
-                            "percent_estimate": 2.5,
-                            "percent_max": 4,
-                            "percent_min": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.171,
+                            "percent_max": 8.33333333333333,
+                            "percent_min": 0,
                             "text": "piña"
                         },
                         {
                             "ciqual_proxy_food_code": "31016",
+                            "ecobalyse_code": "sugar",
                             "id": "en:sugar",
-                            "percent_estimate": 0.75,
-                            "percent_max": 2,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0854,
+                            "percent_max": 4.16666666666667,
                             "percent_min": 0,
                             "text": "azúcar"
                         },
@@ -2535,143 +2490,168 @@
                             "ingredients": [
                                 {
                                     "id": "en:e330",
-                                    "percent_estimate": 0.375,
-                                    "percent_max": 1.33333333333333,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 0.0427,
+                                    "percent_max": 2.77777777777778,
                                     "percent_min": 0,
                                     "text": "ácido cítrico"
                                 }
                             ],
-                            "percent_estimate": 0.375,
-                            "percent_max": 1.33333333333333,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0427,
+                            "percent_max": 2.77777777777778,
                             "percent_min": 0,
                             "text": "corrector de acidez"
                         },
                         {
                             "id": "en:antioxidant",
-                            "percent_estimate": 0.375,
-                            "percent_max": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0427,
+                            "percent_max": 2.08333333333333,
                             "percent_min": 0,
                             "text": "antioxidante"
                         }
                     ],
-                    "percent": 4,
-                    "percent_estimate": 4,
-                    "percent_max": 4,
-                    "percent_min": 4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.342,
+                    "percent_hidden": 4,
+                    "percent_max": 8.33333333333333,
+                    "percent_min": 0,
                     "processing": "en:candied,en:chopped",
                     "text": "de piña"
                 },
                 {
-                    "difference": 0.56,
+                    "difference": 1.83,
+                    "ecobalyse_code": "pear-eu",
                     "id": "en:pear",
                     "ingredients": [
                         {
+                            "ecobalyse_code": "pear-eu",
                             "id": "en:pear",
-                            "percent_estimate": 1.22,
-                            "percent_max": 2,
-                            "percent_min": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0854,
+                            "percent_max": 7.14285714285714,
+                            "percent_min": 0,
                             "text": "pera"
                         },
                         {
                             "ciqual_food_code": "9520",
+                            "ecobalyse_proxy_code": "flour",
                             "id": "en:rice-flour",
-                            "percent_estimate": 0.219,
-                            "percent_max": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0854,
+                            "percent_max": 3.57142857142857,
                             "percent_min": 0,
                             "text": "harina de arroz"
                         }
                     ],
-                    "percent": 2,
-                    "percent_estimate": 1.44,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.171,
+                    "percent_hidden": 2,
+                    "percent_max": 7.14285714285714,
+                    "percent_min": 0,
                     "processing": "en:dehydrated,en:chopped",
                     "text": "de pera"
                 },
                 {
-                    "difference": 2,
+                    "difference": 1.91,
+                    "ecobalyse_code": "peach-eu",
                     "id": "en:peach",
                     "ingredients": [
                         {
+                            "ecobalyse_code": "peach-eu",
                             "id": "en:peach",
-                            "percent_estimate": 0.5,
-                            "percent_max": 2,
-                            "percent_min": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0427,
+                            "percent_max": 6.25,
+                            "percent_min": 0,
                             "text": "melocotón"
                         },
                         {
                             "ciqual_food_code": "9520",
+                            "ecobalyse_proxy_code": "flour",
                             "id": "en:rice-flour",
-                            "percent_estimate": -0.5,
-                            "percent_max": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0427,
+                            "percent_max": 3.125,
                             "percent_min": 0,
                             "text": "harina de arroz"
                         }
                     ],
-                    "percent": 2,
-                    "percent_estimate": 0,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0854,
+                    "percent_hidden": 2,
+                    "percent_max": 6.25,
+                    "percent_min": 0,
                     "processing": "en:dehydrated,en:chopped",
                     "text": "de melocotón"
                 },
                 {
-                    "difference": 0.75,
+                    "difference": 0.665,
                     "id": "es:albaricoque-deshidratrado",
                     "ingredients": [
                         {
                             "ciqual_food_code": "13000",
+                            "ecobalyse_code": "apricot-eu",
                             "id": "en:apricot",
-                            "percent_estimate": 0.125,
-                            "percent_max": 0.75,
-                            "percent_min": 0.25,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0427,
+                            "percent_max": 5.55555555555556,
+                            "percent_min": 0,
                             "text": "albaricoque"
                         },
                         {
                             "ciqual_food_code": "9520",
+                            "ecobalyse_proxy_code": "flour",
                             "id": "en:rice-flour",
-                            "percent_estimate": -0.0625,
-                            "percent_max": 0.375,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0214,
+                            "percent_max": 2.77777777777778,
                             "percent_min": 0,
                             "text": "harina de arroz"
                         },
                         {
                             "id": "en:antioxidant",
-                            "percent_estimate": -0.0625,
-                            "percent_max": 0.25,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0214,
+                            "percent_max": 1.85185185185185,
                             "percent_min": 0,
                             "text": "antioxidante"
                         }
                     ],
-                    "percent": 0.75,
-                    "percent_estimate": 0,
-                    "percent_max": 0.75,
-                    "percent_min": 0.75,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.0854,
+                    "percent_hidden": 0.75,
+                    "percent_max": 5.55555555555556,
+                    "percent_min": 0,
                     "text": "albaricoque deshidratrado"
                 }
             ],
-            "percent_estimate": 43.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 21.9,
             "percent_hidden": 18.25,
             "percent_max": 50,
-            "percent_min": 36.75,
+            "percent_min": 0,
             "text": "uvas pasas sultanas"
         },
         {
-            "difference": 23.7,
+            "difference": 16.1,
             "id": "en:barley-flakes",
-            "percent_estimate": 3.31,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10.9,
             "percent_hidden": 27,
-            "percent_max": 26.5,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "copos de cebada"
         },
         {
             "ciqual_food_code": "9311",
-            "difference": 13.8,
+            "difference": 10.0,
             "id": "en:oat-flakes",
-            "percent_estimate": 1.66,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.47,
             "percent_hidden": 15.5,
-            "percent_max": 13.25,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "copos de avena"
         },
@@ -2681,52 +2661,59 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
-                    "percent_estimate": 0.414,
-                    "percent_max": 8.83333333333333,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.37,
+                    "percent_max": 20,
                     "percent_min": 0,
                     "text": "trigo"
                 },
                 {
                     "id": "en:malted-barley",
-                    "percent_estimate": 0.414,
-                    "percent_max": 4.41666666666667,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.37,
+                    "percent_max": 10,
                     "percent_min": 0,
                     "text": "malta de cebada"
                 }
             ],
-            "percent_estimate": 0.828,
-            "percent_max": 8.83333333333333,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.73,
+            "percent_max": 20,
             "percent_min": 0,
             "processing": "en:chips,en:malted,en:toasted",
             "text": "cereales"
         },
         {
             "ciqual_food_code": "15034",
-            "difference": 3.59,
+            "difference": 2.63,
             "id": "en:flax-seed",
-            "percent_estimate": 0.414,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.37,
             "percent_hidden": 4,
-            "percent_max": 6.625,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "linaza"
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 3.29,
+            "difference": 2.82,
             "id": "en:wheat-flakes",
-            "percent_estimate": 0.207,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.684,
             "percent_hidden": 3.5,
-            "percent_max": 5.3,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "copos de trigo"
         },
         {
             "ciqual_food_code": "20139",
-            "difference": 2.79,
+            "difference": 2.32,
+            "ecobalyse_code": "pumpkin-fr",
             "id": "en:pumpkin-seed",
-            "percent_estimate": 0.207,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.684,
             "percent_hidden": 3,
-            "percent_max": 4.41666666666667,
+            "percent_max": 12.5,
             "percent_min": 0,
             "text": "semillas de calabaza"
         }
@@ -3099,8 +3086,8 @@
     "ingredients_lc": "es",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 0.595,
-        "total_difference": 82.7,
+        "relative_difference": 0.504,
+        "total_difference": 70.0,
         "total_specified_input_percent": 139.0
     },
     "ingredients_n": 42,
@@ -3239,6 +3226,27 @@
         "es:chips-de-platano"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:barley-flakes",
+        "en:cereal",
+        "en:coconut-fat",
+        "en:cottonseed-oil",
+        "en:e330",
+        "en:flax-seed",
+        "en:malted-barley",
+        "en:mixed-fruit",
+        "en:oat-flakes",
+        "en:raisin",
+        "en:sultana",
+        "en:vegetable-oil",
+        "en:wheat",
+        "en:wheat-flakes",
+        "es:albaricoque-deshidratrado",
+        "es:chips-de-platano"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -3341,9 +3349,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent",
-        "en:at-least-5-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,
@@ -3680,7 +3686,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:o-7-other-plastics"
+                    "id": {
+                        "id": "en:o-7-other-plastics"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3689,12 +3697,16 @@
             "quantity_per_unit_value": 750,
             "recycling": {
                 "id": {
-                    "id": "es:ecoponto-amarelo"
+                    "id": {
+                        "id": "es:ecoponto-amarelo"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 10

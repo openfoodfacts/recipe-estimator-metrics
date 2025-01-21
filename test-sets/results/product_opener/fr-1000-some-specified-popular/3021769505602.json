@@ -241,7 +241,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -680,10 +680,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process got exception: ValueError: shapes (533,) and (532,) not aligned: 533 (dim 0) != 532 (dim 0)"
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2000,16 +1996,19 @@
         {
             "ciqual_food_code": "13050",
             "difference": 7.2,
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple",
             "ingredients": [
                 {
                     "id": "fr:puree-et-puree-concentree",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 92.5,
                     "percent_max": 100,
                     "percent_min": 85,
                     "text": "purée et purée concentrée"
                 }
             ],
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 92.5,
             "percent_hidden": 99.7,
@@ -2019,8 +2018,9 @@
         },
         {
             "id": "en:natural-apple-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de pomme"
         },
@@ -2030,14 +2030,16 @@
             "ingredients": [
                 {
                     "id": "fr:si-necessaire-pour-reguler-l-acidite",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "si nécessaire pour réguler l'acidité"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "jus de citron concentré"
         },
@@ -2046,14 +2048,16 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "antioxydant"
         }
@@ -2196,6 +2200,15 @@
         "fr:si-necessaire-pour-reguler-l-acidite"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:concentrated-lemon-juice",
+        "en:e300",
+        "en:natural-apple-flavouring",
+        "fr:puree-et-puree-concentree",
+        "fr:si-necessaire-pour-reguler-l-acidite"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -2625,7 +2638,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": "en:recyclable-plastic"
+                    }
                 }
             },
             "number_of_units": 32,
@@ -2634,12 +2649,16 @@
             "quantity_per_unit_value": 90,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pouch-flask"
+                    "id": {
+                        "id": "en:pouch-flask"
+                    }
                 }
             },
             "weight_measured": 5.85
@@ -2647,18 +2666,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": "en:recyclable-plastic"
+                    }
                 }
             },
             "number_of_units": 32,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 0.93

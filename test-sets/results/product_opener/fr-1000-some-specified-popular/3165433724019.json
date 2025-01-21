@@ -178,7 +178,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -617,34 +617,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 8.88178419700125e-16,
-            "likeliest_impacts": {
-                "Climate_change": 0.084805245369147,
-                "EF_single_score": 0.0233524695659404
-            },
-            "likeliest_recipe": {
-                "en:water": 0,
-                "fr:sucre_roux_de_canne_en_poudre": 100.552929085303
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1241,6 +1213,7 @@
         {
             "difference": 0,
             "id": "en:pure-brown-sugar-unrefined-cane",
+            "is_in_taxonomy": 0,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -1306,6 +1279,10 @@
         "en:pure-brown-sugar-unrefined-cane"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:pure-brown-sugar-unrefined-cane"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -1700,7 +1677,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:kraft-paper"
+                    "id": {
+                        "id": "en:kraft-paper"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1709,12 +1688,16 @@
             "quantity_per_unit_value": "750",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 12.61
@@ -1722,18 +1705,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 1.21

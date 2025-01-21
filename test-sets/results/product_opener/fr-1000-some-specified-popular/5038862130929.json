@@ -202,7 +202,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -636,68 +636,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0291015893932372,
-            "likeliest_impacts": {
-                "Climate_change": 0.153513978050449,
-                "EF_single_score": 0.0363033594697066
-            },
-            "likeliest_recipe": {
-                "en:coconut_water": 18,
-                "en:e101": 0.0201533343868118,
-                "en:e375": 0.0201533343868118,
-                "en:lime_juice": 0.7,
-                "en:passionfruit": 4.36563335913885,
-                "en:spirulina": 0.8,
-                "en:thiamin": 0.0201533343868118,
-                "en:vitamin_b6": 0,
-                "en:vitamin_e": 0,
-                "en:vitamins": 0.0201533343868118,
-                "en:water": -1.00004199365955e-07,
-                "fr:15_raisins_press_s": 5.05375340331809,
-                "fr:4_5_pommes_press_es": 66,
-                "fr:goyave_blandhe__cras_e": 5
-            },
-            "mass_ratio_uncharacterized": 0.808047518300014,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamin-e",
-                    "fr:15 raisins pressés",
-                    "en:vitamins",
-                    "en:e101",
-                    "fr:4‚5 pommes pressées",
-                    "en:lime-juice",
-                    "en:e375",
-                    "en:passionfruit",
-                    "fr:goyave blandhe écrasée",
-                    "en:vitamin-b6",
-                    "en:thiamin"
-                ],
-                "nutrition": [
-                    "fr:15 raisins pressés",
-                    "en:passionfruit",
-                    "fr:goyave blandhe écrasée",
-                    "fr:4‚5 pommes pressées"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.808047518300014,
-                "nutrition": 0.782738206632576
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.846153846153846,
-                "nutrition": 0.307692307692308
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 31%",
-                "The product has a high number of impact uncharacterized ingredients: 85%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 78%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 81%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 4,
     "ecoscore_tags": [
@@ -1106,7 +1044,9 @@
         {
             "ciqual_food_code": "2074",
             "difference": 12.2,
+            "ecobalyse_code": "apple-fr",
             "id": "en:squeezed-apple-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_hidden": 66,
             "percent_max": 100,
@@ -1115,8 +1055,9 @@
         },
         {
             "ciqual_food_code": "18011",
-            "difference": 5.1,
+            "difference": 5.08,
             "id": "en:coconut-water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_hidden": 18,
             "percent_max": 50,
@@ -1125,14 +1066,16 @@
         },
         {
             "id": "fr:15-raisins-presses",
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "15 raisins pressés"
         },
         {
-            "difference": 0.77,
+            "difference": 0.769,
             "id": "fr:goyave-blanche-ecrasee",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.77,
             "percent_hidden": 5,
             "percent_max": 25,
@@ -1142,6 +1085,7 @@
         {
             "ciqual_food_code": "13016",
             "id": "en:passionfruit",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.88,
             "percent_max": 20,
             "percent_min": 0,
@@ -1150,8 +1094,9 @@
         },
         {
             "ciqual_food_code": "13067",
-            "difference": 0.54,
+            "difference": 0.542,
             "id": "en:lime-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.44,
             "percent_hidden": 0.9,
             "percent_max": 16.6666666666667,
@@ -1160,8 +1105,9 @@
         },
         {
             "ciqual_proxy_food_code": "20984",
-            "difference": 0.079,
+            "difference": 0.0788,
             "id": "en:spirulina",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.721,
             "percent_hidden": 0.8,
             "percent_max": 14.2857142857143,
@@ -1171,6 +1117,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.361,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1178,6 +1125,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.18,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1185,6 +1133,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0901,
             "percent_max": 10,
             "percent_min": 0,
@@ -1192,6 +1141,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0451,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1199,6 +1149,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0225,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1206,6 +1157,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0225,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1379,8 +1331,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.206,
-        "total_difference": 18.7,
+        "relative_difference": 0.205,
+        "total_difference": 18.6,
         "total_specified_input_percent": 90.7
     },
     "ingredients_n": 13,
@@ -1452,6 +1404,21 @@
         "fr:goyave-blanche-ecrasee"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut-water",
+        "en:e101",
+        "en:e375",
+        "en:lime-juice",
+        "en:passionfruit",
+        "en:spirulina",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "en:vitamins",
+        "fr:15-raisins-presses",
+        "fr:goyave-blanche-ecrasee"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -1885,24 +1852,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recycled-plastic"
+                    "id": {
+                        "id": "en:recycled-plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             }
         }

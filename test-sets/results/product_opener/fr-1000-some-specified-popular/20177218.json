@@ -48,7 +48,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:milk,en:soybeans, en:milk",
+    "allergens": "en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, beurre concentré, lait",
     "allergens_from_user": "(en) en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -217,7 +217,7 @@
                         "epi_score": "12",
                         "origin": "en:ecuador",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 12,
@@ -640,29 +640,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0680656853999091,
-            "likeliest_impacts": {
-                "Climate_change": 1.58446978814992,
-                "EF_single_score": 0.0994903651145316
-            },
-            "likeliest_recipe": {
-                "en:butter": 2.14726026841305,
-                "en:cocoa_butter": 21.2937899812021,
-                "en:cocoa_paste": 37.8142547798905,
-                "en:glucose_syrup": 1.23463710125301,
-                "en:natural_flavouring": 0.123746525102298,
-                "en:salt": 0.313171238863909,
-                "en:soya": 1.21182630431378,
-                "en:sugar": 34.8777348338411,
-                "en:vanilla_extract": 0.0900682688521999,
-                "en:water": 2.82485062583894
-            },
-            "mass_ratio_uncharacterized": 0.0777319673180806
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -1761,6 +1738,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_max": 100,
             "percent_min": 10,
@@ -1768,7 +1746,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 17.6,
             "percent_max": 35.2,
             "percent_min": 0,
@@ -1777,6 +1757,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 13.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1785,6 +1766,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.85,
             "percent_max": 25,
             "percent_min": 0,
@@ -1793,6 +1775,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.42,
             "percent_max": 20,
             "percent_min": 0,
@@ -1803,12 +1786,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.71,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "lécithines de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.71,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1816,15 +1801,17 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.856,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "sel"
@@ -1832,7 +1819,8 @@
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "extrait de vanille"
@@ -1840,17 +1828,20 @@
         {
             "ciqual_proxy_food_code": "31074",
             "difference": 69.1,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.856,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "cacao"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.856,
             "percent_hidden": 70,
             "percent_max": 0,
@@ -2134,6 +2125,19 @@
         "en:sunflower-lecithin"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:glucose-syrup",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:vanilla-extract"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2588,24 +2592,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": "en:paperboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

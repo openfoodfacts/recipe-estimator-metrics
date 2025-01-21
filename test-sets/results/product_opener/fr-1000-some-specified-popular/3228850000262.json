@@ -253,7 +253,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -665,61 +665,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0190859650252829,
-            "likeliest_impacts": {
-                "Climate_change": 0.0454992602619656,
-                "EF_single_score": 0.00907501125714332
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0.328703763495006,
-                "en:alcohol": 1.3727200992975,
-                "en:barley_flour": 0.701053313593056,
-                "en:colza_oil": 1.89020135406324,
-                "en:corn_flour": 6.0090284022262,
-                "en:flax_seed": 1.60240757392699,
-                "en:oat_flour": 0.701053313593056,
-                "en:rice_flour": 0.701053313593056,
-                "en:rye_flour": 4.1061694081879,
-                "en:salt": 1.2376653851614,
-                "en:soya_bean": 2.40361136089048,
-                "en:sugar": 2.56045125224556,
-                "en:sunflower_seed": 4.1061694081879,
-                "en:vinegar": 0.406248388911908,
-                "en:water": 25.4733636963952,
-                "en:wheat": 0.701053313593056,
-                "en:wheat_bran": 0.701053313593056,
-                "en:wheat_flour": 40.0601893481747,
-                "en:wheat_germ": 0.701053313593056,
-                "en:wheat_gluten": 2.44154012836179,
-                "en:yeast": 0.671950470370955,
-                "fr:levain_de__SEIGLE__d_shydrat__d_vitalis_": 1.27373344898163
-            },
-            "mass_ratio_uncharacterized": 0.0149825124811687,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:levain de _SEIGLE_ déshydraté dévitalisé",
-                    "en:acerola-juice"
-                ],
-                "nutrition": [
-                    "fr:levain de _SEIGLE_ déshydraté dévitalisé"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0149825124811687,
-                "nutrition": 0.0122532267939801
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0909090909090909,
-                "nutrition": 0.0454545454545455
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2113,7 +2058,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 12.3,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.3,
             "percent_hidden": 40,
             "percent_max": 100,
@@ -2122,7 +2069,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -2130,8 +2079,10 @@
         },
         {
             "ciqual_food_code": "9545",
-            "difference": 5.9,
+            "difference": 5.93,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:corn-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.9,
             "percent_hidden": 6,
             "percent_max": 33.3333333333333,
@@ -2141,7 +2092,9 @@
         {
             "ciqual_proxy_food_code": "9532",
             "difference": 1.87,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rye-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.97,
             "percent_hidden": 4.1,
             "percent_max": 25,
@@ -2151,7 +2104,9 @@
         {
             "ciqual_food_code": "15011",
             "difference": 1.12,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.98,
             "percent_hidden": 4.1,
             "percent_max": 20,
@@ -2160,7 +2115,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
             "percent_max": 5,
             "percent_min": 0,
@@ -2168,6 +2125,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.746,
             "percent_max": 5,
             "percent_min": 0,
@@ -2177,6 +2135,7 @@
             "ciqual_food_code": "20901",
             "difference": 2.03,
             "id": "en:soya-bean",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.373,
             "percent_hidden": 2.4,
             "percent_max": 5,
@@ -2186,7 +2145,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.186,
             "percent_max": 5,
             "percent_min": 0,
@@ -2196,6 +2157,7 @@
             "ciqual_food_code": "15034",
             "difference": 1.51,
             "id": "en:flax-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0932,
             "percent_hidden": 1.6,
             "percent_max": 5,
@@ -2204,16 +2166,18 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 0.0466,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme"
         },
         {
             "id": "fr:levain-de-seigle-devitalise",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0233,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "processing": "en:dehydrated",
             "text": "levain de seigle dévitalisé"
@@ -2221,6 +2185,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0117,
             "percent_max": 1.13,
             "percent_min": 0,
@@ -2229,7 +2194,9 @@
         {
             "ciqual_food_code": "9480",
             "difference": 0.694,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:spelt-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00583,
             "percent_hidden": 0.7,
             "percent_max": 1.13,
@@ -2239,7 +2206,9 @@
         {
             "ciqual_food_code": "9550",
             "difference": 0.697,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00291,
             "percent_hidden": 0.7,
             "percent_max": 1.13,
@@ -2249,7 +2218,9 @@
         {
             "ciqual_food_code": "9520",
             "difference": 0.699,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00146,
             "percent_hidden": 0.7,
             "percent_max": 1.13,
@@ -2259,7 +2230,9 @@
         {
             "ciqual_food_code": "9310",
             "difference": 0.699,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:oat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000728,
             "percent_hidden": 0.7,
             "percent_max": 1.13,
@@ -2270,6 +2243,7 @@
             "ciqual_food_code": "9660",
             "difference": 0.7,
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000364,
             "percent_hidden": 0.7,
             "percent_max": 1.13,
@@ -2280,6 +2254,7 @@
             "ciqual_food_code": "9621",
             "difference": 0.7,
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000182,
             "percent_hidden": 0.7,
             "percent_max": 1.13,
@@ -2287,7 +2262,9 @@
             "text": "son de blé"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.1e-05,
             "percent_max": 1.13,
             "percent_min": 0,
@@ -2296,6 +2273,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.55e-05,
             "percent_max": 1.13,
             "percent_min": 0,
@@ -2303,6 +2281,7 @@
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.55e-05,
             "percent_max": 1.13,
             "percent_min": 0,
@@ -2602,7 +2581,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
+        "number_of_ingredients_without_ciqual_code": 4,
         "relative_difference": 0.463,
         "total_difference": 28.9,
         "total_specified_input_percent": 62.4
@@ -2705,10 +2684,23 @@
         "en:acerola-juice",
         "en:flavouring",
         "en:wheat-gluten",
+        "fr:levain-de-seigle-devitalise"
+    ],
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:flavouring",
+        "en:flax-seed",
+        "en:salt",
+        "en:soya-bean",
+        "en:vinegar",
+        "en:wheat-bran",
+        "en:wheat-germ",
+        "en:wheat-gluten",
         "en:yeast",
         "fr:levain-de-seigle-devitalise"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 47,
     "labels": "Vegetarian, Source of fibre, No additives, Triman, en:made-in-france",
@@ -3197,7 +3189,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3206,12 +3200,16 @@
             "quantity_per_unit_value": 450,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 6
@@ -3219,18 +3217,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": "en:fastener"
+                    }
                 }
             },
             "weight_measured": 7

@@ -305,7 +305,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -752,61 +752,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.543702391088911,
-            "likeliest_impacts": {
-                "Climate_change": 0.0130101706385276,
-                "EF_single_score": 0.00263856682039174
-            },
-            "likeliest_recipe": {
-                "en:calcium": 0.788141852564501,
-                "en:e101": 0.213535271399062,
-                "en:ergocalciferol": 0.213535271399062,
-                "en:oat": 8.51937937233774,
-                "en:sea_salt": 0.239111857673515,
-                "en:soluble_corn_fiber": 16.4201549128104,
-                "en:stabiliser": 0.239111857673802,
-                "en:sunflower_oil": 1.15011675038217,
-                "en:vitamin_b12": 0.213535271398801,
-                "en:vitamins": 0.239111857673519,
-                "en:water": 71.7642657246875
-            },
-            "mass_ratio_uncharacterized": 0.302845881911355,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e101",
-                    "en:stabiliser",
-                    "en:vitamins",
-                    "en:soluble-corn-fiber",
-                    "en:calcium",
-                    "en:ergocalciferol",
-                    "en:vitamin-b12"
-                ],
-                "nutrition": [
-                    "en:soluble-corn-fiber",
-                    "en:stabiliser"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.302845881911355,
-                "nutrition": 0.277031982817653
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.636363636363636,
-                "nutrition": 0.181818181818182
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 64%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 28%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 30%",
-                "The impact relative interquartile is high for EF single score (61%)",
-                "The impact relative interquartile is high for Climate change (47%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 61,
     "ecoscore_tags": [
@@ -2372,53 +2317,79 @@
     ],
     "ingredients": [
         {
-            "difference": 46.6,
+            "difference": 42.1,
             "id": "en:oat-base",
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 29.5,
+                    "percent_max": 100,
+                    "percent_min": 4.54545454545455,
                     "text": "Water"
                 },
                 {
                     "ciqual_food_code": "9310",
                     "difference": 15.2,
                     "id": "en:oat",
-                    "percent": 9.8,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 9.8,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "Oat"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.5,
             "percent_hidden": 96.6,
+            "percent_max": 100,
+            "percent_min": 9.09090909090909,
             "text": "Oat base"
         },
         {
             "id": "en:soluble-corn-fiber",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.7,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "Soluble corn fibre"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.4,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "Sunflower oil"
         },
         {
             "id": "en:calcium",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.68,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "Calcium"
         },
         {
             "id": "en:e341iii",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.84,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "Tri-calcium phosphate"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "Sea salt"
         },
         {
@@ -2426,31 +2397,49 @@
             "ingredients": [
                 {
                     "id": "en:e418",
-                    "percent_estimate": 0.781,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.1,
+                    "percent_min": 0,
                     "text": "Gellan gum"
                 }
             ],
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "Stabiliser"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamins"
         },
         {
             "id": "en:e101",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamin B2"
         },
         {
             "id": "en:vitamin-b12",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamin B12"
         },
         {
             "id": "en:ergocalciferol",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.59,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamin D2"
         }
     ],
@@ -2604,8 +2593,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.581,
-        "total_difference": 61.8,
+        "relative_difference": 0.538,
+        "total_difference": 57.3,
         "total_specified_input_percent": 106.0
     },
     "ingredients_n": 14,
@@ -2629,7 +2618,7 @@
         "en:oat",
         "en:e418"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:oat-base",
         "en:soluble-corn-fiber",
@@ -2693,6 +2682,21 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:e101",
+        "en:e341iii",
+        "en:e418",
+        "en:ergocalciferol",
+        "en:oat",
+        "en:oat-base",
+        "en:sea-salt",
+        "en:soluble-corn-fiber",
+        "en:stabiliser",
+        "en:vitamin-b12",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2860,8 +2864,7 @@
         "en:main-countries-pt-ingredients-not-in-country-language",
         "en:main-countries-pt-no-data-in-country-language",
         "en:main-countries-uk-unexpectedly-low-scans",
-        "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected"
     ],
     "new_additives_n": 3,
     "no_nutrition_data": "",
@@ -3222,18 +3225,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:recyclable-plastic"
+                    "id": {
+                        "id": "en:recyclable-plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 1.01
@@ -3241,18 +3250,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             },
             "weight_measured": 0.5
@@ -3260,7 +3275,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-pak"
+                    "id": {
+                        "id": "en:tetra-pak"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3269,12 +3286,16 @@
             "quantity_per_unit_value": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 31.45

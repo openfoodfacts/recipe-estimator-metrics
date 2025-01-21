@@ -233,7 +233,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1251,49 +1251,59 @@
     ],
     "ingredients": [
         {
-            "difference": 16.1,
+            "ciqual_food_code": "24000",
+            "difference": 0.941,
             "id": "en:petit-beurre",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.0,
+                    "difference": 15.2,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 68.1,
-                    "percent_estimate": 68.1,
-                    "percent_max": 68.1,
-                    "percent_min": 68.1,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 52.9,
+                    "percent_hidden": 68.1,
+                    "percent_max": 100,
+                    "percent_min": 5.88235294117647,
                     "text": "Farine de _blé_"
                 }
             ],
-            "percent_estimate": 68.1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.9,
             "percent_hidden": 52,
-            "percent_max": 68.1,
-            "percent_min": 68.1,
+            "percent_max": 100,
+            "percent_min": 5.88235294117647,
             "text": "PETIT _BEURRE_"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 16.9,
-            "percent_max": 31.9,
-            "percent_min": 1.99375,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 20.0,
+            "percent_max": 40,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_proxy_food_code": "16400",
-            "difference": 7.22,
+            "difference": 1.17,
+            "ecobalyse_code": "butter",
             "id": "en:butter",
-            "percent_estimate": 7.48,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.5,
             "percent_hidden": 14.7,
-            "percent_max": 29.90625,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "_beurre_"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 3.74,
-            "percent_max": 14.953125,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.76,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "_lait_ écrémé en poudre"
         },
@@ -1302,34 +1312,39 @@
             "ingredients": [
                 {
                     "id": "en:e503ii",
-                    "percent_estimate": 0.935,
-                    "percent_max": 9.96875,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.69,
+                    "percent_max": 20,
                     "percent_min": 0,
                     "text": "carbonate acide d'ammonium"
                 },
                 {
                     "id": "en:e500ii",
-                    "percent_estimate": 0.467,
-                    "percent_max": 4.984375,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.846,
+                    "percent_max": 10,
                     "percent_min": 0,
                     "text": "carbonate acide de sodium"
                 },
                 {
                     "id": "en:e450i",
-                    "percent_estimate": 0.467,
-                    "percent_max": 3.32291666666667,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.846,
+                    "percent_max": 6.66666666666667,
                     "percent_min": 0,
                     "text": "diphosphate disodique"
                 }
             ],
-            "percent_estimate": 1.87,
-            "percent_max": 9.96875,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.38,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "poudre à lever"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1340,12 +1355,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.3,
                     "percent_max": 0.6,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1355,6 +1372,7 @@
             "ciqual_food_code": "31004",
             "difference": 47.7,
             "id": "en:milk-chocolate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_hidden": 48,
             "percent_max": 0.6,
@@ -1365,6 +1383,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1373,6 +1392,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1380,8 +1400,10 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 0.185,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "_lait_ écrémé en poudre"
@@ -1389,7 +1411,8 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
-            "percent_estimate": 0.0923,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "sirop de glucose"
@@ -1397,7 +1420,8 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
-            "percent_estimate": 0.0461,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "_beurre_ pâtissier"
@@ -1408,34 +1432,39 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
-                    "percent_estimate": 0.0231,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.3,
                     "percent_max": 0.6,
                     "percent_min": 0,
                     "text": "lécithine de _soja_"
                 }
             ],
-            "percent_estimate": 0.0231,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "émulsifiant"
         },
         {
             "id": "en:vanilla-flavouring",
-            "percent_estimate": 0.0115,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "arôme vanille"
         },
         {
             "id": "fr:allergene",
-            "percent_estimate": 0.00577,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.191,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "Allergene"
         },
         {
             "id": "fr:lait-gluten",
-            "percent_estimate": 0.00577,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.191,
             "percent_max": 0.6,
             "percent_min": 0,
             "text": "Lait Gluten"
@@ -1690,8 +1719,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.389,
-        "total_difference": 71.0,
+        "relative_difference": 0.355,
+        "total_difference": 65.0,
         "total_specified_input_percent": 183.0
     },
     "ingredients_n": 23,
@@ -1791,13 +1820,33 @@
         "en:e500ii",
         "en:e503ii",
         "en:emulsifier",
-        "en:petit-beurre",
         "en:raising-agent",
         "en:vanilla-flavouring",
         "fr:allergene",
         "fr:lait-gluten"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e330",
+        "en:e450i",
+        "en:e500ii",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:glucose-syrup",
+        "en:milk-chocolate",
+        "en:petit-beurre",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vanilla-flavouring",
+        "fr:allergene",
+        "fr:lait-gluten"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -1866,8 +1915,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2214,19 +2262,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             }
         }

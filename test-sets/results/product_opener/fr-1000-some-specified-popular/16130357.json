@@ -220,7 +220,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -647,81 +647,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0175737845492646,
-            "likeliest_impacts": {
-                "Climate_change": 0.0495222702425775,
-                "EF_single_score": 0.00743720834599118
-            },
-            "likeliest_recipe": {
-                "en:bay_leaf": 0.0302711628983545,
-                "en:caraway": 0.183613854577918,
-                "en:cardamom": 0.0302711628983545,
-                "en:cayenne_pepper": 0.183613854577916,
-                "en:celery": 0.183613854577918,
-                "en:chives": 0.25,
-                "en:coriander": 1.50942181387163,
-                "en:cumin": 0.181930165259444,
-                "en:dill": 0.0302711628983529,
-                "en:fenugreek": 0.183613854577918,
-                "en:flavouring": 0.15741977933588,
-                "en:garlic": 0.788158291414193,
-                "en:ginger": 0.0695515696347133,
-                "en:glucose_syrup": 6.09646715705155,
-                "en:iodised_salt": 6.15,
-                "en:lovage": 0.030271162898356,
-                "en:milk": 6.09646715705155,
-                "en:mustard": 0.827682639599316,
-                "en:onion": 0.65,
-                "en:pepper": 0.183613854577918,
-                "en:protein": 4.47293722286955,
-                "en:spice_or_bell_pepper": 0.12006404319275,
-                "en:sugar": 6.15,
-                "en:sunflower_oil": 6.60377146082191,
-                "en:turmeric": 1.61403755254495,
-                "en:water": 2.5,
-                "en:yeast_extract": 4.47293722286955,
-                "nl:paprika_rood": 0.25
-            },
-            "mass_ratio_uncharacterized": 0.339958232219514,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:spice-or-bell-pepper",
-                    "en:yeast-extract",
-                    "en:cumin",
-                    "en:protein",
-                    "en:glucose-syrup",
-                    "en:flavouring",
-                    "nl:paprika rood",
-                    "en:lovage"
-                ],
-                "nutrition": [
-                    "en:spice-or-bell-pepper",
-                    "en:cumin",
-                    "en:glucose-syrup",
-                    "en:flavouring",
-                    "nl:paprika rood"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.339958232219514,
-                "nutrition": 0.134969480763687
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.296296296296296,
-                "nutrition": 0.185185185185185
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast-extract). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 30%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 34%",
-                "Parameter const_relax_coef has been set to 0.1 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 20,
     "ecoscore_tags": [
@@ -1113,6 +1038,7 @@
             "ciqual_food_code": "9010",
             "difference": 37.8,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 90.9,
             "percent_hidden": 53.1,
             "percent_max": 100,
@@ -1121,8 +1047,10 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_max": 2,
             "percent_min": 0,
             "text": "sucre"
@@ -1130,7 +1058,8 @@
         {
             "ciqual_food_code": "9615",
             "id": "en:cornmeal",
-            "percent_estimate": 1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_max": 2,
             "percent_min": 0,
             "text": "semoule de mais"
@@ -1138,7 +1067,8 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
-            "percent_estimate": 1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_max": 2,
             "percent_min": 0,
             "text": "sirop de glucose"
@@ -1147,7 +1077,8 @@
             "ciqual_food_code": "18100",
             "difference": 4.6,
             "id": "en:fat-reduced-cocoa-powder",
-            "percent_estimate": 1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_hidden": 5.6,
             "percent_max": 2,
             "percent_min": 0,
@@ -1155,22 +1086,28 @@
         },
         {
             "id": "en:e170i",
-            "percent_estimate": 1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_max": 2,
             "percent_min": 0,
             "text": "carbonate de calcium"
         },
         {
-            "id": "fr:contient-de-l-huile-de-tournesol",
-            "percent_estimate": 1,
+            "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
+            "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_max": 2,
             "percent_min": 0,
             "text": "contient de l'huile de tournesol"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.0,
             "percent_max": 2,
             "percent_min": 0,
             "text": "huile de palme"
@@ -1178,6 +1115,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1185,6 +1123,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1192,6 +1131,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1199,6 +1139,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1206,6 +1147,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1213,6 +1155,7 @@
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1220,6 +1163,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1227,6 +1171,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1234,6 +1179,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1241,6 +1187,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1248,6 +1195,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1255,6 +1203,7 @@
         },
         {
             "id": "fr:rilan-mo",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.175,
             "percent_max": 0.35,
             "percent_min": 0,
@@ -1435,10 +1384,29 @@
         "en:vitamin-b6",
         "en:vitamin-d",
         "en:vitamins",
-        "fr:contient-de-l-huile-de-tournesol",
         "fr:rilan-mo"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cornmeal",
+        "en:e101",
+        "en:e170i",
+        "en:e375",
+        "en:fat-reduced-cocoa-powder",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:iron",
+        "en:natural-flavouring",
+        "en:pantothenic-acid",
+        "en:salt",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:whole-wheat",
+        "fr:rilan-mo"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 35,
@@ -1837,7 +1805,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

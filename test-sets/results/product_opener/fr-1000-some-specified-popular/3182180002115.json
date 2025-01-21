@@ -217,7 +217,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -627,54 +627,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0837971633149598,
-            "likeliest_impacts": {
-                "Climate_change": 0.0740316384619656,
-                "EF_single_score": 0.0116804169624952
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 0.0137965553332223,
-                "en:barley_malt_flour": 0.557403886664195,
-                "en:e300": 0,
-                "en:e471": 0.0137965553332223,
-                "en:rye": 1.05214132703126,
-                "en:salt": 0.0137965553332212,
-                "en:skimmed_milk_powder": 0.583327544574419,
-                "en:sugar": 3.42262340217088,
-                "en:sunflower_oil": 8.56980581002756,
-                "en:water": 0.0882525216631643,
-                "en:wheat_bran": 3.42262340217088,
-                "en:wheat_flour": 65.2327622759382,
-                "en:wheat_gluten": 3.14820339389507,
-                "en:wheat_semolina": 0.0137965553332223,
-                "en:whole_wheat_flour": 15.7821199054689,
-                "en:yeast": 3.29968301218868
-            },
-            "mass_ratio_uncharacterized": 0.00977961359327294,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e471",
-                    "en:barley-malt-extract",
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00977961359327294,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 78,
     "ecoscore_tags": [
@@ -1604,56 +1556,67 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 10.1,
+            "difference": 8.43,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 51.9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.6,
             "percent_hidden": 62,
-            "percent_max": 84,
-            "percent_min": 19.85,
+            "percent_max": 100,
+            "percent_min": 7.14285714285714,
             "text": "wheat flour"
         },
         {
-            "difference": 0,
+            "difference": 7.21,
             "id": "en:wholemeal-cereal",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0,
+                    "difference": 3.39,
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
-                    "percent": 15,
-                    "percent_estimate": 15,
-                    "percent_max": 15,
-                    "percent_min": 15,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.6,
+                    "percent_hidden": 15,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "whole wheat flour"
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
-                    "difference": 0,
+                    "difference": 10.6,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:wholemeal-rye-flour",
-                    "percent": 1,
-                    "percent_estimate": 1,
-                    "percent_max": 1,
-                    "percent_min": 1,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.6,
+                    "percent_hidden": 1,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "whole rye flour"
                 }
             ],
-            "percent_estimate": 16,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.2,
             "percent_hidden": 16,
-            "percent_max": 16,
-            "percent_min": 16,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "wholegrain cereals"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
-            "percent_estimate": 8,
-            "percent_max": 16,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.6,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "sunflower oil"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.65,
             "percent_max": 7.3,
             "percent_min": 0,
@@ -1662,37 +1625,45 @@
         {
             "ciqual_food_code": "9621",
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.65,
             "percent_max": 7.3,
             "percent_min": 0,
             "text": "wheat bran"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
-            "percent_estimate": 3.65,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.15,
             "percent_max": 7.3,
             "percent_min": 0,
             "text": "yeast"
         },
         {
             "id": "en:wheat-gluten",
-            "percent_estimate": 3.65,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.08,
             "percent_max": 7.3,
             "percent_min": 0,
             "text": "wheat gluten"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 3.65,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.538,
             "percent_max": 7.3,
             "percent_min": 0,
             "text": "skimmed milk powder"
         },
         {
             "ciqual_food_code": "9550",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-malt-flour",
-            "percent_estimate": 2.91,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.269,
             "percent_max": 7.3,
             "percent_min": 0,
             "text": "malted barley flour"
@@ -1700,14 +1671,16 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.435,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.135,
             "percent_max": 0.87,
             "percent_min": 0,
             "text": "salt"
         },
         {
             "id": "en:barley-malt-extract",
-            "percent_estimate": 0.435,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0673,
             "percent_max": 0.87,
             "percent_min": 0,
             "text": "barley malt extract"
@@ -1715,7 +1688,8 @@
         {
             "ciqual_proxy_food_code": "9610",
             "id": "en:wheat-semolina",
-            "percent_estimate": 0.435,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0336,
             "percent_max": 0.87,
             "percent_min": 0,
             "text": "wheat semolina"
@@ -1725,13 +1699,15 @@
             "ingredients": [
                 {
                     "id": "en:e471",
-                    "percent_estimate": 0.435,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0168,
                     "percent_max": 0.87,
                     "percent_min": 0,
                     "text": "mono- and diglycerides of fatty acids"
                 }
             ],
-            "percent_estimate": 0.435,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0168,
             "percent_max": 0.87,
             "percent_min": 0,
             "text": "emulsifiers"
@@ -1741,13 +1717,15 @@
             "ingredients": [
                 {
                     "id": "en:e300",
-                    "percent_estimate": 1.17,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0168,
                     "percent_max": 0.87,
                     "percent_min": 0,
                     "text": "ascorbic acid"
                 }
             ],
-            "percent_estimate": 1.17,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0168,
             "percent_max": 0.87,
             "percent_min": 0,
             "text": "flour treatment agent"
@@ -1812,9 +1790,9 @@
         "en:e300"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.107,
-        "total_difference": 10.1,
+        "number_of_ingredients_without_ciqual_code": 4,
+        "relative_difference": 0.315,
+        "total_difference": 29.6,
         "total_specified_input_percent": 94
     },
     "ingredients_n": 18,
@@ -1910,10 +1888,23 @@
         "en:emulsifier",
         "en:flour-treatment-agent",
         "en:wheat-gluten",
+        "en:wholemeal-cereal"
+    ],
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:e300",
+        "en:e471",
+        "en:emulsifier",
+        "en:flour-treatment-agent",
+        "en:salt",
+        "en:wheat-bran",
+        "en:wheat-gluten",
+        "en:wheat-semolina",
         "en:wholemeal-cereal",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 37,
@@ -2007,8 +1998,7 @@
         "en:ecoscore-missing-data-warning",
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
-        "en:ecoscore-computed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-computed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2388,46 +2378,62 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

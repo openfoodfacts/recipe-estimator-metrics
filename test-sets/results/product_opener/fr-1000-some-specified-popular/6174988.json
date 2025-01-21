@@ -180,7 +180,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -577,75 +577,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0590370020460795,
-            "likeliest_impacts": {
-                "Climate_change": 0.059488248023506,
-                "EF_single_score": 0.00994097029309982
-            },
-            "likeliest_recipe": {
-                "en:beetroot": 2.58026272719994,
-                "en:corn_starch": 25.3846260790516,
-                "en:e464": 1.39229354593412,
-                "en:flax_seed": 1.88954124091059,
-                "en:honey": 1.0543590637704,
-                "en:millet_flakes": 1.39229354593412,
-                "en:millet_flour": 2.58568801387766,
-                "en:potassium_iodide": 0.515253018611663,
-                "en:psyllium": 2.58026272719994,
-                "en:quinoa_flour": 1.7900917019153,
-                "en:rice_flour": 7.59166923500604,
-                "en:rice_starch": 5.58048808230152,
-                "en:rice_syrup": 2.58026272719994,
-                "en:salt": 0.697163517433415,
-                "en:soy_bran": 1.88954124091059,
-                "en:soy_protein": 1.21241653604571,
-                "en:soya": 2.08844031890118,
-                "en:water": 29.7269015234809,
-                "en:yeast": 1.21241653604508,
-                "fr:SANS_BLE_Le_produit_est_conditionn__sous_atmosph_re_protectrice": 1.05435906377105,
-                "fr:graines_de_toumesol": 2.08844031890118,
-                "fr:huile_de_tourmesol": 2.56276823089239
-            },
-            "mass_ratio_uncharacterized": 0.270362031746333,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:psyllium",
-                    "en:rice-syrup",
-                    "en:quinoa-flour",
-                    "fr:huile de tourmesol",
-                    "fr:graines de toumesol",
-                    "en:e464",
-                    "fr:SANS BLE Le produit est conditionné sous atmosphère protectrice",
-                    "en:rice-starch",
-                    "en:millet-flakes",
-                    "en:soy-bran",
-                    "en:potassium-iodide"
-                ],
-                "nutrition": [
-                    "fr:huile de tourmesol",
-                    "fr:graines de toumesol",
-                    "fr:SANS BLE Le produit est conditionné sous atmosphère protectrice",
-                    "en:millet-flakes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.270362031746333,
-                "nutrition": 0.066141860506652
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.478260869565217,
-                "nutrition": 0.173913043478261
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 48%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 27%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 74,
     "ecoscore_tags": [
@@ -1073,83 +1004,97 @@
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
-            "percent_estimate": 43.7,
-            "percent_max": 82.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 52.5,
+            "percent_max": 100,
             "percent_min": 5,
             "text": "Amidon de mais"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 23.9,
-            "percent_max": 43.4,
-            "percent_min": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.8,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "eau"
         },
         {
-            "difference": 5.4,
+            "difference": 0.125,
             "id": "en:sourdough",
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
-                    "percent_estimate": 9.8,
-                    "percent_max": 30.4,
-                    "percent_min": 2.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.94,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "farine de riz"
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 7.6,
-                    "percent_max": 15.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.94,
+                    "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "eau"
                 }
             ],
-            "percent_estimate": 17.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.9,
             "percent_hidden": 12,
-            "percent_max": 30.4,
-            "percent_min": 4.4,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "levain"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
-            "percent_estimate": 9.7,
-            "percent_max": 23.9,
-            "percent_min": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.94,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "amidon de riz"
         },
         {
-            "difference": 0.0,
+            "difference": 1.43,
             "id": "en:cereal",
             "ingredients": [
                 {
                     "ciqual_food_code": "9555",
-                    "difference": 0.0,
+                    "difference": 1.12,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:millet-flour",
-                    "percent": 2.6,
-                    "percent_estimate": 2.6,
-                    "percent_max": 2.6,
-                    "percent_min": 2.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.48,
+                    "percent_hidden": 2.6,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "text": "farine de millet"
                 },
                 {
                     "ciqual_food_code": "9340",
-                    "difference": 0.0,
+                    "difference": 0.316,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:quinoa-flour",
-                    "percent": 1.8,
-                    "percent_estimate": 1.8,
-                    "percent_max": 1.8,
-                    "percent_min": 1.8,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.48,
+                    "percent_hidden": 1.8,
+                    "percent_max": 10,
+                    "percent_min": 0,
                     "text": "farine de quinoa"
                 }
             ],
-            "percent_estimate": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.97,
             "percent_hidden": 4.4,
-            "percent_max": 4.4,
-            "percent_min": 4.4,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "céreales"
         },
         {
@@ -1157,76 +1102,86 @@
             "ingredients": [
                 {
                     "id": "en:psyllium",
-                    "percent_estimate": 0.45,
-                    "percent_max": 4.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.48,
+                    "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "psyllium"
                 }
             ],
-            "percent_estimate": 0.45,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.48,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "fibre végétale"
         },
         {
             "ciqual_proxy_food_code": "20091",
+            "ecobalyse_code": "beetroot-fr",
             "id": "en:beetroot",
-            "percent_estimate": 0.225,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.742,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "processing": "en:syrup,en:sugared",
             "text": "de betterave à"
         },
         {
             "id": "en:rice-syrup",
-            "percent_estimate": 0.112,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.371,
+            "percent_max": 12.5,
             "percent_min": 0,
             "text": "sirop de riz"
         },
         {
             "id": "fr:huile-de-tourmesol",
-            "percent_estimate": 0.0562,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.186,
+            "percent_max": 11.1111111111111,
             "percent_min": 0,
             "text": "huile de tourmesol"
         },
         {
-            "difference": 2.07,
+            "difference": 2.01,
             "id": "en:soya",
-            "percent_estimate": 0.0281,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0928,
             "percent_hidden": 2.1,
-            "percent_max": 4.4,
+            "percent_max": 10,
             "percent_min": 0,
             "processing": "en:flakes",
             "text": "soja"
         },
         {
-            "difference": 2.09,
+            "difference": 2.05,
             "id": "fr:graines-de-toumesol",
-            "percent_estimate": 0.0141,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0464,
             "percent_hidden": 2.1,
-            "percent_max": 4.4,
+            "percent_max": 9.09090909090909,
             "percent_min": 0,
             "text": "graines de toumesol"
         },
         {
             "ciqual_food_code": "20901",
-            "difference": 1.89,
+            "difference": 1.88,
             "id": "en:soy-bran",
-            "percent_estimate": 0.00703,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0232,
             "percent_hidden": 1.9,
-            "percent_max": 4.4,
+            "percent_max": 8.33333333333333,
             "percent_min": 0,
             "text": "son de soja"
         },
         {
             "ciqual_food_code": "15034",
-            "difference": 1.9,
+            "difference": 1.89,
             "id": "en:flax-seed",
-            "percent_estimate": 0.00352,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0116,
             "percent_hidden": 1.9,
-            "percent_max": 4.4,
+            "percent_max": 7.69230769230769,
             "percent_min": 0,
             "text": "graines de lin"
         },
@@ -1235,14 +1190,16 @@
             "ingredients": [
                 {
                     "id": "en:e464",
-                    "percent_estimate": 0.00176,
-                    "percent_max": 4.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0058,
+                    "percent_max": 7.14285714285714,
                     "percent_min": 0,
                     "text": "hydroxypropylméthylcellulose"
                 }
             ],
-            "percent_estimate": 0.00176,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0058,
+            "percent_max": 7.14285714285714,
             "percent_min": 0,
             "text": "épaississant"
         },
@@ -1250,24 +1207,28 @@
             "ciqual_food_code": "9330",
             "difference": 1.4,
             "id": "en:millet-flakes",
-            "percent_estimate": 0.000879,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0029,
             "percent_hidden": 1.4,
-            "percent_max": 4.4,
+            "percent_max": 6.66666666666667,
             "percent_min": 0,
             "text": "flocons de millet"
         },
         {
             "ciqual_food_code": "20591",
             "id": "en:soy-protein",
-            "percent_estimate": 0.000439,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00145,
+            "percent_max": 6.25,
             "percent_min": 0,
             "text": "protéines de soja"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
-            "percent_estimate": 0.00022,
-            "percent_max": 4.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000725,
+            "percent_max": 5.88235294117647,
             "percent_min": 0,
             "text": "levure"
         },
@@ -1278,7 +1239,8 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 5.49e-05,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000181,
                     "percent_max": 0.91,
                     "percent_min": 0,
                     "text": "sel"
@@ -1286,13 +1248,15 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:potassium-iodide",
-                    "percent_estimate": 5.49e-05,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.000181,
                     "percent_max": 0.455,
                     "percent_min": 0,
                     "text": "iodure de potassium"
                 }
             ],
-            "percent_estimate": 0.00011,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000362,
             "percent_max": 0.91,
             "percent_min": 0,
             "text": "sel iodé"
@@ -1300,14 +1264,16 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
-            "percent_estimate": 5.49e-05,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.000181,
             "percent_max": 0.91,
             "percent_min": 0,
             "text": "miel"
         },
         {
             "id": "fr:sans-ble-le-produit-est-conditionne-sous-atmosphere-protectrice",
-            "percent_estimate": 5.49e-05,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.000181,
             "percent_max": 0.91,
             "percent_min": 0,
             "text": "SANS BLE Le produit est conditionné sous atmosphère protectrice"
@@ -1397,9 +1363,9 @@
         "en:iodine"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.488,
-        "total_difference": 14.7,
+        "number_of_ingredients_without_ciqual_code": 7,
+        "relative_difference": 0.404,
+        "total_difference": 12.2,
         "total_specified_input_percent": 30.2
     },
     "ingredients_n": 28,
@@ -1510,12 +1476,36 @@
         "en:soya",
         "en:thickener",
         "en:vegetable-fiber",
+        "fr:graines-de-toumesol",
+        "fr:huile-de-tourmesol",
+        "fr:sans-ble-le-produit-est-conditionne-sous-atmosphere-protectrice"
+    ],
+    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cereal",
+        "en:corn-starch",
+        "en:e464",
+        "en:flax-seed",
+        "en:honey",
+        "en:iodised-salt",
+        "en:millet-flakes",
+        "en:potassium-iodide",
+        "en:psyllium",
+        "en:rice-starch",
+        "en:rice-syrup",
+        "en:salt",
+        "en:sourdough",
+        "en:soy-bran",
+        "en:soy-protein",
+        "en:soya",
+        "en:thickener",
+        "en:vegetable-fiber",
         "en:yeast",
         "fr:graines-de-toumesol",
         "fr:huile-de-tourmesol",
         "fr:sans-ble-le-produit-est-conditionne-sous-atmosphere-protectrice"
     ],
-    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 48,
@@ -1587,8 +1577,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
-        "en:ecoscore-computed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-computed"
     ],
     "no_nutrition_data": "off",
     "nova_group": 4,
@@ -1903,7 +1892,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             }
         }

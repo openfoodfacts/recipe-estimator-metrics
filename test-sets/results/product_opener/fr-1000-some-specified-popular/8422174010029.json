@@ -227,7 +227,7 @@
                         "epi_score": "77",
                         "origin": "en:spain",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 77,
@@ -659,45 +659,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.194373421859319,
-            "likeliest_impacts": {
-                "Climate_change": 0.109428781084011,
-                "EF_single_score": 0.0135333367192533
-            },
-            "likeliest_recipe": {
-                "en:bell_pepper": 23.2201441070426,
-                "en:cucumber": 18.0486764647899,
-                "en:extra_virgin_olive_oil": 2.12952078039245,
-                "en:garlic": 0.894002266761483,
-                "en:lemon_juice": 0.28019276969861,
-                "en:onion": 17.3644469530949,
-                "en:salt": 1.10154831084886,
-                "en:tomato": 34.3988019949651,
-                "en:water": 1.57206743197987,
-                "en:wine_vinegar": 1.25061166803475
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The impact relative interquartile is high for EF single score (28%)",
-                "The impact relative interquartile is high for Climate change (48%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 90,
     "ecoscore_tags": [
@@ -1599,7 +1560,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20047",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 31.2,
                     "percent_max": 100,
                     "percent_min": 4.16666666666667,
@@ -1607,7 +1570,9 @@
                 },
                 {
                     "ciqual_food_code": "20087",
+                    "ecobalyse_code": "bellpepper-unheated-greehouse",
                     "id": "en:red-bell-pepper",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.5,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1615,7 +1580,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "20019",
+                    "ecobalyse_code": "cucumber-eu",
                     "id": "en:cucumber",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.77,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1623,13 +1590,16 @@
                 },
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.77,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "cebolla"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.3,
             "percent_hidden": 94,
             "percent_max": 100,
@@ -1640,7 +1610,9 @@
         {
             "ciqual_food_code": "17270",
             "difference": 18.6,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20.8,
             "percent_hidden": 2.2,
             "percent_max": 50,
@@ -1650,6 +1622,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:wine-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1658,6 +1631,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.31,
             "percent_max": 0.62,
             "percent_min": 0,
@@ -1666,6 +1640,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.31,
             "percent_max": 0.62,
             "percent_min": 0,
@@ -1674,6 +1649,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.8,
             "percent_max": 0.62,
             "percent_min": 0,
@@ -1870,6 +1846,14 @@
         "en:vegetable"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:garlic",
+        "en:lemon-juice",
+        "en:sea-salt",
+        "en:vegetable",
+        "en:wine-vinegar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
     "labels": "Sin gluten, Sin conservantes, FSC, FSC Mixto, Punto Verde, Sin aditivos, Sin colorantes, Nutriscore, Nutriscore A, en:Fsc-c081801",
@@ -2306,18 +2290,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pure-pak-classic"
+                    "id": {
+                        "id": "en:pure-pak-classic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             },
             "weight_measured": 33
@@ -2325,13 +2315,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 1

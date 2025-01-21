@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -682,36 +682,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0,
-            "likeliest_impacts": {
-                "Climate_change": 0.466188591703091,
-                "EF_single_score": 0.110104590552813
-            },
-            "likeliest_recipe": {
-                "en:coffee": 53.3807828238434,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.4 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": -20,
     "ecoscore_tags": [
@@ -2201,7 +2171,9 @@
         {
             "ciqual_proxy_food_code": "18003",
             "difference": 0,
+            "ecobalyse_code": "coffee-ground",
             "id": "en:coffee",
+            "is_in_taxonomy": 1,
             "percent_estimate": 100,
             "percent_hidden": 100,
             "percent_max": 100,
@@ -2264,6 +2236,8 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [],
+    "ingredients_without_ecobalyse_ids_n": 0,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 1,
@@ -2612,19 +2586,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "200",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             },
             "weight_measured": "433"
@@ -2632,19 +2612,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": "10"
@@ -2652,19 +2638,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             },
             "weight_measured": "1"
@@ -2672,7 +2664,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -673,49 +673,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0355092373332539,
-            "likeliest_impacts": {
-                "Climate_change": 0.0809060733149612,
-                "EF_single_score": 0.0150926324480345
-            },
-            "likeliest_recipe": {
-                "en:buckwheat_flour": 75.7226989463864,
-                "en:ingredients_manufactured_in_a_workshop_using_cereals_containing_gluten": 0.288563360827823,
-                "en:milk": 0.215592552437555,
-                "en:red_cane_sugar": 15.3989986015589,
-                "en:rice_flour": 16.1238644435818,
-                "en:sea_salt": 0.522225509975078,
-                "en:soya": 0,
-                "en:water": 0.525037830040443
-            },
-            "mass_ratio_uncharacterized": 0.0835676524398883,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:ingredients manufactured in a workshop using cereals containing gluten",
-                    "en:red cane sugar"
-                ],
-                "nutrition": [
-                    "en:ingredients manufactured in a workshop using cereals containing gluten",
-                    "en:red cane sugar"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0835676524398883,
-                "nutrition": 0.0835676524398883
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0.285714285714286
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 29%",
-                "The product has a high number of impact uncharacterized ingredients: 29%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 90,
     "ecoscore_tags": [
@@ -2322,7 +2279,9 @@
         {
             "ciqual_food_code": "9540",
             "difference": 12.2,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:buckwheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.4,
             "percent_hidden": 69.6,
             "percent_max": 100,
@@ -2331,7 +2290,9 @@
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.3,
             "percent_max": 50,
             "percent_min": 0,
@@ -2339,6 +2300,7 @@
         },
         {
             "id": "en:red-cane-sugar",
+            "is_in_taxonomy": 0,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2348,6 +2310,7 @@
             "ciqual_food_code": "11082",
             "difference": 0.24,
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.24,
             "percent_hidden": 0.48,
             "percent_max": 0.47999998927116,
@@ -2356,6 +2319,7 @@
         },
         {
             "id": "en:manufactured-in-a-workshop-using-cereals-containing-gluten",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
             "percent_estimate": 0.24,
             "percent_max": 0.47999998927116,
@@ -2364,7 +2328,9 @@
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.24,
             "percent_max": 0.47999998927116,
             "percent_min": 0,
@@ -2372,6 +2338,7 @@
         },
         {
             "id": "en:soya",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.94,
             "percent_max": 0.47999998927116,
             "percent_min": 0,
@@ -2440,7 +2407,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.178,
-        "total_difference": 12.4,
+        "total_difference": 12.5,
         "total_specified_input_percent": 70.1
     },
     "ingredients_n": 7,
@@ -2492,6 +2459,13 @@
         "en:soya"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:manufactured-in-a-workshop-using-cereals-containing-gluten",
+        "en:red-cane-sugar",
+        "en:sea-salt",
+        "en:soya"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 11,
@@ -2916,29 +2890,39 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

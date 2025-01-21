@@ -230,7 +230,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -657,62 +657,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.16804581345986,
-            "likeliest_impacts": {
-                "Climate_change": 0.00326248266498782,
-                "EF_single_score": 0.000859072223553065
-            },
-            "likeliest_recipe": {
-                "en:e296": 0.573391686351926,
-                "en:e300": 0.0859291501940001,
-                "en:e330": 0.705413105000386,
-                "en:e331": 0.100124084151735,
-                "en:e960": 0.0100124084151735,
-                "en:fructose": 1.9476616787454,
-                "en:natural_flavouring": 0.100124084151645,
-                "en:sugar": 7.13830320055762,
-                "en:water": 89.2328393606179,
-                "pl:ekstrakt_z_czarnej_herbaty": 0.120148900982082,
-                "pl:ekstrakt_z_hibiskusa": 0.0100124084151735,
-                "pl:sok_brzoskwiniowy_z_soku_zag_szczonego": 0.100124084151735
-            },
-            "mass_ratio_uncharacterized": 0.0327090671606512,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300",
-                    "en:e331",
-                    "pl:ekstrakt z hibiskusa",
-                    "pl:sok brzoskwiniowy z soku zagęszczonego",
-                    "en:e960",
-                    "pl:ekstrakt z czarnej herbaty",
-                    "en:e330",
-                    "en:natural-flavouring",
-                    "en:e296"
-                ],
-                "nutrition": [
-                    "pl:ekstrakt z czarnej herbaty",
-                    "en:natural-flavouring",
-                    "pl:ekstrakt z hibiskusa",
-                    "pl:sok brzoskwiniowy z soku zagęszczonego"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0327090671606512,
-                "nutrition": 0.00348917174351611
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.75,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 75%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 87,
     "ecoscore_tags": [
@@ -1449,7 +1393,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 75.2,
             "percent_max": 100,
             "percent_min": 50.5,
@@ -1457,7 +1403,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1466,6 +1414,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1476,12 +1425,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.25,
                     "percent_max": 4.5,
                     "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1489,6 +1440,7 @@
         },
         {
             "id": "en:e296",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1498,6 +1450,7 @@
             "ciqual_food_code": "18154",
             "difference": 2.13,
             "id": "en:black-tea-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_hidden": 0.12,
             "percent_max": 4.5,
@@ -1506,7 +1459,9 @@
         },
         {
             "difference": 2.15,
+            "ecobalyse_code": "peach-eu",
             "id": "en:peach",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_hidden": 0.1,
             "percent_max": 4.5,
@@ -1516,6 +1471,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1526,12 +1482,14 @@
             "ingredients": [
                 {
                     "id": "en:e331",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.25,
                     "percent_max": 4.5,
                     "percent_min": 0,
                     "text": "sodium citrates"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1542,12 +1500,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.25,
                     "percent_max": 4.5,
                     "percent_min": 0,
                     "text": "ascorbic acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1556,6 +1516,7 @@
         {
             "difference": 2.24,
             "id": "en:roselle-flower",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_hidden": 0.01,
             "percent_max": 4.5,
@@ -1568,12 +1529,14 @@
             "ingredients": [
                 {
                     "id": "en:glycosides-stewiolowe",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.25,
                     "percent_max": 4.5,
                     "percent_min": 0,
                     "text": "glycosides stewiolowe"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.25,
             "percent_max": 4.5,
             "percent_min": 0,
@@ -1844,6 +1807,22 @@
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:black-tea-extract",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:e331",
+        "en:fructose",
+        "en:glycosides-stewiolowe",
+        "en:natural-flavouring",
+        "en:roselle-flower",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -2311,18 +2290,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "ro:da se recicleaza"
+                    "id": {
+                        "id": "ro:da se recicleaza"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "ro:cilindru"
+                    "id": {
+                        "id": "ro:cilindru"
+                    }
                 }
             }
         }

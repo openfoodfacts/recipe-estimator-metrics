@@ -300,7 +300,7 @@
                         "epi_score": "97",
                         "origin": "en:switzerland",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 97,
@@ -731,61 +731,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.190164108476983,
-            "likeliest_impacts": {
-                "Climate_change": 0.769615515819259,
-                "EF_single_score": 0.0670539399551484
-            },
-            "likeliest_recipe": {
-                "en:acidity_regulator": 0.0674183415144921,
-                "en:almond": 7.44743735292651,
-                "en:apple": 2.2342264477721,
-                "en:butterfat": 7.38169534356928,
-                "en:cocoa_butter": 7.38169534356928,
-                "en:cocoa_paste": 15.7753289419956,
-                "en:flavouring": 6.7598254807977,
-                "en:gelling_agent": 0.0674183415144921,
-                "en:orange": 2.53212869999501,
-                "en:pineapple_fibre": 0.131107349589483,
-                "en:soya_lecithin": 7.23074251552479,
-                "en:stabiliser": 0.0674183415144921,
-                "en:sugar": 44.3386408603289,
-                "en:water": 4.97687882405228
-            },
-            "mass_ratio_uncharacterized": 0.0955751473187648,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:butterfat",
-                    "en:flavouring",
-                    "en:stabiliser",
-                    "en:acidity-regulator",
-                    "en:gelling-agent"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "en:stabiliser",
-                    "en:acidity-regulator"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0955751473187648,
-                "nutrition": 0.0362311477010773
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.266666666666667
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 27%",
-                "The product has a high number of impact uncharacterized ingredients: 40%",
-                "The impact relative interquartile is high for EF single score (36%)",
-                "The impact relative interquartile is high for Climate change (52%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 77,
     "ecoscore_tags": [
@@ -2422,7 +2367,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_max": 100,
             "percent_min": 7.69230769230769,
@@ -2431,6 +2378,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_max": 50,
             "percent_min": 0,
@@ -2438,8 +2386,9 @@
         },
         {
             "ciqual_food_code": "15041",
-            "difference": 4.5,
+            "difference": 4.54,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_hidden": 7,
             "percent_max": 33.3333333333333,
@@ -2449,6 +2398,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.77,
             "percent_max": 25,
             "percent_min": 0,
@@ -2457,7 +2407,9 @@
         {
             "ciqual_food_code": "2012",
             "difference": 1.02,
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.88,
             "percent_hidden": 3.9,
             "percent_max": 20,
@@ -2467,6 +2419,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.44,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2474,6 +2427,7 @@
         },
         {
             "id": "en:invert-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.721,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2482,6 +2436,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.361,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2493,19 +2448,23 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.18,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "soya lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.18,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
             "text": "emulsifier"
         },
         {
+            "ecobalyse_code": "pineapple-non-eu",
             "id": "en:pineapple",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0901,
             "percent_max": 10,
             "percent_min": 0,
@@ -2516,12 +2475,14 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0451,
                     "percent_max": 9.09090909090909,
                     "percent_min": 0,
                     "text": "pectin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0451,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2529,8 +2490,9 @@
         },
         {
             "id": "en:natural-orange-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0225,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "natural orange flavouring"
         },
@@ -2539,14 +2501,16 @@
             "ingredients": [
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0225,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "vanillin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0225,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "artificial flavouring"
         }
@@ -2788,8 +2752,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.506,
-        "total_difference": 5.52,
+        "relative_difference": 0.51,
+        "total_difference": 5.55,
         "total_specified_input_percent": 10.9
     },
     "ingredients_n": 16,
@@ -2910,6 +2874,22 @@
         "en:vanillin"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:artificial-flavouring",
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e440a",
+        "en:emulsifier",
+        "en:gelling-agent",
+        "en:invert-sugar",
+        "en:lemon-juice-from-concentrate",
+        "en:natural-orange-flavouring",
+        "en:soya-lecithin",
+        "en:vanillin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 38,
     "labels": "Green Dot, Made in Swiss, Natural flavors, Artificial flavors, Lindt & Sprüngli Cocoa Farming Program",
@@ -3439,36 +3419,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": "en:paperboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         }

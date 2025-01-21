@@ -234,7 +234,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -676,58 +676,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.196442542998189,
-            "likeliest_impacts": {
-                "Climate_change": 0.164427404772819,
-                "EF_single_score": 0.0277641444692872
-            },
-            "likeliest_recipe": {
-                "en:colza_oil": 22.6235328022166,
-                "en:e420": 4.36989703287243,
-                "en:e450": 4.23746730234462,
-                "en:e471": 2.10401485594885,
-                "en:e500": 4.23746730234478,
-                "en:milk_proteins": 4.36989703287227,
-                "en:salt": 1.97414018115052,
-                "en:skimmed_milk_powder": 4.32109430378646,
-                "en:sugar": 22.6235328022166,
-                "en:water": 0.829598888931563,
-                "en:wheat_flour": 23.2262227303386,
-                "en:whole_egg": 4.36989703287227,
-                "fr:contient_alcool__lt": 0.398742017140143
-            },
-            "mass_ratio_uncharacterized": 0.145422167838695,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e420",
-                    "en:e500",
-                    "en:milk-proteins",
-                    "fr:contient alcool &lt",
-                    "en:e450",
-                    "en:e471"
-                ],
-                "nutrition": [
-                    "fr:contient alcool &lt"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.145422167838695,
-                "nutrition": 0.0040000000031182
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%",
-                "The impact relative interquartile is high for Climate change (32%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 52,
     "ecoscore_tags": [
@@ -1475,38 +1423,46 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 25.7,
+            "difference": 28.1,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 53.2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 55.6,
             "percent_hidden": 27.5,
-            "percent_max": 95.2,
+            "percent_max": 100,
             "percent_min": 11.1111111111111,
             "text": "Farine de blé"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 13.3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.0,
             "percent_max": 26,
-            "percent_min": 0.6,
+            "percent_min": 0,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 13.3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.0,
             "percent_max": 26,
-            "percent_min": 0.6,
+            "percent_min": 0,
             "text": "Huile de colza"
         },
         {
             "ciqual_food_code": "22000",
-            "difference": 10.6,
+            "difference": 11.8,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:whole-egg",
-            "percent_estimate": 10.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.22,
             "percent_hidden": 21,
-            "percent_max": 24.25,
-            "percent_min": 0.6,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "Oeufs entiers"
         },
         {
@@ -1514,38 +1470,44 @@
             "ingredients": [
                 {
                     "id": "en:e336",
-                    "percent_estimate": 5.21,
-                    "percent_max": 19.52,
-                    "percent_min": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.61,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "text": "tartrates de potassium"
                 }
             ],
-            "percent_estimate": 5.21,
-            "percent_max": 19.52,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 4.61,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "Poudres à lever"
         },
         {
             "id": "en:e500",
-            "percent_estimate": 2.61,
-            "percent_max": 16.3666666666667,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.31,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "carbonates de sodium"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 1.3,
-            "percent_max": 14.1142857142857,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.15,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "Poudre de lait écrémé"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.651,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.465,
             "percent_max": 0.93,
-            "percent_min": 0.6,
+            "percent_min": 0,
             "text": "Sel"
         },
         {
@@ -1553,18 +1515,20 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "1014",
-                    "difference": 0.549,
+                    "difference": 0.0878,
                     "id": "en:alcohol",
-                    "percent": 0.6,
-                    "percent_estimate": 0.0514,
-                    "percent_max": 0.6,
-                    "percent_min": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.688,
+                    "percent_hidden": 0.6,
+                    "percent_max": 0.93,
+                    "percent_min": 0,
                     "text": "contient alcool"
                 }
             ],
-            "percent_estimate": 0.0514,
-            "percent_max": 0.6,
-            "percent_min": 0.6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.688,
+            "percent_max": 0.93,
+            "percent_min": 0,
             "text": "Arôme naturel de vanille"
         }
     ],
@@ -1773,8 +1737,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.75,
-        "total_difference": 36.8,
+        "relative_difference": 0.813,
+        "total_difference": 39.9,
         "total_specified_input_percent": 49.1
     },
     "ingredients_n": 11,
@@ -1848,6 +1812,15 @@
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol",
+        "en:e336",
+        "en:e500",
+        "en:natural-vanilla-flavouring",
+        "en:raising-agent",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1941,8 +1914,7 @@
         "en:ecoscore-missing-data-warning",
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2315,7 +2287,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2324,48 +2298,64 @@
             "quantity_per_unit_value": 500,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:backing"
+                    "id": {
+                        "id": "en:backing"
+                    }
                 }
             },
             "weight_measured": 12

@@ -205,7 +205,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -643,47 +643,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0269280848403152,
-            "likeliest_impacts": {
-                "Climate_change": 0.252140682735379,
-                "EF_single_score": 0.0215521869702369
-            },
-            "likeliest_recipe": {
-                "en:cream": 46.9812638451093,
-                "en:lactic_ferments": 5.07689243508213,
-                "en:milk_mineral_concentrate": 5.16178011974884,
-                "en:milk_proteins": 5.45776141138214,
-                "en:salt": 0.696561717768176,
-                "en:water": 5.62947174341372,
-                "fr:lait_frais_pasteurise": 77.8127182434624
-            },
-            "mass_ratio_uncharacterized": 0.0669633137600643,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lactic-ferments",
-                    "en:milk-proteins",
-                    "en:milk-mineral-concentrate"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0669633137600643,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.428571428571429,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 43%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 46,
     "ecoscore_tags": [
@@ -1224,8 +1183,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19051",
-            "difference": 4.1,
+            "difference": 4.14,
+            "ecobalyse_code": "milk",
             "id": "bg:свежо-пастьоризирано-мляко",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 57.1,
             "percent_hidden": 53,
@@ -1237,6 +1198,7 @@
             "ciqual_food_code": "19402",
             "difference": 10.6,
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 21.4,
             "percent_hidden": 32,
@@ -1246,7 +1208,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1254,6 +1218,7 @@
         },
         {
             "id": "en:milk-mineral-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.36,
             "percent_max": 25,
             "percent_min": 0,
@@ -1261,6 +1226,7 @@
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.68,
             "percent_max": 20,
             "percent_min": 0,
@@ -1268,6 +1234,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.34,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1276,6 +1243,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.34,
             "percent_max": 1.3,
             "percent_min": 0,
@@ -1371,6 +1339,14 @@
         "en:milk-proteins"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cream",
+        "en:lactic-ferments",
+        "en:milk-mineral-concentrate",
+        "en:milk-proteins",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -1830,49 +1806,65 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": "24",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": "24",
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         }

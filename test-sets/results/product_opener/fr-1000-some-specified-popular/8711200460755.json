@@ -226,7 +226,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -483,32 +483,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.051959436290105,
-            "likeliest_impacts": {
-                "Climate_change": 0.0209629859098752,
-                "EF_single_score": 0.00652969726823065
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 37.3463595151643,
-                "en:allspice": 0.214296932532436,
-                "en:black_pepper": 0.160800218923773,
-                "en:coriander_seed": 0.214296932532436,
-                "en:mustard_seed": 1.09167054535061,
-                "en:natural_flavouring": 0.266327864401739,
-                "en:natural_tarragon_flavouring": 1.02727444404964,
-                "en:onion": 7.98046973419659,
-                "en:red_bell_pepper": 0.214296932532436,
-                "en:salt": 2.45790631452499,
-                "en:sulfite": 37.3723144558544,
-                "en:water": 3.42938805319735,
-                "en:white_wine_vinegar": 7.98046973419659
-            },
-            "mass_ratio_uncharacterized": 0.591118969151648
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1047,12 +1021,14 @@
             "ingredients": [
                 {
                     "id": "en:sulfite",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 57.1,
                     "percent_max": 100,
                     "percent_min": 14.2857142857143,
                     "text": "including sulphites"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -1061,6 +1037,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:spirit-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.4,
             "percent_max": 50,
             "percent_min": 0,
@@ -1068,8 +1045,10 @@
         },
         {
             "ciqual_food_code": "20034",
-            "difference": 2.7,
+            "difference": 2.71,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_hidden": 8,
             "percent_max": 33.3333333333333,
@@ -1079,6 +1058,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:white-wine-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.36,
             "percent_max": 25,
             "percent_min": 0,
@@ -1087,6 +1067,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.95,
             "percent_max": 1.9,
             "percent_min": 0,
@@ -1099,6 +1080,7 @@
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.475,
                     "percent_max": 1.9,
                     "percent_min": 0,
@@ -1106,7 +1088,9 @@
                 },
                 {
                     "ciqual_food_code": "20087",
+                    "ecobalyse_code": "bellpepper-unheated-greehouse",
                     "id": "en:red-bell-pepper",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.237,
                     "percent_max": 0.95,
                     "percent_min": 0,
@@ -1114,6 +1098,7 @@
                 },
                 {
                     "id": "en:rehydrated",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.119,
                     "percent_max": 0.633333333333333,
                     "percent_min": 0,
@@ -1122,6 +1107,7 @@
                 {
                     "ciqual_food_code": "11026",
                     "id": "en:coriander-seed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0594,
                     "percent_max": 0.475,
                     "percent_min": 0,
@@ -1130,6 +1116,7 @@
                 {
                     "ciqual_food_code": "20151",
                     "id": "en:allspice",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0297,
                     "percent_max": 0.38,
                     "percent_min": 0,
@@ -1137,13 +1124,16 @@
                 },
                 {
                     "ciqual_food_code": "11015",
+                    "ecobalyse_code": "black-pepper",
                     "id": "en:black-pepper",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0297,
                     "percent_max": 0.316666666666667,
                     "percent_min": 0,
                     "text": "black pepper"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.95,
             "percent_hidden": 1.9,
             "percent_max": 1.9,
@@ -1152,6 +1142,7 @@
         },
         {
             "id": "en:natural-flavor-of-tarragon-with-other-natural-flavourings",
+            "is_in_taxonomy": 0,
             "percent_estimate": 3.46,
             "percent_max": 1.9,
             "percent_min": 0,
@@ -1302,8 +1293,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.369,
-        "total_difference": 3.65,
+        "relative_difference": 0.37,
+        "total_difference": 3.66,
         "total_specified_input_percent": 9.9
     },
     "ingredients_n": 14,
@@ -1380,6 +1371,20 @@
         "en:sulfite"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:allspice",
+        "en:coriander-seed",
+        "en:mustard-seed",
+        "en:natural-flavor-of-tarragon-with-other-natural-flavourings",
+        "en:pickles",
+        "en:rehydrated",
+        "en:salt",
+        "en:spice",
+        "en:spirit-vinegar",
+        "en:sulfite",
+        "en:white-wine-vinegar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -1819,21 +1824,27 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": "en:wrapper"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

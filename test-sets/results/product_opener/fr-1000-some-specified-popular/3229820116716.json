@@ -239,7 +239,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -666,32 +666,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0364135636849372,
-            "likeliest_impacts": {
-                "Climate_change": 0.0868871941270542,
-                "EF_single_score": 0.0211528708984144
-            },
-            "likeliest_recipe": {
-                "en:apple": 5.25145179412504,
-                "en:banana": 1.60135363524251,
-                "en:barley_flakes": 11.6698928758334,
-                "en:coconut": 1.75048393137501,
-                "en:coconut_oil": 0.526734293804021,
-                "en:grape": 12.1582043642751,
-                "en:oat_flakes": 58.3494643791671,
-                "en:rye_flakes": 6.41844108170838,
-                "en:sunflower_oil": 0.0951831553500236,
-                "en:unrefined_cane_sugar": 1.37287993370348,
-                "en:water": 0,
-                "en:wheat": 11.6698928758334,
-                "fr:petales_de_ble": 5.83494643791671
-            },
-            "mass_ratio_uncharacterized": 0.158752167048521
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2465,6 +2439,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_max": 100,
             "percent_min": 11.1111111111111,
@@ -2478,6 +2453,7 @@
                 {
                     "ciqual_food_code": "13112",
                     "id": "en:grape",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.1,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -2485,13 +2461,16 @@
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.1,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "huile de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_hidden": 10.5,
             "percent_max": 50,
@@ -2500,6 +2479,7 @@
         },
         {
             "id": "en:barley-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2511,12 +2491,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.56,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.56,
             "percent_max": 25,
             "percent_min": 0,
@@ -2525,6 +2507,7 @@
         {
             "ciqual_food_code": "9390",
             "id": "en:rye-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.78,
             "percent_max": 20,
             "percent_min": 0,
@@ -2533,6 +2516,7 @@
         {
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.39,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2541,7 +2525,9 @@
         {
             "ciqual_food_code": "13050",
             "difference": 3.31,
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.694,
             "percent_hidden": 4,
             "percent_max": 14.2857142857143,
@@ -2552,11 +2538,14 @@
         {
             "ciqual_food_code": "13005",
             "difference": 3.15,
+            "ecobalyse_code": "banana-non-eu",
             "id": "en:banana",
             "ingredients": [
                 {
                     "ciqual_food_code": "13005",
+                    "ecobalyse_code": "banana-non-eu",
                     "id": "en:banana",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.174,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -2564,7 +2553,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:unrefined-cane-sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0868,
                     "percent_max": 6.25,
                     "percent_min": 0,
@@ -2573,12 +2564,14 @@
                 {
                     "ciqual_food_code": "16040",
                     "id": "en:coconut-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0868,
                     "percent_max": 4.16666666666667,
                     "percent_min": 0,
                     "text": "huile de coco"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_hidden": 3.5,
             "percent_max": 12.5,
@@ -2590,6 +2583,7 @@
             "ciqual_proxy_food_code": "15006",
             "difference": 1.15,
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_hidden": 1.5,
             "percent_max": 11.1111111111111,
@@ -2782,7 +2776,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.99,
+        "relative_difference": 0.991,
         "total_difference": 19.3,
         "total_specified_input_percent": 19.5
     },
@@ -2863,6 +2857,18 @@
         "fr:flocons-d-epautre"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-flakes",
+        "en:coconut",
+        "en:coconut-oil",
+        "en:grape",
+        "en:oat-flakes",
+        "en:rye-flakes",
+        "en:wheat",
+        "en:wheat-flakes",
+        "fr:flocons-d-epautre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,
@@ -3302,12 +3308,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

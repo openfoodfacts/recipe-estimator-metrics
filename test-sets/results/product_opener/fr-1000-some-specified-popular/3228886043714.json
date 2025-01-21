@@ -266,7 +266,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -705,62 +705,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.206881959745446,
-            "likeliest_impacts": {
-                "Climate_change": 0.00137028240344139,
-                "EF_single_score": 0.000332929745868672
-            },
-            "likeliest_recipe": {
-                "en:e296": 0.334745889031031,
-                "en:e300": 0.0111989931768245,
-                "en:e330": 1.27866353781831,
-                "en:e960": 0.0111989931768179,
-                "en:flavouring": 0.0111989931768144,
-                "en:fructose": 1.61340942684934,
-                "en:peach": 0.100015320417797,
-                "en:sodium_citrate": 0.100015320417797,
-                "en:sugar": 1.62912619825885,
-                "en:water": 93.7255639004598,
-                "fr:Plus_d_informations_sur_ra_org": 0,
-                "fr:____V_rifi__Rainforest_Alliance": 0,
-                "fr:extrait_de_th__noir___": 1.20018384501356
-            },
-            "mass_ratio_uncharacterized": 0.0316677350323828,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:⁽¹⁾ Vérifié Rainforest Alliance",
-                    "en:e300",
-                    "en:e960",
-                    "fr:extrait de thé noir⁽¹⁾",
-                    "en:flavouring",
-                    "fr:Plus d'informations sur ra.org",
-                    "en:e330",
-                    "en:e296"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "fr:Plus d'informations sur ra.org",
-                    "fr:⁽¹⁾ Vérifié Rainforest Alliance",
-                    "fr:extrait de thé noir⁽¹⁾"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0316677350323828,
-                "nutrition": 0.013895319777002
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.615384615384615,
-                "nutrition": 0.307692307692308
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 31%",
-                "The product has a high number of impact uncharacterized ingredients: 62%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1828,7 +1772,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 82,
             "percent_max": 100,
             "percent_min": 64,
@@ -1836,7 +1782,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1845,6 +1793,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1855,6 +1804,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.75,
                     "percent_max": 3,
                     "percent_min": 0,
@@ -1862,12 +1812,14 @@
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.75,
                     "percent_max": 1.5,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1876,6 +1828,7 @@
         {
             "difference": 1.38,
             "id": "fr:extrait-de-the-noir⁽-⁾",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_hidden": 0.12,
             "percent_max": 3,
@@ -1884,7 +1837,9 @@
         },
         {
             "difference": 1.4,
+            "ecobalyse_code": "peach-eu",
             "id": "en:peach",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_hidden": 0.1,
             "percent_max": 3,
@@ -1897,12 +1852,14 @@
             "ingredients": [
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "citrate trisodique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1910,6 +1867,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1920,12 +1878,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1936,12 +1896,14 @@
             "ingredients": [
                 {
                     "id": "en:e960a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.5,
                     "percent_max": 3,
                     "percent_min": 0,
                     "text": "Glycosides de stéviol issus de Stevia"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1949,6 +1911,7 @@
         },
         {
             "id": "fr:⁽-⁾-certifie-rainforest-alliance",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1956,6 +1919,7 @@
         },
         {
             "id": "fr:plus-d-informations-sur-ra-org",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -1963,6 +1927,7 @@
         },
         {
             "id": "fr:people-and-nature-l-humain-et-la-nature",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.5,
             "percent_max": 3,
             "percent_min": 0,
@@ -2253,6 +2218,24 @@
         "fr:⁽-⁾-certifie-rainforest-alliance"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:e960a",
+        "en:flavouring",
+        "en:fructose",
+        "en:sodium-citrate",
+        "en:sweetener",
+        "fr:extrait-de-the-noir⁽-⁾",
+        "fr:people-and-nature-l-humain-et-la-nature",
+        "fr:plus-d-informations-sur-ra-org",
+        "fr:⁽-⁾-certifie-rainforest-alliance"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2715,7 +2698,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2724,12 +2709,16 @@
             "quantity_per_unit_value": "500",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             },
             "weight_measured": 22.6
@@ -2737,18 +2726,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": "en:hdpe-2-high-density-polyethylene"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 2.77

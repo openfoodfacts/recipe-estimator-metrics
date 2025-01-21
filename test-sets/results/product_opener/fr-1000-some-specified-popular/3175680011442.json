@@ -299,7 +299,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -727,77 +727,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.048377632980646,
-            "likeliest_impacts": {
-                "Climate_change": 0.0731205086361797,
-                "EF_single_score": 0.0131290416945865
-            },
-            "likeliest_recipe": {
-                "en:calcium": 0.553332399208204,
-                "en:colza_oil": 7.05823428762891,
-                "en:e330": 0.0768816236956831,
-                "en:e375": 0.107617006707213,
-                "en:e500": 0.0730162520303664,
-                "en:e503": 0.0730162520303664,
-                "en:folic_acid": 0.107617006707204,
-                "en:lactose": 0.0538085033536064,
-                "en:magnesium": 0.578517665500071,
-                "en:milk_proteins": 0.276722631110022,
-                "en:natural_orange_flavouring": 0.222914127756416,
-                "en:oat_fibre": 0.553332399208209,
-                "en:orange": 1.50814953553121,
-                "en:pantothenic_acid": 0.162051246026138,
-                "en:rapeseed_lecithin": 0.553332399208209,
-                "en:sea_salt": 0.278253172624343,
-                "en:soya": 7.03803116581232,
-                "en:starch": 0.553332399208209,
-                "en:sugar": 0.553332399208209,
-                "en:thiamin": 0.162051246026138,
-                "en:unrefined_cane_sugar": 16.064352474997,
-                "en:vitamin_b6": 0.107617006707213,
-                "en:vitamins": 0.162051246026154,
-                "en:water": 0,
-                "en:wheat_flour": 58.114028769136,
-                "en:wheat_germ": 5.32879502554361,
-                "en:wheat_starch": 0.222914127756416
-            },
-            "mass_ratio_uncharacterized": 0.0507136840496067,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lactose",
-                    "en:calcium",
-                    "en:vitamins",
-                    "en:e330",
-                    "en:wheat-starch",
-                    "en:vitamin-b6",
-                    "en:magnesium",
-                    "en:folic-acid",
-                    "en:pantothenic-acid",
-                    "en:thiamin",
-                    "en:e375",
-                    "en:e500",
-                    "en:e503",
-                    "en:milk-proteins"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0507136840496067,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.555555555555556,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 56%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 64,
     "ecoscore_tags": [
@@ -1932,8 +1861,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 6.0,
+            "difference": 6.01,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 51.8,
             "percent_hidden": 57.8,
             "percent_max": 100,
@@ -1942,21 +1873,26 @@
         },
         {
             "id": "en:red-cane-sugar",
+            "is_in_taxonomy": 0,
             "percent_estimate": 24.1,
             "percent_max": 50,
             "percent_min": 0,
             "text": "red cane sugar"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 12.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "rapeseed oil"
         },
         {
-            "difference": 0.97,
+            "difference": 0.973,
             "id": "en:soya",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.03,
             "percent_hidden": 7,
             "percent_max": 25,
@@ -1968,6 +1904,7 @@
             "ciqual_food_code": "9660",
             "difference": 2.29,
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.01,
             "percent_hidden": 5.3,
             "percent_max": 20,
@@ -1976,8 +1913,10 @@
         },
         {
             "ciqual_proxy_food_code": "13034",
-            "difference": 0.01,
+            "difference": 0.0067,
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.51,
             "percent_hidden": 1.5,
             "percent_max": 16.6666666666667,
@@ -1987,6 +1926,7 @@
         },
         {
             "id": "en:magnesium",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.753,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1997,12 +1937,14 @@
             "ingredients": [
                 {
                     "id": "en:rapeseed-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.377,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "rapeseed lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.377,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2010,7 +1952,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.188,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2018,6 +1962,7 @@
         },
         {
             "id": "en:calcium",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0942,
             "percent_max": 10,
             "percent_min": 0,
@@ -2026,13 +1971,16 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0471,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
             "text": "starch"
         },
         {
-            "id": "en:oat-fiber",
+            "ciqual_food_code": "9310",
+            "id": "en:oat-fibre",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0235,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -2041,6 +1989,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0118,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2051,6 +2000,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00294,
                     "percent_max": 0.36,
                     "percent_min": 0,
@@ -2058,6 +2008,7 @@
                 },
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00147,
                     "percent_max": 0.18,
                     "percent_min": 0,
@@ -2065,12 +2016,14 @@
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00147,
                     "percent_max": 0.12,
                     "percent_min": 0,
                     "text": "ammonium carbonates"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.00589,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2078,6 +2031,7 @@
         },
         {
             "id": "en:natural-orange-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00294,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2085,6 +2039,7 @@
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00147,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2093,6 +2048,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000736,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2100,6 +2056,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000368,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2107,6 +2064,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000184,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2114,6 +2072,7 @@
         },
         {
             "id": "en:pantothenic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.2e-05,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2121,6 +2080,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.6e-05,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2128,6 +2088,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.3e-05,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2135,6 +2096,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.15e-05,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2145,6 +2107,7 @@
             "ingredients": [
                 {
                     "id": "en:lactose",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.87e-06,
                     "percent_max": 0.36,
                     "percent_min": 0,
@@ -2152,12 +2115,14 @@
                 },
                 {
                     "id": "en:milk-proteins",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.87e-06,
                     "percent_max": 0.18,
                     "percent_min": 0,
                     "text": "milk proteins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.75e-06,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2165,6 +2130,7 @@
         },
         {
             "id": "en:made-in-a-workshop-that-uses-nuts",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.87e-06,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2173,6 +2139,7 @@
         {
             "ciqual_food_code": "20534",
             "id": "en:lupin-bean",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.44e-06,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2181,6 +2148,7 @@
         {
             "ciqual_food_code": "15010",
             "id": "en:sesame",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.18e-07,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2188,7 +2156,9 @@
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.18e-07,
             "percent_max": 0.36,
             "percent_min": 0,
@@ -2501,9 +2471,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 21,
-        "relative_difference": 0.129,
-        "total_difference": 9.27,
+        "number_of_ingredients_without_ciqual_code": 19,
+        "relative_difference": 0.13,
+        "total_difference": 9.28,
         "total_specified_input_percent": 71.6
     },
     "ingredients_n": 34,
@@ -2634,10 +2604,8 @@
         "en:magnesium",
         "en:milk-proteins",
         "en:natural-orange-flavouring",
-        "en:oat-fiber",
         "en:pantothenic-acid",
         "en:rapeseed-lecithin",
-        "en:rapeseed-oil",
         "en:red-cane-sugar",
         "en:soya",
         "en:thiamin",
@@ -2646,7 +2614,38 @@
         "en:vitamin-e",
         "en:vitamins"
     ],
-    "ingredients_without_ciqual_codes_n": 23,
+    "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ecobalyse_ids": [
+        "en:calcium",
+        "en:e330",
+        "en:e375",
+        "en:e500",
+        "en:e503",
+        "en:emulsifier",
+        "en:folic-acid",
+        "en:lactose",
+        "en:lupin-bean",
+        "en:made-in-a-workshop-that-uses-nuts",
+        "en:magnesium",
+        "en:milk-proteins",
+        "en:natural-orange-flavouring",
+        "en:oat-fibre",
+        "en:pantothenic-acid",
+        "en:rapeseed-lecithin",
+        "en:red-cane-sugar",
+        "en:sea-salt",
+        "en:sesame",
+        "en:soya",
+        "en:starch",
+        "en:thiamin",
+        "en:uptake-powders",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "en:vitamins",
+        "en:wheat-germ",
+        "en:wheat-starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 28,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 55,
@@ -3189,19 +3188,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

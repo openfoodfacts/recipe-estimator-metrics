@@ -227,7 +227,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -651,63 +651,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.123624357888201,
-            "likeliest_impacts": {
-                "Climate_change": 1.10266943208622,
-                "EF_single_score": 0.0864235034180845
-            },
-            "likeliest_recipe": {
-                "en:almond": 3.90765560736926,
-                "en:butter_milk_concentrate": 4.97227485372739,
-                "en:cocoa_butter": 4.97227485372739,
-                "en:cocoa_paste": 21.330038446023,
-                "en:flavouring": 3.90417306233893,
-                "en:hazelnut": 7.66431217403466,
-                "en:lactose": 1.84511015290216,
-                "en:malt_extract_of_barley": 1.80578267023423,
-                "en:milk_powder": 4.0369410894123,
-                "en:skimmed_milk_powder": 1.80578267023423,
-                "en:soya_lecithin": 3.58151553841423,
-                "en:sugar": 28.4470848946162,
-                "en:vegetable_fat_of_palm": 10.8939339324916,
-                "en:water": 0.278617129021381
-            },
-            "mass_ratio_uncharacterized": 0.182806566678955,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:butter milk concentrate",
-                    "en:malt extract of barley",
-                    "en:flavouring",
-                    "en:vegetable fat of palm",
-                    "en:lactose"
-                ],
-                "nutrition": [
-                    "en:butter milk concentrate",
-                    "en:flavouring",
-                    "en:vegetable fat of palm",
-                    "en:malt extract of barley"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.182806566678955,
-                "nutrition": 0.16336674069157
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.266666666666667
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 27%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 16%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%",
-                "The impact relative interquartile is high for Climate change (25%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 27,
     "ecoscore_tags": [
@@ -1459,7 +1402,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_max": 100,
             "percent_min": 7.14285714285714,
@@ -1468,6 +1413,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1475,8 +1421,9 @@
         },
         {
             "ciqual_food_code": "15041",
-            "difference": 0.6,
+            "difference": 0.607,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_hidden": 11,
             "percent_max": 33.3333333333333,
@@ -1484,13 +1431,14 @@
             "text": "almond"
         },
         {
-            "ciqual_food_code": "15004",
             "difference": 5.2,
             "id": "en:hazelnut-praline",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.9,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1499,6 +1447,7 @@
                 {
                     "ciqual_food_code": "15041",
                     "id": "en:almond",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.45,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1506,13 +1455,16 @@
                 },
                 {
                     "ciqual_food_code": "15004",
+                    "ecobalyse_code": "hazelnut-unshelled-non-eu",
                     "id": "en:hazelnut",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.45,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "hazelnuts"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_hidden": 11,
             "percent_max": 25,
@@ -1521,6 +1473,7 @@
         },
         {
             "id": "en:palm-vegetable-fat",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.9,
             "percent_max": 20,
             "percent_min": 0,
@@ -1529,7 +1482,9 @@
         {
             "ciqual_food_code": "15004",
             "difference": 3.55,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_hidden": 5,
             "percent_max": 16.6666666666667,
@@ -1539,6 +1494,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1546,6 +1502,7 @@
         },
         {
             "id": "en:concentrated-dairy-butter",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.363,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1553,7 +1510,9 @@
         },
         {
             "ciqual_proxy_food_code": "19044",
+            "ecobalyse_code": "milk-powder",
             "id": "en:milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1561,8 +1520,9 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "flavors"
         },
@@ -1572,36 +1532,42 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0453,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "emulsifier"
         },
         {
             "id": "en:lactose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "lactose"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "skim milk powder"
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "barley malt extract"
         }
@@ -1855,10 +1821,25 @@
         "en:concentrated-dairy-butter",
         "en:emulsifier",
         "en:flavouring",
+        "en:hazelnut-praline",
         "en:lactose",
         "en:palm-vegetable-fat"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:barley-malt-extract",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:concentrated-dairy-butter",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:hazelnut-praline",
+        "en:lactose",
+        "en:palm-vegetable-fat",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -2299,12 +2280,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

@@ -218,7 +218,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -462,43 +462,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0456526085694973,
-            "likeliest_impacts": {
-                "Climate_change": 0.163739862688973,
-                "EF_single_score": 0.0489888921149927
-            },
-            "likeliest_recipe": {
-                "en:cranberry": 10.9282974442763,
-                "en:e220": 0.15106713631864,
-                "en:raisin": 34.3551462717813,
-                "en:sugar": 8.71985621071883,
-                "en:sunflower_oil": 2.79569513741956,
-                "en:walnut_kernel": 44.3658453222136,
-                "en:water": 1.24690602881544
-            },
-            "mass_ratio_uncharacterized": 0.0158959025236158,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e220"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0158959025236158,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentages were not used for estimating the impact."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1743,89 +1706,102 @@
     "ingredients": [
         {
             "ciqual_food_code": "15023",
-            "difference": 0.2,
+            "difference": 37.5,
+            "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
-            "percent_estimate": 25.2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 62.5,
             "percent_hidden": 25,
-            "percent_max": 25.4,
+            "percent_max": 100,
             "percent_min": 25,
             "text": "walnuts"
         },
         {
             "ciqual_food_code": "15041",
-            "difference": 0.0,
+            "difference": 6.25,
             "id": "en:almond",
-            "percent_estimate": 25.0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 18.8,
             "percent_hidden": 25,
-            "percent_max": 25.15,
-            "percent_min": 24.9,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "almonds"
         },
         {
-            "difference": 0.0,
+            "difference": 15.6,
             "id": "en:sultanas-raisins",
             "ingredients": [
                 {
-                    "difference": 0.0,
+                    "difference": 20.2,
                     "id": "en:sultanas-raisins",
-                    "percent": 24.9,
-                    "percent_estimate": 24.9,
-                    "percent_max": 24.9,
-                    "percent_min": 24.9,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 4.69,
+                    "percent_hidden": 24.9,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "sultanas raisins"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
-                    "percent_estimate": 0.0833,
-                    "percent_max": 0.166666666666668,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.69,
+                    "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "sunflower oil"
                 }
             ],
-            "percent_estimate": 25.0,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 9.38,
             "percent_hidden": 25,
-            "percent_max": 25.0666666666667,
-            "percent_min": 24.9,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "sultanas raisins"
         },
         {
-            "difference": 0.2,
+            "difference": 15.6,
             "id": "en:cranberry-preparation",
             "ingredients": [
                 {
                     "ciqual_food_code": "13113",
-                    "difference": 0,
+                    "difference": 10.3,
                     "id": "en:cranberry",
-                    "percent": 15,
-                    "percent_estimate": 15,
-                    "percent_max": 15,
-                    "percent_min": 15,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.69,
+                    "percent_hidden": 15,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "cranberries"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
-                    "difference": 0.01,
+                    "difference": 7.46,
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent": 9.8,
-                    "percent_estimate": 9.79,
-                    "percent_max": 9.8,
-                    "percent_min": 9.8,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.34,
+                    "percent_hidden": 9.8,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "sugar"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
-                    "percent_estimate": 0,
-                    "percent_max": 0.199999999999999,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.34,
+                    "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "sunflower oil"
                 }
             ],
-            "percent_estimate": 24.8,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 9.38,
             "percent_hidden": 25,
             "percent_max": 25,
-            "percent_min": 24.8,
+            "percent_min": 0,
             "text": "cranberry preparation"
         }
     ],
@@ -1940,8 +1916,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.00274,
-        "total_difference": 0.41,
+        "relative_difference": 0.755,
+        "total_difference": 113.0,
         "total_specified_input_percent": 150.0
     },
     "ingredients_n": 9,
@@ -2004,6 +1980,13 @@
         "en:sultanas-raisins"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:cranberry",
+        "en:cranberry-preparation",
+        "en:sultanas-raisins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 13,
@@ -2088,8 +2071,7 @@
         "en:main-countries-hu-ingredients-not-in-country-language",
         "en:main-countries-hu-no-data-in-country-language",
         "en:main-countries-nl-ingredients-not-in-country-language",
-        "en:main-countries-nl-only-1-field-in-country-language",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-nl-only-1-field-in-country-language"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,
@@ -2407,12 +2389,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:ldpe-4-low-density-polyethylene"
+                    "id": {
+                        "id": "en:ldpe-4-low-density-polyethylene"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

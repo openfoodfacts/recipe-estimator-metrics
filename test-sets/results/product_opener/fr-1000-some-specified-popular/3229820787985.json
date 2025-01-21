@@ -236,7 +236,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -647,49 +647,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0565019557372454,
-            "likeliest_impacts": {
-                "Climate_change": 0.0794430306707917,
-                "EF_single_score": 0.0200550592314338
-            },
-            "likeliest_recipe": {
-                "en:coconut": 57.2116012524439,
-                "en:corn_maltodextrin": 0.115463153560988,
-                "en:e407": 0.0321902028871289,
-                "en:e412": 0.11546315356098,
-                "en:e415": 0.0321902028871289,
-                "en:water": 41.6466470648919
-            },
-            "mass_ratio_uncharacterized": 0.145785671715309,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e415",
-                    "en:e412",
-                    "en:e407",
-                    "en:corn-maltodextrin"
-                ],
-                "nutrition": [
-                    "en:e407"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.145785671715309,
-                "nutrition": 0.0144842599459964
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.666666666666667,
-                "nutrition": 0.166666666666667
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 67%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 106,
     "ecoscore_tags": [
@@ -1590,6 +1547,7 @@
             "ciqual_proxy_food_code": "15006",
             "difference": 7.5,
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 62.5,
             "percent_hidden": 55,
@@ -1599,7 +1557,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1607,6 +1567,7 @@
         },
         {
             "id": "en:corn-maltodextrin",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 9.38,
             "percent_max": 33.3333333333333,
@@ -1618,6 +1579,7 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 9.38,
                     "percent_max": 25,
@@ -1625,6 +1587,7 @@
                     "text": "gomme guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.38,
             "percent_max": 25,
             "percent_min": 0,
@@ -1753,6 +1716,13 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:corn-maltodextrin",
+        "en:e412",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -2203,26 +2173,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

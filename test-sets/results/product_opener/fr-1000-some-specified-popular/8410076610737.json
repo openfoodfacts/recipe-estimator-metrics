@@ -49,7 +49,7 @@
         "en:e322i",
         "en:e422"
     ],
-    "allergens": "en:milk,en:peanuts,en:soybeans, en:milk",
+    "allergens": "en:milk,en:peanuts,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:peanuts, cacahuètes, soja, soja, lait, cacahuètes, soja, lactosérum",
     "allergens_from_user": "(fr) en:milk,en:peanuts,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -215,7 +215,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -479,72 +479,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0605912818050366,
-            "likeliest_impacts": {
-                "Climate_change": 0.339886045774263,
-                "EF_single_score": 0.0394259332827902
-            },
-            "likeliest_recipe": {
-                "en:chicory_root": 20.9822620569246,
-                "en:cocoa_butter": 0.0627338046455695,
-                "en:cocoa_paste": 2.65059106730282,
-                "en:e422": 0.446609619466939,
-                "en:fat_reduced_cocoa_powder": 0.446609619466939,
-                "en:fructose": 2.232419367521,
-                "en:glucose_syrup": 1.99741072486616,
-                "en:milk": 3.10332793985813,
-                "en:natural_flavouring": 0.213407424210032,
-                "en:palm_fat": 3.10332793985813,
-                "en:peanut_paste": 1.99741072486616,
-                "en:roasted_peanuts": 38.9495091348901,
-                "en:salt": 0.446609619466939,
-                "en:soya_lecithin": 2.86399849151286,
-                "en:sugar": 5.79178870471712,
-                "en:sunflower": 0.0627338046455695,
-                "en:sunflower_lecithin": 0.446609619466939,
-                "en:sunflower_oil": 2.23241936752101,
-                "en:tapioca_starch": 0.446609619466939,
-                "en:water": 0,
-                "fr:Contient_4_portions": 0,
-                "fr:maltodextrine_Allerg_nes": 0.11489564060255,
-                "fr:prot_ine_isol_e_de_soja": 11.2792519520315
-            },
-            "mass_ratio_uncharacterized": 0.140282147208001,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:glucose-syrup",
-                    "en:e422",
-                    "en:natural-flavouring",
-                    "fr:maltodextrine Allergènes",
-                    "fr:Contient 4 portions",
-                    "fr:protéine isolée de soja"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "en:natural-flavouring",
-                    "fr:maltodextrine Allergènes",
-                    "fr:Contient 4 portions",
-                    "fr:protéine isolée de soja"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.140282147208001,
-                "nutrition": 0.131554875472506
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.208333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1098,7 +1032,9 @@
         {
             "ciqual_food_code": "15037",
             "difference": 13.8,
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.8,
             "percent_hidden": 39,
             "percent_max": 100,
@@ -1108,6 +1044,7 @@
         {
             "ciqual_food_code": "20026",
             "id": "en:chicory-root",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.6,
             "percent_max": 50,
             "percent_min": 0,
@@ -1117,6 +1054,7 @@
         {
             "ciqual_food_code": "20591",
             "id": "en:soy-protein",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1129,7 +1067,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.95,
                     "percent_max": 16.3,
                     "percent_min": 0,
@@ -1138,6 +1078,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.48,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -1149,18 +1090,21 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.48,
                             "percent_max": 8.33333333333333,
                             "percent_min": 0,
                             "text": "lécithine de _soja_"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.48,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
                     "text": "émulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.9,
             "percent_hidden": 8,
             "percent_max": 25,
@@ -1169,7 +1113,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.95,
             "percent_max": 16.3,
             "percent_min": 0,
@@ -1177,7 +1123,9 @@
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.3,
             "percent_min": 0,
@@ -1185,6 +1133,7 @@
         },
         {
             "id": "en:whey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.738,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1192,7 +1141,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.369,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1201,6 +1152,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.184,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1209,6 +1161,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0922,
             "percent_max": 10,
             "percent_min": 0,
@@ -1217,7 +1170,9 @@
         {
             "ciqual_food_code": "15001",
             "difference": 1.95,
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0461,
             "percent_hidden": 2,
             "percent_max": 9.09090909090909,
@@ -1227,6 +1182,7 @@
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0231,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1235,6 +1191,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:tapioca",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0115,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1245,12 +1202,14 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00576,
                     "percent_max": 7.14285714285714,
                     "percent_min": 0,
                     "text": "glycerol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00576,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1259,6 +1218,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00288,
             "percent_max": 0.9,
             "percent_min": 0,
@@ -1269,6 +1229,7 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000721,
                     "percent_max": 0.9,
                     "percent_min": 0,
@@ -1276,12 +1237,14 @@
                 },
                 {
                     "id": "en:soya",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000721,
                     "percent_max": 0.45,
                     "percent_min": 0,
                     "text": "de _soja_"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00144,
             "percent_max": 0.9,
             "percent_min": 0,
@@ -1289,6 +1252,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
             "percent_max": 0.9,
             "percent_min": 0,
@@ -1296,6 +1260,7 @@
         },
         {
             "id": "en:maltodextrin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
             "percent_max": 0.9,
             "percent_min": 0,
@@ -1378,7 +1343,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
         "relative_difference": 0.364,
-        "total_difference": 17.9,
+        "total_difference": 17.8,
         "total_specified_input_percent": 49
     },
     "ingredients_n": 25,
@@ -1488,6 +1453,27 @@
         "en:whey"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chicory-root",
+        "en:chocolate-chunk",
+        "en:cocoa-paste",
+        "en:e422",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:fructose",
+        "en:glucose-syrup",
+        "en:humectant",
+        "en:maltodextrin",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:soy-protein",
+        "en:soya",
+        "en:soya-lecithin",
+        "en:sunflower-lecithin",
+        "en:tapioca",
+        "en:whey"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 47,
@@ -1923,7 +1909,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1932,12 +1920,16 @@
             "quantity_per_unit_value": 160,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
@@ -1948,12 +1940,16 @@
             "quantity_per_unit_value": 40,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

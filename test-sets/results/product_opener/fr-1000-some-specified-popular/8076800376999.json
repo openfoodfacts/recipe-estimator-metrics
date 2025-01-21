@@ -307,7 +307,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -735,37 +735,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00683197498253334,
-            "likeliest_impacts": {
-                "Climate_change": 0.0913647301727961,
-                "EF_single_score": 0.0278250789799572
-            },
-            "likeliest_recipe": {
-                "en:durum_wheat_semolina": 90.9982415563263,
-                "en:fresh_category_a_eggs": 21.9130750957384,
-                "en:water": 0.276054710220326
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -2938,7 +2907,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9610",
+            "ecobalyse_code": "durum-wheat-semolina",
             "id": "en:durum-wheat-semolina",
+            "is_in_taxonomy": 1,
             "percent_estimate": 75,
             "percent_max": 100,
             "percent_min": 50,
@@ -2947,7 +2918,9 @@
         {
             "ciqual_food_code": "22000",
             "difference": 5.64,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:fresh-category-a-eggs",
+            "is_in_taxonomy": 1,
             "percent_estimate": 25,
             "percent_hidden": 19.36,
             "percent_max": 50,
@@ -3057,6 +3030,8 @@
     "ingredients_with_unspecified_percent_sum": 80.64,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [],
+    "ingredients_without_ecobalyse_ids_n": 0,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 8,
     "labels": "Prodotto in Italia",
@@ -3645,24 +3620,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

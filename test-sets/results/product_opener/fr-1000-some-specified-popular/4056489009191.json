@@ -40,7 +40,7 @@
         "en:e392",
         "en:potassium-iodide"
     ],
-    "allergens": "en:gluten,en:milk, en:milk, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, Milk, Wheat Flour, Milk, Milk, Milk, Wheat Flour",
     "allergens_from_user": "(it) en:gluten,en:milk, en:milk, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -219,7 +219,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -628,76 +628,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.211087970844737,
-            "likeliest_impacts": {
-                "Climate_change": 0.116900388443069,
-                "EF_single_score": 0.0168914043639397
-            },
-            "likeliest_recipe": {
-                "en:bamboo": 1.50911526070148,
-                "en:chicory": 3.88025715456169,
-                "en:durum_wheat_semolina": 7.64808503801042,
-                "en:e330": 0.11655640478335,
-                "en:egg": 8.67337080522276,
-                "en:from_hens_on_the_ground": 0,
-                "en:garlic": 0.0530372445654233,
-                "en:mascarpone": 5.17668561752112,
-                "en:milk": 13.0996028689908,
-                "en:natural_flavouring": 0.0530372445654259,
-                "en:potassium_iodide": 0.0265186222827116,
-                "en:quot": 8.00499163210174,
-                "en:rapeseed_oil": 5.17668561752112,
-                "en:rennet": 0.0398986753380272,
-                "en:rice_flour": 0.0530372445654179,
-                "en:salt": 0.22896854119862,
-                "en:skimmed_milk": 1.1396577384081,
-                "en:spinach": 14.385,
-                "en:sugar": 0.0530372445654026,
-                "en:water": 0,
-                "en:wheat_flour": 30.2930846298333,
-                "en:with_12_1__ricotta_cheese": 5.38937241526317,
-                "en:yeast": 0
-            },
-            "mass_ratio_uncharacterized": 0.137730554579035,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:potassium-iodide",
-                    "en:quot",
-                    "en:e330",
-                    "en:rennet",
-                    "en:from hens on the ground",
-                    "en:with 12.1% ricotta cheese",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:from hens on the ground",
-                    "en:quot",
-                    "en:with 12.1% ricotta cheese",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.137730554579035,
-                "nutrition": 0.131918141046031
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.242424242424242,
-                "nutrition": 0.151515151515152
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "1 compound ingredients whose percentage type is undefined.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "The impact relative interquartile is high for EF single score (33%)",
-                "The impact relative interquartile is high for Climate change (28%)",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 62,
     "ecoscore_tags": [
@@ -1387,7 +1317,7 @@
             "id": "en:ricotta-soft-cheese-and-spinach-filling",
             "ingredients": [
                 {
-                    "difference": 0,
+                    "difference": 10,
                     "id": "en:ricotta-soft-cheese",
                     "ingredients": [
                         {
@@ -1395,34 +1325,42 @@
                             "ingredients": [
                                 {
                                     "id": "en:e330",
-                                    "percent_estimate": 35,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 25,
                                     "text": "Citric Acid"
                                 }
                             ],
-                            "percent_estimate": 35,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 25,
                             "text": "contains Acid"
                         }
                     ],
-                    "percent": 35,
-                    "percent_estimate": 35,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 25,
+                    "percent_hidden": 35,
                     "text": "Ricotta Soft Cheese"
                 },
                 {
                     "ciqual_food_code": "20059",
-                    "difference": 5,
+                    "difference": 7.5,
+                    "ecobalyse_code": "spinach-non-eu",
                     "id": "en:spinach",
-                    "percent": 20,
-                    "percent_estimate": 15,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 12.5,
+                    "percent_hidden": 20,
                     "text": "Spinach"
                 },
                 {
                     "ciqual_food_code": "4003",
+                    "ecobalyse_code": "potato-industry-fr",
                     "id": "en:potato",
                     "ingredients": [
                         {
                             "ciqual_food_code": "4003",
+                            "ecobalyse_code": "potato-industry-fr",
                             "id": "en:potato",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 3.12,
                             "text": "Potato"
                         },
                         {
@@ -1430,15 +1368,18 @@
                             "ingredients": [
                                 {
                                     "id": "en:e392",
-                                    "percent_estimate": 0,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 3.12,
                                     "text": "Extracts of Rosemary"
                                 }
                             ],
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 3.12,
                             "text": "Antioxidant"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 6.25,
                     "processing": "en:flakes,en:dried",
                     "text": "Potato"
                 },
@@ -1448,37 +1389,47 @@
                     "ingredients": [
                         {
                             "ciqual_proxy_food_code": "9410",
+                            "ecobalyse_code": "flour",
                             "id": "en:wheat-flour",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.56,
                             "text": "Wheat Flour"
                         },
                         {
+                            "ciqual_proxy_food_code": "11009",
                             "id": "en:yeast",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.781,
                             "text": "Yeast"
                         },
                         {
                             "ciqual_food_code": "11058",
                             "id": "en:salt",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.781,
                             "text": "Salt"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.12,
                     "text": "Breadcrumbs"
                 },
                 {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:rapeseed-oil",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.56,
                     "text": "Rapeseed Oil"
                 },
                 {
                     "id": "en:whey-powder",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.781,
                     "text": "Whey Powder"
                 },
                 {
-                    "difference": 5,
+                    "difference": 4.61,
                     "id": "en:mascarpone-soft-cheese",
                     "ingredients": [
                         {
@@ -1486,28 +1437,36 @@
                             "ingredients": [
                                 {
                                     "id": "en:e330",
-                                    "percent_estimate": 0,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 0.391,
                                     "text": "Citric Acid"
                                 }
                             ],
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.391,
                             "text": "contains Acid"
                         }
                     ],
-                    "percent": 5,
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.391,
+                    "percent_hidden": 5,
                     "text": "Mascarpone Soft Cheese"
                 },
                 {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:rapeseed-oil",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.195,
                     "processing": "en:hydrogenated",
                     "text": "Rapeseed Oil"
                 },
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0977,
                     "text": "Rice Flour"
                 },
                 {
@@ -1517,22 +1476,26 @@
                         {
                             "ciqual_food_code": "11058",
                             "id": "en:salt",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0244,
                             "text": "Salt"
                         },
                         {
                             "ciqual_food_code": "11058",
                             "id": "en:potassium-iodide",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0244,
                             "text": "Potassium Iodide"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0488,
                     "text": "Iodised Salt"
                 },
                 {
                     "id": "en:natural-flavouring",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0244,
                     "text": "Natural Flavouring"
                 },
                 {
@@ -1542,27 +1505,32 @@
                         {
                             "ciqual_food_code": "11000",
                             "id": "en:garlic",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0061,
                             "text": "Garlic"
                         },
                         {
                             "ciqual_food_code": "11058",
                             "id": "en:salt",
-                            "percent_estimate": 0,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0061,
                             "text": "Salt"
                         }
                     ],
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0122,
                     "text": "Garlic Purée"
                 },
                 {
                     "ciqual_food_code": "11048",
                     "id": "en:nutmeg",
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0122,
                     "processing": "en:ground",
                     "text": "Nutmeg"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 50,
             "percent_hidden": 53,
             "text": "Ricotta Soft Cheese and Spinach Filling"
@@ -1574,24 +1542,32 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 25,
                     "text": "Wheat Flour"
                 },
                 {
                     "ciqual_food_code": "22000",
                     "difference": 17.5,
+                    "ecobalyse_code": "egg-indoor-code3",
                     "id": "en:egg",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 12.5,
+                    "percent_hidden": 30,
                     "text": "Egg"
                 },
                 {
                     "ciqual_food_code": "9610",
+                    "ecobalyse_code": "durum-wheat-semolina",
                     "id": "en:durum-wheat-semolina",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 12.5,
                     "text": "Durum Wheat Semolina"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 50,
             "percent_hidden": 47,
             "text": "Egg Pasta"
@@ -1681,9 +1657,9 @@
     "ingredients_ids_debug": [],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.176,
-        "total_difference": 33.5,
+        "number_of_ingredients_without_ciqual_code": 5,
+        "relative_difference": 0.24,
+        "total_difference": 45.6,
         "total_specified_input_percent": 190
     },
     "ingredients_n": 32,
@@ -1798,13 +1774,32 @@
         "en:e392",
         "en:mascarpone-soft-cheese",
         "en:natural-flavouring",
-        "en:rapeseed-oil",
         "en:ricotta-soft-cheese",
         "en:ricotta-soft-cheese-and-spinach-filling",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:antioxidant",
+        "en:breadcrumbs",
+        "en:e330",
+        "en:e392",
+        "en:egg-pasta",
+        "en:garlic",
+        "en:garlic-puree",
+        "en:iodised-salt",
+        "en:mascarpone-soft-cheese",
+        "en:natural-flavouring",
+        "en:nutmeg",
+        "en:potassium-iodide",
+        "en:ricotta-soft-cheese",
+        "en:ricotta-soft-cheese-and-spinach-filling",
+        "en:salt",
         "en:whey-powder",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 46,
@@ -1885,8 +1880,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2208,7 +2202,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2217,12 +2213,16 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "fr:jetee"
+                    "id": {
+                        "id": "fr:jetee"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 8.87

@@ -239,13 +239,13 @@
                         "epi_score": "74",
                         "origin": "en:belgium",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 83.5,
@@ -678,55 +678,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0366982544736962,
-            "likeliest_impacts": {
-                "Climate_change": 0.152117776804,
-                "EF_single_score": 0.0147812676732419
-            },
-            "likeliest_recipe": {
-                "en:colour": 0.198588111483119,
-                "en:colza_oil": 3.52353564569979,
-                "en:e202": 0.25563642799108,
-                "en:e330": 0.25563642799108,
-                "en:e471": 1.0770988184914,
-                "en:e500ii": 0,
-                "en:flavouring": 0.827520445960402,
-                "en:palm_oil": 23.4874985545121,
-                "en:salt": 1.72379991947112,
-                "en:sugar": 9.69831657072284,
-                "en:water": 2.31312759987009,
-                "en:wheat_flour": 62.1398552014937
-            },
-            "mass_ratio_uncharacterized": 0.0466859036308148,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e202",
-                    "en:colour",
-                    "en:flavouring",
-                    "en:e500ii",
-                    "en:e471",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0466859036308148,
-                "nutrition": 0.0167983335404353
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 56,
     "ecoscore_tags": [
@@ -1598,8 +1549,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0.4,
+            "difference": 0.429,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_hidden": 54,
             "percent_max": 100,
@@ -1608,6 +1561,7 @@
         },
         {
             "id": "en:margarine",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1615,7 +1569,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1623,7 +1579,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
@@ -1631,7 +1589,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_max": 20,
             "percent_min": 0,
@@ -1642,12 +1602,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.45,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "e471"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1656,6 +1618,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1666,12 +1629,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.375,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.375,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1682,12 +1647,14 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.188,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "sorbate de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.188,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1695,6 +1662,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0939,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1702,7 +1670,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0469,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1711,6 +1681,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0235,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1718,6 +1689,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0117,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1728,12 +1700,14 @@
             "ingredients": [
                 {
                     "id": "en:e500",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0117,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "carbonates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0117,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1958,8 +1932,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.00741,
-        "total_difference": 0.4,
+        "relative_difference": 0.00794,
+        "total_difference": 0.429,
         "total_specified_input_percent": 54
     },
     "ingredients_n": 18,
@@ -2046,6 +2020,20 @@
         "en:raising-agent"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e202",
+        "en:e330",
+        "en:e471",
+        "en:e500",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:margarine",
+        "en:preservative",
+        "en:raising-agent",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2482,29 +2470,39 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

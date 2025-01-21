@@ -204,7 +204,7 @@
                         "epi_score": "0",
                         "origin": "en:tanzania",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1391,70 +1391,81 @@
     "ingredients": [
         {
             "ciqual_food_code": "19023",
-            "difference": 18.0,
+            "difference": 14.5,
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 54.8,
+            "percent_estimate": 58.3,
             "percent_hidden": 72.8,
-            "percent_max": 93,
+            "percent_max": 100,
             "percent_min": 16.6666666666667,
             "text": "LAIT entier"
         },
         {
             "ciqual_food_code": "18101",
-            "difference": 2.9,
+            "difference": 6.1,
             "id": "en:chocolate-powder",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "labels": "en:fair-trade",
-                    "percent_estimate": 8.62,
+                    "percent_estimate": 8.5,
                     "percent_max": 17,
-                    "percent_min": 3.5,
+                    "percent_min": 0,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "18100",
-                    "difference": 1.62,
+                    "difference": 5.0,
                     "id": "en:cocoa-powder",
+                    "is_in_taxonomy": 1,
                     "labels": "en:fair-trade",
-                    "percent": 3.5,
-                    "percent_estimate": 5.12,
-                    "percent_max": 3.5,
-                    "percent_min": 3.5,
+                    "percent_estimate": 8.5,
+                    "percent_hidden": 3.5,
+                    "percent_max": 17,
+                    "percent_min": 0,
                     "text": "cacao en poudre"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 13.8,
+            "percent_estimate": 17.0,
             "percent_hidden": 10.9,
-            "percent_max": 20.5,
-            "percent_min": 7,
+            "percent_max": 34,
+            "percent_min": 0,
             "text": "chocolat en poudre"
         },
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
-            "percent_estimate": 10.2,
-            "percent_max": 20.5,
+            "percent_estimate": 12.3,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "creme"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
-            "percent_estimate": 8.5,
+            "percent_estimate": 6.17,
             "percent_max": 17,
             "percent_min": 0,
             "text": "sucre de canne"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 6.33,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.08,
             "percent_max": 17,
             "percent_min": 0,
             "text": "lait écrémé en poudre"
@@ -1462,7 +1473,8 @@
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
-            "percent_estimate": 6.33,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.08,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "amidon de mais"
@@ -1571,8 +1583,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.258,
-        "total_difference": 22.5,
+        "relative_difference": 0.293,
+        "total_difference": 25.6,
         "total_specified_input_percent": 87.2
     },
     "ingredients_n": 8,
@@ -1624,6 +1636,13 @@
     "ingredients_with_unspecified_percent_sum": 23.7,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate-powder",
+        "en:cocoa-powder",
+        "en:corn-starch",
+        "en:cream"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1709,8 +1728,7 @@
         "en:ecoscore-extended-data-not-computed",
         "en:ecoscore-downgraded",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,
@@ -2069,26 +2087,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 4,
             "shape": {
                 "id": {
-                    "id": "en:individual-pot"
+                    "id": {
+                        "id": "en:individual-pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 4,
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         }

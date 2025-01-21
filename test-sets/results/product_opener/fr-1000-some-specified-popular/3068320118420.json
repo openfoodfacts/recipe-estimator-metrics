@@ -196,7 +196,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1010,23 +1010,25 @@
     "ingredients": [
         {
             "id": "fr:son-a-l-eau-minerale-naturelle-gazeifiee",
-            "percent_estimate": 59.3,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 54.2,
             "percent_max": 100,
-            "percent_min": 18.62,
+            "percent_min": 8.33333333333333,
             "text": "son à l'eau minérale naturelle gazéifiée"
         },
         {
-            "id": "en:fruit-juice",
-            "percent_estimate": 20.3,
+            "id": "en:fruit-juice-concentrate",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.9,
             "percent_max": 50,
             "percent_min": 0,
-            "processing": "en:from-concentrate",
-            "text": "au jus de fruits"
+            "text": "au jus de fruits à base de concentré"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "aux arômes naturels"
         },
@@ -1034,53 +1036,63 @@
             "id": "fr:ents",
             "ingredients": [
                 {
-                    "difference": 84.6,
+                    "difference": 84.3,
                     "id": "fr:eau-minerale-naturelle-gazeifiee-de-st-alban",
-                    "percent_estimate": 2.17,
-                    "percent_max": 4.34,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 2.5,
+                    "percent_hidden": 86.8,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "eau minerale naturelle gazéifiée de St Alban"
                 }
             ],
-            "percent_estimate": 2.17,
-            "percent_max": 4.34,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 2.5,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "ents"
         },
         {
-            "difference": 7.42,
+            "difference": 6.3,
             "id": "en:fruit-juice-from-concentrate",
             "ingredients": [
                 {
-                    "difference": 51.3,
+                    "difference": 50.8,
                     "id": "fr:pamolemousse",
-                    "percent_estimate": 0.689,
-                    "percent_max": 2.6,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 1.25,
+                    "percent_hidden": 52,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "pamolemousse"
                 },
                 {
-                    "difference": 2.41,
+                    "difference": 1.85,
                     "id": "fr:ctron",
-                    "percent_estimate": 0.689,
-                    "percent_max": 0.155,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 1.25,
+                    "percent_hidden": 3.1,
+                    "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "ctron"
                 }
             ],
-            "percent_estimate": 1.38,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
             "percent_hidden": 8.8,
-            "percent_max": 2.755,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "jus de fruits à base de concentré"
         },
         {
             "ciqual_proxy_food_code": "31016",
-            "difference": 40.6,
+            "difference": 39.5,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 1.38,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.45,
             "percent_hidden": 42,
-            "percent_max": 2.755,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "sucre"
         },
@@ -1089,50 +1101,58 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 1.38,
-                    "percent_max": 2.755,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.45,
+                    "percent_max": 4.9,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 1.38,
-            "percent_max": 2.755,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.45,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "acidifiant"
         },
         {
             "id": "en:grapefruit-natural-flavouring",
-            "percent_estimate": 1.38,
-            "percent_max": 2.755,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.45,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "arômes naturels de pamplemousse"
         },
         {
             "id": "en:natural-lemon-flavouring",
-            "percent_estimate": 1.38,
-            "percent_max": 2.755,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.45,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "arômes naturels de citron"
         },
         {
             "ciqual_proxy_food_code": "13009",
+            "ecobalyse_code": "lemon-eu",
             "id": "en:lemon",
-            "percent_estimate": 1.38,
-            "percent_max": 2.755,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.45,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "citron"
         },
         {
             "id": "fr:vert",
-            "percent_estimate": 1.38,
-            "percent_max": 2.755,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 1.58,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "vert"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": 6.03,
-            "percent_max": 2.755,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.58,
+            "percent_max": 4.9,
             "percent_min": 0,
             "text": "arôme naturel"
         }
@@ -1302,8 +1322,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 11,
-        "relative_difference": 0.967,
-        "total_difference": 186.0,
+        "relative_difference": 0.948,
+        "total_difference": 183.0,
         "total_specified_input_percent": 193.0
     },
     "ingredients_n": 16,
@@ -1373,7 +1393,7 @@
     "ingredients_without_ciqual_codes": [
         "en:acid",
         "en:e330",
-        "en:fruit-juice",
+        "en:fruit-juice-concentrate",
         "en:fruit-juice-from-concentrate",
         "en:grapefruit-natural-flavouring",
         "en:natural-flavouring",
@@ -1386,6 +1406,22 @@
         "fr:vert"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:fruit-juice-concentrate",
+        "en:fruit-juice-from-concentrate",
+        "en:grapefruit-natural-flavouring",
+        "en:natural-flavouring",
+        "en:natural-lemon-flavouring",
+        "fr:ctron",
+        "fr:eau-minerale-naturelle-gazeifiee-de-st-alban",
+        "fr:ents",
+        "fr:pamolemousse",
+        "fr:son-a-l-eau-minerale-naturelle-gazeifiee",
+        "fr:vert"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1790,34 +1826,46 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

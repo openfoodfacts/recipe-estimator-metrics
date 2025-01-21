@@ -220,7 +220,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1583,38 +1583,43 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 86.5,
-            "percent_max": 89,
-            "percent_min": 84,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 72.5,
+            "percent_max": 100,
+            "percent_min": 45,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "18100",
-            "difference": 21,
+            "difference": 18.2,
             "id": "en:fat-reduced-cocoa-powder",
             "ingredients": [
                 {
                     "ciqual_food_code": "16030",
-                    "difference": 0,
+                    "difference": 2.75,
                     "id": "en:cocoa-butter",
-                    "percent": 11,
-                    "percent_estimate": 11,
-                    "percent_max": 11,
-                    "percent_min": 11,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 13.8,
+                    "percent_hidden": 11,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "beurre de cacao"
                 }
             ],
-            "percent_estimate": 11,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.8,
             "percent_hidden": 32,
-            "percent_max": 11,
-            "percent_min": 11,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "cacao maigre en poudre"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 2.5,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.8,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme"
         }
@@ -1680,7 +1685,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
         "relative_difference": 0.488,
-        "total_difference": 21,
+        "total_difference": 21.0,
         "total_specified_input_percent": 43
     },
     "ingredients_n": 4,
@@ -1726,6 +1731,12 @@
         "en:flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:fat-reduced-cocoa-powder",
+        "en:flavouring"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 9,
@@ -1820,8 +1831,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2227,54 +2237,72 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": "en:hdpe-2-high-density-polyethylene"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         }

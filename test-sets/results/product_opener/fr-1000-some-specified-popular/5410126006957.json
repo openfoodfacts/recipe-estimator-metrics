@@ -276,7 +276,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -699,59 +699,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0183401124195171,
-            "likeliest_impacts": {
-                "Climate_change": 0.333752788554105,
-                "EF_single_score": 0.0328325359218486
-            },
-            "likeliest_recipe": {
-                "en:baking_powder": 3.54454280762643,
-                "en:cinnamon": 0.652094604757328,
-                "en:corn_syrup_sucks_condi": 6.83224511225428,
-                "en:e330": 0.465538321458952,
-                "en:palm_oil_after_plantations_certified": 3.21674470904876,
-                "en:rapeseed_oil": 2.91661938012968,
-                "en:salt": 0.652089575837423,
-                "en:soya_flour": 2.03460086798669,
-                "en:soya_lecithin": 0.650234112275541,
-                "en:speculoos": 58.3363140885431,
-                "en:sugar": 8.69278134300842,
-                "en:sustainable": 2.56128098583556,
-                "en:water": 1.98220942697557,
-                "en:wheat_flour": 8.04254723073288
-            },
-            "mass_ratio_uncharacterized": 0.134559889714158,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:sustainable",
-                    "en:corn syrup sucks condi",
-                    "en:palm oil after plantations certified",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "en:sustainable",
-                    "en:corn syrup sucks condi",
-                    "en:palm oil after plantations certified"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.134559889714158,
-                "nutrition": 0.13370606727301
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.266666666666667,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 27%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 44,
     "ecoscore_tags": [
@@ -2267,8 +2214,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "24000",
-            "difference": 4.2,
+            "difference": 4.15,
             "id": "en:speculoos",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_hidden": 58,
             "percent_max": 100,
@@ -2277,7 +2225,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.1,
             "percent_max": 50,
             "percent_min": 0,
@@ -2285,7 +2235,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2296,19 +2248,24 @@
             "ingredients": [
                 {
                     "id": "en:palm-oil-from-sustainable-and-certified-plantations",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.88,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "palm oil from sustainable and certified plantations"
                 },
                 {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:rapeseed-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.88,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "rapeseed oil"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.77,
             "percent_max": 25,
             "percent_min": 0,
@@ -2316,6 +2273,7 @@
         },
         {
             "id": "en:candy-lollipop-syrup",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.88,
             "percent_max": 20,
             "percent_min": 0,
@@ -2327,12 +2285,14 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.44,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "sodium acid carbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.44,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2340,7 +2300,9 @@
         },
         {
             "ciqual_food_code": "20900",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:soya-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.721,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2349,6 +2311,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.27,
             "percent_max": 0.54,
             "percent_min": 0,
@@ -2356,13 +2319,17 @@
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.226,
             "percent_max": 0.54,
             "percent_min": 0,
             "text": "cinnamon"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.113,
             "percent_max": 0.54,
             "percent_min": 0,
@@ -2370,7 +2337,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0564,
             "percent_max": 0.54,
             "percent_min": 0,
@@ -2382,12 +2351,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0282,
                     "percent_max": 0.54,
                     "percent_min": 0,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0282,
             "percent_max": 0.54,
             "percent_min": 0,
@@ -2398,12 +2369,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0282,
                     "percent_max": 0.54,
                     "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0282,
             "percent_max": 0.54,
             "percent_min": 0,
@@ -2596,9 +2569,9 @@
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.0724,
-        "total_difference": 4.2,
+        "number_of_ingredients_without_ciqual_code": 5,
+        "relative_difference": 0.0716,
+        "total_difference": 4.15,
         "total_specified_input_percent": 58
     },
     "ingredients_n": 18,
@@ -2685,10 +2658,24 @@
         "en:e500ii",
         "en:emulsifier",
         "en:palm-oil-from-sustainable-and-certified-plantations",
-        "en:rapeseed-oil",
         "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:baking-powder",
+        "en:candy-lollipop-syrup",
+        "en:cinnamon",
+        "en:e330",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:palm-oil-from-sustainable-and-certified-plantations",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:speculoos",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 33,
     "labels": "Sustainable, Sustainable Palm Oil, Green Dot, No colorings, No flavors",
@@ -3115,7 +3102,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         }

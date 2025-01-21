@@ -223,7 +223,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1478,7 +1478,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 22.5,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 32,
             "percent_max": 100,
@@ -1487,7 +1489,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_max": 50,
             "percent_min": 0,
@@ -1496,7 +1500,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 23,
             "percent_min": 0,
@@ -1505,7 +1511,9 @@
         {
             "ciqual_food_code": "22000",
             "difference": 10.3,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:free-range-chicken-eggs",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_hidden": 16,
             "percent_max": 23,
@@ -1517,12 +1525,14 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.84,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "glycérol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1531,6 +1541,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.42,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1539,7 +1550,9 @@
         {
             "ciqual_proxy_food_code": "19041",
             "difference": 4.29,
+            "ecobalyse_code": "milk",
             "id": "en:fresh-organic-pasteurised-semi-skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.71,
             "percent_hidden": 5,
             "percent_max": 14.2857142857143,
@@ -1552,12 +1565,14 @@
             "ingredients": [
                 {
                     "id": "en:e450i",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.355,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "diphosphates de sodium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1569,12 +1584,14 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.178,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1583,6 +1600,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 0.72,
             "percent_min": 0,
@@ -1590,6 +1608,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 0.72,
             "percent_min": 0,
@@ -1778,8 +1797,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.7,
-        "total_difference": 37.1,
+        "relative_difference": 0.701,
+        "total_difference": 37.2,
         "total_specified_input_percent": 53
     },
     "ingredients_n": 14,
@@ -1864,6 +1883,18 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e422",
+        "en:e450i",
+        "en:e500",
+        "en:flavouring",
+        "en:glucose-fructose-syrup",
+        "en:raising-agent",
+        "en:salt",
+        "en:stabiliser",
+        "en:wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -2277,19 +2308,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

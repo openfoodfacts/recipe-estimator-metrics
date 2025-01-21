@@ -228,13 +228,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 72.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 27.5,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 67.425,
@@ -674,46 +674,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.090427354524444,
-            "likeliest_impacts": {
-                "Climate_change": 0.229916329502153,
-                "EF_single_score": 0.0328179840956865
-            },
-            "likeliest_recipe": {
-                "en:colza_oil": 26.7448870817106,
-                "en:herb": 0.998805941621454,
-                "en:natural_flavouring": 0.829797273610495,
-                "en:spice": 1.98486151494709,
-                "en:water": 0.0231199031640552,
-                "fr:fromage_de_brebis_au_lait_pasteurise": 25.0212041304985
-            },
-            "mass_ratio_uncharacterized": 0.0137990001855911,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:herb",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0137990001855911,
-                "nutrition": 0.00498451214561629
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 40%",
-                "Parameter const_relax_coef has been set to 0.3 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 42,
     "ecoscore_tags": [
@@ -1378,7 +1338,9 @@
         {
             "ciqual_food_code": "17130",
             "difference": 11.9,
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 48.1,
             "percent_max": 100,
@@ -1389,6 +1351,7 @@
             "ciqual_proxy_food_code": "12999",
             "difference": 25,
             "id": "fr:fromage-de-brebis-au-lait-pasteurise",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 20,
             "percent_hidden": 45,
@@ -1398,6 +1361,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1405,6 +1369,7 @@
         },
         {
             "id": "en:herb",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1412,8 +1377,9 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         }
@@ -1546,6 +1512,13 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:herb",
+        "en:natural-flavouring",
+        "en:spice",
+        "fr:fromage-de-brebis-au-lait-pasteurise"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 13,
@@ -1966,7 +1939,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:steel"
+                    "id": {
+                        "id": "en:steel"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1975,12 +1950,16 @@
             "quantity_per_unit_value": 300,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 9.71
@@ -1988,7 +1967,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1997,12 +1978,16 @@
             "quantity_per_unit_value": 300,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": "en:recycle-in-glass-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_measured": 245.28

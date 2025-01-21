@@ -247,7 +247,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -687,81 +687,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.731373307956491,
-            "likeliest_impacts": {
-                "Climate_change": 0.0122556174012882,
-                "EF_single_score": 0.0044888415796019
-            },
-            "likeliest_recipe": {
-                "en:0_22_passion_fruit": 3.40525821707288,
-                "en:0_42_kiwi": 4.36236979009213,
-                "en:antioxidant": 2.32481867191202,
-                "en:apple_1_8_grapefruit_0_77_banana": 10.3386262940403,
-                "en:b12": 0.0656203679372231,
-                "en:biotin": 0.076357842080818,
-                "en:e300": 0.979922090091414,
-                "en:e375": 1.22898861047165,
-                "en:e_86": 0.106822396398465,
-                "en:fruit_juices_from_concentrate_lemon": 11.7597153931242,
-                "en:l": 1.48067996160266,
-                "en:lime": 3.06529157488971,
-                "en:natural_flavouring": 3.04558137172077,
-                "en:orange": 10.3794478103921,
-                "en:pineapple": 10.33862629404,
-                "en:sugar": 3.06529157488971,
-                "en:thiamin": 0.106822396398679,
-                "en:water": 33.8697593428453
-            },
-            "mass_ratio_uncharacterized": 0.454902075076945,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:0‚42 kiwi",
-                    "en:0‚22 passion fruit",
-                    "en:antioxidant",
-                    "en:e300",
-                    "en:b12",
-                    "en:e 86",
-                    "en:biotin",
-                    "en:e375",
-                    "en:l",
-                    "en:apple 1‚8 grapefruit 0‚77 banana",
-                    "en:natural-flavouring",
-                    "en:fruit juices from concentrate lemon"
-                ],
-                "nutrition": [
-                    "en:0‚42 kiwi",
-                    "en:0‚22 passion fruit",
-                    "en:antioxidant",
-                    "en:b12",
-                    "en:e 86",
-                    "en:l",
-                    "en:apple 1‚8 grapefruit 0‚77 banana",
-                    "en:natural-flavouring",
-                    "en:fruit juices from concentrate lemon"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.454902075076945,
-                "nutrition": 0.430325009247449
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.722222222222222,
-                "nutrition": 0.5
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 50%",
-                "The product has a high number of impact uncharacterized ingredients: 72%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 43%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 45%",
-                "The impact relative interquartile is high for EF single score (82%)",
-                "The impact relative interquartile is high for Climate change (73%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 45,
     "ecoscore_tags": [
@@ -1659,104 +1584,158 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:spring-water",
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.5,
+            "percent_max": 100,
+            "percent_min": 9.09090909090909,
             "text": "Eau de source"
         },
         {
-            "difference": 13,
+            "difference": 10.7,
             "id": "en:fruit-juice-from-concentrate",
             "ingredients": [
                 {
-                    "difference": 0.0,
+                    "difference": 6.86,
                     "id": "fr:citron-4-6-orange",
-                    "percent": 4.5,
-                    "percent_estimate": 4.5,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 11.4,
+                    "percent_hidden": 4.5,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "citron 4.6% orange"
                 },
                 {
                     "ciqual_food_code": "13050",
-                    "difference": 0.0,
+                    "difference": 4.08,
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:apple",
-                    "percent": 1.6,
-                    "percent_estimate": 1.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.68,
+                    "percent_hidden": 1.6,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "pomme"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 2.24,
+                    "ecobalyse_code": "pineapple-non-eu",
                     "id": "en:pineapple",
-                    "percent": 0.6,
-                    "percent_estimate": 0.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.84,
+                    "percent_hidden": 0.6,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "ananas"
                 },
                 {
                     "ciqual_food_code": "13005",
-                    "difference": 0.0,
+                    "difference": 1.02,
+                    "ecobalyse_code": "banana-non-eu",
                     "id": "en:banana",
-                    "percent": 0.4,
-                    "percent_estimate": 0.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.42,
+                    "percent_hidden": 0.4,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "banane"
                 },
                 {
                     "ciqual_food_code": "13021",
-                    "difference": 0.0,
+                    "difference": 0.51,
+                    "ecobalyse_code": "kiwi-non-eu",
                     "id": "en:kiwi",
-                    "percent": 0.2,
-                    "percent_estimate": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.71,
+                    "percent_hidden": 0.2,
+                    "percent_max": 10,
+                    "percent_min": 0,
                     "text": "Kiwi"
                 },
                 {
                     "ciqual_food_code": "13016",
-                    "difference": 17.6,
+                    "difference": 0.61,
                     "id": "en:passionfruit",
-                    "percent": 0.1,
-                    "percent_estimate": 17.7,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.71,
+                    "percent_hidden": 0.1,
+                    "percent_max": 8.33333333333333,
+                    "percent_min": 0,
                     "text": "fruit de la passion"
                 }
             ],
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.7,
             "percent_hidden": 12,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "jus de fruits à base de concentre"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.65,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "id": "fr:arome-naturel-vitamines",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 3.65,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "arôme naturel vitamines"
         },
         {
             "id": "en:e300",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.65,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "vitamine C"
         },
         {
             "id": "en:e375",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.65,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "vitamine B3"
         },
         {
             "id": "en:vitamin-e",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.65,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "vitamine E"
         },
         {
             "id": "en:vitamin-b6",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.24,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "vitamine B6"
         },
         {
             "id": "en:thiamin",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.12,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "vitamine B1"
         },
         {
             "id": "en:biotin",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.56,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "Biotine"
         },
         {
@@ -1764,11 +1743,17 @@
             "ingredients": [
                 {
                     "id": "en:e300",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.56,
+                    "percent_max": 7.3,
+                    "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.56,
+            "percent_max": 7.3,
+            "percent_min": 0,
             "text": "antioxydant"
         }
     ],
@@ -2014,8 +1999,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 1.58,
-        "total_difference": 30.6,
+        "relative_difference": 1.34,
+        "total_difference": 26.1,
         "total_specified_input_percent": 19.4
     },
     "ingredients_n": 18,
@@ -2043,7 +2028,7 @@
         "en:passionfruit",
         "en:e300"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:spring-water",
         "en:water",
@@ -2097,6 +2082,20 @@
         "fr:citron-4-6-orange"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:biotin",
+        "en:e300",
+        "en:e375",
+        "en:fruit-juice-from-concentrate",
+        "en:passionfruit",
+        "en:thiamin",
+        "en:vitamin-b6",
+        "en:vitamin-e",
+        "fr:arome-naturel-vitamines",
+        "fr:citron-4-6-orange"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -2173,9 +2172,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent",
-        "en:at-least-5-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2541,54 +2538,72 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drinking-straw"
+                    "id": {
+                        "id": "en:drinking-straw"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packaging"
+                    "id": {
+                        "id": "en:packaging"
+                    }
                 }
             }
         }

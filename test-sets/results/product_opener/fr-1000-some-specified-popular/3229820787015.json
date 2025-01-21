@@ -294,7 +294,7 @@
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -723,50 +723,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.888508395461466,
-            "likeliest_impacts": {
-                "Climate_change": 0.0159918721056945,
-                "EF_single_score": 0.00634483120825716
-            },
-            "likeliest_recipe": {
-                "en:almond": 3.0212851566325,
-                "en:e412": 0.0876176149412799,
-                "en:e415": 0.0722716186042573,
-                "en:lithothamnium_calcareum": 0.199573160884242,
-                "en:natural_almond_flavouring": 0.0876176149412814,
-                "en:rice_starch": 1.12311373357916,
-                "en:sea_salt": 0.0876176149412024,
-                "en:water": 95.107483927597
-            },
-            "mass_ratio_uncharacterized": 0.0252645095235327,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:rice-starch",
-                    "en:e415",
-                    "en:e412",
-                    "en:lithothamnium-calcareum"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0252645095235327,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The impact relative interquartile is high for EF single score (86%)",
-                "The impact relative interquartile is high for Climate change (86%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -2099,37 +2055,56 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 47.4,
+                    "percent_max": 100,
+                    "percent_min": 22.425,
                     "text": "eau"
                 },
                 {
                     "ciqual_food_code": "15041",
                     "difference": 22.2,
                     "id": "en:almond",
-                    "percent": 2.8,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 2.8,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "amandes"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 72.4,
+            "percent_max": 100,
+            "percent_min": 44.85,
             "text": "Lait d'amandes"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.8,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "amidon de riz"
         },
         {
             "id": "en:natural-almond-flavouring",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "arôme naturel d'amande"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.025,
+            "percent_max": 0.05,
+            "percent_min": 0,
             "text": "sel marin"
         },
         {
@@ -2137,16 +2112,25 @@
             "ingredients": [
                 {
                     "id": "en:e412",
-                    "percent_estimate": 3.12,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.025,
+                    "percent_max": 0.05,
+                    "percent_min": 0,
                     "text": "gomme guar"
                 }
             ],
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.025,
+            "percent_max": 0.05,
+            "percent_min": 0,
             "text": "stabilisants"
         },
         {
             "id": "en:e415",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.2,
+            "percent_max": 0.05,
+            "percent_min": 0,
             "text": "gomme xanthane"
         }
     ],
@@ -2275,7 +2259,7 @@
         "en:almond",
         "en:e412"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "fr:lait-d-amandes",
         "en:rice-starch",
@@ -2314,6 +2298,17 @@
         "fr:lait-d-amandes"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:e412",
+        "en:e415",
+        "en:natural-almond-flavouring",
+        "en:rice-starch",
+        "en:sea-salt",
+        "en:stabiliser",
+        "fr:lait-d-amandes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 14,
@@ -2439,8 +2434,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "new_additives_n": 1,
     "no_nutrition_data": "",
@@ -2793,19 +2787,25 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-pak"
+                    "id": {
+                        "id": "en:tetra-pak"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         }

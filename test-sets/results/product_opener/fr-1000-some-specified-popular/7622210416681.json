@@ -226,13 +226,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 96.3,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 3.70000000000002,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 89.559,
@@ -651,49 +651,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0151291468689847,
-            "likeliest_impacts": {
-                "Climate_change": 0.0536552325155159,
-                "EF_single_score": 0.00838256759623467
-            },
-            "likeliest_recipe": {
-                "en:e300": 0.027291189177528,
-                "en:e471": 0.027291189177528,
-                "en:e481": 0,
-                "en:palm_oil": 3.49207066174708,
-                "en:salt": 0.027291189177528,
-                "en:sugar": 0.208545012790214,
-                "en:water": 0.0767807825021217,
-                "en:wheat_flour": 102.10335004969,
-                "en:yeast": 0.0637039648760808
-            },
-            "mass_ratio_uncharacterized": 0.00277862460603922,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e481",
-                    "en:e300",
-                    "en:e471"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00277862460603922,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.375,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 38%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 74,
     "ecoscore_tags": [
@@ -1548,7 +1505,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 24.8,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 71.5,
             "percent_hidden": 96.3,
@@ -1558,7 +1517,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 14.3,
             "percent_max": 50,
             "percent_min": 0,
@@ -1566,14 +1527,18 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.4,
             "percent_max": 2.8,
             "percent_min": 0,
             "text": "sucre"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.4,
             "percent_max": 2.8,
             "percent_min": 0,
@@ -1582,6 +1547,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.235,
             "percent_max": 0.47,
             "percent_min": 0,
@@ -1592,6 +1558,7 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.117,
                     "percent_max": 0.47,
                     "percent_min": 0,
@@ -1599,12 +1566,14 @@
                 },
                 {
                     "id": "en:e481",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.117,
                     "percent_max": 0.235,
                     "percent_min": 0,
                     "text": "e481"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.235,
             "percent_max": 0.47,
             "percent_min": 0,
@@ -1615,12 +1584,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.0,
                     "percent_max": 0.47,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.0,
             "percent_max": 0.47,
             "percent_min": 0,
@@ -1768,7 +1739,7 @@
         "acide-ascorbique"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.258,
         "total_difference": 24.8,
         "total_specified_input_percent": 96.3
@@ -1831,10 +1802,19 @@
         "en:e471",
         "en:e481",
         "en:emulsifier",
+        "en:flour-treatment-agent"
+    ],
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e300",
+        "en:e471",
+        "en:e481",
+        "en:emulsifier",
         "en:flour-treatment-agent",
+        "en:salt",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 19,

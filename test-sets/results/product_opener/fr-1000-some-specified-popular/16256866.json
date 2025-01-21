@@ -182,7 +182,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1320,32 +1320,48 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "16030",
-                    "difference": 39,
+                    "difference": 51.5,
                     "id": "en:cocoa-butter",
-                    "percent": 11,
-                    "percent_estimate": 50,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 62.5,
+                    "percent_hidden": 11,
+                    "percent_max": 100,
+                    "percent_min": 25,
                     "text": "beurre de cacao"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 62.5,
+            "percent_max": 100,
+            "percent_min": 25,
             "text": "Cacao maigre"
         },
         {
-            "difference": 25,
+            "difference": 31.2,
             "id": "fr:en-poudre",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 18.8,
             "percent_hidden": 50,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "en poudre"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "arôme"
         }
     ],
@@ -1411,8 +1427,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 1.05,
-        "total_difference": 64,
+        "relative_difference": 1.36,
+        "total_difference": 82.8,
         "total_specified_input_percent": 61
     },
     "ingredients_n": 5,
@@ -1427,7 +1443,7 @@
         "en:flavouring",
         "en:cocoa-butter"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:fat-reduced-cocoa",
         "en:plant",
@@ -1460,6 +1476,13 @@
         "fr:en-poudre"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:fat-reduced-cocoa",
+        "en:flavouring",
+        "fr:en-poudre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 8,
@@ -1544,8 +1567,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1929,24 +1951,32 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

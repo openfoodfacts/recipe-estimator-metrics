@@ -223,7 +223,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -667,44 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0270392676901178,
-            "likeliest_impacts": {
-                "Climate_change": 0.0845870441342021,
-                "EF_single_score": 0.0225567816308507
-            },
-            "likeliest_recipe": {
-                "en:coconut": 11.6890282915747,
-                "en:e440a": 0.75982373934505,
-                "en:flax": 3.529876869895,
-                "en:hazelnut": 0.551543260921094,
-                "en:rapeseed": 29.7833360897391,
-                "en:salt": 1.08218943882447,
-                "en:shea_butter": 10.7036281018217,
-                "en:soya_lecithin": 0.965003108039004,
-                "en:water": 51.2442232840587
-            },
-            "mass_ratio_uncharacterized": 0.0928125087237552,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e440a",
-                    "en:shea-butter"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0928125087237552,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.222222222222222,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 72,
     "ecoscore_tags": [
@@ -1145,73 +1107,83 @@
     ],
     "ingredients": [
         {
-            "difference": 15.9,
+            "difference": 18.9,
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "ciqual_food_code": "17130",
-                    "difference": 0,
-                    "id": "en:colza-oil",
+                    "difference": 12.7,
+                    "ecobalyse_code": "rapeseed-non-eu",
+                    "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent": 29,
-                    "percent_estimate": 29,
-                    "percent_max": 29,
-                    "percent_min": 29,
+                    "percent_estimate": 41.7,
+                    "percent_hidden": 29,
+                    "percent_max": 100,
+                    "percent_min": 9.55,
                     "text": "colza"
                 },
                 {
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent_estimate": 16.8,
-                    "percent_max": 29,
-                    "percent_min": 4.6875,
+                    "percent_estimate": 16.1,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "coco"
                 },
                 {
+                    "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent_estimate": 14.3,
-                    "percent_max": 29,
-                    "percent_min": 3.5,
+                    "percent_estimate": 8.04,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "karité"
                 },
                 {
-                    "difference": 0.0,
+                    "difference": 0.52,
                     "id": "en:flax",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent": 3.5,
-                    "percent_estimate": 3.5,
-                    "percent_max": 3.5,
-                    "percent_min": 3.5,
+                    "percent_estimate": 4.02,
+                    "percent_hidden": 3.5,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "lin"
                 },
                 {
                     "ciqual_food_code": "11049",
                     "id": "en:paprika",
-                    "percent_estimate": 7.27,
-                    "percent_max": 3.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.02,
+                    "percent_max": 20,
                     "percent_min": 0,
                     "text": "paprika"
                 }
             ],
-            "percent_estimate": 70.9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 73.9,
             "percent_hidden": 55,
-            "percent_max": 94,
+            "percent_max": 100,
             "percent_min": 47.75,
             "text": "Huiles végétales"
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
-            "percent_estimate": 16.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.1,
             "percent_max": 50,
-            "percent_min": 3.75,
+            "percent_min": 0,
             "text": "eau"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.225,
             "percent_max": 0.45,
             "percent_min": 0,
@@ -1223,6 +1195,7 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent_estimate": 0.225,
                     "percent_max": 0.45,
@@ -1230,6 +1203,7 @@
                     "text": "lécithine de SOJA"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.225,
             "percent_max": 0.45,
             "percent_min": 0,
@@ -1237,6 +1211,7 @@
         },
         {
             "id": "en:natural-carrot-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.225,
             "percent_max": 0.45,
             "percent_min": 0,
@@ -1245,6 +1220,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.225,
             "percent_max": 0.45,
@@ -1256,13 +1232,15 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
-                    "percent_estimate": 11.8,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 12.2,
                     "percent_max": 0.45,
                     "percent_min": 0,
                     "text": "pectine"
                 }
             ],
-            "percent_estimate": 11.8,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 12.2,
             "percent_max": 0.45,
             "percent_min": 0,
             "text": "stabilisant"
@@ -1316,8 +1294,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.182,
-        "total_difference": 15.9,
+        "relative_difference": 0.367,
+        "total_difference": 32.1,
         "total_specified_input_percent": 87.5
     },
     "ingredients_n": 14,
@@ -1389,11 +1367,26 @@
         "en:emulsifier",
         "en:flax",
         "en:natural-carrot-flavouring",
-        "en:shea-butter",
+        "en:rapeseed",
         "en:stabiliser",
         "en:vegetable-oil"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:e440a",
+        "en:emulsifier",
+        "en:flax",
+        "en:lemon-juice",
+        "en:natural-carrot-flavouring",
+        "en:paprika",
+        "en:salt",
+        "en:shea-butter",
+        "en:soya-lecithin",
+        "en:stabiliser",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,
@@ -1480,8 +1473,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "off",
     "nova_group": 4,
@@ -1879,43 +1871,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

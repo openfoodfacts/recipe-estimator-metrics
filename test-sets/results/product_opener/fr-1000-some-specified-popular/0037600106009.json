@@ -41,7 +41,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:peanuts, en:peanuts",
+    "allergens": "en:peanuts, en:peanuts, en:peanuts",
     "allergens_from_ingredients": "en:peanuts, CACAHUÈTES, ARACHIDES",
     "allergens_from_user": "(en) en:peanuts, en:peanuts",
     "allergens_hierarchy": [
@@ -227,7 +227,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -650,46 +650,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0779377400374023,
-            "likeliest_impacts": {
-                "Climate_change": 0.397059698970594,
-                "EF_single_score": 0.0551663609020485
-            },
-            "likeliest_recipe": {
-                "en:peanut": 81.8059226265707,
-                "en:salt": 0.244066032114912,
-                "en:sugar": 2.96008890547425,
-                "en:totally_hydrogenated_palm_oil": 0.441046790052546,
-                "en:water": 0.936782304007784,
-                "fr:GRILL_ES": 13.8026828041437
-            },
-            "mass_ratio_uncharacterized": 0.248351174178193,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:GRILLÉES"
-                ],
-                "nutrition": [
-                    "fr:GRILLÉES"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.248351174178193,
-                "nutrition": 0.248351174178193
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"fr:GRILLÉES\" (91%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 25%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -1450,7 +1410,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "15001",
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
@@ -1459,6 +1421,7 @@
         {
             "difference": 69.6,
             "id": "fr:grillees",
+            "is_in_taxonomy": 0,
             "percent_estimate": 21.4,
             "percent_hidden": 91,
             "percent_max": 50,
@@ -1467,7 +1430,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.7,
             "percent_max": 11.4,
             "percent_min": 0,
@@ -1475,7 +1440,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.7,
             "percent_max": 11.4,
             "percent_min": 0,
@@ -1484,6 +1451,7 @@
         {
             "ciqual_food_code": "17170",
             "id": "en:cottonseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.01,
             "percent_max": 11.4,
             "percent_min": 0,
@@ -1492,6 +1460,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -1502,12 +1471,14 @@
             "ingredients": [
                 {
                     "id": "fr:voir-les-ingredients-allergenes-en-gras",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 4.51,
                     "percent_max": 1,
                     "percent_min": 0,
                     "text": "VOIR LES INGRÉDIENTS ALLERGÈNES EN GRAS"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 4.51,
             "percent_max": 1,
             "percent_min": 0,
@@ -1614,6 +1585,14 @@
         "fr:voir-les-ingredients-allergenes-en-gras"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cottonseed-oil",
+        "en:salt",
+        "fr:grillees",
+        "fr:informations-pour-personnes-allergiques",
+        "fr:voir-les-ingredients-allergenes-en-gras"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -1999,12 +1978,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

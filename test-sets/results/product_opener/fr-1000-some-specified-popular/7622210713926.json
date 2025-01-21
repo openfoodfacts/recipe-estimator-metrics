@@ -259,7 +259,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -693,69 +693,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0933480675589475,
-            "likeliest_impacts": {
-                "Climate_change": 0.0713772457746627,
-                "EF_single_score": 0.0177794585625843
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_syrup": 0.0679743518729974,
-                "en:cane_sugar": 7.72509721162882,
-                "en:colza_oil": 8.24768145008268,
-                "en:e170i": 1.35777793325505,
-                "en:e450i": 0.0300346482834794,
-                "en:e500ii": 2.74472541782255,
-                "en:e503ii": 0.341297292917125,
-                "en:e504": 0.914125070288397,
-                "en:elemental_iron": 0.844154355479704,
-                "en:invert_sugar_syrup": 0.214520592750408,
-                "en:oat_flakes": 16.6197291818266,
-                "en:rye_flakes": 19.0094941622199,
-                "en:salt": 1.47068908172306,
-                "en:skimmed_milk_powder": 0,
-                "en:soya_lecithin": 0,
-                "en:sugar": 9.17275527662185,
-                "en:water": 0,
-                "en:wheat": 1.08625680926971,
-                "en:wheat_flour": 29.4375595312091,
-                "en:whole_wheat_flour": 0.977631128342738,
-                "en:wholemeal_barley_flour": 1.08625680926971,
-                "fr:gruau_d__avoine_": 7.27792062210705
-            },
-            "mass_ratio_uncharacterized": 0.318387307892244,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:gruau d'_avoine_",
-                    "en:elemental-iron",
-                    "en:e170i",
-                    "en:e504",
-                    "en:e503ii",
-                    "en:barley-malt-syrup",
-                    "en:e450i",
-                    "en:e500ii",
-                    "en:rye-flakes"
-                ],
-                "nutrition": [
-                    "fr:gruau d'_avoine_"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.318387307892244,
-                "nutrition": 0.067
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.428571428571429,
-                "nutrition": 0.0476190476190476
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 43%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 32%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 53,
     "ecoscore_tags": [
@@ -2035,107 +1972,156 @@
     ],
     "ingredients": [
         {
-            "difference": 19.5,
+            "difference": 15.7,
             "id": "en:cereal",
             "ingredients": [
                 {
-                    "difference": 0.0,
+                    "difference": 13.6,
                     "id": "en:wholemeal-cereal",
                     "ingredients": [
                         {
                             "ciqual_food_code": "9390",
-                            "difference": 0.0,
+                            "difference": 2.76,
                             "id": "en:rye-flakes",
-                            "percent": 17.5,
-                            "percent_estimate": 17.5,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 14.7,
+                            "percent_hidden": 17.5,
+                            "percent_max": 100,
+                            "percent_min": 0.641025641025641,
                             "text": "flocons de seigle"
                         },
                         {
                             "ciqual_food_code": "9311",
-                            "difference": 0.0,
+                            "difference": 8.25,
                             "id": "en:oat-flakes",
-                            "percent": 15.3,
-                            "percent_estimate": 15.3,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 7.05,
+                            "percent_hidden": 15.3,
+                            "percent_max": 50,
+                            "percent_min": 0,
                             "text": "flocons d'avoine"
                         },
                         {
-                            "difference": 0.0,
+                            "difference": 3.17,
                             "id": "fr:gruau-d-avoine",
-                            "percent": 6.7,
-                            "percent_estimate": 6.7,
+                            "is_in_taxonomy": 0,
+                            "percent_estimate": 3.53,
+                            "percent_hidden": 6.7,
+                            "percent_max": 33.3333333333333,
+                            "percent_min": 0,
                             "text": "gruau d'avoine"
                         },
                         {
                             "ciqual_food_code": "9480",
-                            "difference": 0,
+                            "difference": 0.763,
+                            "ecobalyse_proxy_code": "flour",
                             "id": "en:wholemeal-spelt-flour",
                             "ingredients": [
                                 {
                                     "ciqual_proxy_food_code": "9410",
                                     "id": "en:wheat",
-                                    "percent_estimate": 1,
+                                    "is_in_taxonomy": 1,
+                                    "percent_estimate": 1.76,
+                                    "percent_max": 25,
+                                    "percent_min": 0,
                                     "text": "blé"
                                 }
                             ],
-                            "percent": 1,
-                            "percent_estimate": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.76,
+                            "percent_hidden": 1,
+                            "percent_max": 25,
+                            "percent_min": 0,
                             "text": "farine complète d'épeautre"
                         },
                         {
                             "ciqual_food_code": "9550",
-                            "difference": 0,
+                            "difference": 0.119,
+                            "ecobalyse_proxy_code": "flour",
                             "id": "en:wholemeal-barley-flour",
-                            "percent": 1,
-                            "percent_estimate": 1,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.881,
+                            "percent_hidden": 1,
+                            "percent_max": 20,
+                            "percent_min": 0,
                             "text": "farine complète d'orge"
                         },
                         {
                             "ciqual_proxy_food_code": "9410",
-                            "difference": 0.0,
+                            "difference": 0.0186,
+                            "ecobalyse_code": "flour",
                             "id": "en:whole-wheat-flour",
-                            "percent": 0.9,
-                            "percent_estimate": 0.9,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.881,
+                            "percent_hidden": 0.9,
+                            "percent_max": 16.6666666666667,
+                            "percent_min": 0,
                             "text": "farine complète de blé"
                         }
                     ],
-                    "percent": 42.4,
-                    "percent_estimate": 42.4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 28.8,
+                    "percent_hidden": 42.4,
+                    "percent_max": 100,
+                    "percent_min": 3.84615384615385,
                     "text": "céréales complètes"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 19.5,
+                    "difference": 2.1,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 27.1,
-                    "percent_estimate": 7.6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 27.1,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "farine de blé"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.8,
             "percent_hidden": 69.5,
+            "percent_max": 100,
+            "percent_min": 7.69230769230769,
             "text": "Céréales"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.0,
+            "percent_max": 22,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.0,
+            "percent_max": 22,
+            "percent_min": 0,
             "text": "huile de colza"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.0,
+            "percent_max": 22,
+            "percent_min": 0,
             "text": "sucre de canne"
         },
         {
             "id": "en:raising-agent",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.58,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "poudres à lever"
         },
         {
@@ -2143,26 +2129,41 @@
             "ingredients": [
                 {
                     "id": "en:e500",
-                    "percent_estimate": 0.781,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.64,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "carbonates de sodium"
                 },
                 {
                     "id": "en:e503",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.822,
+                    "percent_max": 8.33333333333333,
+                    "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 },
                 {
                     "id": "en:e450",
-                    "percent_estimate": 0.391,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.822,
+                    "percent_max": 5.55555555555556,
+                    "percent_min": 0,
                     "text": "diphosphates"
                 }
             ],
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.29,
+            "percent_max": 16.6666666666667,
+            "percent_min": 0,
             "text": "carbonates de"
         },
         {
             "id": "en:minerals",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.64,
+            "percent_max": 14.2857142857143,
+            "percent_min": 0,
             "text": "minéraux"
         },
         {
@@ -2170,37 +2171,59 @@
             "ingredients": [
                 {
                     "id": "en:e170i",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.411,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "carbonate de de calcium"
                 },
                 {
                     "id": "en:e504i",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.206,
+                    "percent_max": 6.25,
+                    "percent_min": 0,
                     "text": "carbonate de magnésium"
                 },
                 {
                     "id": "en:elemental-iron",
-                    "percent_estimate": 0.0977,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.206,
+                    "percent_max": 4.16666666666667,
+                    "percent_min": 0,
                     "text": "fer élémentaire"
                 }
             ],
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.822,
+            "percent_max": 12.5,
+            "percent_min": 0,
             "text": "carbonate"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.411,
+            "percent_max": 1.4,
+            "percent_min": 0,
             "text": "sel"
         },
         {
+            "ciqual_proxy_food_code": "31016",
             "id": "en:invert-sugar-syrup",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.206,
+            "percent_max": 1.4,
+            "percent_min": 0,
             "text": "sirop de sucre inverti"
         },
         {
             "id": "fr:sirop-d-orge-d-orge-malte",
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.103,
+            "percent_max": 1.4,
+            "percent_min": 0,
             "text": "sirop d'orge d'orge malté"
         },
         {
@@ -2209,17 +2232,27 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0514,
+                    "percent_max": 1.4,
+                    "percent_min": 0,
                     "text": "lécithines de soja"
                 }
             ],
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0514,
+            "percent_max": 1.4,
+            "percent_min": 0,
             "text": "émulsifiant"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0514,
+            "percent_max": 1.4,
+            "percent_min": 0,
             "text": "lait écrémé en poudre"
         }
     ],
@@ -2513,9 +2546,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 11,
-        "relative_difference": 0.215,
-        "total_difference": 39.0,
+        "number_of_ingredients_without_ciqual_code": 10,
+        "relative_difference": 0.256,
+        "total_difference": 46.4,
         "total_specified_input_percent": 181.0
     },
     "ingredients_n": 29,
@@ -2554,7 +2587,7 @@
         "en:whole-wheat-flour",
         "en:wheat"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:cereal",
         "en:sugar",
@@ -2634,14 +2667,36 @@
         "en:e504i",
         "en:elemental-iron",
         "en:emulsifier",
-        "en:invert-sugar-syrup",
         "en:minerals",
         "en:raising-agent",
         "en:wholemeal-cereal",
         "fr:gruau-d-avoine",
         "fr:sirop-d-orge-d-orge-malte"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cereal",
+        "en:e170i",
+        "en:e450",
+        "en:e500",
+        "en:e502",
+        "en:e503",
+        "en:e504i",
+        "en:elemental-iron",
+        "en:emulsifier",
+        "en:invert-sugar-syrup",
+        "en:minerals",
+        "en:oat-flakes",
+        "en:raising-agent",
+        "en:rye-flakes",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:wheat",
+        "en:wholemeal-cereal",
+        "fr:gruau-d-avoine",
+        "fr:sirop-d-orge-d-orge-malte"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 49,
@@ -2728,9 +2783,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent",
-        "en:at-least-5-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -3102,36 +3155,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 8,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

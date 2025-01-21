@@ -209,7 +209,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -635,58 +635,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0232559642642991,
-            "likeliest_impacts": {
-                "Climate_change": 0.0911782969063346,
-                "EF_single_score": 0.00984483069853104
-            },
-            "likeliest_recipe": {
-                "en:carrot": 0.410325103616408,
-                "en:celery_seed": 7.63782165626055,
-                "en:corn": 2.66977587222797,
-                "en:garlic": 7.42517479498274,
-                "en:leek": 0.548216123183915,
-                "en:lovage": 2.71913334608859,
-                "en:mace": 2.74164975146674,
-                "en:milk": 8.01657223395846,
-                "en:nutmeg": 2.03325884368405,
-                "en:onion": 2.08903910963375,
-                "en:palm_oil": 8.04747362806083,
-                "en:parsley": 7.77823510007473,
-                "en:parsnip": 4.97496667310175,
-                "en:potato_starch": 8.04747362806083,
-                "en:sea_salt": 8.82185821476768,
-                "en:soya": 6.14069347041162,
-                "en:turmeric": 7.63782165626031,
-                "en:water": 4.99899281488719,
-                "en:white_pepper": 7.54335559846975
-            },
-            "mass_ratio_uncharacterized": 0.158288017775988,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:mace",
-                    "en:celery-seed",
-                    "en:lovage"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.158288017775988,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 16%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1410,6 +1358,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_max": 100,
             "percent_min": 7.14285714285714,
@@ -1417,7 +1366,9 @@
         },
         {
             "ciqual_proxy_food_code": "9510",
+            "ecobalyse_code": "potato-starch",
             "id": "en:potato-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1428,12 +1379,14 @@
             "ingredients": [
                 {
                     "id": "en:containing-soya",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 11.6,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "containing Soya"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1441,14 +1394,19 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
             "text": "sunflower Vegetable oil"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_max": 20,
             "percent_min": 0,
@@ -1460,7 +1418,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20034",
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.725,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1469,6 +1429,7 @@
                 {
                     "ciqual_food_code": "20181",
                     "id": "en:parsnip",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.363,
                     "percent_max": 8.33333333333333,
                     "percent_min": 0,
@@ -1476,7 +1437,9 @@
                 },
                 {
                     "ciqual_food_code": "20009",
+                    "ecobalyse_code": "carrot-non-eu",
                     "id": "en:carrot",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.181,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
@@ -1484,13 +1447,16 @@
                 },
                 {
                     "ciqual_food_code": "20039",
+                    "ecobalyse_code": "leek-fr",
                     "id": "en:leek",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.181,
                     "percent_max": 4.16666666666667,
                     "percent_min": 0,
                     "text": "leek"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_hidden": 7,
             "percent_max": 16.6666666666667,
@@ -1499,7 +1465,9 @@
         },
         {
             "ciqual_proxy_food_code": "20055",
+            "ecobalyse_code": "celery-eu",
             "id": "en:celery-seed",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1508,6 +1476,7 @@
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.363,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1516,6 +1485,7 @@
         {
             "ciqual_proxy_food_code": "11089",
             "id": "en:turmeric",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1524,6 +1494,7 @@
         {
             "ciqual_food_code": "11019",
             "id": "en:white-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
             "percent_max": 10,
             "percent_min": 0,
@@ -1532,6 +1503,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1539,6 +1511,7 @@
         },
         {
             "id": "en:mace",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1546,6 +1519,7 @@
         },
         {
             "id": "en:lovage",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1554,6 +1528,7 @@
         {
             "ciqual_food_code": "11048",
             "id": "en:nutmeg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1622,7 +1597,7 @@
     "ingredients_ids_debug": [],
     "ingredients_lc": "en",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.793,
         "total_difference": 5.55,
         "total_specified_input_percent": 7
@@ -1711,10 +1686,24 @@
         "en:hydrolysed-vegetable-protein",
         "en:lovage",
         "en:mace",
-        "en:rapeseed-oil",
         "en:vegetable"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:containing-soya",
+        "en:garlic",
+        "en:hydrolysed-vegetable-protein",
+        "en:lovage",
+        "en:mace",
+        "en:nutmeg",
+        "en:parsley",
+        "en:parsnip",
+        "en:sea-salt",
+        "en:turmeric",
+        "en:vegetable",
+        "en:white-pepper"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 36,
@@ -2011,43 +2000,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:o-7-other-plastics"
+                    "id": {
+                        "id": "en:o-7-other-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:ldpe-4-low-density-polyethylene"
+                    "id": {
+                        "id": "en:ldpe-4-low-density-polyethylene"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:Widely recycled"
+                    "id": {
+                        "id": "en:Widely recycled"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:tube"
+                    "id": {
+                        "id": "en:tube"
+                    }
                 }
             }
         }

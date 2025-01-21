@@ -215,7 +215,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -646,10 +646,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 63,
     "ecoscore_tags": [
@@ -2888,8 +2884,10 @@
     ],
     "ingredients": [
         {
+            "ciqual_proxy_food_code": "11009",
             "difference": 18,
             "id": "en:brewer-s-yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 75,
             "percent_hidden": 93,
             "percent_max": 100,
@@ -2899,6 +2897,7 @@
         {
             "difference": 18,
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 25,
             "percent_hidden": 7,
             "percent_max": 50,
@@ -2937,7 +2936,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
+        "number_of_ingredients_without_ciqual_code": 1,
         "relative_difference": 0.36,
         "total_difference": 36,
         "total_specified_input_percent": 100
@@ -2974,10 +2973,14 @@
     "ingredients_with_unspecified_percent_n": 0,
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [
+        "en:barley-malt-extract"
+    ],
+    "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
         "en:barley-malt-extract",
         "en:brewer-s-yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -3328,18 +3331,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             },
             "weight_measured": 2.28
@@ -3347,12 +3356,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

@@ -186,7 +186,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -616,37 +616,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.128128168409617,
-            "likeliest_impacts": {
-                "Climate_change": 0.0411016441460673,
-                "EF_single_score": 0.00878611830362802
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_flavouring": 0.11297640742368,
-                "en:e101": 0.00670791113900165,
-                "en:e375": 0.00670791113900368,
-                "en:folic_acid": 0.00670791113900165,
-                "en:glucose_syrup": 0.200003705575609,
-                "en:iron": 0.00670791113900472,
-                "en:natural_flavouring": 0.00670791113900165,
-                "en:oat_flour": 6.31566170301416,
-                "en:salt": 0.00670791113900165,
-                "en:sugar": 6.99492067359956,
-                "en:thiamin": 0.00670791113910569,
-                "en:vitamin_b12": 0,
-                "en:vitamin_b6": 0.00670791113900472,
-                "en:vitamin_d": 0,
-                "en:vitamins": 0.00670791113910569,
-                "en:water": 0,
-                "en:wheat_bran": 22.1048159605496,
-                "en:whole_wheat": 69.4722787331558
-            },
-            "mass_ratio_uncharacterized": 0.00750560752634853
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 25,
     "ecoscore_tags": [
@@ -1136,8 +1105,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9010",
-            "difference": 6.1,
+            "difference": 6.06,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.9,
             "percent_hidden": 59,
             "percent_max": 100,
@@ -1146,8 +1116,9 @@
         },
         {
             "ciqual_food_code": "9621",
-            "difference": 5.5,
+            "difference": 5.53,
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.5,
             "percent_hidden": 18,
             "percent_max": 50,
@@ -1156,7 +1127,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1164,7 +1137,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.88,
             "percent_max": 14,
             "percent_min": 0,
@@ -1172,6 +1147,7 @@
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.94,
             "percent_max": 14,
             "percent_min": 0,
@@ -1180,6 +1156,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.47,
             "percent_max": 14,
             "percent_min": 0,
@@ -1188,6 +1165,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.33,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1195,6 +1173,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.33,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1202,6 +1181,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.33,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1209,6 +1189,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.24,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1216,6 +1197,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.12,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1223,6 +1205,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0601,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1230,6 +1213,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.03,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1237,6 +1221,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.015,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1244,6 +1229,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00751,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1251,6 +1237,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00375,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1258,6 +1245,7 @@
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00375,
             "percent_max": 0.66,
             "percent_min": 0,
@@ -1327,7 +1315,7 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 11,
-        "relative_difference": 0.151,
+        "relative_difference": 0.15,
         "total_difference": 11.6,
         "total_specified_input_percent": 77
     },
@@ -1416,6 +1404,24 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:e101",
+        "en:e375",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:iron",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:thiamin",
+        "en:vitamin-b12",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:wheat-bran",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -1820,19 +1826,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:ldpe-4-low-density-polyethylene"
+                    "id": {
+                        "id": "en:ldpe-4-low-density-polyethylene"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

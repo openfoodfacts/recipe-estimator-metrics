@@ -211,7 +211,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -634,52 +634,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0411253377775767,
-            "likeliest_impacts": {
-                "Climate_change": 0.00655012986476171,
-                "EF_single_score": 0.00250548478038941
-            },
-            "likeliest_recipe": {
-                "en:apple": 8.493638551361,
-                "en:blackcurrant": 1.99850318855553,
-                "en:e296": 1.20404570854167,
-                "en:e300": 0.575150789625801,
-                "en:e330": 1.33659854568068,
-                "en:elder": 1.29902707256109,
-                "en:natural_flavouring": 0.590706756619695,
-                "en:raspberry": 0.199850318855553,
-                "en:spring_water": 79.9401275422211,
-                "en:sugar": 4.27749894827944,
-                "en:water": 0.0100120054748363
-            },
-            "mass_ratio_uncharacterized": 0.026413253909993,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring",
-                    "en:e300",
-                    "en:e330",
-                    "en:e296"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.026413253909993,
-                "nutrition": 0.00602676460563807
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 40%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1351,67 +1305,78 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
-            "difference": 9.5,
+            "difference": 21.7,
+            "ecobalyse_code": "tap-water",
             "id": "en:spring-water",
-            "percent_estimate": 70.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 58.3,
             "percent_hidden": 80,
-            "percent_max": 89.1,
-            "percent_min": 51.9,
+            "percent_max": 100,
+            "percent_min": 16.6666666666667,
             "text": "Eau de source"
         },
         {
-            "difference": 0.2,
-            "id": "fr:jus-de-fruit-a-base-de-concentres",
+            "difference": 8.83,
+            "id": "en:fruit-juice-concentrate",
             "ingredients": [
                 {
                     "ciqual_food_code": "13050",
-                    "difference": 0.0,
+                    "difference": 1.92,
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:apple",
-                    "percent": 8.5,
-                    "percent_estimate": 8.5,
-                    "percent_max": 8.5,
-                    "percent_min": 8.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10.4,
+                    "percent_hidden": 8.5,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "pomme"
                 },
                 {
                     "ciqual_food_code": "13007",
-                    "difference": 0,
+                    "difference": 3.21,
                     "id": "en:blackcurrant",
-                    "percent": 2,
-                    "percent_estimate": 2,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.21,
+                    "percent_hidden": 2,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "cassis"
                 },
                 {
                     "id": "en:elder",
-                    "percent_estimate": 0.75,
-                    "percent_max": 2,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.6,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "sureau"
                 },
                 {
                     "ciqual_food_code": "13015",
-                    "difference": 0.35,
+                    "difference": 2.4,
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "en:raspberry",
-                    "percent": 0.2,
-                    "percent_estimate": 0.55,
-                    "percent_max": 0.2,
-                    "percent_min": 0.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.6,
+                    "percent_hidden": 0.2,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "framboise"
                 }
             ],
-            "percent_estimate": 11.8,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 20.8,
             "percent_hidden": 12,
-            "percent_max": 12.7,
-            "percent_min": 10.9,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "jus de fruit à base de concentrés"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 6.35,
-            "percent_max": 12.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 7.45,
+            "percent_max": 14.9,
             "percent_min": 0,
             "text": "sucre"
         },
@@ -1420,28 +1385,32 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 2.84,
-                    "percent_max": 12.7,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.35,
+                    "percent_max": 14.9,
                     "percent_min": 0,
                     "text": "acide citrique"
                 },
                 {
                     "id": "en:e296",
-                    "percent_estimate": 2.84,
-                    "percent_max": 6.35,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.35,
+                    "percent_max": 7.45,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
-            "percent_estimate": 5.67,
-            "percent_max": 12.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 6.69,
+            "percent_max": 14.9,
             "percent_min": 0,
             "text": "acidifiants"
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arômes naturels"
         },
@@ -1450,14 +1419,16 @@
             "ingredients": [
                 {
                     "id": "en:e300",
-                    "percent_estimate": 3.18,
-                    "percent_max": "5",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 4.19,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 3.18,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 4.19,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "antioxydant"
         }
@@ -1593,8 +1564,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.0979,
-        "total_difference": 10.0,
+        "relative_difference": 0.37,
+        "total_difference": 38.0,
         "total_specified_input_percent": 103.0
     },
     "ingredients_n": 13,
@@ -1660,10 +1631,22 @@
         "en:e300",
         "en:e330",
         "en:elder",
-        "en:natural-flavouring",
-        "fr:jus-de-fruit-a-base-de-concentres"
+        "en:fruit-juice-concentrate",
+        "en:natural-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:antioxidant",
+        "en:blackcurrant",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:elder",
+        "en:fruit-juice-concentrate",
+        "en:natural-flavouring"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 19,
@@ -1741,8 +1724,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "new_additives_n": 3,
     "no_nutrition_data": "",
@@ -2077,12 +2059,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         }

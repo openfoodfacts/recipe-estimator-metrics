@@ -214,13 +214,13 @@
                         "epi_score": "0",
                         "origin": "en:madagascar",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -664,46 +664,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0824423605731201,
-            "likeliest_impacts": {
-                "Climate_change": 1.61705535700433,
-                "EF_single_score": 0.101134094290091
-            },
-            "likeliest_recipe": {
-                "en:butterfat": 18.2623586052836,
-                "en:cocoa_butter": 20.3669965833188,
-                "en:cocoa_paste": 29.3355542195256,
-                "en:natural_aroma_of_vanilla": 2.385524741975,
-                "en:sugar": 28.0761339279413,
-                "en:water": 1.97060187380347
-            },
-            "mass_ratio_uncharacterized": 0.151751589300809,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural aroma of vanilla",
-                    "en:butterfat"
-                ],
-                "nutrition": [
-                    "en:natural aroma of vanilla"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.151751589300809,
-                "nutrition": 0.0561090106332927
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 40%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 28,
     "ecoscore_tags": [
@@ -1843,6 +1803,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "origins": "en:west-africa,en:south-america",
             "percent_estimate": 58.3,
             "percent_max": 100,
@@ -1851,7 +1812,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 13.2,
             "percent_max": 26.5,
             "percent_min": 0,
@@ -1860,6 +1823,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 13.2,
             "percent_max": 26.5,
             "percent_min": 0,
@@ -1868,6 +1832,7 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.58,
             "percent_max": 25,
             "percent_min": 0,
@@ -1875,8 +1840,9 @@
         },
         {
             "id": "fr:arome-naturel-de-vanille-de-madagascar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de vanille de Madagascar"
         },
@@ -1887,22 +1853,25 @@
             "ingredients": [
                 {
                     "id": "fr:bilan-massique-certifie-rainforest-alliance-www-ra-org",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "Bilan massique certifié rainforest Alliance www.ra.org"
                 },
                 {
                     "id": "fr:fr",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.58,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "fr"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.08,
             "percent_hidden": 70,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Cacao"
         }
@@ -2046,6 +2015,16 @@
         "fr:fr"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "fr:arome-naturel-de-vanille-de-madagascar",
+        "fr:bilan-massique-certifie-rainforest-alliance-www-ra-org",
+        "fr:fr"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -2532,58 +2511,78 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

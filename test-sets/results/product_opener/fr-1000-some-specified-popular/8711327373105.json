@@ -283,7 +283,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -735,66 +735,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.181432443679747,
-            "likeliest_impacts": {
-                "Climate_change": 0.249148532355237,
-                "EF_single_score": 0.023503667877542
-            },
-            "likeliest_recipe": {
-                "de:El": 1.33456514243177,
-                "en:brown_sugar": 9.9159511592108,
-                "en:butter": 4.07064491733938,
-                "en:cocoa_butter": 0.212814524186416,
-                "en:cocoa_paste": 0.884649062665236,
-                "en:coconut": 1.12497955519887,
-                "en:condensed_skimmed_milk": 10.8532789726803,
-                "en:cream": 27.0659543305336,
-                "en:e407": 0.0249532800664772,
-                "en:e412": 0.751350943411405,
-                "en:egg_yolk": 4.04207711485675,
-                "en:emulsifier": 0.0925941191664859,
-                "en:fat_reduced_cocoa": 0.884649062665236,
-                "en:molasses": 0.825757725426009,
-                "en:natural_flavouring": 0.092594119166487,
-                "en:salt": 0.212814524186416,
-                "en:soya": 1.36104837687289,
-                "en:sugar": 10.0552610773614,
-                "en:vanilla_extract": 0.825757725426009,
-                "en:vegetable_fat": 3.65167505768632,
-                "en:water": 12.0449533485235,
-                "en:wheat_flour": 9.9159511592108
-            },
-            "mass_ratio_uncharacterized": 0.0568036237695812,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring",
-                    "en:fat-reduced-cocoa",
-                    "en:e407",
-                    "en:e412",
-                    "de:El"
-                ],
-                "nutrition": [
-                    "en:e407",
-                    "en:natural-flavouring",
-                    "de:El"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0568036237695812,
-                "nutrition": 0.0319967073558306
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.208333333333333,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "The impact relative interquartile is high for Climate change (26%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2459,6 +2399,7 @@
             "ciqual_food_code": "19402",
             "difference": 25.4,
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.4,
             "percent_hidden": 27,
             "percent_max": 100,
@@ -2467,7 +2408,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -2475,7 +2418,9 @@
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:condensed-skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.9,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2483,7 +2428,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.95,
             "percent_max": 22,
             "percent_min": 0,
@@ -2491,7 +2438,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.98,
             "percent_max": 20,
             "percent_min": 0,
@@ -2499,7 +2448,9 @@
         },
         {
             "ciqual_food_code": "31017",
+            "ecobalyse_code": "sugar",
             "id": "en:brown-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.49,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2507,7 +2458,9 @@
         },
         {
             "ciqual_food_code": "22002",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.744,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2515,7 +2468,9 @@
         },
         {
             "ciqual_proxy_food_code": "16400",
+            "ecobalyse_code": "butter",
             "id": "en:butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.372,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2526,6 +2481,7 @@
             "ingredients": [
                 {
                     "id": "en:soya",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.093,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
@@ -2534,12 +2490,14 @@
                 {
                     "ciqual_food_code": "16040",
                     "id": "en:coconut-fat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.093,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
                     "text": "кокосова"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.186,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2547,7 +2505,9 @@
         },
         {
             "ciqual_food_code": "22000",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.093,
             "percent_max": 10,
             "percent_min": 0,
@@ -2556,6 +2516,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0465,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2564,6 +2525,7 @@
         {
             "ciqual_food_code": "18100",
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0233,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -2571,7 +2533,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0116,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -2580,6 +2544,7 @@
         {
             "ciqual_food_code": "11065",
             "id": "en:vanilla-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00581,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -2590,6 +2555,7 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00145,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
@@ -2597,12 +2563,14 @@
                 },
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00145,
                     "percent_max": 3.33333333333333,
                     "percent_min": 0,
                     "text": "карагенан"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00291,
             "percent_max": 6.66666666666667,
             "percent_min": 0,
@@ -2611,6 +2579,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00145,
             "percent_max": 0.15,
             "percent_min": 0,
@@ -2619,6 +2588,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000727,
             "percent_max": 0.15,
             "percent_min": 0,
@@ -2626,6 +2596,7 @@
         },
         {
             "id": "bg:есенция-от-естествена-ванилия-и-кафява-захар",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.000363,
             "percent_max": 0.15,
             "percent_min": 0,
@@ -2633,6 +2604,7 @@
         },
         {
             "id": "bg:есенция-от-истинско-масло",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.000182,
             "percent_max": 0.15,
             "percent_min": 0,
@@ -2644,12 +2616,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 9.08e-05,
                     "percent_max": 0.15,
                     "percent_min": 0,
                     "text": "СОЕВ лецитин"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.08e-05,
             "percent_max": 0.15,
             "percent_min": 0,
@@ -2657,6 +2631,7 @@
         },
         {
             "id": "en:milkfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.08e-05,
             "percent_max": 0.15,
             "percent_min": 0,
@@ -2741,7 +2716,7 @@
     "ingredients_lc": "bg",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.941,
+        "relative_difference": 0.94,
         "total_difference": 25.4,
         "total_specified_input_percent": 27
     },
@@ -2860,6 +2835,26 @@
         "en:vegetable-fat"
     ],
     "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ecobalyse_ids": [
+        "bg:есенция-от-естествена-ванилия-и-кафява-захар",
+        "bg:есенция-от-истинско-масло",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:coconut-fat",
+        "en:cream",
+        "en:e407",
+        "en:e412",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:milkfat",
+        "en:salt",
+        "en:soya",
+        "en:soya-lecithin",
+        "en:stabiliser",
+        "en:vanilla-extract",
+        "en:vegetable-fat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -3412,7 +3407,9 @@
         {
             "material": {
                 "id": {
-                    "id": "fr:Carton + plastique PE"
+                    "id": {
+                        "id": "fr:Carton + plastique PE"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3421,12 +3418,16 @@
             "quantity_per_unit_value": "406",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             },
             "weight_measured": 14.85
@@ -3434,7 +3435,9 @@
         {
             "material": {
                 "id": {
-                    "id": "fr:Carton + plastique Pe"
+                    "id": {
+                        "id": "fr:Carton + plastique Pe"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3443,12 +3446,16 @@
             "quantity_per_unit_value": "406",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 6.65
@@ -3456,7 +3463,9 @@
         {
             "material": {
                 "id": {
-                    "id": "fr:Plastique pp"
+                    "id": {
+                        "id": "fr:Plastique pp"
+                    }
                 }
             },
             "number_of_units": "1",
@@ -3465,12 +3474,16 @@
             "quantity_per_unit_value": "406",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

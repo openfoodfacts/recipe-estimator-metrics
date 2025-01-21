@@ -236,7 +236,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -665,52 +665,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0059584399084061,
-            "likeliest_impacts": {
-                "Climate_change": 0.121316623493571,
-                "EF_single_score": 0.0189454375701646
-            },
-            "likeliest_recipe": {
-                "en:concentrated_grape_juice": 1.25966727967387,
-                "en:e407": 0.693729948910156,
-                "en:e415": 0,
-                "en:extra_virgin_olive_oil": 2.60796942972723,
-                "en:red_onion": 0.802452132223764,
-                "en:red_wine_vinegar": 38.1164762806288,
-                "en:salt": 1.35720786958536,
-                "en:shallot": 0.300919549583912,
-                "en:spice": 0.156941196434645,
-                "en:sugar": 4.0028911442248,
-                "en:sunflower_oil": 32.0980852889506,
-                "en:water": 18.9101764080274
-            },
-            "mass_ratio_uncharacterized": 0.0183753162428031,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:concentrated-grape-juice",
-                    "en:e415",
-                    "en:e407"
-                ],
-                "nutrition": [
-                    "en:e407"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0183753162428031,
-                "nutrition": 0.00445369052877048
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 38,
     "ecoscore_tags": [
@@ -1342,6 +1296,7 @@
             "ciqual_food_code": "11018",
             "difference": 16.5,
             "id": "en:red-wine-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 38,
             "percent_max": 100,
@@ -1350,8 +1305,10 @@
         },
         {
             "ciqual_food_code": "17130",
-            "difference": 9.3,
+            "difference": 9.27,
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 32,
             "percent_max": 50,
@@ -1360,7 +1317,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1368,7 +1327,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.95,
             "percent_max": 3.9,
             "percent_min": 0,
@@ -1377,7 +1338,9 @@
         {
             "ciqual_food_code": "17270",
             "difference": 0.65,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.95,
             "percent_hidden": 2.6,
             "percent_max": 3.9,
@@ -1387,6 +1350,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -1395,6 +1359,7 @@
         {
             "ciqual_food_code": "13112",
             "id": "en:concentrated-grape-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -1403,7 +1368,9 @@
         {
             "ciqual_food_code": "20034",
             "difference": 0.4,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:red-onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_hidden": 0.9,
             "percent_max": 1,
@@ -1416,6 +1383,7 @@
             "ingredients": [
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.25,
                     "percent_max": 1,
                     "percent_min": 0,
@@ -1423,12 +1391,14 @@
                 },
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.25,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -1437,7 +1407,9 @@
         {
             "ciqual_food_code": "20097",
             "difference": 0.2,
+            "ecobalyse_code": "shallot-fr",
             "id": "en:shallot",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_hidden": 0.3,
             "percent_max": 1,
@@ -1447,6 +1419,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.96,
             "percent_max": 1,
             "percent_min": 0,
@@ -1586,7 +1559,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.367,
-        "total_difference": 27.0,
+        "total_difference": 27.1,
         "total_specified_input_percent": 73.8
     },
     "ingredients_n": 13,
@@ -1667,6 +1640,16 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-grape-juice",
+        "en:e407",
+        "en:e415",
+        "en:red-wine-vinegar",
+        "en:salt",
+        "en:spice",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 33,
@@ -2168,14 +2151,18 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

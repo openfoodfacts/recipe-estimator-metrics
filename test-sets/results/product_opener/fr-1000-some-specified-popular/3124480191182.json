@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -485,58 +485,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0598086586195141,
-            "likeliest_impacts": {
-                "Climate_change": 0.00538267625496936,
-                "EF_single_score": 0.00188800721681164
-            },
-            "likeliest_recipe": {
-                "en:apple": 5.32086579382896,
-                "en:e160c": 0,
-                "en:e296": 0,
-                "en:e300": 0,
-                "en:e330": 0.0276826425021211,
-                "en:fructose_syrup": 0.947855913054236,
-                "en:mango": 0.0800130194560746,
-                "en:natural_flavouring": 0.0276826425021211,
-                "en:natural_orange_flavouring": 0,
-                "en:orange": 6.50105783080607,
-                "en:passionfruit": 0.100016274320093,
-                "en:spring_water": 80.0130194560746,
-                "en:sugar": 5.79546929180293,
-                "en:water": 1.20261145574606
-            },
-            "mass_ratio_uncharacterized": 0.0197865811627863,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e330",
-                    "en:e296",
-                    "en:passionfruit",
-                    "en:e300",
-                    "en:e160c",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:passionfruit",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0197865811627863,
-                "nutrition": 0.00569740309839492
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.461538461538462,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 46%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1420,6 +1368,7 @@
         {
             "difference": 25.5,
             "id": "fr:water-source",
+            "is_in_taxonomy": 0,
             "percent_estimate": 54.5,
             "percent_hidden": 80,
             "percent_max": 100,
@@ -1429,6 +1378,7 @@
         {
             "difference": 10.7,
             "id": "fr:fruit-juice-base-concentrate",
+            "is_in_taxonomy": 0,
             "percent_estimate": 22.7,
             "percent_hidden": 12,
             "percent_max": 50,
@@ -1437,8 +1387,10 @@
         },
         {
             "ciqual_proxy_food_code": "13034",
-            "difference": 5.0,
+            "difference": 4.96,
+            "ecobalyse_code": "orange-non-eu",
             "id": "en:orange",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_hidden": 6.4,
             "percent_max": 33.3333333333333,
@@ -1447,6 +1399,7 @@
         },
         {
             "id": "fr:apple",
+            "is_in_taxonomy": 0,
             "percent_estimate": 5.68,
             "percent_max": 25,
             "percent_min": 0,
@@ -1454,6 +1407,7 @@
         },
         {
             "id": "en:acerola",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1462,6 +1416,7 @@
         {
             "difference": 1.32,
             "id": "fr:passion-fruit",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.42,
             "percent_hidden": 0.1,
             "percent_max": 16.6666666666667,
@@ -1473,12 +1428,14 @@
             "ingredients": [
                 {
                     "id": "fr:0-07-per-cent",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.71,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "0‚07 per cent"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.71,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1487,6 +1444,7 @@
         {
             "difference": 6.74,
             "id": "fr:sugar",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.355,
             "percent_hidden": 7.1,
             "percent_max": 12.5,
@@ -1498,12 +1456,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.178,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "citric acid"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.178,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1511,6 +1471,7 @@
         },
         {
             "id": "fr:natural-orange-flavoring-with-other-natural-flavor",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0888,
             "percent_max": 10,
             "percent_min": 0,
@@ -1521,12 +1482,14 @@
             "ingredients": [
                 {
                     "id": "fr:paprika-extract",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.0888,
                     "percent_max": 9.09090909090909,
                     "percent_min": 0,
                     "text": "paprika extract"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0888,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1605,8 +1568,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 0.467,
-        "total_difference": 49.3,
+        "relative_difference": 0.466,
+        "total_difference": 49.2,
         "total_specified_input_percent": 106.0
     },
     "ingredients_n": 14,
@@ -1677,6 +1640,22 @@
         "fr:water-source"
     ],
     "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola",
+        "en:e330",
+        "fr:0-07-per-cent",
+        "fr:apple",
+        "fr:coloring",
+        "fr:for-the-acidifier",
+        "fr:fruit-juice-base-concentrate",
+        "fr:mango",
+        "fr:natural-orange-flavoring-with-other-natural-flavor",
+        "fr:paprika-extract",
+        "fr:passion-fruit",
+        "fr:sugar",
+        "fr:water-source"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -2081,18 +2060,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             },
             "weight_measured": 49.26
@@ -2100,18 +2085,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 2.73

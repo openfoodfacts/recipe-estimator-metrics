@@ -83,7 +83,7 @@
         "en:e333",
         "en:e440"
     ],
-    "allergens": "en:gluten,en:milk, en:milk",
+    "allergens": "en:gluten,en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, blé, lait",
     "allergens_from_user": "(fr) en:gluten,en:milk, en:milk",
     "allergens_hierarchy": [
@@ -277,7 +277,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100.75,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -695,70 +695,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0612402116137139,
-            "likeliest_impacts": {
-                "Climate_change": 0.0510538180886505,
-                "EF_single_score": 0.0107445954000988
-            },
-            "likeliest_recipe": {
-                "en:dextrose": 4.55315142211265,
-                "en:e296": 0.0718331626323027,
-                "en:e330": 0.0718331626323028,
-                "en:e331": 0.0498919609777149,
-                "en:e333": 0.0498919609777149,
-                "en:e440a": 0.143666325264605,
-                "en:elderberry": 0.143666325264605,
-                "en:ferric_diphosphate": 0.0997839219554301,
-                "en:flavouring": 0.0997839219554298,
-                "en:glucose_fructose_syrup": 33.6147162818194,
-                "en:humectant": 4.81626453729705,
-                "en:milk": 0.143666325264605,
-                "en:palm_oil": 1.81831890480779,
-                "en:raspberry_puree": 4.55315142211265,
-                "en:salt": 0.0997839219554298,
-                "en:sugar": 4.87488135156753,
-                "en:sunflower_lecithin": 0.0997839219557988,
-                "en:water": 0.0581132337712595,
-                "en:wheat_flour": 46.5663213625158,
-                "fr:puree_de_framboise_concentree": 1.55221071208386
-            },
-            "mass_ratio_uncharacterized": 0.171414546846105,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:ferric-diphosphate",
-                    "en:e333",
-                    "en:humectant",
-                    "en:e296",
-                    "en:flavouring",
-                    "en:e331",
-                    "en:e440a",
-                    "en:dextrose",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "en:humectant",
-                    "en:dextrose",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.171414546846105,
-                "nutrition": 0.143148958579697
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.473684210526316,
-                "nutrition": 0.157894736842105
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 47%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 14%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 17%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 60,
     "ecoscore_tags": [
@@ -1533,8 +1469,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 7.9,
+            "difference": 7.94,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.9,
             "percent_hidden": 45,
             "percent_max": 100,
@@ -1544,6 +1482,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.5,
             "percent_max": 50,
             "percent_min": 0,
@@ -1551,7 +1490,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_max": 33,
             "percent_min": 0,
@@ -1562,12 +1503,14 @@
             "ingredients": [
                 {
                     "id": "fr:glucerol",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 5.88,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "glucérol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.88,
             "percent_max": 25,
             "percent_min": 0,
@@ -1576,6 +1519,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.94,
             "percent_max": 20,
             "percent_min": 0,
@@ -1584,7 +1528,9 @@
         {
             "ciqual_food_code": "13015",
             "difference": 2.93,
+            "ecobalyse_code": "raspberry-eu",
             "id": "en:raspberry-puree",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.47,
             "percent_hidden": 4.4,
             "percent_max": 16.6666666666667,
@@ -1593,7 +1539,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.735,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1602,9 +1550,11 @@
         {
             "ciqual_food_code": "13015",
             "difference": 1.5,
+            "ecobalyse_code": "raspberry-eu",
             "id": "fr:puree-de-framboise-concentree",
             "ingredients": [],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_hidden": 1.5,
             "percent_max": 0,
             "percent_min": 0,
@@ -1612,7 +1562,8 @@
         },
         {
             "id": "en:whey-powder",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "lactosérum en poudre"
@@ -1622,6 +1573,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
@@ -1629,13 +1581,15 @@
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "acidifiants"
@@ -1645,13 +1599,15 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "pectines"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "gélifiant"
@@ -1659,7 +1615,8 @@
         {
             "ciqual_food_code": "13126",
             "id": "en:elderberry",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "processing": "en:juice,en:concentrated",
@@ -1670,6 +1627,7 @@
             "ingredients": [
                 {
                     "id": "en:e331",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
@@ -1677,20 +1635,23 @@
                 },
                 {
                     "id": "en:e333",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "citrates de calcium"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "correcteurs d'acidité"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "arôme"
@@ -1698,7 +1659,8 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "sel"
@@ -1708,13 +1670,15 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "émulsifiant"
@@ -1724,12 +1688,14 @@
             "ingredients": [
                 {
                     "id": "en:ferric-diphosphate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.735,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "diphosphate ferrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.735,
             "percent_max": 0,
             "percent_min": 0,
@@ -2006,8 +1972,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 0.242,
-        "total_difference": 12.3,
+        "relative_difference": 0.243,
+        "total_difference": 12.4,
         "total_specified_input_percent": 50.9
     },
     "ingredients_n": 25,
@@ -2124,6 +2090,29 @@
         "fr:glucerol"
     ],
     "ingredients_without_ciqual_codes_n": 16,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:acidity-regulator",
+        "en:dextrose",
+        "en:e296",
+        "en:e330",
+        "en:e331",
+        "en:e333",
+        "en:e440a",
+        "en:elderberry",
+        "en:emulsifier",
+        "en:ferric-diphosphate",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
+        "en:humectant",
+        "en:minerals",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:whey-powder",
+        "fr:glucerol"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 46,

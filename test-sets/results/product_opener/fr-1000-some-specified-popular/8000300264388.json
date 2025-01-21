@@ -266,7 +266,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -690,52 +690,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.117982180859839,
-            "likeliest_impacts": {
-                "Climate_change": 0.849783410501941,
-                "EF_single_score": 0.0620747000878084
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 1.79047982806305,
-                "en:cocoa_butter": 15.5460336176197,
-                "en:cocoa_paste": 7.32890277729668,
-                "en:e322": 2.07673178725781,
-                "en:fat_reduced_cocoa": 2.04091055000649,
-                "en:natural_vanilla_flavouring": 1.80021523452712,
-                "en:rice_flour": 8.18507543218949,
-                "en:salt": 0.38891257972797,
-                "en:skimmed_milk_powder": 2.58280811660511,
-                "en:sugar": 50.7883456131879,
-                "en:water": 0.494616908034844,
-                "en:whey_powder": 2.44204371255163,
-                "en:whole_milk_powder": 2.78948154470552,
-                "fr:matiere_grasse_de_lait_anhydre": 2.43669909212186
-            },
-            "mass_ratio_uncharacterized": 0.0599360378118199,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:fat-reduced-cocoa",
-                    "en:e322",
-                    "fr:matiere-grasse-de-lait-anhydre"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0599360378118199,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.214285714285714,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (29%) has not been used."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 41,
     "ecoscore_tags": [
@@ -1920,7 +1874,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_max": 100,
             "percent_min": 10,
@@ -1929,18 +1885,21 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_max": 50,
             "percent_min": 0,
             "text": "beurre de cacao"
         },
         {
-            "difference": 3.8,
+            "difference": 3.75,
             "id": "en:cereal-crispies",
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:rice-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.62,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1948,7 +1907,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.81,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1957,6 +1918,7 @@
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:fat-reduced-cocoa",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.41,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
@@ -1965,12 +1927,14 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.41,
                     "percent_max": 0.35,
                     "percent_min": 0,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
@@ -1980,6 +1944,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 25,
             "percent_min": 0,
@@ -1987,7 +1952,9 @@
         },
         {
             "ciqual_food_code": "19021",
+            "ecobalyse_code": "milk-powder",
             "id": "en:whole-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 20,
             "percent_min": 0,
@@ -1995,7 +1962,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2003,6 +1972,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2010,6 +1980,7 @@
         },
         {
             "id": "fr:matiere-grasse-de-lait-anhydre",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.352,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2020,12 +1991,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.176,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "lécithine de tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2033,8 +2006,9 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de vanille"
         }
@@ -2213,8 +2187,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.253,
-        "total_difference": 3.8,
+        "relative_difference": 0.25,
+        "total_difference": 3.75,
         "total_specified_input_percent": 15
     },
     "ingredients_n": 15,
@@ -2296,6 +2270,19 @@
         "fr:matiere-grasse-de-lait-anhydre"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cereal-crispies",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:natural-vanilla-flavouring",
+        "en:salt",
+        "en:sunflower-lecithin",
+        "en:whey-powder",
+        "fr:matiere-grasse-de-lait-anhydre"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 29,
@@ -2811,7 +2798,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2820,12 +2809,16 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             },
             "weight_measured": 1
@@ -2833,18 +2826,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             },
             "weight_measured": 2
@@ -2852,7 +2851,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

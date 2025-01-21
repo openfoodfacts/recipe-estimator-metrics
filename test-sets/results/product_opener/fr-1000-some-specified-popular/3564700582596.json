@@ -203,7 +203,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1314,8 +1314,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 6.4,
+            "difference": 6.44,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_hidden": 62,
             "percent_max": 100,
@@ -1324,8 +1326,10 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 5.8,
+            "difference": 5.78,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_hidden": 28,
             "percent_max": 50,
@@ -1334,14 +1338,18 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "huile de tournesol"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.56,
             "percent_max": 25,
             "percent_min": 0,
@@ -1349,7 +1357,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.2,
             "percent_max": 4.4,
             "percent_min": 0,
@@ -1358,6 +1368,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.8,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1365,7 +1376,9 @@
         },
         {
             "ciqual_food_code": "9550",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:barley-malt-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.8,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1373,6 +1386,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.8,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1383,12 +1397,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.956,
                     "percent_max": 1.6,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.956,
             "percent_max": 1.6,
             "percent_min": 0,
@@ -1490,7 +1506,7 @@
         "acide-ascorbique"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 3,
+        "number_of_ingredients_without_ciqual_code": 2,
         "relative_difference": 0.136,
         "total_difference": 12.2,
         "total_specified_input_percent": 90
@@ -1553,10 +1569,17 @@
     "ingredients_without_ciqual_codes": [
         "en:e300",
         "en:flour-treatment-agent",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e300",
+        "en:flour-treatment-agent",
+        "en:salt",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -1993,31 +2016,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

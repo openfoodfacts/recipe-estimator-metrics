@@ -32,7 +32,7 @@
     "additives_old_tags": [],
     "additives_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "ferments lactiques, lait",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -174,7 +174,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1014,6 +1014,7 @@
         {
             "difference": 10.9,
             "id": "fr:lait-pasteurise-a-2-2-de-matieres-grasses",
+            "is_in_taxonomy": 0,
             "percent_estimate": 75.1,
             "percent_hidden": 86,
             "percent_max": 100,
@@ -1023,7 +1024,9 @@
         {
             "ciqual_proxy_food_code": "31016",
             "difference": 0.35,
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_hidden": 4.5,
             "percent_max": 8.3,
@@ -1033,7 +1036,9 @@
         {
             "ciqual_food_code": "13025",
             "difference": 0.15,
+            "ecobalyse_code": "mango-non-eu",
             "id": "en:mango-puree",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_hidden": 4,
             "percent_max": 8.3,
@@ -1044,6 +1049,7 @@
             "ciqual_food_code": "13016",
             "difference": 1.35,
             "id": "en:passionfruit",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_hidden": 2.8,
             "percent_max": 8.3,
@@ -1054,6 +1060,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
@@ -1062,6 +1069,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
@@ -1069,6 +1077,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.15,
             "percent_max": 8.3,
             "percent_min": 0,
@@ -1171,6 +1180,14 @@
         "fr:lait-pasteurise-a-2-2-de-matieres-grasses"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:concentrated-lemon-juice",
+        "en:lactic-ferments",
+        "en:passionfruit",
+        "en:starch",
+        "fr:lait-pasteurise-a-2-2-de-matieres-grasses"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1568,7 +1585,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1577,12 +1596,16 @@
             "quantity_per_unit_value": 280,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": "12"
@@ -1590,7 +1613,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 2,
@@ -1599,12 +1624,16 @@
             "quantity_per_unit_value": 140,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             },
             "weight_measured": 0.5
@@ -1612,7 +1641,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": 2,
@@ -1621,12 +1652,16 @@
             "quantity_per_unit_value": 140,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             },
             "weight_measured": "4"
@@ -1634,7 +1669,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 2,
@@ -1643,12 +1680,16 @@
             "quantity_per_unit_value": 140,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": "en:sheet"
+                    }
                 }
             },
             "weight_measured": 2.5
@@ -1656,12 +1697,16 @@
         {
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         }

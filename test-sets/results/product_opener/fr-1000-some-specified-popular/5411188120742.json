@@ -256,7 +256,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -688,63 +688,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0555022146836559,
-            "likeliest_impacts": {
-                "Climate_change": 0.0137203284860462,
-                "EF_single_score": 0.00532785087067794
-            },
-            "likeliest_recipe": {
-                "de:D2": 0.00163499874106242,
-                "de:Zichorienwurzelfasern": 2.05872649861791,
-                "en:almond": 2.30303986528675,
-                "en:carob_seed_flour": 0.212823229119661,
-                "en:e101": 0.028868910496281,
-                "en:e341iii": 1.76401653890579,
-                "en:e418": 0.0925957499137481,
-                "en:natural_vanilla_flavouring": 0.336439775349464,
-                "en:sea_salt": 0.305418979033409,
-                "en:sugar": 3.15246862552772,
-                "en:sunflower": 0.270973801242687,
-                "en:vitamin_b12": 0.00163499874106242,
-                "en:vitamin_e": 0.00163499874106242,
-                "en:vitamins": 0.0840652972516154,
-                "en:water": 89.5178257889775
-            },
-            "mass_ratio_uncharacterized": 0.0488104538059424,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "de:Zichorienwurzelfasern",
-                    "en:vitamins",
-                    "de:D2",
-                    "en:carob-seed-flour",
-                    "en:vitamin-e",
-                    "en:vitamin-b12",
-                    "en:e418",
-                    "en:e101",
-                    "en:e341iii"
-                ],
-                "nutrition": [
-                    "de:Zichorienwurzelfasern",
-                    "de:D2",
-                    "en:e418"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0488104538059424,
-                "nutrition": 0.0207834908079406
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 60%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 69,
     "ecoscore_tags": [
@@ -1702,7 +1645,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 89.9,
             "percent_max": 100,
             "percent_min": 79.88,
@@ -1710,7 +1655,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.9,
             "percent_max": 3.8,
             "percent_min": 0,
@@ -1720,6 +1667,7 @@
             "ciqual_food_code": "15041",
             "difference": 0.4,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.9,
             "percent_hidden": 2.3,
             "percent_max": 3.8,
@@ -1729,6 +1677,7 @@
         {
             "ciqual_food_code": "20026",
             "id": "en:chicory-fibre",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.9,
             "percent_max": 3.8,
             "percent_min": 0,
@@ -1739,12 +1688,14 @@
             "ingredients": [
                 {
                     "id": "en:e341iii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.9,
                     "percent_max": 3.8,
                     "percent_min": 0,
                     "text": "Tricalciumphosphat"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.9,
             "percent_max": 3.8,
             "percent_min": 0,
@@ -1752,6 +1703,7 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.23,
             "percent_max": 3.8,
             "percent_min": 0,
@@ -1760,6 +1712,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1770,7 +1723,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.035,
                     "percent_max": 0.14,
                     "percent_min": 0,
@@ -1778,12 +1733,14 @@
                 },
                 {
                     "id": "en:e418",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.035,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "Gellan"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1794,12 +1751,14 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.07,
                     "percent_max": 0.14,
                     "percent_min": 0,
                     "text": "Lecithine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1807,6 +1766,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1814,6 +1774,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1821,6 +1782,7 @@
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1828,6 +1790,7 @@
         },
         {
             "id": "en:ergocalciferol",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.07,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -1835,6 +1798,7 @@
         },
         {
             "id": "en:vitamin-e",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.74,
             "percent_max": 0.14,
             "percent_min": 0,
@@ -2167,6 +2131,24 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:calcium",
+        "en:chicory-fibre",
+        "en:e101",
+        "en:e322",
+        "en:e341iii",
+        "en:e418",
+        "en:emulsifier",
+        "en:ergocalciferol",
+        "en:natural-vanilla-flavouring",
+        "en:sea-salt",
+        "en:stabiliser",
+        "en:vitamin-b12",
+        "en:vitamin-e",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 38,
@@ -2721,26 +2703,34 @@
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-pak"
+                    "id": {
+                        "id": "en:tetra-pak"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

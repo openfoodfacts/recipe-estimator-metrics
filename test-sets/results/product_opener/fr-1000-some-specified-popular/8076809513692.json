@@ -239,7 +239,7 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 68,
@@ -645,50 +645,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0432521449832377,
-            "likeliest_impacts": {
-                "Climate_change": 0.034134323333373,
-                "EF_single_score": 0.00692353179377244
-            },
-            "likeliest_recipe": {
-                "en:black_pepper": 0.0100094153885927,
-                "en:carrot": 3.50329538600745,
-                "en:chives": 0.200188307771854,
-                "en:chopped_tomatoes": 66.062141564712,
-                "en:concentrated_tomato_puree": 10.0094153885927,
-                "en:flavouring": 0.0818412765533074,
-                "en:garlic": 0.500470769429636,
-                "en:onion": 7.00659077201491,
-                "en:parsley": 0.200188307771854,
-                "en:salt": 1.19684876584756,
-                "en:sugar": 2.15574162122972,
-                "en:sunflower_oil": 3.38989239346534,
-                "en:thyme": 0.400376615543709,
-                "en:water": 5.37715330159859
-            },
-            "mass_ratio_uncharacterized": 0.00116863421409272,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00116863421409272,
-                "nutrition": 0.00116863421409272
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0714285714285714,
-                "nutrition": 0.0714285714285714
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 76,
     "ecoscore_tags": [
@@ -2219,7 +2175,9 @@
         {
             "ciqual_food_code": "20169",
             "difference": 12.4,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato-pulp",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.6,
             "percent_hidden": 66,
             "percent_max": 100,
@@ -2229,7 +2187,9 @@
         {
             "ciqual_food_code": "20068",
             "difference": 13.2,
+            "ecobalyse_code": "tomato-concentrated",
             "id": "en:tomato-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.2,
             "percent_hidden": 10,
             "percent_max": 50,
@@ -2238,8 +2198,10 @@
         },
         {
             "ciqual_food_code": "20034",
-            "difference": 4.6,
+            "difference": 4.61,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.6,
             "percent_hidden": 7,
             "percent_max": 33.3333333333333,
@@ -2248,7 +2210,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.8,
             "percent_max": 25,
             "percent_min": 0,
@@ -2256,8 +2220,10 @@
         },
         {
             "ciqual_food_code": "20009",
-            "difference": 0.6,
+            "difference": 0.598,
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.9,
             "percent_hidden": 3.5,
             "percent_max": 20,
@@ -2266,7 +2232,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.45,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2274,7 +2242,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.725,
             "percent_max": 5.2,
             "percent_min": 0,
@@ -2283,6 +2253,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.363,
             "percent_max": 0.96,
             "percent_min": 0,
@@ -2292,6 +2263,7 @@
             "ciqual_food_code": "11000",
             "difference": 0.319,
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.181,
             "percent_hidden": 0.5,
             "percent_max": 0.96,
@@ -2302,6 +2274,7 @@
             "ciqual_food_code": "11070",
             "difference": 0.309,
             "id": "en:thyme",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0907,
             "percent_hidden": 0.4,
             "percent_max": 0.96,
@@ -2312,6 +2285,7 @@
             "ciqual_food_code": "11003",
             "difference": 0.155,
             "id": "en:chives",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0453,
             "percent_hidden": 0.2,
             "percent_max": 0.96,
@@ -2322,6 +2296,7 @@
             "ciqual_proxy_food_code": "11014",
             "difference": 0.177,
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0227,
             "percent_hidden": 0.2,
             "percent_max": 0.96,
@@ -2330,6 +2305,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.96,
             "percent_min": 0,
@@ -2337,7 +2313,9 @@
         },
         {
             "ciqual_food_code": "11015",
+            "ecobalyse_code": "black-pepper",
             "id": "en:black-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0113,
             "percent_max": 0.96,
             "percent_min": 0,
@@ -2601,6 +2579,15 @@
         "en:flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chives",
+        "en:flavouring",
+        "en:garlic",
+        "en:parsley",
+        "en:salt",
+        "en:thyme"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 30,
@@ -3147,36 +3134,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:steel"
+                    "id": {
+                        "id": "en:steel"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:unknown"
+                    "id": {
+                        "id": "en:unknown"
+                    }
                 }
             }
         }

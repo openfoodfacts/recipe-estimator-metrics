@@ -209,7 +209,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1133,6 +1133,7 @@
     "ingredients": [
         {
             "id": "en:non-hydrogenated-vegetable-oils",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.2,
             "percent_max": 100,
             "percent_min": 8.33333333333333,
@@ -1143,7 +1144,9 @@
             "id": "en:fat",
             "ingredients": [
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.5,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1151,6 +1154,7 @@
                 },
                 {
                     "id": "en:quot",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 5.73,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1158,6 +1162,7 @@
                 },
                 {
                     "id": "en:palm-kernel-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.86,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1165,13 +1170,16 @@
                 },
                 {
                     "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.86,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "palm"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.9,
             "percent_hidden": 62,
             "percent_max": 50,
@@ -1180,7 +1188,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.5,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1191,12 +1201,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithins-salt",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 5.73,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "sunflower lecithins* salt"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.73,
             "percent_max": 25,
             "percent_min": 0,
@@ -1204,16 +1216,18 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "natural flavors"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.61,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "concentrated lemon juice"
         },
@@ -1222,14 +1236,16 @@
             "ingredients": [
                 {
                     "id": "en:e392",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.807,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "rosemary extract"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.807,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "antioxidant"
         },
@@ -1238,43 +1254,49 @@
             "ingredients": [
                 {
                     "id": "en:e100",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.404,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "curcumin"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.404,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "dyes"
         },
         {
             "id": "en:e160b",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.202,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "annatto"
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.101,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "vitamin b1"
         },
         {
             "id": "en:quot",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0505,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "quot"
         },
         {
             "id": "en:ingredients-of-vegetable",
+            "is_in_taxonomy": 0,
             "origins": "",
             "percent_estimate": 0.0505,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "ingredients of vegetable"
         }
@@ -1440,7 +1462,7 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 12,
-        "relative_difference": 0.631,
+        "relative_difference": 0.63,
         "total_difference": 39.1,
         "total_specified_input_percent": 62
     },
@@ -1536,6 +1558,24 @@
         "en:thiamin"
     ],
     "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:concentrated-lemon-juice",
+        "en:dyes",
+        "en:e100",
+        "en:e160b",
+        "en:e392",
+        "en:emulsifier",
+        "en:fat",
+        "en:ingredients-of-vegetable",
+        "en:natural-flavouring",
+        "en:non-hydrogenated-vegetable-oils",
+        "en:palm-kernel-oil",
+        "en:quot",
+        "en:sunflower-lecithins-salt",
+        "en:thiamin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 27,

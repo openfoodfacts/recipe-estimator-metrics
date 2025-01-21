@@ -237,7 +237,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -678,57 +678,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0623774984861095,
-            "likeliest_impacts": {
-                "Climate_change": 0.099937896109984,
-                "EF_single_score": 0.0256013065117606
-            },
-            "likeliest_recipe": {
-                "en:colza_oil": 20.6702260797031,
-                "en:e330": 0.0280238298691484,
-                "en:e410": 0.653052981724411,
-                "en:e420": 4.91228830990721,
-                "en:e422": 3.24004540192239,
-                "en:e450": 1.03668745403652,
-                "en:e471": 2.83993648353645,
-                "en:e500": 0.678110740270238,
-                "en:milk": 0.325671640740867,
-                "en:salt": 1.10612308708955,
-                "en:sugar": 24.2150687654512,
-                "en:water": 5.03693427831369,
-                "en:wheat_flour": 24.2150687654512,
-                "en:whole_egg": 19.5271985454181
-            },
-            "mass_ratio_uncharacterized": 0.166590562837777,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e500",
-                    "en:e420",
-                    "en:e422",
-                    "en:e471",
-                    "en:e410",
-                    "en:e330",
-                    "en:e450"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.166590562837777,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.538461538461538,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 54%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 17%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 39,
     "ecoscore_tags": [
@@ -1438,7 +1387,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 27.8,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_hidden": 26,
             "percent_max": 100,
@@ -1447,24 +1398,30 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 13,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.0,
             "percent_max": 26,
             "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 13,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 13.0,
             "percent_max": 26,
             "percent_min": 0,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "22000",
-            "difference": 7.9,
+            "difference": 7.92,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:whole-egg",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.1,
             "percent_hidden": 18,
             "percent_max": 25,
@@ -1476,12 +1433,14 @@
             "ingredients": [
                 {
                     "id": "en:e420",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.04,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "sorbitols"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.04,
             "percent_max": 20,
             "percent_min": 0,
@@ -1489,6 +1448,7 @@
         },
         {
             "id": "en:e422",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.52,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1499,6 +1459,7 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.26,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
@@ -1507,6 +1468,7 @@
                     "vegetarian": "en:yes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.26,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1515,6 +1477,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
@@ -1525,12 +1488,14 @@
             "ingredients": [
                 {
                     "id": "en:e450",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.38,
                     "percent_max": 1,
                     "percent_min": 0,
                     "text": "diphosphates"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.38,
             "percent_max": 1,
             "percent_min": 0,
@@ -1538,6 +1503,7 @@
         },
         {
             "id": "en:e500",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.19,
             "percent_max": 1,
             "percent_min": 0,
@@ -1548,13 +1514,16 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:carob-seed-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.095,
                     "percent_max": 1,
                     "percent_min": 0,
                     "text": "farine de graines de caroube"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.095,
             "percent_max": 1,
             "percent_min": 0,
@@ -1562,6 +1531,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0475,
             "percent_max": 1,
             "percent_min": 0,
@@ -1572,12 +1542,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0475,
                     "percent_max": 1,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0475,
             "percent_max": 1,
             "percent_min": 0,
@@ -1761,8 +1733,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.811,
-        "total_difference": 35.7,
+        "relative_difference": 0.813,
+        "total_difference": 35.8,
         "total_specified_input_percent": 44
     },
     "ingredients_n": 18,
@@ -1854,6 +1826,22 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:e420",
+        "en:e422",
+        "en:e450",
+        "en:e471",
+        "en:e500",
+        "en:emulsifier",
+        "en:natural-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:stabiliser",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 33,
@@ -2288,43 +2276,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 24,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

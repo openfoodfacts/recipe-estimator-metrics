@@ -180,7 +180,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -431,54 +431,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0622888046037472,
-            "likeliest_impacts": {
-                "Climate_change": 0.323022617796327,
-                "EF_single_score": 0.0347152097267968
-            },
-            "likeliest_recipe": {
-                "en:chocolate": 7.27337705706603,
-                "en:cocoa_paste": 2.6327086810566,
-                "en:e500ii": 0.146711497911187,
-                "en:fat_reduced_cocoa_powder": 1.23603420659674,
-                "en:honey": 1.14963347108282,
-                "en:natural_flavouring": 0.0805723564353875,
-                "en:natural_vanilla_flavouring": 1.23603420659674,
-                "en:refined_sunflower_oil": 9.94827761813512,
-                "en:salt": 0.986588116384445,
-                "en:soya_lecithin": 1.30704599331339,
-                "en:sugar": 18.3815609300944,
-                "en:sunflower_lecithin": 0.180930003885396,
-                "en:water": 0.291641830180137,
-                "en:whole_grain_oat_flakes": 58.1870164565283,
-                "es:melaza_de_ca_a": 0.867254104248134
-            },
-            "mass_ratio_uncharacterized": 0.0131386737570494,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "es:melaza de caña",
-                    "en:e500ii",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "es:melaza de caña",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0131386737570494,
-                "nutrition": 0.0094739823218744
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0.133333333333333
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -818,8 +770,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9311",
-            "difference": 2.7,
+            "difference": 2.67,
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.3,
             "percent_hidden": 56,
             "percent_max": 100,
@@ -828,7 +781,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 13.4,
             "percent_max": 26.8,
             "percent_min": 0,
@@ -836,7 +791,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "refined-sunflower-oil",
             "id": "en:refined-sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 13.4,
             "percent_max": 26.8,
             "percent_min": 0,
@@ -846,6 +803,7 @@
             "ciqual_proxy_food_code": "31005",
             "difference": 2.93,
             "id": "en:chocolate-chunk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 9.93,
             "percent_hidden": 7,
             "percent_max": 25,
@@ -855,6 +813,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.97,
             "percent_max": 20,
             "percent_min": 0,
@@ -862,7 +821,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -874,12 +835,14 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.24,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "soy lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.24,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -887,29 +850,33 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.621,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "natural vanilla aroma"
         },
         {
             "id": "en:degreased-cocoa-powder",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.31,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "degreased cocoa powder"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.155,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "honey"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0776,
             "percent_max": 0.65,
             "percent_min": 0,
@@ -917,7 +884,9 @@
         },
         {
             "ciqual_food_code": "31067",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar-molasses",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0388,
             "percent_max": 0.65,
             "percent_min": 0,
@@ -928,12 +897,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0194,
                     "percent_max": 0.65,
                     "percent_min": 0,
                     "text": "sunflower lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0194,
             "percent_max": 0.65,
             "percent_min": 0,
@@ -944,12 +915,14 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0097,
                     "percent_max": 0.65,
                     "percent_min": 0,
                     "text": "sodium acid carbonate"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0097,
             "percent_max": 0.65,
             "percent_min": 0,
@@ -957,6 +930,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0097,
             "percent_max": 0.65,
             "percent_min": 0,
@@ -1026,8 +1000,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.0894,
-        "total_difference": 5.63,
+        "relative_difference": 0.0889,
+        "total_difference": 5.6,
         "total_specified_input_percent": 63
     },
     "ingredients_n": 18,
@@ -1116,6 +1090,22 @@
         "en:sunflower-lecithin"
     ],
     "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate-chunk",
+        "en:cocoa-paste",
+        "en:degreased-cocoa-powder",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:gasifier",
+        "en:honey",
+        "en:natural-flavouring",
+        "en:natural-vanilla-flavouring",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:sunflower-lecithin",
+        "en:whole-grain-oat-flakes"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -1494,24 +1484,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         }

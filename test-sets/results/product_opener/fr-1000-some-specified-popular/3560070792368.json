@@ -263,7 +263,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -689,50 +689,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0400298039070811,
-            "likeliest_impacts": {
-                "Climate_change": 0.126910055115468,
-                "EF_single_score": 0.0261798939731276
-            },
-            "likeliest_recipe": {
-                "en:cane_sugar": 15.0136063644787,
-                "en:honey": 0.186695479408306,
-                "en:oat": 0.416010073509481,
-                "en:rice": 5.82414102913274,
-                "en:rice_flour": 11.4402770215107,
-                "en:salt": 0.057511186887957,
-                "en:sunflower_oil": 5.83778092487967,
-                "en:water": 0.0169172749515474,
-                "en:wheat": 0.728017628641592,
-                "en:whole_grain_oat_flakes": 49.9212088211377,
-                "fr:flocons_d__orge__complets": 14.5603525728318
-            },
-            "mass_ratio_uncharacterized": 0.14,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:flocons d'_orge_ complets"
-                ],
-                "nutrition": [
-                    "fr:flocons d'_orge_ complets"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.14,
-                "nutrition": 0.14
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0909090909090909,
-                "nutrition": 0.0909090909090909
-            },
-            "warnings": [
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 14%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1599,122 +1555,138 @@
     "ingredients": [
         {
             "ciqual_food_code": "9311",
-            "difference": 2.1,
+            "difference": 9.14,
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 45.9,
+            "percent_estimate": 57.1,
             "percent_hidden": 48,
-            "percent_max": 73.2,
-            "percent_min": 18.55,
+            "percent_max": 100,
+            "percent_min": 14.2857142857143,
             "text": "Flocons d'_avoine_ complets"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 13.3,
+            "percent_estimate": 10.0,
             "percent_max": 20,
-            "percent_min": 6.7,
+            "percent_min": 0,
             "text": "sucre de canne"
         },
         {
-            "difference": 0.7,
+            "difference": 4.0,
             "id": "fr:flocons-d-orge-complets",
+            "is_in_taxonomy": 0,
             "labels": "en:organic",
-            "percent_estimate": 13.3,
+            "percent_estimate": 10.0,
             "percent_hidden": 14,
             "percent_max": 20,
-            "percent_min": 6.7,
+            "percent_min": 0,
             "text": "flocons d'_orge_ complets"
         },
         {
             "ciqual_food_code": "9520",
-            "difference": 2.3,
+            "difference": 1.0,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 13.3,
+            "percent_estimate": 10.0,
             "percent_hidden": 11,
             "percent_max": 20,
-            "percent_min": 6.7,
+            "percent_min": 0,
             "text": "farine de riz"
         },
         {
-            "difference": 0.18,
+            "difference": 0.671,
             "id": "fr:billettes-de-cereales",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9100",
-                    "difference": 0.0,
+                    "difference": 2.39,
                     "id": "en:rice",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent": 5.6,
-                    "percent_estimate": 5.6,
-                    "percent_max": 5.6,
-                    "percent_min": 5.6,
+                    "percent_estimate": 3.21,
+                    "percent_hidden": 5.6,
+                    "percent_max": 20,
+                    "percent_min": 0,
                     "text": "riz"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0.0,
+                    "difference": 0.907,
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent": 0.7,
-                    "percent_estimate": 0.7,
-                    "percent_max": 0.7,
-                    "percent_min": 0.7,
+                    "percent_estimate": 1.61,
+                    "percent_hidden": 0.7,
+                    "percent_max": 10,
+                    "percent_min": 0,
                     "text": "_blé_"
                 },
                 {
                     "ciqual_food_code": "9310",
-                    "difference": 0.0,
+                    "difference": 0.404,
                     "id": "en:oat",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent": 0.4,
-                    "percent_estimate": 0.4,
-                    "percent_max": 0.4,
-                    "percent_min": 0.4,
+                    "percent_estimate": 0.804,
+                    "percent_hidden": 0.4,
+                    "percent_max": 6.66666666666667,
+                    "percent_min": 0,
                     "text": "_avoine_"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:cane-sugar",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
-                    "percent_estimate": 0.113,
-                    "percent_max": 0.4,
+                    "percent_estimate": 0.402,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "sucre de canne"
                 },
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
-                    "percent_estimate": 0.113,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.402,
                     "percent_max": 0.05,
                     "percent_min": 0,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 6.92,
+            "percent_estimate": 6.43,
             "percent_hidden": 7.1,
-            "percent_max": 7.15,
-            "percent_min": 6.7,
+            "percent_max": 20,
+            "percent_min": 0,
             "text": "billettes de céréales"
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 3.58,
-            "percent_max": 7.15,
+            "percent_estimate": 3.21,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "huile de tournesol"
         },
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 3.58,
-            "percent_max": 7.15,
+            "percent_estimate": 3.21,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "miel"
         }
@@ -1856,8 +1828,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0608,
-        "total_difference": 5.28,
+        "relative_difference": 0.213,
+        "total_difference": 18.5,
         "total_specified_input_percent": 86.8
     },
     "ingredients_n": 12,
@@ -1930,6 +1902,17 @@
         "fr:flocons-d-orge-complets"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:honey",
+        "en:oat",
+        "en:rice",
+        "en:salt",
+        "en:wheat",
+        "en:whole-grain-oat-flakes",
+        "fr:billettes-de-cereales",
+        "fr:flocons-d-orge-complets"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -2045,8 +2028,7 @@
         "en:ecoscore-missing-data-warning",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,
@@ -2426,12 +2408,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

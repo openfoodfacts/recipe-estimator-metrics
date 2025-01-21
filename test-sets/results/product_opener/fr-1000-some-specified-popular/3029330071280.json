@@ -195,7 +195,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -638,50 +638,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0452150047906398,
-            "likeliest_impacts": {
-                "Climate_change": 0.0280762943133292,
-                "EF_single_score": 0.00574546198864918
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0,
-                "en:alcohol": 1.5623857501847,
-                "en:colza_oil": 2.02617910757404,
-                "en:salt": 0.585581784961476,
-                "en:water": 26.8765489595665,
-                "en:wheat_flour": 1.86362131995222,
-                "en:wheat_germ": 0.0267027443918381,
-                "en:wheat_gluten": 1.81578982912167,
-                "en:whole_wheat_flour": 61.7937595563105,
-                "en:yeast": 1.35746285287637,
-                "fr:farine_de_ma_s_ferment_e": 0.177300724125
-            },
-            "mass_ratio_uncharacterized": 0.0130544645767373,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:farine de maïs fermentée",
-                    "en:acerola-juice"
-                ],
-                "nutrition": [
-                    "fr:farine de maïs fermentée"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0130544645767373,
-                "nutrition": 0.00823854538643775
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.181818181818182,
-                "nutrition": 0.0909090909090909
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 82,
     "ecoscore_tags": [
@@ -1304,8 +1260,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 8.5,
+            "difference": 8.45,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 63,
             "percent_max": 100,
@@ -1314,7 +1272,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_max": 50,
             "percent_min": 0,
@@ -1322,7 +1282,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1331,7 +1293,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 3.78,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_hidden": 1.9,
             "percent_max": 25,
@@ -1340,6 +1304,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1347,22 +1312,26 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 1.42,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.71,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "levure"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1371,6 +1340,7 @@
         {
             "ciqual_food_code": "9200",
             "id": "en:corn",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1380,6 +1350,7 @@
         {
             "ciqual_food_code": "9660",
             "id": "en:wheat-germ",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1387,6 +1358,7 @@
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0888,
             "percent_max": 1.2,
             "percent_min": 0,
@@ -1430,9 +1402,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.189,
-        "total_difference": 12.3,
+        "total_difference": 12.2,
         "total_specified_input_percent": 64.9
     },
     "ingredients_n": 11,
@@ -1494,10 +1466,19 @@
     "ingredients_without_ciqual_codes": [
         "en:acerola-juice",
         "en:flavouring",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:corn",
+        "en:flavouring",
+        "en:salt",
+        "en:wheat-germ",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1991,7 +1972,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2000,12 +1983,16 @@
             "quantity_per_unit_value": 825,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:envelope"
+                    "id": {
+                        "id": "en:envelope"
+                    }
                 }
             },
             "weight_measured": 7.85
@@ -2013,18 +2000,24 @@
         {
             "material": {
                 "id": {
-                    "id": "fr:Plastique métal"
+                    "id": {
+                        "id": "fr:Plastique métal"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": "en:fastener"
+                    }
                 }
             },
             "weight_measured": 0.33
@@ -2032,7 +2025,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

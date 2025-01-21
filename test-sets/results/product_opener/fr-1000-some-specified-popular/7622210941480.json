@@ -201,13 +201,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 93.7,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 6.29999999999999,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 87.141,
@@ -646,49 +646,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0281956394725259,
-            "likeliest_impacts": {
-                "Climate_change": 0.0406455483592765,
-                "EF_single_score": 0.00747646727507006
-            },
-            "likeliest_recipe": {
-                "en:e300": 0.277724091163357,
-                "en:malted_wheat_flour": 1.80849772945026,
-                "en:oat_fibre": 1.60755353728912,
-                "en:palm_oil": 0.944781493207695,
-                "en:salt": 0.294879187617139,
-                "en:sugar": 0.944781493207689,
-                "en:water": 0.0927351730121759,
-                "en:wheat_flour": 61.1875065130671,
-                "en:wheat_gluten": 0.944781493207692,
-                "en:wheat_starch": 0.277724091163357,
-                "en:whole_wheat_flour": 31.1463497849767,
-                "en:yeast": 0.944781493207695
-            },
-            "mass_ratio_uncharacterized": 0.00616881978027302,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300",
-                    "en:wheat-starch"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00616881978027302,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.181818181818182,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 78,
     "ecoscore_tags": [
@@ -1200,75 +1157,111 @@
     ],
     "ingredients": [
         {
-            "difference": 45.3,
+            "difference": 12.2,
             "id": "en:cereal",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 10.9,
+                    "difference": 11.1,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "origins": "en:france",
-                    "percent": 60.9,
-                    "percent_estimate": 50,
+                    "percent_estimate": 49.8,
+                    "percent_hidden": 60.9,
+                    "percent_max": 100,
+                    "percent_min": 16.5275,
                     "text": "farine de blé"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 31,
+                    "difference": 14.4,
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
+                    "is_in_taxonomy": 1,
                     "origins": "en:france",
-                    "percent": 31,
-                    "percent_estimate": 0,
+                    "percent_estimate": 16.6,
+                    "percent_hidden": 31,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "farine de blé complète"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 1.8,
+                    "difference": 6.52,
+                    "ecobalyse_code": "flour",
                     "id": "en:malted-wheat-flour",
+                    "is_in_taxonomy": 1,
                     "origins": "en:france",
-                    "percent": 1.8,
-                    "percent_estimate": 0,
+                    "percent_estimate": 8.32,
+                    "percent_hidden": 1.8,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "farine de blé malté"
                 },
                 {
                     "ciqual_food_code": "9310",
-                    "difference": 1.6,
+                    "difference": 6.72,
                     "id": "en:oat-fibre",
-                    "percent": 1.6,
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 8.32,
+                    "percent_hidden": 1.6,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "fibres d'avoine"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 83.1,
             "percent_hidden": 95.3,
+            "percent_max": 100,
+            "percent_min": 66.11,
             "text": "Céréales"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.7,
+            "percent_max": 7.4,
+            "percent_min": 0,
             "text": "sucre"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.7,
+            "percent_max": 7.4,
+            "percent_min": 0,
             "text": "levure"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.7,
+            "percent_max": 7.4,
+            "percent_min": 0,
             "text": "huile de palme"
         },
         {
             "id": "en:wheat-gluten",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.92,
+            "percent_max": 7.4,
+            "percent_min": 0,
             "text": "gluten de blé"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.715,
+            "percent_max": 1.43,
+            "percent_min": 0,
             "text": "sel"
         },
         {
@@ -1276,17 +1269,26 @@
             "ingredients": [
                 {
                     "id": "en:e300",
-                    "percent_estimate": 0.781,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.715,
+                    "percent_max": 1.43,
+                    "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.715,
+            "percent_max": 1.43,
+            "percent_min": 0,
             "text": "agent de traitement de la farine"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.49,
+            "percent_max": 1.43,
+            "percent_min": 0,
             "text": "amidon de blé"
         }
     ],
@@ -1337,9 +1339,9 @@
     "ingredients_ids_debug": [],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.475,
-        "total_difference": 90.6,
+        "number_of_ingredients_without_ciqual_code": 2,
+        "relative_difference": 0.267,
+        "total_difference": 51.0,
         "total_specified_input_percent": 191.0
     },
     "ingredients_n": 13,
@@ -1362,7 +1364,7 @@
         "en:oat-fibre",
         "en:e300"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:cereal",
         "en:sugar",
@@ -1406,10 +1408,20 @@
         "en:cereal",
         "en:e300",
         "en:flour-treatment-agent",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cereal",
+        "en:e300",
+        "en:flour-treatment-agent",
+        "en:oat-fibre",
+        "en:salt",
         "en:wheat-gluten",
+        "en:wheat-starch",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1483,8 +1495,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "null",
     "nova_group": 4,
@@ -1807,7 +1818,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1816,19 +1829,25 @@
             "quantity_per_unit_value": 280,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             }
         }

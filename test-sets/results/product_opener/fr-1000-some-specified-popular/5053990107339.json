@@ -237,7 +237,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -695,59 +695,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0767286938145118,
-            "likeliest_impacts": {
-                "Climate_change": 0.243340661729856,
-                "EF_single_score": 0.0365241722520035
-            },
-            "likeliest_recipe": {
-                "en:colour": 0.316013885820408,
-                "en:corn_oil": 5.26693325949549,
-                "en:e471": 2.59723498857103,
-                "en:maltodextrins": 1.65846869382366,
-                "en:rice_flour": 24.2813331166351,
-                "en:salt": 1.05657821090635,
-                "en:sunflower_oil": 19.1136873279882,
-                "en:water": 0,
-                "en:wheat_starch": 19.847003514191,
-                "en:yeast_extract": 1.05657821090611,
-                "en:yeast_extract_powder": 0.31601388582016,
-                "fr:Pommes_de_terre_d_sydrat_es": 24.4901549058425
-            },
-            "mass_ratio_uncharacterized": 0.596221493306428,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:yeast-extract",
-                    "en:maltodextrins",
-                    "en:colour",
-                    "en:e471",
-                    "en:yeast-extract-powder",
-                    "en:wheat-starch",
-                    "fr:Pommes de terre désydratées"
-                ],
-                "nutrition": [
-                    "fr:Pommes de terre désydratées"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.596221493306428,
-                "nutrition": 0.359109946222814
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.636363636363636,
-                "nutrition": 0.0909090909090909
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast-extract, en:yeast-extract-powder). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 64%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 36%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 60%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 69,
     "ecoscore_tags": [
@@ -1697,6 +1644,7 @@
     "ingredients": [
         {
             "id": "fr:pringles-original",
+            "is_in_taxonomy": 0,
             "percent": 100,
             "percent_estimate": 100,
             "percent_max": 100,
@@ -1874,6 +1822,10 @@
         "fr:pringles-original"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "fr:pringles-original"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -2320,7 +2272,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2329,12 +2283,16 @@
             "quantity_per_unit_value": 40,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 12.6
@@ -2342,18 +2300,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 2.9
@@ -2361,18 +2325,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             },
             "weight_measured": 0.6
@@ -2380,18 +2350,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:backing"
+                    "id": {
+                        "id": "en:backing"
+                    }
                 }
             },
             "weight_measured": 7.3

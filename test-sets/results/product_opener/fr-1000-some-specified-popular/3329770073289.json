@@ -33,7 +33,7 @@
         "en:e407",
         "en:e412"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, Lait",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -191,7 +191,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -1269,6 +1269,7 @@
         {
             "ciqual_proxy_food_code": "19593",
             "id": "en:skimmed-yogurt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55,
             "percent_max": 100,
             "percent_min": 10,
@@ -1277,7 +1278,9 @@
         {
             "ciqual_food_code": "13028",
             "difference": 15.3,
+            "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 7.2,
             "percent_max": 50,
@@ -1287,7 +1290,9 @@
         {
             "ciqual_proxy_food_code": "31016",
             "difference": 1.9,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.3,
             "percent_hidden": 7.2,
             "percent_max": 10.6,
@@ -1297,6 +1302,7 @@
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.3,
             "percent_max": 10.6,
             "percent_min": 0,
@@ -1305,6 +1311,7 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice-from-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.3,
             "percent_max": 10.6,
             "percent_min": 0,
@@ -1315,12 +1322,14 @@
             "ingredients": [
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.3,
                     "percent_max": 10.6,
                     "percent_min": 0,
                     "text": "Carraghénane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.3,
             "percent_max": 10.6,
             "percent_min": 0,
@@ -1328,6 +1337,7 @@
         },
         {
             "id": "en:e412",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.65,
             "percent_max": 10.6,
             "percent_min": 0,
@@ -1335,6 +1345,7 @@
         },
         {
             "id": "en:milk-mineral-concentrate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.825,
             "percent_max": 10.6,
             "percent_min": 0,
@@ -1342,17 +1353,20 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.413,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Arômes naturels"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 0.412,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Lait"
         }
@@ -1471,6 +1485,17 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn-starch",
+        "en:e407",
+        "en:e412",
+        "en:lemon-juice-from-concentrate",
+        "en:milk-mineral-concentrate",
+        "en:natural-flavouring",
+        "en:skimmed-yogurt",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -1899,53 +1924,71 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:return-to-store"
+                    "id": {
+                        "id": "en:return-to-store"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:card"
+                    "id": {
+                        "id": "en:card"
+                    }
                 }
             }
         }

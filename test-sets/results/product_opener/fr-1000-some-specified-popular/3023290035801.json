@@ -41,7 +41,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:eggs,en:milk,en:soybeans, en:milk",
+    "allergens": "en:eggs,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, Lait entier, crème, lait, blancs d'oeufs",
     "allergens_from_user": "(en) en:eggs,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -217,13 +217,13 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 61,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 39,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 56.73,
@@ -662,52 +662,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.142794940592482,
-            "likeliest_impacts": {
-                "Climate_change": 0.206040527779961,
-                "EF_single_score": 0.0220591978785513
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 0.620761603992419,
-                "en:cocoa_paste": 0.686879706315754,
-                "en:egg_white": 2.8145550275684,
-                "en:flavouring": 0.0630441735682693,
-                "en:fresh_egg": 9.94770405974869,
-                "en:lean_cocoa_powder": 2.91943488710016,
-                "en:milk": 9.98873400156848,
-                "en:skimmed_milk_powder": 2.81353595606012,
-                "en:soya_lecithin": 0.560993939253663,
-                "en:sugar": 6.71849802012982,
-                "en:water": 5.25172809666688,
-                "en:whole_milk": 65.7413485687739
-            },
-            "mass_ratio_uncharacterized": 0.0299038387566864,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lean cocoa powder",
-                    "en:flavouring"
-                ],
-                "nutrition": [
-                    "en:lean cocoa powder",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0299038387566864,
-                "nutrition": 0.0299038387566864
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0.166666666666667
-            },
-            "warnings": [
-                "The impact relative interquartile is high for Climate change (37%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -1316,7 +1270,9 @@
         {
             "ciqual_food_code": "19023",
             "difference": 6,
+            "ecobalyse_code": "milk",
             "id": "en:whole-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 55,
             "percent_hidden": 61,
@@ -1330,7 +1286,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 8.5,
                     "percent_max": 17,
                     "percent_min": 0,
@@ -1339,7 +1297,8 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
-                    "percent_estimate": 7,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 7.0,
                     "percent_max": 17,
                     "percent_min": 0,
                     "text": "pâte de cacao"
@@ -1347,6 +1306,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.5,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1357,18 +1317,21 @@
                     "ingredients": [
                         {
                             "id": "en:e322i",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 3.5,
                             "percent_max": 12.5,
                             "percent_min": 0,
                             "text": "lécithine"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.5,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "émulsifiant"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.5,
             "percent_hidden": 10.4,
             "percent_max": 50,
@@ -1377,8 +1340,10 @@
         },
         {
             "ciqual_food_code": "22000",
-            "difference": 1.6,
+            "difference": 1.65,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:whole-fresh-eggs",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.2,
             "percent_hidden": 9.6,
             "percent_max": 33.3333333333333,
@@ -1387,7 +1352,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.62,
             "percent_max": 17,
             "percent_min": 0,
@@ -1396,6 +1363,7 @@
         {
             "ciqual_food_code": "19402",
             "id": "en:cream",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.81,
             "percent_max": 17,
             "percent_min": 0,
@@ -1403,7 +1371,9 @@
         },
         {
             "ciqual_proxy_food_code": "19044",
+            "ecobalyse_code": "milk-powder",
             "id": "fr:lait-ecreme-a-base-de-poudre-de-lait",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.41,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1413,6 +1383,7 @@
             "ciqual_food_code": "18100",
             "difference": 2.0,
             "id": "en:fat-reduced-cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.703,
             "percent_hidden": 2.7,
             "percent_max": 14.2857142857143,
@@ -1422,7 +1393,9 @@
         {
             "ciqual_food_code": "22001",
             "difference": 1.05,
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-white",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.352,
             "percent_hidden": 1.4,
             "percent_max": 12.5,
@@ -1431,7 +1404,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.176,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1439,7 +1414,9 @@
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
             "percent_estimate": 0.176,
             "percent_max": 10,
@@ -1497,8 +1474,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.267,
-        "total_difference": 22.7,
+        "relative_difference": 0.268,
+        "total_difference": 22.8,
         "total_specified_input_percent": 85.1
     },
     "ingredients_n": 15,
@@ -1569,6 +1546,16 @@
         "en:emulsifier"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:cream",
+        "en:e322i",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1981,33 +1968,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": "en:Container"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

@@ -224,25 +224,25 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 79.1125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 6.9625,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:european-union-and-non-european-union",
                         "percent": 6.9625,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 6.9625,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 78.309125,
@@ -1553,8 +1553,10 @@
     "ingredients": [
         {
             "ciqual_food_code": "9690",
-            "difference": 8.6,
+            "difference": 8.64,
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:whole-wheat-bulgur",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "origins": "en:france",
             "percent_estimate": 52.9,
@@ -1571,6 +1573,7 @@
                 {
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
+                    "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "origins": "en:france",
                     "percent_estimate": 23.5,
@@ -1579,14 +1582,16 @@
                     "text": "blé"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.5,
             "percent_max": 50,
             "percent_min": 0,
             "text": "épeautre"
         },
         {
-            "difference": 1.7,
+            "difference": 1.74,
             "id": "fr:cuit",
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.8,
             "percent_hidden": 13.5,
             "percent_max": 33.3333333333333,
@@ -1597,14 +1602,28 @@
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "id": "fr:tournesol-oleique-et-tournesol",
-                    "labels": "en:organic, en:organic",
-                    "percent_estimate": 5.88,
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:high-oleic-sunflower",
+                    "is_in_taxonomy": 1,
+                    "labels": "en:organic",
+                    "percent_estimate": 2.94,
                     "percent_max": 25,
                     "percent_min": 0,
-                    "text": "tournesol oléique et tournesol"
+                    "text": "tournesol oléique"
+                },
+                {
+                    "ecobalyse_code": "sunflower-non-eu",
+                    "id": "en:sunflower",
+                    "is_in_taxonomy": 1,
+                    "labels": "en:organic, en:organic",
+                    "percent_estimate": 2.94,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
+                    "text": "tournesol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 5.88,
             "percent_max": 25,
@@ -1614,7 +1633,9 @@
         {
             "ciqual_food_code": "20009",
             "difference": 3.26,
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 2.94,
             "percent_hidden": 6.2,
@@ -1625,7 +1646,9 @@
         {
             "ciqual_food_code": "20034",
             "difference": 3.53,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 1.47,
             "percent_hidden": 5,
@@ -1637,6 +1660,7 @@
             "ciqual_proxy_food_code": "9410",
             "difference": 3.86,
             "id": "en:whole-wheat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "origins": "en:france",
             "percent_estimate": 0.735,
@@ -1648,6 +1672,7 @@
         {
             "ciqual_food_code": "9311",
             "id": "en:whole-grain-oat-flakes",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.368,
             "percent_max": 12.5,
@@ -1657,7 +1682,9 @@
         {
             "ciqual_food_code": "20068",
             "difference": 3.92,
+            "ecobalyse_code": "tomato-concentrated",
             "id": "en:tomato-concentrate",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.184,
             "percent_hidden": 4.1,
@@ -1668,7 +1695,9 @@
         {
             "ciqual_food_code": "20087",
             "difference": 3.31,
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:red-bell-pepper",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.0919,
             "percent_hidden": 3.4,
@@ -1678,7 +1707,9 @@
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.046,
             "percent_max": 9.09090909090909,
@@ -1688,7 +1719,9 @@
         {
             "ciqual_food_code": "20055",
             "difference": 1.38,
+            "ecobalyse_code": "celeriac-non-eu",
             "id": "en:celeriac",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.023,
             "percent_hidden": 1.4,
@@ -1699,6 +1732,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.0115,
             "percent_max": 7.69230769230769,
@@ -1708,6 +1742,7 @@
         {
             "ciqual_food_code": "13046",
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.00574,
             "percent_max": 7.14285714285714,
@@ -1717,6 +1752,7 @@
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00287,
             "percent_max": 0.95,
             "percent_min": 0,
@@ -1724,6 +1760,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.00144,
             "percent_max": 0.95,
@@ -1732,6 +1769,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 0.00144,
             "percent_max": 0.95,
@@ -1988,7 +2026,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.358,
+        "relative_difference": 0.359,
         "total_difference": 29.6,
         "total_specified_input_percent": 82.5
     },
@@ -2078,12 +2116,26 @@
     "ingredients_with_unspecified_percent_sum": 35.025,
     "ingredients_without_ciqual_codes": [
         "en:spice",
+        "en:sunflower",
         "en:vegetable-oil",
         "en:wheat-gluten",
-        "fr:cuit",
-        "fr:tournesol-oleique-et-tournesol"
+        "fr:cuit"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:garlic",
+        "en:raisin",
+        "en:sea-salt",
+        "en:spelt",
+        "en:spice",
+        "en:vegetable-oil",
+        "en:wheat",
+        "en:wheat-gluten",
+        "en:whole-grain-oat-flakes",
+        "en:whole-wheat-flakes",
+        "fr:cuit"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 40,
@@ -2547,48 +2599,64 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 2,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             }
         }

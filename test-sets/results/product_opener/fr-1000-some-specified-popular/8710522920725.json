@@ -193,7 +193,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -635,47 +635,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0698575246958027,
-            "likeliest_impacts": {
-                "Climate_change": 0.13066172745698,
-                "EF_single_score": 0.0360930128074826
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 3.0750289946496,
-                "en:colza_oil": 71.2508278197088,
-                "en:egg_yolk": 5.4184578849296,
-                "en:mustard_seed": 3.43792404667403,
-                "en:salt": 1.57839062101073,
-                "en:water": 8.90120284548232,
-                "en:white_wine_vinegar": 10.3886460661521,
-                "fr:France": 3.00455678185836
-            },
-            "mass_ratio_uncharacterized": 0.0658286718323946,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:France"
-                ],
-                "nutrition": [
-                    "fr:France"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0658286718323946,
-                "nutrition": 0.0658286718323946
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.111111111111111,
-                "nutrition": 0.111111111111111
-            },
-            "warnings": [
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 34,
     "ecoscore_tags": [
@@ -1263,40 +1222,60 @@
             "id": "fr:les-5-ingredients-de-notre-recette-sont",
             "ingredients": [
                 {
-                    "difference": 0.0,
-                    "id": "fr:de-l-huile-de-colza-75-notre-moutarde-de-dijon",
-                    "percent": 8.8,
-                    "percent_estimate": 8.8,
-                    "text": "De l'huile de colza 75% Notre moutarde de Dijon"
+                    "difference": 28.7,
+                    "id": "fr:de-l-huile-de-colza-75-notre-moutarde",
+                    "is_in_taxonomy": 0,
+                    "origins": "en:dijon",
+                    "percent_estimate": 37.5,
+                    "percent_hidden": 8.8,
+                    "percent_max": 100,
+                    "percent_min": 12.5,
+                    "text": "De l'huile de colza 75% Notre moutarde"
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 41.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "eau"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 62.5,
+            "percent_max": 100,
+            "percent_min": 25,
             "text": "Les 5 ingrédients de notre recette sont"
         },
         {
             "ciqual_food_code": "11013",
             "id": "en:mustard-seed",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 18.8,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "graines de MOUTARDE"
         },
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "vinaigre d'alcool"
         },
         {
-            "difference": 11.9,
+            "difference": 8.78,
             "id": "fr:sel-notre-vinaigre-de-vin-blanc-6-du-jaune-d-oeuf",
+            "is_in_taxonomy": 0,
             "origins": "fr:France 5,5 % Une touche de sel",
-            "percent_estimate": 12.5,
+            "percent_estimate": 9.38,
             "percent_hidden": 0.6,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "sel) Notre vinaigre de vin blanc 6% Du jaune d'ŒUF"
         }
     ],
@@ -1340,8 +1319,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 1.27,
-        "total_difference": 11.9,
+        "relative_difference": 3.99,
+        "total_difference": 37.5,
         "total_specified_input_percent": 9.4
     },
     "ingredients_n": 6,
@@ -1357,7 +1336,7 @@
         "fr:de-l-huile-de-colza-75-notre-moutarde-de-dijon",
         "en:water"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "fr:les-5-ingredients-de-notre-recette-sont",
         "en:mustard-seed",
@@ -1384,11 +1363,19 @@
     "ingredients_with_unspecified_percent_n": 3,
     "ingredients_with_unspecified_percent_sum": 78.7,
     "ingredients_without_ciqual_codes": [
-        "fr:de-l-huile-de-colza-75-notre-moutarde-de-dijon",
+        "fr:de-l-huile-de-colza-75-notre-moutarde",
         "fr:les-5-ingredients-de-notre-recette-sont",
         "fr:sel-notre-vinaigre-de-vin-blanc-6-du-jaune-d-oeuf"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:mustard-seed",
+        "fr:de-l-huile-de-colza-75-notre-moutarde",
+        "fr:les-5-ingredients-de-notre-recette-sont",
+        "fr:sel-notre-vinaigre-de-vin-blanc-6-du-jaune-d-oeuf"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "import_csv_file - version 2019/09/17",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -1470,8 +1457,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:main-countries-old-product-without-scans-in-2020",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-old-product-without-scans-in-2020"
     ],
     "no_nutrition_data": "",
     "no_nutrition_data_imported": "false",
@@ -1820,33 +1806,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:squeeze-bottle"
+                    "id": {
+                        "id": "en:squeeze-bottle"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             }
         }

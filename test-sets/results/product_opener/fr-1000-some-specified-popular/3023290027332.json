@@ -187,7 +187,7 @@
                         "epi_score": "71",
                         "origin": "en:slovenia",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 71,
@@ -625,42 +625,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00637232183072005,
-            "likeliest_impacts": {
-                "Climate_change": 0.121351011448512,
-                "EF_single_score": 0.0107269551272671
-            },
-            "likeliest_recipe": {
-                "en:lactic_ferments": 0.0477514432594516,
-                "en:pasteurised_milk": 99.8770982218498,
-                "en:skimmed_milk_powder": 0.152403062195154,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0.000422806315357836,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:lactic-ferments"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.000422806315357836,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 77,
     "ecoscore_tags": [
@@ -1340,7 +1304,9 @@
         {
             "ciqual_proxy_food_code": "19051",
             "difference": 24.8,
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 75,
             "percent_hidden": 99.8,
             "percent_max": 100,
@@ -1349,6 +1315,7 @@
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 25,
             "percent_max": 50,
             "percent_min": 0,
@@ -1416,6 +1383,10 @@
         "en:lactic-ferments"
     ],
     "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids": [
+        "en:lactic-ferments"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 1,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 6,
@@ -1804,36 +1775,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

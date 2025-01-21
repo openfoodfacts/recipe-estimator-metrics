@@ -195,7 +195,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1428,7 +1428,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 56.2,
             "percent_max": 100,
             "percent_min": 12.5,
@@ -1436,6 +1438,7 @@
         },
         {
             "id": "en:vegetable-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1443,8 +1446,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 2.1,
+            "difference": 2.06,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_hidden": 13,
             "percent_max": 33.3333333333333,
@@ -1453,7 +1458,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.47,
             "percent_max": 25,
             "percent_min": 0,
@@ -1463,6 +1470,7 @@
             "ciqual_food_code": "18100",
             "difference": 4.27,
             "id": "en:cocoa-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.73,
             "percent_hidden": 7,
             "percent_max": 20,
@@ -1471,6 +1479,7 @@
         },
         {
             "id": "en:lactose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.37,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1481,12 +1490,14 @@
             "ingredients": [
                 {
                     "id": "en:sunflower-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.684,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "sunflower lecithin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1494,8 +1505,9 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.684,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "aromas"
         }
@@ -1612,8 +1624,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.318,
-        "total_difference": 6.37,
+        "relative_difference": 0.316,
+        "total_difference": 6.33,
         "total_specified_input_percent": 20
     },
     "ingredients_n": 9,
@@ -1677,6 +1689,15 @@
         "en:vegetable-oil"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-powder",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:lactose",
+        "en:sunflower-lecithin",
+        "en:vegetable-oil"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 21,
@@ -2110,7 +2131,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2119,12 +2142,16 @@
             "quantity_per_unit_value": 750,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

@@ -255,7 +255,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -683,62 +683,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.143283164715502,
-            "likeliest_impacts": {
-                "Climate_change": 0.237398992246492,
-                "EF_single_score": 0.0278733239574082
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 1.92130504923006,
-                "en:cocoa_paste": 1.96057881212975,
-                "en:coconut": 0.519262550913027,
-                "en:e307a": 0.0589321629936605,
-                "en:glucose_syrup": 5.58590653598224,
-                "en:milk_powder": 2.15270772633328,
-                "en:molasses": 0.519262550913027,
-                "en:oligofructose": 5.58590653598224,
-                "en:rice_flour": 5.58590653598224,
-                "en:salt": 0.151741977286148,
-                "en:soya_lecithin": 1.7764842688276,
-                "en:sugar": 14.8124037735948,
-                "en:sunflower_oil": 9.2550598486836,
-                "en:water": 0,
-                "en:wheat_flour": 5.58590653598224,
-                "en:whole_wheat": 9.25505984868361,
-                "en:wholemeal_oat": 38.0485793779215,
-                "fr:Le_chocolat_au_lait_contient_30___de_cacao_minimum": 0,
-                "fr:ar_me_naturel_de_caramel_aux_pommes_et_autre_ar_me_naturel": 0.0589942272677468
-            },
-            "mass_ratio_uncharacterized": 0.069154305431351,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:arôme naturel de caramel aux pommes et autre arôme naturel",
-                    "en:e307a",
-                    "fr:Le chocolat au lait contient 30 % de cacao minimum",
-                    "en:glucose-syrup"
-                ],
-                "nutrition": [
-                    "fr:arôme naturel de caramel aux pommes et autre arôme naturel",
-                    "fr:Le chocolat au lait contient 30 % de cacao minimum",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.069154305431351,
-                "nutrition": 0.0658617490439418
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.210526315789474,
-                "nutrition": 0.157894736842105
-            },
-            "warnings": [
-                "The impact relative interquartile is high for Climate change (39%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -1508,31 +1452,36 @@
     "ingredients": [
         {
             "ciqual_food_code": "9310",
-            "difference": 16.3,
+            "difference": 16.1,
             "id": "en:wholemeal-oat",
-            "percent_estimate": 53.3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.1,
             "percent_hidden": 37,
             "percent_max": 100,
-            "percent_min": 6.66666666666667,
+            "percent_min": 6.25,
             "text": "AVOINE complète"
         },
         {
             "ciqual_food_code": "31004",
-            "difference": 10.3,
+            "difference": 10.4,
             "id": "en:milk-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent_estimate": 10,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10.0,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "sucre"
                 },
                 {
                     "ciqual_proxy_food_code": "19044",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:milk-powder",
-                    "percent_estimate": 6.67,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 6.72,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "LAIT en poudre"
@@ -1540,7 +1489,8 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
-                    "percent_estimate": 3.33,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.36,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "pâte de cacao"
@@ -1548,7 +1498,8 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
-                    "percent_estimate": 1.67,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.68,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "beurre de cacao"
@@ -1559,19 +1510,22 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
-                            "percent_estimate": 1.67,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 1.68,
                             "percent_max": 10,
                             "percent_min": 0,
                             "text": "lécithine de SOJA"
                         }
                     ],
-                    "percent_estimate": 1.67,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.68,
                     "percent_max": 10,
                     "percent_min": 0,
                     "text": "émulsifiant"
                 }
             ],
-            "percent_estimate": 23.3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 23.4,
             "percent_hidden": 13,
             "percent_max": 50,
             "percent_min": 0,
@@ -1579,7 +1533,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1587,17 +1543,20 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 5.83,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.86,
             "percent_max": 20,
             "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "9010",
-            "difference": 6.08,
+            "difference": 6.07,
             "id": "en:whole-wheat",
-            "percent_estimate": 2.92,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.93,
             "percent_hidden": 9,
             "percent_max": 20,
             "percent_min": 0,
@@ -1606,6 +1565,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1613,23 +1573,28 @@
         },
         {
             "id": "en:oligofructose",
-            "percent_estimate": 0.729,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.732,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "oligofructose"
         },
         {
             "ciqual_food_code": "9520",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:rice-flour",
-            "percent_estimate": 0.365,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.366,
             "percent_max": 12.5,
             "percent_min": 0,
             "text": "farine de riz"
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
-            "percent_estimate": 0.182,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.183,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
             "text": "farine de BLÉ"
@@ -1637,15 +1602,18 @@
         {
             "ciqual_proxy_food_code": "15006",
             "id": "en:coconut",
-            "percent_estimate": 0.0911,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0916,
             "percent_max": 10,
             "percent_min": 0,
             "text": "noix de coco"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
-            "percent_estimate": 0.0456,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0458,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
             "text": "mélasse"
@@ -1653,37 +1621,50 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.0228,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0229,
             "percent_max": 0.51,
             "percent_min": 0,
             "text": "sel"
         },
         {
-            "id": "fr:arome-naturel-de-caramel-aux-pommes-et-autre-arome-naturel",
+            "id": "fr:arome-naturel-de-caramel-aux-pommes",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.0114,
             "percent_max": 0.51,
             "percent_min": 0,
-            "text": "arôme naturel de caramel aux pommes et autre arôme naturel"
+            "text": "arôme naturel de caramel aux pommes"
+        },
+        {
+            "id": "en:with-other-natural-flavouring",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00572,
+            "percent_max": 0.51,
+            "percent_min": 0,
+            "text": "autre arôme naturel"
         },
         {
             "id": "en:antioxidant",
             "ingredients": [
                 {
                     "id": "en:vitamin-e",
-                    "percent_estimate": 0.0057,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.00286,
                     "percent_max": 0.51,
                     "percent_min": 0,
                     "text": "tocophérol"
                 }
             ],
-            "percent_estimate": 0.0057,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.00286,
             "percent_max": 0.51,
             "percent_min": 0,
             "text": "antioxydant"
         },
         {
             "id": "fr:le-chocolat-au-lait-contient-30-de-cacao-minimum",
-            "percent_estimate": 0.0057,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.00286,
             "percent_max": 0.51,
             "percent_min": 0,
             "text": "Le chocolat au lait contient 30% de cacao minimum"
@@ -1928,9 +1909,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.554,
-        "total_difference": 32.7,
+        "number_of_ingredients_without_ciqual_code": 5,
+        "relative_difference": 0.553,
+        "total_difference": 32.6,
         "total_specified_input_percent": 59
     },
     "ingredients_n": 22,
@@ -2026,10 +2007,30 @@
         "en:emulsifier",
         "en:oligofructose",
         "en:vitamin-e",
-        "fr:arome-naturel-de-caramel-aux-pommes-et-autre-arome-naturel",
+        "en:with-other-natural-flavouring",
+        "fr:arome-naturel-de-caramel-aux-pommes",
         "fr:le-chocolat-au-lait-contient-30-de-cacao-minimum"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:coconut",
+        "en:emulsifier",
+        "en:glucose-syrup",
+        "en:milk-chocolate",
+        "en:oligofructose",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vitamin-e",
+        "en:whole-wheat",
+        "en:wholemeal-oat",
+        "en:with-other-natural-flavouring",
+        "fr:arome-naturel-de-caramel-aux-pommes",
+        "fr:le-chocolat-au-lait-contient-30-de-cacao-minimum"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2525,24 +2526,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

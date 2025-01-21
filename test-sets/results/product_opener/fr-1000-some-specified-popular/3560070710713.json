@@ -245,7 +245,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -656,46 +656,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0564933478133487,
-            "likeliest_impacts": {
-                "Climate_change": 0.0476597208156053,
-                "EF_single_score": 0.00870887007118359
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_flour": 1.02259704060851,
-                "en:e300": 1.39194016778787,
-                "en:salt": 1.83326394625955,
-                "en:sugar": 2.5621935347713,
-                "en:sunflower_oil": 3.25017657769929,
-                "en:water": 0.901975044590526,
-                "en:wheat_flour": 57.0951040463651,
-                "en:wheat_gluten": 0.974851080488328,
-                "en:whole_wheat_flour": 33.3202765286844,
-                "en:yeast": 1.77348618488382
-            },
-            "mass_ratio_uncharacterized": 0.00617362680708505,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00617362680708505,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.111111111111111,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1459,7 +1419,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_max": 100,
             "percent_min": 11.1111111111111,
@@ -1467,8 +1429,10 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 9.8,
+            "difference": 9.78,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_hidden": 32,
             "percent_max": 50,
@@ -1477,7 +1441,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1485,8 +1451,10 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.0,
             "percent_max": 4,
             "percent_min": 0,
             "text": "azúcar"
@@ -1494,13 +1462,16 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
             "text": "sal"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1508,6 +1479,7 @@
         },
         {
             "id": "en:barley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1516,6 +1488,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.7,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1526,12 +1499,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.31,
                     "percent_max": 1.4,
                     "percent_min": 0,
                     "text": "ácido ascórbico"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.31,
             "percent_max": 1.4,
             "percent_min": 0,
@@ -1632,9 +1607,9 @@
     ],
     "ingredients_lc": "es",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
+        "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.306,
-        "total_difference": 9.8,
+        "total_difference": 9.78,
         "total_specified_input_percent": 32
     },
     "ingredients_n": 10,
@@ -1698,10 +1673,18 @@
         "en:barley",
         "en:e300",
         "en:flour-treatment-agent",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley",
+        "en:e300",
+        "en:flour-treatment-agent",
+        "en:salt",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -2181,7 +2164,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2190,12 +2175,16 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 2.58
@@ -2203,7 +2192,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2212,12 +2203,16 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 48.6

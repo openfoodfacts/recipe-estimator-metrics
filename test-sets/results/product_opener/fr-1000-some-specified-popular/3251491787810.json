@@ -248,7 +248,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1987,8 +1987,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 3.9,
+            "difference": 3.94,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_hidden": 59.5,
             "percent_max": 100,
@@ -1997,7 +1999,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:unrefined-cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.5,
             "percent_max": 21,
             "percent_min": 0,
@@ -2005,7 +2009,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.5,
             "percent_max": 21,
             "percent_min": 0,
@@ -2015,6 +2021,7 @@
             "ciqual_food_code": "13046",
             "difference": 0.5,
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.5,
             "percent_hidden": 10,
             "percent_max": 21,
@@ -2023,15 +2030,18 @@
         },
         {
             "ciqual_food_code": "20900",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:soya-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.47,
             "percent_max": 20,
             "percent_min": 0,
             "text": "farine de soja"
         },
         {
-            "difference": 0.06,
+            "difference": 0.0639,
             "id": "fr:pate-de-raisins",
+            "is_in_taxonomy": 0,
             "percent_estimate": 3.24,
             "percent_hidden": 3.3,
             "percent_max": 16.6666666666667,
@@ -2044,12 +2054,14 @@
             "ingredients": [
                 {
                     "id": "en:fructooligosaccharide",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.62,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "fructooligosaccharides"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.62,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2060,6 +2072,7 @@
             "ingredients": [
                 {
                     "id": "en:e501",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.405,
                     "percent_max": 12.5,
                     "percent_min": 0,
@@ -2067,12 +2080,14 @@
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.405,
                     "percent_max": 6.25,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.809,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2080,6 +2095,7 @@
         },
         {
             "id": "en:milk-proteins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.809,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2267,8 +2283,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.0613,
-        "total_difference": 4.46,
+        "relative_difference": 0.0619,
+        "total_difference": 4.51,
         "total_specified_input_percent": 72.8
     },
     "ingredients_n": 12,
@@ -2354,6 +2370,17 @@
         "fr:pate-de-raisins"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chicory-fibre",
+        "en:e501",
+        "en:e503",
+        "en:fructooligosaccharide",
+        "en:milk-proteins",
+        "en:raisin",
+        "en:raising-agent",
+        "fr:pate-de-raisins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 38,
@@ -2866,7 +2893,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 4,
@@ -2875,12 +2904,16 @@
             "quantity_per_unit_value": 90,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             },
             "weight_measured": 0.62
@@ -2888,7 +2921,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2897,12 +2932,16 @@
             "quantity_per_unit_value": 360,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 32.4

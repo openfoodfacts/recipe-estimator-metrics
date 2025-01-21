@@ -167,7 +167,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1101,21 +1101,25 @@
     "ingredients": [
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:fresh-tomatoes",
-            "percent_estimate": 53.1,
-            "percent_max": 82,
-            "percent_min": 24.26,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.5,
+            "percent_max": 100,
+            "percent_min": 9.09090909090909,
             "processing": "en:pulp,en:pieces",
             "text": "tomates fraîches avec"
         },
         {
             "ciqual_food_code": "20170",
-            "difference": 57.8,
+            "difference": 62.3,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato-puree",
-            "percent_estimate": 27.2,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.7,
             "percent_hidden": 85,
-            "percent_max": 45.5,
-            "percent_min": 9,
+            "percent_max": 50,
+            "percent_min": 0,
             "processing": "en:fresh",
             "text": "purées de tomates"
         },
@@ -1124,42 +1128,51 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "20009",
-                    "difference": 0,
+                    "difference": 0.682,
+                    "ecobalyse_code": "carrot-non-eu",
                     "id": "en:carrot",
-                    "percent": 5,
-                    "percent_estimate": 5,
-                    "percent_max": 5,
-                    "percent_min": 5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.68,
+                    "percent_hidden": 5,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "carottes"
                 },
                 {
                     "ciqual_food_code": "20034",
-                    "difference": 0,
+                    "difference": 1.68,
+                    "ecobalyse_code": "onion-non-eu",
                     "id": "en:onion",
-                    "percent": 4,
-                    "percent_estimate": 4,
-                    "percent_max": 4,
-                    "percent_min": 4,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.68,
+                    "percent_hidden": 4,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "oignons"
                 }
             ],
-            "percent_estimate": 9,
-            "percent_max": 9,
-            "percent_min": 9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.4,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "légumes frais"
         },
         {
             "ciqual_proxy_food_code": "17270",
+            "ecobalyse_code": "olive-oil-eu",
             "id": "en:virgin-olive-oil",
-            "percent_estimate": 4.5,
-            "percent_max": 9,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.68,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "huile d'olive vierge"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 3.06,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.84,
             "percent_max": 6.3,
             "percent_min": 0,
             "text": "sucre"
@@ -1167,6 +1180,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.495,
             "percent_max": 0.99,
             "percent_min": 0,
@@ -1175,6 +1189,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.495,
             "percent_max": 0.99,
             "percent_min": 0,
@@ -1183,6 +1198,7 @@
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.495,
             "percent_max": 0.99,
             "percent_min": 0,
@@ -1192,6 +1208,7 @@
             "ciqual_food_code": "11060",
             "difference": 0.095,
             "id": "en:herbes-de-provence",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.495,
             "percent_hidden": 0.4,
             "percent_max": 0.99,
@@ -1200,15 +1217,18 @@
         },
         {
             "id": "en:natural-herbs-flavouring",
-            "percent_estimate": 0.495,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.43,
             "percent_max": 0.99,
             "percent_min": 0,
             "text": "arômes naturels d'herbes"
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion-extract",
-            "percent_estimate": 0.585,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.43,
             "percent_max": 0.99,
             "percent_min": 0,
             "text": "extrait d'oignon"
@@ -1264,8 +1284,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.613,
-        "total_difference": 57.9,
+        "relative_difference": 0.686,
+        "total_difference": 64.7,
         "total_specified_input_percent": 94.4
     },
     "ingredients_n": 13,
@@ -1336,6 +1356,15 @@
         "en:natural-herbs-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:fresh-vegetables",
+        "en:herbes-de-provence",
+        "en:natural-herbs-flavouring",
+        "en:parsley",
+        "en:salt",
+        "en:starch"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 29,
@@ -1407,8 +1436,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1819,44 +1847,58 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": "1",
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

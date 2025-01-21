@@ -273,7 +273,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -703,35 +703,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.386065365093322,
-            "likeliest_impacts": {
-                "Climate_change": 0.136703278676209,
-                "EF_single_score": 0.0187116896359812
-            },
-            "likeliest_recipe": {
-                "en:brown_rice": 0.97807633883034,
-                "en:cocoa_powder": 0.214930031260582,
-                "en:fat_reduced_cocoa_powder": 1.1128703619672,
-                "en:ground_hazelnuts": 9.58977856273342,
-                "en:maltodextrins": 9.63046052860274,
-                "en:milk": 1.1128703619672,
-                "en:natural_flavouring": 0.347754886958971,
-                "en:palm_vegetable_oils": 9.63046052860274,
-                "en:rapeseed_vegetable_oils": 9.63046052860274,
-                "en:salt": 0.0978384271994748,
-                "en:sugar": 10.5184734733911,
-                "en:sunflower_lecithin": 1.1128703619672,
-                "en:water": 1.82767710798126,
-                "en:wheat": 15.8562562387455,
-                "en:whole_wheat": 35.0306416672201,
-                "en:wholegrain_maize_semolina": 0.233928379166101
-            },
-            "mass_ratio_uncharacterized": 0.171566148738717
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -2673,107 +2644,128 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0,
+                    "difference": 2.78,
+                    "ecobalyse_code": "flour",
                     "id": "en:whole-wheat-flour",
-                    "percent": 25,
-                    "percent_estimate": 25,
-                    "percent_max": 25,
-                    "percent_min": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 27.8,
+                    "percent_hidden": 25,
+                    "percent_max": 100,
+                    "percent_min": 2.22222222222222,
                     "text": "Weizenvollkornmehl"
                 },
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0,
+                    "difference": 1.22,
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
-                    "percent": 14,
-                    "percent_estimate": 14,
-                    "percent_max": 14,
-                    "percent_min": 14,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 12.8,
+                    "percent_hidden": 14,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "Weizenmehl"
                 },
                 {
                     "ciqual_food_code": "9520",
-                    "difference": 0,
+                    "difference": 10.8,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:brown-rice-flour",
-                    "percent": 2,
-                    "percent_estimate": 2,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 12.8,
+                    "percent_hidden": 2,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "Reisvollkornmehl"
                 }
             ],
-            "percent_estimate": 41,
-            "percent_max": 41,
-            "percent_min": 41,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.3,
+            "percent_max": 100,
+            "percent_min": 6.66666666666667,
             "text": "Mehl"
         },
         {
             "id": "de:nougatcreme",
-            "percent_estimate": 22.6,
-            "percent_max": 41,
-            "percent_min": 4.21428571428571,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 23.3,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "Nougatcreme"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:dehydrated-glucose-syrup",
-            "percent_estimate": 17.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.7,
             "percent_max": 33.3333333333333,
-            "percent_min": 1.38461538461538,
+            "percent_min": 0,
             "text": "getrockneter Glukosesirup"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 9.52,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.83,
             "percent_max": 25,
             "percent_min": 0,
             "text": "Zucker"
         },
         {
+            "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
-            "percent_estimate": 4.76,
-            "percent_max": 18.2619047619048,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.92,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "Rapsöl"
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 7.62,
+            "difference": 8.54,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "fr:noisettes-decortiquees",
-            "percent_estimate": 2.38,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.46,
             "percent_hidden": 10,
-            "percent_max": 13.6964285714286,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "processing": "en:ground",
             "text": "Haselnusskerne"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
-            "percent_estimate": 1.19,
-            "percent_max": 10.9571428571429,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.729,
+            "percent_max": 14.2857142857143,
             "percent_min": 0,
             "text": "Palmöl"
         },
         {
             "ciqual_proxy_food_code": "18100",
-            "difference": 4.41,
+            "difference": 4.64,
             "id": "en:fat-reduced-cocoa",
-            "percent_estimate": 0.595,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.365,
             "percent_hidden": 5,
-            "percent_max": 9.13095238095238,
+            "percent_max": 12.5,
             "percent_min": 0,
             "text": "fettarmer Kakao"
         },
         {
             "id": "en:sweet-whey-powder",
-            "percent_estimate": 0.297,
-            "percent_max": 7.8265306122449,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.182,
+            "percent_max": 11.1111111111111,
             "percent_min": 0,
             "text": "Süßmolkenpulver"
         },
@@ -2784,21 +2776,25 @@
                     "id": "en:e322",
                     "ingredients": [
                         {
+                            "ecobalyse_code": "sunflower-non-eu",
                             "id": "en:sunflower",
-                            "percent_estimate": 0.149,
-                            "percent_max": 6.84821428571429,
+                            "is_in_taxonomy": 1,
+                            "percent_estimate": 0.0911,
+                            "percent_max": 10,
                             "percent_min": 0,
                             "text": "Sonnenblume"
                         }
                     ],
-                    "percent_estimate": 0.149,
-                    "percent_max": 6.84821428571429,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0911,
+                    "percent_max": 10,
                     "percent_min": 0,
                     "text": "Lecithine"
                 }
             ],
-            "percent_estimate": 0.149,
-            "percent_max": 6.84821428571429,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0911,
+            "percent_max": 10,
             "percent_min": 0,
             "text": "Emulgator"
         },
@@ -2807,32 +2803,38 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "15004",
+                    "ecobalyse_code": "hazelnut-unshelled-non-eu",
                     "id": "en:hazelnut",
-                    "percent_estimate": 0.0744,
-                    "percent_max": "5",
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.0456,
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "enthält Haselnüsse"
                 }
             ],
-            "percent_estimate": 0.0744,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0456,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "natürliche Aromen"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 0.0372,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0228,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Zucker"
         },
         {
-            "difference": 2.98,
+            "difference": 2.99,
             "id": "de:maisvollkorngrieß",
-            "percent_estimate": 0.0186,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0114,
             "percent_hidden": 3,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "Maisvollkorngrieß"
         },
@@ -2840,16 +2842,18 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 2.99,
             "id": "en:fat-reduced-cocoa",
-            "percent_estimate": 0.00929,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0057,
             "percent_hidden": 3,
-            "percent_max": 4.56547619047619,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "fettarmer Kakao"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.00929,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0057,
             "percent_max": 0.4,
             "percent_min": 0,
             "text": "Speisesalz"
@@ -3056,8 +3060,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.29,
-        "total_difference": 18.0,
+        "relative_difference": 0.547,
+        "total_difference": 33.9,
         "total_specified_input_percent": 62
     },
     "ingredients_n": 21,
@@ -3157,11 +3161,22 @@
         "en:e322",
         "en:emulsifier",
         "en:natural-flavouring",
-        "en:rapeseed-oil",
         "en:sunflower",
         "en:sweet-whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids": [
+        "de:maisvollkorngrieß",
+        "de:nougatcreme",
+        "en:dehydrated-glucose-syrup",
+        "en:e322",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:natural-flavouring",
+        "en:salt",
+        "en:sweet-whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -3263,8 +3278,7 @@
         "en:ecoscore-missing-data-warning",
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "new_additives_n": 1,
     "no_nutrition_data": "",
@@ -3658,24 +3672,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": "en:paperboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": "en:packet"
+                    }
                 }
             }
         }

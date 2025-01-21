@@ -30,7 +30,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:gluten, en:gluten",
+    "allergens": "en:gluten, en:gluten, en:gluten",
     "allergens_from_ingredients": "Trigo, gluten",
     "allergens_from_user": "(pt) en:gluten, en:gluten",
     "allergens_hierarchy": [
@@ -204,7 +204,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -620,10 +620,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 67,
     "ecoscore_tags": [
@@ -1349,53 +1345,61 @@
     ],
     "ingredients": [
         {
-            "difference": 9,
+            "difference": 28.8,
             "id": "es:trigo-espelta",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "difference": 0,
+                    "difference": 22.3,
+                    "ecobalyse_proxy_code": "flour",
                     "id": "en:wholemeal-flour",
-                    "percent": 52,
-                    "percent_estimate": 52,
-                    "percent_max": 52,
-                    "percent_min": 52,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 29.7,
+                    "percent_hidden": 52,
+                    "percent_max": 100,
+                    "percent_min": 3.125,
                     "text": "harina integral"
                 },
                 {
                     "id": "es:harina-flor",
-                    "percent_estimate": 12,
-                    "percent_max": 48,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 13.3,
+                    "percent_max": 50,
                     "percent_min": 0,
                     "text": "harina flor"
                 },
                 {
                     "id": "es:copos",
-                    "percent_estimate": 6,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 6.64,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "copos"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:molasses",
-                    "percent_estimate": 6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 6.64,
                     "percent_max": 3.4,
                     "percent_min": 0,
                     "text": "melaza"
                 }
             ],
-            "percent_estimate": 76,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 56.2,
             "percent_hidden": 85,
             "percent_max": 100,
-            "percent_min": 52,
+            "percent_min": 12.5,
             "text": "_Trigo_ espelta"
         },
         {
             "ciqual_food_code": "15034",
             "id": "en:flax-seed",
-            "percent_estimate": 12,
-            "percent_max": 48,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 21.9,
+            "percent_max": 50,
             "percent_min": 0,
             "text": "linaza"
         },
@@ -1403,56 +1407,67 @@
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
+                    "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
-                    "percent_estimate": 6,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10.9,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "de nabina"
                 }
             ],
-            "percent_estimate": 6,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10.9,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "aceite vegetal"
         },
         {
             "id": "en:fiber",
-            "percent_estimate": 3,
-            "percent_max": 24,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.47,
+            "percent_max": 25,
             "percent_min": 0,
             "text": "fibras vegetales"
         },
         {
             "ciqual_food_code": "15011",
-            "difference": 3.0,
+            "difference": 1.77,
+            "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
-            "percent_estimate": 1.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.73,
             "percent_hidden": 4.5,
-            "percent_max": 16,
+            "percent_max": 20,
             "percent_min": 0,
             "text": "pipas de girasol"
         },
         {
             "ciqual_food_code": "20139",
-            "difference": 1.75,
+            "difference": 1.13,
+            "ecobalyse_code": "pumpkin-fr",
             "id": "en:pumpkin-seed",
-            "percent_estimate": 0.75,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.37,
             "percent_hidden": 2.5,
-            "percent_max": 12,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "pipas de calabaza"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.375,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.5,
             "percent_max": 1,
             "percent_min": 0,
             "text": "sal"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
-            "percent_estimate": 0.375,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.867,
             "percent_max": 1,
             "percent_min": 0,
             "text": "levadura"
@@ -1607,9 +1622,9 @@
     ],
     "ingredients_lc": "es",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.0955,
-        "total_difference": 13.8,
+        "number_of_ingredients_without_ciqual_code": 4,
+        "relative_difference": 0.375,
+        "total_difference": 54.0,
         "total_specified_input_percent": 144.0
     },
     "ingredients_n": 13,
@@ -1683,12 +1698,22 @@
         "en:fiber",
         "en:rapeseed",
         "en:vegetable-oil",
+        "es:copos",
+        "es:harina-flor",
+        "es:trigo-espelta"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:fiber",
+        "en:flax-seed",
+        "en:salt",
+        "en:vegetable-oil",
         "en:yeast",
         "es:copos",
         "es:harina-flor",
         "es:trigo-espelta"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 25,
@@ -1766,8 +1791,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-missing-data-no-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,

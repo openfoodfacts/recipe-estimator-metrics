@@ -214,7 +214,7 @@
                         "epi_score": "0",
                         "origin": "en:indonesia",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -636,46 +636,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0117443907973431,
-            "likeliest_impacts": {
-                "Climate_change": 0.0883559666430265,
-                "EF_single_score": 0.0223060514342496
-            },
-            "likeliest_recipe": {
-                "en:coconut": 63.799238749021,
-                "en:e407": 0.0124549043554834,
-                "en:e412": 0.0124549043554953,
-                "en:e415": 0.0124549043554953,
-                "en:water": 35.8497070832579
-            },
-            "mass_ratio_uncharacterized": 0.0237311784846409,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e415",
-                    "en:e412",
-                    "en:e407"
-                ],
-                "nutrition": [
-                    "en:e407"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0237311784846409,
-                "nutrition": 0.00551550692006081
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 92,
     "ecoscore_tags": [
@@ -1567,8 +1527,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "15006",
-            "difference": 2.7,
+            "difference": 2.67,
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 66.7,
             "percent_hidden": 64,
             "percent_max": 100,
@@ -1578,7 +1539,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "percent_max": 50,
             "percent_min": 0,
@@ -1589,6 +1552,7 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 8.33,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1596,6 +1560,7 @@
                 },
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 4.17,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1603,12 +1568,14 @@
                 },
                 {
                     "id": "en:e407",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 4.17,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "carraghénanes"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1677,8 +1644,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.0422,
-        "total_difference": 2.7,
+        "relative_difference": 0.0417,
+        "total_difference": 2.67,
         "total_specified_input_percent": 64
     },
     "ingredients_n": 6,
@@ -1728,6 +1695,14 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:coconut",
+        "en:e407",
+        "en:e412",
+        "en:e415",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -2144,18 +2119,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:fsc-cardboard"
+                    "id": {
+                        "id": "en:fsc-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": "en:brick"
+                    }
                 }
             },
             "weight_measured": 9.55

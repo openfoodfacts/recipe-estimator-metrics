@@ -25,7 +25,7 @@
         "en:e407",
         "en:e412"
     ],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, Lait écrémé, Ferments lactiques, Lait",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -176,7 +176,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -617,63 +617,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.1747066687825,
-            "likeliest_impacts": {
-                "Climate_change": 0.209212421072117,
-                "EF_single_score": 0.0225762717969623
-            },
-            "likeliest_recipe": {
-                "en:carrot_juice": 3.82456818676909,
-                "en:corn_starch": 3.14106824559708,
-                "en:e412": 1.83887331055748,
-                "en:lemon_juice_from_concentrate": 0.608118781722236,
-                "en:milk": 4.31712955438423,
-                "en:milk_mineral_concentrate": 0.27218914394569,
-                "en:natural_flavouring": 0.608118781722239,
-                "en:raspberry": 1.18127794423315,
-                "en:skimmed_milk": 35.2345442312834,
-                "en:skimmed_milk_powder": 4.31712955438423,
-                "en:skimmed_yogurt": 35.4257364955701,
-                "en:sour_cherry": 1.28041860871743,
-                "en:strawberry": 1.45748659786646,
-                "en:sugar": 3.91918315081704,
-                "en:thickener": 2.64185064244969,
-                "en:water": 0.000739179673209973
-            },
-            "mass_ratio_uncharacterized": 0.0961054372842534,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e412",
-                    "en:milk-mineral-concentrate",
-                    "en:thickener",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:thickener"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0961054372842534,
-                "nutrition": 0.0536543641142712
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "The impact relative interquartile is high for EF single score (37%)",
-                "The impact relative interquartile is high for Climate change (36%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1162,82 +1105,122 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "19593",
-            "difference": 32,
+            "difference": 28.4,
             "id": "en:skimmed-yogurt",
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 53.6,
             "percent_hidden": 82,
+            "percent_max": 100,
+            "percent_min": 7.14285714285714,
             "text": "Yaourt maigre"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:skimmed-milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
-            "percent_estimate": 25,
+            "percent_estimate": 23.2,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "Lait écrémé"
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.6,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "Poudre de lait écrémé"
         },
         {
             "id": "en:lactic-ferments",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.8,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "Ferments lactiques"
         },
         {
             "ciqual_proxy_food_code": "31016",
-            "difference": 5.18,
+            "difference": 5.4,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.9,
             "percent_hidden": 8.3,
+            "percent_max": 11.7,
+            "percent_min": 0,
             "text": "Sucre"
         },
         {
             "ciqual_food_code": "13997",
-            "difference": 4.84,
+            "difference": 4.95,
             "id": "en:red-fruits",
             "ingredients": [
                 {
                     "ciqual_food_code": "13014",
-                    "difference": 1.64,
+                    "difference": 2.47,
+                    "ecobalyse_code": "strawberry-non-eu",
                     "id": "en:strawberry",
-                    "percent": 3.2,
-                    "percent_estimate": 1.56,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.725,
+                    "percent_hidden": 3.2,
+                    "percent_max": 11.7,
+                    "percent_min": 0,
                     "text": "Fraise"
                 },
                 {
                     "ciqual_food_code": "13110",
-                    "difference": 1.9,
+                    "difference": 1.54,
+                    "ecobalyse_code": "cherry-tr",
                     "id": "en:sour-cherry",
-                    "percent": 1.9,
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.363,
+                    "percent_hidden": 1.9,
+                    "percent_max": 5.85,
+                    "percent_min": 0,
                     "text": "Cerise Griotte"
                 },
                 {
                     "ciqual_food_code": "13015",
-                    "difference": 1.3,
+                    "difference": 0.937,
+                    "ecobalyse_code": "raspberry-eu",
                     "id": "en:raspberry",
-                    "percent": 1.3,
-                    "percent_estimate": 0,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.363,
+                    "percent_hidden": 1.3,
+                    "percent_max": 3.9,
+                    "percent_min": 0,
                     "text": "Framboise"
                 }
             ],
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.45,
             "percent_hidden": 6.4,
+            "percent_max": 11.7,
+            "percent_min": 0,
             "text": "Fruits rouges"
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot-juice-from-concentrate",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.725,
+            "percent_max": 11.7,
+            "percent_min": 0,
             "text": "Jus de carotte à base de concentré"
         },
         {
             "ciqual_food_code": "9510",
             "id": "en:corn-starch",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.363,
+            "percent_max": 11.7,
+            "percent_min": 0,
             "text": "Amidon de maïs"
         },
         {
@@ -1245,39 +1228,61 @@
             "ingredients": [
                 {
                     "id": "en:e407",
-                    "percent_estimate": 0.195,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.181,
+                    "percent_max": 11.1111111111111,
+                    "percent_min": 0,
                     "text": "Carraghénane"
                 }
             ],
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.181,
+            "percent_max": 11.1111111111111,
+            "percent_min": 0,
             "text": "Epaississants"
         },
         {
             "id": "en:e412",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0907,
+            "percent_max": 10,
+            "percent_min": 0,
             "text": "Gomme de Guar"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:lemon-juice-from-concentrate",
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0453,
+            "percent_max": 9.09090909090909,
+            "percent_min": 0,
             "text": "Jus de citron à base de concentré"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0227,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "Arôme naturel"
         },
         {
             "id": "en:milk-mineral-concentrate",
-            "percent_estimate": 0.0122,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0113,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "Concentré des minéraux du lait"
         },
         {
             "ciqual_proxy_food_code": "19051",
+            "ecobalyse_code": "milk",
             "id": "en:milk",
+            "is_in_taxonomy": 1,
             "origins": "en:france",
-            "percent_estimate": 0.0122,
+            "percent_estimate": 0.0113,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "Lait"
         }
     ],
@@ -1346,8 +1351,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.455,
-        "total_difference": 46.9,
+        "relative_difference": 0.424,
+        "total_difference": 43.7,
         "total_specified_input_percent": 103.0
     },
     "ingredients_n": 18,
@@ -1375,7 +1380,7 @@
         "en:raspberry",
         "en:e407"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:skimmed-yogurt",
         "en:dairy",
@@ -1438,6 +1443,19 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn-starch",
+        "en:e407",
+        "en:e412",
+        "en:lactic-ferments",
+        "en:lemon-juice-from-concentrate",
+        "en:milk-mineral-concentrate",
+        "en:natural-flavouring",
+        "en:red-fruits",
+        "en:skimmed-yogurt",
+        "en:thickener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 41,
@@ -1507,8 +1525,7 @@
         "en:ecoscore-missing-data-labels",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1848,38 +1865,50 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 9,
             "quantity_per_unit": "9",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-paper-bin"
+                    "id": {
+                        "id": "en:recycle-in-paper-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:card"
+                    "id": {
+                        "id": "en:card"
+                    }
                 }
             }
         }

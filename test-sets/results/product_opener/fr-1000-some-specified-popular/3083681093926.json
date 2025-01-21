@@ -225,7 +225,7 @@
                         "epi_score": "0",
                         "origin": "en:unspecified",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -649,69 +649,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.213465020169287,
-            "likeliest_impacts": {
-                "Climate_change": 0.102580370741471,
-                "EF_single_score": 0.0128223562045659
-            },
-            "likeliest_recipe": {
-                "en:aubergine": 9.47648017501549,
-                "en:basil": 0.903686926960292,
-                "en:concentrated_lemon_juice": 0.514717422177075,
-                "en:double_concentrated_tomato": 3.06363547376481,
-                "en:e330": 0.19642053476281,
-                "en:extra_virgin_olive_oil": 0.903686926960895,
-                "en:garlic": 0.514717422176442,
-                "en:salt": 0.903686926960292,
-                "en:sugar": 1.58583504375496,
-                "en:sunflower_oil": 1.31679466201466,
-                "en:tomato": 19.1641178189172,
-                "en:tomato_juice": 0.19642053476281,
-                "en:water": 4.79045654979621,
-                "fr:D_sd_auber": 19.5663606115001,
-                "fr:Suggestion_de_pr_se": 0.514717422177075,
-                "fr:auber": 16.4962504270079,
-                "fr:gines": 1.74391379942023,
-                "fr:oignons_coupes": 9.07405066093541,
-                "fr:puree_de_tomate_mi_reduite": 9.07405066093541
-            },
-            "mass_ratio_uncharacterized": 0.546202385205275,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:auber",
-                    "fr:Désd'auber",
-                    "en:e330",
-                    "fr:Suggestion de prése",
-                    "fr:gines"
-                ],
-                "nutrition": [
-                    "fr:gines",
-                    "fr:Suggestion de prése",
-                    "fr:auber",
-                    "fr:Désd'auber"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.546202385205275,
-                "nutrition": 0.538568554213644
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.277777777777778,
-                "nutrition": 0.222222222222222
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 28%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 54%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 55%",
-                "The impact relative interquartile is high for Climate change (30%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 73,
     "ecoscore_tags": [
@@ -1729,67 +1666,81 @@
     "ingredients": [
         {
             "ciqual_food_code": "20053",
-            "difference": 10.5,
+            "difference": 18.2,
+            "ecobalyse_code": "eggplant-eu",
             "id": "fr:aubergine-prefrite",
             "ingredients": [
                 {
                     "ciqual_food_code": "20053",
-                    "difference": 0,
+                    "difference": 1.83,
+                    "ecobalyse_code": "eggplant-eu",
                     "id": "en:aubergine",
-                    "percent": 31,
-                    "percent_estimate": 31,
-                    "percent_max": 31,
-                    "percent_min": 31,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 29.2,
+                    "percent_hidden": 31,
+                    "percent_max": 100,
+                    "percent_min": 4.16666666666667,
                     "text": "aubergines"
                 },
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
-                    "percent_estimate": 15.5,
-                    "percent_max": 31,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_max": 50,
                     "percent_min": 0,
                     "text": "huile de tournesol"
                 }
             ],
-            "percent_estimate": 46.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 54.2,
             "percent_hidden": 36,
-            "percent_max": 62,
-            "percent_min": 31,
+            "percent_max": 100,
+            "percent_min": 8.33333333333333,
             "text": "Dés d'aubergines préfrites"
         },
         {
             "ciqual_food_code": "20047",
-            "difference": 3.7,
+            "difference": 0.0833,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "fr:tomates-pelees-concassees-au-jus",
             "ingredients": [
                 {
                     "ciqual_food_code": "20047",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato",
-                    "percent_estimate": 14.2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.5,
                     "percent_max": 50,
-                    "percent_min": 1.72727272727273,
+                    "percent_min": 0,
                     "text": "tomates"
                 },
                 {
                     "ciqual_food_code": "20047",
+                    "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato-juice",
-                    "percent_estimate": 12.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.5,
                     "percent_max": 25,
                     "percent_min": 0,
                     "text": "jus de tomates"
                 }
             ],
-            "percent_estimate": 26.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.9,
             "percent_hidden": 23,
             "percent_max": 50,
-            "percent_min": 3.45454545454545,
+            "percent_min": 0,
             "text": "tomates pelées concassées au jus"
         },
         {
             "ciqual_food_code": "20053",
-            "difference": 1.6,
+            "difference": 3.54,
+            "ecobalyse_code": "eggplant-eu",
             "id": "en:aubergine",
-            "percent_estimate": 13.4,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.5,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1797,9 +1748,11 @@
         },
         {
             "ciqual_food_code": "20034",
-            "difference": 5.31,
+            "difference": 6.27,
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
-            "percent_estimate": 6.69,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 5.73,
             "percent_hidden": 12,
             "percent_max": 25,
             "percent_min": 0,
@@ -1808,9 +1761,11 @@
         },
         {
             "ciqual_food_code": "20170",
-            "difference": 2.05,
+            "difference": 2.54,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "fr:puree-de-tomate-mi-reduite",
-            "percent_estimate": 3.35,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.86,
             "percent_hidden": 5.4,
             "percent_max": 20,
             "percent_min": 0,
@@ -1818,19 +1773,23 @@
         },
         {
             "ciqual_food_code": "20068",
-            "difference": 0.53,
+            "difference": 0.768,
+            "ecobalyse_code": "tomato-concentrated",
             "id": "en:double-concentrated-tomato",
-            "percent_estimate": 1.67,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.43,
             "percent_hidden": 2.2,
-            "percent_max": 16.3863636363636,
+            "percent_max": 16.6666666666667,
             "percent_min": 0,
             "text": "double concentré de tomates"
         },
         {
             "ciqual_proxy_food_code": "31016",
-            "difference": 0.563,
+            "difference": 0.684,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 0.837,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.716,
             "percent_hidden": 1.4,
             "percent_max": 5.6,
             "percent_min": 0,
@@ -1838,9 +1797,11 @@
         },
         {
             "ciqual_food_code": "17270",
-            "difference": 0.582,
+            "difference": 0.642,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
-            "percent_estimate": 0.418,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.358,
             "percent_hidden": 1,
             "percent_max": 5.6,
             "percent_min": 0,
@@ -1848,9 +1809,10 @@
         },
         {
             "ciqual_food_code": "11033",
-            "difference": 0.691,
+            "difference": 0.721,
             "id": "en:basil",
-            "percent_estimate": 0.209,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.179,
             "percent_hidden": 0.9,
             "percent_max": 5.6,
             "percent_min": 0,
@@ -1859,7 +1821,8 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
-            "percent_estimate": 0.105,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0895,
             "percent_max": 0.76,
             "percent_min": 0,
             "text": "sel"
@@ -1867,7 +1830,8 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
-            "percent_estimate": 0.0523,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0448,
             "percent_max": 0.76,
             "percent_min": 0,
             "text": "ail"
@@ -1875,7 +1839,8 @@
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
-            "percent_estimate": 0.0523,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0448,
             "percent_max": 0.76,
             "percent_min": 0,
             "text": "jus concentré de citron"
@@ -2056,8 +2021,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.2,
-        "total_difference": 25.5,
+        "relative_difference": 0.276,
+        "total_difference": 35.2,
         "total_specified_input_percent": 128.0
     },
     "ingredients_n": 16,
@@ -2145,6 +2110,13 @@
     "ingredients_with_unspecified_percent_sum": 31.1,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:basil",
+        "en:concentrated-lemon-juice",
+        "en:garlic",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 36,
@@ -2238,8 +2210,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 3,
@@ -2623,19 +2594,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "375",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

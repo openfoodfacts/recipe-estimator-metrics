@@ -243,7 +243,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -488,59 +488,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.168869577020191,
-            "likeliest_impacts": {
-                "Climate_change": 0.00428778643343168,
-                "EF_single_score": 0.00150442772507301
-            },
-            "likeliest_recipe": {
-                "en:apple": 4.11250859181309,
-                "en:e160c": 0.0698894567116052,
-                "en:e300": 0.610804578138823,
-                "en:e330": 0.679253106787291,
-                "en:flavouring": 0.644380398044051,
-                "en:mango": 0.0504607451787476,
-                "en:orange": 4.46912115266094,
-                "en:passionfruit": 3.35648378480858,
-                "en:spring_water": 79.92382849641,
-                "en:stabiliser": 0.143192270394713,
-                "en:sugar": 5.48764640777029,
-                "en:water": 0.357216631794364
-            },
-            "mass_ratio_uncharacterized": 0.048734157927735,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:passionfruit",
-                    "en:e300",
-                    "en:e160c",
-                    "en:stabiliser",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "en:stabiliser",
-                    "en:passionfruit"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.048734157927735,
-                "nutrition": 0.029246020648971
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.545454545454545,
-                "nutrition": 0.272727272727273
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of nutrition uncharacterized ingredients: 27%",
-                "The product has a high number of impact uncharacterized ingredients: 55%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "not-applicable",
     "ecoscore_tags": [
         "not-applicable"
@@ -1293,66 +1240,78 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
-            "difference": 11.7,
+            "difference": 24.4,
+            "ecobalyse_code": "tap-water",
             "id": "en:spring-water",
-            "percent_estimate": 68.3,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 55.6,
             "percent_hidden": 80,
-            "percent_max": 93.22,
-            "percent_min": 43.42,
+            "percent_max": 100,
+            "percent_min": 11.1111111111111,
             "text": "eau de source"
         },
         {
-            "difference": 2.02,
+            "difference": 10.2,
             "id": "en:fruit-juice-from-concentrate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13034",
-                    "difference": 0.0,
+                    "difference": 4.61,
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange",
-                    "percent": 6.5,
-                    "percent_estimate": 6.5,
-                    "percent_max": 6.5,
-                    "percent_min": 6.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.1,
+                    "percent_hidden": 6.5,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "orange"
                 },
                 {
                     "ciqual_food_code": "13050",
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:apple",
-                    "percent_estimate": 1.79,
-                    "percent_max": 6.5,
-                    "percent_min": 0.1,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 5.56,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "pomme"
                 },
                 {
                     "ciqual_food_code": "13016",
-                    "difference": 0.0,
+                    "difference": 2.68,
                     "id": "en:passionfruit",
-                    "percent": 0.1,
-                    "percent_estimate": 0.1,
-                    "percent_max": 0.1,
-                    "percent_min": 0.1,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.78,
+                    "percent_hidden": 0.1,
+                    "percent_max": 16.6666666666667,
+                    "percent_min": 0,
                     "text": "fruit de la passion"
                 },
                 {
                     "ciqual_food_code": "13025",
-                    "difference": 1.51,
+                    "difference": 2.7,
+                    "ecobalyse_code": "mango-non-eu",
                     "id": "en:mango",
-                    "percent": 0.08,
-                    "percent_estimate": 1.59,
-                    "percent_max": 0.08,
-                    "percent_min": 0.08,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 2.78,
+                    "percent_hidden": 0.08,
+                    "percent_max": 12.5,
+                    "percent_min": 0,
                     "text": "mangue"
                 }
             ],
-            "percent_estimate": 9.98,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.2,
             "percent_hidden": 12,
-            "percent_max": 13.18,
-            "percent_min": 6.78,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "jus de fruits à base de concentrés"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.9,
             "percent_max": 7.8,
             "percent_min": 0,
@@ -1361,6 +1320,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.9,
             "percent_max": 7.8,
             "percent_min": 0,
@@ -1371,6 +1331,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.95,
                     "percent_max": 7.8,
                     "percent_min": 0,
@@ -1378,12 +1339,14 @@
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.95,
                     "percent_max": 3.9,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.9,
             "percent_max": 7.8,
             "percent_min": 0,
@@ -1391,8 +1354,9 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
@@ -1401,14 +1365,16 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "antioxydant"
         },
@@ -1417,21 +1383,24 @@
             "ingredients": [
                 {
                     "id": "en:e160c",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.5,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "extrait de paprika"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "colorant"
         },
         {
             "id": "en:natural-orange-flavouring",
-            "percent_estimate": 2.5,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.02,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel d'orange"
         }
@@ -1604,8 +1573,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.154,
-        "total_difference": 15.2,
+        "relative_difference": 0.453,
+        "total_difference": 44.7,
         "total_specified_input_percent": 98.7
     },
     "ingredients_n": 17,
@@ -1689,6 +1658,21 @@
         "en:natural-orange-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:antioxidant",
+        "en:colour",
+        "en:e160c",
+        "en:e296",
+        "en:e300",
+        "en:e330",
+        "en:fructose-syrup",
+        "en:fruit-juice-from-concentrate",
+        "en:natural-flavouring",
+        "en:natural-orange-flavouring",
+        "en:passionfruit"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 27,
@@ -1762,8 +1746,7 @@
         "en:packagings-with-all-weights-complete",
         "en:ecoscore-extended-data-computed",
         "en:ecoscore-extended-data-version-4",
-        "en:ecoscore-not-applicable",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-not-applicable"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2115,7 +2098,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2124,12 +2109,16 @@
             "quantity_per_unit_value": 33,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": "en:drink-can"
+                    }
                 }
             },
             "weight_measured": 12.34

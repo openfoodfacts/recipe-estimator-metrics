@@ -195,7 +195,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -630,48 +630,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00526396291088992,
-            "likeliest_impacts": {
-                "Climate_change": 0.328277214494736,
-                "EF_single_score": 0.0226228315039301
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 5.5,
-                "en:cocoa_butter": 5.5,
-                "en:flavouring": 5.49999999999998,
-                "en:sugar": 31.0221100835888,
-                "en:water": 2.47788991641124
-            },
-            "mass_ratio_uncharacterized": 0.108967848185652,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.108967848185652,
-                "nutrition": 0.108967848185652
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 25%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (32%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 11%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%",
-                "Parameter const_relax_coef has been set to 0.5 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 38,
     "ecoscore_tags": [
@@ -1363,42 +1321,49 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 81,
-            "percent_max": 89,
-            "percent_min": 73,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 62.5,
+            "percent_max": 100,
+            "percent_min": 25,
             "text": "sugar"
         },
         {
-            "id": "en:lean-cocoa",
+            "ciqual_proxy_food_code": "18100",
+            "id": "en:fat-reduced-cocoa",
             "ingredients": [
                 {
                     "ciqual_food_code": "16030",
-                    "difference": 0,
+                    "difference": 7.75,
                     "id": "en:cocoa-butter",
-                    "percent": 11,
-                    "percent_estimate": 11,
-                    "percent_max": 11,
-                    "percent_min": 11,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 18.8,
+                    "percent_hidden": 11,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "cocoa butter"
                 }
             ],
-            "percent_estimate": 11,
-            "percent_max": 11,
-            "percent_min": 11,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 18.8,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "lean cocoa"
         },
         {
             "id": "en:powder",
-            "percent_estimate": 4,
-            "percent_max": 11,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 9.38,
+            "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "powder"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 4,
-            "percent_max": "5",
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 5,
             "percent_min": 0,
             "text": "aroma"
         }
@@ -1462,8 +1427,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0,
-        "total_difference": 0,
+        "relative_difference": 0.705,
+        "total_difference": 7.75,
         "total_specified_input_percent": 11
     },
     "ingredients_n": 5,
@@ -1506,10 +1471,16 @@
     "ingredients_with_unspecified_percent_sum": 89,
     "ingredients_without_ciqual_codes": [
         "en:flavouring",
-        "en:lean-cocoa",
         "en:powder"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cocoa-butter",
+        "en:fat-reduced-cocoa",
+        "en:flavouring",
+        "en:powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 7,
@@ -1593,8 +1564,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2014,14 +1984,18 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1",
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             },
             "weight_measured": 20
@@ -2029,19 +2003,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "quantity_per_unit": "1",
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 4

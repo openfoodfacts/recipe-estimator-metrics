@@ -204,7 +204,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1265,14 +1265,16 @@
         {
             "ciqual_food_code": "9615",
             "id": "en:cornmeal",
+            "is_in_taxonomy": 1,
             "percent_estimate": 57.1,
             "percent_max": 100,
             "percent_min": 14.2857142857143,
             "text": "corn meal"
         },
         {
-            "difference": 8.6,
+            "difference": 8.57,
             "id": "en:roasted-peanut-meal-at",
+            "is_in_taxonomy": 0,
             "percent_estimate": 21.4,
             "percent_hidden": 30,
             "percent_max": 50,
@@ -1281,7 +1283,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1290,6 +1294,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.75,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1297,6 +1302,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.75,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1304,7 +1310,9 @@
         },
         {
             "ciqual_food_code": "20047",
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.75,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1312,6 +1320,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 8.46,
             "percent_max": 1.5,
             "percent_min": 0,
@@ -1399,8 +1408,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.287,
-        "total_difference": 8.6,
+        "relative_difference": 0.286,
+        "total_difference": 8.57,
         "total_specified_input_percent": 30
     },
     "ingredients_n": 7,
@@ -1455,6 +1464,14 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:cornmeal",
+        "en:natural-flavouring",
+        "en:roasted-peanut-meal-at",
+        "en:salt",
+        "en:spice"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -1874,12 +1891,16 @@
             "quantity_per_unit_value": 160,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             },
             "weight_measured": 5.4

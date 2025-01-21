@@ -244,7 +244,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -656,47 +656,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0835722790875451,
-            "likeliest_impacts": {
-                "Climate_change": 0.0293196616418932,
-                "EF_single_score": 0.00634656913063442
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0.0324483188931985,
-                "en:alcohol": 0.0324483188931985,
-                "en:broad_bean_flour": 0.273865021991547,
-                "en:colza_oil": 3.29405510876334,
-                "en:salt": 0.464154654486394,
-                "en:sugar": 3.4571364863798,
-                "en:vinegar": 0.349018035836161,
-                "en:water": 28.5160031935785,
-                "en:wheat_flour": 63.066034223216,
-                "en:wheat_gluten": 0.270634829452719,
-                "en:yeast": 0.349018035836161
-            },
-            "mass_ratio_uncharacterized": 0.00392484970866184,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:acerola-juice"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00392484970866184,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0909090909090909,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1814,8 +1773,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0.5,
+            "difference": 0.45,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 63.5,
             "percent_hidden": 63,
             "percent_max": 100,
@@ -1824,7 +1785,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 18.3,
             "percent_max": 50,
             "percent_min": 0,
@@ -1832,7 +1795,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.85,
             "percent_max": 7.7,
             "percent_min": 0,
@@ -1840,7 +1805,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.85,
             "percent_max": 7.7,
             "percent_min": 0,
@@ -1849,6 +1816,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1857,13 +1825,16 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
             "text": "vinaigre"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1871,7 +1842,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_proxy_code": "flour",
             "id": "en:broad-bean-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1879,6 +1852,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1886,6 +1860,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "labels": "en:contains-alcohol",
             "percent_estimate": 0.55,
             "percent_max": 1.1,
@@ -1894,6 +1869,7 @@
         },
         {
             "id": "en:acerola-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.28,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -2047,9 +2023,9 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.00794,
-        "total_difference": 0.5,
+        "number_of_ingredients_without_ciqual_code": 3,
+        "relative_difference": 0.00714,
+        "total_difference": 0.45,
         "total_specified_input_percent": 63
     },
     "ingredients_n": 11,
@@ -2115,10 +2091,18 @@
     "ingredients_without_ciqual_codes": [
         "en:acerola-juice",
         "en:flavouring",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acerola-juice",
+        "en:flavouring",
+        "en:salt",
+        "en:vinegar",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 25,
@@ -2640,13 +2624,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": "1",
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
@@ -2654,19 +2642,25 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": "en:fastener"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:envelope"
+                    "id": {
+                        "id": "en:envelope"
+                    }
                 }
             }
         }

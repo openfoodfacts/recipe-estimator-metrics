@@ -258,7 +258,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -697,69 +697,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.114279380623376,
-            "likeliest_impacts": {
-                "Climate_change": 0.219595808964158,
-                "EF_single_score": 0.0268584308587623
-            },
-            "likeliest_recipe": {
-                "en:chicory_root": 3.40754047302931,
-                "en:cinnamon": 0.423457812173199,
-                "en:cocoa_paste": 4.47433701688884,
-                "en:desiccated_coconut": 3.34305180000765,
-                "en:e307a": 0.15763332722491,
-                "en:glucose_syrup": 4.35249710279148,
-                "en:molasses": 3.31485094723945,
-                "en:natural_flavouring": 0.15763332722446,
-                "en:natural_vanilla_flavouring": 1.95251240601925,
-                "en:rice_flour": 3.34305180000765,
-                "en:salt": 0.423457812173199,
-                "en:soya_lecithin": 1.20152874332405,
-                "en:sugar": 14.7543132627895,
-                "en:sunflower_oil": 10.2816333740959,
-                "en:water": 1.11438387105787,
-                "en:wheat_flour": 3.34305180000765,
-                "en:whole_wheat": 10.2816333740959,
-                "en:wholemeal_oat": 39.6271286293281,
-                "fr:ar_me_naturel_de_caramel_aux_pommes": 0.395667104659572,
-                "fr:le_chocolat_noir_contient_65___de_cacao_minimum": 0,
-                "fr:polyglyc_rol_polyricinol_ate": 0.750983662694711
-            },
-            "mass_ratio_uncharacterized": 0.0710815176091198,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:glucose-syrup",
-                    "fr:arôme naturel de caramel aux pommes",
-                    "fr:le chocolat noir contient 65 % de cacao minimum",
-                    "en:natural-flavouring",
-                    "fr:polyglycérol polyricinoléate",
-                    "en:e307a"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "fr:arôme naturel de caramel aux pommes",
-                    "fr:le chocolat noir contient 65 % de cacao minimum",
-                    "fr:polyglycérol polyricinoléate",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0710815176091198,
-                "nutrition": 0.0691159915092412
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0.238095238095238
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 29%",
-                "The impact relative interquartile is high for Climate change (38%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 61,
     "ecoscore_tags": [
@@ -1427,6 +1364,7 @@
             "ciqual_food_code": "9310",
             "difference": 16.1,
             "id": "en:wholemeal-oat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.1,
             "percent_hidden": 37,
             "percent_max": 100,
@@ -1436,11 +1374,13 @@
         {
             "ciqual_proxy_food_code": "31074",
             "difference": 11.4,
+            "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.7,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1448,7 +1388,9 @@
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 5.86,
                     "percent_max": 16,
                     "percent_min": 0,
@@ -1456,6 +1398,7 @@
                 },
                 {
                     "id": "en:natural-vanilla-flavouring",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.93,
                     "percent_max": 16,
                     "percent_min": 0,
@@ -1467,6 +1410,7 @@
                         {
                             "ciqual_food_code": "42200",
                             "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.46,
                             "percent_max": 12.5,
                             "percent_min": 0,
@@ -1474,18 +1418,21 @@
                         },
                         {
                             "id": "en:e476",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 1.46,
                             "percent_max": 6.25,
                             "percent_min": 0,
                             "text": "polyglycerol polyricinoleate"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 2.93,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "emulsifiers"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.4,
             "percent_hidden": 12,
             "percent_max": 50,
@@ -1494,7 +1441,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1502,7 +1451,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.86,
             "percent_max": 16,
             "percent_min": 0,
@@ -1512,6 +1463,7 @@
             "ciqual_food_code": "9010",
             "difference": 6.67,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.93,
             "percent_hidden": 9.6,
             "percent_max": 16,
@@ -1521,6 +1473,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_max": 16,
             "percent_min": 0,
@@ -1528,6 +1481,7 @@
         },
         {
             "id": "en:oligofructose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.732,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1537,6 +1491,7 @@
             "ciqual_proxy_food_code": "9100",
             "difference": 1.53,
             "id": "en:rice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.366,
             "percent_hidden": 1.9,
             "percent_max": 12.5,
@@ -1546,7 +1501,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 1.72,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.183,
             "percent_hidden": 1.9,
             "percent_max": 11.1111111111111,
@@ -1556,6 +1513,7 @@
         {
             "ciqual_proxy_food_code": "15006",
             "id": "en:coconut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0916,
             "percent_max": 10,
             "percent_min": 0,
@@ -1564,7 +1522,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:molasses",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0458,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1573,6 +1533,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0229,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -1580,6 +1541,7 @@
         },
         {
             "id": "en:cinnamon",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0114,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -1587,7 +1549,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00572,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -1596,6 +1560,7 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00286,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -1606,12 +1571,14 @@
             "ingredients": [
                 {
                     "id": "en:vitamin-e",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00286,
                     "percent_max": 0.48,
                     "percent_min": 0,
                     "text": "tocopherol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00286,
             "percent_max": 0.48,
             "percent_min": 0,
@@ -1847,8 +1814,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.6,
-        "total_difference": 37.4,
+        "relative_difference": 0.601,
+        "total_difference": 37.5,
         "total_specified_input_percent": 62.4
     },
     "ingredients_n": 23,
@@ -1951,6 +1918,25 @@
         "en:vitamin-e"
     ],
     "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ecobalyse_ids": [
+        "en:antioxidant",
+        "en:cinnamon",
+        "en:cocoa",
+        "en:coconut",
+        "en:e476",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:glucose-syrup",
+        "en:natural-vanilla-flavouring",
+        "en:oligofructose",
+        "en:rice",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vitamin-e",
+        "en:whole-wheat",
+        "en:wholemeal-oat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 16,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -2458,41 +2444,55 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

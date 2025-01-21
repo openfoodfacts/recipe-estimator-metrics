@@ -188,13 +188,13 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.9658203125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:burundi",
                         "percent": 0.0341796875,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -615,54 +615,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.186503898772923,
-            "likeliest_impacts": {
-                "Climate_change": 0.0151213763274746,
-                "EF_single_score": 0.00441790403985433
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 0.642409705300132,
-                "en:e101": 0,
-                "en:e375": 0.0751550423253347,
-                "en:folic_acid": 0,
-                "en:iron": 0.819755113174655,
-                "en:salt": 0.432334079854863,
-                "en:sugar": 0.00080541083976593,
-                "en:thiamin": 0,
-                "en:water": 0.529540648505249,
-                "en:whole_wheat": 47.5
-            },
-            "mass_ratio_uncharacterized": 0.0266638183366012,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:barley-malt-extract",
-                    "en:iron",
-                    "en:e375",
-                    "en:e101",
-                    "en:folic-acid"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0266638183366012,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.666666666666667,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 67%",
-                "The product has no recognized nutriment information.",
-                "The impact relative interquartile is high for EF single score (37%)",
-                "The impact relative interquartile is high for Climate change (30%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 30,
     "ecoscore_tags": [
@@ -990,6 +942,7 @@
             "ciqual_food_code": "9010",
             "difference": 39.4,
             "id": "en:whole-wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_hidden": 95,
             "percent_max": 100,
@@ -998,6 +951,7 @@
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1005,7 +959,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1014,6 +970,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.56,
             "percent_max": 25,
             "percent_min": 0,
@@ -1021,6 +978,7 @@
         },
         {
             "id": "en:e375",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.78,
             "percent_max": 20,
             "percent_min": 0,
@@ -1028,6 +986,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.39,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1038,12 +997,14 @@
             "ingredients": [
                 {
                     "id": "en:e101",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.694,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "b2"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.694,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1051,6 +1012,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "origins": "en:burundi",
             "percent_estimate": 0.347,
             "percent_max": 12.5,
@@ -1059,6 +1021,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.347,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1241,6 +1204,17 @@
         "en:thiamin"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:e101",
+        "en:e375",
+        "en:folic-acid",
+        "en:iron",
+        "en:salt",
+        "en:thiamin",
+        "en:whole-wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1656,7 +1630,9 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

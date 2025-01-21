@@ -228,7 +228,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -645,70 +645,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0237492224220441,
-            "likeliest_impacts": {
-                "Climate_change": 0.0887040552883036,
-                "EF_single_score": 0.0206630395748146
-            },
-            "likeliest_recipe": {
-                "en:apple_puree": 0.394886710345296,
-                "en:e100": 0.190173163953134,
-                "en:e330": 0.210572913467368,
-                "en:e422": 0.210572913467368,
-                "en:e440a": 0.210572913467371,
-                "en:e500ii": 0.0976725406061035,
-                "en:e503ii": 0.0925006233479082,
-                "en:flavouring": 0.190173163954012,
-                "en:fructose_syrup": 0.850389911238707,
-                "en:glucose": 0.668069095033334,
-                "en:glucose_fructose_syrup": 4.86442829684616,
-                "en:glucose_syrup": 0.304181062831107,
-                "en:high_oleic_sunflower": 18.1727682564618,
-                "en:oat_flakes": 44.1338657656929,
-                "en:orange_flavouring": 0.103844390036924,
-                "en:orange_juice": 0.273182384688021,
-                "en:salt": 0.190173163954016,
-                "en:sugar": 11.8944190882185,
-                "en:water": 0.331714708645969,
-                "en:wheat_fiber": 0.210572913468222,
-                "en:whole_wheat_flour": 18.6919902066464,
-                "es:preparado_de_frutas": 1.55766585055387
-            },
-            "mass_ratio_uncharacterized": 0.0596843484194982,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e503ii",
-                    "en:e440a",
-                    "en:e500ii",
-                    "en:e422",
-                    "en:e330",
-                    "es:preparado de frutas",
-                    "en:glucose-syrup",
-                    "en:flavouring",
-                    "en:e100"
-                ],
-                "nutrition": [
-                    "es:preparado de frutas",
-                    "en:flavouring",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0596843484194982,
-                "nutrition": 0.0294494606654873
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.409090909090909,
-                "nutrition": 0.136363636363636
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 41%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1156,6 +1092,7 @@
             "ciqual_food_code": "9311",
             "difference": 10.0,
             "id": "en:oat-flakes",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.5,
             "percent_hidden": 42.5,
             "percent_max": 100,
@@ -1164,8 +1101,10 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 5.8,
+            "difference": 5.75,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.8,
             "percent_hidden": 18,
             "percent_max": 50,
@@ -1173,18 +1112,21 @@
             "text": "harina integral de trigo"
         },
         {
-            "difference": 5.6,
+            "difference": 5.62,
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
                     "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
                     "id": "en:high-oleic-sunflower",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 11.9,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "girasol alto oleico"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.9,
             "percent_hidden": 17.5,
             "percent_max": 33.3333333333333,
@@ -1193,7 +1135,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.94,
             "percent_max": 18,
             "percent_min": 0,
@@ -1202,14 +1146,16 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.97,
             "percent_max": 18,
             "percent_min": 0,
             "text": "jarabe de glucosa y fructosa"
         },
         {
-            "difference": 0.02,
+            "difference": 0.0156,
             "id": "es:preparado-de-frutas",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.48,
             "percent_hidden": 1.5,
             "percent_max": 16.6666666666667,
@@ -1219,6 +1165,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.742,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1227,6 +1174,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.371,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1237,7 +1185,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "13050",
+                    "ecobalyse_code": "apple-fr",
                     "id": "en:apple-puree",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0928,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
@@ -1245,13 +1195,16 @@
                 },
                 {
                     "ciqual_proxy_food_code": "2070",
+                    "ecobalyse_code": "orange-non-eu",
                     "id": "en:orange-juice",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0928,
                     "percent_max": 5.55555555555556,
                     "percent_min": 0,
                     "text": "zumo de naranja"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.186,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1260,6 +1213,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0928,
             "percent_max": 10,
             "percent_min": 0,
@@ -1270,12 +1224,14 @@
             "ingredients": [
                 {
                     "id": "en:e422",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0464,
                     "percent_max": 9.09090909090909,
                     "percent_min": 0,
                     "text": "glicerol"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0464,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -1283,7 +1239,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0232,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -1291,6 +1249,7 @@
         },
         {
             "id": "en:wheat-fiber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0116,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -1301,12 +1260,14 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0058,
                     "percent_max": 7.14285714285714,
                     "percent_min": 0,
                     "text": "pectina"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0058,
             "percent_max": 7.14285714285714,
             "percent_min": 0,
@@ -1317,12 +1278,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0029,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
                     "text": "ácido citrico"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0029,
             "percent_max": 6.66666666666667,
             "percent_min": 0,
@@ -1330,8 +1293,9 @@
         },
         {
             "id": "en:flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00145,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "aroma"
         },
@@ -1340,14 +1304,16 @@
             "ingredients": [
                 {
                     "id": "en:e100",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000725,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "curcumina"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000725,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "colorante"
         },
@@ -1356,27 +1322,31 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000181,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "carbonato ácido de sodio"
                 },
                 {
                     "id": "en:e503ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000181,
                     "percent_max": 2.5,
                     "percent_min": 0,
                     "text": "carbonato ácido de amonio"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000362,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "gasificantes"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000181,
             "percent_max": 0.98,
             "percent_min": 0,
@@ -1385,6 +1355,7 @@
         {
             "difference": 0.0998,
             "id": "en:orange-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000181,
             "percent_hidden": 0.1,
             "percent_max": 0.98,
@@ -1792,6 +1763,32 @@
         "es:preparado-de-frutas"
     ],
     "ingredients_without_ciqual_codes_n": 17,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:colour",
+        "en:e100",
+        "en:e330",
+        "en:e422",
+        "en:e440a",
+        "en:e500ii",
+        "en:e503ii",
+        "en:flavouring",
+        "en:fructose-syrup",
+        "en:fruit",
+        "en:gelling-agent",
+        "en:glucose",
+        "en:glucose-fructose-syrup",
+        "en:glucose-syrup",
+        "en:humectant",
+        "en:oat-flakes",
+        "en:orange-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:vegetable-oil",
+        "en:wheat-fiber",
+        "es:preparado-de-frutas"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 23,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 52,

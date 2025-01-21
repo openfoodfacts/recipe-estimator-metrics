@@ -21,7 +21,7 @@
     "additives_tags": [
         "en:e290"
     ],
-    "allergens": "en:peanuts, en:peanuts",
+    "allergens": "en:peanuts, en:peanuts, en:peanuts",
     "allergens_from_ingredients": "",
     "allergens_from_user": "(it) en:peanuts, en:peanuts",
     "allergens_hierarchy": [
@@ -169,7 +169,7 @@
                         "epi_score": "0",
                         "origin": "en:india",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -448,10 +448,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation queue read: Exception: estimation process got exception: NoCharacterizedIngredientsError: "
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1665,6 +1661,7 @@
     "ingredients": [
         {
             "id": "fr:aeure-e-de-cacahuetes-avec-morceaux-le-cacahuětes",
+            "is_in_taxonomy": 0,
             "percent_estimate": 55.6,
             "percent_max": 100,
             "percent_min": 11.1111111111111,
@@ -1672,6 +1669,7 @@
         },
         {
             "id": "fr:ile-d-a20-94-cacahuetes-grillees",
+            "is_in_taxonomy": 0,
             "percent_estimate": 22.2,
             "percent_max": 50,
             "percent_min": 0,
@@ -1679,6 +1677,7 @@
         },
         {
             "id": "fr:ontuellesee-e",
+            "is_in_taxonomy": 0,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1686,7 +1685,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.45,
             "percent_max": 6.9,
             "percent_min": 0,
@@ -1695,6 +1696,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1702,6 +1704,7 @@
         },
         {
             "id": "fr:traces-eercle",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1709,6 +1712,7 @@
         },
         {
             "id": "fr:a-co-g-ents-e-palme-anuetes-grillees",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.3,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1720,6 +1724,7 @@
             "ingredients": [
                 {
                     "id": "fr:volr-c-t-former-o-t-et-de-l-humidite",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.15,
                     "percent_max": 0.6,
                     "percent_min": 0,
@@ -1727,6 +1732,7 @@
                 },
                 {
                     "id": "fr:l-huile-vegetale-nous-ace-du-produit",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.075,
                     "percent_max": 0.3,
                     "percent_min": 0,
@@ -1734,12 +1740,14 @@
                 },
                 {
                     "id": "fr:c-est-un-phenomene-nat-tlstan-m-ger-le-produit-avant-de-yous-en-servi-p-polds-net",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.075,
                     "percent_max": 0.2,
                     "percent_min": 0,
                     "text": "C'est un phénomène nat tlstan m ger le produit avant de yous en servi P Polds net"
                 }
             ],
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.3,
             "percent_hidden": 1.7,
             "percent_max": 0.6,
@@ -1748,6 +1756,7 @@
         },
         {
             "id": "fr:454ge-lidl-france-snc-g-strasbous-fr-67039",
+            "is_in_taxonomy": 0,
             "percent_estimate": 6.46,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -1894,6 +1903,20 @@
         "fr:volr-c-t-former-o-t-et-de-l-humidite"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt",
+        "fr:454ge-lidl-france-snc-g-strasbous-fr-67039",
+        "fr:a-co-g-ents-e-palme-anuetes-grillees",
+        "fr:aeure-e-de-cacahuetes-avec-morceaux-le-cacahuětes",
+        "fr:c-est-un-phenomene-nat-tlstan-m-ger-le-produit-avant-de-yous-en-servi-p-polds-net",
+        "fr:huile-dza-mer-de-preference-avant-le",
+        "fr:ile-d-a20-94-cacahuetes-grillees",
+        "fr:l-huile-vegetale-nous-ace-du-produit",
+        "fr:ontuellesee-e",
+        "fr:traces-eercle",
+        "fr:volr-c-t-former-o-t-et-de-l-humidite"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -2298,14 +2321,18 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pet-1-polyethylene-terephthalate"
+                    "id": {
+                        "id": "en:pet-1-polyethylene-terephthalate"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": "en:hdpe-2-high-density-polyethylene"
+                    }
                 }
             }
         }

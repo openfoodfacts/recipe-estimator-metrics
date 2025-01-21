@@ -304,7 +304,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -2336,8 +2336,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 0.2,
+            "difference": 0.154,
             "id": "en:wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.8,
             "percent_hidden": 54,
             "percent_max": 100,
@@ -2346,8 +2347,10 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 17,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 17.0,
             "percent_max": 34,
             "percent_min": 0,
             "text": "sucre"
@@ -2355,6 +2358,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 14.6,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -2362,6 +2366,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 7.29,
             "percent_max": 25,
             "percent_min": 0,
@@ -2372,12 +2377,14 @@
             "ingredients": [
                 {
                     "id": "en:e375",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.64,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "Niacine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.64,
             "percent_max": 20,
             "percent_min": 0,
@@ -2385,6 +2392,7 @@
         },
         {
             "id": "en:iron",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.82,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2392,6 +2400,7 @@
         },
         {
             "id": "en:vitamins",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.911,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2399,6 +2408,7 @@
         },
         {
             "id": "en:vitamin-b6",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.456,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -2406,6 +2416,7 @@
         },
         {
             "id": "en:e101",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.228,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2413,6 +2424,7 @@
         },
         {
             "id": "en:thiamin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.114,
             "percent_max": 10,
             "percent_min": 0,
@@ -2420,6 +2432,7 @@
         },
         {
             "id": "en:folic-acid",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0569,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2427,6 +2440,7 @@
         },
         {
             "id": "en:vitamin-d",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0285,
             "percent_max": 8.33333333333333,
             "percent_min": 0,
@@ -2434,6 +2448,7 @@
         },
         {
             "id": "en:vitamin-b12",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0285,
             "percent_max": 7.69230769230769,
             "percent_min": 0,
@@ -2529,8 +2544,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 10,
-        "relative_difference": 0.0037,
-        "total_difference": 0.2,
+        "relative_difference": 0.00285,
+        "total_difference": 0.154,
         "total_specified_input_percent": 54
     },
     "ingredients_n": 14,
@@ -2602,6 +2617,21 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e101",
+        "en:e375",
+        "en:folic-acid",
+        "en:glucose-syrup",
+        "en:iron",
+        "en:minerals",
+        "en:thiamin",
+        "en:vitamin-b12",
+        "en:vitamin-b6",
+        "en:vitamin-d",
+        "en:vitamins",
+        "en:wheat"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 19,
@@ -3109,36 +3139,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 65

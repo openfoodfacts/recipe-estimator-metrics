@@ -223,7 +223,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -655,43 +655,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0376798705252298,
-            "likeliest_impacts": {
-                "Climate_change": 0.0310312539268162,
-                "EF_single_score": 0.015676971116445
-            },
-            "likeliest_recipe": {
-                "en:aroma_of_barley_malt_and_salt": 0.785558339304271,
-                "en:corn": 143.008234165853,
-                "en:sugar": 2.05920932310627,
-                "en:water": 0.0737677287293204
-            },
-            "mass_ratio_uncharacterized": 0.00654294935573797,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:aroma of barley malt and salt"
-                ],
-                "nutrition": [
-                    "en:aroma of barley malt and salt"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00654294935573797,
-                "nutrition": 0.00654294935573797
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -1430,6 +1393,7 @@
         {
             "difference": 31.3,
             "id": "fr:maize",
+            "is_in_taxonomy": 0,
             "percent_estimate": 66.7,
             "percent_hidden": 98,
             "percent_max": 100,
@@ -1438,6 +1402,7 @@
         },
         {
             "id": "fr:sugar",
+            "is_in_taxonomy": 0,
             "percent_estimate": 16.7,
             "percent_max": 50,
             "percent_min": 0,
@@ -1445,6 +1410,7 @@
         },
         {
             "id": "fr:aroma-of-barley-malt-and-salt",
+            "is_in_taxonomy": 0,
             "percent_estimate": 16.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1508,7 +1474,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.319,
+        "relative_difference": 0.32,
         "total_difference": 31.3,
         "total_specified_input_percent": 98
     },
@@ -1554,6 +1520,12 @@
         "fr:sugar"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "fr:aroma-of-barley-malt-and-salt",
+        "fr:maize",
+        "fr:sugar"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 0,
@@ -1994,36 +1966,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:individual-bag"
+                    "id": {
+                        "id": "en:individual-bag"
+                    }
                 }
             }
         }

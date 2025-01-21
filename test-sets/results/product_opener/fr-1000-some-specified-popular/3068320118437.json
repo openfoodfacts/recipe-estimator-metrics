@@ -210,7 +210,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -817,50 +817,57 @@
     "ingredients": [
         {
             "ciqual_food_code": "18066",
-            "difference": 4.3,
+            "difference": 22.2,
+            "ecobalyse_code": "tap-water",
             "id": "fr:eau-minerale-naturelle-gazeifiee",
-            "percent_estimate": 84.7,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 66.8,
             "percent_hidden": 89,
-            "percent_max": 92.9,
-            "percent_min": 76.4,
+            "percent_max": 100,
+            "percent_min": 33.5,
             "text": "Eau minérale naturelle gazéifiée"
         },
         {
-            "difference": 0.1,
-            "id": "en:fruit-juice",
+            "difference": 9.62,
+            "id": "en:fruit-juice-concentrate",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "13009",
-                    "difference": 0.0,
+                    "difference": 3.21,
+                    "ecobalyse_code": "lemon-eu",
                     "id": "en:lemon",
-                    "percent": 5.1,
-                    "percent_estimate": 5.1,
-                    "percent_max": 5.1,
-                    "percent_min": 5.1,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 8.31,
+                    "percent_hidden": 5.1,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "citron"
                 },
                 {
                     "ciqual_food_code": "13067",
-                    "difference": 0,
+                    "difference": 6.31,
                     "id": "en:lime",
-                    "percent": 2,
-                    "percent_estimate": 2,
-                    "percent_max": 2,
-                    "percent_min": 2,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 8.31,
+                    "percent_hidden": 2,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "citron vert"
                 }
             ],
-            "percent_estimate": 7.1,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 16.6,
             "percent_hidden": 7,
-            "percent_max": 7.1,
-            "percent_min": 7.1,
-            "processing": "en:from-concentrate",
-            "text": "jus de fruit"
+            "percent_max": 50,
+            "percent_min": 0,
+            "text": "jus de fruit à base de concentré"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "difference": 1.45,
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.65,
             "percent_hidden": 3.1,
             "percent_max": 3.3,
@@ -872,12 +879,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.65,
                     "percent_max": 3.3,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.65,
             "percent_max": 3.3,
             "percent_min": 0,
@@ -885,6 +894,7 @@
         },
         {
             "id": "en:natural-lemon-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.65,
             "percent_max": 3.3,
             "percent_min": 0,
@@ -893,6 +903,7 @@
         {
             "ciqual_food_code": "13067",
             "id": "en:lime",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.65,
             "percent_max": 3.3,
             "percent_min": 0,
@@ -903,13 +914,15 @@
             "ingredients": [
                 {
                     "id": "en:e960",
-                    "percent_estimate": 1.65,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 10.0,
                     "percent_max": 3.3,
                     "percent_min": 0,
                     "text": "glucosides de steviol"
                 }
             ],
-            "percent_estimate": 1.65,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 10.0,
             "percent_max": 3.3,
             "percent_min": 0,
             "text": "édulcorant"
@@ -1047,8 +1060,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.0551,
-        "total_difference": 5.85,
+        "relative_difference": 0.403,
+        "total_difference": 42.9,
         "total_specified_input_percent": 106.0
     },
     "ingredients_n": 11,
@@ -1111,11 +1124,21 @@
         "en:acid",
         "en:e330",
         "en:e960",
-        "en:fruit-juice",
+        "en:fruit-juice-concentrate",
         "en:natural-lemon-flavouring",
         "en:sweetener"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:e330",
+        "en:e960",
+        "en:fruit-juice-concentrate",
+        "en:lime",
+        "en:natural-lemon-flavouring",
+        "en:sweetener"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 22,
@@ -1193,8 +1216,7 @@
         "en:packagings-with-all-weights-complete",
         "en:ecoscore-extended-data-not-computed",
         "en:ecoscore-not-applicable",
-        "en:ecoscore-not-computed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-not-computed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1525,7 +1547,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pet-transparent"
+                    "id": {
+                        "id": "en:pet-transparent"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1534,12 +1558,16 @@
             "quantity_per_unit_value": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": "en:bottle"
+                    }
                 }
             },
             "weight_measured": 31
@@ -1547,18 +1575,24 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": "en:recycle-in-sorting-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": "en:bottle-cap"
+                    }
                 }
             },
             "weight_measured": 2

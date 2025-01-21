@@ -66,7 +66,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk,en:soybeans, en:milk",
+    "allergens": "en:eggs,en:gluten,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, blé, blé, œufs, soja, lait",
     "allergens_from_user": "(fr) en:eggs,en:gluten,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -241,7 +241,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 99.978125,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -1329,6 +1329,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.8,
             "percent_max": 100,
             "percent_min": 5.55555555555556,
@@ -1336,8 +1337,10 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 7.2,
+            "difference": 7.19,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.6,
             "percent_hidden": 30.8,
             "percent_max": 50,
@@ -1347,7 +1350,9 @@
         {
             "ciqual_food_code": "13014",
             "difference": 13.4,
+            "ecobalyse_code": "strawberry-non-eu",
             "id": "en:strawberry-puree",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_hidden": 25.2,
             "percent_max": 33.3333333333333,
@@ -1357,6 +1362,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:wheat-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.9,
             "percent_max": 25,
             "percent_min": 0,
@@ -1364,7 +1370,9 @@
         },
         {
             "ciqual_food_code": "13050",
+            "ecobalyse_code": "apple-fr",
             "id": "en:apple-puree",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.95,
             "percent_max": 20,
             "percent_min": 0,
@@ -1372,6 +1380,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1379,6 +1388,7 @@
         },
         {
             "id": "fr:jus-concentre-de-cassis",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.738,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1388,7 +1398,8 @@
             "difference": 0.5,
             "id": "fr:puree-de-fraises-des-bols-concentree",
             "ingredients": [],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 0,
+            "percent_estimate": 0.0,
             "percent_hidden": 0.5,
             "percent_max": 0,
             "percent_min": 0,
@@ -1399,6 +1410,7 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
@@ -1406,29 +1418,35 @@
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "acide malique"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "acidifiants"
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "huile de colza"
         },
         {
             "ciqual_food_code": "22003",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk-powder",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "jaunes d'_œufs_ en poudre"
@@ -1438,21 +1456,25 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "pectines"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "gélifiant"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "sucre"
@@ -1462,20 +1484,23 @@
             "ingredients": [
                 {
                     "id": "en:sodium-citrate",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "citrate de sodium"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "correcteur d'acidité"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "arômes"
@@ -1486,13 +1511,15 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "lécithine de _soja_"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "émulsifiant"
@@ -1502,19 +1529,23 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0,
                     "percent_max": 0,
                     "percent_min": 0,
                     "text": "carbonate acide de sodium"
                 }
             ],
-            "percent_estimate": 0,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.0,
             "percent_max": 0,
             "percent_min": 0,
             "text": "poudre à lever"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "bg:суха-мая",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.738,
             "percent_max": 0,
             "percent_min": 0,
@@ -1829,7 +1860,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 10,
+        "number_of_ingredients_without_ciqual_code": 9,
         "relative_difference": 0.373,
         "total_difference": 21.1,
         "total_specified_input_percent": 56.5
@@ -1937,7 +1968,6 @@
     "ingredients_with_unspecified_percent_n": 16,
     "ingredients_with_unspecified_percent_sum": 43.978125,
     "ingredients_without_ciqual_codes": [
-        "bg:суха-мая",
         "en:acid",
         "en:acidity-regulator",
         "en:e296",
@@ -1953,7 +1983,28 @@
         "fr:jus-concentre-de-cassis",
         "fr:puree-de-fraises-des-bols-concentree"
     ],
-    "ingredients_without_ciqual_codes_n": 15,
+    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ecobalyse_ids": [
+        "bg:суха-мая",
+        "en:acid",
+        "en:acidity-regulator",
+        "en:e296",
+        "en:e330",
+        "en:e440a",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:flavouring",
+        "en:gelling-agent",
+        "en:glucose-fructose-syrup",
+        "en:raising-agent",
+        "en:sodium-citrate",
+        "en:soya-lecithin",
+        "en:wheat-starch",
+        "en:whey-powder",
+        "fr:jus-concentre-de-cassis",
+        "fr:puree-de-fraises-des-bols-concentree"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 51,
@@ -2369,24 +2420,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }

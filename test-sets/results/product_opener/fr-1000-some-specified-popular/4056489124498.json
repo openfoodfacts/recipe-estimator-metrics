@@ -173,13 +173,13 @@
                         "epi_score": "68",
                         "origin": "en:italy",
                         "percent": 75.225,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 24.775,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 51.153,
@@ -599,50 +599,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.720405065151436,
-            "likeliest_impacts": {
-                "Climate_change": 0.00212616381495965,
-                "EF_single_score": 0.000263145690338304
-            },
-            "likeliest_recipe": {
-                "en:coagulating_enzyme": 0.213056582458371,
-                "en:e330": 0.119422802970248,
-                "en:salt": 0.213056582458371,
-                "en:water": 2.98562179048588,
-                "fr:Lait_pasteuris__issu_d_animaux_nourris_sans_OGM": 96.4688422416272
-            },
-            "mass_ratio_uncharacterized": 0.966281899388621,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:coagulating-enzyme",
-                    "fr:Lait pasteurisé issu d'animaux nourris sans OGM",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "fr:Lait pasteurisé issu d'animaux nourris sans OGM"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.966281899388621,
-                "nutrition": 0.958807911092226
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.75,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 75%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 96%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 97%",
-                "The impact relative interquartile is high for EF single score (117%)",
-                "The impact relative interquartile is high for Climate change (116%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 49,
     "ecoscore_tags": [
@@ -1001,6 +957,7 @@
         {
             "difference": 98.3,
             "id": "fr:iait-de-vache-pasteurise",
+            "is_in_taxonomy": 0,
             "labels": "en:fed-without-gmos",
             "percent_estimate": 99.2,
             "percent_hidden": 0.9,
@@ -1011,6 +968,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1018,6 +976,7 @@
         },
         {
             "id": "en:coagulating-enzyme",
+            "is_in_taxonomy": 1,
             "origins": "fr:microbienne",
             "percent_estimate": 0.25,
             "percent_max": 0.5,
@@ -1029,12 +988,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.25,
                     "percent_max": 0.5,
                     "percent_min": 0,
                     "text": "acide citrique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.25,
             "percent_max": 0.5,
             "percent_min": 0,
@@ -1115,6 +1076,14 @@
         "fr:iait-de-vache-pasteurise"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:coagulating-enzyme",
+        "en:e330",
+        "en:salt",
+        "fr:iait-de-vache-pasteurise"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 5,
@@ -1478,12 +1447,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

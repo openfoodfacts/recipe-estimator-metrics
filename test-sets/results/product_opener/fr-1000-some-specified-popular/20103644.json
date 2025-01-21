@@ -246,13 +246,13 @@
                         "epi_score": "0",
                         "origin": "en:thailand",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     },
                     {
                         "epi_score": "50",
                         "origin": "en:vietnam",
                         "percent": 50,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 25,
@@ -684,40 +684,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00550030369788787,
-            "likeliest_impacts": {
-                "Climate_change": 0.0711659729265253,
-                "EF_single_score": 0.0179687050642134
-            },
-            "likeliest_recipe": {
-                "en:coconut": 49.126263554248,
-                "en:e412": 2.40109194938604,
-                "en:water": 2.45754950103409
-            },
-            "mass_ratio_uncharacterized": 0.0221071549249326,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e412"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0221071549249326,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "Parameter const_relax_coef has been set to 0.1 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 93,
     "ecoscore_tags": [
@@ -2952,6 +2918,7 @@
         {
             "difference": 24.3,
             "id": "cs:extrakt-z-kokosového-ořechu",
+            "is_in_taxonomy": 0,
             "percent_estimate": 66.7,
             "percent_hidden": 91,
             "percent_max": 100,
@@ -2960,7 +2927,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "percent_max": 50,
             "percent_min": 0,
@@ -2971,12 +2940,14 @@
             "ingredients": [
                 {
                     "id": "en:e412",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 16.7,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
                     "text": "guma guar"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 16.7,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -3122,6 +3093,12 @@
         "en:stabiliser"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "cs:extrakt-z-kokosového-ořechu",
+        "en:e412",
+        "en:stabiliser"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -3570,7 +3547,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:steel"
+                    "id": {
+                        "id": "en:steel"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3579,7 +3558,9 @@
             "quantity_per_unit_value": 400,
             "shape": {
                 "id": {
-                    "id": "en:food-can"
+                    "id": {
+                        "id": "en:food-can"
+                    }
                 }
             },
             "weight_measured": 62.89
@@ -3587,13 +3568,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": "en:paper"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         }

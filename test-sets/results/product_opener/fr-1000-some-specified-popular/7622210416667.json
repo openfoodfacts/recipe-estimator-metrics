@@ -193,7 +193,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -598,44 +598,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0210500465020289,
-            "likeliest_impacts": {
-                "Climate_change": 0.0393170223337554,
-                "EF_single_score": 0.00734259823675929
-            },
-            "likeliest_recipe": {
-                "en:e300": 0.513122104912637,
-                "en:glucose_fructose_syrup": 0.513122104912643,
-                "en:palm_oil": 0.687400344911787,
-                "en:salt": 0.513122104912637,
-                "en:water": 0.0961008559544787,
-                "en:wheat_flour": 97.652534784472,
-                "en:yeast": 0.697313972575369
-            },
-            "mass_ratio_uncharacterized": 0.00191639887766385,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00191639887766385,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -1251,7 +1213,9 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 38.7,
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.3,
             "percent_hidden": 97,
             "percent_max": 100,
@@ -1259,7 +1223,9 @@
             "text": "Farine de _blé_"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -1267,7 +1233,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1276,6 +1244,7 @@
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.21,
             "percent_max": 25,
             "percent_min": 0,
@@ -1284,6 +1253,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.9,
             "percent_max": 1.8,
             "percent_min": 0,
@@ -1294,12 +1264,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 4.31,
                     "percent_max": 1.8,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 4.31,
             "percent_max": 1.8,
             "percent_min": 0,
@@ -1384,7 +1356,7 @@
         "acide-ascorbique"
     ],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 2,
+        "number_of_ingredients_without_ciqual_code": 1,
         "relative_difference": 0.399,
         "total_difference": 38.7,
         "total_specified_input_percent": 97
@@ -1439,10 +1411,17 @@
     "ingredients_with_unspecified_percent_sum": 3,
     "ingredients_without_ciqual_codes": [
         "en:e300",
+        "en:flour-treatment-agent"
+    ],
+    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:e300",
         "en:flour-treatment-agent",
+        "en:glucose-fructose-syrup",
+        "en:salt",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 18,
@@ -1837,24 +1816,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         }

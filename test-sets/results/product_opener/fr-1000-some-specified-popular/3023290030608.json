@@ -31,7 +31,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "ferments lactiques, lait",
     "allergens_from_user": "(fr) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -170,7 +170,7 @@
                         "epi_score": "71",
                         "origin": "en:slovenia",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 71,
@@ -1319,8 +1319,9 @@
     ],
     "ingredients": [
         {
-            "difference": 28.6,
+            "difference": 28.5,
             "id": "fr:lait-pasteurise-a-2-2-de-matieres-grasses",
+            "is_in_taxonomy": 0,
             "percent_estimate": 56.2,
             "percent_hidden": 84.8,
             "percent_max": 100,
@@ -1329,7 +1330,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 21.9,
             "percent_max": 50,
             "percent_min": 0,
@@ -1337,8 +1340,9 @@
         },
         {
             "ciqual_food_code": "31089",
-            "difference": 4.6,
+            "difference": 4.64,
             "id": "en:agave-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.9,
             "percent_hidden": 6.3,
             "percent_max": 33.3333333333333,
@@ -1347,38 +1351,43 @@
         },
         {
             "id": "en:natural-vanilla-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel de vanille"
         },
         {
             "id": "fr:grains-de-vanille",
+            "is_in_taxonomy": 0,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "grains de vanille"
         },
         {
             "ciqual_food_code": "2028",
             "id": "en:concentrated-lemon-juice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.5,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "jus de citron concentré"
         },
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.72,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "amidon"
         },
         {
             "id": "en:lactic-ferments",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.72,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "ferments lactiques"
         }
@@ -1491,6 +1500,16 @@
         "fr:lait-pasteurise-a-2-2-de-matieres-grasses"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:agave-syrup",
+        "en:concentrated-lemon-juice",
+        "en:lactic-ferments",
+        "en:natural-vanilla-flavouring",
+        "en:starch",
+        "fr:grains-de-vanille",
+        "fr:lait-pasteurise-a-2-2-de-matieres-grasses"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 17,
@@ -1938,65 +1957,87 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         }

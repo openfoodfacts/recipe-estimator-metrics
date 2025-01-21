@@ -240,7 +240,7 @@
                         "epi_score": "93",
                         "origin": "en:france",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 93,
@@ -679,56 +679,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0254156477698808,
-            "likeliest_impacts": {
-                "Climate_change": 0.0438578363762184,
-                "EF_single_score": 0.011896763574557
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 0.692910992023786,
-                "en:bell_pepper": 7.30043595496422,
-                "en:colza_oil": 4.06496032806952,
-                "en:cucumber": 1.99102798771751,
-                "en:durum_wheat_semolina": 41.147911746162,
-                "en:extra_virgin_olive_oil": 0.663675995905838,
-                "en:grape": 0.415833954321614,
-                "en:herb": 0.145609452166925,
-                "en:natural_flavouring": 0.0414658035439638,
-                "en:onion": 1.99102798771751,
-                "en:parsley": 0.627394418854292,
-                "en:salt": 0.123856720671359,
-                "en:spice": 0.132735199181168,
-                "en:sugar": 0.217332527604806,
-                "en:tomato": 3.98205597543503,
-                "en:water": 2.16568855033845,
-                "fr:menthe_douce": 0.663675995905838
-            },
-            "mass_ratio_uncharacterized": 0.00484839039159735,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:herb",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00484839039159735,
-                "nutrition": 0.00382439690598149
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.117647058823529,
-                "nutrition": 0.0588235294117647
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.2 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 84,
     "ecoscore_tags": [
@@ -1753,8 +1703,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9060",
-            "difference": 8.9,
+            "difference": 8.88,
+            "ecobalyse_code": "durum-wheat-non-eu",
             "id": "en:durum-wheat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 53.1,
             "percent_hidden": 62,
             "percent_max": 100,
@@ -1765,7 +1717,9 @@
         {
             "ciqual_food_code": "20041",
             "difference": 12.4,
+            "ecobalyse_code": "bellpepper-unheated-greehouse",
             "id": "en:bell-pepper",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.4,
             "percent_hidden": 11,
             "percent_max": 50,
@@ -1774,8 +1728,10 @@
         },
         {
             "ciqual_food_code": "20047",
-            "difference": 5.7,
+            "difference": 5.72,
+            "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.7,
             "percent_hidden": 6,
             "percent_max": 33.3333333333333,
@@ -1784,7 +1740,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.86,
             "percent_max": 25,
             "percent_min": 0,
@@ -1792,7 +1750,9 @@
         },
         {
             "ciqual_food_code": "20034",
+            "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.93,
             "percent_max": 20,
             "percent_min": 0,
@@ -1801,7 +1761,9 @@
         {
             "ciqual_proxy_food_code": "20019",
             "difference": 1.54,
+            "ecobalyse_code": "cucumber-eu",
             "id": "en:cucumber",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.46,
             "percent_hidden": 3,
             "percent_max": 16.6666666666667,
@@ -1811,6 +1773,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.732,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1820,6 +1783,7 @@
             "ciqual_food_code": "11027",
             "difference": 0.634,
             "id": "en:sweetmint",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.366,
             "percent_hidden": 1,
             "percent_max": 12.5,
@@ -1829,7 +1793,9 @@
         {
             "ciqual_food_code": "17270",
             "difference": 0.817,
+            "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.183,
             "percent_hidden": 1,
             "percent_max": 11.1111111111111,
@@ -1839,6 +1805,7 @@
         {
             "ciqual_proxy_food_code": "11014",
             "id": "en:parsley",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0916,
             "percent_max": 10,
             "percent_min": 0,
@@ -1852,6 +1819,7 @@
                 {
                     "ciqual_food_code": "13112",
                     "id": "en:grape",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0229,
                     "percent_max": 9.09090909090909,
                     "percent_min": 0,
@@ -1859,13 +1827,16 @@
                 },
                 {
                     "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
                     "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0229,
                     "percent_max": 4.54545454545455,
                     "percent_min": 0,
                     "text": "huile de colza"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0458,
             "percent_hidden": 1,
             "percent_max": 9.09090909090909,
@@ -1874,7 +1845,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0229,
             "percent_max": 4,
             "percent_min": 0,
@@ -1883,6 +1856,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0114,
             "percent_max": 1,
             "percent_min": 0,
@@ -1890,6 +1864,7 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00572,
             "percent_max": 1,
             "percent_min": 0,
@@ -1898,6 +1873,7 @@
         {
             "difference": 0.197,
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00286,
             "percent_hidden": 0.2,
             "percent_max": 1,
@@ -1906,6 +1882,7 @@
         },
         {
             "id": "en:herb",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00286,
             "percent_max": 1,
             "percent_min": 0,
@@ -2199,7 +2176,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
         "relative_difference": 0.366,
-        "total_difference": 31.1,
+        "total_difference": 31.2,
         "total_specified_input_percent": 85.2
     },
     "ingredients_n": 18,
@@ -2288,6 +2265,17 @@
         "en:spice"
     ],
     "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:alcohol-vinegar",
+        "en:grape",
+        "en:herb",
+        "en:natural-flavouring",
+        "en:parsley",
+        "en:salt",
+        "en:spice",
+        "en:sweetmint"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 37,
@@ -2808,43 +2796,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         }

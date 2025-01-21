@@ -32,7 +32,7 @@
         "en:e500",
         "en:e500ii"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:milk, soya, hazelnuts, wheat flour, soya",
     "allergens_from_user": "(en) en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -219,7 +219,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -633,56 +633,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0947389595336815,
-            "likeliest_impacts": {
-                "Climate_change": 0.604965977324933,
-                "EF_single_score": 0.0501994412540882
-            },
-            "likeliest_recipe": {
-                "en:butterfat": 0.0718573916790142,
-                "en:cocoa_butter": 15.0047280766512,
-                "en:cocoa_paste": 0.35520158459996,
-                "en:e500ii": 0.854896001786054,
-                "en:fat_reduced_cocoa": 1.67037846775866,
-                "en:hazelnut": 29.1920700801876,
-                "en:palm_oil": 5.8178008172109,
-                "en:salt": 0.428125224316947,
-                "en:skimmed_milk_powder": 0.124531309937643,
-                "en:soya": 1.05921743480149,
-                "en:sugar": 34.5467481417088,
-                "en:sweet_whey_powder": 4.37129561385525,
-                "en:vanillin": 0.217289820599453,
-                "en:water": 3.62526476211968,
-                "en:wheat_flour": 5.0889113436212
-            },
-            "mass_ratio_uncharacterized": 0.111620492851157,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:butterfat",
-                    "en:sweet-whey-powder",
-                    "en:e500ii",
-                    "en:vanillin",
-                    "en:fat-reduced-cocoa"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.111620492851157,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.352941176470588,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 35%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "e",
     "ecoscore_score": 16,
     "ecoscore_tags": [
@@ -1443,7 +1393,9 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 27.9,
                     "percent_max": 100,
                     "percent_min": 1.2987012987013,
@@ -1452,6 +1404,7 @@
                 {
                     "ciqual_food_code": "16030",
                     "id": "en:cocoa-butter",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 13.3,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1460,6 +1413,7 @@
                 {
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.66,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1467,7 +1421,9 @@
                 },
                 {
                     "ciqual_food_code": "19054",
+                    "ecobalyse_code": "milk-powder",
                     "id": "en:skimmed-milk-powder",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.33,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1476,6 +1432,7 @@
                 {
                     "ciqual_food_code": "16401",
                     "id": "en:butterfat",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 1.66,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1486,12 +1443,14 @@
                     "ingredients": [
                         {
                             "id": "en:e322",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.832,
                             "percent_max": 16.6666666666667,
                             "percent_min": 0,
                             "text": "lecithins"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.832,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
@@ -1499,12 +1458,14 @@
                 },
                 {
                     "id": "en:vanillin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.832,
                     "percent_max": 14.2857142857143,
                     "percent_min": 0,
                     "text": "vanillin"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 54.5,
             "percent_hidden": 30,
             "percent_max": 100,
@@ -1513,8 +1474,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 5.8,
+            "difference": 5.77,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.7,
             "percent_hidden": 28.5,
             "percent_max": 50,
@@ -1523,7 +1486,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.4,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1531,7 +1496,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.68,
             "percent_max": 25,
             "percent_min": 0,
@@ -1539,7 +1506,9 @@
         },
         {
             "ciqual_proxy_food_code": "9410",
+            "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.84,
             "percent_max": 20,
             "percent_min": 0,
@@ -1547,6 +1516,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.42,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1555,6 +1525,7 @@
         {
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.71,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -1565,12 +1536,14 @@
             "ingredients": [
                 {
                     "id": "en:e322",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.355,
                     "percent_max": 12.5,
                     "percent_min": 0,
                     "text": "lecithins"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.355,
             "percent_max": 12.5,
             "percent_min": 0,
@@ -1581,12 +1554,14 @@
             "ingredients": [
                 {
                     "id": "en:e500ii",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.178,
                     "percent_max": 11.1111111111111,
                     "percent_min": 0,
                     "text": "sodium bicarbonate"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.178,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -1595,6 +1570,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0765,
             "percent_max": 0.153,
             "percent_min": 0,
@@ -1602,6 +1578,7 @@
         },
         {
             "id": "en:vanillin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.101,
             "percent_max": 0.153,
             "percent_min": 0,
@@ -1907,6 +1884,21 @@
         "en:whey-powder"
     ],
     "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e322",
+        "en:e500ii",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "en:milk-chocolate",
+        "en:raising-agent",
+        "en:salt",
+        "en:vanillin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 37,
@@ -2327,20 +2319,26 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cpp-cast-polypropylen"
+                    "id": {
+                        "id": "en:cpp-cast-polypropylen"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:can"
+                    "id": {
+                        "id": "en:can"
+                    }
                 }
             }
         }

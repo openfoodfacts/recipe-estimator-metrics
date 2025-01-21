@@ -238,7 +238,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -660,66 +660,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0567445118857218,
-            "likeliest_impacts": {
-                "Climate_change": 0.0635887810846917,
-                "EF_single_score": 0.0103368109969466
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 1.12063561763552,
-                "en:celery": 63.3501326289766,
-                "en:chives": 1.23712957432526,
-                "en:colza_oil": 10.3662912898587,
-                "en:e202": 0.0870761968008824,
-                "en:e300": 0,
-                "en:e330": 0.851614258567774,
-                "en:e415": 0.906060281162642,
-                "en:egg_yolk": 0.906060281162642,
-                "en:garlic": 0.906060281162582,
-                "en:glucose_syrup": 0.906060281162642,
-                "en:modified_starch": 0.906060281162642,
-                "en:mustard_seed": 0.0992523593725545,
-                "en:natural_flavouring": 0,
-                "en:salt": 1.05612759576054,
-                "en:spice": 0.962687324421961,
-                "en:tegument": 0.0963795622499975,
-                "en:turmeric": 0,
-                "en:water": 10.7647922992932,
-                "en:yogurt": 6.03334596466444
-            },
-            "mass_ratio_uncharacterized": 0.0268284451632639,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:glucose-syrup",
-                    "en:e202",
-                    "en:natural-flavouring",
-                    "en:e330",
-                    "en:e300",
-                    "en:tegument",
-                    "en:e415"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "en:tegument",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0268284451632639,
-                "nutrition": 0.00909782993022055
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0.107142857142857
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 29%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 78,
     "ecoscore_tags": [
@@ -1288,7 +1228,9 @@
         {
             "ciqual_proxy_food_code": "20055",
             "difference": 10.2,
+            "ecobalyse_code": "celery-eu",
             "id": "en:celery",
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.8,
             "percent_hidden": 63,
             "percent_max": 100,
@@ -1297,7 +1239,9 @@
         },
         {
             "ciqual_food_code": "17130",
+            "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.6,
             "percent_max": 50,
             "percent_min": 0,
@@ -1305,7 +1249,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1313,8 +1259,9 @@
         },
         {
             "ciqual_proxy_food_code": "19593",
-            "difference": 0.1,
+            "difference": 0.0972,
             "id": "en:yogurt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.9,
             "percent_hidden": 6,
             "percent_max": 25,
@@ -1324,6 +1271,7 @@
         {
             "ciqual_food_code": "11003",
             "id": "en:chives",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.95,
             "percent_max": 20,
             "percent_min": 0,
@@ -1331,6 +1279,7 @@
         },
         {
             "id": "en:spice",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -1339,6 +1288,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.55,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1350,7 +1300,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.231,
                     "percent_max": 1.1,
                     "percent_min": 0,
@@ -1359,6 +1311,7 @@
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:alcohol-vinegar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.116,
                     "percent_max": 0.55,
                     "percent_min": 0,
@@ -1367,6 +1320,7 @@
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0579,
                     "percent_max": 0.366666666666667,
                     "percent_min": 0,
@@ -1374,6 +1328,7 @@
                 },
                 {
                     "id": "en:tegument",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0289,
                     "percent_max": 0.275,
                     "percent_min": 0,
@@ -1382,6 +1337,7 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0145,
                     "percent_max": 0.22,
                     "percent_min": 0,
@@ -1392,12 +1348,14 @@
                     "ingredients": [
                         {
                             "id": "en:e330",
+                            "is_in_taxonomy": 1,
                             "percent_estimate": 0.00723,
                             "percent_max": 0.183333333333333,
                             "percent_min": 0,
                             "text": "e330"
                         }
                     ],
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00723,
                     "percent_max": 0.183333333333333,
                     "percent_min": 0,
@@ -1405,6 +1363,7 @@
                 },
                 {
                     "id": "en:natural-flavouring",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00362,
                     "percent_max": 0.183333333333333,
                     "percent_min": 0,
@@ -1413,12 +1372,14 @@
                 {
                     "ciqual_proxy_food_code": "11089",
                     "id": "en:turmeric",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00362,
                     "percent_max": 0.183333333333333,
                     "percent_min": 0,
                     "text": "curcuma"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.463,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1430,7 +1391,9 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.116,
                     "percent_max": 1.1,
                     "percent_min": 0,
@@ -1439,6 +1402,7 @@
                 {
                     "ciqual_food_code": "11013",
                     "id": "en:mustard-seed",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0579,
                     "percent_max": 0.55,
                     "percent_min": 0,
@@ -1447,6 +1411,7 @@
                 {
                     "ciqual_food_code": "11018",
                     "id": "en:alcohol-vinegar",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0289,
                     "percent_max": 0.366666666666667,
                     "percent_min": 0,
@@ -1455,12 +1420,14 @@
                 {
                     "ciqual_food_code": "11058",
                     "id": "en:salt",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0289,
                     "percent_max": 0.275,
                     "percent_min": 0,
                     "text": "sel"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.231,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1469,6 +1436,7 @@
         {
             "ciqual_food_code": "11018",
             "id": "en:alcohol-vinegar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.116,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1476,7 +1444,9 @@
         },
         {
             "ciqual_food_code": "22002",
+            "ecobalyse_code": "egg-indoor-code3",
             "id": "en:egg-yolk",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0579,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1485,6 +1455,7 @@
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0289,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1493,6 +1464,7 @@
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0145,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1501,6 +1473,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00723,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1511,12 +1484,14 @@
             "ingredients": [
                 {
                     "id": "en:e415",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00362,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "gomme xanthane"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00362,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1527,12 +1502,14 @@
             "ingredients": [
                 {
                     "id": "en:e330",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00181,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "e330"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00181,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1543,12 +1520,14 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000904,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "sorbate de potassium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000904,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1559,12 +1538,14 @@
             "ingredients": [
                 {
                     "id": "en:e300",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.000904,
                     "percent_max": 1.1,
                     "percent_min": 0,
                     "text": "acide ascorbique"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000904,
             "percent_max": 1.1,
             "percent_min": 0,
@@ -1872,7 +1853,7 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.149,
+        "relative_difference": 0.15,
         "total_difference": 10.3,
         "total_specified_input_percent": 69
     },
@@ -1990,6 +1971,31 @@
         "en:thickener"
     ],
     "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acid",
+        "en:alcohol-vinegar",
+        "en:antioxidant",
+        "en:chives",
+        "en:e202",
+        "en:e300",
+        "en:e330",
+        "en:e415",
+        "en:garlic",
+        "en:glucose-syrup",
+        "en:modified-starch",
+        "en:mustard",
+        "en:mustard-seed",
+        "en:natural-flavouring",
+        "en:preservative",
+        "en:salt",
+        "en:spice",
+        "en:tegument",
+        "en:thickener",
+        "en:turmeric",
+        "en:yogurt",
+        "fr:moutarde-a-l-ancienne"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 22,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 42,
@@ -2487,12 +2493,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": "en:tray"
+                    }
                 }
             }
         }

@@ -216,7 +216,7 @@
                         "epi_score": null,
                         "origin": "en:european-union",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -641,37 +641,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0360580203012122,
-            "likeliest_impacts": {
-                "Climate_change": 0.0313014142048307,
-                "EF_single_score": 0.0159453624111887
-            },
-            "likeliest_recipe": {
-                "en:corn": 148.072976190476,
-                "en:salt": 0.0794558887230929,
-                "en:water": 0.291654327293132
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 72,
     "ecoscore_tags": [
@@ -1654,8 +1623,9 @@
     "ingredients": [
         {
             "ciqual_food_code": "9200",
-            "difference": 0.15,
+            "difference": 0.115,
             "id": "en:corn",
+            "is_in_taxonomy": 1,
             "labels": "en:organic",
             "percent_estimate": 99.9,
             "percent_hidden": 99.75,
@@ -1666,6 +1636,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.135,
             "percent_max": 0.269999999999996,
             "percent_min": 0,
@@ -1706,8 +1677,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0015,
-        "total_difference": 0.15,
+        "relative_difference": 0.00115,
+        "total_difference": 0.115,
         "total_specified_input_percent": 99.8
     },
     "ingredients_n": 2,
@@ -1742,6 +1713,11 @@
     "ingredients_with_unspecified_percent_sum": 0.25,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:corn",
+        "en:salt"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 3,
@@ -2226,12 +2202,16 @@
         {
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

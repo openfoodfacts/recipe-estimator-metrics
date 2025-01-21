@@ -220,7 +220,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -485,41 +485,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.104241553699912,
-            "likeliest_impacts": {
-                "Climate_change": 0.0510489904585046,
-                "EF_single_score": 0.0127439337560222
-            },
-            "likeliest_recipe": {
-                "en:coconut_cream": 28.8913069897739,
-                "en:coconut_water": 32.9548780679554,
-                "en:ferment": 1.71916937246933,
-                "en:modified_starch": 4.23452932921769,
-                "en:water": 32.0633831131759
-            },
-            "mass_ratio_uncharacterized": 0.0366985459483861,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:ferment"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0366985459483861,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:ferment). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1649,6 +1614,7 @@
                 {
                     "ciqual_food_code": "18041",
                     "id": "en:coconut-cream",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 35,
                     "percent_max": 100,
                     "percent_min": 10,
@@ -1656,13 +1622,16 @@
                 },
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 25,
                     "percent_max": 50,
                     "percent_min": 0,
                     "text": "water"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 33,
             "percent_max": 100,
@@ -1673,6 +1642,7 @@
             "ciqual_food_code": "18011",
             "difference": 13,
             "id": "en:coconut-water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_hidden": 33,
             "percent_max": 50,
@@ -1681,7 +1651,9 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1690,6 +1662,7 @@
         {
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -1700,6 +1673,7 @@
             "ingredients": [
                 {
                     "id": "en:s",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.5,
                     "percent_max": 20,
                     "percent_min": 0,
@@ -1707,6 +1681,7 @@
                 },
                 {
                     "id": "en:thermophilus",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 1.25,
                     "percent_max": 10,
                     "percent_min": 0,
@@ -1714,6 +1689,7 @@
                 },
                 {
                     "id": "en:l",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.625,
                     "percent_max": 6.66666666666667,
                     "percent_min": 0,
@@ -1721,12 +1697,14 @@
                 },
                 {
                     "id": "en:bulgaricus",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 0.625,
                     "percent_max": 5,
                     "percent_min": 0,
                     "text": "bulgaricus"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 20,
             "percent_min": 0,
@@ -1847,6 +1825,18 @@
         "en:thermophilus"
     ],
     "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ecobalyse_ids": [
+        "en:bulgaricus",
+        "en:coconut-cream",
+        "en:coconut-milk",
+        "en:coconut-water",
+        "en:ferment",
+        "en:l",
+        "en:modified-starch",
+        "en:s",
+        "en:thermophilus"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 9,
@@ -2293,43 +2283,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             }
         }

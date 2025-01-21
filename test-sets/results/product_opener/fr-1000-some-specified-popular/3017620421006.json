@@ -294,7 +294,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -752,45 +752,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0221591653262233,
-            "likeliest_impacts": {
-                "Climate_change": 0.351161202092258,
-                "EF_single_score": 0.03529655194084
-            },
-            "likeliest_recipe": {
-                "en:fat_reduced_cocoa": 7.55107697159132,
-                "en:hazelnut": 13.2654054906334,
-                "en:palm_oil": 17.735604828489,
-                "en:skimmed_milk_powder": 8.87761752065465,
-                "en:soya": 2.81551354277161,
-                "en:sugar": 48.4143765297255,
-                "en:vanillin": 2.31153702319201,
-                "en:water": 1.07044879012251
-            },
-            "mass_ratio_uncharacterized": 0.0885111241758279,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:fat-reduced-cocoa",
-                    "en:vanillin"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0885111241758279,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 29%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 20,
     "ecoscore_tags": [
@@ -2657,7 +2618,9 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 58.3,
             "percent_max": 100,
             "percent_min": 16.6666666666667,
@@ -2665,7 +2628,9 @@
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20.8,
             "percent_max": 50,
             "percent_min": 0,
@@ -2673,8 +2638,10 @@
         },
         {
             "ciqual_food_code": "15004",
-            "difference": 2.6,
+            "difference": 2.58,
+            "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10.4,
             "percent_hidden": 13,
             "percent_max": 33.3333333333333,
@@ -2684,7 +2651,9 @@
         {
             "ciqual_food_code": "19054",
             "difference": 3.49,
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.21,
             "percent_hidden": 8.7,
             "percent_max": 25,
@@ -2695,6 +2664,7 @@
             "ciqual_proxy_food_code": "18100",
             "difference": 4.8,
             "id": "en:fat-reduced-cocoa",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_hidden": 7.4,
             "percent_max": 20,
@@ -2706,12 +2676,14 @@
             "ingredients": [
                 {
                     "id": "fr:lecithines-de-soja-vanilline",
+                    "is_in_taxonomy": 0,
                     "percent_estimate": 2.6,
                     "percent_max": 16.6666666666667,
                     "percent_min": 0,
                     "text": "lécithines de SOJA vanilline"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.6,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2898,6 +2870,12 @@
         "fr:lecithines-de-soja-vanilline"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:emulsifier",
+        "en:fat-reduced-cocoa",
+        "fr:lecithines-de-soja-vanilline"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 3,
     "interface_version_created": "20130323.jqm",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 17,
@@ -3433,12 +3411,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": "en:container"
+                    }
                 }
             }
         },
@@ -3446,30 +3428,40 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": "en:recycle-in-glass-bin"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
@@ -3477,19 +3469,25 @@
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics"
+                    "id": {
+                        "id": "en:recycle-with-plastics"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             }
         }

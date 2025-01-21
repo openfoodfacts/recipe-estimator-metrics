@@ -211,7 +211,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -911,26 +911,36 @@
     ],
     "ingredients": [
         {
-            "difference": 48.8,
+            "difference": 43.2,
             "id": "en:soy-base",
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 30.6,
+                    "percent_max": 100,
+                    "percent_min": 5.56333333333333,
                     "text": "Water"
                 },
                 {
                     "ciqual_food_code": "20901",
                     "difference": 16.3,
                     "id": "en:hulled-soya-bean",
-                    "percent": 8.7,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 8.7,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "Hulled soya beans"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 55.6,
             "percent_hidden": 98.8,
+            "percent_max": 100,
+            "percent_min": 11.1266666666667,
             "text": "Soya base"
         },
         {
@@ -938,11 +948,17 @@
             "ingredients": [
                 {
                     "id": "en:e340",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 22.2,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "Potassium phosphates"
                 }
             ],
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 22.2,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "Acidity regulators"
         },
         {
@@ -950,22 +966,34 @@
             "ingredients": [
                 {
                     "id": "en:e170i",
-                    "percent_estimate": 12.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 11.1,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "Calcium carbonate"
                 }
             ],
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 11.1,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "Calcium"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.5,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "Flavourings"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.045,
+            "percent_max": 0.09,
+            "percent_min": 0,
             "text": "Sea salt"
         },
         {
@@ -973,31 +1001,49 @@
             "ingredients": [
                 {
                     "id": "en:e418",
-                    "percent_estimate": 1.56,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.045,
+                    "percent_max": 0.09,
+                    "percent_min": 0,
                     "text": "Gellan gum"
                 }
             ],
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.045,
+            "percent_max": 0.09,
+            "percent_min": 0,
             "text": "Stabiliser"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.045,
+            "percent_max": 0.09,
+            "percent_min": 0,
             "text": "vitamins"
         },
         {
             "id": "en:e101",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.045,
+            "percent_max": 0.09,
+            "percent_min": 0,
             "text": "vitamin B2"
         },
         {
             "id": "en:vitamin-b12",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.045,
+            "percent_max": 0.09,
+            "percent_min": 0,
             "text": "Vitamin B12"
         },
         {
             "id": "en:ergocalciferol",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 8.38,
+            "percent_max": 0.09,
+            "percent_min": 0,
             "text": "Vitamin D2"
         }
     ],
@@ -1052,8 +1098,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.606,
-        "total_difference": 65.1,
+        "relative_difference": 0.554,
+        "total_difference": 59.5,
         "total_specified_input_percent": 108.0
     },
     "ingredients_n": 15,
@@ -1078,7 +1124,7 @@
         "en:e170i",
         "en:e418"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:soy-base",
         "en:acidity-regulator",
@@ -1134,6 +1180,23 @@
         "en:vitamins"
     ],
     "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:calcium",
+        "en:e101",
+        "en:e170i",
+        "en:e340",
+        "en:e418",
+        "en:ergocalciferol",
+        "en:flavouring",
+        "en:hulled-soya-bean",
+        "en:sea-salt",
+        "en:soy-base",
+        "en:stabiliser",
+        "en:vitamin-b12",
+        "en:vitamins"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1224,8 +1287,7 @@
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
         "en:ecoscore-changed",
-        "en:ecoscore-grade-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-grade-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -1610,13 +1672,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-pak"
+                    "id": {
+                        "id": "en:tetra-pak"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": "en:Container"
+                    }
                 }
             }
         }

@@ -328,7 +328,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -773,10 +773,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process timed out after 600 seconds"
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 81,
     "ecoscore_tags": [
@@ -2144,26 +2140,40 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "18066",
+                    "ecobalyse_code": "tap-water",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 55.2,
+                    "percent_max": 100,
+                    "percent_min": 30.25,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "20901",
                     "difference": 15.1,
                     "id": "en:hulled-soya-bean",
-                    "percent": 9.9,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 9.9,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "hulled soya beans"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 80.2,
+            "percent_max": 100,
+            "percent_min": 60.5,
             "text": "soya base"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.75,
+            "percent_max": 7.5,
+            "percent_min": 0,
             "text": "sugar"
         },
         {
@@ -2171,11 +2181,17 @@
             "ingredients": [
                 {
                     "id": "en:e440a",
-                    "percent_estimate": 12.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.75,
+                    "percent_max": 7.5,
+                    "percent_min": 0,
                     "text": "pectins"
                 }
             ],
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.75,
+            "percent_max": 7.5,
+            "percent_min": 0,
             "text": "stabiliser"
         },
         {
@@ -2183,11 +2199,17 @@
             "ingredients": [
                 {
                     "id": "en:e341iii",
-                    "percent_estimate": 6.25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 3.75,
+                    "percent_max": 7.5,
+                    "percent_min": 0,
                     "text": "tri-calcium phosphate"
                 }
             ],
-            "percent_estimate": 6.25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.75,
+            "percent_max": 7.5,
+            "percent_min": 0,
             "text": "calcium"
         },
         {
@@ -2195,43 +2217,68 @@
             "ingredients": [
                 {
                     "id": "en:e330",
-                    "percent_estimate": 1.56,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.88,
+                    "percent_max": 7.5,
+                    "percent_min": 0,
                     "text": "citric acid"
                 },
                 {
                     "id": "en:e331",
-                    "percent_estimate": 1.56,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 1.88,
+                    "percent_max": 3.75,
+                    "percent_min": 0,
                     "text": "sodium citrates"
                 }
             ],
-            "percent_estimate": 3.12,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 3.75,
+            "percent_max": 7.5,
+            "percent_min": 0,
             "text": "acidity regulators"
         },
         {
             "ciqual_food_code": "20009",
+            "ecobalyse_code": "carrot-non-eu",
             "id": "en:carrot-extract",
-            "percent_estimate": 1.56,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 2.38,
+            "percent_max": 7.5,
+            "percent_min": 0,
             "text": "carrot extract"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 0.781,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "sea salt"
         },
         {
             "id": "en:natural-vanilla-flavouring",
-            "percent_estimate": 0.391,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "natural vanilla flavouring"
         },
         {
             "id": "en:flavouring",
-            "percent_estimate": 0.195,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "flavourings"
         },
         {
             "id": "en:vanilla-powder",
-            "percent_estimate": 0.0977,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vanilla powder"
         },
         {
@@ -2239,36 +2286,57 @@
             "ingredients": [
                 {
                     "id": "en:e306",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "tocopherol-rich extract"
                 },
                 {
                     "id": "en:e304",
-                    "percent_estimate": 0.0244,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "fatty acid esters of ascorbic acid"
                 }
             ],
-            "percent_estimate": 0.0488,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "antioxidants"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.0244,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vitamins"
         },
         {
             "id": "en:e101",
-            "percent_estimate": 0.0122,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vitamin b2"
         },
         {
             "id": "en:vitamin-b12",
-            "percent_estimate": 0.0061,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vitamin b12"
         },
         {
             "id": "en:ergocalciferol",
-            "percent_estimate": 0.00305,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 0.1,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "vitamin d2"
         },
         {
@@ -2276,26 +2344,41 @@
             "ingredients": [
                 {
                     "id": "en:s",
-                    "percent_estimate": 0.00153,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.1,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "s"
                 },
                 {
                     "id": "en:thermophilus",
-                    "percent_estimate": 0.000763,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.1,
+                    "percent_max": 0.2,
+                    "percent_min": 0,
                     "text": "thermophilus"
                 },
                 {
                     "id": "en:l",
-                    "percent_estimate": 0.000381,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 0.0333,
+                    "percent_max": 0.0666666666666667,
+                    "percent_min": 0,
                     "text": "l"
                 },
                 {
                     "id": "en:bulgaricus",
-                    "percent_estimate": 0.000381,
+                    "is_in_taxonomy": 0,
+                    "percent_estimate": 1.24,
+                    "percent_max": 0.05,
+                    "percent_min": 0,
                     "text": "bulgaricus"
                 }
             ],
-            "percent_estimate": 0.00305,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 1.48,
+            "percent_max": 0.2,
+            "percent_min": 0,
             "text": "yogurt cultures"
         }
     ],
@@ -2635,7 +2718,7 @@
         "en:l",
         "en:bulgaricus"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:soy-base",
         "en:sugar",
@@ -2732,6 +2815,34 @@
         "en:yogurt-cultures"
     ],
     "ingredients_without_ciqual_codes_n": 23,
+    "ingredients_without_ecobalyse_ids": [
+        "en:acidity-regulator",
+        "en:antioxidant",
+        "en:bulgaricus",
+        "en:calcium",
+        "en:e101",
+        "en:e304",
+        "en:e306",
+        "en:e330",
+        "en:e331",
+        "en:e341iii",
+        "en:e440a",
+        "en:ergocalciferol",
+        "en:flavouring",
+        "en:hulled-soya-bean",
+        "en:l",
+        "en:natural-vanilla-flavouring",
+        "en:s",
+        "en:sea-salt",
+        "en:soy-base",
+        "en:stabiliser",
+        "en:thermophilus",
+        "en:vanilla-powder",
+        "en:vitamin-b12",
+        "en:vitamins",
+        "en:yogurt-cultures"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 25,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 45,
@@ -2883,8 +2994,7 @@
         "en:main-countries-ch-unexpectedly-low-scans",
         "en:main-countries-ch-unexpectedly-low-scans-0-10-percent-of-expected",
         "en:main-countries-uk-unexpectedly-low-scans",
-        "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected",
-        "en:some-ingredients-with-specified-percent"
+        "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected"
     ],
     "no_nutrition_data": "null",
     "nova_group": 4,
@@ -3237,52 +3347,68 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": "en:aluminium"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": "en:pp-5-polypropylene"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": "en:pot"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:pet-transparent"
+                    "id": {
+                        "id": "en:pet-transparent"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": "en:label"
+                    }
                 }
             }
         }

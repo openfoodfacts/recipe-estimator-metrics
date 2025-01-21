@@ -39,7 +39,7 @@
     "additives_original_tags": [],
     "additives_prev_original_tags": [],
     "additives_tags": [],
-    "allergens": "en:peanuts, en:peanuts",
+    "allergens": "en:peanuts, en:peanuts, en:peanuts",
     "allergens_from_ingredients": "en:peanuts, arachides",
     "allergens_from_user": "(nl) en:peanuts, en:peanuts",
     "allergens_hierarchy": [
@@ -230,7 +230,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -671,44 +671,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0116318510161581,
-            "likeliest_impacts": {
-                "Climate_change": 0.399946225351268,
-                "EF_single_score": 0.0552831635932224
-            },
-            "likeliest_recipe": {
-                "en:fully_hardened_palm_fat": 0.538632669897159,
-                "en:roasted_peanuts": 85.2515962703773,
-                "en:salt": 0.128310448735846,
-                "en:sunflower_oil": 13.4686871048059,
-                "en:water": 0.908769118392377
-            },
-            "mass_ratio_uncharacterized": 0.0394556173313603,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:fully hardened palm fat"
-                ],
-                "nutrition": [
-                    "en:fully hardened palm fat"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0394556173313603,
-                "nutrition": 0.0394556173313603
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.25,
-                "nutrition": 0.25
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 25%",
-                "The product has a high number of impact uncharacterized ingredients: 25%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 36,
     "ecoscore_tags": [
@@ -2120,7 +2082,9 @@
         {
             "ciqual_food_code": "15037",
             "difference": 25,
+            "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 85,
             "percent_max": 100,
@@ -2129,7 +2093,9 @@
         },
         {
             "ciqual_food_code": "17440",
+            "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_max": 50,
             "percent_min": 0,
@@ -2137,14 +2103,18 @@
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
             "text": "graisses végétales de palme"
         },
         {
+            "ciqual_food_code": "16110",
             "id": "en:shea-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 25,
             "percent_min": 0,
@@ -2153,6 +2123,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_max": 0.6,
             "percent_min": 0,
@@ -2269,10 +2240,13 @@
     "ingredients_with_specified_percent_sum": 85,
     "ingredients_with_unspecified_percent_n": 4,
     "ingredients_with_unspecified_percent_sum": 15,
-    "ingredients_without_ciqual_codes": [
+    "ingredients_without_ciqual_codes": [],
+    "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:salt",
         "en:shea-butter"
     ],
-    "ingredients_without_ciqual_codes_n": 1,
+    "ingredients_without_ecobalyse_ids_n": 2,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 12,
@@ -2758,7 +2732,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": "en:glass"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2767,7 +2743,9 @@
             "quantity_per_unit_value": 650,
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": "en:jar"
+                    }
                 }
             },
             "weight_measured": 301
@@ -2775,13 +2753,17 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": "en:lid"
+                    }
                 }
             },
             "weight_measured": 8.71

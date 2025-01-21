@@ -267,7 +267,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -695,52 +695,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.162184190109698,
-            "likeliest_impacts": {
-                "Climate_change": 0.0200171228750911,
-                "EF_single_score": 0.00496875002062284
-            },
-            "likeliest_recipe": {
-                "en:Wholegrain_Wheat_Meal": 78.6768757447832,
-                "en:barley_malt_extract": 0.273616431576383,
-                "en:cereals_containing_gluten": 0.0211540084714467,
-                "en:e471": 0.0612768979276345,
-                "en:honey": 0.0612768979276345,
-                "en:salt": 0.0612768979276383,
-                "en:sugar": 6.58214412531648,
-                "en:water": 0,
-                "en:wheat_bran": 15.1301684124583
-            },
-            "mass_ratio_uncharacterized": 0.801836034349229,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:Wholegrain Wheat Meal",
-                    "en:cereals-containing-gluten",
-                    "en:e471",
-                    "en:barley-malt-extract"
-                ],
-                "nutrition": [
-                    "en:Wholegrain Wheat Meal"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.801836034349229,
-                "nutrition": 0.78
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 78%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 80%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -2245,6 +2199,7 @@
         {
             "difference": 17.1,
             "id": "en:wholegrain-wheat-meal",
+            "is_in_taxonomy": 0,
             "percent_estimate": 60.9,
             "percent_hidden": 78,
             "percent_max": 100,
@@ -2253,8 +2208,9 @@
         },
         {
             "ciqual_food_code": "9621",
-            "difference": 4.6,
+            "difference": 4.57,
             "id": "en:wheat-bran",
+            "is_in_taxonomy": 1,
             "percent_estimate": 19.6,
             "percent_hidden": 15,
             "percent_max": 50,
@@ -2263,7 +2219,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.6,
             "percent_max": 13.2,
             "percent_min": 0,
@@ -2271,6 +2229,7 @@
         },
         {
             "id": "en:barley-malt-extract",
+            "is_in_taxonomy": 1,
             "percent_estimate": 6.49,
             "percent_max": 13.2,
             "percent_min": 0,
@@ -2279,6 +2238,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.315,
             "percent_max": 0.63,
             "percent_min": 0,
@@ -2289,12 +2249,14 @@
             "ingredients": [
                 {
                     "id": "en:e471",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.315,
                     "percent_max": 0.63,
                     "percent_min": 0,
                     "text": "mono- and Diglycerides of Fatty Acids"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.315,
             "percent_max": 0.63,
             "percent_min": 0,
@@ -2303,6 +2265,7 @@
         {
             "ciqual_food_code": "31008",
             "id": "en:honey",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.86,
             "percent_max": 0.63,
             "percent_min": 0,
@@ -2386,7 +2349,7 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.233,
+        "relative_difference": 0.234,
         "total_difference": 21.7,
         "total_specified_input_percent": 93
     },
@@ -2447,6 +2410,16 @@
         "en:wholegrain-wheat-meal"
     ],
     "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids": [
+        "en:barley-malt-extract",
+        "en:e471",
+        "en:emulsifier",
+        "en:honey",
+        "en:salt",
+        "en:wheat-bran",
+        "en:wholegrain-wheat-meal"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 13,
@@ -2918,24 +2891,32 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": "en:non-corrugated-cardboard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

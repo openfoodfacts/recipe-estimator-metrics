@@ -64,7 +64,7 @@
         "en:e500i",
         "en:e503"
     ],
-    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, blé, lait, beurre pâtissier, lait, lécithine de soja",
     "allergens_from_user": "(fr) Gluten,Lait,Soja, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -254,7 +254,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -689,73 +689,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0804238078722802,
-            "likeliest_impacts": {
-                "Climate_change": 0.74379174701532,
-                "EF_single_score": 0.0542472357394258
-            },
-            "likeliest_recipe": {
-                "en:calcium": 0.165448648472737,
-                "en:cocoa_butter": 2.48410272180766,
-                "en:cocoa_paste": 2.10534559179429,
-                "en:e296": 0.103813228818608,
-                "en:e375": 0.00599989464956836,
-                "en:e476": 0.883108282442218,
-                "en:e500i": 1.2396639854115,
-                "en:e503": 0.103813228818608,
-                "en:glucose_fructose_syrup": 2.09861548271856,
-                "en:iron": 0.011311172919959,
-                "en:milk": 4.21069118359,
-                "en:milk_chocolate": 32.0322706402713,
-                "en:palm_fat": 2.105345591795,
-                "en:palm_oil": 2.09861548271856,
-                "en:salt": 1.44729044304872,
-                "en:shea_butter": 2.105345591795,
-                "en:skimmed_milk_powder": 2.105345591795,
-                "en:soya_lecithin": 1.22223730935278,
-                "en:sugar": 4.58271820452708,
-                "en:thiamin": 0,
-                "en:water": 0,
-                "en:wheat_flour": 41.4591921163104,
-                "en:whole_wheat_flour": 2.09861548271856,
-                "fr:ar_me_naturel": 2.105345591795
-            },
-            "mass_ratio_uncharacterized": 0.152732006051193,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e375",
-                    "en:thiamin",
-                    "en:e503",
-                    "fr:arốme naturel",
-                    "en:e296",
-                    "en:e500i",
-                    "en:calcium",
-                    "en:shea-butter",
-                    "en:iron",
-                    "en:e476"
-                ],
-                "nutrition": [
-                    "fr:arốme naturel"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.152732006051193,
-                "nutrition": 0.0100876000248042
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.4,
-                "nutrition": 0.04
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 40%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:whole-wheat-flour\" (9%) has not been used.",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 15%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 39,
     "ecoscore_tags": [
@@ -1928,11 +1861,14 @@
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 13.8,
+            "ecobalyse_proxy_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
+                    "ecobalyse_code": "flour",
                     "id": "en:wheat-flour",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 26.9,
                     "percent_max": 100,
                     "percent_min": 1.11111111111111,
@@ -1940,6 +1876,7 @@
                 },
                 {
                     "id": "en:calcium",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 12.9,
                     "percent_max": 50,
                     "percent_min": 0,
@@ -1947,6 +1884,7 @@
                 },
                 {
                     "id": "en:iron",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 6.46,
                     "percent_max": 33.3333333333333,
                     "percent_min": 0,
@@ -1954,6 +1892,7 @@
                 },
                 {
                     "id": "en:e375",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.23,
                     "percent_max": 25,
                     "percent_min": 0,
@@ -1961,12 +1900,14 @@
                 },
                 {
                     "id": "en:thiamin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 3.23,
                     "percent_max": 20,
                     "percent_min": 0,
                     "text": "thiamine"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 52.8,
             "percent_hidden": 39,
             "percent_max": 100,
@@ -1975,8 +1916,9 @@
         },
         {
             "ciqual_food_code": "31004",
-            "difference": 6.4,
+            "difference": 6.39,
             "id": "en:milk-chocolate",
+            "is_in_taxonomy": 1,
             "percent_estimate": 23.6,
             "percent_hidden": 30,
             "percent_max": 50,
@@ -1985,7 +1927,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.8,
             "percent_max": 28.5,
             "percent_min": 0,
@@ -1994,6 +1938,7 @@
         {
             "ciqual_food_code": "16030",
             "id": "en:cocoa-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5.9,
             "percent_max": 25,
             "percent_min": 0,
@@ -2002,6 +1947,7 @@
         {
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.95,
             "percent_max": 20,
             "percent_min": 0,
@@ -2009,7 +1955,9 @@
         },
         {
             "ciqual_food_code": "19054",
+            "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 1.48,
             "percent_max": 16.6666666666667,
             "percent_min": 0,
@@ -2017,6 +1965,7 @@
         },
         {
             "id": "en:whey-powder",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.738,
             "percent_max": 14.2857142857143,
             "percent_min": 0,
@@ -2025,13 +1974,16 @@
         {
             "ciqual_food_code": "16401",
             "id": "en:butterfat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.369,
             "percent_max": 12.5,
             "percent_min": 0,
             "text": "beurre pâtissier"
         },
         {
+            "ciqual_food_code": "16110",
             "id": "en:shea-butter",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.184,
             "percent_max": 11.1111111111111,
             "percent_min": 0,
@@ -2039,7 +1991,9 @@
         },
         {
             "ciqual_proxy_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-fat",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0922,
             "percent_max": 10,
             "percent_min": 0,
@@ -2051,6 +2005,7 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0231,
                     "percent_max": 9.09090909090909,
                     "percent_min": 0,
@@ -2058,12 +2013,14 @@
                 },
                 {
                     "id": "en:e476",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.0231,
                     "percent_max": 4.54545454545455,
                     "percent_min": 0,
                     "text": "e476"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0461,
             "percent_max": 9.09090909090909,
             "percent_min": 0,
@@ -2071,42 +2028,50 @@
         },
         {
             "id": "en:natural-flavouring",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0231,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "arôme naturel"
         },
         {
             "ciqual_food_code": "16129",
+            "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.0115,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "huile de palme"
         },
         {
             "ciqual_proxy_food_code": "9410",
             "difference": 8.99,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00576,
             "percent_hidden": 9,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "farine de blé complète"
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00288,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "sucre"
         },
         {
             "ciqual_food_code": "31077",
             "id": "en:glucose-fructose-syrup",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.00144,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "sirop de glucose-fructose"
         },
@@ -2115,13 +2080,15 @@
             "ingredients": [
                 {
                     "id": "en:e500i",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00036,
-                    "percent_max": "5",
+                    "percent_max": 5,
                     "percent_min": 0,
                     "text": "carbonate de sodium"
                 },
                 {
                     "id": "en:e296",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00018,
                     "percent_max": 2.5,
                     "percent_min": 0,
@@ -2129,20 +2096,23 @@
                 },
                 {
                     "id": "en:e503",
+                    "is_in_taxonomy": 1,
                     "percent_estimate": 0.00018,
                     "percent_max": 1.66666666666667,
                     "percent_min": 0,
                     "text": "carbonates d'ammonium"
                 }
             ],
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
-            "percent_max": "5",
+            "percent_max": 5,
             "percent_min": 0,
             "text": "poudre à lever"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.000721,
             "percent_max": 0.94,
             "percent_min": 0,
@@ -2438,7 +2408,7 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 11,
+        "number_of_ingredients_without_ciqual_code": 10,
         "relative_difference": 0.374,
         "total_difference": 29.2,
         "total_specified_input_percent": 78
@@ -2559,11 +2529,33 @@
         "en:iron",
         "en:natural-flavouring",
         "en:raising-agent",
-        "en:shea-butter",
         "en:thiamin",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 12,
+    "ingredients_without_ecobalyse_ids": [
+        "en:butterfat",
+        "en:calcium",
+        "en:cocoa-butter",
+        "en:cocoa-paste",
+        "en:e296",
+        "en:e375",
+        "en:e476",
+        "en:e500i",
+        "en:e503",
+        "en:emulsifier",
+        "en:glucose-fructose-syrup",
+        "en:iron",
+        "en:milk-chocolate",
+        "en:natural-flavouring",
+        "en:raising-agent",
+        "en:salt",
+        "en:shea-butter",
+        "en:soya-lecithin",
+        "en:thiamin",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 20,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 53,
@@ -3070,36 +3062,48 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": "en:sleeve"
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": "en:discard"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": "en:film"
+                    }
                 }
             }
         }

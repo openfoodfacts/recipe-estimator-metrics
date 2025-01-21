@@ -205,7 +205,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -620,51 +620,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0436560355177677,
-            "likeliest_impacts": {
-                "Climate_change": 0.03590388153843,
-                "EF_single_score": 0.00631803545335511
-            },
-            "likeliest_recipe": {
-                "en:inactivated_whole_grain_rye_sourdough": 1.37867795656997,
-                "en:inactive_corn_sourdough": 1.05881166618955,
-                "en:refined_olive_oil": 1.69668749941325,
-                "en:salt": 1.40574604906257,
-                "en:sugar": 1.85546248299757,
-                "en:water": 16.4955957670726,
-                "en:wheat_gluten": 1.82317729330485,
-                "en:whole_wheat_flour": 58.4414583131231,
-                "en:yeast": 10.104799606336
-            },
-            "mass_ratio_uncharacterized": 0.0334135126812287,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:inactivated whole-grain rye sourdough",
-                    "en:inactive corn sourdough",
-                    "en:refined-olive-oil"
-                ],
-                "nutrition": [
-                    "en:inactivated whole-grain rye sourdough",
-                    "en:inactive corn sourdough"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0334135126812287,
-                "nutrition": 0.0154135126812287
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.222222222222222
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 70,
     "ecoscore_tags": [
@@ -1207,8 +1162,10 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "difference": 6.4,
+            "difference": 6.44,
+            "ecobalyse_code": "flour",
             "id": "en:whole-wheat-flour",
+            "is_in_taxonomy": 1,
             "percent_estimate": 55.6,
             "percent_hidden": 62,
             "percent_max": 100,
@@ -1217,14 +1174,18 @@
         },
         {
             "ciqual_food_code": "18066",
+            "ecobalyse_code": "tap-water",
             "id": "en:water",
+            "is_in_taxonomy": 1,
             "percent_estimate": 22.2,
             "percent_max": 50,
             "percent_min": 0,
             "text": "water"
         },
         {
+            "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
+            "is_in_taxonomy": 1,
             "percent_estimate": 11.1,
             "percent_max": 33.3333333333333,
             "percent_min": 0,
@@ -1232,7 +1193,9 @@
         },
         {
             "ciqual_proxy_food_code": "31016",
+            "ecobalyse_code": "sugar",
             "id": "en:sugar",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.25,
             "percent_max": 6.5,
             "percent_min": 0,
@@ -1240,6 +1203,7 @@
         },
         {
             "id": "en:wheat-gluten",
+            "is_in_taxonomy": 1,
             "percent_estimate": 3.25,
             "percent_max": 6.5,
             "percent_min": 0,
@@ -1247,8 +1211,10 @@
         },
         {
             "ciqual_proxy_food_code": "17270",
-            "difference": 0.51,
+            "difference": 0.506,
+            "ecobalyse_code": "olive-oil-eu",
             "id": "en:refined-olive-oil",
+            "is_in_taxonomy": 1,
             "percent_estimate": 2.31,
             "percent_hidden": 1.8,
             "percent_max": 6.5,
@@ -1257,6 +1223,7 @@
         },
         {
             "id": "en:inactivated-whole-grain-rye-sourdough",
+            "is_in_taxonomy": 0,
             "percent_estimate": 1.15,
             "percent_max": 6.5,
             "percent_min": 0,
@@ -1265,6 +1232,7 @@
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "is_in_taxonomy": 1,
             "percent_estimate": 0.425,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1272,6 +1240,7 @@
         },
         {
             "id": "en:inactive-corn-sourdough",
+            "is_in_taxonomy": 0,
             "percent_estimate": 0.728,
             "percent_max": 0.85,
             "percent_min": 0,
@@ -1327,9 +1296,9 @@
     ],
     "ingredients_ids_debug": [],
     "ingredients_metrics": {
-        "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.108,
-        "total_difference": 6.91,
+        "number_of_ingredients_without_ciqual_code": 3,
+        "relative_difference": 0.109,
+        "total_difference": 6.95,
         "total_specified_input_percent": 63.8
     },
     "ingredients_n": 9,
@@ -1390,10 +1359,17 @@
     "ingredients_without_ciqual_codes": [
         "en:inactivated-whole-grain-rye-sourdough",
         "en:inactive-corn-sourdough",
+        "en:wheat-gluten"
+    ],
+    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ecobalyse_ids": [
+        "en:inactivated-whole-grain-rye-sourdough",
+        "en:inactive-corn-sourdough",
+        "en:salt",
         "en:wheat-gluten",
         "en:yeast"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 20,

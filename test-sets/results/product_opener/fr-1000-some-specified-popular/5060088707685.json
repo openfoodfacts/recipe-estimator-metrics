@@ -237,7 +237,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -651,45 +651,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 1.1466334093198e-15,
-            "likeliest_impacts": {
-                "Climate_change": 0.1807043571,
-                "EF_single_score": 0.03310326842
-            },
-            "likeliest_recipe": {
-                "en:almond": 5,
-                "en:blueberry": 1,
-                "en:cashew_nuts": 7.5,
-                "en:date": 29,
-                "en:natural_flavouring": 0,
-                "en:raisin": 7.5,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0.166666666666667
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.4 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1543,6 +1504,7 @@
             "ciqual_food_code": "13011",
             "difference": 2,
             "id": "en:date",
+            "is_in_taxonomy": 1,
             "percent_estimate": 60,
             "percent_hidden": 58,
             "percent_max": 100,
@@ -1553,6 +1515,7 @@
             "ciqual_proxy_food_code": "15055",
             "difference": 5,
             "id": "en:cashew-nuts",
+            "is_in_taxonomy": 1,
             "percent_estimate": 20,
             "percent_hidden": 15,
             "percent_max": 50,
@@ -1563,6 +1526,7 @@
             "ciqual_food_code": "13046",
             "difference": 5,
             "id": "en:raisin",
+            "is_in_taxonomy": 1,
             "percent_estimate": 10,
             "percent_hidden": 15,
             "percent_max": 33.3333333333333,
@@ -1573,6 +1537,7 @@
             "ciqual_food_code": "15041",
             "difference": 5,
             "id": "en:almond",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_hidden": 10,
             "percent_max": 25,
@@ -1582,7 +1547,9 @@
         {
             "ciqual_food_code": "13028",
             "difference": 3,
+            "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
+            "is_in_taxonomy": 1,
             "percent_estimate": 5,
             "percent_hidden": 2,
             "percent_max": 20,
@@ -1664,6 +1631,13 @@
     "ingredients_with_unspecified_percent_sum": 0,
     "ingredients_without_ciqual_codes": [],
     "ingredients_without_ciqual_codes_n": 0,
+    "ingredients_without_ecobalyse_ids": [
+        "en:almond",
+        "en:cashew-nuts",
+        "en:date",
+        "en:raisin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 10,
@@ -2189,7 +2163,9 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": "en:cardboard"
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2198,12 +2174,16 @@
             "quantity_per_unit_value": 140,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": "en:recycle"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             },
             "weight_measured": 15.95
@@ -2211,12 +2191,16 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": "en:plastic"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": "en:bag"
+                    }
                 }
             }
         }

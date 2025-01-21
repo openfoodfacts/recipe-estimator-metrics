@@ -214,7 +214,7 @@
                         "epi_score": "0",
                         "origin": "en:unknown",
                         "percent": 100,
-                        "transportation_score": null
+                        "transportation_score": 0
                     }
                 ],
                 "epi_score": 0,
@@ -643,44 +643,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00193491659727774,
-            "likeliest_impacts": {
-                "Climate_change": 1.46772296725529,
-                "EF_single_score": 0.0925143996157413
-            },
-            "likeliest_recipe": {
-                "en:cocoa_powder": 28.7595545236499,
-                "en:fat_reduced_cocoa_powder": 27.7870092015941,
-                "en:natural_flavouring": 0.0346996045978897,
-                "en:soya_lecithin": 0.98399287836812,
-                "en:sugar": 39.7155752945641,
-                "en:water": 1.95848707434765
-            },
-            "mass_ratio_uncharacterized": 0.00520006567927888,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00520006567927888,
-                "nutrition": 0.00520006567927888
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.1 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 48,
     "ecoscore_tags": [
@@ -1380,34 +1342,47 @@
     "ingredients": [
         {
             "ciqual_food_code": "18101",
-            "difference": 19,
+            "difference": 6.5,
             "id": "en:chocolate-powder",
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "31016",
+                    "ecobalyse_code": "sugar",
                     "id": "en:sugar",
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 37.5,
+                    "percent_max": 100,
+                    "percent_min": 12.5,
                     "text": "sucre"
                 },
                 {
                     "ciqual_food_code": "18100",
-                    "difference": 17,
+                    "difference": 17.0,
                     "id": "en:cocoa-powder",
-                    "percent": 42,
-                    "percent_estimate": 25,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 25.0,
+                    "percent_hidden": 42,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "cacao en poudre"
                 }
             ],
-            "percent_estimate": 50,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 62.5,
             "percent_hidden": 69,
+            "percent_max": 100,
+            "percent_min": 25,
             "text": "Chocolat en poudre"
         },
         {
             "ciqual_food_code": "18100",
-            "difference": 3,
+            "difference": 9.25,
             "id": "en:fat-reduced-cocoa-powder",
-            "percent_estimate": 25,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 18.8,
             "percent_hidden": 28,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "cacao maigre en poudre"
         },
         {
@@ -1416,16 +1391,25 @@
                 {
                     "ciqual_food_code": "42200",
                     "id": "en:soya-lecithin",
-                    "percent_estimate": 12.5,
+                    "is_in_taxonomy": 1,
+                    "percent_estimate": 9.38,
+                    "percent_max": 33.3333333333333,
+                    "percent_min": 0,
                     "text": "lécithine de SOJA"
                 }
             ],
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "émulsifiant"
         },
         {
             "id": "en:natural-flavouring",
-            "percent_estimate": 12.5,
+            "is_in_taxonomy": 1,
+            "percent_estimate": 9.38,
+            "percent_max": 5,
+            "percent_min": 0,
             "text": "arômes naturels"
         }
     ],
@@ -1465,8 +1449,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.281,
-        "total_difference": 39,
+        "relative_difference": 0.236,
+        "total_difference": 32.8,
         "total_specified_input_percent": 139
     },
     "ingredients_n": 7,
@@ -1483,7 +1467,7 @@
         "en:cocoa-powder",
         "en:soya-lecithin"
     ],
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_tags": [
         "en:chocolate-powder",
         "en:chocolate",
@@ -1519,6 +1503,15 @@
         "en:natural-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ecobalyse_ids": [
+        "en:chocolate-powder",
+        "en:cocoa-powder",
+        "en:emulsifier",
+        "en:fat-reduced-cocoa-powder",
+        "en:natural-flavouring",
+        "en:soya-lecithin"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "import_csv_file - version 2019/09/17",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 15,
@@ -1596,8 +1589,7 @@
         "en:ecoscore-missing-data-origins",
         "en:ecoscore-missing-data-packagings",
         "en:ecoscore-computed",
-        "en:ecoscore-changed",
-        "en:some-ingredients-with-specified-percent"
+        "en:ecoscore-changed"
     ],
     "no_nutrition_data": "",
     "nova_group": 4,
@@ -2028,19 +2020,25 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": "en:metal"
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": "en:seal"
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": "en:box"
+                    }
                 }
             }
         }
