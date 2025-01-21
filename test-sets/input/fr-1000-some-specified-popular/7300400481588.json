@@ -538,44 +538,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.234043181348402,
-            "likeliest_impacts": {
-                "Climate_change": 0.0467080657143781,
-                "EF_single_score": 0.00905518594697583
-            },
-            "likeliest_recipe": {
-                "en:oat_flakes": 9.55234228594717,
-                "en:salt": 0,
-                "en:sesame_seeds": 0.245216443607091,
-                "en:water": 2.19758959273526,
-                "en:wheat_bran": 10.7815767898981,
-                "en:wheat_germ": 0.0794270508433865,
-                "en:wholemeal_rye_flour": 79.7125230051646
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The impact relative interquartile is high for EF single score (35%)",
-                "The impact relative interquartile is high for Climate change (30%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -2473,7 +2435,7 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9530",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:wholemeal-rye-flour",
             "is_in_taxonomy": 1,
             "quantity": "57 g",
@@ -3173,7 +3135,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paper"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "quantity_per_unit": "230 g",
@@ -3181,12 +3151,28 @@
             "quantity_per_unit_value": 230,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:envelope"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:envelope"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

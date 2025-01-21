@@ -656,47 +656,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0696963643983655,
-            "likeliest_impacts": {
-                "Climate_change": 1.42953783266362,
-                "EF_single_score": 0.0935207468127581
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 1.75705808672289,
-                "en:cocoa_butter": 24.1898031849732,
-                "en:cocoa_paste": 26.4024616836452,
-                "en:natural_vanilla_flavouring": 1.81638552974035,
-                "en:sugar": 25.7682793123382,
-                "en:sunflower_lecithin": 17.3604688390671,
-                "en:water": 4.91044668274326,
-                "fr:des_f_ves_de_cacao_sont_issues_du_programme_TRANSPARENCE_CACAO": 1.54276359146542
-            },
-            "mass_ratio_uncharacterized": 0.0330018443064939,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:des f\u00e8ves de cacao sont issues du programme TRANSPARENCE CACAO"
-                ],
-                "nutrition": [
-                    "fr:des f\u00e8ves de cacao sont issues du programme TRANSPARENCE CACAO"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0330018443064939,
-                "nutrition": 0.0330018443064939
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": [
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (72%) has not been used.",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"fr:des f\u00e8ves de cacao sont issues du programme TRANSPARENCE CACAO\" (68%) has not been used."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 29,
     "ecoscore_tags": [
@@ -1801,9 +1760,16 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "id": "en:sunflower-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "id": "en:sunflower-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de tournesol"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de tournesol"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -1975,20 +1941,22 @@
     "ingredients_with_unspecified_percent_n": 5,
     "ingredients_with_unspecified_percent_sum": 96.875,
     "ingredients_without_ciqual_codes": [
+        "en:e322",
         "en:emulsifier",
         "en:natural-vanilla-flavouring",
         "en:sunflower-lecithin"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 4,
     "ingredients_without_ecobalyse_ids": [
         "en:cocoa",
         "en:cocoa-butter",
         "en:cocoa-paste",
+        "en:e322",
         "en:emulsifier",
         "en:natural-vanilla-flavouring",
         "en:sunflower-lecithin"
     ],
-    "ingredients_without_ecobalyse_ids_n": 6,
+    "ingredients_without_ecobalyse_ids_n": 7,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 15,
@@ -2492,36 +2460,84 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sheet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sheet"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

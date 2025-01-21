@@ -54,7 +54,7 @@
         "en:e500ii",
         "en:e502"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
+    "allergens": "en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:gluten, spelt, soja, soja",
     "allergens_from_user": "(fr) en:gluten,en:milk,en:nuts,en:soybeans, en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -712,77 +712,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.415035597460228,
-            "likeliest_impacts": {
-                "Climate_change": 0.390102483869354,
-                "EF_single_score": 0.0330164591808493
-            },
-            "likeliest_recipe": {
-                "en:barley": 1.74326202900043,
-                "en:barley_malt_extract": 0.463777853778916,
-                "en:buckwheat": 0.246022358591094,
-                "en:butterfat": 3.24130983205745,
-                "en:cane_sugar": 3.5170030140476,
-                "en:cocoa_butter": 3.5170030140476,
-                "en:cocoa_paste": 3.57594981812459,
-                "en:corn": 0.246022358591094,
-                "en:corn_flour": 2.2473410227031,
-                "en:dark_chocolate": 3.57594981812459,
-                "en:dextrose": 3.5170030140476,
-                "en:e500ii": 0.668240422835578,
-                "en:e503ii": 1.14277061175198,
-                "en:oat_flakes": 1.54829466313663,
-                "en:palm_oil": 3.24130983205744,
-                "en:rice": 12.4064052766137,
-                "en:rice_flour": 1.1220758847323,
-                "en:rye": 1.54829466313663,
-                "en:salt": 0,
-                "en:skimmed_milk_powder": 1.81101103458756,
-                "en:soya_lecithin": 3.5170030140476,
-                "en:spelt": 12.5785788503029,
-                "en:sugar": 4.79507592355528,
-                "en:vanillin": 0,
-                "en:water": 0,
-                "en:wheat": 12.5785788503029,
-                "en:wheat_starch": 3.24130983205745,
-                "en:whole_grain_durum_wheat": 12.5785788503029,
-                "en:whole_wheat": 12.5785788503029
-            },
-            "mass_ratio_uncharacterized": 0.138078723715138,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:barley-malt-extract",
-                    "en:e503ii",
-                    "en:e500ii",
-                    "en:dextrose",
-                    "en:vanillin",
-                    "en:wheat-starch",
-                    "en:butterfat"
-                ],
-                "nutrition": [
-                    "en:dextrose"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.138078723715138,
-                "nutrition": 0.0505675278795614
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.212121212121212,
-                "nutrition": 0.0303030303030303
-            },
-            "warnings": [
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "The impact relative interquartile is high for EF single score (58%)",
-                "The impact relative interquartile is high for Climate change (71%)",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 39,
     "ecoscore_tags": [
@@ -1603,7 +1532,7 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "9410",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:flour",
             "ingredients": [
                 {
@@ -1639,8 +1568,9 @@
                     "text": "complete hard ble"
                 },
                 {
-                    "ciqual_proxy_food_code": "9100",
-                    "id": "en:rice",
+                    "ciqual_food_code": "9520",
+                    "ecobalyse_code": "flour",
+                    "id": "en:rice-flour",
                     "is_in_taxonomy": 1,
                     "percent": 0.9,
                     "text": "rice"
@@ -1658,15 +1588,17 @@
                     "text": "avoine flakes"
                 },
                 {
-                    "ciqual_food_code": "9200",
-                    "id": "en:corn",
+                    "ciqual_food_code": "9545",
+                    "ecobalyse_code": "flour",
+                    "id": "en:corn-flour",
                     "is_in_taxonomy": 1,
                     "percent": 0.8,
                     "text": "corn"
                 },
                 {
-                    "ciqual_proxy_food_code": "9380",
-                    "id": "en:buckwheat",
+                    "ciqual_food_code": "9540",
+                    "ecobalyse_code": "flour",
+                    "id": "en:buckwheat-flour",
                     "is_in_taxonomy": 1,
                     "percent": 0.7,
                     "text": "buckwheat"
@@ -1748,7 +1680,7 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9545",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:corn-flour",
                     "is_in_taxonomy": 1,
                     "text": "corn flour"
@@ -1799,7 +1731,7 @@
             "ingredients": [
                 {
                     "ciqual_food_code": "9520",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:rice-flour",
                     "is_in_taxonomy": 1,
                     "text": "rice flour"
@@ -1845,7 +1777,7 @@
                 },
                 {
                     "ciqual_food_code": "9200",
-                    "id": "en:corn",
+                    "id": "en:corn-malt",
                     "is_in_taxonomy": 1,
                     "text": "corn"
                 }
@@ -2116,14 +2048,13 @@
         "en:baking-powder",
         "en:ble",
         "en:ble-starch",
-        "en:buckwheat",
         "en:butterfat",
         "en:cocoa-butter",
         "en:cocoa-paste",
         "en:complete-ble",
         "en:complete-hard-ble",
-        "en:corn",
         "en:corn-flakes",
+        "en:corn-malt",
         "en:dextrose",
         "en:e322",
         "en:e500ii",
@@ -2132,14 +2063,13 @@
         "en:milk-skimmed-powder",
         "en:orge",
         "en:orge-malt-extract",
-        "en:rice",
         "en:rice-flakes",
         "en:salt",
         "en:seigle",
         "en:spelt",
         "en:vanillin"
     ],
-    "ingredients_without_ecobalyse_ids_n": 27,
+    "ingredients_without_ecobalyse_ids_n": 25,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 39,
@@ -2672,14 +2602,30 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:wrapper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:wrapper"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

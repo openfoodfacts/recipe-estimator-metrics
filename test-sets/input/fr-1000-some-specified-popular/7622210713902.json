@@ -1794,7 +1794,7 @@
                         },
                         {
                             "ciqual_food_code": "9550",
-                            "ecobalyse_proxy_code": "flour",
+                            "ecobalyse_code": "flour",
                             "id": "en:wholemeal-barley-flour",
                             "is_in_taxonomy": 1,
                             "percent": 4.9,
@@ -1802,7 +1802,7 @@
                         },
                         {
                             "ciqual_proxy_food_code": "9530",
-                            "ecobalyse_proxy_code": "flour",
+                            "ecobalyse_code": "flour",
                             "id": "en:wholemeal-rye-flour",
                             "is_in_taxonomy": 1,
                             "percent": 3.3,
@@ -1810,7 +1810,7 @@
                         },
                         {
                             "ciqual_food_code": "9480",
-                            "ecobalyse_proxy_code": "flour",
+                            "ecobalyse_code": "flour",
                             "id": "en:wholemeal-spelt-flour",
                             "ingredients": [
                                 {
@@ -1874,17 +1874,24 @@
                     "text": "p\u00e2te de cacao"
                 },
                 {
-                    "ciqual_food_code": "16129",
-                    "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm-oil",
+                    "id": "en:vegetable-oil",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "16129",
+                            "ecobalyse_code": "refined-palm-oil",
+                            "id": "en:palm-oil",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de palme"
+                        },
+                        {
+                            "ciqual_food_code": "16110",
+                            "id": "en:shea-butter",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de karit\u00e9"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "huiles v\u00e9g\u00e9tales de palme"
-                },
-                {
-                    "ciqual_food_code": "16110",
-                    "id": "en:shea-butter",
-                    "is_in_taxonomy": 1,
-                    "text": "huiles v\u00e9g\u00e9tales de karit\u00e9"
+                    "text": "huiles v\u00e9g\u00e9tales"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
@@ -2529,9 +2536,10 @@
         "en:flavouring",
         "en:minerals",
         "en:raising-agent",
+        "en:vegetable-oil",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 14,
     "ingredients_without_ecobalyse_ids": [
         "en:cereal",
         "en:chocolate-chunk",
@@ -2555,10 +2563,11 @@
         "en:salt",
         "en:shea-butter",
         "en:soya-lecithin",
+        "en:vegetable-oil",
         "en:wheat",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ecobalyse_ids_n": 24,
+    "ingredients_without_ecobalyse_ids_n": 25,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 64,
@@ -3020,12 +3029,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

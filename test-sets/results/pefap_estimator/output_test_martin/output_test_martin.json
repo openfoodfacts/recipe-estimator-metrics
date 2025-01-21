@@ -1,0 +1,224 @@
+{
+    "impacts_geom_means": {
+        "EF single score": 0.03865691074189648,
+        "Climate change": 0.38527266082452
+    },
+    "impacts_geom_stdevs": {
+        "EF single score": 1.0856191891297677,
+        "Climate change": 1.0980814540329131
+    },
+    "impacts_quantiles": {
+        "EF single score": {
+            "0.05": 0.033528739789639314,
+            "0.25": 0.037058572431294845,
+            "0.5": 0.03866750340730923,
+            "0.75": 0.040785555660725496,
+            "0.95": 0.043870292399753145
+        },
+        "Climate change": {
+            "0.05": 0.31933404585613073,
+            "0.25": 0.363379189044505,
+            "0.5": 0.39196550661716545,
+            "0.75": 0.4148343678023688,
+            "0.95": 0.4427559553186808
+        }
+    },
+    "impacts_relative_interquartile": {
+        "EF single score": 0.09638541154757223,
+        "Climate change": 0.13127476241964406
+    },
+    "ingredients_impacts_share": {
+        "EF single score": {
+            "en:hazelnut": 0.19849343015324858,
+            "en:palm-oil": 0.15607094844137087,
+            "en:water": 2.338379383194171e-08,
+            "en:soya-lecithin": 0.020677989226761014,
+            "en:skimmed-milk-powder": 0.2665800435472717,
+            "en:fat-reduced-cocoa": 0.074,
+            "en:whey-powder": 0.15597973846509344,
+            "en:sugar": 0.11125588997663341,
+            "en:vanillin": 0.016941936805827163
+        },
+        "Climate change": {
+            "en:hazelnut": 0.14343461944738276,
+            "en:palm-oil": 0.2436515500624235,
+            "en:water": 2.2223318575368776e-06,
+            "en:soya-lecithin": 0.01780867791601296,
+            "en:skimmed-milk-powder": 0.2944403050761381,
+            "en:fat-reduced-cocoa": 0.074,
+            "en:whey-powder": 0.1720920530972762,
+            "en:sugar": 0.03762863526308172,
+            "en:vanillin": 0.016941936805827163
+        }
+    },
+    "ingredients_mass_share": {
+        "en:hazelnut": 0.13000000000000003,
+        "en:palm-oil": 0.1835422691465131,
+        "en:water": 0.02330075904859036,
+        "en:soya-lecithin": 0.026909518865599592,
+        "en:skimmed-milk-powder": 0.066,
+        "en:fat-reduced-cocoa": 0.07400000000000001,
+        "en:whey-powder": 0.03987349272960774,
+        "en:sugar": 0.4394320234038621,
+        "en:vanillin": 0.016941936805827163
+    },
+    "impacts_units": {
+        "EF single score": "mPt",
+        "Climate change": "kg CO2 eq"
+    },
+    "product_quantity": 100,
+    "const_relax_coef": 0.01,
+    "warnings": [
+        "The product has a high number of impact uncharacterized ingredients: 25%",
+        "Parameter const_relax_coef has been set to 0.01 in order to get a result."
+    ],
+    "reliability": 3,
+    "ignored_unknown_ingredients": [],
+    "uncharacterized_ingredients": {
+        "nutrition": [],
+        "impact": [
+            "en:fat-reduced-cocoa",
+            "en:vanillin"
+        ]
+    },
+    "uncharacterized_ingredients_ratio": {
+        "nutrition": 0.0,
+        "impact": 0.25
+    },
+    "uncharacterized_ingredients_mass_proportion": {
+        "nutrition": 0,
+        "impact": 0.09183716040059971
+    },
+    "number_of_runs": 30,
+    "number_of_ingredients": 8,
+    "average_total_used_mass": 102.13985535660127,
+    "calculation_time": 12.869038581848145,
+    "data_sources": {
+        "en:sugar": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Sugar, white"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Sugar, white"
+                }
+            ]
+        },
+        "en:palm-oil": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Palm oil"
+                },
+                {
+                    "database": "agribalyse",
+                    "entry": "Palm oil, refined"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Palm oil, refined"
+                },
+                {
+                    "database": "ciqual",
+                    "entry": "Palm oil"
+                }
+            ]
+        },
+        "en:hazelnut": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Hazelnut"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Hazelnut"
+                }
+            ]
+        },
+        "en:fat-reduced-cocoa": {
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Cocoa powder, without sugar, powder, instant"
+                }
+            ]
+        },
+        "en:skimmed-milk-powder": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Milk, powder, skimmed"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Milk, powder, skimmed"
+                }
+            ]
+        },
+        "en:whey-powder": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Milk, powder, skimmed"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "fcen",
+                    "entry": "Whey, acid, dry"
+                },
+                {
+                    "database": "fcen",
+                    "entry": "Beverage, whey protein isolate, powder"
+                }
+            ]
+        },
+        "en:emulsifier": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Soy lecithin"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Soy lecithin"
+                }
+            ]
+        },
+        "en:vanillin": {
+            "nutrition": [
+                {
+                    "database": "manual sources",
+                    "entry": "Manual entry"
+                }
+            ]
+        },
+        "en:soya-lecithin": {
+            "environmental_impact": [
+                {
+                    "database": "agribalyse",
+                    "entry": "Soy lecithin"
+                }
+            ],
+            "nutrition": [
+                {
+                    "database": "ciqual",
+                    "entry": "Soy lecithin"
+                }
+            ]
+        }
+    }
+}

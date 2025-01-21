@@ -692,70 +692,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.212570348960119,
-            "likeliest_impacts": {
-                "Climate_change": 0.498222209335921,
-                "EF_single_score": 0.0434272616746691
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 0.0863438136732842,
-                "en:cocoa_butter": 3.73099070270883,
-                "en:cocoa_paste": 4.74548353988766,
-                "en:colza_oil": 3.10559848228193,
-                "en:corn": 14.7612240668176,
-                "en:dextrose": 0.0881027380446863,
-                "en:e420": 12.4773832119141,
-                "en:flavouring": 0.190093971998053,
-                "en:glucose_syrup": 40.0690060139572,
-                "en:malted_rye_flakes": 3.5672958161476,
-                "en:malted_wheat_flour": 0.738061203340882,
-                "en:oat_flakes": 7.87265283563608,
-                "en:palm_oil": 0.661576506486988,
-                "en:rice_flour": 10.8248976489996,
-                "en:salt": 0.283169760452671,
-                "en:soya_lecithin": 3.62113741861443,
-                "en:sugar": 4.57541413548662,
-                "en:sunflower_lecithin": 0.0863438136732842,
-                "en:water": 4.91778150913632,
-                "en:wheat_flour": 6.51954062951113,
-                "en:wheat_gluten": 0.0881027380446863
-            },
-            "mass_ratio_uncharacterized": 0.35507699265085,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e420",
-                    "en:glucose-syrup",
-                    "en:flavouring",
-                    "en:dextrose",
-                    "en:malted-rye-flakes",
-                    "en:barley-malt-extract"
-                ],
-                "nutrition": [
-                    "en:dextrose",
-                    "en:glucose-syrup",
-                    "en:flavouring",
-                    "en:malted-rye-flakes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.35507699265085,
-                "nutrition": 0.265466056030505
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.304347826086957,
-                "nutrition": 0.217391304347826
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 30%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 27%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 36%",
-                "The impact relative interquartile is high for Climate change (38%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 34,
     "ecoscore_tags": [
@@ -1844,7 +1780,7 @@
                 },
                 {
                     "ciqual_food_code": "9520",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:rice-flour",
                     "is_in_taxonomy": 1,
                     "percent": 8.8,
@@ -1949,18 +1885,25 @@
             "text": "stabilisant"
         },
         {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                },
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de colza"
-        },
-        {
-            "ciqual_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de palme"
+            "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_proxy_food_code": "16030",
@@ -2449,9 +2392,10 @@
         "en:flavouring",
         "en:stabiliser",
         "en:sunflower-lecithin",
+        "en:vegetable-oil",
         "en:wheat-gluten"
     ],
-    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ciqual_codes_n": 10,
     "ingredients_without_ecobalyse_ids": [
         "en:barley-malt-extract",
         "en:cereal",
@@ -2470,9 +2414,10 @@
         "en:soya-lecithin",
         "en:stabiliser",
         "en:sunflower-lecithin",
+        "en:vegetable-oil",
         "en:wheat-gluten"
     ],
-    "ingredients_without_ecobalyse_ids_n": 18,
+    "ingredients_without_ecobalyse_ids_n": 19,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 46,
@@ -2928,70 +2873,166 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:packaging"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:packaging"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:individual-bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:individual-bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

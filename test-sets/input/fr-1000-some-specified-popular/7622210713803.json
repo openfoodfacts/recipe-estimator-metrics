@@ -720,10 +720,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "error": "Exception: estimation process timed out after 600 seconds"
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 30,
     "ecoscore_tags": [
@@ -1571,7 +1567,7 @@
                         },
                         {
                             "ciqual_food_code": "9550",
-                            "ecobalyse_proxy_code": "flour",
+                            "ecobalyse_code": "flour",
                             "id": "en:wholemeal-barley-flour",
                             "is_in_taxonomy": 1,
                             "percent": 6.4,
@@ -1579,7 +1575,7 @@
                         },
                         {
                             "ciqual_proxy_food_code": "9530",
-                            "ecobalyse_proxy_code": "flour",
+                            "ecobalyse_code": "flour",
                             "id": "en:wholemeal-rye-flour",
                             "is_in_taxonomy": 1,
                             "percent": 3.5,
@@ -1587,7 +1583,7 @@
                         },
                         {
                             "ciqual_food_code": "9480",
-                            "ecobalyse_proxy_code": "flour",
+                            "ecobalyse_code": "flour",
                             "id": "en:wholemeal-spelt-flour",
                             "ingredients": [
                                 {
@@ -1642,17 +1638,24 @@
                     "text": "p\u00e2te de cacao"
                 },
                 {
-                    "ciqual_proxy_food_code": "16129",
-                    "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm-fat",
+                    "id": "en:vegetable-fat",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "16129",
+                            "ecobalyse_code": "refined-palm-oil",
+                            "id": "en:palm-oil",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de palme"
+                        },
+                        {
+                            "ciqual_food_code": "16110",
+                            "id": "en:shea-butter",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de karit\u00e9"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "graisses v\u00e9g\u00e9tales de palme"
-                },
-                {
-                    "ciqual_food_code": "16110",
-                    "id": "en:shea-butter",
-                    "is_in_taxonomy": 1,
-                    "text": "graisses v\u00e9g\u00e9tales de karit\u00e9"
+                    "text": "graisses v\u00e9g\u00e9tales"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
@@ -2324,9 +2327,10 @@
         "en:flavouring",
         "en:minerals",
         "en:raising-agent",
+        "en:vegetable-fat",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ciqual_codes_n": 14,
+    "ingredients_without_ciqual_codes_n": 15,
     "ingredients_without_ecobalyse_ids": [
         "en:cereal",
         "en:chocolate-chunk",
@@ -2350,11 +2354,12 @@
         "en:salt",
         "en:shea-butter",
         "en:soya-lecithin",
+        "en:vegetable-fat",
         "en:wheat",
         "en:wheat-starch",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ecobalyse_ids_n": 25,
+    "ingredients_without_ecobalyse_ids_n": 26,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 63,
@@ -2857,7 +2862,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:non-corrugated-cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2866,12 +2879,28 @@
             "quantity_per_unit_value": 600,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 45.86
@@ -2879,7 +2908,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 12,
@@ -2888,12 +2925,28 @@
             "quantity_per_unit_value": 50,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.62

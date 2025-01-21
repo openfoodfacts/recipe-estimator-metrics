@@ -1304,7 +1304,7 @@
                 },
                 {
                     "ciqual_food_code": "9520",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:rice-flour",
                     "is_in_taxonomy": 1,
                     "percent": 5.1,
@@ -1350,18 +1350,25 @@
             "text": "stabilisant"
         },
         {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                },
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de colza"
-        },
-        {
-            "ciqual_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de palme"
+            "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "13015",
@@ -1777,6 +1784,7 @@
         "correcteur-d-acidite",
         "acide-citrique"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 24,
     "ingredients_n_tags": [
         "24",
@@ -1879,9 +1887,10 @@
         "en:flavouring",
         "en:stabiliser",
         "en:sunflower-lecithin",
+        "en:vegetable-oil",
         "en:wheat-gluten"
     ],
-    "ingredients_without_ciqual_codes_n": 10,
+    "ingredients_without_ciqual_codes_n": 11,
     "ingredients_without_ecobalyse_ids": [
         "en:acidity-regulator",
         "en:barley-malt-extract",
@@ -1898,9 +1907,10 @@
         "en:salt",
         "en:stabiliser",
         "en:sunflower-lecithin",
+        "en:vegetable-oil",
         "en:wheat-gluten"
     ],
-    "ingredients_without_ecobalyse_ids_n": 16,
+    "ingredients_without_ecobalyse_ids_n": 17,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 46,
@@ -2309,24 +2319,56 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

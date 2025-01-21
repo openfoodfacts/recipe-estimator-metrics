@@ -677,68 +677,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.108075043480627,
-            "likeliest_impacts": {
-                "Climate_change": 0.929338234049029,
-                "EF_single_score": 0.0645740329578031
-            },
-            "likeliest_recipe": {
-                "en:citrus_fruit": 0.0741973243681205,
-                "en:cocoa_butter": 7.21672123353689,
-                "en:cocoa_paste": 18.6600573723364,
-                "en:concentrated_lemon_juice": 0.000499246935644923,
-                "en:e501": 0.00370255106827233,
-                "en:e503": 0,
-                "en:e965": 15.9136115748356,
-                "en:egg_yolk_powder": 1.62606560637203,
-                "en:high_oleic_sunflower_oil": 3.77838809988496,
-                "en:maltodextrins": 0.000510789488017556,
-                "en:natural_vanilla_flavouring": 0.873401018137746,
-                "en:pea": 0.0741973243681204,
-                "en:potato": 0.0740389271088505,
-                "en:psyllium": 0.0740389271088505,
-                "en:rice_starch": 3.77838809988496,
-                "en:salt": 0.00366215386690133,
-                "en:skimmed_milk_powder": 3.77838809988496,
-                "en:soya_lecithin": 3.02803298914006,
-                "en:water": 0,
-                "en:wheat_fiber": 3.77838809988496,
-                "en:wheat_flour": 52.6498340709301,
-                "fr:algue_brune": 0.0740389271088473
-            },
-            "mass_ratio_uncharacterized": 0.156726347460767,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:algue brune",
-                    "en:e965",
-                    "en:maltodextrins",
-                    "en:rice-starch",
-                    "en:e503",
-                    "en:psyllium",
-                    "en:e501"
-                ],
-                "nutrition": [
-                    "fr:algue brune"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.156726347460767,
-                "nutrition": 0.000688635926896024
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.347826086956522,
-                "nutrition": 0.0434782608695652
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 35%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 16%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 50,
     "ecoscore_tags": [
@@ -1650,7 +1588,7 @@
             "id": "en:vegetable-fiber",
             "ingredients": [
                 {
-                    "id": "en:citrus-fruit",
+                    "id": "en:citrus-fibre",
                     "is_in_taxonomy": 1,
                     "text": "citrus"
                 },
@@ -2068,7 +2006,7 @@
     "ingredients_with_unspecified_percent_n": 23,
     "ingredients_with_unspecified_percent_sum": 54.4,
     "ingredients_without_ciqual_codes": [
-        "en:citrus-fruit",
+        "en:citrus-fibre",
         "en:e501",
         "en:e503",
         "en:e965",
@@ -2087,7 +2025,7 @@
     ],
     "ingredients_without_ciqual_codes_n": 16,
     "ingredients_without_ecobalyse_ids": [
-        "en:citrus-fruit",
+        "en:citrus-fibre",
         "en:cocoa-butter",
         "en:cocoa-paste",
         "en:concentrated-lemon-juice",
@@ -2580,24 +2518,56 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

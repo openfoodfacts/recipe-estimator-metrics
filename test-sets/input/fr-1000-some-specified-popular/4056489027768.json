@@ -574,44 +574,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0531241865095313,
-            "likeliest_impacts": {
-                "Climate_change": 0.0106664295945079,
-                "EF_single_score": 0.00377751469245437
-            },
-            "likeliest_recipe": {
-                "en:apple": 93.3247724307969,
-                "en:sugar": 3.9414553669969,
-                "en:water": 0.850070544848354,
-                "fr:sucres_en_moins_nar_rapport___un_compote_de_pommes_classique": 2.11436917316502
-            },
-            "mass_ratio_uncharacterized": 0.040929959962951,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:sucres en moins nar rapport \u00e0 un compote de pommes classique"
-                ],
-                "nutrition": [
-                    "fr:sucres en moins nar rapport \u00e0 un compote de pommes classique"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.040929959962951,
-                "nutrition": 0.040929959962951
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentages were not used for estimating the impact."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 89,
     "ecoscore_tags": [
@@ -1282,7 +1244,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -1363,15 +1325,15 @@
     "ingredients_without_ciqual_codes": [
         "en:acid",
         "en:antioxidant",
-        "en:e300",
-        "en:e330"
+        "en:e330",
+        "en:vitamin-c"
     ],
     "ingredients_without_ciqual_codes_n": 4,
     "ingredients_without_ecobalyse_ids": [
         "en:acid",
         "en:antioxidant",
-        "en:e300",
-        "en:e330"
+        "en:e330",
+        "en:vitamin-c"
     ],
     "ingredients_without_ecobalyse_ids_n": 4,
     "interface_version_created": "20150316.jqm2",
@@ -1778,12 +1740,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

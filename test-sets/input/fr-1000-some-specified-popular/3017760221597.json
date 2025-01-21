@@ -54,7 +54,7 @@
         "en:e503",
         "en:e503ii"
     ],
-    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, lait, lait, soja, lactose",
     "allergens_from_user": "(es) en:gluten,en:milk,en:soybeans, en:milk, en:milk",
     "allergens_hierarchy": [
@@ -1330,7 +1330,7 @@
                 {
                     "ciqual_food_code": "16129",
                     "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm",
+                    "id": "en:palm-oil",
                     "is_in_taxonomy": 1,
                     "text": "palme"
                 },
@@ -1345,8 +1345,9 @@
                     "text": "palmiste"
                 },
                 {
-                    "ecobalyse_code": "rapeseed-non-eu",
-                    "id": "en:rapeseed",
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
                     "is_in_taxonomy": 1,
                     "text": "colza"
                 }
@@ -1690,6 +1691,7 @@
         "sel",
         "arome"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 21,
     "ingredients_n_tags": [
         "21",
@@ -1785,12 +1787,11 @@
         "en:lactose",
         "en:palm-kernel-oil",
         "en:raising-agent",
-        "en:rapeseed",
         "en:vegetable-oil",
         "en:whey-powder",
         "fr:palmiste-totalement-hydrogenee"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 10,
     "ingredients_without_ecobalyse_ids": [
         "en:chocolate-powder",
         "en:cocoa-powder",
@@ -2239,17 +2240,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

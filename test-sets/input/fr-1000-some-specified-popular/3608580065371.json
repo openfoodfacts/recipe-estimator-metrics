@@ -610,42 +610,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0570733506113154,
-            "likeliest_impacts": {
-                "Climate_change": 0.529126267593538,
-                "EF_single_score": 0.0507525919159611
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 4.61816520044439,
-                "en:colza_oil": 8.00166065011046,
-                "en:fat_reduced_cocoa_powder": 5.60863214916613,
-                "en:hazelnut": 20.3950259969677,
-                "en:skimmed_milk_powder": 7.58508666812092,
-                "en:sugar": 44.2384498095726,
-                "en:sunflower_lecithin": 0.616299733465294,
-                "en:sunflower_oil": 8.08454178412766,
-                "en:vanilla_extract": 0.242720018514892,
-                "en:water": 2.58454797434865
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -962,18 +926,25 @@
             "text": "NOISETTES"
         },
         {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                },
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de tournesol"
-        },
-        {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de colza"
+            "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "19054",
@@ -1055,6 +1026,7 @@
         "en:e322",
         "en:e322i"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 10,
     "ingredients_n_tags": [
         "10",
@@ -1115,17 +1087,19 @@
     "ingredients_with_unspecified_percent_sum": 75,
     "ingredients_without_ciqual_codes": [
         "en:emulsifier",
-        "en:sunflower-lecithin"
+        "en:sunflower-lecithin",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 3,
     "ingredients_without_ecobalyse_ids": [
         "en:cocoa-butter",
         "en:emulsifier",
         "en:fat-reduced-cocoa-powder",
         "en:sunflower-lecithin",
-        "en:vanilla-extract"
+        "en:vanilla-extract",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ecobalyse_ids_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -1551,31 +1525,71 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:capsule"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:capsule"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

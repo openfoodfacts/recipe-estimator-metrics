@@ -657,60 +657,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00525361632688394,
-            "likeliest_impacts": {
-                "Climate_change": 0.0388410068271622,
-                "EF_single_score": 0.00745036749877451
-            },
-            "likeliest_recipe": {
-                "en:e300": 0,
-                "en:e375": 0.00886886944594711,
-                "en:folic_acid": 0,
-                "en:glucose_fructose_syrup": 0.499022763744019,
-                "en:palm_oil": 0.499022763744019,
-                "en:sulfates": 0.00221721736148678,
-                "en:thiamin": 0.00886886944594711,
-                "en:vitamin_b6": 0,
-                "en:vitamin_e": 0.00443443472297356,
-                "en:vitamins": 0.00443443472297356,
-                "en:water": 0,
-                "en:wheat_flour": 102.318579521911,
-                "en:yeast": 0.00443443472296148,
-                "fr:orthophosphate": 0.00221721736148678
-            },
-            "mass_ratio_uncharacterized": 0.00426258815195919,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:folic-acid",
-                    "en:e375",
-                    "en:sulfates",
-                    "en:vitamin-e",
-                    "en:vitamins",
-                    "en:e300",
-                    "fr:orthophosphate",
-                    "en:vitamin-b6"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00426258815195919,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.75,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 75%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1715,22 +1661,22 @@
                     ],
                     "is_in_taxonomy": 1,
                     "text": "calcium"
-                },
-                {
-                    "id": "en:zinc",
-                    "ingredients": [
-                        {
-                            "id": "en:sulfates",
-                            "is_in_taxonomy": 1,
-                            "text": "sulfate"
-                        }
-                    ],
-                    "is_in_taxonomy": 1,
-                    "text": "zinc"
                 }
             ],
             "is_in_taxonomy": 1,
             "text": "min\u00e9raux"
+        },
+        {
+            "id": "en:zinc",
+            "ingredients": [
+                {
+                    "id": "en:sulfates",
+                    "is_in_taxonomy": 1,
+                    "text": "sulfate"
+                }
+            ],
+            "is_in_taxonomy": 1,
+            "text": "zinc"
         },
         {
             "id": "en:vitamins",
@@ -1999,6 +1945,7 @@
         "agent-de-traitement-de-la-farine",
         "acide-ascorbique"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 20,
     "ingredients_n_tags": [
         "20",
@@ -2556,7 +2503,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 6,
@@ -2565,12 +2520,28 @@
             "quantity_per_unit_value": "25",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": "10"

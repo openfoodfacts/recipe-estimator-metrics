@@ -649,56 +649,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0386780012617666,
-            "likeliest_impacts": {
-                "Climate_change": 0.185409909229004,
-                "EF_single_score": 0.0341310047068554
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 0.0829339453976523,
-                "en:colza_oil": 33.7944307522879,
-                "en:e1400": 1.6855374872685,
-                "en:e160c": 0.00213316134019701,
-                "en:e161b": 0.107688294807259,
-                "en:e415": 1.59883139842601,
-                "en:flavouring": 1.59883139842601,
-                "en:free_range_chicken_egg_yolk": 5.0758817255732,
-                "en:mustard_seed": 0.0829339453976523,
-                "en:salt": 2.14770385151119,
-                "en:sugar": 1.75944098947966,
-                "en:sunflower_oil": 33.7944307522879,
-                "en:water": 10.8603215151463,
-                "en:white_wine_vinegar": 6.93599344094861
-            },
-            "mass_ratio_uncharacterized": 0.0359209883972246,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:e161b",
-                    "en:e1400",
-                    "en:e160c",
-                    "en:e415"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0359209883972246,
-                "nutrition": 0.0106619866089378
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3125,
-                "nutrition": 0.0625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 31%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 46,
     "ecoscore_tags": [
@@ -1615,18 +1565,25 @@
     ],
     "ingredients": [
         {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "sunflower vegetable oils"
+                },
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:rapeseed-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "rapeseed vegetable oils"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "sunflower vegetable oils"
-        },
-        {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:rapeseed-oil",
-            "is_in_taxonomy": 1,
-            "text": "rapeseed vegetable oils"
+            "text": "vegetable oils"
         },
         {
             "ciqual_food_code": "11018",
@@ -1994,9 +1951,10 @@
         "en:egg-yolk-from-hens-raised-outdoors",
         "en:flavouring",
         "en:or",
-        "en:thickener"
+        "en:thickener",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 9,
+    "ingredients_without_ciqual_codes_n": 10,
     "ingredients_without_ecobalyse_ids": [
         "en:colour",
         "en:dijon-mustard",
@@ -2011,9 +1969,10 @@
         "en:salt",
         "en:spirit-vinegar",
         "en:thickener",
+        "en:vegetable-oil",
         "en:white-wine-vinegar"
     ],
-    "ingredients_without_ecobalyse_ids_n": 14,
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2513,26 +2472,58 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:seal"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

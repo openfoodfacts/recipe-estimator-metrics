@@ -667,50 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0257272134221131,
-            "likeliest_impacts": {
-                "Climate_change": 0.158945751633636,
-                "EF_single_score": 0.0247518819141559
-            },
-            "likeliest_recipe": {
-                "en:colour": 0.977693927984448,
-                "en:flavouring": 1.04060064358551,
-                "en:flax": 5.65454886543664,
-                "en:palm": 3.66867406764164,
-                "en:palm_kernel_oil": 13.6091141323034,
-                "en:rapeseed": 31.5188742314153,
-                "en:salt": 1.04060064358556,
-                "en:soya_lecithin": 2.07558643666468,
-                "en:thiamin": 0.941153031089164,
-                "en:water": 44.1870218987499
-            },
-            "mass_ratio_uncharacterized": 0.00958837568952405,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:colour",
-                    "en:flavouring",
-                    "en:thiamin"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00958837568952405,
-                "nutrition": 0.00461722873933527
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 30%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 48,
     "ecoscore_tags": [
@@ -1199,7 +1155,7 @@
             "id": "en:colour",
             "ingredients": [
                 {
-                    "id": "en:e160ai",
+                    "id": "en:beta-carotene-dye",
                     "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
@@ -1426,8 +1382,8 @@
     "ingredients_with_unspecified_percent_n": 8,
     "ingredients_with_unspecified_percent_sum": 64.6,
     "ingredients_without_ciqual_codes": [
+        "en:beta-carotene-dye",
         "en:colour",
-        "en:e160ai",
         "en:emulsifier",
         "en:flavouring",
         "en:flax",
@@ -1439,8 +1395,8 @@
     ],
     "ingredients_without_ciqual_codes_n": 10,
     "ingredients_without_ecobalyse_ids": [
+        "en:beta-carotene-dye",
         "en:colour",
-        "en:e160ai",
         "en:emulsifier",
         "en:flavouring",
         "en:flax",
@@ -1943,19 +1899,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

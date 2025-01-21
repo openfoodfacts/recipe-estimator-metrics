@@ -627,54 +627,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0837971633149598,
-            "likeliest_impacts": {
-                "Climate_change": 0.0740316384619656,
-                "EF_single_score": 0.0116804169624952
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 0.0137965553332223,
-                "en:barley_malt_flour": 0.557403886664195,
-                "en:e300": 0,
-                "en:e471": 0.0137965553332223,
-                "en:rye": 1.05214132703126,
-                "en:salt": 0.0137965553332212,
-                "en:skimmed_milk_powder": 0.583327544574419,
-                "en:sugar": 3.42262340217088,
-                "en:sunflower_oil": 8.56980581002756,
-                "en:water": 0.0882525216631643,
-                "en:wheat_bran": 3.42262340217088,
-                "en:wheat_flour": 65.2327622759382,
-                "en:wheat_gluten": 3.14820339389507,
-                "en:wheat_semolina": 0.0137965553332223,
-                "en:whole_wheat_flour": 15.7821199054689,
-                "en:yeast": 3.29968301218868
-            },
-            "mass_ratio_uncharacterized": 0.00977961359327294,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e471",
-                    "en:barley-malt-extract",
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00977961359327294,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 78,
     "ecoscore_tags": [
@@ -1623,7 +1575,7 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-rye-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1,
@@ -1674,7 +1626,7 @@
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:barley-malt-flour",
             "is_in_taxonomy": 1,
             "text": "malted barley flour"
@@ -1779,6 +1731,7 @@
         "en:e471",
         "en:e300"
     ],
+    "ingredients_lc": "en",
     "ingredients_n": 18,
     "ingredients_n_tags": [
         "18",
@@ -2363,46 +2316,110 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

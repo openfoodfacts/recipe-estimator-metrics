@@ -635,58 +635,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0232559642642991,
-            "likeliest_impacts": {
-                "Climate_change": 0.0911782969063346,
-                "EF_single_score": 0.00984483069853104
-            },
-            "likeliest_recipe": {
-                "en:carrot": 0.410325103616408,
-                "en:celery_seed": 7.63782165626055,
-                "en:corn": 2.66977587222797,
-                "en:garlic": 7.42517479498274,
-                "en:leek": 0.548216123183915,
-                "en:lovage": 2.71913334608859,
-                "en:mace": 2.74164975146674,
-                "en:milk": 8.01657223395846,
-                "en:nutmeg": 2.03325884368405,
-                "en:onion": 2.08903910963375,
-                "en:palm_oil": 8.04747362806083,
-                "en:parsley": 7.77823510007473,
-                "en:parsnip": 4.97496667310175,
-                "en:potato_starch": 8.04747362806083,
-                "en:sea_salt": 8.82185821476768,
-                "en:soya": 6.14069347041162,
-                "en:turmeric": 7.63782165626031,
-                "en:water": 4.99899281488719,
-                "en:white_pepper": 7.54335559846975
-            },
-            "mass_ratio_uncharacterized": 0.158288017775988,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:mace",
-                    "en:celery-seed",
-                    "en:lovage"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.158288017775988,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.166666666666667,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 16%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1433,18 +1381,25 @@
             "text": "Hydrolysed vegetable protein"
         },
         {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "sunflower Vegetable oil"
+                },
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:rapeseed-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "rapeseed Vegetable oil"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "sunflower Vegetable oil"
-        },
-        {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:rapeseed-oil",
-            "is_in_taxonomy": 1,
-            "text": "rapeseed Vegetable oil"
+            "text": "Vegetable oil"
         },
         {
             "id": "en:vegetable",
@@ -1674,9 +1629,10 @@
         "en:hydrolysed-vegetable-protein",
         "en:lovage",
         "en:mace",
-        "en:vegetable"
+        "en:vegetable",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 6,
     "ingredients_without_ecobalyse_ids": [
         "en:containing-soya",
         "en:garlic",
@@ -1689,9 +1645,10 @@
         "en:sea-salt",
         "en:turmeric",
         "en:vegetable",
+        "en:vegetable-oil",
         "en:white-pepper"
     ],
-    "ingredients_without_ecobalyse_ids_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 36,
@@ -1989,43 +1946,99 @@
         {
             "material": {
                 "id": {
-                    "id": "en:o-7-other-plastics"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:o-7-other-plastics"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pot"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:ldpe-4-low-density-polyethylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:ldpe-4-low-density-polyethylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:Widely recycled"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:Widely recycled"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:tube"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tube"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

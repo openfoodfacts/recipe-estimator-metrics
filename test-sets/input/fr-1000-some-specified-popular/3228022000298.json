@@ -41,7 +41,7 @@
         "en:e428",
         "en:e471"
     ],
-    "allergens": "en:milk, en:milk, en:milk",
+    "allergens": "en:milk, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, butter, milk, gelatin",
     "allergens_from_user": "(en) en:milk, en:milk",
     "allergens_hierarchy": [
@@ -654,64 +654,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.585529796624031,
-            "likeliest_impacts": {
-                "Climate_change": 0.0635878213788118,
-                "EF_single_score": 0.00570107758683457
-            },
-            "likeliest_recipe": {
-                "en:acid": 0.794717555780375,
-                "en:dye": 0.430328229231473,
-                "en:e202": 0.430328229231473,
-                "en:e428": 0.939717466837971,
-                "en:e471": 0.430328229231472,
-                "en:milk": 50.4546639997714,
-                "en:modified_starch": 1.60188688632502,
-                "en:natural_flavouring": 0.327503062622742,
-                "en:salt": 0.430328229231472,
-                "en:vitamin_a": 0.372441922096746,
-                "en:vitamin_e": 0.347170934196687,
-                "en:vitamins": 0.430328229231473,
-                "en:water": 50.5923143340798
-            },
-            "mass_ratio_uncharacterized": 0.112670015836837,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e202",
-                    "en:dye",
-                    "en:e428",
-                    "en:natural-flavouring",
-                    "en:vitamins",
-                    "en:vitamin-e",
-                    "en:acid",
-                    "en:vitamin-a",
-                    "en:e471"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:dye"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.112670015836837,
-                "nutrition": 0.00434824011967122
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.692307692307692,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 69%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%",
-                "The impact relative interquartile is high for EF single score (38%)",
-                "The impact relative interquartile is high for Climate change (47%)",
-                "Parameter const_relax_coef has been set to 0.3 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 24,
     "ecoscore_tags": [
@@ -1411,7 +1353,7 @@
             "id": "en:dye",
             "ingredients": [
                 {
-                    "id": "en:e160ai",
+                    "id": "en:beta-carotene-dye",
                     "is_in_taxonomy": 1,
                     "text": "beta carotene"
                 }
@@ -1496,6 +1438,7 @@
         "en:e160a"
     ],
     "ingredients_ids_debug": [],
+    "ingredients_lc": "en",
     "ingredients_n": 17,
     "ingredients_n_tags": [
         "17",
@@ -1571,9 +1514,9 @@
     "ingredients_with_unspecified_percent_sum": 99.6,
     "ingredients_without_ciqual_codes": [
         "en:acid",
+        "en:beta-carotene-dye",
         "en:dairy-acid",
         "en:dye",
-        "en:e160ai",
         "en:e202",
         "en:e428",
         "en:e471",
@@ -1587,9 +1530,9 @@
     "ingredients_without_ciqual_codes_n": 13,
     "ingredients_without_ecobalyse_ids": [
         "en:acid",
+        "en:beta-carotene-dye",
         "en:dairy-acid",
         "en:dye",
-        "en:e160ai",
         "en:e202",
         "en:e428",
         "en:e471",
@@ -2049,12 +1992,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

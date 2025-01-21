@@ -78,7 +78,7 @@
         "en:e450",
         "en:e500"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk,en:nuts,en:peanuts,en:soybeans,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
+    "allergens": "en:eggs,en:gluten,en:milk,en:nuts,en:peanuts,en:soybeans,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_from_ingredients": "en:gluten, BL\u00c9, OEUFS , ORGE, BL\u00c9 , ANHYDRIDE SULFUREUX, BL\u00c9, OEUFS, ORGE, BL\u00c9, ANHYDRIDE SULFUREUX",
     "allergens_from_user": "(fr) en:eggs,en:gluten,en:milk,en:nuts,en:peanuts,en:soybeans,en:sulphur-dioxide-and-sulphites, en:sulphur-dioxide-and-sulphites",
     "allergens_hierarchy": [
@@ -719,81 +719,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.105679122839906,
-            "likeliest_impacts": {
-                "Climate_change": 0.0693149758608601,
-                "EF_single_score": 0.0191383270235812
-            },
-            "likeliest_recipe": {
-                "en:barley_malt_extract": 5.43212270282571,
-                "en:colza_oil": 9.50784802483076,
-                "en:dextrose": 4.57851380750974,
-                "en:e120": 0.117416992479698,
-                "en:e202": 1.60864837520208,
-                "en:e220": 0,
-                "en:e330": 6.4404618575499,
-                "en:e401": 0.814345322478737,
-                "en:e420": 5.43212270282571,
-                "en:e450": 0.81434532247871,
-                "en:e500": 0.814345322478737,
-                "en:flavouring": 3.3546173708341,
-                "en:fresh_egg": 5.90600046318923,
-                "en:glucose_fructose_syrup": 5.43212270282571,
-                "en:grape": 12.7761499888023,
-                "en:malted_wheat_flour": 0.814345322478735,
-                "en:natural_orange_flavouring": 0.814345322478735,
-                "en:papaya": 5.33192131822928,
-                "en:rum": 3.91330721265061,
-                "en:salt": 0.814345322478737,
-                "en:sugar": 11.7466804822291,
-                "en:sweet_cherry": 5.52210376388375,
-                "en:water": 0,
-                "en:wheat_flour": 19.1202077153008,
-                "fr:coton": 2.28226319523966,
-                "fr:infusion_d__corces_d_oranges_douces": 3.91330721265061
-            },
-            "mass_ratio_uncharacterized": 0.213225825347714,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e202",
-                    "en:barley-malt-extract",
-                    "en:e401",
-                    "fr:infusion d'\u00e9corces d'oranges douces",
-                    "en:e420",
-                    "fr:coton",
-                    "en:e500",
-                    "en:e330",
-                    "en:flavouring",
-                    "en:dextrose",
-                    "en:e450",
-                    "en:e120",
-                    "en:e220"
-                ],
-                "nutrition": [
-                    "fr:coton",
-                    "en:dextrose",
-                    "en:flavouring",
-                    "fr:infusion d'\u00e9corces d'oranges douces"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.213225825347714,
-                "nutrition": 0.0726577192784851
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.53125,
-                "nutrition": 0.15625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 53%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 21%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1792,11 +1717,18 @@
                     "text": "raisins"
                 },
                 {
-                    "ciqual_food_code": "17130",
-                    "ecobalyse_code": "rapeseed-oil",
-                    "id": "en:colza-oil",
+                    "id": "en:vegetable-oil",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "17130",
+                            "ecobalyse_code": "rapeseed-oil",
+                            "id": "en:colza-oil",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de colza"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "huiles v\u00e9g\u00e9tales de colza"
+                    "text": "huiles v\u00e9g\u00e9tales"
                 },
                 {
                     "id": "fr:coton",
@@ -2503,12 +2435,13 @@
         "en:preservative",
         "en:raising-agent",
         "en:stabiliser",
+        "en:vegetable-oil",
         "fr:coton",
         "fr:extrait-aromatique",
         "fr:fruits-confits",
         "fr:infusion-d-ecorces-d-oranges-douces"
     ],
-    "ingredients_without_ciqual_codes_n": 21,
+    "ingredients_without_ciqual_codes_n": 22,
     "ingredients_without_ecobalyse_ids": [
         "en:acid",
         "en:acidity-regulator",
@@ -2533,12 +2466,13 @@
         "en:rum",
         "en:salt",
         "en:stabiliser",
+        "en:vegetable-oil",
         "fr:coton",
         "fr:extrait-aromatique",
         "fr:fruits-confits",
         "fr:infusion-d-ecorces-d-oranges-douces"
     ],
-    "ingredients_without_ecobalyse_ids_n": 27,
+    "ingredients_without_ecobalyse_ids_n": 28,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 53,
@@ -3046,36 +2980,84 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic,en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic,en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:aerosol-can"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aerosol-can"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

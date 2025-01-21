@@ -655,60 +655,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0243668388434073,
-            "likeliest_impacts": {
-                "Climate_change": 0.0667374205637565,
-                "EF_single_score": 0.0179982405858605
-            },
-            "likeliest_recipe": {
-                "en:coconut": 3.60016655562853,
-                "en:flax": 8.34699920167714,
-                "en:natural_flavouring": 0.305133860173955,
-                "en:rapeseed": 7.88446791742938,
-                "en:sea_salt": 0.305133860174006,
-                "en:shea_butter": 8.34131298884049,
-                "en:sunflower": 8.44311655730513,
-                "en:sunflower_lecithin": 0.305133860174006,
-                "en:vitamin_a": 0.251922916348734,
-                "en:vitamin_d": 0.0772900542990805,
-                "en:vitamins": 0.305133860174006,
-                "en:water": 52.3572335527305,
-                "fr:esters_de_phytost_rols": 11.1882415397135
-            },
-            "mass_ratio_uncharacterized": 0.19374746073656,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "en:natural-flavouring",
-                    "en:vitamin-a",
-                    "fr:esters de phytost\u00e9rols",
-                    "en:vitamin-d",
-                    "en:shea-butter"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "fr:esters de phytost\u00e9rols"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.19374746073656,
-                "nutrition": 0.112066291893045
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.461538461538462,
-                "nutrition": 0.153846153846154
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 46%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 11%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 19%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 24,
     "ecoscore_tags": [
@@ -1035,33 +981,37 @@
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "ecobalyse_code": "sunflower-non-eu",
-                    "id": "en:sunflower",
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
                     "is_in_taxonomy": 1,
-                    "text": "tournesol"
+                    "text": "huile de tournesol"
                 },
                 {
-                    "id": "en:flax",
+                    "ciqual_food_code": "17180",
+                    "ecobalyse_code": "refined-linseed-oil",
+                    "id": "en:linseed-oil",
                     "is_in_taxonomy": 1,
-                    "text": "lin"
+                    "text": "huile de lin"
                 },
                 {
                     "ciqual_food_code": "16110",
                     "id": "en:shea-butter",
                     "is_in_taxonomy": 1,
-                    "text": "karit\u00e9"
+                    "text": "huile de karit\u00e9"
                 },
                 {
-                    "ecobalyse_code": "rapeseed-non-eu",
-                    "id": "en:rapeseed",
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
                     "is_in_taxonomy": 1,
-                    "text": "colza"
+                    "text": "huile de colza"
                 },
                 {
-                    "ciqual_proxy_food_code": "15006",
-                    "id": "en:coconut",
+                    "ciqual_food_code": "16040",
+                    "id": "en:coconut-oil",
                     "is_in_taxonomy": 1,
-                    "text": "coco"
+                    "text": "huile de coco"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -1296,6 +1246,7 @@
         "carotenoides",
         "vitamine-d"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 15,
     "ingredients_n_tags": [
         "15",
@@ -1363,10 +1314,7 @@
     "ingredients_with_unspecified_percent_sum": 88.7,
     "ingredients_without_ciqual_codes": [
         "en:emulsifier",
-        "en:flax",
         "en:natural-flavouring",
-        "en:rapeseed",
-        "en:sunflower",
         "en:sunflower-lecithin",
         "en:vegetable-oil",
         "en:vitamin-a",
@@ -1374,11 +1322,10 @@
         "en:vitamins",
         "fr:esters-de-phytosterols"
     ],
-    "ingredients_without_ciqual_codes_n": 11,
+    "ingredients_without_ciqual_codes_n": 8,
     "ingredients_without_ecobalyse_ids": [
-        "en:coconut",
+        "en:coconut-oil",
         "en:emulsifier",
-        "en:flax",
         "en:natural-flavouring",
         "en:sea-salt",
         "en:shea-butter",
@@ -1389,7 +1336,7 @@
         "en:vitamins",
         "fr:esters-de-phytosterols"
     ],
-    "ingredients_without_ecobalyse_ids_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 24,
@@ -1818,7 +1765,15 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

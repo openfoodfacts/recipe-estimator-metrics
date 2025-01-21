@@ -685,55 +685,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.167286655794781,
-            "likeliest_impacts": {
-                "Climate_change": 0.00172735468918681,
-                "EF_single_score": 0.000726365280627608
-            },
-            "likeliest_recipe": {
-                "en:e296": 0.198783591275031,
-                "en:e300": 0.094845611507502,
-                "en:e330": 0.198783591275031,
-                "en:e960": 0.0112489792714084,
-                "en:natural_flavouring": 0.094845611507502,
-                "en:natural_peach_flavouring": 0.094845611507502,
-                "en:natural_tea_flavouring": 0.094845611507502,
-                "en:peach": 0.997832018677261,
-                "en:sodium_citrate": 0.198783591275031,
-                "en:sugar": 3.93782269192438,
-                "en:tea_extract": 0.119739842241271,
-                "en:water": 93.7408251157566
-            },
-            "mass_ratio_uncharacterized": 0.0121448996710148,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e300",
-                    "en:e960",
-                    "en:tea-extract",
-                    "en:natural-flavouring",
-                    "en:e330",
-                    "en:e296"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0121448996710148,
-                "nutrition": 0.000841602687949218
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1936,25 +1887,32 @@
             "text": "extraits de th\u00e9"
         },
         {
-            "id": "en:natural-peach-flavouring",
+            "id": "en:natural-flavouring",
+            "ingredients": [
+                {
+                    "id": "en:natural-peach-flavouring",
+                    "is_in_taxonomy": 1,
+                    "text": "ar\u00f4mes naturels de p\u00eache"
+                },
+                {
+                    "id": "en:natural-tea-flavouring",
+                    "is_in_taxonomy": 1,
+                    "text": "ar\u00f4mes naturels de th\u00e9"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "ar\u00f4mes naturels de p\u00eache"
-        },
-        {
-            "id": "en:natural-tea-flavouring",
-            "is_in_taxonomy": 1,
-            "text": "ar\u00f4mes naturels de th\u00e9"
+            "text": "ar\u00f4mes naturels"
         },
         {
             "id": "en:natural-flavouring",
             "is_in_taxonomy": 1,
-            "text": "ar\u00f4mes naturels"
+            "text": "et ar\u00f4mes naturels"
         },
         {
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -2180,7 +2138,6 @@
         "en:acid",
         "en:antioxidant",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:e960",
         "en:natural-flavouring",
@@ -2188,14 +2145,14 @@
         "en:natural-tea-flavouring",
         "en:peach",
         "en:sodium-citrate",
-        "en:sweetener"
+        "en:sweetener",
+        "en:vitamin-c"
     ],
     "ingredients_without_ciqual_codes_n": 12,
     "ingredients_without_ecobalyse_ids": [
         "en:acid",
         "en:antioxidant",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:e960",
         "en:natural-flavouring",
@@ -2203,7 +2160,8 @@
         "en:natural-tea-flavouring",
         "en:sodium-citrate",
         "en:sweetener",
-        "en:tea-extract"
+        "en:tea-extract",
+        "en:vitamin-c"
     ],
     "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
@@ -2684,25 +2642,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

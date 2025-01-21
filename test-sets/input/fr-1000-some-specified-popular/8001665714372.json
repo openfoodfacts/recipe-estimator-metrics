@@ -611,59 +611,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.154563285882797,
-            "likeliest_impacts": {
-                "Climate_change": 0.220794508811349,
-                "EF_single_score": 0.0241578447658222
-            },
-            "likeliest_recipe": {
-                "de:weichweizenmehl": 33.1209547408928,
-                "en:corn": 3.75594345182685,
-                "en:durum_wheat_semolina": 1.03264854288673,
-                "en:egg": 14.1528954352416,
-                "en:garlic": 3.29024011447956,
-                "en:mascarpone": 3.29024011447958,
-                "en:natural_flavouring": 0.109068157894022,
-                "en:nutmeg_nut": 3.28693162341999,
-                "en:potato": 0.763295110898814,
-                "en:potato_flakes": 3.29024011447956,
-                "en:ricotta": 10.7537645300627,
-                "en:salt": 1.06776579619417,
-                "en:spinach": 10.4968121901629,
-                "en:starch": 3.29024011447956,
-                "en:sunflower_oil": 3.81643482034027,
-                "en:water": 1.06776579619417,
-                "en:whey_powder": 3.37117988561285,
-                "en:yeast": 0.418724391245553
-            },
-            "mass_ratio_uncharacterized": 0.0228280388822137,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring",
-                    "en:nutmeg-nut"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:nutmeg-nut"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0228280388822137,
-                "nutrition": 0.0228280388822137
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.1,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "1 compound ingredients whose percentage type is undefined."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 54,
     "ecoscore_tags": [
@@ -1159,9 +1106,8 @@
                     "text": "oeufs"
                 },
                 {
-                    "ciqual_food_code": "9610",
-                    "ecobalyse_code": "durum-wheat-semolina",
-                    "id": "en:durum-wheat-semolina",
+                    "ciqual_proxy_food_code": "9810",
+                    "id": "en:durum-wheat-semolina-pasta",
                     "is_in_taxonomy": 1,
                     "text": "semoule de bl\u00e9 dur"
                 }
@@ -1362,6 +1308,7 @@
         "en:breadcrumbs",
         "en:corn",
         "en:dough",
+        "en:durum-wheat-semolina-pasta",
         "en:filling",
         "en:garlic",
         "en:mascarpone",
@@ -1377,7 +1324,7 @@
         "fr:contiennent-lait",
         "fr:serum-de-lait-lait"
     ],
-    "ingredients_without_ecobalyse_ids_n": 17,
+    "ingredients_without_ecobalyse_ids_n": 18,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 46,
@@ -1798,7 +1745,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1807,12 +1762,28 @@
             "quantity_per_unit_value": 250,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 10

@@ -710,82 +710,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0869325867609404,
-            "likeliest_impacts": {
-                "Climate_change": 0.0854117662597062,
-                "EF_single_score": 0.0154612866075038
-            },
-            "likeliest_recipe": {
-                "en:cocoa_butter": 0.0862602635135135,
-                "en:cocoa_paste": 0.763906964245133,
-                "en:colza_oil": 9.8012878273857,
-                "en:dextrose": 0.100088665498137,
-                "en:e1200": 0.324641102803422,
-                "en:e170i": 0.134023543933894,
-                "en:e450": 0.0756862330341768,
-                "en:e472e": 0.0335699893962668,
-                "en:e500": 0.0756862330346671,
-                "en:e503": 0.0893256299948894,
-                "en:e504i": 0.106674552129349,
-                "en:elemental_iron": 0,
-                "en:flavouring": 0,
-                "en:oat_flakes": 12.65901589885,
-                "en:palm_fat": 0.569663172380516,
-                "en:salt": 0.0905234845754502,
-                "en:shea_butter": 0.235974335306802,
-                "en:skimmed_milk_powder": 0.0905234845754502,
-                "en:soya_lecithin": 0.119830252910296,
-                "en:sugar": 13.2780484061424,
-                "en:water": 1.6546983975196,
-                "en:wheat": 1.06378284864286,
-                "en:wheat_flour": 49.7850373164858,
-                "en:wheat_starch": 0.240698096063243,
-                "en:whole_wheat_flour": 3.72323997025001,
-                "en:wholemeal_barley_flour": 1.06378284864286,
-                "en:wholemeal_rye_flour": 4.04237482484286,
-                "fr:gruau_d_avoine": 6.16994052212858
-            },
-            "mass_ratio_uncharacterized": 0.140364540816308,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e504i",
-                    "en:dextrose",
-                    "en:wheat-starch",
-                    "en:e170i",
-                    "en:e450",
-                    "en:shea-butter",
-                    "en:e472e",
-                    "en:elemental-iron",
-                    "en:e500",
-                    "en:e1200",
-                    "en:flavouring",
-                    "fr:gruau d'avoine",
-                    "en:e503"
-                ],
-                "nutrition": [
-                    "fr:gruau d'avoine",
-                    "en:dextrose",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.140364540816308,
-                "nutrition": 0.0675282960850252
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.448275862068966,
-                "nutrition": 0.103448275862069
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 45%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%",
-                "The impact relative interquartile is high for Climate change (29%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 26,
     "ecoscore_tags": [
@@ -1747,7 +1671,7 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-rye-flour",
                     "is_in_taxonomy": 1,
                     "percent": 3.8,
@@ -1763,7 +1687,7 @@
                 },
                 {
                     "ciqual_food_code": "9480",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-spelt-flour",
                     "ingredients": [
                         {
@@ -1779,7 +1703,7 @@
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-barley-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1,
@@ -2982,48 +2906,112 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:packet"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:packet"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

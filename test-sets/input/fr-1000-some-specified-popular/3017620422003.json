@@ -835,50 +835,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0539895633164057,
-            "likeliest_impacts": {
-                "Climate_change": 0.172717449218484,
-                "EF_single_score": 0.023255035815491
-            },
-            "likeliest_recipe": {
-                "en:emulsifier": 0.388589430098073,
-                "en:hazelnut_oil": 12.806852015349,
-                "en:palm_oil": 16.6103749736231,
-                "en:sugar": 52.9709312507153,
-                "en:water": 4.90093151221936,
-                "fr:Cacao_Maigre_7": 3.94056985087663,
-                "fr:Lait__cr_m__En_Poudre_8": 6.8959972390341
-            },
-            "mass_ratio_uncharacterized": 0.11,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:Lait \u00c9cr\u00e9m\u00e9 En Poudre 8",
-                    "fr:Cacao Maigre 7"
-                ],
-                "nutrition": [
-                    "fr:Lait \u00c9cr\u00e9m\u00e9 En Poudre 8",
-                    "fr:Cacao Maigre 7"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.11,
-                "nutrition": 0.11
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.333333333333333
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 33%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 11%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 11%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 20,
     "ecoscore_tags": [
@@ -3884,10 +3840,17 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "ciqual_food_code": "42200",
-                    "id": "en:soya-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "42200",
+                            "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de SOJA"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de SOJA"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -4100,19 +4063,21 @@
     "ingredients_with_unspecified_percent_n": 5,
     "ingredients_with_unspecified_percent_sum": 73,
     "ingredients_without_ciqual_codes": [
+        "en:e322",
         "en:emulsifier",
         "en:vanillin",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 4,
     "ingredients_without_ecobalyse_ids": [
+        "en:e322",
         "en:emulsifier",
         "en:fat-reduced-cocoa",
         "en:soya-lecithin",
         "en:vanillin",
         "en:whey-powder"
     ],
-    "ingredients_without_ecobalyse_ids_n": 5,
+    "ingredients_without_ecobalyse_ids_n": 6,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 23,
@@ -4648,7 +4613,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:clear-glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:clear-glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -4657,12 +4630,28 @@
             "quantity_per_unit_value": "400",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-glass-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pot"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 209.4
@@ -4670,7 +4659,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pp-5-polypropylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -4679,12 +4676,28 @@
             "quantity_per_unit_value": "400",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 6.8
@@ -4692,7 +4705,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:non-corrugated-cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -4701,12 +4722,28 @@
             "quantity_per_unit_value": "400",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-paper-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-paper-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:backing"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:backing"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 1.8
@@ -4714,7 +4751,15 @@
         {
             "material": {
                 "id": {
-                    "id": "xx:82-c-pap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "xx:82-c-pap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -4723,12 +4768,28 @@
             "quantity_per_unit_value": "400",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-with-plastics-metal-and-bricks"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:seal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.4
@@ -4736,7 +4797,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paper"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
@@ -4745,19 +4814,43 @@
             "quantity_per_unit_value": "400",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-paper-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-paper-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:label"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -706,57 +706,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0421025471946658,
-            "likeliest_impacts": {
-                "Climate_change": 0.0923209040879861,
-                "EF_single_score": 0.0244198217790819
-            },
-            "likeliest_recipe": {
-                "en:coconut": 10.0215519075153,
-                "en:colour": 0.0660702987845438,
-                "en:e440a": 0.0660702987845737,
-                "en:e471": 9.64390377095823,
-                "en:flavouring": 0.104636134446805,
-                "en:flax": 5.64214872282447,
-                "en:rapeseed": 28.309728679435,
-                "en:salt": 0.121109620441078,
-                "en:shea_butter": 4.52925269345303,
-                "en:soya_lecithin": 2.8844820759418,
-                "en:thiamin": 0.062790498655541,
-                "en:water": 37.5333206114695
-            },
-            "mass_ratio_uncharacterized": 0.177906679486211,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e440a",
-                    "en:flavouring",
-                    "en:colour",
-                    "en:shea-butter",
-                    "en:e471",
-                    "en:thiamin"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.177906679486211,
-                "nutrition": 0.011111568586562
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -1758,7 +1707,7 @@
             "id": "en:colour",
             "ingredients": [
                 {
-                    "id": "en:e160ai",
+                    "id": "en:beta-carotene-dye",
                     "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
@@ -2002,8 +1951,8 @@
     "ingredients_with_unspecified_percent_n": 10,
     "ingredients_with_unspecified_percent_sum": 66.3,
     "ingredients_without_ciqual_codes": [
+        "en:beta-carotene-dye",
         "en:colour",
-        "en:e160ai",
         "en:e440a",
         "en:e471",
         "en:emulsifier",
@@ -2017,9 +1966,9 @@
     ],
     "ingredients_without_ciqual_codes_n": 12,
     "ingredients_without_ecobalyse_ids": [
+        "en:beta-carotene-dye",
         "en:coconut",
         "en:colour",
-        "en:e160ai",
         "en:e440a",
         "en:e471",
         "en:emulsifier",
@@ -2559,19 +2508,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

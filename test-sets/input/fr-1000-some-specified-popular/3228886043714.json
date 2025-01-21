@@ -705,62 +705,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.206881959745446,
-            "likeliest_impacts": {
-                "Climate_change": 0.00137028240344139,
-                "EF_single_score": 0.000332929745868672
-            },
-            "likeliest_recipe": {
-                "en:e296": 0.334745889031031,
-                "en:e300": 0.0111989931768245,
-                "en:e330": 1.27866353781831,
-                "en:e960": 0.0111989931768179,
-                "en:flavouring": 0.0111989931768144,
-                "en:fructose": 1.61340942684934,
-                "en:peach": 0.100015320417797,
-                "en:sodium_citrate": 0.100015320417797,
-                "en:sugar": 1.62912619825885,
-                "en:water": 93.7255639004598,
-                "fr:Plus_d_informations_sur_ra_org": 0,
-                "fr:____V_rifi__Rainforest_Alliance": 0,
-                "fr:extrait_de_th__noir___": 1.20018384501356
-            },
-            "mass_ratio_uncharacterized": 0.0316677350323828,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:\u207d\u00b9\u207e V\u00e9rifi\u00e9 Rainforest Alliance",
-                    "en:e300",
-                    "en:e960",
-                    "fr:extrait de th\u00e9 noir\u207d\u00b9\u207e",
-                    "en:flavouring",
-                    "fr:Plus d'informations sur ra.org",
-                    "en:e330",
-                    "en:e296"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "fr:Plus d'informations sur ra.org",
-                    "fr:\u207d\u00b9\u207e V\u00e9rifi\u00e9 Rainforest Alliance",
-                    "fr:extrait de th\u00e9 noir\u207d\u00b9\u207e"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0316677350323828,
-                "nutrition": 0.013895319777002
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.615384615384615,
-                "nutrition": 0.307692307692308
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 31%",
-                "The product has a high number of impact uncharacterized ingredients: 62%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 57,
     "ecoscore_tags": [
@@ -1898,7 +1842,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -2199,13 +2143,13 @@
         "en:acidity-regulator",
         "en:antioxidant",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:e960a",
         "en:flavouring",
         "en:peach",
         "en:sodium-citrate",
         "en:sweetener",
+        "en:vitamin-c",
         "fr:extrait-de-the-noir\u207d-\u207e",
         "fr:people-and-nature-l-humain-et-la-nature",
         "fr:plus-d-informations-sur-ra-org",
@@ -2217,13 +2161,13 @@
         "en:acidity-regulator",
         "en:antioxidant",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:e960a",
         "en:flavouring",
         "en:fructose",
         "en:sodium-citrate",
         "en:sweetener",
+        "en:vitamin-c",
         "fr:extrait-de-the-noir\u207d-\u207e",
         "fr:people-and-nature-l-humain-et-la-nature",
         "fr:plus-d-informations-sur-ra-org",
@@ -2693,7 +2637,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2702,12 +2654,28 @@
             "quantity_per_unit_value": "500",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 22.6
@@ -2715,18 +2683,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:hdpe-2-high-density-polyethylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 2.77
