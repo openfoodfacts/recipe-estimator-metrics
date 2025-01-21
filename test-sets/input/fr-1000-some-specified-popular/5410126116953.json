@@ -1462,18 +1462,25 @@
                     "text": "sugar"
                 },
                 {
-                    "ciqual_food_code": "16129",
-                    "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm-oil",
+                    "id": "en:vegetable-oil",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "16129",
+                            "ecobalyse_code": "refined-palm-oil",
+                            "id": "en:palm-oil",
+                            "is_in_taxonomy": 1,
+                            "text": "palm* vegetable oils"
+                        },
+                        {
+                            "ciqual_food_code": "17130",
+                            "ecobalyse_code": "rapeseed-oil",
+                            "id": "en:rapeseed-oil",
+                            "is_in_taxonomy": 1,
+                            "text": "rapeseed vegetable oils"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "palm* vegetable oils"
-                },
-                {
-                    "ciqual_food_code": "17130",
-                    "ecobalyse_code": "rapeseed-oil",
-                    "id": "en:rapeseed-oil",
-                    "is_in_taxonomy": 1,
-                    "text": "rapeseed vegetable oils"
+                    "text": "vegetable oils"
                 },
                 {
                     "id": "en:syrup",
@@ -1494,7 +1501,7 @@
                 },
                 {
                     "ciqual_food_code": "20900",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:soya-flour",
                     "is_in_taxonomy": 1,
                     "text": "soybean meal"
@@ -1808,9 +1815,10 @@
         "en:e500ii",
         "en:emulsifier",
         "en:raising-agent",
-        "en:syrup"
+        "en:syrup",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 8,
     "ingredients_without_ecobalyse_ids": [
         "en:acid",
         "en:biscuit",
@@ -1821,9 +1829,10 @@
         "en:raising-agent",
         "en:salt",
         "en:soya-lecithin",
-        "en:syrup"
+        "en:syrup",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ecobalyse_ids_n": 10,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 34,
@@ -2258,24 +2267,56 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:hdpe-2-high-density-polyethylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

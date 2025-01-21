@@ -666,88 +666,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.193152879768893,
-            "likeliest_impacts": {
-                "Climate_change": 0.181615898056265,
-                "EF_single_score": 0.0191625195132823
-            },
-            "likeliest_recipe": {
-                "en:cereal": 29.3303816183425,
-                "en:coconut_oil": 2.22719189106187,
-                "en:colza_oil": 2.22719189106187,
-                "en:e450i": 0.244138103169935,
-                "en:e472e": 5.50402839500603e-06,
-                "en:e500ii": 0.327349614736375,
-                "en:e503ii": 0.167411357622161,
-                "en:e504i": 0.498645978621213,
-                "en:elemental_iron": 0.240256085035344,
-                "en:fat_reduced_cocoa_powder": 2.22719189106187,
-                "en:flavouring": 0.686195859753237,
-                "en:icing_sugar": 2.22719189106187,
-                "en:oat_flakes": 8.9665005152163,
-                "en:palm_kernel_oil": 2.22719189106187,
-                "en:palm_oil": 2.22719189106187,
-                "en:salt": 0,
-                "en:skimmed_milk_powder": 2.44868745992608e-06,
-                "en:soya_lecithin": 0.371100300917899,
-                "en:thiamin": 0,
-                "en:vitamin_e": 0,
-                "en:vitamins": 0,
-                "en:water": 3.08956583908499e-06,
-                "en:wheat_flour": 29.3303816183425,
-                "en:wheat_starch": 2.22719189106187,
-                "en:whole_wheat_flour": 8.9665005152163,
-                "en:wholemeal_barley_flour": 2.52645924429741,
-                "en:wholemeal_buckwheat": 6.34446209931502,
-                "en:wholemeal_rye_flour": 0,
-                "en:wholemeal_spelt_flour": 2.52645924429741,
-                "fr:ar_me_noisette": 4.34126976949191e-07
-            },
-            "mass_ratio_uncharacterized": 0.424746321944886,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:wholemeal-buckwheat",
-                    "en:vitamins",
-                    "en:cereal",
-                    "en:vitamin-e",
-                    "en:e503ii",
-                    "en:thiamin",
-                    "en:elemental-iron",
-                    "en:e500ii",
-                    "en:flavouring",
-                    "en:e472e",
-                    "en:coconut-oil",
-                    "fr:ar\u00f4me noisette",
-                    "en:e504i",
-                    "en:e450i",
-                    "en:wheat-starch"
-                ],
-                "nutrition": [
-                    "en:wholemeal-buckwheat",
-                    "en:flavouring",
-                    "fr:ar\u00f4me noisette"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.424746321944886,
-                "nutrition": 0.0557323122868613
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.517241379310345,
-                "nutrition": 0.103448275862069
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 52%",
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentages were not used for estimating the impact.",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 42%",
-                "The impact relative interquartile is high for EF single score (26%)",
-                "The impact relative interquartile is high for Climate change (44%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 43,
     "ecoscore_tags": [
@@ -1711,7 +1629,7 @@
                 },
                 {
                     "ciqual_food_code": "9480",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-spelt-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1,
@@ -1719,7 +1637,7 @@
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-barley-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1,
@@ -1727,7 +1645,7 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-rye-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1,
@@ -1749,28 +1667,29 @@
             "id": "en:vegetable-oil",
             "ingredients": [
                 {
-                    "ecobalyse_code": "rapeseed-non-eu",
-                    "id": "en:rapeseed",
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
                     "is_in_taxonomy": 1,
-                    "text": "colza"
+                    "text": "huile de colza"
                 },
                 {
                     "ciqual_food_code": "16129",
                     "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm",
+                    "id": "en:palm-oil",
                     "is_in_taxonomy": 1,
-                    "text": "palme"
+                    "text": "huile de palme"
                 },
                 {
                     "ciqual_food_code": "16040",
                     "id": "en:coconut-oil",
                     "is_in_taxonomy": 1,
-                    "text": "coprah"
+                    "text": "huile de coprah"
                 },
                 {
                     "id": "en:palm-kernel-oil",
                     "is_in_taxonomy": 1,
-                    "text": "palmiste"
+                    "text": "huile de palmiste"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -1864,13 +1783,15 @@
         },
         {
             "id": "en:vitamins",
+            "ingredients": [
+                {
+                    "id": "en:vitamin-e",
+                    "is_in_taxonomy": 1,
+                    "text": "vitamine E"
+                }
+            ],
             "is_in_taxonomy": 1,
             "text": "vitamines"
-        },
-        {
-            "id": "en:vitamin-e",
-            "is_in_taxonomy": 1,
-            "text": "vitamine E"
         },
         {
             "id": "en:thiamin",
@@ -2381,7 +2302,6 @@
         "en:minerals",
         "en:palm-kernel-oil",
         "en:raising-agent",
-        "en:rapeseed",
         "en:thiamin",
         "en:vegetable-oil",
         "en:vitamin-e",
@@ -2389,7 +2309,7 @@
         "en:wholemeal-cereal",
         "fr:arome-noisette"
     ],
-    "ingredients_without_ciqual_codes_n": 18,
+    "ingredients_without_ciqual_codes_n": 17,
     "ingredients_without_ecobalyse_ids": [
         "en:cereal",
         "en:coconut-oil",
@@ -2862,24 +2782,56 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

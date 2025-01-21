@@ -651,63 +651,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.123624357888201,
-            "likeliest_impacts": {
-                "Climate_change": 1.10266943208622,
-                "EF_single_score": 0.0864235034180845
-            },
-            "likeliest_recipe": {
-                "en:almond": 3.90765560736926,
-                "en:butter_milk_concentrate": 4.97227485372739,
-                "en:cocoa_butter": 4.97227485372739,
-                "en:cocoa_paste": 21.330038446023,
-                "en:flavouring": 3.90417306233893,
-                "en:hazelnut": 7.66431217403466,
-                "en:lactose": 1.84511015290216,
-                "en:malt_extract_of_barley": 1.80578267023423,
-                "en:milk_powder": 4.0369410894123,
-                "en:skimmed_milk_powder": 1.80578267023423,
-                "en:soya_lecithin": 3.58151553841423,
-                "en:sugar": 28.4470848946162,
-                "en:vegetable_fat_of_palm": 10.8939339324916,
-                "en:water": 0.278617129021381
-            },
-            "mass_ratio_uncharacterized": 0.182806566678955,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:butter milk concentrate",
-                    "en:malt extract of barley",
-                    "en:flavouring",
-                    "en:vegetable fat of palm",
-                    "en:lactose"
-                ],
-                "nutrition": [
-                    "en:butter milk concentrate",
-                    "en:flavouring",
-                    "en:vegetable fat of palm",
-                    "en:malt extract of barley"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.182806566678955,
-                "nutrition": 0.16336674069157
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.266666666666667
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 27%",
-                "The product has a high number of impact uncharacterized ingredients: 33%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 16%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 18%",
-                "The impact relative interquartile is high for Climate change (25%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 27,
     "ecoscore_tags": [
@@ -1735,6 +1678,7 @@
         "poudre-de-lait-ecreme",
         "extrait-de-malt-d-orge"
     ],
+    "ingredients_lc": "en",
     "ingredients_n": 18,
     "ingredients_n_tags": [
         "18",
@@ -2275,12 +2219,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:container"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:container"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

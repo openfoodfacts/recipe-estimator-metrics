@@ -781,46 +781,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0266024178093454,
-            "likeliest_impacts": {
-                "Climate_change": 0.345065384907257,
-                "EF_single_score": 0.0347679103942828
-            },
-            "likeliest_recipe": {
-                "en:fat_reduced_cocoa": 7.47317084537947,
-                "en:hazelnut": 13.128543377018,
-                "en:palm_oil": 19.6476201906632,
-                "en:skimmed_milk_powder": 8.78602518308127,
-                "en:soya": 0.623765120291837,
-                "en:sugar": 49.0827623707763,
-                "en:vanillin": 0.558083667102035,
-                "en:water": 1.68882445351855
-            },
-            "mass_ratio_uncharacterized": 0.0795358555595444,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:fat-reduced-cocoa",
-                    "en:vanillin"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0795358555595444,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 29%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 30,
     "ecoscore_tags": [
@@ -4291,10 +4251,17 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "ciqual_food_code": "42200",
-                    "id": "en:soya-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "42200",
+                            "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de SOJA"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de SOJA"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -4480,17 +4447,19 @@
     "ingredients_with_unspecified_percent_n": 4,
     "ingredients_with_unspecified_percent_sum": 70.9,
     "ingredients_without_ciqual_codes": [
+        "en:e322",
         "en:emulsifier",
         "en:vanillin"
     ],
-    "ingredients_without_ciqual_codes_n": 2,
+    "ingredients_without_ciqual_codes_n": 3,
     "ingredients_without_ecobalyse_ids": [
+        "en:e322",
         "en:emulsifier",
         "en:fat-reduced-cocoa",
         "en:soya-lecithin",
         "en:vanillin"
     ],
-    "ingredients_without_ecobalyse_ids_n": 4,
+    "ingredients_without_ecobalyse_ids_n": 5,
     "interface_version_created": "20120622",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 21,
@@ -5026,18 +4995,42 @@
         {
             "material": {
                 "id": {
-                    "id": "xx:82-c-pap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "xx:82-c-pap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:seal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.3
@@ -5045,18 +5038,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:pp-5-polypropylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pp-5-polypropylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": "8"
@@ -5064,7 +5081,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:clear-glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:clear-glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
@@ -5073,12 +5098,28 @@
             "quantity_per_unit_value": "1000",
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-glass-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": "443"
@@ -5086,18 +5127,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:non-corrugated-cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "1",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:backing"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:backing"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 2.2
@@ -5105,18 +5170,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:paper"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paper"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": "2",
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:label"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:label"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.1

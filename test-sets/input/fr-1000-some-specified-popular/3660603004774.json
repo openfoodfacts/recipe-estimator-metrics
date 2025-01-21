@@ -618,51 +618,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0605633353324274,
-            "likeliest_impacts": {
-                "Climate_change": 0.0912130714988287,
-                "EF_single_score": 0.0246760383482144
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 4.90449326954528,
-                "en:chervil": 1.50138012014543,
-                "en:colour": 0.379814323423582,
-                "en:colza_oil": 49.5183525250184,
-                "en:egg_yolk": 3.5281213672859,
-                "en:hot_chili_peppers": 0.707566963190201,
-                "en:lemon_juice_from_concentrate": 1.06383751797113,
-                "en:modified_starch": 0.443132658345301,
-                "en:natural_flavouring": 0.443132658345301,
-                "en:salt": 2.80782135286222,
-                "en:shallot": 1.51172064900346,
-                "en:sugar": 2.31842246356364,
-                "en:tarragon": 1.51172064900346,
-                "en:water": 30.1418600825276
-            },
-            "mass_ratio_uncharacterized": 0.0105105482960549,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring",
-                    "en:colour"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0105105482960549,
-                "nutrition": 0.00618555543140965
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0.0714285714285714
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 42,
     "ecoscore_tags": [
@@ -1306,7 +1261,7 @@
             "id": "en:colour",
             "ingredients": [
                 {
-                    "id": "en:e160ai",
+                    "id": "en:beta-carotene-dye",
                     "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
@@ -1486,6 +1441,7 @@
         "colorant",
         "beta-carotene"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 15,
     "ingredients_n_tags": [
         "15",
@@ -1562,17 +1518,17 @@
     "ingredients_with_unspecified_percent_n": 12,
     "ingredients_with_unspecified_percent_sum": 97.5303571428571,
     "ingredients_without_ciqual_codes": [
+        "en:beta-carotene-dye",
         "en:chervil",
         "en:colour",
-        "en:e160ai",
         "en:natural-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 4,
     "ingredients_without_ecobalyse_ids": [
         "en:alcohol-vinegar",
+        "en:beta-carotene-dye",
         "en:chervil",
         "en:colour",
-        "en:e160ai",
         "en:hot-chili-peppers",
         "en:lemon-juice-from-concentrate",
         "en:modified-starch",
@@ -2024,12 +1980,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

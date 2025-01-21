@@ -686,62 +686,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0730942067116005,
-            "likeliest_impacts": {
-                "Climate_change": 0.0968616625701904,
-                "EF_single_score": 0.0218523943762835
-            },
-            "likeliest_recipe": {
-                "en:barley_flakes": 8.4899523080561,
-                "en:blackcurrant": 1.01839629888257,
-                "en:blueberry": 0.809462644666113,
-                "en:cranberry": 0.788620282271224,
-                "en:desiccated_coconut": 2.4136465634419,
-                "en:natural_flavouring": 1.56149893884987,
-                "en:oat_flakes": 47.3600227746671,
-                "en:oat_flour": 9.15592850304279,
-                "en:rice_flour": 2.71617531024668,
-                "en:sugar": 23.0515028784489,
-                "en:sunflower_oil": 4.51279942515213,
-                "en:water": 0.268928660127456,
-                "fr:Informations_sur_les_allerg_nes": 1.55177225238477,
-                "fr:autres_sources_de_gluten": 0.0955489928896943,
-                "fr:y_compris_les_c_r_ales_contenant_du_gluten_sont_indiqu_s_en_gras": 0.864913199668812
-            },
-            "mass_ratio_uncharacterized": 0.139136787702587,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:autres sources de gluten",
-                    "fr:Informations sur les allerg\u00e8nes",
-                    "en:barley-flakes",
-                    "fr:y compris les c\u00e9r\u00e9ales contenant du gluten sont indiqu\u00e9s en gras",
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "fr:autres sources de gluten",
-                    "fr:y compris les c\u00e9r\u00e9ales contenant du gluten sont indiqu\u00e9s en gras",
-                    "en:natural-flavouring",
-                    "fr:Informations sur les allerg\u00e8nes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.139136787702587,
-                "nutrition": 0.049660014747114
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.357142857142857,
-                "nutrition": 0.285714285714286
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 29%",
-                "The product has a high number of impact uncharacterized ingredients: 36%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 65,
     "ecoscore_tags": [
@@ -1586,7 +1530,7 @@
                 },
                 {
                     "ciqual_food_code": "9310",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:oat-flour",
                     "is_in_taxonomy": 1,
                     "text": "farine d'avoine"
@@ -1614,22 +1558,29 @@
             "text": "huile v\u00e9g\u00e9tale"
         },
         {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
+            "id": "en:oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                },
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huile de colza"
-        },
-        {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
-            "is_in_taxonomy": 1,
-            "text": "huile de tournesol"
+            "text": "huile"
         },
         {
             "ciqual_food_code": "9520",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rice-flour",
             "is_in_taxonomy": 1,
             "text": "farine de riz"
@@ -1959,10 +1910,11 @@
         "en:barley-flakes",
         "en:berries",
         "en:natural-flavouring",
+        "en:oil",
         "en:vegetable-oil",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ciqual_codes_n": 5,
+    "ingredients_without_ciqual_codes_n": 6,
     "ingredients_without_ecobalyse_ids": [
         "en:barley-flakes",
         "en:berries",
@@ -1971,11 +1923,12 @@
         "en:desiccated-coconut",
         "en:natural-flavouring",
         "en:oat-flakes",
+        "en:oil",
         "en:redcurrant",
         "en:vegetable-oil",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ecobalyse_ids_n": 10,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 30,
@@ -2419,36 +2372,84 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

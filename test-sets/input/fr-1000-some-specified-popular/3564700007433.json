@@ -641,46 +641,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.116763536449743,
-            "likeliest_impacts": {
-                "Climate_change": 0.144453747154372,
-                "EF_single_score": 0.0127154854461795
-            },
-            "likeliest_recipe": {
-                "en:cream": 3.19980475393154,
-                "en:lactic_ferments": 1.40508629480979,
-                "en:milk_mineral_concentrate": 1.48181740418414,
-                "en:pasteurized_semi_skimmed_milk": 110.582111986426,
-                "en:vitamin_d": 0.368919300869686,
-                "en:water": 1.5264012595558
-            },
-            "mass_ratio_uncharacterized": 0.139592151729917,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamin-d",
-                    "en:lactic-ferments",
-                    "en:milk-mineral-concentrate"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.139592151729917,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:lactic-ferments). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 14%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1433,6 +1393,7 @@
         "ferments-lactiques",
         "dont-lactose"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 5,
     "ingredients_n_tags": [
         "5",
@@ -1932,12 +1893,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pot"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

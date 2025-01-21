@@ -676,62 +676,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.122462991185764,
-            "likeliest_impacts": {
-                "Climate_change": 0.0919307171671212,
-                "EF_single_score": 0.0171962863586353
-            },
-            "likeliest_recipe": {
-                "en:barley_flour": 9.77823122297126,
-                "en:barley_malt_flour": 10.0992059164723,
-                "en:buckwheat_flour": 9.76051506398706,
-                "en:e300": 0.0328257192074339,
-                "en:flax_seed": 2.21910331640172,
-                "en:glucose_fructose_syrup": 0.76448565894889,
-                "en:oat_flakes": 10.9347684892723,
-                "en:palm_oil": 1.95464609560709,
-                "en:rice_flour": 9.64040429058588,
-                "en:rye_flour": 9.77823122297126,
-                "en:salt": 0.721215548682987,
-                "en:sesame_seeds": 1.22944128850054,
-                "en:sugar": 0.943951926360843,
-                "en:water": 3.7789754647755,
-                "en:wheat_flour": 19.569886715835,
-                "en:wheat_gluten": 0.391900825665597,
-                "en:wheat_semolina": 0.0328257192074347,
-                "en:wheat_starch": 1.49404706009848,
-                "en:yeast": 2.77928684026679,
-                "fr:flocons_de_ble_malte": 12.1408637196241
-            },
-            "mass_ratio_uncharacterized": 0.126258870037651,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:wheat-starch",
-                    "fr:flocons-de-ble-malte",
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.126258870037651,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.157894736842105,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "1 compound ingredients whose percentage type is undefined.",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%",
-                "Parameter use_defined_prct has been set to False in order to get a result.",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 69,
     "ecoscore_tags": [
@@ -1935,7 +1879,7 @@
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:barley-malt-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1.5,
@@ -1943,7 +1887,7 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9532",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:rye-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1.2,
@@ -1958,7 +1902,7 @@
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:barley-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1.2,
@@ -1966,7 +1910,7 @@
                 },
                 {
                     "ciqual_food_code": "9540",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:buckwheat-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1.2,
@@ -1974,7 +1918,7 @@
                 },
                 {
                     "ciqual_food_code": "9520",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:rice-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1.2,
@@ -2886,25 +2830,57 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

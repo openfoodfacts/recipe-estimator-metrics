@@ -59,7 +59,7 @@
         "en:e307",
         "en:e471"
     ],
-    "allergens": "en:gluten,en:milk,en:nuts, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:nuts, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, milk, hazelnuts",
     "allergens_from_user": "(en) en:gluten,en:milk,en:nuts, en:milk",
     "allergens_hierarchy": [
@@ -490,105 +490,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.029650266707878,
-            "likeliest_impacts": {
-                "Climate_change": 0.275396535397416,
-                "EF_single_score": 0.0233486690666428
-            },
-            "likeliest_recipe": {
-                "en:b12": 0.411434536304928,
-                "en:condensed_skimmed_milk": 16.7440349701768,
-                "en:condensed_whey": 16.7440349701767,
-                "en:e101": 0,
-                "en:e307a": 0,
-                "en:e341": 0.324450754153907,
-                "en:e375": 0,
-                "en:e504i": 0.621593091130654,
-                "en:emulsifians": 0.93990891119029,
-                "en:folic_acid": 1.08095836230563,
-                "en:fructose": 2.86618348782039,
-                "en:l_ascorbyl_6_palmitate": 0,
-                "en:lean_cocoa_powder": 17.2404081428614,
-                "en:mono__and_fatty_acids": 0,
-                "en:noisettes": 0,
-                "en:orge_and_cocoa_malt_extract_ovomaltine_33__matte_extract_orge": 65.6164787526813,
-                "en:pantothenic_acid": 0,
-                "en:rapeseed_oil": 0.777260550381266,
-                "en:salt": 0,
-                "en:sugar": 2.86618348782039,
-                "en:sunflower_lecithin": 0,
-                "en:thiamin": 0,
-                "en:totally_hydrogenated_rapeseed_oil": 0,
-                "en:vanillin_aroma": 0,
-                "en:vanillin_aroma__sugar": 0.0281688528082232,
-                "en:vitamin_a": 0,
-                "en:vitamin_b6": 0.514639049040638,
-                "en:vitamin_b8": 0,
-                "en:vitamin_c": 1.10948176450027,
-                "en:vitamin_e": 0.774542576806704,
-                "en:vitamins": 0,
-                "en:water": 0
-            },
-            "mass_ratio_uncharacterized": 0.848316939965358,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:thiamin",
-                    "en:vitamin-a",
-                    "en:mono- and fatty acids",
-                    "en:vanillin aroma) sugar",
-                    "en:l-ascorbyl-6-palmitate",
-                    "en:noisettes",
-                    "en:vitamin-e",
-                    "en:vitamin-c",
-                    "en:e307a",
-                    "en:lean cocoa powder",
-                    "en:e341",
-                    "en:folic-acid",
-                    "en:e101",
-                    "en:condensed-whey",
-                    "en:vitamin-b6",
-                    "en:vanillin aroma",
-                    "en:orge and cocoa malt extract ovomaltine 33% matte extract orge",
-                    "en:vitamins",
-                    "en:vitamin-b8",
-                    "en:b12",
-                    "en:e375",
-                    "en:emulsifians",
-                    "en:pantothenic-acid",
-                    "en:e504i",
-                    "en:totally hydrogenated rapeseed oil"
-                ],
-                "nutrition": [
-                    "en:noisettes",
-                    "en:b12",
-                    "en:lean cocoa powder",
-                    "en:emulsifians",
-                    "en:mono- and fatty acids",
-                    "en:vanillin aroma) sugar",
-                    "en:vanillin aroma",
-                    "en:totally hydrogenated rapeseed oil",
-                    "en:orge and cocoa malt extract ovomaltine 33% matte extract orge"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.848316939965358,
-                "nutrition": 0.667526577652386
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.818181818181818,
-                "nutrition": 0.303030303030303
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 30%",
-                "The product has a high number of impact uncharacterized ingredients: 82%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 67%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 85%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "unknown",
     "ecoscore_tags": [
         "unknown"
@@ -1652,21 +1553,27 @@
                     "text": "fructose"
                 },
                 {
-                    "id": "en:mineral-salts",
+                    "id": "en:minerals",
                     "ingredients": [
+                        {
+                            "ciqual_food_code": "11058",
+                            "id": "en:salt",
+                            "is_in_taxonomy": 1,
+                            "text": "salts"
+                        },
                         {
                             "id": "en:e504i",
                             "is_in_taxonomy": 1,
                             "text": "magnesium carbonate"
-                        },
-                        {
-                            "id": "en:e341",
-                            "is_in_taxonomy": 1,
-                            "text": "calcium phosphate"
                         }
                     ],
-                    "is_in_taxonomy": 0,
-                    "text": "mineral salts"
+                    "is_in_taxonomy": 1,
+                    "text": "mineral"
+                },
+                {
+                    "id": "en:e341",
+                    "is_in_taxonomy": 1,
+                    "text": "calcium phosphate"
                 },
                 {
                     "ciqual_food_code": "17130",
@@ -2395,7 +2302,7 @@
         "en:foic-ode",
         "en:folic-acid",
         "en:malt-extract-from-orge-and-cocoa-ovomaltine",
-        "en:mineral-salts",
+        "en:minerals",
         "en:orge-malt-extract",
         "en:pantothenic-acid",
         "en:pp-b",
@@ -2428,7 +2335,7 @@
         "en:folic-acid",
         "en:fructose",
         "en:malt-extract-from-orge-and-cocoa-ovomaltine",
-        "en:mineral-salts",
+        "en:minerals",
         "en:orge-malt-extract",
         "en:pantothenic-acid",
         "en:pp-b",
@@ -2911,31 +2818,71 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-glass-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-glass-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:pot"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:pot"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:seal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:seal"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

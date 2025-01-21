@@ -701,63 +701,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.173962523970083,
-            "likeliest_impacts": {
-                "Climate_change": 0.0130691108834871,
-                "EF_single_score": 0.00501307923933786
-            },
-            "likeliest_recipe": {
-                "de:Kann_Spuren_von_anderen_Schalenfr_chten_enthalten": 0.089933812840686,
-                "de:Nach_dem__ffnen_im_K_hlschrank_lagern_und_innerhalb_von_2_3_Tagen_verzehren": 0,
-                "de:Unge_ffnet": 0,
-                "de:Vor_Gebrauch_sch_tteln": 0,
-                "de:Vor_W_rme_sch_tzen_und_trocken_lagern": 0,
-                "en:carob_seed_flour": 1.93768120032165,
-                "en:dry_roasted_almonds": 2.31337456255404,
-                "en:e322": 1.83022882722492,
-                "en:e418": 1.92016264006561,
-                "en:sea_salt": 1.93768120032165,
-                "en:water": 90.5524404764124
-            },
-            "mass_ratio_uncharacterized": 0.0504951324505924,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "de:Vor Gebrauch sch\u00fctteln",
-                    "en:e322",
-                    "de:Unge\u00f6ffnet",
-                    "de:Nach dem \u00d6ffnen im K\u00fchlschrank lagern und innerhalb von 2-3 Tagen verzehren",
-                    "en:carob-seed-flour",
-                    "en:e418",
-                    "de:Vor W\u00e4rme sch\u00fctzen und trocken lagern",
-                    "de:Kann Spuren von anderen Schalenfr\u00fcchten enthalten"
-                ],
-                "nutrition": [
-                    "de:Vor Gebrauch sch\u00fctteln",
-                    "de:Unge\u00f6ffnet",
-                    "de:Nach dem \u00d6ffnen im K\u00fchlschrank lagern und innerhalb von 2-3 Tagen verzehren",
-                    "en:e418",
-                    "de:Vor W\u00e4rme sch\u00fctzen und trocken lagern",
-                    "de:Kann Spuren von anderen Schalenfr\u00fcchten enthalten"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0504951324505924,
-                "nutrition": 0.0263655304486178
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.727272727272727,
-                "nutrition": 0.545454545454545
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 55%",
-                "The product has a high number of impact uncharacterized ingredients: 73%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 85,
     "ecoscore_tags": [
@@ -2509,7 +2452,7 @@
         },
         {
             "ciqual_food_code": "15041",
-            "id": "en:dry-roasted-almonds",
+            "id": "en:roasted-almonds",
             "is_in_taxonomy": 1,
             "percent": 2.3,
             "text": "_Mandeln_ ger\u00f6stet"
@@ -2525,7 +2468,7 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:carob-seed-flour",
                     "is_in_taxonomy": 1,
                     "text": "Johannisbrotkernmehl"
@@ -2647,11 +2590,11 @@
     ],
     "ingredients_without_ciqual_codes_n": 5,
     "ingredients_without_ecobalyse_ids": [
-        "en:dry-roasted-almonds",
         "en:e322",
         "en:e418",
         "en:emulsifier",
         "en:nut",
+        "en:roasted-almonds",
         "en:sea-salt",
         "en:stabiliser"
     ],
@@ -3175,7 +3118,15 @@
         {
             "material": {
                 "id": {
-                    "id": "xx:84-c-pap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "xx:84-c-pap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3184,12 +3135,28 @@
             "quantity_per_unit_value": 1,
             "recycling": {
                 "id": {
-                    "id": "de:Gelbe Tonne"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "de:Gelbe Tonne"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:brick"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 20
@@ -3197,7 +3164,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:hdpe-2-high-density-polyethylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:hdpe-2-high-density-polyethylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3206,12 +3181,28 @@
             "quantity_per_unit_value": 1,
             "recycling": {
                 "id": {
-                    "id": "de:Gelbe Tonne"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "de:Gelbe Tonne"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 3

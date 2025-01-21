@@ -632,74 +632,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.216395762857171,
-            "likeliest_impacts": {
-                "Climate_change": 0.0634147920006614,
-                "EF_single_score": 0.013021174167865
-            },
-            "likeliest_recipe": {
-                "en:_Barley__Fibre": 1.53446975938977,
-                "en:barley_flour": 1.53446975938977,
-                "en:barley_malt_flour": 1.63306921425878,
-                "en:brown_flax_seeds": 1.84842099849634,
-                "en:calcium": 12.9262698554587,
-                "en:caramelised_sugar": 1.53446975938977,
-                "en:e282": 1.53446975938971,
-                "en:e300": 1.53446975938977,
-                "en:e375": 10.953056948899,
-                "en:e472e": 1.53446975938977,
-                "en:golden_flax_seeds": 1.8485101106479,
-                "en:granulated_sugar": 1.63306921425878,
-                "en:iron": 12.6892153972329,
-                "en:millet_seed": 1.8485101106479,
-                "en:poppyseed": 1.84851011064836,
-                "en:pumpkin_seed": 1.84842099849634,
-                "en:salt": 1.68052883165209,
-                "en:soya_flour": 1.68052883165209,
-                "en:sunflower_seed": 3.69693110914424,
-                "en:thiamin": 6.55112701801404,
-                "en:water": 24.2790584007007,
-                "en:wheat_protein": 1.68052883165209,
-                "en:yeast": 1.68052883165209
-            },
-            "mass_ratio_uncharacterized": 0.596743630991622,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e375",
-                    "en:millet-seed",
-                    "en:thiamin",
-                    "en:e472e",
-                    "en:e282",
-                    "en:_Barley_ Fibre",
-                    "en:calcium",
-                    "en:iron",
-                    "en:e300",
-                    "en:poppyseed",
-                    "en:wheat-protein"
-                ],
-                "nutrition": [
-                    "en:poppyseed",
-                    "en:_Barley_ Fibre"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.596743630991622,
-                "nutrition": 0.0104065985066094
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.458333333333333,
-                "nutrition": 0.0833333333333333
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 46%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 60%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 77,
     "ecoscore_tags": [
@@ -1275,14 +1207,14 @@
         },
         {
             "ciqual_food_code": "20900",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:soya-flour",
             "is_in_taxonomy": 1,
             "text": "Soya Flour"
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:barley-malt-flour",
             "is_in_taxonomy": 1,
             "text": "Malted Barley Flour"
@@ -1296,7 +1228,7 @@
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:barley-flour",
             "is_in_taxonomy": 1,
             "text": "Barley Flour"
@@ -2172,17 +2104,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:ldpe-4-low-density-polyethylene"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:ldpe-4-low-density-polyethylene"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -463,45 +463,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.182406211695995,
-            "likeliest_impacts": {
-                "Climate_change": 0.0145442166478035,
-                "EF_single_score": 0.00635153103568488
-            },
-            "likeliest_recipe": {
-                "de:orangeschalenextrakt": 1.07677716023552,
-                "en:carbonated_water": 59.3899156019455,
-                "en:grapefruit": 0.457482555520248,
-                "en:lemon": 1.01610155643656,
-                "en:mandarin": 0.995694213496275,
-                "en:natural_orange_flavouring": 0.855428658558081,
-                "en:orange": 11.5924550536671,
-                "en:orange_juice": 17.2469817404482,
-                "en:sugar": 7.03913012648063,
-                "en:water": 0.770986041213243
-            },
-            "mass_ratio_uncharacterized": 0,
-            "uncharacterized_ingredients": {
-                "impact": [],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The impact relative interquartile is high for EF single score (37%)",
-                "The impact relative interquartile is high for Climate change (34%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "not-applicable",
     "ecoscore_tags": [
         "not-applicable"
@@ -1443,9 +1404,9 @@
             "id": "en:pulp",
             "ingredients": [
                 {
-                    "ciqual_proxy_food_code": "13034",
+                    "ciqual_food_code": "13034",
                     "ecobalyse_code": "orange-non-eu",
-                    "id": "en:orange",
+                    "id": "en:orange-pulp",
                     "is_in_taxonomy": 1,
                     "text": "orange"
                 },
@@ -1587,6 +1548,7 @@
         "extrait-de-zeste-d-orange",
         "aromes-naturels-d-orange"
     ],
+    "ingredients_lc": "en",
     "ingredients_n": 12,
     "ingredients_n_tags": [
         "12",
@@ -2084,7 +2046,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

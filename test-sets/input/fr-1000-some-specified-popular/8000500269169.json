@@ -699,49 +699,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.00766291688275983,
-            "likeliest_impacts": {
-                "Climate_change": 0.636518846088833,
-                "EF_single_score": 0.0575168049154912
-            },
-            "likeliest_recipe": {
-                "en:e500ii": 0.129270582532194,
-                "en:fat_reduced_cocoa": 4.058413532081,
-                "en:palm_oil": 21.9703103304332,
-                "en:salt": 0.46482763694722,
-                "en:skimmed_milk_powder": 28.408894724567,
-                "en:soya": 0.267285948677925,
-                "en:sugar": 27.6619363786227,
-                "en:sunflower_oil": 1.53243142149618,
-                "en:vanillin": 0.606436820623604,
-                "en:water": 0.634178489230179,
-                "en:wheat_flour": 15.7263524368139
-            },
-            "mass_ratio_uncharacterized": 0.0458628235688967,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e500ii",
-                    "en:fat-reduced-cocoa",
-                    "en:vanillin"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0458628235688967,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3,
-                "nutrition": 0
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 30%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 22,
     "ecoscore_tags": [
@@ -2111,10 +2068,17 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "ciqual_food_code": "42200",
-                    "id": "en:soya-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "42200",
+                            "id": "en:soya-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de SOJA"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de SOJA"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -2278,13 +2242,15 @@
     "ingredients_with_unspecified_percent_n": 6,
     "ingredients_with_unspecified_percent_sum": 52.5,
     "ingredients_without_ciqual_codes": [
+        "en:e322",
         "en:e500ii",
         "en:emulsifier",
         "en:raising-agent",
         "en:vanillin"
     ],
-    "ingredients_without_ciqual_codes_n": 4,
+    "ingredients_without_ciqual_codes_n": 5,
     "ingredients_without_ecobalyse_ids": [
+        "en:e322",
         "en:e500ii",
         "en:emulsifier",
         "en:fat-reduced-cocoa-powder",
@@ -2293,7 +2259,7 @@
         "en:soya-lecithin",
         "en:vanillin"
     ],
-    "ingredients_without_ecobalyse_ids_n": 7,
+    "ingredients_without_ecobalyse_ids_n": 8,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 28,

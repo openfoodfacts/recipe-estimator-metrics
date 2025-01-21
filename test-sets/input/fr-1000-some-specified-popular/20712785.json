@@ -625,64 +625,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.029205528638959,
-            "likeliest_impacts": {
-                "Climate_change": 0.0413184881637319,
-                "EF_single_score": 0.00895508381966311
-            },
-            "likeliest_recipe": {
-                "en:brown_flax_seeds": 1.19584231555217,
-                "en:buckwheat_flour": 0.199307052592029,
-                "en:colza_oil": 2.84527511572841,
-                "en:e282": 0.431252180868464,
-                "en:e300": 1.8987927514151,
-                "en:e471": 0.138018850455683,
-                "en:malted_barley": 0.199307052592029,
-                "en:oat_flakes": 0.6975746840721,
-                "en:rice_flour": 0.199307052592029,
-                "en:rye_flour": 2.88995226258442,
-                "en:salt": 1.82433329034732,
-                "en:sugar": 2.78630697515488,
-                "en:sunflower_seed": 4.08579457813659,
-                "en:water": 22.600389905007,
-                "en:wheat": 0.996535262960143,
-                "en:wheat_bran": 0.6975746840721,
-                "en:wheat_flour": 52.8163689368876,
-                "en:wheat_gluten": 0.334937229488053,
-                "en:yeast": 2.19930844208476,
-                "fr:farine_d_orge_0_2___germe_de__bl__": 0.199307052592029,
-                "fr:levain_de__seigle__d_sactiv__d_shydrat_": 0.418040620831391
-            },
-            "mass_ratio_uncharacterized": 0.0191669464175857,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e282",
-                    "en:e300",
-                    "en:e471",
-                    "fr:levain de _seigle_ d\u00e9sactiv\u00e9 d\u00e9shydrat\u00e9",
-                    "fr:farine d'orge 0,2\u00a0% germe de _bl\u00e9_"
-                ],
-                "nutrition": [
-                    "fr:levain de _seigle_ d\u00e9sactiv\u00e9 d\u00e9shydrat\u00e9",
-                    "fr:farine d'orge 0,2\u00a0% germe de _bl\u00e9_"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0191669464175857,
-                "nutrition": 0.00770720742268697
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.238095238095238,
-                "nutrition": 0.0952380952380952
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1204,7 +1146,7 @@
         },
         {
             "ciqual_proxy_food_code": "9532",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rye-flour",
             "is_in_taxonomy": 1,
             "percent": 2.9,
@@ -1250,7 +1192,7 @@
         },
         {
             "ciqual_food_code": "9480",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:spelt-flour",
             "ingredients": [
                 {
@@ -1315,7 +1257,7 @@
         },
         {
             "ciqual_food_code": "9520",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rice-flour",
             "is_in_taxonomy": 1,
             "percent": 0.2,
@@ -1330,7 +1272,7 @@
         },
         {
             "ciqual_food_code": "9540",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:buckwheat-flour",
             "is_in_taxonomy": 1,
             "percent": 0.2,
@@ -1662,6 +1604,7 @@
         "e471",
         "e472d"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 25,
     "ingredients_n_tags": [
         "25",
@@ -2217,17 +2160,41 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

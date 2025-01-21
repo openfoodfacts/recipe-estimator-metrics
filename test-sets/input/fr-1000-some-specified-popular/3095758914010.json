@@ -667,53 +667,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0135007111193128,
-            "likeliest_impacts": {
-                "Climate_change": 0.484104386510862,
-                "EF_single_score": 0.0716130828716587
-            },
-            "likeliest_recipe": {
-                "en:celery": 1.01391602949175,
-                "en:concentrated_celery_juice": 0,
-                "en:corn_dextrose": 3.733862743512,
-                "en:e250": 0,
-                "en:e301": 0,
-                "en:e326": 4.09602599936426,
-                "en:e450": 0,
-                "en:ham": 85.8912338964223,
-                "en:salt": 1.01391602949175,
-                "en:water": 4.12457308825552
-            },
-            "mass_ratio_uncharacterized": 0.0603230560707364,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e250",
-                    "en:e326",
-                    "en:corn-dextrose",
-                    "en:e301",
-                    "en:e450"
-                ],
-                "nutrition": [
-                    "en:concentrated-celery-juice",
-                    "en:corn-dextrose"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0603230560707364,
-                "nutrition": 0.0274540621682495
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.5,
-                "nutrition": 0.2
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 50%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 24,
     "ecoscore_tags": [
@@ -1659,7 +1612,7 @@
             "id": "en:stabiliser",
             "ingredients": [
                 {
-                    "id": "en:e450",
+                    "id": "en:e450-stabilizer",
                     "is_in_taxonomy": 1,
                     "text": "diphosphates"
                 }
@@ -1866,7 +1819,7 @@
         "en:e250",
         "en:e301",
         "en:e326",
-        "en:e450",
+        "en:e450-stabilizer",
         "en:preservative",
         "en:stabiliser"
     ],
@@ -1878,7 +1831,7 @@
         "en:e250",
         "en:e301",
         "en:e326",
-        "en:e450",
+        "en:e450-stabilizer",
         "en:ham",
         "en:preservative",
         "en:salt",
@@ -2336,24 +2289,56 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

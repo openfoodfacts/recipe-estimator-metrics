@@ -646,56 +646,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0173736702877206,
-            "likeliest_impacts": {
-                "Climate_change": 0.115037481338724,
-                "EF_single_score": 0.0247091059111315
-            },
-            "likeliest_recipe": {
-                "en:antioxidant": 0,
-                "en:barley_malt_extract": 0.657932412550946,
-                "en:blackberry": 1.64121753187383,
-                "en:blueberry": 1.06813553416924,
-                "en:cinnamon": 0,
-                "en:coconut": 2.67632543464335,
-                "en:glucose_syrup": 1.74400259041937,
-                "en:molasses": 0.857345189379805,
-                "en:raspberry": 0.502237455528958,
-                "en:salt": 0.657932412550946,
-                "en:sugar": 11.9432445696134,
-                "en:sunflower_lecithin": 0,
-                "en:sunflower_oil": 11.8371371660685,
-                "en:water": 0.671455266636548,
-                "en:wheat": 2.14106034771468,
-                "en:whole_grain_oat_flakes": 63.161280257583,
-                "en:whole_wheat_flour": 7.49371121700138
-            },
-            "mass_ratio_uncharacterized": 0.0246967695511973,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:antioxidant",
-                    "en:glucose-syrup",
-                    "en:barley-malt-extract"
-                ],
-                "nutrition": [
-                    "en:antioxidant",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0246967695511973,
-                "nutrition": 0.0182672370409022
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.1875,
-                "nutrition": 0.125
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 65,
     "ecoscore_tags": [
@@ -1277,9 +1227,16 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "id": "en:sunflower-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "id": "en:sunflower-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de tournesol"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de tournesol"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -1447,12 +1404,13 @@
         "en:barley-malt-extract",
         "en:cinnamon",
         "en:e306",
+        "en:e322",
         "en:emulsifier",
         "en:fruit",
         "en:sunflower-lecithin",
         "fr:farines-57-farine-de-ble-complete"
     ],
-    "ingredients_without_ciqual_codes_n": 8,
+    "ingredients_without_ciqual_codes_n": 9,
     "ingredients_without_ecobalyse_ids": [
         "en:antioxidant",
         "en:barley-malt-extract",
@@ -1460,6 +1418,7 @@
         "en:cinnamon",
         "en:coconut",
         "en:e306",
+        "en:e322",
         "en:emulsifier",
         "en:fruit",
         "en:glucose-syrup",
@@ -1469,7 +1428,7 @@
         "en:whole-grain-oat-flakes",
         "fr:farines-57-farine-de-ble-complete"
     ],
-    "ingredients_without_ecobalyse_ids_n": 14,
+    "ingredients_without_ecobalyse_ids_n": 15,
     "interface_version_created": "20150316.jqm2",
     "interface_version_modified": "20190830",
     "known_ingredients_n": 35,
@@ -1883,7 +1842,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1892,7 +1859,15 @@
             "quantity_per_unit_value": 500,
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 56.7
@@ -1900,7 +1875,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -1909,7 +1892,15 @@
             "quantity_per_unit_value": 500,
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 7.3

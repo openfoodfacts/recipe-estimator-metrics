@@ -660,66 +660,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0567445118857218,
-            "likeliest_impacts": {
-                "Climate_change": 0.0635887810846917,
-                "EF_single_score": 0.0103368109969466
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 1.12063561763552,
-                "en:celery": 63.3501326289766,
-                "en:chives": 1.23712957432526,
-                "en:colza_oil": 10.3662912898587,
-                "en:e202": 0.0870761968008824,
-                "en:e300": 0,
-                "en:e330": 0.851614258567774,
-                "en:e415": 0.906060281162642,
-                "en:egg_yolk": 0.906060281162642,
-                "en:garlic": 0.906060281162582,
-                "en:glucose_syrup": 0.906060281162642,
-                "en:modified_starch": 0.906060281162642,
-                "en:mustard_seed": 0.0992523593725545,
-                "en:natural_flavouring": 0,
-                "en:salt": 1.05612759576054,
-                "en:spice": 0.962687324421961,
-                "en:tegument": 0.0963795622499975,
-                "en:turmeric": 0,
-                "en:water": 10.7647922992932,
-                "en:yogurt": 6.03334596466444
-            },
-            "mass_ratio_uncharacterized": 0.0268284451632639,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:glucose-syrup",
-                    "en:e202",
-                    "en:natural-flavouring",
-                    "en:e330",
-                    "en:e300",
-                    "en:tegument",
-                    "en:e415"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "en:tegument",
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0268284451632639,
-                "nutrition": 0.00909782993022055
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.285714285714286,
-                "nutrition": 0.107142857142857
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 29%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 78,
     "ecoscore_tags": [
@@ -1496,7 +1436,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -1908,14 +1848,14 @@
         "en:acid",
         "en:antioxidant",
         "en:e202",
-        "en:e300",
         "en:e330",
         "en:e415",
         "en:natural-flavouring",
         "en:preservative",
         "en:spice",
         "en:tegument",
-        "en:thickener"
+        "en:thickener",
+        "en:vitamin-c"
     ],
     "ingredients_without_ciqual_codes_n": 11,
     "ingredients_without_ecobalyse_ids": [
@@ -1924,7 +1864,6 @@
         "en:antioxidant",
         "en:chives",
         "en:e202",
-        "en:e300",
         "en:e330",
         "en:e415",
         "en:garlic",
@@ -1939,6 +1878,7 @@
         "en:tegument",
         "en:thickener",
         "en:turmeric",
+        "en:vitamin-c",
         "en:yogurt",
         "fr:moutarde-a-l-ancienne"
     ],
@@ -2441,12 +2381,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

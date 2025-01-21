@@ -51,7 +51,7 @@
         "en:e322i",
         "en:e471"
     ],
-    "allergens": "en:eggs,en:gluten,en:milk,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
+    "allergens": "en:eggs,en:gluten,en:milk,en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans, en:soybeans",
     "allergens_from_ingredients": "en:milk, LAIT, SOJA, LAIT, FROMENT, BEURRE, LAIT, LAIT, \u0153uf, SOJA, ORGE, LAIT, SOJA, LAIT, FROMENT, BEURRE, LAIT, LAIT, SOJA, SOJA, ORGE, LAIT, SOJA, LAIT, FROMENT, BEURRE, LAIT, LAIT, SOJA, SOJA, ORGE",
     "allergens_from_user": "(en) en:eggs,en:gluten,en:milk,en:soybeans, en:soybeans, en:soybeans",
     "allergens_hierarchy": [
@@ -698,66 +698,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.094491795140572,
-            "likeliest_impacts": {
-                "Climate_change": 0.872921990313898,
-                "EF_single_score": 0.0618820520489373
-            },
-            "likeliest_recipe": {
-                "en:baker_s_yeast": 0.103577404379378,
-                "en:barley_malt_extract": 0.00571139864050691,
-                "en:butterfat": 4.21666886672002,
-                "en:cocoa_butter": 12.3165848657853,
-                "en:cocoa_paste": 9.43186553099934,
-                "en:e471": 0.0891431909050415,
-                "en:fat_reduced_cocoa": 0.191318767750761,
-                "en:fresh_whole_milk": 25.1147857312102,
-                "en:grape_sugar": 1.12508747032125,
-                "en:natural_flavouring": 0.103577404379377,
-                "en:palm_oil": 10.3148228020693,
-                "en:salt": 0.00571139864050691,
-                "en:skimmed_milk_powder": 9.94126935193738,
-                "en:soya": 0.359883649008409,
-                "en:sugar": 20.6993524322376,
-                "en:vanillin": 0.261491993135667,
-                "en:water": 0.0735191053628859,
-                "en:wheat_flour": 9.87451182344563,
-                "en:whole_milk_powder": 0.312479955401253,
-                "en:whole_powdered_egg": 0.103577404379378
-            },
-            "mass_ratio_uncharacterized": 0.0843103393463962,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:butterfat",
-                    "en:e471",
-                    "en:natural-flavouring",
-                    "en:barley-malt-extract",
-                    "en:grape-sugar",
-                    "en:vanillin",
-                    "en:fat-reduced-cocoa"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring",
-                    "en:whole-powdered-egg"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0843103393463962,
-                "nutrition": 0.0117694630440647
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.333333333333333,
-                "nutrition": 0.0740740740740741
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:baker-s-yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes",
-                "The product has a high number of impact uncharacterized ingredients: 33%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 25,
     "ecoscore_tags": [
@@ -2164,10 +2104,17 @@
                     "id": "en:emulsifier",
                     "ingredients": [
                         {
-                            "ciqual_food_code": "42200",
-                            "id": "en:soya-lecithin",
+                            "id": "en:e322",
+                            "ingredients": [
+                                {
+                                    "ciqual_food_code": "42200",
+                                    "id": "en:soya-lecithin",
+                                    "is_in_taxonomy": 1,
+                                    "text": "l\u00e9cithines de SOJA"
+                                }
+                            ],
                             "is_in_taxonomy": 1,
-                            "text": "l\u00e9cithines de SOJA"
+                            "text": "l\u00e9cithines"
                         }
                     ],
                     "is_in_taxonomy": 1,
@@ -3071,43 +3018,99 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:Container"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 8,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

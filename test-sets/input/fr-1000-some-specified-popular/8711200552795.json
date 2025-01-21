@@ -645,56 +645,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.038201474232202,
-            "likeliest_impacts": {
-                "Climate_change": 0.137533232759669,
-                "EF_single_score": 0.0348272959606785
-            },
-            "likeliest_recipe": {
-                "en:alcohol_vinegar": 0.593444461231479,
-                "en:colza_oil": 61.0649272806154,
-                "en:e1400": 2.20523007976805,
-                "en:e160c": 0.169307691974215,
-                "en:e161b": 0.600475083973969,
-                "en:e415": 1.9906035372563,
-                "en:flavouring": 2.02345851630465,
-                "en:free_range_chicken_egg_yolk": 5.10436300436803,
-                "en:mustard_seed": 2.0632627027778,
-                "en:salt": 2.84072571031569,
-                "en:sugar": 2.4915714486491,
-                "en:sunflower_oil": 5.97368862084159,
-                "en:water": 7.34281824708632,
-                "en:white_wine_vinegar": 5.62167272009283
-            },
-            "mass_ratio_uncharacterized": 0.0409963023555377,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:e161b",
-                    "en:e1400",
-                    "en:e160c",
-                    "en:e415"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0409963023555377,
-                "nutrition": 0.0122266713582122
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3125,
-                "nutrition": 0.0625
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 31%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 46,
     "ecoscore_tags": [
@@ -1149,18 +1099,25 @@
     ],
     "ingredients": [
         {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                },
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "Huiles v\u00e9g\u00e9tales de colza"
-        },
-        {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
-            "is_in_taxonomy": 1,
-            "text": "Huiles v\u00e9g\u00e9tales de tournesol"
+            "text": "Huiles v\u00e9g\u00e9tales"
         },
         {
             "ciqual_food_code": "11018",
@@ -1448,6 +1405,7 @@
         "extrait-de-paprika",
         "luteine"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 19,
     "ingredients_n_tags": [
         "19",
@@ -1529,9 +1487,10 @@
         "en:e161b",
         "en:e415",
         "en:flavouring",
-        "en:thickener"
+        "en:thickener",
+        "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 7,
+    "ingredients_without_ciqual_codes_n": 8,
     "ingredients_without_ecobalyse_ids": [
         "en:alcohol-vinegar",
         "en:colour",
@@ -1544,9 +1503,10 @@
         "en:mustard-seed",
         "en:salt",
         "en:thickener",
+        "en:vegetable-oil",
         "en:white-wine-vinegar"
     ],
-    "ingredients_without_ecobalyse_ids_n": 12,
+    "ingredients_without_ecobalyse_ids_n": 13,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 31,
@@ -2024,19 +1984,43 @@
         {
             "material": {
                 "id": {
-                    "id": "en:glass"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:glass"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:jar"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:jar"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

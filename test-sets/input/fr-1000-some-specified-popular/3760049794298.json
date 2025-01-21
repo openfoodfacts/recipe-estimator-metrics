@@ -664,53 +664,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0610384195843503,
-            "likeliest_impacts": {
-                "Climate_change": 0.0515721811040384,
-                "EF_single_score": 0.0118174722798873
-            },
-            "likeliest_recipe": {
-                "en:brown_flax_seeds": 2.71809588772059,
-                "en:cider_vinegar": 3.22311620156307,
-                "en:colza_oil": 5.41169053938477,
-                "en:e300": 0.0869052262510836,
-                "en:millet_seed": 1.61072348901961,
-                "en:rye_flour": 1.61072348901961,
-                "en:salt": 0.449024186605133,
-                "en:shelled_sunflower_seeds": 3.32211719610295,
-                "en:unrefined_cane_sugar": 3.50539395058303,
-                "en:water": 16.7919475949916,
-                "en:wheat_flakes": 2.71809588772059,
-                "en:wheat_flour": 54.3619177544119,
-                "en:wheat_gluten": 0.449024186605133,
-                "en:yeast": 4.10943181955546,
-                "fr:farine_d_orge_malte_toaste": 0.302010654191177
-            },
-            "mass_ratio_uncharacterized": 0.0446187139202129,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:wheat-flakes",
-                    "en:millet-seed",
-                    "en:e300"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0446187139202129,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1804,7 +1757,7 @@
         },
         {
             "ciqual_proxy_food_code": "9532",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rye-flour",
             "is_in_taxonomy": 1,
             "percent": 1.6,
@@ -1826,7 +1779,7 @@
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "fr:farine-d-orge-malte-toaste",
             "is_in_taxonomy": 1,
             "percent": 0.2,
@@ -2612,36 +2565,84 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:fastener"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 0.41
@@ -2649,29 +2650,69 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "recycling": {
                 "id": {
-                    "id": "en:discard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:discard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

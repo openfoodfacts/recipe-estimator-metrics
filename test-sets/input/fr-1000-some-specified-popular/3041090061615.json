@@ -59,7 +59,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk",
+    "allergens": "en:gluten,en:milk,en:soybeans, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:gluten, bl\u00e9, lait, soja",
     "allergens_from_user": "(en) en:gluten,en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -692,48 +692,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.053195978885735,
-            "likeliest_impacts": {
-                "Climate_change": 0.337383860814664,
-                "EF_single_score": 0.0282774401143257
-            },
-            "likeliest_recipe": {
-                "en:cocoa_paste": 2.13519355718944,
-                "en:colza_oil": 10.2033261594213,
-                "en:fat_reduced_cocoa_powder": 7.39059946379704,
-                "en:ferric_diphosphate": 0.0994240053313218,
-                "en:milk": 0.299715857289528,
-                "en:palm_oil": 10.3242928967288,
-                "en:salt": 0.0994240053313218,
-                "en:soya_lecithin": 0.211198168295514,
-                "en:sugar": 23.1014046920369,
-                "en:sunflower_lecithin": 0,
-                "en:water": 0.0937733753972974,
-                "en:wheat_flour": 47.8498594811032
-            },
-            "mass_ratio_uncharacterized": 0.00431902849291056,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:ferric-diphosphate"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00431902849291056,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0833333333333333,
-                "nutrition": 0
-            },
-            "warnings": [
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "a",
     "ecoscore_score": 84,
     "ecoscore_tags": [
@@ -1775,18 +1733,25 @@
             "text": "sucre"
         },
         {
-            "ciqual_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                },
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de palme"
-        },
-        {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de colza"
+            "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "id": "en:chocolate",
@@ -2097,9 +2062,10 @@
         "en:ferric-diphosphate",
         "en:minerals",
         "en:sunflower-lecithin",
+        "en:vegetable-oil",
         "en:whey-powder"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 7,
     "ingredients_without_ecobalyse_ids": [
         "en:chocolate",
         "en:cocoa-paste",
@@ -2110,9 +2076,10 @@
         "en:salt",
         "en:soya-lecithin",
         "en:sunflower-lecithin",
+        "en:vegetable-oil",
         "en:whey-powder"
     ],
-    "ingredients_without_ecobalyse_ids_n": 10,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 32,
@@ -2570,7 +2537,15 @@
         {
             "shape": {
                 "id": {
-                    "id": "en:stick"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:stick"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

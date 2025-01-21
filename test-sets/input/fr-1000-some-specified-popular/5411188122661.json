@@ -715,62 +715,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0302655229437829,
-            "likeliest_impacts": {
-                "Climate_change": 0.01116583363534,
-                "EF_single_score": 0.00434675434025326
-            },
-            "likeliest_recipe": {
-                "en:almond": 2.0991587338341,
-                "en:e101": 0.0504298180588376,
-                "en:e341": 1.89041188270293,
-                "en:e410": 0.0252149090294187,
-                "en:e418": 0.0252149090294196,
-                "en:natural_flavouring": 0.0536649567746396,
-                "en:sea_salt": 0.449932528065836,
-                "en:sunflower_lecithin": 0.0504298180588376,
-                "en:water": 95.3154821508317,
-                "fr:812": 0,
-                "fr:D2": 0,
-                "fr:E": 0
-            },
-            "mass_ratio_uncharacterized": 0.0271477919527629,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:812",
-                    "en:e418",
-                    "en:e341",
-                    "en:natural-flavouring",
-                    "en:e410",
-                    "en:e101",
-                    "fr:D2",
-                    "fr:E"
-                ],
-                "nutrition": [
-                    "fr:812",
-                    "en:e418",
-                    "en:natural-flavouring",
-                    "fr:D2",
-                    "fr:E"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0271477919527629,
-                "nutrition": 0.00635374340774492
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.666666666666667,
-                "nutrition": 0.416666666666667
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 42%",
-                "The product has a high number of impact uncharacterized ingredients: 67%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 59,
     "ecoscore_tags": [
@@ -1991,7 +1935,7 @@
             "ingredients": [
                 {
                     "ciqual_proxy_food_code": "9410",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:carob-seed-flour",
                     "is_in_taxonomy": 1,
                     "text": "farine de graines de caroube"
@@ -2038,13 +1982,13 @@
                     "text": "812"
                 },
                 {
-                    "id": "fr:e",
-                    "is_in_taxonomy": 0,
+                    "id": "en:vitamin-e",
+                    "is_in_taxonomy": 1,
                     "text": "E"
                 },
                 {
-                    "id": "fr:d2",
-                    "is_in_taxonomy": 0,
+                    "id": "en:ergocalciferol",
+                    "is_in_taxonomy": 1,
                     "text": "D2"
                 }
             ],
@@ -2237,6 +2181,7 @@
         "vitamine-d2",
         "arome-naturel"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 16,
     "ingredients_n_tags": [
         "16",
@@ -2323,14 +2268,14 @@
         "en:e341",
         "en:e418",
         "en:emulsifier",
+        "en:ergocalciferol",
         "en:natural-flavouring",
         "en:stabiliser",
         "en:sunflower-lecithin",
+        "en:vitamin-e",
         "en:vitamins",
         "fr:812",
-        "fr:82",
-        "fr:d2",
-        "fr:e"
+        "fr:82"
     ],
     "ingredients_without_ciqual_codes_n": 12,
     "ingredients_without_ecobalyse_ids": [
@@ -2339,15 +2284,15 @@
         "en:e341",
         "en:e418",
         "en:emulsifier",
+        "en:ergocalciferol",
         "en:natural-flavouring",
         "en:sea-salt",
         "en:stabiliser",
         "en:sunflower-lecithin",
+        "en:vitamin-e",
         "en:vitamins",
         "fr:812",
-        "fr:82",
-        "fr:d2",
-        "fr:e"
+        "fr:82"
     ],
     "ingredients_without_ecobalyse_ids_n": 14,
     "interface_version_created": "20150316.jqm2",
@@ -2847,31 +2792,71 @@
         {
             "material": {
                 "id": {
-                    "id": "en:composite-material"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:composite-material"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:Container"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:tetra-pak"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tetra-pak"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:brick"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:brick"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "shape": {
                 "id": {
-                    "id": "en:bottle-cap"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bottle-cap"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

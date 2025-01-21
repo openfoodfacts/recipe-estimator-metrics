@@ -48,7 +48,7 @@
         "en:e322",
         "en:e322i"
     ],
-    "allergens": "en:milk,en:soybeans, en:milk, en:milk",
+    "allergens": "en:milk,en:soybeans, en:milk, en:milk, en:milk, en:milk, en:milk, en:milk",
     "allergens_from_ingredients": "en:milk, beurre concentr\u00e9, lait",
     "allergens_from_user": "(en) en:milk,en:soybeans, en:milk",
     "allergens_hierarchy": [
@@ -640,29 +640,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0680656853999091,
-            "likeliest_impacts": {
-                "Climate_change": 1.58446978814992,
-                "EF_single_score": 0.0994903651145316
-            },
-            "likeliest_recipe": {
-                "en:butter": 2.14726026841305,
-                "en:cocoa_butter": 21.2937899812021,
-                "en:cocoa_paste": 37.8142547798905,
-                "en:glucose_syrup": 1.23463710125301,
-                "en:natural_flavouring": 0.123746525102298,
-                "en:salt": 0.313171238863909,
-                "en:soya": 1.21182630431378,
-                "en:sugar": 34.8777348338411,
-                "en:vanilla_extract": 0.0900682688521999,
-                "en:water": 2.82485062583894
-            },
-            "mass_ratio_uncharacterized": 0.0777319673180806
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 40,
     "ecoscore_tags": [
@@ -1793,9 +1770,16 @@
             "id": "en:emulsifier",
             "ingredients": [
                 {
-                    "id": "en:sunflower-lecithin",
+                    "id": "en:e322",
+                    "ingredients": [
+                        {
+                            "id": "en:sunflower-lecithin",
+                            "is_in_taxonomy": 1,
+                            "text": "l\u00e9cithines de tournesol"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "l\u00e9cithines de tournesol"
+                    "text": "l\u00e9cithines"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -2100,16 +2084,18 @@
     "ingredients_with_unspecified_percent_n": 10,
     "ingredients_with_unspecified_percent_sum": 100,
     "ingredients_without_ciqual_codes": [
+        "en:e322",
         "en:emulsifier",
         "en:natural-flavouring",
         "en:sunflower-lecithin"
     ],
-    "ingredients_without_ciqual_codes_n": 3,
+    "ingredients_without_ciqual_codes_n": 4,
     "ingredients_without_ecobalyse_ids": [
         "en:butterfat",
         "en:cocoa",
         "en:cocoa-butter",
         "en:cocoa-paste",
+        "en:e322",
         "en:emulsifier",
         "en:glucose-syrup",
         "en:natural-flavouring",
@@ -2117,7 +2103,7 @@
         "en:sunflower-lecithin",
         "en:vanilla-extract"
     ],
-    "ingredients_without_ecobalyse_ids_n": 10,
+    "ingredients_without_ecobalyse_ids_n": 11,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 26,
@@ -2573,24 +2559,56 @@
         {
             "material": {
                 "id": {
-                    "id": "en:non-corrugated-cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:non-corrugated-cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:paperboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:paperboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

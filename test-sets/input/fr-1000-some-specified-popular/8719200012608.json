@@ -658,65 +658,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.125839056367995,
-            "likeliest_impacts": {
-                "Climate_change": 0.0573998033332745,
-                "EF_single_score": 0.0139270340041698
-            },
-            "likeliest_recipe": {
-                "en:coconut": 1.15313832038525,
-                "en:rapeseed": 8.72621978466859,
-                "en:sea_salt": 0.312554353425272,
-                "en:shea_butter": 9.05822596985518,
-                "en:sunflower": 9.45907046682383,
-                "en:sunflower_lecithin": 0.312554353425272,
-                "en:vitamin_a": 0.0663243326813507,
-                "en:vitamin_d": 0.0638565900316912,
-                "en:vitamins": 0.187356064613162,
-                "en:water": 38.6313065041349,
-                "fr:_": 15.4250176359662,
-                "fr:__ar_mes_naturels": 0.218965937520213,
-                "fr:__lin": 9.10986786929977,
-                "fr:esters_de_phytost_rols": 11.46032629226
-            },
-            "mass_ratio_uncharacterized": 0.40983641215882,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:vitamins",
-                    "fr:\ud83c\udf3b ar\u00f4mes naturels",
-                    "en:vitamin-a",
-                    "fr:\ud83e\udd65",
-                    "fr:esters de phytost\u00e9rols",
-                    "en:vitamin-d",
-                    "fr:\ud83c\udf3b lin",
-                    "en:shea-butter"
-                ],
-                "nutrition": [
-                    "fr:esters de phytost\u00e9rols",
-                    "fr:\ud83e\udd65",
-                    "fr:\ud83c\udf3b lin",
-                    "fr:\ud83c\udf3b ar\u00f4mes naturels"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.40983641215882,
-                "nutrition": 0.327837213899562
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.571428571428571,
-                "nutrition": 0.285714285714286
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 29%",
-                "The product has a high number of impact uncharacterized ingredients: 57%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 33%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 41%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 58,
     "ecoscore_tags": [
@@ -1256,29 +1197,38 @@
             "text": "Liste des ingr\u00e9dients"
         },
         {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                },
+                {
+                    "ciqual_food_code": "17440",
+                    "ecobalyse_code": "sunflower-oil",
+                    "id": "en:sunflower-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de tournesol"
+                },
+                {
+                    "ciqual_food_code": "16040",
+                    "id": "en:coconut-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de coco"
+                },
+                {
+                    "ciqual_food_code": "17180",
+                    "ecobalyse_code": "refined-linseed-oil",
+                    "id": "en:linseed-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de lin"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de colza"
-        },
-        {
-            "ciqual_food_code": "17440",
-            "ecobalyse_code": "sunflower-oil",
-            "id": "en:sunflower-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de tournesol"
-        },
-        {
-            "ciqual_food_code": "16040",
-            "id": "en:coconut-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles v\u00e9g\u00e9tales de coco"
-        },
-        {
-            "id": "fr:huiles-vegetales-de-lin",
-            "is_in_taxonomy": 0,
-            "text": "huiles v\u00e9g\u00e9tales de lin"
+            "text": "huiles v\u00e9g\u00e9tales"
         },
         {
             "id": "fr:esters-de-phytosterols",
@@ -1572,11 +1522,11 @@
         "en:e322i",
         "en:emulsifier",
         "en:natural-flavouring",
+        "en:vegetable-oil",
         "en:vitamin-a",
         "en:vitamin-d",
         "en:vitamins",
         "fr:esters-de-phytosterols",
-        "fr:huiles-vegetales-de-lin",
         "fr:liste-des-ingredients"
     ],
     "ingredients_without_ciqual_codes_n": 9,
@@ -1586,11 +1536,11 @@
         "en:emulsifier",
         "en:natural-flavouring",
         "en:salt",
+        "en:vegetable-oil",
         "en:vitamin-a",
         "en:vitamin-d",
         "en:vitamins",
         "fr:esters-de-phytosterols",
-        "fr:huiles-vegetales-de-lin",
         "fr:liste-des-ingredients"
     ],
     "ingredients_without_ecobalyse_ids_n": 11,
@@ -2053,36 +2003,84 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:lid"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:lid"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1666,7 +1666,7 @@
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-barley-flour",
                     "is_in_taxonomy": 1,
                     "percent": 2.6,
@@ -1674,7 +1674,7 @@
                 },
                 {
                     "ciqual_food_code": "9480",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-spelt-flour",
                     "ingredients": [
                         {
@@ -1690,7 +1690,7 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-rye-flour",
                     "is_in_taxonomy": 1,
                     "percent": 1,
@@ -1733,17 +1733,24 @@
                     "text": "p\u00e2te de cacao"
                 },
                 {
-                    "ciqual_food_code": "16129",
-                    "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm-oil",
+                    "id": "en:vegetable-oil",
+                    "ingredients": [
+                        {
+                            "ciqual_food_code": "16129",
+                            "ecobalyse_code": "refined-palm-oil",
+                            "id": "en:palm-oil",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de palme"
+                        },
+                        {
+                            "ciqual_food_code": "16110",
+                            "id": "en:shea-butter",
+                            "is_in_taxonomy": 1,
+                            "text": "huile de karit\u00e9"
+                        }
+                    ],
                     "is_in_taxonomy": 1,
-                    "text": "huiles v\u00e9g\u00e9tales de palme"
-                },
-                {
-                    "ciqual_food_code": "16110",
-                    "id": "en:shea-butter",
-                    "is_in_taxonomy": 1,
-                    "text": "huiles v\u00e9g\u00e9tales de karit\u00e9"
+                    "text": "huiles v\u00e9g\u00e9tales"
                 },
                 {
                     "ciqual_proxy_food_code": "31016",
@@ -2356,9 +2363,10 @@
         "en:flavouring",
         "en:minerals",
         "en:raising-agent",
+        "en:vegetable-oil",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ciqual_codes_n": 13,
+    "ingredients_without_ciqual_codes_n": 14,
     "ingredients_without_ecobalyse_ids": [
         "en:acidity-regulator",
         "en:cereal",
@@ -2381,10 +2389,11 @@
         "en:salt",
         "en:shea-butter",
         "en:soya-lecithin",
+        "en:vegetable-oil",
         "en:wheat",
         "en:wholemeal-cereal"
     ],
-    "ingredients_without_ecobalyse_ids_n": 23,
+    "ingredients_without_ecobalyse_ids_n": 24,
     "interface_version_created": "20120622",
     "interface_version_modified": "20150316.jqm2",
     "known_ingredients_n": 60,
@@ -2867,7 +2876,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2876,12 +2893,28 @@
             "quantity_per_unit_value": 400,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:box"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:box"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 34
@@ -2889,7 +2922,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 8,
@@ -2898,12 +2939,28 @@
             "quantity_per_unit_value": 50,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:individual-bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:individual-bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

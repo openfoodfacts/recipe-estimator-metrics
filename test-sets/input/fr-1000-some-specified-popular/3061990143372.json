@@ -621,71 +621,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.140582757136249,
-            "likeliest_impacts": {
-                "Climate_change": 0.0791894711252986,
-                "EF_single_score": 0.0105092087782836
-            },
-            "likeliest_recipe": {
-                "en:e162": 0.131811807956009,
-                "en:e330": 0.131811807956009,
-                "en:e331": 0.131811807956013,
-                "en:e422": 5.44667742843964,
-                "en:e440a": 0.131811807956009,
-                "en:e500": 0.131811807956013,
-                "en:e503": 0.131811807956013,
-                "en:flavouring": 0.131811807956009,
-                "en:glucose_fructose_syrup": 22.8273351580526,
-                "en:glucose_syrup": 2.58314976700217,
-                "en:milk": 0.118467308261896,
-                "en:palm_fat": 7.67652106738255,
-                "en:salt": 0.131811807956013,
-                "en:skimmed_milk_powder": 0.131811807956009,
-                "en:starch": 1.35760205887968,
-                "en:strawberry": 1.38836643556849,
-                "en:sugar": 9.97711452348207,
-                "en:water": 0.138700436199736,
-                "en:wheat_flour": 31.8791624679761,
-                "en:whole_wheat_flour": 14.9433574068638,
-                "en:wholemeal_barley_flour": 0.0498111913562127,
-                "en:wholemeal_rye_flour": 0.0498111913562127
-            },
-            "mass_ratio_uncharacterized": 0.126837188773687,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e162",
-                    "en:e500",
-                    "en:glucose-syrup",
-                    "en:flavouring",
-                    "en:e422",
-                    "en:e331",
-                    "en:e440a",
-                    "en:e330",
-                    "en:e503"
-                ],
-                "nutrition": [
-                    "en:glucose-syrup",
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.126837188773687,
-                "nutrition": 0.0369913670056509
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.428571428571429,
-                "nutrition": 0.0952380952380952
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 43%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%",
-                "The impact relative interquartile is high for EF single score (26%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 53,
     "ecoscore_tags": [
@@ -1410,14 +1345,14 @@
                 },
                 {
                     "ciqual_proxy_food_code": "9530",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-rye-flour",
                     "is_in_taxonomy": 1,
                     "text": "wholemeal rye flour"
                 },
                 {
                     "ciqual_food_code": "9550",
-                    "ecobalyse_proxy_code": "flour",
+                    "ecobalyse_code": "flour",
                     "id": "en:wholemeal-barley-flour",
                     "is_in_taxonomy": 1,
                     "text": "wholemeal barley flour"
@@ -1640,6 +1575,7 @@
         "en:e330",
         "en:beetroot-red-gelling-agent"
     ],
+    "ingredients_lc": "en",
     "ingredients_n": 26,
     "ingredients_n_tags": [
         "26",
@@ -2190,26 +2126,58 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:envelope"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:envelope"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:film"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:film"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

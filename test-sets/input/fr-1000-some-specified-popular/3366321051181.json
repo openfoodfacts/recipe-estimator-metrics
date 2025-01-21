@@ -658,50 +658,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0295691110265633,
-            "likeliest_impacts": {
-                "Climate_change": 0.162886775761737,
-                "EF_single_score": 0.0249859347505667
-            },
-            "likeliest_recipe": {
-                "en:colour": 0.962510689881206,
-                "en:flavouring": 0.962517602325855,
-                "en:flax": 5.44599248902235,
-                "en:palm": 0,
-                "en:palm_kernel_oil": 16.6405326053461,
-                "en:rapeseed": 30.3563655406616,
-                "en:salt": 1.04154724577188,
-                "en:soya_lecithin": 5.66150495604168,
-                "en:thiamin": 0.962476659719067,
-                "en:water": 38.8182649709034
-            },
-            "mass_ratio_uncharacterized": 0.0137376577195793,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:thiamin",
-                    "en:colour"
-                ],
-                "nutrition": [
-                    "en:flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0137376577195793,
-                "nutrition": 0.00578110208726711
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.3,
-                "nutrition": 0.1
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 30%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "c",
     "ecoscore_score": 59,
     "ecoscore_tags": [
@@ -1174,7 +1130,7 @@
             "id": "en:colour",
             "ingredients": [
                 {
-                    "id": "en:e160ai",
+                    "id": "en:beta-carotene-dye",
                     "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
@@ -1304,8 +1260,8 @@
     "ingredients_with_unspecified_percent_n": 8,
     "ingredients_with_unspecified_percent_sum": 64.6,
     "ingredients_without_ciqual_codes": [
+        "en:beta-carotene-dye",
         "en:colour",
-        "en:e160ai",
         "en:emulsifier",
         "en:flavouring",
         "en:flax",
@@ -1317,8 +1273,8 @@
     ],
     "ingredients_without_ciqual_codes_n": 10,
     "ingredients_without_ecobalyse_ids": [
+        "en:beta-carotene-dye",
         "en:colour",
-        "en:e160ai",
         "en:emulsifier",
         "en:flavouring",
         "en:flax",
@@ -1837,12 +1793,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -664,43 +664,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.064855644845261,
-            "likeliest_impacts": {
-                "Climate_change": 0.169627066723713,
-                "EF_single_score": 0.021149524728906
-            },
-            "likeliest_recipe": {
-                "en:concentrated_lemon_juice": 0.0747519114564984,
-                "en:natural_flavouring": 0.125397530326392,
-                "en:palm": 23.7147468763019,
-                "en:rapeseed": 30.1710412219354,
-                "en:salt": 0.256205178531737,
-                "en:sunflower_lecithin": 1.35134300535873,
-                "en:water": 43.1795199609284
-            },
-            "mass_ratio_uncharacterized": 0.00505042951666072,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:natural-flavouring"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.00505042951666072,
-                "nutrition": 0.00505042951666072
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.142857142857143,
-                "nutrition": 0.142857142857143
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 60,
     "ecoscore_tags": [
@@ -1994,16 +1957,16 @@
             "id": "en:non-hydrogenated-vegetable-oils",
             "ingredients": [
                 {
-                    "id": "en:colza",
+                    "id": "en:colza-vegetable-oils",
                     "is_in_taxonomy": 0,
-                    "text": "colza"
+                    "text": "colza vegetable oils"
                 },
                 {
                     "ciqual_food_code": "16129",
                     "ecobalyse_code": "refined-palm-oil",
-                    "id": "en:palm",
+                    "id": "en:palm-oil",
                     "is_in_taxonomy": 1,
-                    "text": "palm"
+                    "text": "palm vegetable oils"
                 }
             ],
             "is_in_taxonomy": 1,
@@ -2152,6 +2115,7 @@
         "aromes-naturels",
         "jus-de-citron-concentre-biologique"
     ],
+    "ingredients_lc": "en",
     "ingredients_n": 9,
     "ingredients_n_tags": [
         "9",
@@ -2206,7 +2170,7 @@
     "ingredients_with_unspecified_percent_n": 7,
     "ingredients_with_unspecified_percent_sum": 100,
     "ingredients_without_ciqual_codes": [
-        "en:colza",
+        "en:colza-vegetable-oils",
         "en:emulsifier",
         "en:natural-flavouring",
         "en:non-hydrogenated-vegetable-oils",
@@ -2214,7 +2178,7 @@
     ],
     "ingredients_without_ciqual_codes_n": 5,
     "ingredients_without_ecobalyse_ids": [
-        "en:colza",
+        "en:colza-vegetable-oils",
         "en:concentrated-lemon-juice",
         "en:emulsifier",
         "en:natural-flavouring",
@@ -2673,26 +2637,58 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:peel"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:peel"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "shape": {
                 "id": {
-                    "id": "en:packet"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:packet"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

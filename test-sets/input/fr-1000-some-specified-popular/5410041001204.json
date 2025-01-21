@@ -701,59 +701,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.142640793157068,
-            "likeliest_impacts": {
-                "Climate_change": 0.105225821018721,
-                "EF_single_score": 0.0160090770194937
-            },
-            "likeliest_recipe": {
-                "de:Ammoniumcarbonate": 0.856408219447343,
-                "en:barley_malt_extract": 17.4444957056099,
-                "en:e223": 0.578981825041232,
-                "en:e500": 0.856408219447337,
-                "en:egg": 0.645809265164474,
-                "en:flavouring": 0.645809265164474,
-                "en:glucose_syrup": 1.72581821238574,
-                "en:salt": 1.48443784080803,
-                "en:sunflower_oil": 18.0253166383832,
-                "en:water": 0.87037114931063,
-                "en:wheat_flour": 62.8974180026681
-            },
-            "mass_ratio_uncharacterized": 0.271105411550561,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:barley-malt-extract",
-                    "en:flavouring",
-                    "en:glucose-syrup",
-                    "en:e500",
-                    "de:Ammoniumcarbonate",
-                    "en:e223"
-                ],
-                "nutrition": [
-                    "de:Ammoniumcarbonate",
-                    "en:flavouring",
-                    "en:glucose-syrup"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.271105411550561,
-                "nutrition": 0.138096774625592
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.6,
-                "nutrition": 0.3
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 30%",
-                "The product has a high number of impact uncharacterized ingredients: 60%",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 14%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 27%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -3772,7 +3719,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3781,12 +3736,28 @@
             "quantity_per_unit_value": 100,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 2.42

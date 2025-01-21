@@ -647,62 +647,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0392935147614146,
-            "likeliest_impacts": {
-                "Climate_change": 0.0970232909556465,
-                "EF_single_score": 0.0235776790392805
-            },
-            "likeliest_recipe": {
-                "en:blueberry": 0.730511891370533,
-                "en:oat_flakes": 76.8424340773608,
-                "en:pumpkin_seed": 3.13008234482259,
-                "en:raisin": 12.8670907603748,
-                "en:redcurrant": 1.15694089207101,
-                "en:sunflower_oil": 0.0683464248392472,
-                "en:walnut": 0.0163243138252498,
-                "en:water": 0.186154760792072,
-                "en:wheat_flakes": 6.60945846877448,
-                "fr:FR___01": 0.0163243138252502,
-                "fr:Informations_sur_les_allerg_nes": 0.393125273416075,
-                "fr:baies_enti_res_de_cassis": 0.199268779773429,
-                "fr:petales_de_ble": 2.10369154568214,
-                "fr:y_compris_les_c_r_ales_contenant_du_gluten_sont_indiqu_s_en_gras": 0.0163243138252498
-            },
-            "mass_ratio_uncharacterized": 0.237525047446992,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:baies enti\u00e8res de cassis",
-                    "fr:Informations sur les allerg\u00e8nes",
-                    "fr:FR- -01",
-                    "en:wheat-flakes",
-                    "fr:y compris les c\u00e9r\u00e9ales contenant du gluten sont indiqu\u00e9s en gras"
-                ],
-                "nutrition": [
-                    "fr:FR- -01",
-                    "fr:y compris les c\u00e9r\u00e9ales contenant du gluten sont indiqu\u00e9s en gras",
-                    "fr:baies enti\u00e8res de cassis",
-                    "fr:Informations sur les allerg\u00e8nes"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.237525047446992,
-                "nutrition": 0.0351816147565063
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.384615384615385,
-                "nutrition": 0.307692307692308
-            },
-            "warnings": [
-                "The product has a high number of nutrition uncharacterized ingredients: 31%",
-                "The product has a high number of impact uncharacterized ingredients: 38%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 24%",
-                "Parameter const_relax_coef has been set to 0.01 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -1955,6 +1899,7 @@
         "du-seigle",
         "des-noix"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 12,
     "ingredients_n_tags": [
         "12",
@@ -2478,7 +2423,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:cardboard"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:cardboard"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2487,19 +2440,43 @@
             "quantity_per_unit_value": 0,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:sleeve"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:sleeve"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2508,12 +2485,28 @@
             "quantity_per_unit_value": 450,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

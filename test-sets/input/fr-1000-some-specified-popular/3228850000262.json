@@ -665,61 +665,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0190859650252829,
-            "likeliest_impacts": {
-                "Climate_change": 0.0454992602619656,
-                "EF_single_score": 0.00907501125714332
-            },
-            "likeliest_recipe": {
-                "en:acerola_juice": 0.328703763495006,
-                "en:alcohol": 1.3727200992975,
-                "en:barley_flour": 0.701053313593056,
-                "en:colza_oil": 1.89020135406324,
-                "en:corn_flour": 6.0090284022262,
-                "en:flax_seed": 1.60240757392699,
-                "en:oat_flour": 0.701053313593056,
-                "en:rice_flour": 0.701053313593056,
-                "en:rye_flour": 4.1061694081879,
-                "en:salt": 1.2376653851614,
-                "en:soya_bean": 2.40361136089048,
-                "en:sugar": 2.56045125224556,
-                "en:sunflower_seed": 4.1061694081879,
-                "en:vinegar": 0.406248388911908,
-                "en:water": 25.4733636963952,
-                "en:wheat": 0.701053313593056,
-                "en:wheat_bran": 0.701053313593056,
-                "en:wheat_flour": 40.0601893481747,
-                "en:wheat_germ": 0.701053313593056,
-                "en:wheat_gluten": 2.44154012836179,
-                "en:yeast": 0.671950470370955,
-                "fr:levain_de__SEIGLE__d_shydrat__d_vitalis_": 1.27373344898163
-            },
-            "mass_ratio_uncharacterized": 0.0149825124811687,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "fr:levain de _SEIGLE_ d\u00e9shydrat\u00e9 d\u00e9vitalis\u00e9",
-                    "en:acerola-juice"
-                ],
-                "nutrition": [
-                    "fr:levain de _SEIGLE_ d\u00e9shydrat\u00e9 d\u00e9vitalis\u00e9"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0149825124811687,
-                "nutrition": 0.0122532267939801
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.0909090909090909,
-                "nutrition": 0.0454545454545455
-            },
-            "warnings": [
-                "Fermentation agents are present in the product (en:yeast). Carbohydrates and sugars mass balance will not be considered to estimate potential recipes"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 79,
     "ecoscore_tags": [
@@ -2127,7 +2072,7 @@
         },
         {
             "ciqual_food_code": "9545",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:corn-flour",
             "is_in_taxonomy": 1,
             "percent": 6,
@@ -2135,7 +2080,7 @@
         },
         {
             "ciqual_proxy_food_code": "9532",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rye-flour",
             "is_in_taxonomy": 1,
             "percent": 4.1,
@@ -2203,7 +2148,7 @@
         },
         {
             "ciqual_food_code": "9480",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:spelt-flour",
             "is_in_taxonomy": 1,
             "percent": 0.7,
@@ -2211,7 +2156,7 @@
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:barley-flour",
             "is_in_taxonomy": 1,
             "percent": 0.7,
@@ -2219,7 +2164,7 @@
         },
         {
             "ciqual_food_code": "9520",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:rice-flour",
             "is_in_taxonomy": 1,
             "percent": 0.7,
@@ -2227,7 +2172,7 @@
         },
         {
             "ciqual_food_code": "9310",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:oat-flour",
             "is_in_taxonomy": 1,
             "percent": 0.7,
@@ -3163,7 +3108,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -3172,12 +3125,28 @@
             "quantity_per_unit_value": 450,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:bag"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:bag"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 6
@@ -3185,18 +3154,42 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
             "recycling": {
                 "id": {
-                    "id": "en:recycle"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:fastener"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:fastener"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 7

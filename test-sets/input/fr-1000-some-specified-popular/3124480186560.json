@@ -488,59 +488,6 @@
         "scores": {},
         "status": "unknown"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.168869577020191,
-            "likeliest_impacts": {
-                "Climate_change": 0.00428778643343168,
-                "EF_single_score": 0.00150442772507301
-            },
-            "likeliest_recipe": {
-                "en:apple": 4.11250859181309,
-                "en:e160c": 0.0698894567116052,
-                "en:e300": 0.610804578138823,
-                "en:e330": 0.679253106787291,
-                "en:flavouring": 0.644380398044051,
-                "en:mango": 0.0504607451787476,
-                "en:orange": 4.46912115266094,
-                "en:passionfruit": 3.35648378480858,
-                "en:spring_water": 79.92382849641,
-                "en:stabiliser": 0.143192270394713,
-                "en:sugar": 5.48764640777029,
-                "en:water": 0.357216631794364
-            },
-            "mass_ratio_uncharacterized": 0.048734157927735,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:flavouring",
-                    "en:passionfruit",
-                    "en:e300",
-                    "en:e160c",
-                    "en:stabiliser",
-                    "en:e330"
-                ],
-                "nutrition": [
-                    "en:flavouring",
-                    "en:stabiliser",
-                    "en:passionfruit"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.048734157927735,
-                "nutrition": 0.029246020648971
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.545454545454545,
-                "nutrition": 0.272727272727273
-            },
-            "warnings": [
-                "1 compound ingredients whose percentage type is undefined.",
-                "The product has a high number of nutrition uncharacterized ingredients: 27%",
-                "The product has a high number of impact uncharacterized ingredients: 55%"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "not-applicable",
     "ecoscore_tags": [
         "not-applicable"
@@ -1376,7 +1323,7 @@
             "id": "en:antioxidant",
             "ingredients": [
                 {
-                    "id": "en:e300",
+                    "id": "en:vitamin-c",
                     "is_in_taxonomy": 1,
                     "text": "acide ascorbique"
                 }
@@ -1642,11 +1589,11 @@
         "en:colour",
         "en:e160c",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:fruit-juice-from-concentrate",
         "en:natural-flavouring",
-        "en:natural-orange-flavouring"
+        "en:natural-orange-flavouring",
+        "en:vitamin-c"
     ],
     "ingredients_without_ciqual_codes_n": 10,
     "ingredients_without_ecobalyse_ids": [
@@ -1655,13 +1602,13 @@
         "en:colour",
         "en:e160c",
         "en:e296",
-        "en:e300",
         "en:e330",
         "en:fructose-syrup",
         "en:fruit-juice-from-concentrate",
         "en:natural-flavouring",
         "en:natural-orange-flavouring",
-        "en:passionfruit"
+        "en:passionfruit",
+        "en:vitamin-c"
     ],
     "ingredients_without_ecobalyse_ids_n": 12,
     "interface_version_created": "20150316.jqm2",
@@ -2091,7 +2038,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "number_of_units": 1,
@@ -2100,12 +2055,28 @@
             "quantity_per_unit_value": 33,
             "recycling": {
                 "id": {
-                    "id": "en:recycle-in-sorting-bin"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:recycle-in-sorting-bin"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:drink-can"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:drink-can"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "weight_measured": 12.34

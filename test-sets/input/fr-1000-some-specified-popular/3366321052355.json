@@ -674,45 +674,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0798971908620718,
-            "likeliest_impacts": {
-                "Climate_change": 0.092682680965443,
-                "EF_single_score": 0.0224344622894045
-            },
-            "likeliest_recipe": {
-                "en:coconut": 9.98810802477519,
-                "en:e440a": 0.749111327830521,
-                "en:high_oleic_sunflower": 22.3365374939843,
-                "en:lemon_juice": 0.902452091106508,
-                "en:natural_carrot_flavouring": 0.977674650321482,
-                "en:rapeseed": 18.5149134220139,
-                "en:salt": 1.06180707238063,
-                "en:shea_butter": 9.96005595358976,
-                "en:soya_lecithin": 1.06180707238063,
-                "en:water": 44.9922817262629
-            },
-            "mass_ratio_uncharacterized": 0.0738738652477439,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e440a",
-                    "en:shea-butter"
-                ],
-                "nutrition": []
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.0738738652477439,
-                "nutrition": 0
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.2,
-                "nutrition": 0
-            },
-            "warnings": []
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 75,
     "ecoscore_tags": [
@@ -1455,23 +1416,24 @@
                 },
                 {
                     "ciqual_food_code": "17440",
-                    "ecobalyse_code": "sunflower-oil",
-                    "id": "en:high-oleic-sunflower",
+                    "ecobalyse_code": "sunflower-oil-organic",
+                    "id": "en:high-oleic-sunflower-oil",
                     "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent": 14,
                     "text": "tournesol ol\u00e9ique"
                 },
                 {
-                    "ciqual_proxy_food_code": "15006",
-                    "id": "en:coconut",
+                    "ciqual_food_code": "16040",
+                    "id": "en:coconut-oil",
                     "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "text": "coco"
                 },
                 {
-                    "ecobalyse_code": "rapeseed-non-eu",
-                    "id": "en:rapeseed",
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil-organic",
+                    "id": "en:colza-oil",
                     "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "percent": 11,
@@ -1706,13 +1668,12 @@
         "en:e440a",
         "en:emulsifier",
         "en:natural-carrot-flavouring",
-        "en:rapeseed",
         "en:stabiliser",
         "en:vegetable-oil"
     ],
-    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ciqual_codes_n": 5,
     "ingredients_without_ecobalyse_ids": [
-        "en:coconut",
+        "en:coconut-oil",
         "en:e440a",
         "en:emulsifier",
         "en:lemon-juice",
@@ -2220,12 +2181,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:plastic"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:plastic"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:tray"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:tray"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

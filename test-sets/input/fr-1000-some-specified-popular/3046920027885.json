@@ -647,51 +647,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.246688686891096,
-            "likeliest_impacts": {
-                "Climate_change": 1.23996876775021,
-                "EF_single_score": 0.0806330501849961
-            },
-            "likeliest_recipe": {
-                "en:cocoa": 0.193077720287065,
-                "en:cocoa_butter": 13.3929732735825,
-                "en:cocoa_paste": 28.0602263065748,
-                "en:concentrated_dairy_butter": 11.1540030287512,
-                "en:fleur_de_sel": 0.316532433290906,
-                "en:soya_lecithin": 10.5494896467616,
-                "en:sugar": 39.812211359289,
-                "en:vanilla": 0.267149101802711,
-                "en:water": 1.76514822662888
-            },
-            "mass_ratio_uncharacterized": 0.127664646561887,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:concentrated dairy butter"
-                ],
-                "nutrition": [
-                    "en:concentrated dairy butter"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.127664646561887,
-                "nutrition": 0.127664646561887
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.125,
-                "nutrition": 0.125
-            },
-            "warnings": [
-                "Inconsistencies were found in the defined percentages of the ingredients. Defined percentage of \"en:cocoa\" (47%) has not been used.",
-                "The estimated mass of nutrition uncharacterized ingredients in the product is high: 13%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%",
-                "The impact relative interquartile is high for EF single score (35%)",
-                "The impact relative interquartile is high for Climate change (39%)"
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "d",
     "ecoscore_score": 27,
     "ecoscore_tags": [
@@ -1621,7 +1576,7 @@
             "id": "en:flavouring",
             "ingredients": [
                 {
-                    "id": "en:vanilla",
+                    "id": "en:vanilla-flavouring",
                     "is_in_taxonomy": 1,
                     "text": "vanille"
                 }
@@ -1754,6 +1709,7 @@
         "cacao",
         "47-minimum"
     ],
+    "ingredients_lc": "fr",
     "ingredients_n": 10,
     "ingredients_n_tags": [
         "10",
@@ -1811,7 +1767,7 @@
     "ingredients_without_ciqual_codes": [
         "en:emulsifier",
         "en:flavouring",
-        "en:vanilla"
+        "en:vanilla-flavouring"
     ],
     "ingredients_without_ciqual_codes_n": 3,
     "ingredients_without_ecobalyse_ids": [
@@ -1823,7 +1779,7 @@
         "en:flavouring",
         "en:fleur-de-sel",
         "en:soya-lecithin",
-        "en:vanilla"
+        "en:vanilla-flavouring"
     ],
     "ingredients_without_ecobalyse_ids_n": 9,
     "interface_version_created": "20120622",
@@ -2244,12 +2200,28 @@
         {
             "material": {
                 "id": {
-                    "id": "en:aluminium"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:aluminium"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "shape": {
                 "id": {
-                    "id": "en:Container"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:Container"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

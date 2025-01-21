@@ -670,58 +670,6 @@
         },
         "status": "known"
     },
-    "ecoscore_extended_data": {
-        "impact": {
-            "ef_single_score_log_stddev": 0.0706341242825774,
-            "likeliest_impacts": {
-                "Climate_change": 0.129954056637256,
-                "EF_single_score": 0.0269717382889439
-            },
-            "likeliest_recipe": {
-                "en:colour": 0.472768735752007,
-                "en:concentrated_lemon_juice": 0.500574827942356,
-                "en:e100": 0.956023599055532,
-                "en:e322": 0.750398432088881,
-                "en:e392": 1.17208460893522,
-                "en:natural_flavouring": 0.981970820320378,
-                "en:palm": 4.0154730657965,
-                "en:palm_kernel_oil": 4.12584542532756,
-                "en:rapeseed": 52.8497146985052,
-                "en:salt": 0.54772168220196,
-                "en:sunflower": 0.592618419915691,
-                "en:thiamin": 0.752716799849977,
-                "en:water": 30.6547230611301
-            },
-            "mass_ratio_uncharacterized": 0.126305199271929,
-            "uncharacterized_ingredients": {
-                "impact": [
-                    "en:e392",
-                    "en:colour",
-                    "en:e100",
-                    "en:e322",
-                    "en:natural-flavouring",
-                    "en:thiamin"
-                ],
-                "nutrition": [
-                    "en:natural-flavouring"
-                ]
-            },
-            "uncharacterized_ingredients_mass_proportion": {
-                "impact": 0.126305199271929,
-                "nutrition": 0.0217892820648317
-            },
-            "uncharacterized_ingredients_ratio": {
-                "impact": 0.461538461538462,
-                "nutrition": 0.0769230769230769
-            },
-            "warnings": [
-                "The product has a high number of impact uncharacterized ingredients: 46%",
-                "The estimated mass of impact uncharacterized ingredients in the product is high: 13%",
-                "Parameter const_relax_coef has been set to 0.05 in order to get a result."
-            ]
-        }
-    },
-    "ecoscore_extended_data_version": "4",
     "ecoscore_grade": "b",
     "ecoscore_score": 76,
     "ecoscore_tags": [
@@ -1585,7 +1533,7 @@
             "id": "en:colour",
             "ingredients": [
                 {
-                    "id": "en:e160ai",
+                    "id": "en:beta-carotene-dye",
                     "is_in_taxonomy": 1,
                     "text": "b\u00eata-carot\u00e8ne"
                 }
@@ -1903,8 +1851,8 @@
     "ingredients_with_unspecified_percent_sum": 37.9999999999999,
     "ingredients_without_ciqual_codes": [
         "en:antioxidant",
+        "en:beta-carotene-dye",
         "en:colour",
-        "en:e160ai",
         "en:e392",
         "en:emulsifier",
         "en:natural-flavouring",
@@ -1922,9 +1870,9 @@
     "ingredients_without_ciqual_codes_n": 16,
     "ingredients_without_ecobalyse_ids": [
         "en:antioxidant",
+        "en:beta-carotene-dye",
         "en:colour",
         "en:concentrated-lemon-juice",
-        "en:e160ai",
         "en:e392",
         "en:emulsifier",
         "en:natural-flavouring",
@@ -2412,7 +2360,15 @@
         {
             "material": {
                 "id": {
-                    "id": "en:metal"
+                    "id": {
+                        "id": {
+                            "id": {
+                                "id": {
+                                    "id": "en:metal"
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
