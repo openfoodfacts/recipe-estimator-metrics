@@ -1,4 +1,5 @@
 {
+    "allergens": "en:milk, en:milk",
     "brands": "Belin,Mondelez",
     "categories_tags": [
         "en:snacks",
@@ -19,23 +20,29 @@
             "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
             "is_in_taxonomy": 1,
-            "origins": "en:france",
             "percent": 56.1,
             "text": "Farine de _blé_"
         },
         {
-            "ciqual_food_code": "16129",
-            "ecobalyse_code": "refined-palm-oil",
-            "id": "en:palm-oil",
+            "id": "en:vegetable-oil",
+            "ingredients": [
+                {
+                    "ciqual_food_code": "16129",
+                    "ecobalyse_code": "refined-palm-oil",
+                    "id": "en:palm-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de palme"
+                },
+                {
+                    "ciqual_food_code": "17130",
+                    "ecobalyse_code": "rapeseed-oil",
+                    "id": "en:colza-oil",
+                    "is_in_taxonomy": 1,
+                    "text": "huile de colza"
+                }
+            ],
             "is_in_taxonomy": 1,
-            "text": "huiles végétales de palme"
-        },
-        {
-            "ciqual_food_code": "17130",
-            "ecobalyse_code": "rapeseed-oil",
-            "id": "en:colza-oil",
-            "is_in_taxonomy": 1,
-            "text": "huiles végétales de colza"
+            "text": "huiles végétales"
         },
         {
             "ciqual_food_code": "12118",
@@ -84,7 +91,7 @@
         },
         {
             "ciqual_food_code": "9550",
-            "ecobalyse_proxy_code": "flour",
+            "ecobalyse_code": "flour",
             "id": "en:barley-malt-flour",
             "is_in_taxonomy": 1,
             "text": "farine d'_orge_ malté"
@@ -116,6 +123,28 @@
     ],
     "ingredients_lc": "fr",
     "ingredients_text": "Farine de _blé_ 56,1 %, huiles végétales (palme et colza), _emmental_ râpé séché 17 %, sucre, sel, sirop de glucose-fructose, poudre à lever (carbonate acide d'ammonium, carbonate acide de sodium), farine d'_orge_ malté, lactosérum en poudre (de _lait_), levure sèche, émulsifiant (lécithine de _soja_),",
+    "ingredients_without_ciqual_codes": [
+        "en:e500ii",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:raising-agent",
+        "en:vegetable-oil",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ciqual_codes_n": 6,
+    "ingredients_without_ecobalyse_ids": [
+        "bg:суха-мая",
+        "en:e500ii",
+        "en:e503ii",
+        "en:emulsifier",
+        "en:glucose-fructose-syrup",
+        "en:raising-agent",
+        "en:salt",
+        "en:soya-lecithin",
+        "en:vegetable-oil",
+        "en:whey-powder"
+    ],
+    "ingredients_without_ecobalyse_ids_n": 10,
     "labels_tags": [
         "en:distributor-labels",
         "en:no-preservatives",
