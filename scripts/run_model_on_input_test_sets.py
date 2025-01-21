@@ -243,7 +243,7 @@ def process_product(path, model, results_path, test_set_name):
 
         result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
         print("✅ Saving output to " + result_path + "\n")
-        with open(result_path, "w") as f:
+        with open(result_path, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=4, ensure_ascii=False, sort_keys=True)
     
     except Exception as e:
