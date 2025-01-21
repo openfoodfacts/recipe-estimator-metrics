@@ -23,10 +23,7 @@ response = requests.post(recipe_estimator_api_url, json=request_data)
 try:
     response_json = response.json()
 
-    if response_json["recipe_estimator"]["status"] != 0:
-        print(response_json, file=sys.stderr)
-    else:
-        # Pretty print the resulting JSON structure over the input file for easy inspection of diffs
-        print(json.dumps(response_json, indent=4))
+    # Pretty print the resulting JSON structure over the input file for easy inspection of diffs
+    print(json.dumps(response_json, indent=4))
 except:
     print(response, file=sys.stderr)
