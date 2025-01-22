@@ -241,32 +241,54 @@ def process_product(path, model, results_path, test_set_name):
         result = json.loads(result_json)
 
         # Verification : we want to know if there are duplicate ingredients
-        result["pefap_data"]["pefap_duplicate_ingredients"] = find_ingredients_with_duplicates(input_product["ingredients"])
-        print(f"\n -- Past time for test [{test_name}] : {result["pefap_data"]["pefap_execution_time"]:.2f} seconds. -- \n")
+        # result["pefap_data"]["pefap_duplicate_ingredients"] = find_ingredients_with_duplicates(input_product["ingredients"])
+        # print(f"\n -- Past time for test [{test_name}] : {result["pefap_data"]["pefap_execution_time"]:.2f} seconds. -- \n")
 
-        result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
-        print("✅ Saving output to " + result_path + "\n")
+        # result_path = results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input") + "/" + test_name
+        result_path = results_path + "/" + test_set_name + "/" + test_name
+        print("✅ " + test_name + " Saving output to " + result_path + "\n")
         with open(result_path, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=4, ensure_ascii=False, sort_keys=True)
     
     except Exception as e:
-        print("❌ An issue occurred: " + str(e) + "\n", file=sys.stderr)
+        print("❌ " + test_name + " An issue occurred: " + str(e) + "\n", file=sys.stderr)
 
 def main():
     if len(sys.argv) < 3:
         print("Usage: run_model_input_test_sets.py [full path or name of model executable] [full path or name for results] [full paths or names of one or more input test sets]")
         sys.exit(1)
 
+    # If we were passed a model name (no path), assume it is in the models directory, and if there is no extension, assume it is a .py file
+    if "/" not in sys.argv[1]:
+        if "." not in sys.argv[1]:
+            sys.argv[1] += ".py"
+        sys.argv[1] = "models/" + sys.argv[1]
+
     model = sys.argv[1]
+
+    # If we were passed a results name (no path), assume it is in the test-sets/results directory
+    if "/" not in sys.argv[2]:
+        sys.argv[2] = "test-sets/results/" + sys.argv[2]
     results_path = sys.argv[2]
     test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
 
     for test_set_name in test_sets:
-        test_set_path = test_set_name 
+
+        # If we have a test set path instead of a test set name, use the last component of the path as the test set name
+        if "test-sets/input/" in test_set_name:
+            test_set_name = test_set_name.split("test-sets/input/")[-1]
+
+        print("Running model on test set " + test_set_name)
+
+        # Test set name is the last component of the test set path, remove trailing / if any
+        test_set_path = 'test-sets/input/' + test_set_name 
+
+        # Create the results directory if it does not exist
         if not os.path.exists(results_path):
             os.makedirs(results_path)
-        if not os.path.exists(results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input")):
-            os.makedirs(results_path + "/" + os.path.relpath(test_set_name, start="test-sets/input"))
+        # Create the results directory for the test set if it does not exist
+        if not os.path.exists(results_path + "/" + test_set_name):
+            os.makedirs(results_path + "/" + test_set_name)            
 
         paths = [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]
 
@@ -279,7 +301,7 @@ def main():
                 sys.stdout.flush()
                 time_execution = future.result()
         
-        compute_metrics_for_test_set(results_path, os.path.relpath(test_set_name, start="test-sets/input"))
+        compute_metrics_for_test_set(results_path, test_set_name)
 
 if __name__ == '__main__':
     main()
