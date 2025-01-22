@@ -75,7 +75,8 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             # check that we also have sub ingredients in the resulting ingredient
             if "ingredients" not in resulting_ingredient:
                 print(f"Error: missing sub ingredients in resulting ingredient for {input_ingredient['id']}")
-                continue
+                # seems to happen with PEFAP. The metrics comparison is not valid in this case.
+                #continue
             resulting_sub_ingredients = resulting_ingredient["ingredients"]
             (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code) = [x + y for x, y in zip(
                 [total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code],
