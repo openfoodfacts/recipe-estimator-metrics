@@ -72,6 +72,11 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
         # Compare sub ingredients if any
         if "ingredients" in input_ingredient and len(input_ingredient["ingredients"]) > 0:
             input_sub_ingredients = input_ingredient["ingredients"]
+            # check that we also have sub ingredients in the resulting ingredient
+            if "ingredients" not in resulting_ingredient:
+                print(f"Error: missing sub ingredients in resulting ingredient for {input_ingredient['id']}")
+                # seems to happen with PEFAP. The metrics comparison is not valid in this case.
+                #continue
             resulting_sub_ingredients = resulting_ingredient["ingredients"]
             (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code) = [x + y for x, y in zip(
                 [total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code],
@@ -110,6 +115,12 @@ def compare_input_product_to_resulting_product(input_product, resulting_product,
     
     if not isinstance(input_product, dict) or not isinstance(resulting_product, dict):
         raise ValueError("Input product and resulting product must be dictionaries")
+    
+    if "ingredients" not in input_product:
+        raise ValueError("Input product must have an 'ingredients' field")
+    
+    if "ingredients" not in resulting_product:
+        raise ValueError("Resulting product must have an 'ingredients' field")
         
     (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code) = compare_input_ingredients_to_resulting_ingredients(input_product["ingredients"], resulting_product["ingredients"], ingredients_stats, products_ingredients_csv_writer, test_name)
 
