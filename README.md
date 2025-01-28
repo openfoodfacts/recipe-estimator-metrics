@@ -2,7 +2,7 @@
 
 Metrics framework for recipe estimation (estimation of the percentage of each ingredient and sub ingredient)
 
-Note that a recipe estimate is for the content before eventual evaporation (due to transformation like cooking for example).
+Note that a recipe estimate is for the content before possible water loss (due to transformation like cooking for example).
 
 # Test sets
 
