@@ -2,6 +2,8 @@
 
 Metrics framework for recipe estimation (estimation of the percentage of each ingredient and sub ingredient)
 
+Note that a recipe estimate is for the content before possible water loss (due to transformation like cooking for example).
+
 # Test sets
 
 The test-sets/input directory contains test sets with products that have some or all of the ingredients percent values specified.
@@ -14,6 +16,32 @@ The test-sets/results directory contains the results of some models and some tes
 
 The main metric we compute and want to optimize is the ingredient weight difference.
 For each product, for each ingredient that has a specified percent value, we compute the absolute difference between the estimated percent value and the specified percent value. We then sum the absolute differences for all ingredients.
+
+## What we compute
+
+On each product:
+* we have:
+  * models might add a specific entry to report some informations
+    * it's the case for recipe estimator (in `recipe_estimator`) 
+* we will report in `ingredients_metrics`:
+  * `total_difference` (float): sum of difference
+  * `total_specified_input_percent` (float): the sum of the percentage for known ingredients (given on the packaging)
+  * `relative_difference` (float): sum(difference) / total_specified_input_percent (only if total_specified_input_percent is not 0) 
+  * `number_of_ingredients_without_ciqual_code`
+
+On each ingredient, in the product:
+* as input, we have:
+  * percent_estimate - the percent of this ingredient in the recipe
+  * quantity_estimate - the quantity we estimated of the product (sum of quantity might be more than 100g due to evaporation)
+* per ingredients we add:
+  * `difference`: abs(percent_estimate - real percent) if we know real percent  
+
+And we will globaly report:
+* total_difference
+* number_of_products
+* average_difference
+and some more data
+
 
 ## Metrics for subsets of the test sets
 
