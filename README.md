@@ -195,3 +195,13 @@ Percent estimate with ciqual or ciqual_proxy_food_code: 85.9
 The key metrics are:
 - Average difference: the average sum of quantity differences for all ingredients of the product.
 - All ciqual test set average difference: the average difference restricted to a subset of products for which we have been able to match all ingredients to the CIQUAL nutritional database.
+
+## Show side-by-side product comparison for all models
+
+Run
+
+```
+./scripts/compute_product_metrics_for_all_models.py
+```
+This will generate the `test-sets/results/products_stats.csv` file which has a column for each result set and shows the total percentage variance for each product.
+
