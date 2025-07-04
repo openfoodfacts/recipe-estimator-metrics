@@ -75,17 +75,47 @@
                     "percent_min": 0.000697,
                     "percent_nom": 0.000697
                 },
+                "fructose": {
+                    "confidence": "A",
+                    "percent_max": 0.2,
+                    "percent_min": 0,
+                    "percent_nom": 0.2
+                },
+                "galactose_100g": {
+                    "confidence": "-",
+                    "percent_max": 0.0,
+                    "percent_min": 0.0,
+                    "percent_nom": 0.0
+                },
+                "glucose": {
+                    "confidence": "A",
+                    "percent_max": 0.3,
+                    "percent_min": 0.3,
+                    "percent_nom": 0.3
+                },
                 "iron": {
                     "confidence": "A",
                     "percent_max": 0.0040999999999999995,
                     "percent_min": 0.0040999999999999995,
                     "percent_nom": 0.0040999999999999995
                 },
+                "lactose": {
+                    "confidence": "A",
+                    "percent_max": 0.2,
+                    "percent_min": 0,
+                    "percent_nom": 0.2
+                },
                 "magnesium": {
                     "confidence": "A",
                     "percent_max": 0.15,
                     "percent_min": 0.15,
                     "percent_nom": 0.15
+                },
+                "maltose": {
+                    "confidence": "A",
+                    "percent_max": 2.2,
+                    "percent_min": 2.2,
+                    "percent_nom": 2.2
                 },
                 "manganese": {
                     "confidence": "A",
@@ -152,6 +182,12 @@
                     "percent_max": 0.141,
                     "percent_min": 0.141,
                     "percent_nom": 0.141
+                },
+                "sucrose": {
+                    "confidence": "A",
+                    "percent_max": 0.2,
+                    "percent_min": 0,
+                    "percent_nom": 0.2
                 },
                 "sugars": {
                     "confidence": "A",
@@ -280,12 +316,37 @@
                     "percent_min": 0,
                     "percent_nom": 0
                 },
+                "fructose": {
+                    "percent_max": 100,
+                    "percent_min": 0,
+                    "percent_nom": 0
+                },
+                "galactose_100g": {
+                    "percent_max": 100,
+                    "percent_min": 0,
+                    "percent_nom": 0
+                },
+                "glucose": {
+                    "percent_max": 100,
+                    "percent_min": 0,
+                    "percent_nom": 0
+                },
                 "iron": {
                     "percent_max": 100,
                     "percent_min": 0,
                     "percent_nom": 0
                 },
+                "lactose": {
+                    "percent_max": 100,
+                    "percent_min": 0,
+                    "percent_nom": 0
+                },
                 "magnesium": {
+                    "percent_max": 100,
+                    "percent_min": 0,
+                    "percent_nom": 0
+                },
+                "maltose": {
                     "percent_max": 100,
                     "percent_min": 0,
                     "percent_nom": 0
@@ -341,6 +402,11 @@
                     "percent_nom": 0
                 },
                 "sodium": {
+                    "percent_max": 100,
+                    "percent_min": 0,
+                    "percent_nom": 0
+                },
+                "sucrose": {
                     "percent_max": 100,
                     "percent_min": 0,
                     "percent_nom": 0
@@ -559,7 +625,7 @@
     "product_name": "Levure de bière",
     "recipe_estimator": {
         "ingredient_count": 2,
-        "iterations": 11,
+        "iterations": 12,
         "nutrients": {
             "alcohol": {
                 "ingredient_count": 2,
@@ -576,11 +642,10 @@
             },
             "carbohydrates": {
                 "ingredient_count": 2,
-                "notes": "Have sugar and fiber so ignore carbs",
                 "penalty_factor": 1.0,
                 "product_total": 12,
                 "unweighted_total": 21.8,
-                "weighting": 0
+                "weighting": 1.0
             },
             "cholesterol": {
                 "ingredient_count": 2,
@@ -622,16 +687,46 @@
                 "unweighted_total": 0.000697,
                 "weighting": 0
             },
+            "fructose": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.2,
+                "weighting": 0
+            },
+            "galactose_100g": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.0,
+                "weighting": 0
+            },
+            "glucose": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.3,
+                "weighting": 0
+            },
             "iron": {
                 "ingredient_count": 2,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0040999999999999995,
                 "weighting": 0
             },
+            "lactose": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.2,
+                "weighting": 0
+            },
             "magnesium": {
                 "ingredient_count": 2,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.15,
+                "weighting": 0
+            },
+            "maltose": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 2.2,
                 "weighting": 0
             },
             "manganese": {
@@ -707,6 +802,12 @@
                 "penalty_factor": 0,
                 "product_total": 0.128,
                 "unweighted_total": 0.141,
+                "weighting": 0
+            },
+            "sucrose": {
+                "ingredient_count": 2,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.2,
                 "weighting": 0
             },
             "sugars": {

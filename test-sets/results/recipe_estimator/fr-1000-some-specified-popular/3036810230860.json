@@ -71,12 +71,37 @@
                             "percent_min": 0,
                             "percent_nom": 0
                         },
+                        "fructose": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "galactose_100g": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "glucose": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
                         "iron": {
                             "percent_max": 100,
                             "percent_min": 0,
                             "percent_nom": 0
                         },
+                        "lactose": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
                         "magnesium": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "maltose": {
                             "percent_max": 100,
                             "percent_min": 0,
                             "percent_nom": 0
@@ -132,6 +157,11 @@
                             "percent_nom": 0
                         },
                         "sodium": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "sucrose": {
                             "percent_max": 100,
                             "percent_min": 0,
                             "percent_nom": 0
@@ -273,17 +303,47 @@
                     "percent_min": 6.7e-06,
                     "percent_nom": 6.75e-06
                 },
+                "fructose": {
+                    "confidence": "A",
+                    "percent_max": 6.3,
+                    "percent_min": 5.51,
+                    "percent_nom": 5.96
+                },
+                "galactose_100g": {
+                    "confidence": "B",
+                    "percent_max": 0.0,
+                    "percent_min": 0.0,
+                    "percent_nom": 0.0
+                },
+                "glucose": {
+                    "confidence": "A",
+                    "percent_max": 2.72,
+                    "percent_min": 1.94,
+                    "percent_nom": 2.13
+                },
                 "iron": {
                     "confidence": "A",
                     "percent_max": 0.00078,
                     "percent_min": 0.0,
                     "percent_nom": 0.0003
                 },
+                "lactose": {
+                    "confidence": "A",
+                    "percent_max": 0.5,
+                    "percent_min": 0.0,
+                    "percent_nom": 0.5
+                },
                 "magnesium": {
                     "confidence": "A",
                     "percent_max": 0.007,
                     "percent_min": 0.004,
                     "percent_nom": 0.00456
+                },
+                "maltose": {
+                    "confidence": "A",
+                    "percent_max": 0.5,
+                    "percent_min": 0.0,
+                    "percent_nom": 0.5
                 },
                 "manganese": {
                     "confidence": "A",
@@ -350,6 +410,12 @@
                     "percent_max": 0.1,
                     "percent_min": 0.0001,
                     "percent_nom": 0.013300000000000001
+                },
+                "sucrose": {
+                    "confidence": "A",
+                    "percent_max": 3.15,
+                    "percent_min": 0.55,
+                    "percent_nom": 1.44
                 },
                 "sugars": {
                     "confidence": "A",
@@ -480,12 +546,37 @@
                             "percent_min": 0,
                             "percent_nom": 0
                         },
+                        "fructose": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "galactose_100g": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "glucose": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
                         "iron": {
                             "percent_max": 100,
                             "percent_min": 0,
                             "percent_nom": 0
                         },
+                        "lactose": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
                         "magnesium": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "maltose": {
                             "percent_max": 100,
                             "percent_min": 0,
                             "percent_nom": 0
@@ -541,6 +632,11 @@
                             "percent_nom": 0
                         },
                         "sodium": {
+                            "percent_max": 100,
+                            "percent_min": 0,
+                            "percent_nom": 0
+                        },
+                        "sucrose": {
                             "percent_max": 100,
                             "percent_min": 0,
                             "percent_nom": 0
@@ -717,7 +813,7 @@
     "product_name": "Mail Cid V 6x500ML BOT",
     "recipe_estimator": {
         "ingredient_count": 3,
-        "iterations": 14,
+        "iterations": 15,
         "nutrients": {
             "alcohol": {
                 "ingredient_count": 3,
@@ -733,11 +829,10 @@
             },
             "carbohydrates": {
                 "ingredient_count": 3,
-                "notes": "Have sugar and fiber so ignore carbs",
                 "penalty_factor": 1.0,
                 "product_total": 11,
                 "unweighted_total": 11.4,
-                "weighting": 0
+                "weighting": 1.0
             },
             "cholesterol": {
                 "ingredient_count": 3,
@@ -779,16 +874,46 @@
                 "unweighted_total": 6.75e-06,
                 "weighting": 0
             },
+            "fructose": {
+                "ingredient_count": 3,
+                "notes": "Not listed on product",
+                "unweighted_total": 5.96,
+                "weighting": 0
+            },
+            "galactose_100g": {
+                "ingredient_count": 3,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.0,
+                "weighting": 0
+            },
+            "glucose": {
+                "ingredient_count": 3,
+                "notes": "Not listed on product",
+                "unweighted_total": 2.13,
+                "weighting": 0
+            },
             "iron": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0003,
                 "weighting": 0
             },
+            "lactose": {
+                "ingredient_count": 3,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.5,
+                "weighting": 0
+            },
             "magnesium": {
                 "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.00456,
+                "weighting": 0
+            },
+            "maltose": {
+                "ingredient_count": 3,
+                "notes": "Not listed on product",
+                "unweighted_total": 0.5,
                 "weighting": 0
             },
             "manganese": {
@@ -860,6 +985,12 @@
                 "penalty_factor": 0,
                 "product_total": 0.004,
                 "unweighted_total": 0.013300000000000001,
+                "weighting": 0
+            },
+            "sucrose": {
+                "ingredient_count": 3,
+                "notes": "Not listed on product",
+                "unweighted_total": 1.44,
                 "weighting": 0
             },
             "sugars": {
