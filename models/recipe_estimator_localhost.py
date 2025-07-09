@@ -16,7 +16,7 @@ except ValueError:
     print("Input product is not in JSON format", file=sys.stderr)
 
 # Call API v3 recipe_estimator service
-recipe_estimator_api_url = "http://localhost:8000/api/v3/estimate_recipe"
+recipe_estimator_api_url = "http://localhost:5521/api/v3/estimate_recipe"
 request_data = product
 response = requests.post(recipe_estimator_api_url, json=request_data)
 
