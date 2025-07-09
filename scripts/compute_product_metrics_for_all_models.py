@@ -25,15 +25,18 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
 
     models = []
 
-    for model_name in [f for f in sorted(os.listdir(results_path))if '.' not in f]:
+    model_names = [f for f in sorted(os.listdir(results_path))if '.' not in f]
+    for model_name in model_names:
         models.append(model_name)
 
     products_csv_writer.writerow(['test_set','product','ingredients_n','without_ciqual_n'] + models)
 
-    for test_set_name in [f for f in sorted(os.listdir(test_sets_path))if '.' not in f]:
+    test_set_names = [f for f in sorted(os.listdir(test_sets_path))if '.' not in f]
+    for test_set_name in test_set_names:
         print(test_set_name)
         test_set_path = test_sets_path + "/" + test_set_name + "/"
-        for test_path in [test_set_path + f for f in sorted(os.listdir(test_set_path)) if f.endswith(".json")]:
+        test_paths = [test_set_path + f for f in sorted(os.listdir(test_set_path)) if f.endswith(".json")]
+        for test_path in test_paths:
             product_name = test_path.split(test_set_path)[-1].split('.json')[0]
             try:
                 with open(test_path, "r") as f:
