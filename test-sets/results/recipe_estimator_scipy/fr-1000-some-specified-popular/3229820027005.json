@@ -19,7 +19,6 @@
             "id": "en:brewer-s-yeast",
             "index": 0,
             "is_in_taxonomy": 1,
-            "lost_water": 0.0,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -425,14 +424,12 @@
             },
             "calcium": {
                 "ingredient_count": 1,
-                "penalty_factor": 100.0,
                 "product_total": 0.125,
                 "unweighted_total": 0.13,
-                "weighting": 1.0
+                "weighting": 100.0
             },
             "carbohydrates": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 19,
                 "unweighted_total": 21.8,
                 "weighting": 1.0
@@ -452,21 +449,18 @@
             "energy": {
                 "ingredient_count": 1,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 1467,
                 "unweighted_total": 1400.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 5,
                 "unweighted_total": 4.5,
                 "weighting": 1.0
             },
             "fiber": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 20,
                 "unweighted_total": 22.5,
                 "weighting": 1.0
@@ -483,12 +477,6 @@
                 "unweighted_total": 0.2,
                 "weighting": 0
             },
-            "galactose_100g": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
             "glucose": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
@@ -497,10 +485,9 @@
             },
             "iron": {
                 "ingredient_count": 1,
-                "penalty_factor": 100.0,
                 "product_total": 0.0035,
                 "unweighted_total": 0.0040999999999999995,
-                "weighting": 1.0
+                "weighting": 100.0
             },
             "lactose": {
                 "ingredient_count": 1,
@@ -511,7 +498,6 @@
             "magnesium": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.137,
                 "unweighted_total": 0.15,
                 "weighting": 0
@@ -537,7 +523,6 @@
             "pantothenic-acid": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.0046,
                 "unweighted_total": 0.00514,
                 "weighting": 0
@@ -545,7 +530,6 @@
             "phosphorus": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 1.122,
                 "unweighted_total": 1.1,
                 "weighting": 0
@@ -565,28 +549,24 @@
             "potassium": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 1.907,
                 "unweighted_total": 1.7,
                 "weighting": 0
             },
             "proteins": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 47,
                 "unweighted_total": 40.4,
                 "weighting": 1.0
             },
             "salt": {
                 "ingredient_count": 1,
-                "penalty_factor": 10.0,
                 "product_total": 0.25,
                 "unweighted_total": 0.35,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 1,
                 "unweighted_total": 0.7,
                 "weighting": 1.0
@@ -594,7 +574,6 @@
             "sodium": {
                 "ingredient_count": 1,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0.1,
                 "unweighted_total": 0.141,
                 "weighting": 0
@@ -607,7 +586,6 @@
             },
             "sugars": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 1,
                 "unweighted_total": 2.5,
                 "weighting": 1.0
@@ -615,7 +593,6 @@
             "vitamin-b1": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.033,
                 "unweighted_total": 0.0116,
                 "weighting": 0
@@ -629,7 +606,6 @@
             "vitamin-b2": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.0038,
                 "unweighted_total": 0.001,
                 "weighting": 0
@@ -637,7 +613,6 @@
             "vitamin-b6": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.0016,
                 "unweighted_total": 0.00088,
                 "weighting": 0
@@ -663,7 +638,6 @@
             "vitamin-pp": {
                 "ingredient_count": 1,
                 "notes": "A component of B3?",
-                "penalty_factor": 0,
                 "product_total": 0.022,
                 "unweighted_total": 0.0185,
                 "weighting": 0
@@ -677,13 +651,12 @@
             "zinc": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.0058,
                 "unweighted_total": 0.008400000000000001,
                 "weighting": 0
             }
         },
         "status": 0,
-        "status_message": "Optimization terminated successfully"
+        "status_message": "The side length measure of the hyperrectangle containing the lowest function value found is below len_tol=1e-05"
     }
 }
