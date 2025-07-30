@@ -17,9 +17,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 25.8,
+            "difference": 27.9,
             "id": "fr:yogurt-160",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -262,13 +263,13 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 59.2,
+            "percent_estimate": 57.1,
             "percent_hidden": 85,
-            "quantity_estimate": 59.26,
+            "quantity_estimate": 57.14,
             "text": "Yogurt&#160"
         },
         {
-            "difference": 20.2,
+            "difference": 13.6,
             "id": "fr:honey-lemon-balm-preparation",
             "ingredients": [
                 {
@@ -278,6 +279,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:sugar",
                     "index": 1,
+                    "initial_estimate": 14.746543778801843,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -520,8 +522,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 25.0,
-                    "quantity_estimate": 25.0,
+                    "percent_estimate": 14.8,
+                    "quantity_estimate": 14.75,
                     "text": "sugar"
                 },
                 {
@@ -529,9 +531,10 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": null,
                     "ciqual_proxy_food_code": null,
-                    "difference": 1.17,
+                    "difference": 4.37,
                     "id": "fr:honey",
                     "index": 2,
+                    "initial_estimate": 7.373271889400922,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -774,9 +777,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 4.17,
+                    "percent_estimate": 7.37,
                     "percent_hidden": 3,
-                    "quantity_estimate": 4.17,
+                    "quantity_estimate": 7.37,
                     "text": "honey"
                 },
                 {
@@ -784,9 +787,10 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": null,
                     "ciqual_proxy_food_code": null,
-                    "difference": 2.63,
+                    "difference": 3.54,
                     "id": "fr:lemon-balm-extract",
                     "index": 3,
+                    "initial_estimate": 3.686635944700461,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1029,9 +1033,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 2.78,
+                    "percent_estimate": 3.69,
                     "percent_hidden": 0.15,
-                    "quantity_estimate": 2.78,
+                    "quantity_estimate": 3.69,
                     "text": "lemon balm extract"
                 },
                 {
@@ -1041,6 +1045,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:modified-corn-starch",
                     "index": 4,
+                    "initial_estimate": 1.8433179723502304,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1283,8 +1288,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 2.08,
-                    "quantity_estimate": 2.08,
+                    "percent_estimate": 1.84,
+                    "quantity_estimate": 1.84,
                     "text": "modified corn starch"
                 },
                 {
@@ -1294,6 +1299,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:flavors",
                     "index": 5,
+                    "initial_estimate": 0.9216589861751152,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1536,12 +1542,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.17,
-                    "quantity_estimate": 1.17,
+                    "percent_estimate": 0.92,
+                    "quantity_estimate": 0.92,
                     "text": "flavors"
                 }
             ],
-            "percent_estimate": 35.2,
+            "percent_estimate": 28.6,
             "percent_hidden": 15,
             "text": "honey lemon balm preparation"
         },
@@ -1552,6 +1558,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:160",
             "index": 6,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1794,15 +1801,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 5.55,
-            "quantity_estimate": 5.56,
+            "percent_estimate": 14.3,
+            "quantity_estimate": 14.29,
             "text": "&#160"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 0.482,
-        "total_difference": 49.8,
+        "relative_difference": 0.478,
+        "total_difference": 49.3,
         "total_specified_input_percent": 103.0
     },
     "ingredients_text": "Yogurt&#160;85%, honey lemon balm preparation 15% (sugar, honey 3%, lemon balm extract 0.15%, modified corn starch, flavors).&#160;Gluten free",
@@ -1891,7 +1898,15 @@
     "recipe_estimator": {
         "ingredient_count": 7,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 5.773159728050814e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 9.947598300641403e-12,
+            "nutrient_penalty": 0,
+            "total": 1.000532989792191e-11
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

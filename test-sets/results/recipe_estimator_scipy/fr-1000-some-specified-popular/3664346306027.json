@@ -26,9 +26,10 @@
                     "ciqual_food_code": "16030",
                     "ciqual_food_code_used": "16030",
                     "ciqual_proxy_food_code": null,
-                    "difference": 31.1,
+                    "difference": 30.9,
                     "id": "en:cocoa-butter",
                     "index": 0,
+                    "initial_estimate": 53.333333333333336,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -266,14 +267,14 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 42.1,
+                    "percent_estimate": 41.9,
                     "percent_hidden": 11,
-                    "quantity_estimate": 42.13,
+                    "quantity_estimate": 41.92,
                     "text": "beurre de cacao"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 42.1,
+            "percent_estimate": 41.9,
             "text": "Cacao maigre"
         },
         {
@@ -281,9 +282,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 8.38,
+            "difference": 8.08,
             "id": "fr:en-poudre",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -527,9 +529,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 41.6,
+            "percent_estimate": 41.9,
             "percent_hidden": 50,
-            "quantity_estimate": 41.67,
+            "quantity_estimate": 41.93,
             "text": "en poudre"
         },
         {
@@ -540,6 +542,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -777,8 +780,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 8.43,
-            "quantity_estimate": 8.44,
+            "percent_estimate": 8.11,
+            "quantity_estimate": 8.11,
             "text": "sucre"
         },
         {
@@ -788,6 +791,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1031,16 +1035,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 7.86,
-            "quantity_estimate": 7.87,
+            "percent_estimate": 8.05,
+            "quantity_estimate": 8.05,
             "text": "arôme"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.647,
-        "total_difference": 39.5,
+        "relative_difference": 0.639,
+        "total_difference": 39.0,
         "total_specified_input_percent": 61
     },
     "ingredients_text": "Cacao maigre (11 % de beurre de cacao) en poudre (50%), sucre, arôme. Peut contenir lait et soja.",
@@ -1434,7 +1438,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 4956.981408929594,
+            "ingredient_not_half_previous_penalty": 168.44291302777125,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2.5501929326253503,
+            "nutrient_penalty": 18454981.320104703,
+            "total": 18460109.294619597
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

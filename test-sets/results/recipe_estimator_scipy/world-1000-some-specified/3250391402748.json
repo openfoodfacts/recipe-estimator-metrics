@@ -23,6 +23,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:atlantic-salmon",
                     "index": 0,
+                    "initial_estimate": 66.66666666666667,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -260,7 +261,7 @@
                         }
                     },
                     "percent_estimate": 97.5,
-                    "quantity_estimate": 112.2,
+                    "quantity_estimate": 112.19,
                     "text": "Salmo salar"
                 }
             ],
@@ -276,6 +277,7 @@
             "difference": 0.49,
             "id": "en:salt",
             "index": 1,
+            "initial_estimate": 33.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -836,7 +838,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 532.1349829831057,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3015.7631399312436,
+            "nutrient_penalty": 11381.466284278999,
+            "total": 14929.364407193347
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=20000"
+        "status_message": "Optimization terminated successfully."
     }
 }

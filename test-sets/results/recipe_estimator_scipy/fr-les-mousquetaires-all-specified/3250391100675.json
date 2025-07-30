@@ -20,9 +20,10 @@
             "ciqual_food_code": "20010",
             "ciqual_food_code_used": "20010",
             "ciqual_proxy_food_code": null,
-            "difference": 27.7,
+            "difference": 31.6,
             "id": "en:cep",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,10 +260,10 @@
                     "percent_nom": 0.00065
                 }
             },
-            "percent_estimate": 47.7,
+            "percent_estimate": 51.6,
             "percent_hidden": 20,
             "processing": "en:pieces",
-            "quantity_estimate": 47.7,
+            "quantity_estimate": 51.61,
             "text": "Cèpes"
         },
         {
@@ -270,9 +271,10 @@
             "ciqual_food_code": "20010",
             "ciqual_food_code_used": "20010",
             "ciqual_proxy_food_code": null,
-            "difference": 13.6,
+            "difference": 7.81,
             "id": "en:cultivated-mushroom",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -509,10 +511,10 @@
                     "percent_nom": 0.00065
                 }
             },
-            "percent_estimate": 31.6,
+            "percent_estimate": 25.8,
             "percent_hidden": 18,
             "processing": "en:whole",
-            "quantity_estimate": 31.61,
+            "quantity_estimate": 25.81,
             "text": "champignons de Paris"
         },
         {
@@ -520,9 +522,10 @@
             "ciqual_food_code": "20010",
             "ciqual_food_code_used": "20010",
             "ciqual_proxy_food_code": null,
-            "difference": 2.29,
+            "difference": 5.1,
             "id": "en:shiitake",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -759,10 +762,10 @@
                     "percent_nom": 0.00065
                 }
             },
-            "percent_estimate": 15.7,
+            "percent_estimate": 12.9,
             "percent_hidden": 18,
             "processing": "en:whole",
-            "quantity_estimate": 15.71,
+            "quantity_estimate": 12.9,
             "text": "shiitaké"
         },
         {
@@ -770,9 +773,10 @@
             "ciqual_food_code": "20010",
             "ciqual_food_code_used": "20010",
             "ciqual_proxy_food_code": null,
-            "difference": 13.7,
+            "difference": 11.6,
             "id": "en:pholiota",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1009,9 +1013,9 @@
                     "percent_nom": 0.00065
                 }
             },
-            "percent_estimate": 4.31,
+            "percent_estimate": 6.45,
             "percent_hidden": 18,
-            "quantity_estimate": 4.31,
+            "quantity_estimate": 6.45,
             "text": "pholiotes"
         },
         {
@@ -1019,9 +1023,10 @@
             "ciqual_food_code": "20010",
             "ciqual_food_code_used": "20010",
             "ciqual_proxy_food_code": null,
-            "difference": 17.3,
+            "difference": 14.8,
             "id": "en:cep",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1258,17 +1263,17 @@
                     "percent_nom": 0.00065
                 }
             },
-            "percent_estimate": 0.69,
+            "percent_estimate": 3.23,
             "percent_hidden": 18,
             "processing": "en:pieces",
-            "quantity_estimate": 0.69,
+            "quantity_estimate": 3.23,
             "text": "bolets"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.811,
-        "total_difference": 74.6,
+        "relative_difference": 0.77,
+        "total_difference": 70.8,
         "total_specified_input_percent": 92
     },
     "ingredients_text": "Cèpes en morceaux 20% minimum, champignons de Paris entiers 18% minimum, shiitaké entiers 18% minimum, pholiotes 18% minimum, bolets en morceaux 18% minimum.",
@@ -1578,7 +1583,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 5.3290705182007514e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.0,
+            "nutrient_penalty": 381847.74273345707,
+            "total": 381847.74273345707
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

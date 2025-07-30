@@ -24,9 +24,10 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": null,
                     "ciqual_proxy_food_code": null,
-                    "difference": 1.35,
+                    "difference": 2.63,
                     "id": "en:sheep",
                     "index": 0,
+                    "initial_estimate": 35.55555555555556,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -270,9 +271,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 71.3,
+                    "percent_estimate": 67.4,
                     "percent_hidden": 70,
-                    "quantity_estimate": 71.37,
+                    "quantity_estimate": 68.56,
                     "text": "sheep"
                 },
                 {
@@ -280,9 +281,10 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": null,
                     "ciqual_proxy_food_code": null,
-                    "difference": 5.62,
+                    "difference": 1.61,
                     "id": "en:goat",
                     "index": 1,
+                    "initial_estimate": 17.77777777777778,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -526,14 +528,14 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 24.4,
+                    "percent_estimate": 28.4,
                     "percent_hidden": 30,
-                    "quantity_estimate": 24.38,
+                    "quantity_estimate": 28.89,
                     "text": "goat"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 95.7,
+            "percent_estimate": 95.8,
             "text": "milk"
         },
         {
@@ -543,6 +545,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -780,8 +783,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 2.78,
-            "quantity_estimate": 2.78,
+            "percent_estimate": 2.61,
+            "quantity_estimate": 2.66,
             "text": "salt"
         },
         {
@@ -791,6 +794,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:rensure",
             "index": 3,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1034,8 +1038,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.03,
-            "quantity_estimate": 1.03,
+            "percent_estimate": 0.94,
+            "quantity_estimate": 0.96,
             "text": "rensure"
         },
         {
@@ -1045,6 +1049,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 4,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1288,16 +1293,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.46,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.68,
+            "quantity_estimate": 0.69,
             "text": "lactic ferments"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.0697,
-        "total_difference": 6.97,
+        "relative_difference": 0.0424,
+        "total_difference": 4.24,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "milk (sheep 70% mini, goat 30% max), salt, rensure, lactic ferments,",
@@ -1466,7 +1471,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 520.2902889461982,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 878.2593083192226,
+            "nutrient_penalty": 11340003.173884323,
+            "total": 11341401.723481588
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

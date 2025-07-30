@@ -27,6 +27,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -264,8 +265,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 80.8,
-            "quantity_estimate": 84.22,
+            "percent_estimate": 81.0,
+            "quantity_estimate": 81.96,
             "text": "Eau"
         },
         {
@@ -273,9 +274,10 @@
             "ciqual_food_code": "9001",
             "ciqual_food_code_used": "9001",
             "ciqual_proxy_food_code": null,
-            "difference": 1.46,
+            "difference": 0.28,
             "id": "en:spelt",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -514,9 +516,9 @@
                     "percent_nom": 0.00328
                 }
             },
-            "percent_estimate": 8.46,
+            "percent_estimate": 7.28,
             "percent_hidden": 7,
-            "quantity_estimate": 8.82,
+            "quantity_estimate": 7.37,
             "text": "épeautre"
         },
         {
@@ -524,9 +526,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "9100",
             "ciqual_proxy_food_code": "9100",
-            "difference": 0.11,
+            "difference": 1.2,
             "id": "en:rice",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -765,9 +768,9 @@
                     "percent_nom": 0.00141
                 }
             },
-            "percent_estimate": 6.11,
+            "percent_estimate": 7.2,
             "percent_hidden": 6,
-            "quantity_estimate": 6.36,
+            "quantity_estimate": 7.29,
             "text": "riz"
         },
         {
@@ -775,10 +778,11 @@
             "ciqual_food_code": "15004",
             "ciqual_food_code_used": "15004",
             "ciqual_proxy_food_code": null,
-            "difference": 0.69,
+            "difference": 1.47,
             "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -1017,9 +1021,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 2.31,
+            "percent_estimate": 1.53,
             "percent_hidden": 3,
-            "quantity_estimate": 2.4,
+            "quantity_estimate": 1.55,
             "text": "noisettes"
         },
         {
@@ -1027,9 +1031,10 @@
             "ciqual_food_code": "9310",
             "ciqual_food_code_used": "9310",
             "ciqual_proxy_food_code": null,
-            "difference": 1.09,
+            "difference": 0.74,
             "id": "en:oat",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -1268,9 +1273,9 @@
                     "percent_nom": 0.0039700000000000004
                 }
             },
-            "percent_estimate": 1.11,
+            "percent_estimate": 1.46,
             "percent_hidden": 2.2,
-            "quantity_estimate": 1.16,
+            "quantity_estimate": 1.48,
             "text": "avoine"
         },
         {
@@ -1281,6 +1286,7 @@
             "ecobalyse_code": "sunflower-oil-organic",
             "id": "en:cold-pressed-sunflower-oil",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -1519,8 +1525,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 1.09,
-            "quantity_estimate": 1.13,
+            "percent_estimate": 1.46,
+            "quantity_estimate": 1.48,
             "text": "huile de tournesol pressée à froid"
         },
         {
@@ -1530,6 +1536,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1775,8 +1782,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.184,
-        "total_difference": 3.35,
+        "relative_difference": 0.203,
+        "total_difference": 3.69,
         "total_specified_input_percent": 18.2
     },
     "ingredients_text": "Eau, épeautre* 7%, riz* 6%, noisettes* 3%, avoine* 2,2%, huile de tournesol* pressée à froid, sel marin.\r\n\r\n*bio",
@@ -2110,7 +2117,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 414.17120431508454,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 845.7465582436087,
+            "nutrient_penalty": 2941183.81610288,
+            "total": 2942443.7338654385
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

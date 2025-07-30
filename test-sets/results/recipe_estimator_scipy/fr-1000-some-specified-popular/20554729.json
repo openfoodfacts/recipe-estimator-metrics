@@ -22,6 +22,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -259,8 +260,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 42.3,
-            "quantity_estimate": 53.05,
+            "percent_estimate": 43.9,
+            "quantity_estimate": 54.51,
             "text": "sugar"
         },
         {
@@ -270,6 +271,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vegetable-oil",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -513,8 +515,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 27.8,
-            "quantity_estimate": 34.88,
+            "percent_estimate": 28.3,
+            "quantity_estimate": 35.16,
             "text": "vegetable oil"
         },
         {
@@ -522,10 +524,11 @@
             "ciqual_food_code": "15004",
             "ciqual_food_code_used": "15004",
             "ciqual_proxy_food_code": null,
-            "difference": 14.4,
+            "difference": 14.7,
             "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -763,9 +766,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 27.4,
+            "percent_estimate": 27.7,
             "percent_hidden": 13,
-            "quantity_estimate": 34.38,
+            "quantity_estimate": 34.44,
             "text": "hazelnuts"
         },
         {
@@ -776,6 +779,7 @@
             "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1013,8 +1017,8 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 2.11,
-            "quantity_estimate": 2.65,
+            "percent_estimate": 0.02,
+            "quantity_estimate": 0.03,
             "text": "skimmed milk powder"
         },
         {
@@ -1022,9 +1026,10 @@
             "ciqual_food_code": "18100",
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": null,
-            "difference": 6.9,
+            "difference": 6.98,
             "id": "en:cocoa-powder",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1262,9 +1267,9 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 0.1,
+            "percent_estimate": 0.02,
             "percent_hidden": 7,
-            "quantity_estimate": 0.13,
+            "quantity_estimate": 0.03,
             "text": "cocoa powder"
         },
         {
@@ -1274,6 +1279,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactose",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1517,8 +1523,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.08,
-            "quantity_estimate": 0.1,
+            "percent_estimate": 0.01,
+            "quantity_estimate": 0.01,
             "text": "lactose"
         },
         {
@@ -1531,6 +1537,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sunflower-lecithin",
                     "index": 6,
+                    "initial_estimate": 0.7843137254901961,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1774,13 +1781,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.07,
-                    "quantity_estimate": 0.09,
+                    "percent_estimate": 0.01,
+                    "quantity_estimate": 0.01,
                     "text": "sunflower lecithin"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.07,
+            "percent_estimate": 0.01,
             "text": "emulsifier"
         },
         {
@@ -1790,6 +1797,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -2033,16 +2041,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.06,
-            "quantity_estimate": 0.08,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.01,
             "text": "aromas"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 1.07,
-        "total_difference": 21.3,
+        "relative_difference": 1.09,
+        "total_difference": 21.7,
         "total_specified_input_percent": 20
     },
     "ingredients_text": "sugar, vegetable oil, hazelnuts (13%), skimmed milk powder, cocoa powder (7%), lactose, emulsifier: sunflower lecithin, aromas,",
@@ -2395,7 +2403,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 419.81716908638816,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 19360.002620137268,
+            "nutrient_penalty": 4531993.605115144,
+            "total": 4551773.424904367
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

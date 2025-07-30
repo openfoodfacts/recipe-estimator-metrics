@@ -26,10 +26,11 @@
             "ciqual_food_code": "15005",
             "ciqual_food_code_used": "15005",
             "ciqual_proxy_food_code": null,
-            "difference": 2.43,
+            "difference": 2.75,
             "ecobalyse_code": "walnut-husked-fr",
             "id": "en:walnut",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -267,9 +268,9 @@
                     "percent_nom": 0.0027
                 }
             },
-            "percent_estimate": 27.4,
+            "percent_estimate": 27.8,
             "percent_hidden": 25,
-            "quantity_estimate": 29.28,
+            "quantity_estimate": 29.5,
             "text": "walnuts"
         },
         {
@@ -277,10 +278,11 @@
             "ciqual_food_code": "15004",
             "ciqual_food_code_used": "15004",
             "ciqual_proxy_food_code": null,
-            "difference": 0.1,
+            "difference": 0.87,
             "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -518,9 +520,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 24.9,
+            "percent_estimate": 24.1,
             "percent_hidden": 25,
-            "quantity_estimate": 26.59,
+            "quantity_estimate": 25.65,
             "text": "hazelnuts"
         },
         {
@@ -528,9 +530,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "15055",
             "ciqual_proxy_food_code": "15055",
-            "difference": 1.14,
+            "difference": 0.93,
             "id": "en:cashew-nuts",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -768,9 +771,9 @@
                     "percent_nom": 0.0056
                 }
             },
-            "percent_estimate": 23.9,
+            "percent_estimate": 24.1,
             "percent_hidden": 25,
-            "quantity_estimate": 25.47,
+            "quantity_estimate": 25.58,
             "text": "cashews"
         },
         {
@@ -778,9 +781,10 @@
             "ciqual_food_code": "15041",
             "ciqual_food_code_used": "15041",
             "ciqual_proxy_food_code": null,
-            "difference": 1.19,
+            "difference": 0.94,
             "id": "en:almond",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1018,18 +1022,18 @@
                     "percent_nom": 0.00297
                 }
             },
-            "percent_estimate": 23.8,
+            "percent_estimate": 24.1,
             "percent_hidden": 25,
             "processing": "en:blanched",
-            "quantity_estimate": 25.42,
+            "quantity_estimate": 25.58,
             "text": "almonds"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0486,
-        "total_difference": 4.86,
+        "relative_difference": 0.0549,
+        "total_difference": 5.49,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "walnuts  25%,  hazelnuts  25%,  cashews  25%, blanched  almonds  25%,",
@@ -1366,7 +1370,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 364.43581151260025,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2524.0413713016324,
+            "nutrient_penalty": 1794350.985165213,
+            "total": 1797239.4623480274
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

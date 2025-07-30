@@ -21,7 +21,7 @@
     ],
     "ingredients": [
         {
-            "difference": 24.6,
+            "difference": 47.0,
             "id": "fr:legumes-verts",
             "ingredients": [
                 {
@@ -31,6 +31,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:garden-peas",
                     "index": 0,
+                    "initial_estimate": 29.493087557603683,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -267,8 +268,8 @@
                             "percent_nom": 0.001
                         }
                     },
-                    "percent_estimate": 27.2,
-                    "quantity_estimate": 27.26,
+                    "percent_estimate": 32.4,
+                    "quantity_estimate": 32.36,
                     "text": "petits pois"
                 },
                 {
@@ -278,6 +279,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:green-bean",
                     "index": 1,
+                    "initial_estimate": 14.746543778801842,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -514,8 +516,8 @@
                             "percent_nom": 0.00032
                         }
                     },
-                    "percent_estimate": 25.3,
-                    "quantity_estimate": 25.34,
+                    "percent_estimate": 32.4,
+                    "quantity_estimate": 32.35,
                     "text": "haricots verts"
                 },
                 {
@@ -525,6 +527,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:green-flageolets",
                     "index": 2,
+                    "initial_estimate": 7.373271889400921,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -767,12 +770,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 22.0,
-                    "quantity_estimate": 22.02,
+                    "percent_estimate": 32.3,
+                    "quantity_estimate": 32.32,
                     "text": "flageolets verts"
                 }
             ],
-            "percent_estimate": 74.6,
+            "percent_estimate": 97.0,
             "percent_hidden": 50,
             "text": "légumes verts"
         },
@@ -783,6 +786,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:carrot",
             "index": 3,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1019,8 +1023,8 @@
                     "percent_nom": 0.00017999999999999998
                 }
             },
-            "percent_estimate": 10.5,
-            "quantity_estimate": 10.48,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 0.78,
             "text": "carottes"
         },
         {
@@ -1030,6 +1034,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:turnip",
             "index": 4,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1266,8 +1271,8 @@
                     "percent_nom": 0.00025
                 }
             },
-            "percent_estimate": 7.23,
-            "quantity_estimate": 7.23,
+            "percent_estimate": 0.76,
+            "quantity_estimate": 0.76,
             "text": "navets"
         },
         {
@@ -1277,6 +1282,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 5,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1513,8 +1519,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 7.09,
-            "quantity_estimate": 7.1,
+            "percent_estimate": 0.74,
+            "quantity_estimate": 0.74,
             "text": "eau"
         },
         {
@@ -1524,6 +1530,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 6,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1760,15 +1767,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.62,
-            "quantity_estimate": 0.62,
+            "percent_estimate": 0.71,
+            "quantity_estimate": 0.71,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.492,
-        "total_difference": 24.6,
+        "relative_difference": 0.94,
+        "total_difference": 47.0,
         "total_specified_input_percent": 50
     },
     "ingredients_text": "50 % minimum de légumes verts (petits pois, haricots verts, flageolets verts), carottes, navets, eau, sel.",
@@ -2095,7 +2102,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 811.1441313496183,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 8.684845274707698,
+            "nutrient_penalty": 1335031.8649875019,
+            "total": 1335851.6939641263
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

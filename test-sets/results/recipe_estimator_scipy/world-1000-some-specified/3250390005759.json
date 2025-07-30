@@ -19,6 +19,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -255,8 +256,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 34.1,
-            "quantity_estimate": 45.24,
+            "percent_estimate": 33.0,
+            "quantity_estimate": 45.53,
             "text": "Eau"
         },
         {
@@ -264,9 +265,10 @@
             "ciqual_food_code": "4003",
             "ciqual_food_code_used": "4003",
             "ciqual_proxy_food_code": null,
-            "difference": 14.0,
+            "difference": 12.9,
             "id": "en:potato",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -503,9 +505,9 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 34.0,
+            "percent_estimate": 32.9,
             "percent_hidden": 20,
-            "quantity_estimate": 45.14,
+            "quantity_estimate": 45.34,
             "text": "pommes de terre"
         },
         {
@@ -513,9 +515,10 @@
             "ciqual_food_code": "20061",
             "ciqual_food_code_used": "20061",
             "ciqual_proxy_food_code": null,
-            "difference": 10.3,
+            "difference": 12.9,
             "id": "fr:haricots-verts-coupes",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -752,9 +755,9 @@
                     "percent_nom": 0.00032
                 }
             },
-            "percent_estimate": 30.3,
+            "percent_estimate": 32.9,
             "percent_hidden": 20,
-            "quantity_estimate": 40.18,
+            "quantity_estimate": 45.34,
             "text": "haricots verts coupés"
         },
         {
@@ -762,9 +765,10 @@
             "ciqual_food_code": "20009",
             "ciqual_food_code_used": "20009",
             "ciqual_proxy_food_code": null,
-            "difference": 19.4,
+            "difference": 19.7,
             "id": "en:carrot",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1001,9 +1005,9 @@
                     "percent_nom": 0.00017999999999999998
                 }
             },
-            "percent_estimate": 0.62,
+            "percent_estimate": 0.34,
             "percent_hidden": 20,
-            "quantity_estimate": 0.83,
+            "quantity_estimate": 0.48,
             "text": "carottes"
         },
         {
@@ -1011,9 +1015,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 19.5,
+            "difference": 19.7,
             "id": "en:green-flageolets",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1256,9 +1261,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.47,
+            "percent_estimate": 0.33,
             "percent_hidden": 20,
-            "quantity_estimate": 0.62,
+            "quantity_estimate": 0.46,
             "text": "flageolets verts"
         },
         {
@@ -1268,6 +1273,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1504,8 +1510,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.39,
-            "quantity_estimate": 0.51,
+            "percent_estimate": 0.33,
+            "quantity_estimate": 0.46,
             "text": "sel"
         },
         {
@@ -1518,6 +1524,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e509",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1760,19 +1767,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.07,
-                    "quantity_estimate": 0.09,
+                    "percent_estimate": 0.21,
+                    "quantity_estimate": 0.29,
                     "text": "chlorure de calcium"
                 }
             ],
-            "percent_estimate": 0.07,
+            "percent_estimate": 0.21,
             "text": "affermissant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.791,
-        "total_difference": 63.2,
+        "relative_difference": 0.814,
+        "total_difference": 65.1,
         "total_specified_input_percent": 80
     },
     "ingredients_text": "Eau, pommes de terre 20% min, haricots verts coupés 20% min, carottes 20% min, flageolets verts 20% min, sel, affermissant : chlorure de calcium.",
@@ -2107,7 +2114,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 679.5396755042959,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 26527.265546312174,
+            "nutrient_penalty": 846493.0796779664,
+            "total": 873699.884899783
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -18,6 +18,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -254,12 +255,12 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 39.6,
-            "quantity_estimate": 57.19,
+            "percent_estimate": 42.1,
+            "quantity_estimate": 54.73,
             "text": "Sucre"
         },
         {
-            "difference": 4.14,
+            "difference": 11.7,
             "id": "en:fruit-juice-from-concentrate",
             "ingredients": [
                 {
@@ -267,9 +268,10 @@
                     "ciqual_food_code": "13007",
                     "ciqual_food_code_used": "13007",
                     "ciqual_proxy_food_code": null,
-                    "difference": 1.86,
+                    "difference": 5.73,
                     "id": "en:blackcurrant",
                     "index": 1,
+                    "initial_estimate": 25.19685039370079,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -506,13 +508,13 @@
                             "percent_nom": 0.00028000000000000003
                         }
                     },
-                    "percent_estimate": 26.9,
+                    "percent_estimate": 19.3,
                     "percent_hidden": 25,
-                    "quantity_estimate": 38.74,
+                    "quantity_estimate": 25.03,
                     "text": "cassis"
                 }
             ],
-            "percent_estimate": 26.9,
+            "percent_estimate": 19.3,
             "percent_hidden": 31,
             "text": "jus de fruits à base de concentré"
         },
@@ -523,6 +525,7 @@
             "ciqual_proxy_food_code": "13009",
             "id": "en:lemon",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -759,8 +762,8 @@
                     "percent_nom": 0.00033
                 }
             },
-            "percent_estimate": 18.1,
-            "quantity_estimate": 26.12,
+            "percent_estimate": 19.3,
+            "quantity_estimate": 25.02,
             "text": "citron"
         },
         {
@@ -770,6 +773,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:glucose-fructose-syrup",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1006,8 +1010,8 @@
                     "percent_nom": 1e-05
                 }
             },
-            "percent_estimate": 14.5,
-            "quantity_estimate": 20.85,
+            "percent_estimate": 19.3,
+            "quantity_estimate": 25.01,
             "text": "sirop de glucose-fructose"
         },
         {
@@ -1017,6 +1021,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1253,8 +1258,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 0.51,
-            "quantity_estimate": 0.74,
+            "percent_estimate": 0.03,
+            "quantity_estimate": 0.04,
             "text": "eau"
         },
         {
@@ -1264,6 +1269,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1506,8 +1512,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.21,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.02,
+            "quantity_estimate": 0.03,
             "text": "arôme naturel"
         },
         {
@@ -1520,6 +1526,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1762,19 +1769,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.18,
-                    "quantity_estimate": 0.26,
+                    "percent_estimate": 0.02,
+                    "quantity_estimate": 0.02,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 0.18,
+            "percent_estimate": 0.02,
             "text": "acidifiant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.107,
-        "total_difference": 6.0,
+        "relative_difference": 0.312,
+        "total_difference": 17.5,
         "total_specified_input_percent": 56
     },
     "ingredients_text": "Sucre, jus de fruits à base de concentré: 31 % (cassis 25 %, citron), sirop de glucose-fructose, eau, arôme naturel, acidifiant : acide citrique.",
@@ -2084,7 +2091,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 398.16999930758584,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 20915.595267865876,
+            "nutrient_penalty": 433865.52716277,
+            "total": 455179.29242994345
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

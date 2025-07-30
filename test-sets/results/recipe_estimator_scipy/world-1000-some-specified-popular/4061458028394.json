@@ -18,9 +18,10 @@
             "ciqual_food_code": "20068",
             "ciqual_food_code_used": "20068",
             "ciqual_proxy_food_code": null,
-            "difference": 6.21,
+            "difference": 4.86,
             "id": "en:tomato-concentrate",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -257,9 +258,9 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 78.2,
+            "percent_estimate": 67.1,
             "percent_hidden": 72,
-            "quantity_estimate": 78.26,
+            "quantity_estimate": 67.14,
             "text": "tomatenmark einfach konzentriert"
         },
         {
@@ -269,6 +270,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -505,8 +507,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 8.34,
-            "quantity_estimate": 8.34,
+            "percent_estimate": 9.3,
+            "quantity_estimate": 9.3,
             "text": "zucker"
         },
         {
@@ -516,6 +518,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:spirit-vinegar",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -752,8 +755,8 @@
                     "percent_nom": 1.4999999999999999e-05
                 }
             },
-            "percent_estimate": 6.53,
-            "quantity_estimate": 6.53,
+            "percent_estimate": 9.3,
+            "quantity_estimate": 9.3,
             "text": "branntweinessig"
         },
         {
@@ -763,6 +766,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -999,8 +1003,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 3.39,
-            "quantity_estimate": 3.4,
+            "percent_estimate": 9.3,
+            "quantity_estimate": 9.3,
             "text": "wasser"
         },
         {
@@ -1010,6 +1014,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1246,8 +1251,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.6,
-            "quantity_estimate": 1.61,
+            "percent_estimate": 1.65,
+            "quantity_estimate": 1.65,
             "text": "salz"
         },
         {
@@ -1257,6 +1262,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:spice-or-bell-pepper",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1499,9 +1505,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.13,
+            "percent_estimate": 1.65,
             "processing": "en:powder",
-            "quantity_estimate": 1.13,
+            "quantity_estimate": 1.65,
             "text": "paprika"
         },
         {
@@ -1511,6 +1517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:spice",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1753,16 +1760,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.79,
-            "quantity_estimate": 0.79,
+            "percent_estimate": 1.65,
+            "quantity_estimate": 1.65,
             "text": "gewürze"
         }
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0862,
-        "total_difference": 6.21,
+        "relative_difference": 0.0675,
+        "total_difference": 4.86,
         "total_specified_input_percent": 72
     },
     "ingredients_text": "tomatenmark einfach konzentriert (72 %), zucker, branntweinessig, wasser, salz, paprikapulver, gewürze,",
@@ -2086,7 +2093,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 382.199684283832,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1.9644716127601214,
+            "nutrient_penalty": 293812.4299584845,
+            "total": 294196.59411438106
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

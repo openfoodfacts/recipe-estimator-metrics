@@ -17,7 +17,7 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "18100",
-            "difference": 0.51,
+            "difference": 1.0,
             "id": "en:cocoa",
             "ingredients": [
                 {
@@ -27,6 +27,7 @@
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
                     "index": 0,
+                    "initial_estimate": 44.44444444444445,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -265,8 +266,8 @@
                         }
                     },
                     "origins": "en:peru",
-                    "percent_estimate": 58.7,
-                    "quantity_estimate": 58.8,
+                    "percent_estimate": 80.8,
+                    "quantity_estimate": 80.77,
                     "text": "Pâte de cacao"
                 },
                 {
@@ -276,6 +277,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:cocoa-butter",
                     "index": 1,
+                    "initial_estimate": 22.222222222222225,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -513,13 +515,13 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 26.8,
-                    "quantity_estimate": 26.85,
+                    "percent_estimate": 3.23,
+                    "quantity_estimate": 3.23,
                     "text": "beurre de cacao"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 85.5,
+            "percent_estimate": 84.0,
             "percent_hidden": 85,
             "text": "cacao"
         },
@@ -531,6 +533,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
             "index": 2,
+            "initial_estimate": 33.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -768,16 +771,16 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 14.5,
-            "quantity_estimate": 14.52,
+            "percent_estimate": 16.0,
+            "quantity_estimate": 16.0,
             "text": "sucre de canne"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.006,
-        "total_difference": 0.51,
+        "relative_difference": 0.0118,
+        "total_difference": 1.0,
         "total_specified_input_percent": 85
     },
     "ingredients_text": "cacao 85% minimum (Pâte de cacao [origine Pérou], beurre de cacao), sucre de canne. Traces possibles de gluten, de soja, de lait et de fruits à coque.",
@@ -1117,7 +1120,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 631.6131221481401,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.06068232464997436,
+            "nutrient_penalty": 18741280.13886024,
+            "total": 18741911.81266471
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -25,9 +25,10 @@
             "ciqual_food_code": "13011",
             "ciqual_food_code_used": "13011",
             "ciqual_proxy_food_code": null,
-            "difference": 0.53,
+            "difference": 0.76,
             "id": "en:date",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -265,9 +266,9 @@
                     "percent_nom": 0.00023
                 }
             },
-            "percent_estimate": 52.5,
+            "percent_estimate": 52.2,
             "percent_hidden": 53,
-            "quantity_estimate": 53.53,
+            "quantity_estimate": 53.49,
             "text": "dates"
         },
         {
@@ -275,10 +276,11 @@
             "ciqual_food_code": "15001",
             "ciqual_food_code_used": "15001",
             "ciqual_proxy_food_code": null,
-            "difference": 0.94,
+            "difference": 0.78,
             "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -516,9 +518,9 @@
                     "percent_nom": 0.003
                 }
             },
-            "percent_estimate": 46.9,
+            "percent_estimate": 46.8,
             "percent_hidden": 46,
-            "quantity_estimate": 47.89,
+            "quantity_estimate": 47.91,
             "text": "peanuts"
         },
         {
@@ -528,6 +530,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -765,8 +768,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.57,
-            "quantity_estimate": 0.58,
+            "percent_estimate": 0.56,
+            "quantity_estimate": 0.57,
             "text": "sea salt"
         },
         {
@@ -776,6 +779,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:a-hint-of-natural-flavourings",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1019,16 +1023,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.02,
+            "percent_estimate": 0.42,
+            "quantity_estimate": 0.43,
             "text": "a hint of natural flavourings"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0148,
-        "total_difference": 1.47,
+        "relative_difference": 0.0156,
+        "total_difference": 1.54,
         "total_specified_input_percent": 99
     },
     "ingredients_text": "dates 53%, peanuts 46%, sea salt, a hint of natural flavourings",
@@ -1387,7 +1391,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 446.91776829266314,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 960.8005284773753,
+            "nutrient_penalty": 407792.6943961351,
+            "total": 409200.4126929051
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

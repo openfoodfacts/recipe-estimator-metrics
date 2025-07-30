@@ -23,6 +23,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,8 +260,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 90.9,
-            "quantity_estimate": 91.06,
+            "percent_estimate": 91.0,
+            "quantity_estimate": 91.43,
             "text": "water"
         },
         {
@@ -271,6 +272,7 @@
             "difference": 5.06,
             "id": "en:soya-bean",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -510,7 +512,7 @@
             "percent_estimate": 8.94,
             "percent_hidden": 14,
             "processing": "en:peeled",
-            "quantity_estimate": 8.96,
+            "quantity_estimate": 8.98,
             "text": "soybeans"
         },
         {
@@ -520,6 +522,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -756,8 +759,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.11,
-            "quantity_estimate": 0.11,
+            "percent_estimate": 0.09,
+            "quantity_estimate": 0.09,
             "text": "salt"
         }
     ],
@@ -1081,7 +1084,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 411.2950570233124,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 150.76438080072023,
+            "nutrient_penalty": 367150.7331569351,
+            "total": 367712.7925947591
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

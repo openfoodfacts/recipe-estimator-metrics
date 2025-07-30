@@ -22,10 +22,11 @@
             "ciqual_food_code": "15001",
             "ciqual_food_code_used": "15001",
             "ciqual_proxy_food_code": null,
-            "difference": 3.21,
+            "difference": 3.12,
             "ecobalyse_code": "peanut-non-eu",
             "id": "en:peanut",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -263,9 +264,9 @@
                     "percent_nom": 0.003
                 }
             },
-            "percent_estimate": 98.2,
+            "percent_estimate": 98.1,
             "percent_hidden": 95,
-            "quantity_estimate": 98.27,
+            "quantity_estimate": 98.55,
             "text": "Arachides"
         },
         {
@@ -276,6 +277,7 @@
             "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -513,8 +515,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.72,
-            "quantity_estimate": 0.72,
+            "percent_estimate": 0.49,
+            "quantity_estimate": 0.49,
             "text": "huile de tournesol"
         },
         {
@@ -528,6 +530,7 @@
                     "ecobalyse_code": "rapeseed-non-eu",
                     "id": "en:rapeseed",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -771,13 +774,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.48,
-                    "quantity_estimate": 0.48,
+                    "percent_estimate": 0.49,
+                    "quantity_estimate": 0.49,
                     "text": "colza"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.48,
+            "percent_estimate": 0.49,
             "text": "stabilisant"
         },
         {
@@ -787,6 +790,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1024,8 +1028,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.46,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.49,
+            "quantity_estimate": 0.49,
             "text": "sel"
         },
         {
@@ -1035,6 +1039,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:ar-amorce",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 0,
             "labels": "en:fair-trade",
             "nutrients": {
@@ -1279,16 +1284,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.12,
-            "quantity_estimate": 0.12,
+            "percent_estimate": 0.41,
+            "quantity_estimate": 0.41,
             "text": "Ar amorce"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0338,
-        "total_difference": 3.21,
+        "relative_difference": 0.0328,
+        "total_difference": 3.12,
         "total_specified_input_percent": 95
     },
     "ingredients_text": "Arachides 95%, huile de tournesol, stabilisant (colza), sel. Peut contenir des traces de fruits à coque Ar amorce équitable:",
@@ -1616,7 +1621,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 494.32863170291137,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 217.04557158206939,
+            "nutrient_penalty": 1047546.3502602541,
+            "total": 1048257.7244635391
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

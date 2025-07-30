@@ -30,6 +30,7 @@
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wholemeal-oat-flour",
                     "index": 0,
+                    "initial_estimate": 30.476190476190478,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -266,8 +267,8 @@
                             "percent_nom": 0.0019
                         }
                     },
-                    "percent_estimate": 87.2,
-                    "quantity_estimate": 90.63,
+                    "percent_estimate": 91.5,
+                    "quantity_estimate": 91.62,
                     "text": "harina integral de avena"
                 },
                 {
@@ -277,6 +278,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:gluten",
                     "index": 1,
+                    "initial_estimate": 15.238095238095239,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -519,8 +521,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 5.44,
-                    "quantity_estimate": 5.66,
+                    "percent_estimate": 5.17,
+                    "quantity_estimate": 5.18,
                     "text": "_gluten_"
                 },
                 {
@@ -530,6 +532,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:cornmeal",
                     "index": 2,
+                    "initial_estimate": 7.6190476190476195,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -766,8 +769,8 @@
                             "percent_nom": 0.00011
                         }
                     },
-                    "percent_estimate": 4.06,
-                    "quantity_estimate": 4.23,
+                    "percent_estimate": 0.1,
+                    "quantity_estimate": 0.1,
                     "text": "sémola de maíz"
                 }
             ],
@@ -782,6 +785,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 3,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1018,8 +1022,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 3.07,
-            "quantity_estimate": 3.19,
+            "percent_estimate": 3.14,
+            "quantity_estimate": 3.14,
             "text": "azúcar"
         },
         {
@@ -1029,6 +1033,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.2,
-            "quantity_estimate": 0.21,
+            "percent_estimate": 0.08,
+            "quantity_estimate": 0.08,
             "text": "sal"
         },
         {
@@ -1279,6 +1284,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e306",
                     "index": 5,
+                    "initial_estimate": 6.666666666666667,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1533,7 +1539,7 @@
     "ingredients_lc": "es",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.137,
+        "relative_difference": 0.138,
         "total_difference": 11.7,
         "total_specified_input_percent": 85
     },
@@ -1861,7 +1867,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 899.2240130685699,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 101.69323596724382,
+            "nutrient_penalty": 761002.3288416935,
+            "total": 762003.2460907293
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=60000"
+        "status_message": "Optimization terminated successfully."
     }
 }

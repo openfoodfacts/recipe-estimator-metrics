@@ -16,9 +16,10 @@
             "ciqual_food_code": "9200",
             "ciqual_food_code_used": "9200",
             "ciqual_proxy_food_code": null,
-            "difference": 0.86,
+            "difference": 1.4,
             "id": "en:corn",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -255,9 +256,9 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 79.9,
+            "percent_estimate": 80.4,
             "percent_hidden": 79,
-            "quantity_estimate": 88.83,
+            "quantity_estimate": 89.99,
             "text": "maize"
         },
         {
@@ -267,6 +268,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -503,8 +505,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 16.4,
-            "quantity_estimate": 18.21,
+            "percent_estimate": 16.9,
+            "quantity_estimate": 18.87,
             "text": "sunflower vegetable oils"
         },
         {
@@ -514,6 +516,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:rapeseed-oil",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -750,8 +753,8 @@
                     "percent_nom": 2.6e-05
                 }
             },
-            "percent_estimate": 1.29,
-            "quantity_estimate": 1.44,
+            "percent_estimate": 0.69,
+            "quantity_estimate": 0.78,
             "text": "rapeseed vegetable oils"
         },
         {
@@ -761,6 +764,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:corn",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -997,8 +1001,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 1.04,
-            "quantity_estimate": 1.16,
+            "percent_estimate": 0.69,
+            "quantity_estimate": 0.77,
             "text": "maize"
         },
         {
@@ -1008,6 +1012,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:in-variable-proportion",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1250,8 +1255,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.78,
-            "quantity_estimate": 0.86,
+            "percent_estimate": 0.69,
+            "quantity_estimate": 0.77,
             "text": "in variable proportion"
         },
         {
@@ -1261,6 +1266,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1497,16 +1503,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.65,
-            "quantity_estimate": 0.72,
+            "percent_estimate": 0.67,
+            "quantity_estimate": 0.75,
             "text": "salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0109,
-        "total_difference": 0.86,
+        "relative_difference": 0.0177,
+        "total_difference": 1.4,
         "total_specified_input_percent": 79
     },
     "ingredients_text": "maize (79%),vegetable oils (sunflower, rapeseed, maize, in variable proportion),salt",
@@ -1832,7 +1838,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 359.19149086972226,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 7159.105500696285,
+            "nutrient_penalty": 1281137.7489978755,
+            "total": 1288656.0459894415
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

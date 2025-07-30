@@ -25,6 +25,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -261,8 +262,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 44.8,
-            "quantity_estimate": 57.19,
+            "percent_estimate": 43.8,
+            "quantity_estimate": 56.46,
             "text": "sugar"
         },
         {
@@ -272,6 +273,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -508,8 +510,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 21.0,
-            "quantity_estimate": 26.85,
+            "percent_estimate": 19.9,
+            "quantity_estimate": 25.69,
             "text": "cocoa butter"
         },
         {
@@ -517,9 +519,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "19051",
             "ciqual_proxy_food_code": "19051",
-            "difference": 1.17,
+            "difference": 1.93,
             "id": "en:milk",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -756,9 +759,9 @@
                     "percent_nom": 0.00041999999999999996
                 }
             },
-            "percent_estimate": 16.8,
+            "percent_estimate": 19.9,
             "percent_hidden": 18,
-            "quantity_estimate": 21.48,
+            "quantity_estimate": 25.68,
             "text": "milk"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 16.6,
-            "quantity_estimate": 21.2,
+            "percent_estimate": 16.2,
+            "quantity_estimate": 20.88,
             "text": "cocoa"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:whey-powder",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1257,8 +1262,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.29,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.06,
+            "quantity_estimate": 0.08,
             "text": "whey powder"
         },
         {
@@ -1271,6 +1276,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sunflower-lecithin",
                     "index": 5,
+                    "initial_estimate": 1.5748031496062993,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1513,12 +1519,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.24,
-                    "quantity_estimate": 0.31,
+                    "percent_estimate": 0.04,
+                    "quantity_estimate": 0.05,
                     "text": "sunflower lecithin"
                 }
             ],
-            "percent_estimate": 0.24,
+            "percent_estimate": 0.04,
             "text": "emulsifier"
         },
         {
@@ -1528,6 +1534,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-vanilla-flavouring",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1770,16 +1777,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.21,
-            "quantity_estimate": 0.26,
+            "percent_estimate": 0.01,
+            "quantity_estimate": 0.01,
             "text": "natural vanilla aroma"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.065,
-        "total_difference": 1.17,
+        "relative_difference": 0.107,
+        "total_difference": 1.93,
         "total_specified_input_percent": 18
     },
     "ingredients_text": "sugar, cocoa butter, milk 18%, cocoa, whey powder, emulsifier (sunflower lecithin), natural vanilla aroma,",
@@ -2119,7 +2126,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 337.9384158127575,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 20199.77297294535,
+            "nutrient_penalty": 538180.9225097814,
+            "total": 558718.6338985396
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

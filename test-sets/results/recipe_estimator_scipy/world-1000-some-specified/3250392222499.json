@@ -16,7 +16,7 @@
     ],
     "ingredients": [
         {
-            "difference": 21.5,
+            "difference": 10.5,
             "id": "en:fruit",
             "ingredients": [
                 {
@@ -26,6 +26,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:strawberry",
                     "index": 0,
+                    "initial_estimate": 50.79365079365079,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -262,12 +263,12 @@
                             "percent_nom": 0.00011
                         }
                     },
-                    "percent_estimate": 53.5,
-                    "quantity_estimate": 117.9,
+                    "percent_estimate": 64.5,
+                    "quantity_estimate": 145.94,
                     "text": "fraises"
                 }
             ],
-            "percent_estimate": 53.5,
+            "percent_estimate": 64.5,
             "percent_hidden": 75,
             "text": "Fruits"
         },
@@ -278,6 +279,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:raspberry",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -514,9 +516,9 @@
                     "percent_nom": 0.00023999999999999998
                 }
             },
-            "percent_estimate": 14.1,
+            "percent_estimate": 8.92,
             "processing": "en:peeling",
-            "quantity_estimate": 31.08,
+            "quantity_estimate": 20.19,
             "text": "de framboises"
         },
         {
@@ -526,6 +528,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:blackcurrant",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -762,8 +765,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 11.7,
-            "quantity_estimate": 25.83,
+            "percent_estimate": 8.91,
+            "quantity_estimate": 20.18,
             "text": "cassis"
         },
         {
@@ -773,6 +776,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sour-cherry",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1009,8 +1013,8 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 11.4,
-            "quantity_estimate": 25.2,
+            "percent_estimate": 8.85,
+            "quantity_estimate": 20.04,
             "text": "cerises griottes"
         },
         {
@@ -1020,6 +1024,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1256,8 +1261,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 8.92,
-            "quantity_estimate": 19.65,
+            "percent_estimate": 8.84,
+            "quantity_estimate": 20.02,
             "text": "sucre"
         },
         {
@@ -1267,6 +1272,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1503,15 +1509,15 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 0.28,
-            "quantity_estimate": 0.62,
+            "percent_estimate": 0.03,
+            "quantity_estimate": 0.07,
             "text": "eau"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.286,
-        "total_difference": 21.5,
+        "relative_difference": 0.141,
+        "total_difference": 10.5,
         "total_specified_input_percent": 75
     },
     "ingredients_text": "Fruits (75 %) : fraises, brisures de framboises, cassis, cerises griottes ; sucre, eau.",
@@ -1823,7 +1829,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 927.4796968139791,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 75859.54496819741,
+            "nutrient_penalty": 886020.8620364598,
+            "total": 962807.8867014712
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

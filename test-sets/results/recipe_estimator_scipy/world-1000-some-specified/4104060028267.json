@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:buttermilk",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -257,8 +258,8 @@
                     "percent_nom": 0.001
                 }
             },
-            "percent_estimate": 88.4,
-            "quantity_estimate": 114.1,
+            "percent_estimate": 90.6,
+            "quantity_estimate": 114.59,
             "text": "Lait fermenté"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:beet-sugar",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -504,8 +506,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 6.46,
-            "quantity_estimate": 8.34,
+            "percent_estimate": 6.91,
+            "quantity_estimate": 8.75,
             "text": "sucre de betterave"
         },
         {
@@ -513,9 +515,10 @@
             "ciqual_food_code": "13028",
             "ciqual_food_code_used": "13028",
             "ciqual_proxy_food_code": null,
-            "difference": 4.52,
+            "difference": 6.31,
             "id": "en:blueberry",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -752,9 +755,9 @@
                     "percent_nom": 0.00016
                 }
             },
-            "percent_estimate": 2.48,
+            "percent_estimate": 0.69,
             "percent_hidden": 7,
-            "quantity_estimate": 3.2,
+            "quantity_estimate": 0.87,
             "text": "myrtilles"
         },
         {
@@ -762,9 +765,10 @@
             "ciqual_food_code": "13007",
             "ciqual_food_code_used": "13007",
             "ciqual_proxy_food_code": null,
-            "difference": 2.6,
+            "difference": 3.39,
             "id": "en:blackcurrant",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -1001,9 +1005,9 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 1.4,
+            "percent_estimate": 0.61,
             "percent_hidden": 4,
-            "quantity_estimate": 1.81,
+            "quantity_estimate": 0.78,
             "text": "cassis"
         },
         {
@@ -1013,6 +1017,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:fecule-native-de-mais",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1255,8 +1260,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.67,
-            "quantity_estimate": 0.86,
+            "percent_estimate": 0.59,
+            "quantity_estimate": 0.75,
             "text": "fécule native de mais"
         },
         {
@@ -1269,6 +1274,7 @@
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:carob-seed-flour",
                     "index": 5,
+                    "initial_estimate": 1.5873015873015872,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1505,19 +1511,19 @@
                             "percent_nom": 0.0019
                         }
                     },
-                    "percent_estimate": 0.59,
-                    "quantity_estimate": 0.77,
+                    "percent_estimate": 0.58,
+                    "quantity_estimate": 0.74,
                     "text": "farine de graines de caroube"
                 }
             ],
-            "percent_estimate": 0.59,
+            "percent_estimate": 0.58,
             "text": "épaississant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.647,
-        "total_difference": 7.12,
+        "relative_difference": 0.882,
+        "total_difference": 9.7,
         "total_specified_input_percent": 11
     },
     "ingredients_text": "Lait fermenté*, sucre de betterave*, myrtilles* (7 %), cassis* (4 %), fécule native de mais, épaississant: farine de graines de caroube",
@@ -1838,7 +1844,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 531.1429829073574,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 15884.125434011308,
+            "nutrient_penalty": 492390.89108895184,
+            "total": 508806.15950587054
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

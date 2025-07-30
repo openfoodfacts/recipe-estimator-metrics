@@ -20,9 +20,10 @@
             "ciqual_food_code": "4003",
             "ciqual_food_code_used": "4003",
             "ciqual_proxy_food_code": null,
-            "difference": 2.46,
+            "difference": 2.69,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,9 +260,9 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 92.0,
+            "percent_estimate": 92.2,
             "percent_hidden": 89.5,
-            "quantity_estimate": 163.41,
+            "quantity_estimate": 164.19,
             "text": "Pommes de terre"
         },
         {
@@ -269,9 +270,10 @@
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
             "ciqual_proxy_food_code": null,
-            "difference": 1.76,
+            "difference": 2.23,
             "id": "en:cream",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -508,10 +510,10 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 1.84,
+            "percent_estimate": 1.37,
             "percent_hidden": 3.6,
             "processing": "en:powder",
-            "quantity_estimate": 3.27,
+            "quantity_estimate": 2.43,
             "text": "crème"
         },
         {
@@ -521,6 +523,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -757,8 +760,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.53,
-            "quantity_estimate": 2.73,
+            "percent_estimate": 1.36,
+            "quantity_estimate": 2.43,
             "text": "sel de mer"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:potato-starch",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 1.55,
-            "quantity_estimate": 2.75,
+            "percent_estimate": 1.36,
+            "quantity_estimate": 2.42,
             "text": "fécule de pommes de terre"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:whole-milk-powder",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -1251,8 +1256,8 @@
                     "percent_nom": 0.00391
                 }
             },
-            "percent_estimate": 1.2,
-            "quantity_estimate": 2.12,
+            "percent_estimate": 1.36,
+            "quantity_estimate": 2.42,
             "text": "lait entier en poudre"
         },
         {
@@ -1262,6 +1267,7 @@
             "ciqual_proxy_food_code": "11089",
             "id": "en:turmeric",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1498,9 +1504,9 @@
                     "percent_nom": 0.0045
                 }
             },
-            "percent_estimate": 1.05,
+            "percent_estimate": 1.35,
             "processing": "en:powder",
-            "quantity_estimate": 1.87,
+            "quantity_estimate": 2.41,
             "text": "curcuma"
         },
         {
@@ -1508,9 +1514,10 @@
             "ciqual_food_code": "11048",
             "ciqual_food_code_used": "11048",
             "ciqual_proxy_food_code": null,
-            "difference": 0.72,
+            "difference": 0.87,
             "id": "en:nutmeg-nut",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1747,17 +1754,17 @@
                     "percent_nom": 0.00215
                 }
             },
-            "percent_estimate": 0.87,
+            "percent_estimate": 1.02,
             "percent_hidden": 0.15,
             "processing": "en:powder",
-            "quantity_estimate": 1.55,
+            "quantity_estimate": 1.81,
             "text": "noix de muscade"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.053,
-        "total_difference": 4.94,
+        "relative_difference": 0.0621,
+        "total_difference": 5.79,
         "total_specified_input_percent": 93.2
     },
     "ingredients_text": "Pommes de terre (89,5 %), crème en poudre (3,6%), sel de mer, fécule de pommes de terre, lait entier en poudre, curcuma en poudre, noix de muscade en poudre (0,15%).",
@@ -2133,7 +2140,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 850.9596429092626,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 54676.03478148571,
+            "nutrient_penalty": 7896118.917348856,
+            "total": 7951645.911773251
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

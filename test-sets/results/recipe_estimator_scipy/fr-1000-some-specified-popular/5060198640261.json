@@ -20,6 +20,7 @@
             "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -257,8 +258,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 90.6,
-            "quantity_estimate": 106.43,
+            "percent_estimate": 90.8,
+            "quantity_estimate": 106.59,
             "text": "Wheat Flour"
         },
         {
@@ -266,10 +267,11 @@
             "ciqual_food_code": "17270",
             "ciqual_food_code_used": "17270",
             "ciqual_proxy_food_code": null,
-            "difference": 3.06,
+            "difference": 3.15,
             "ecobalyse_code": "extra-virgin-olive-oil",
             "id": "en:extra-virgin-olive-oil",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -507,9 +509,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 3.94,
+            "percent_estimate": 3.85,
             "percent_hidden": 7,
-            "quantity_estimate": 4.63,
+            "quantity_estimate": 4.52,
             "text": "Extra Virgin Olive Oil"
         },
         {
@@ -520,6 +522,7 @@
             "ecobalyse_code": "flour",
             "id": "en:barley-malt-flour",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -757,8 +760,8 @@
                     "percent_nom": 0.0024
                 }
             },
-            "percent_estimate": 2.06,
-            "quantity_estimate": 2.42,
+            "percent_estimate": 1.95,
+            "quantity_estimate": 2.29,
             "text": "Malted Barley Flour"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1005,8 +1009,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.71,
-            "quantity_estimate": 2.01,
+            "percent_estimate": 1.7,
+            "quantity_estimate": 2.0,
             "text": "Salt"
         },
         {
@@ -1016,6 +1020,7 @@
             "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1253,16 +1258,16 @@
                     "percent_nom": 0.008400000000000001
                 }
             },
-            "percent_estimate": 1.69,
-            "quantity_estimate": 1.98,
+            "percent_estimate": 1.7,
+            "quantity_estimate": 2.0,
             "text": "Yeast"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.437,
-        "total_difference": 3.06,
+        "relative_difference": 0.45,
+        "total_difference": 3.15,
         "total_specified_input_percent": 7
     },
     "ingredients_text": "Wheat Flour, Extra Virgin Olive Oil (7%), Malted Barley Flour, Salt, Yeast.",
@@ -1576,7 +1581,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 506.55619917336344,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 8700.764790227218,
+            "nutrient_penalty": 2921988.4002582273,
+            "total": 2931195.721247628
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -14,7 +14,7 @@
     ],
     "ingredients": [
         {
-            "difference": 1.87,
+            "difference": 1.83,
             "id": "en:soy-base",
             "ingredients": [
                 {
@@ -24,6 +24,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:water",
                     "index": 0,
+                    "initial_estimate": 34.40860215053763,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -261,7 +262,7 @@
                         }
                     },
                     "percent_estimate": 94.7,
-                    "quantity_estimate": 199.61,
+                    "quantity_estimate": 199.73,
                     "text": "eau"
                 },
                 {
@@ -269,9 +270,10 @@
                     "ciqual_food_code": "20901",
                     "ciqual_food_code_used": "20901",
                     "ciqual_proxy_food_code": null,
-                    "difference": 3.37,
+                    "difference": 3.41,
                     "id": "en:soya-bean",
                     "index": 1,
+                    "initial_estimate": 17.204301075268816,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -508,13 +510,13 @@
                             "percent_nom": 0.0029500000000000004
                         }
                     },
-                    "percent_estimate": 5.13,
+                    "percent_estimate": 5.09,
                     "percent_hidden": 8.5,
-                    "quantity_estimate": 10.81,
+                    "quantity_estimate": 10.72,
                     "text": "graines de soja"
                 }
             ],
-            "percent_estimate": 99.9,
+            "percent_estimate": 99.8,
             "percent_hidden": 98,
             "text": "Jus de soja"
         },
@@ -525,6 +527,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-tapioca-starch",
             "index": 2,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -762,7 +765,7 @@
                 }
             },
             "percent_estimate": 0.05,
-            "quantity_estimate": 0.11,
+            "quantity_estimate": 0.1,
             "text": "amidon modifié de tapioca"
         },
         {
@@ -772,6 +775,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e341",
             "index": 3,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1014,8 +1018,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.03,
-            "quantity_estimate": 0.07,
+            "percent_estimate": 0.05,
+            "quantity_estimate": 0.1,
             "text": "phosphates de calcium"
         },
         {
@@ -1025,6 +1029,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1261,8 +1266,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.05,
+            "percent_estimate": 0.04,
+            "quantity_estimate": 0.09,
             "text": "sel"
         },
         {
@@ -1272,6 +1277,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:ferment",
             "index": 5,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1514,8 +1520,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.04,
+            "percent_estimate": 0.04,
+            "quantity_estimate": 0.08,
             "text": "ferments"
         }
     ],
@@ -1851,7 +1857,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 1944.0144516331002,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 66490.97406608354,
+            "nutrient_penalty": 2083967.9002439098,
+            "total": 2152402.8887616266
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

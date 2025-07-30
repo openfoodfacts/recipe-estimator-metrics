@@ -14,9 +14,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "19051",
             "ciqual_proxy_food_code": "19051",
-            "difference": 1.75,
+            "difference": 1.78,
             "id": "en:pasteurised-milk",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -255,7 +256,7 @@
             },
             "percent_estimate": 96.2,
             "percent_hidden": 98,
-            "quantity_estimate": 96.27,
+            "quantity_estimate": 96.39,
             "text": "Lait pasteurisé"
         },
         {
@@ -265,6 +266,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -501,8 +503,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.54,
-            "quantity_estimate": 1.54,
+            "percent_estimate": 1.63,
+            "quantity_estimate": 1.63,
             "text": "sel"
         },
         {
@@ -512,6 +514,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -754,8 +757,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.44,
-            "quantity_estimate": 1.44,
+            "percent_estimate": 1.17,
+            "quantity_estimate": 1.18,
             "text": "ferments lactiques"
         },
         {
@@ -765,6 +768,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:coagulant",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1007,15 +1011,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.77,
-            "quantity_estimate": 0.77,
+            "percent_estimate": 0.98,
+            "quantity_estimate": 0.99,
             "text": "coagulant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0179,
-        "total_difference": 1.75,
+        "relative_difference": 0.0182,
+        "total_difference": 1.78,
         "total_specified_input_percent": 98
     },
     "ingredients_text": "Lait pasteurisé (98%) (origine: France), sel, ferments lactiques, coagulant,",
@@ -1319,7 +1323,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 473.2108188419915,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 70.34256207381304,
+            "nutrient_penalty": 21985767.769577578,
+            "total": 21986311.32295849
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -36,6 +36,7 @@
                     "ciqual_proxy_food_code": "20091",
                     "id": "en:beetroot",
                     "index": 0,
+                    "initial_estimate": 32.6530612244898,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -273,7 +274,7 @@
                         }
                     },
                     "percent_estimate": 49.4,
-                    "quantity_estimate": 175.5,
+                    "quantity_estimate": 176.51,
                     "text": "betteraves"
                 },
                 {
@@ -283,6 +284,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:parsnip",
                     "index": 1,
+                    "initial_estimate": 16.3265306122449,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -520,7 +522,7 @@
                         }
                     },
                     "percent_estimate": 23.4,
-                    "quantity_estimate": 83.24,
+                    "quantity_estimate": 83.72,
                     "text": "panais"
                 },
                 {
@@ -530,6 +532,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:carrot",
                     "index": 2,
+                    "initial_estimate": 8.16326530612245,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -767,7 +770,7 @@
                         }
                     },
                     "percent_estimate": 16.7,
-                    "quantity_estimate": 59.21,
+                    "quantity_estimate": 59.57,
                     "text": "carottes"
                 }
             ],
@@ -782,6 +785,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 3,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1019,7 +1023,7 @@
                 }
             },
             "percent_estimate": 10.3,
-            "quantity_estimate": 36.73,
+            "quantity_estimate": 36.83,
             "text": "huile de tournesol"
         },
         {
@@ -1029,6 +1033,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 4,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.18,
-            "quantity_estimate": 0.63,
+            "percent_estimate": 0.22,
+            "quantity_estimate": 0.79,
             "text": "sel de mer"
         }
     ],
@@ -1604,7 +1609,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 1629.4554137216778,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 128709.23934445863,
+            "nutrient_penalty": 3251036.6620188095,
+            "total": 3381375.3567769895
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

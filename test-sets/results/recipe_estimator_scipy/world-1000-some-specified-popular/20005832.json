@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -257,8 +258,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 42.2,
-            "quantity_estimate": 46.7,
+            "percent_estimate": 41.4,
+            "quantity_estimate": 46.64,
             "text": "sucre"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -504,8 +506,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 12.0,
-            "quantity_estimate": 13.27,
+            "percent_estimate": 11.7,
+            "quantity_estimate": 13.22,
             "text": "pâte de cacao"
         },
         {
@@ -515,6 +517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -751,8 +754,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 11.6,
-            "quantity_estimate": 12.83,
+            "percent_estimate": 11.7,
+            "quantity_estimate": 13.22,
             "text": "beurre de cacao"
         },
         {
@@ -765,6 +768,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -1001,12 +1005,12 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 11.5,
-                    "quantity_estimate": 12.67,
+                    "percent_estimate": 11.7,
+                    "quantity_estimate": 13.21,
                     "text": "lécithines de soja"
                 }
             ],
-            "percent_estimate": 11.5,
+            "percent_estimate": 11.7,
             "text": "émulsifiant"
         },
         {
@@ -1016,6 +1020,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vanilla-extract",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1252,13 +1257,13 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 11.4,
-            "quantity_estimate": 12.57,
+            "percent_estimate": 11.7,
+            "quantity_estimate": 13.21,
             "text": "extrait de vanille"
         },
         {
             "ciqual_proxy_food_code": "31074",
-            "difference": 38.7,
+            "difference": 38.3,
             "id": "en:dark-chocolate",
             "ingredients": [
                 {
@@ -1268,6 +1273,7 @@
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
                     "index": 5,
+                    "initial_estimate": 1.5873015873015872,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1504,12 +1510,12 @@
                             "percent_nom": 0.0064
                         }
                     },
-                    "percent_estimate": 11.3,
-                    "quantity_estimate": 12.53,
+                    "percent_estimate": 11.7,
+                    "quantity_estimate": 13.21,
                     "text": "cacao"
                 }
             ],
-            "percent_estimate": 11.3,
+            "percent_estimate": 11.7,
             "percent_hidden": 50,
             "text": "Chocolat noir"
         }
@@ -1517,8 +1523,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.773,
-        "total_difference": 38.7,
+        "relative_difference": 0.766,
+        "total_difference": 38.3,
         "total_specified_input_percent": 50
     },
     "ingredients_text": "sucre, pâte de cacao, beurre de cacao, émulsifiant : lécithines (soja) ; extrait de vanille. Chocolat noir : cacao : 50% minimum.",
@@ -1843,7 +1849,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 365.120656130059,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 7623.343305274937,
+            "nutrient_penalty": 1690516.160779798,
+            "total": 1698504.624741203
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

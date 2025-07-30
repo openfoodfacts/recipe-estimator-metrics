@@ -25,6 +25,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:superior-quality-durum-wheat-semolina",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -261,8 +262,8 @@
                     "percent_nom": 0.00218
                 }
             },
-            "percent_estimate": 48.6,
-            "quantity_estimate": 61.55,
+            "percent_estimate": 64.8,
+            "quantity_estimate": 79.72,
             "text": "Semoule de blé dur de qualité supérieure"
         },
         {
@@ -270,10 +271,11 @@
             "ciqual_food_code": "22000",
             "ciqual_food_code_used": "22000",
             "ciqual_proxy_food_code": null,
-            "difference": 5.18,
+            "difference": 4.49,
             "id": "en:fresh-egg",
             "index": 1,
             "ingredients": [],
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -510,9 +512,9 @@
                     "percent_nom": 0.00101
                 }
             },
-            "percent_estimate": 24.8,
+            "percent_estimate": 25.5,
             "percent_hidden": 30,
-            "quantity_estimate": 31.44,
+            "quantity_estimate": 31.38,
             "text": "œufs frais"
         },
         {
@@ -522,6 +524,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:superior-quality-durum-wheat-semolina",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -758,8 +761,8 @@
                     "percent_nom": 0.00218
                 }
             },
-            "percent_estimate": 20.2,
-            "quantity_estimate": 25.62,
+            "percent_estimate": 8.63,
+            "quantity_estimate": 10.62,
             "text": "Semoule de _blé_ dur de qualité supérieure"
         },
         {
@@ -769,6 +772,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:oeufs-frais-par-kilo-de-semoule",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1011,9 +1015,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 3.29,
+            "percent_estimate": 0.75,
             "quantity": "320 g",
-            "quantity_estimate": 4.17,
+            "quantity_estimate": 0.92,
             "quantity_g": 320,
             "text": "_oeufs_ frais par kilo de semoule"
         },
@@ -1024,6 +1028,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:superior-quality-durum-wheat-semolina",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1260,8 +1265,8 @@
                     "percent_nom": 0.00218
                 }
             },
-            "percent_estimate": 2.8,
-            "quantity_estimate": 3.55,
+            "percent_estimate": 0.26,
+            "quantity_estimate": 0.32,
             "text": "Semoule de _blé_ dur de qualité supérieure"
         },
         {
@@ -1271,6 +1276,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:oeufs-frais-par-kilo-de-semoule",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1513,17 +1519,17 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.24,
+            "percent_estimate": 0.02,
             "quantity": "320 g",
-            "quantity_estimate": 0.31,
+            "quantity_estimate": 0.03,
             "quantity_g": 320,
             "text": "_oeufs_ frais par kilo de semoule"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.173,
-        "total_difference": 5.18,
+        "relative_difference": 0.15,
+        "total_difference": 4.49,
         "total_specified_input_percent": 30
     },
     "ingredients_text": "Semoule de blé dur de qualité supérieure, œufs frais 30% (soit 320g par kilo de semoule).\nSemoule de _blé_ dur de qualité supérieure, 320g d' _oeufs_ frais par kilo de semoule (30%)\nSemoule de _blé_ dur de qualité supérieure, 320g d' _oeufs_ frais par kilo de semoule (30%)",
@@ -1839,7 +1845,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 182.09847852044567,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 13797.662999980697,
+            "nutrient_penalty": 1120655.2160715098,
+            "total": 1134634.977550011
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -16,7 +16,7 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "12999",
-            "difference": 0.23,
+            "difference": 12.1,
             "id": "en:fromage-blanc",
             "ingredients": [
                 {
@@ -26,6 +26,7 @@
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
                     "index": 0,
+                    "initial_estimate": 53.333333333333336,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -262,12 +263,12 @@
                             "percent_nom": 0.00041999999999999996
                         }
                     },
-                    "percent_estimate": 65.1,
-                    "quantity_estimate": 68.93,
+                    "percent_estimate": 52.8,
+                    "quantity_estimate": 56.39,
                     "text": "LAIT"
                 }
             ],
-            "percent_estimate": 65.1,
+            "percent_estimate": 52.8,
             "percent_hidden": 64.9,
             "text": "Fromage blanc"
         },
@@ -281,6 +282,7 @@
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
                     "index": 1,
+                    "initial_estimate": 26.666666666666668,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -517,12 +519,12 @@
                             "percent_nom": 0.00041999999999999996
                         }
                     },
-                    "percent_estimate": 27.2,
-                    "quantity_estimate": 28.83,
+                    "percent_estimate": 28.0,
+                    "quantity_estimate": 29.9,
                     "text": "LAIT"
                 }
             ],
-            "percent_estimate": 27.2,
+            "percent_estimate": 28.0,
             "text": "LAIT écrémé crème"
         },
         {
@@ -535,6 +537,7 @@
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
                     "index": 2,
+                    "initial_estimate": 13.333333333333334,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -771,12 +774,12 @@
                             "percent_nom": 0.00041999999999999996
                         }
                     },
-                    "percent_estimate": 7.48,
-                    "quantity_estimate": 7.91,
+                    "percent_estimate": 18.2,
+                    "quantity_estimate": 19.4,
                     "text": "LAIT"
                 }
             ],
-            "percent_estimate": 7.48,
+            "percent_estimate": 18.2,
             "text": "poudre de LAIT écrémé protéines de LAIT ferments lactiques"
         },
         {
@@ -786,6 +789,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vitamin-d",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1028,16 +1032,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.15,
-            "quantity_estimate": 0.15,
+            "percent_estimate": 1.02,
+            "quantity_estimate": 1.09,
             "text": "vitamine D"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.00354,
-        "total_difference": 0.23,
+        "relative_difference": 0.186,
+        "total_difference": 12.1,
         "total_specified_input_percent": 64.9
     },
     "ingredients_text": "Fromage blanc (64,9%) (LAIT) LAIT écrémé crème (LAIT) poudre de LAIT écrémé protéines de LAIT ferments lactiques (LAIT) vitamine D",
@@ -1370,7 +1374,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 147.6480293750706,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2714.1414001045746,
+            "nutrient_penalty": 3211623.37060542,
+            "total": 3214485.160034899
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

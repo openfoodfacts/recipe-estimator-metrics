@@ -25,9 +25,10 @@
             "ciqual_food_code": "9610",
             "ciqual_food_code_used": "9610",
             "ciqual_proxy_food_code": null,
-            "difference": 7.23,
+            "difference": 5.68,
             "id": "en:durum-wheat-semolina",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -264,9 +265,9 @@
                     "percent_nom": 0.00218
                 }
             },
-            "percent_estimate": 70.8,
+            "percent_estimate": 72.3,
             "percent_hidden": 78,
-            "quantity_estimate": 72.59,
+            "quantity_estimate": 72.57,
             "text": "Semoule de blé dur"
         },
         {
@@ -274,10 +275,11 @@
             "ciqual_food_code": "22000",
             "ciqual_food_code_used": "22000",
             "ciqual_proxy_food_code": null,
-            "difference": 3.65,
+            "difference": 4.06,
             "id": "en:fresh-egg",
             "index": 1,
             "ingredients": [],
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -514,9 +516,9 @@
                     "percent_nom": 0.00101
                 }
             },
-            "percent_estimate": 14.7,
+            "percent_estimate": 15.1,
             "percent_hidden": 11,
-            "quantity_estimate": 15.03,
+            "quantity_estimate": 15.12,
             "text": "œufs frais"
         },
         {
@@ -526,6 +528,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -762,15 +765,15 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 14.6,
-            "quantity_estimate": 14.95,
+            "percent_estimate": 12.6,
+            "quantity_estimate": 12.67,
             "text": "eau"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.122,
-        "total_difference": 10.9,
+        "relative_difference": 0.109,
+        "total_difference": 9.74,
         "total_specified_input_percent": 89
     },
     "ingredients_text": "Semoule de blé dur 78% - œufs frais 11% (soit 140g d'œufs frais par kg de semoule) - eau.",
@@ -1097,7 +1100,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 262.78217414084855,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 105.52423707368774,
+            "nutrient_penalty": 506338.6679685552,
+            "total": 506706.9743797697
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -25,9 +25,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 67.8,
+            "difference": 69.4,
             "id": "fr:lait-partiellement-ecreme-a-1-matieres-grasses",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -271,9 +272,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 26.9,
+            "percent_estimate": 25.3,
             "percent_hidden": 94.7,
-            "quantity_estimate": 34.72,
+            "quantity_estimate": 34.2,
             "text": "LAIT partiellement écrémé à 1 % Matières Grasses"
         },
         {
@@ -281,9 +282,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 21.4,
+            "difference": 20.1,
             "id": "fr:lait-ecreme-concentreou-en-poudre",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -527,9 +529,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 26.6,
+            "percent_estimate": 25.3,
             "percent_hidden": 5.2,
-            "quantity_estimate": 34.26,
+            "quantity_estimate": 34.1,
             "text": "LAIT écrémé concentréou en poudre"
         },
         {
@@ -539,6 +541,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -782,8 +785,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 23.5,
-            "quantity_estimate": 30.25,
+            "percent_estimate": 24.7,
+            "quantity_estimate": 33.33,
             "text": "ferments lactiques"
         },
         {
@@ -794,6 +797,7 @@
             "ecobalyse_code": "milk",
             "id": "en:milk",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1032,16 +1036,16 @@
                 }
             },
             "origins": "en:france",
-            "percent_estimate": 23.0,
-            "quantity_estimate": 29.68,
+            "percent_estimate": 24.7,
+            "quantity_estimate": 33.33,
             "text": "LAIT"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.892,
-        "total_difference": 89.1,
+        "relative_difference": 0.895,
+        "total_difference": 89.4,
         "total_specified_input_percent": 99.9
     },
     "ingredients_text": "LAIT partiellement écrémé à 1 % Mat. Gr. (94,7%), LAIT écrémé concentréou en poudre (5,2%), ferments lactiques (LAIT) LAIT : Origine France",
@@ -1385,7 +1389,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 499.3943186472845,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 13982.70828769987,
+            "nutrient_penalty": 6205641.583460014,
+            "total": 6220123.686066362
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

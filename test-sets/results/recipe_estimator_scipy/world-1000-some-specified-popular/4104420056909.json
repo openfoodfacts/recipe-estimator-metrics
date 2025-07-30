@@ -31,9 +31,10 @@
             "ciqual_food_code": "4003",
             "ciqual_food_code_used": "4003",
             "ciqual_proxy_food_code": null,
-            "difference": 19.4,
+            "difference": 19.5,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -271,9 +272,9 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 81.4,
+            "percent_estimate": 81.5,
             "percent_hidden": 62,
-            "quantity_estimate": 164.07,
+            "quantity_estimate": 164.34,
             "text": "Kartoffeln"
         },
         {
@@ -284,6 +285,7 @@
             "difference": 18.9,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -523,7 +525,7 @@
             },
             "percent_estimate": 18.1,
             "percent_hidden": 37,
-            "quantity_estimate": 36.53,
+            "quantity_estimate": 36.45,
             "text": "Sonnenblumenöl"
         },
         {
@@ -531,9 +533,10 @@
             "ciqual_food_code": "11082",
             "ciqual_food_code_used": "11082",
             "ciqual_proxy_food_code": null,
-            "difference": 0.55,
+            "difference": 0.52,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -770,17 +773,17 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.45,
+            "percent_estimate": 0.48,
             "percent_hidden": 1,
-            "quantity_estimate": 0.91,
+            "quantity_estimate": 0.96,
             "text": "Meersalz"
         }
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.388,
-        "total_difference": 38.8,
+        "relative_difference": 0.389,
+        "total_difference": 38.9,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Kartoffeln* 62 %, Sonnenblumenöl* 37%, Meersalz 1%\n*aus biologischer Landwirtschaft",
@@ -1094,7 +1097,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 629.8397859077718,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 30523.30073062302,
+            "nutrient_penalty": 3600903.630729179,
+            "total": 3632056.7712457096
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

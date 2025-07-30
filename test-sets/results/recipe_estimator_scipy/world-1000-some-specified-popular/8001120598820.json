@@ -14,7 +14,7 @@
     ],
     "ingredients": [
         {
-            "difference": 15.5,
+            "difference": 6.24,
             "id": "it:formaggio-fresco-magro",
             "ingredients": [
                 {
@@ -24,6 +24,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:pasteurized-skimmed-milk",
                     "index": 0,
+                    "initial_estimate": 29.493087557603683,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -260,8 +261,8 @@
                             "percent_nom": 0.00041999999999999996
                         }
                     },
-                    "percent_estimate": 48.9,
-                    "quantity_estimate": 49.15,
+                    "percent_estimate": 39.1,
+                    "quantity_estimate": 39.51,
                     "text": "latte scremato pastorizzato"
                 },
                 {
@@ -271,6 +272,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:lactic-ferments",
                     "index": 1,
+                    "initial_estimate": 14.746543778801842,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -513,8 +515,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 17.5,
-                    "quantity_estimate": 17.59,
+                    "percent_estimate": 18.4,
+                    "quantity_estimate": 18.55,
                     "text": "fermenti lattici"
                 },
                 {
@@ -524,6 +526,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:microbial-rennet",
                     "index": 2,
+                    "initial_estimate": 7.373271889400921,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -766,12 +769,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 14.1,
-                    "quantity_estimate": 14.2,
+                    "percent_estimate": 13.7,
+                    "quantity_estimate": 13.87,
                     "text": "caglio microbico"
                 }
             ],
-            "percent_estimate": 80.5,
+            "percent_estimate": 71.2,
             "percent_hidden": 65,
             "text": "Formaggio fresco magro"
         },
@@ -782,6 +785,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cream",
             "index": 3,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -1018,8 +1022,8 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 15.3,
-            "quantity_estimate": 15.43,
+            "percent_estimate": 14.7,
+            "quantity_estimate": 14.84,
             "text": "crema di latte"
         },
         {
@@ -1029,6 +1033,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:pasteurized-skimmed-milk",
             "index": 4,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0.00041999999999999996
                 }
             },
-            "percent_estimate": 3.37,
-            "quantity_estimate": 3.39,
+            "percent_estimate": 12.9,
+            "quantity_estimate": 13.02,
             "text": "latte scremato pastorizzato"
         },
         {
@@ -1276,6 +1281,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1512,8 +1518,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.46,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.74,
+            "quantity_estimate": 0.75,
             "text": "sale"
         },
         {
@@ -1523,6 +1529,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 6,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1765,16 +1772,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.37,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.42,
+            "quantity_estimate": 0.43,
             "text": "fermenti lattici"
         }
     ],
     "ingredients_lc": "it",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.238,
-        "total_difference": 15.5,
+        "relative_difference": 0.096,
+        "total_difference": 6.24,
         "total_specified_input_percent": 65
     },
     "ingredients_text": "Formaggio fresco magro 65% (latte scremato pastorizzato, fermenti lattici, caglio microbico), crema di latte, latte scremato pastorizzato, sale, fermenti lattici.",
@@ -2077,7 +2084,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 383.466807967751,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 674.476618838851,
+            "nutrient_penalty": 3635300.436379912,
+            "total": 3636358.379806719
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

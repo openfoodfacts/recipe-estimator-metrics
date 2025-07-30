@@ -26,6 +26,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -263,8 +264,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 60.4,
-            "quantity_estimate": 60.8,
+            "percent_estimate": 61.9,
+            "quantity_estimate": 61.94,
             "text": "Eau"
         },
         {
@@ -272,9 +273,10 @@
             "ciqual_food_code": "13113",
             "ciqual_food_code_used": "13113",
             "ciqual_proxy_food_code": null,
-            "difference": 7.14,
+            "difference": 10.1,
             "id": "cs:šťáva-z-klikvy-velkoplodé-z-koncentrátu",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -512,9 +514,9 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 34.1,
+            "percent_estimate": 37.1,
             "percent_hidden": 27,
-            "quantity_estimate": 34.35,
+            "quantity_estimate": 37.11,
             "text": "jus de cranberry à base de concentré"
         },
         {
@@ -524,6 +526,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e440a",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -767,8 +770,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 4.29,
-            "quantity_estimate": 4.32,
+            "percent_estimate": 0.32,
+            "quantity_estimate": 0.32,
             "text": "pectine"
         },
         {
@@ -781,6 +784,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sodium-citrate",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1024,13 +1028,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.46,
-                    "quantity_estimate": 0.46,
+                    "percent_estimate": 0.3,
+                    "quantity_estimate": 0.3,
                     "text": "citrate de sodium"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.46,
+            "percent_estimate": 0.3,
             "text": "correcteur d'acidité"
         },
         {
@@ -1040,6 +1044,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1283,8 +1288,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.37,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.28,
+            "quantity_estimate": 0.28,
             "text": "arôme naturel"
         },
         {
@@ -1297,6 +1302,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e955",
                     "index": 5,
+                    "initial_estimate": 1.5873015873015872,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1540,21 +1546,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.31,
-                    "quantity_estimate": 0.31,
+                    "percent_estimate": 0.09,
+                    "quantity_estimate": 0.09,
                     "text": "sucralose"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.31,
+            "percent_estimate": 0.09,
             "text": "édulcorant"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.264,
-        "total_difference": 7.14,
+        "relative_difference": 0.374,
+        "total_difference": 10.1,
         "total_specified_input_percent": 27
     },
     "ingredients_text": "Eau, jus de cranberry à base de concentré (27%), pectine, correcteur d'acidité : citrate de sodium, arôme naturel, édulcorant : sucralose.",
@@ -1879,7 +1885,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 246.94283441004814,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 24.689567734645834,
+            "nutrient_penalty": 362166.09503441624,
+            "total": 362437.72743656096
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

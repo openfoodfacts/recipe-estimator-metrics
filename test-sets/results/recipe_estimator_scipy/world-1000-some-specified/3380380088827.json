@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:semi-wholemeal-rice-flour",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -259,7 +260,7 @@
                 }
             },
             "percent_estimate": 49.1,
-            "quantity_estimate": 52.29,
+            "quantity_estimate": 52.24,
             "text": "Farine de riz demi-complète"
         },
         {
@@ -267,9 +268,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "9410",
             "ciqual_proxy_food_code": "9410",
-            "difference": 8.81,
+            "difference": 8.89,
             "id": "en:quinoa-flour",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -507,9 +509,9 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 48.8,
+            "percent_estimate": 48.9,
             "percent_hidden": 40,
-            "quantity_estimate": 51.95,
+            "quantity_estimate": 52.04,
             "text": "farine de quinoa"
         },
         {
@@ -517,9 +519,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 0.39,
+            "difference": 0.4,
             "id": "en:whole-cane-sugar",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -757,9 +760,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 1.61,
+            "percent_estimate": 1.6,
             "percent_hidden": 2,
-            "quantity_estimate": 1.72,
+            "quantity_estimate": 1.7,
             "text": "sucre de canne complet"
         },
         {
@@ -769,6 +772,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1012,8 +1016,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.219,
-        "total_difference": 9.2,
+        "relative_difference": 0.221,
+        "total_difference": 9.29,
         "total_specified_input_percent": 42
     },
     "ingredients_text": "Farine de riz demi-complète*, farine de quinoa* (40%), sucre de canne complet* (&lt;2%), sel marin. *issus de l'agriculture biologique.",
@@ -1344,7 +1348,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 506.1508190611602,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2579.1945194851396,
+            "nutrient_penalty": 409927.2958753835,
+            "total": 413012.64121392975
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

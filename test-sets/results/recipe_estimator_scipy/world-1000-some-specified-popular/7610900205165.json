@@ -26,9 +26,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "19041",
             "ciqual_proxy_food_code": "19041",
-            "difference": 2.55,
+            "difference": 2.7,
             "id": "en:semi-skimmed-milk",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -265,9 +266,9 @@
                     "percent_nom": 0.00039
                 }
             },
-            "percent_estimate": 85.5,
+            "percent_estimate": 85.7,
             "percent_hidden": 83,
-            "quantity_estimate": 85.6,
+            "quantity_estimate": 85.74,
             "text": "_Lait_ partiellement écrémé"
         },
         {
@@ -275,9 +276,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 4.97,
+            "difference": 9.29,
             "id": "fr:cafe-arabica-brasse",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -520,9 +522,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 12.0,
+            "percent_estimate": 7.71,
             "percent_hidden": 17,
-            "quantity_estimate": 12.04,
+            "quantity_estimate": 7.72,
             "text": "café Arabica brassé"
         },
         {
@@ -535,6 +537,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e952",
                     "index": 2,
+                    "initial_estimate": 8.88888888888889,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -777,8 +780,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.85,
-                    "quantity_estimate": 1.85,
+                    "percent_estimate": 5.95,
+                    "quantity_estimate": 5.95,
                     "text": "cyclamate"
                 },
                 {
@@ -788,6 +791,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e954",
                     "index": 3,
+                    "initial_estimate": 4.444444444444445,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1024,12 +1028,12 @@
                             "percent_nom": 1e-05
                         }
                     },
-                    "percent_estimate": 0.11,
-                    "quantity_estimate": 0.11,
+                    "percent_estimate": 0.18,
+                    "quantity_estimate": 0.18,
                     "text": "saccharine"
                 }
             ],
-            "percent_estimate": 1.96,
+            "percent_estimate": 6.13,
             "text": "édulcorants"
         },
         {
@@ -1039,6 +1043,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactase",
             "index": 4,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1289,8 +1294,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.0752,
-        "total_difference": 7.52,
+        "relative_difference": 0.12,
+        "total_difference": 12.0,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "_Lait_ partiellement écrémé 83 %, café Arabica brassé 17 %, édulcorants (cyclamate, saccharine), lactase.",
@@ -1630,7 +1635,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 428.2779648412409,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 21.73627854839566,
+            "nutrient_penalty": 323672.92487201514,
+            "total": 324122.93911540473
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

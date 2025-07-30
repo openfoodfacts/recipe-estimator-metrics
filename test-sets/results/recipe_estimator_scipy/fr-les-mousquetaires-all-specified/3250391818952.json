@@ -12,9 +12,10 @@
             "ciqual_food_code": "20099",
             "ciqual_food_code_used": "20099",
             "ciqual_proxy_food_code": null,
-            "difference": 0.06,
+            "difference": 15.9,
             "id": "en:corn-salad",
             "index": 0,
+            "initial_estimate": 66.66666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -251,9 +252,9 @@
                     "percent_nom": 0.00014000000000000001
                 }
             },
-            "percent_estimate": 50.1,
+            "percent_estimate": 65.9,
             "percent_hidden": 50,
-            "quantity_estimate": 50.09,
+            "quantity_estimate": 65.99,
             "text": "Mâche"
         },
         {
@@ -261,9 +262,10 @@
             "ciqual_food_code": "20217",
             "ciqual_food_code_used": "20217",
             "ciqual_proxy_food_code": null,
-            "difference": 19.9,
+            "difference": 4.06,
             "id": "en:rocket",
             "index": 1,
+            "initial_estimate": 33.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -500,9 +502,9 @@
                     "percent_nom": 0.00047
                 }
             },
-            "percent_estimate": 49.9,
+            "percent_estimate": 34.1,
             "percent_hidden": 30,
-            "quantity_estimate": 49.97,
+            "quantity_estimate": 34.09,
             "text": "roquette"
         }
     ],
@@ -807,7 +809,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 10.895330340812706,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 15.972045886866226,
+            "nutrient_penalty": 1919511.5839580987,
+            "total": 1919538.4513343263
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=20000"
+        "status_message": "Optimization terminated successfully."
     }
 }

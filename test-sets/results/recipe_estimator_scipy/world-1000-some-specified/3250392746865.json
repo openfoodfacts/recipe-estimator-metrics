@@ -12,7 +12,7 @@
     ],
     "ingredients": [
         {
-            "difference": 28.3,
+            "difference": 39.2,
             "id": "en:puree",
             "ingredients": [
                 {
@@ -22,6 +22,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:peach",
                     "index": 0,
+                    "initial_estimate": 33.86243386243386,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -264,8 +265,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 19.5,
-                    "quantity_estimate": 40.59,
+                    "percent_estimate": 12.7,
+                    "quantity_estimate": 22.78,
                     "text": "peche"
                 },
                 {
@@ -275,6 +276,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:apricot",
                     "index": 1,
+                    "initial_estimate": 16.93121693121693,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -511,12 +513,12 @@
                             "percent_nom": 8.999999999999999e-05
                         }
                     },
-                    "percent_estimate": 16.6,
-                    "quantity_estimate": 34.45,
+                    "percent_estimate": 12.6,
+                    "quantity_estimate": 22.77,
                     "text": "abricot"
                 }
             ],
-            "percent_estimate": 36.1,
+            "percent_estimate": 25.3,
             "percent_hidden": 64.46,
             "text": "purées"
         },
@@ -527,6 +529,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:concentrated-apple-juice",
             "index": 2,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -763,8 +766,8 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 31.1,
-            "quantity_estimate": 64.72,
+            "percent_estimate": 25.3,
+            "quantity_estimate": 45.53,
             "text": "jus de pomme concentré"
         },
         {
@@ -772,9 +775,10 @@
             "ciqual_food_code": "2074",
             "ciqual_food_code_used": "2074",
             "ciqual_proxy_food_code": null,
-            "difference": 7.8,
+            "difference": 13.3,
             "id": "en:apple-juice-from-concentrate",
             "index": 3,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1011,9 +1015,9 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 19.7,
+            "percent_estimate": 25.2,
             "percent_hidden": 11.9,
-            "quantity_estimate": 40.93,
+            "quantity_estimate": 45.48,
             "text": "jus de pomme à base de concentré"
         },
         {
@@ -1021,9 +1025,10 @@
             "ciqual_food_code": "13005",
             "ciqual_food_code_used": "13005",
             "ciqual_proxy_food_code": null,
-            "difference": 7.56,
+            "difference": 17.4,
             "id": "en:banana",
             "index": 4,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1260,10 +1265,10 @@
                     "percent_nom": 0.00014000000000000001
                 }
             },
-            "percent_estimate": 12.6,
+            "percent_estimate": 22.4,
             "percent_hidden": 5,
             "processing": "en:pureed",
-            "quantity_estimate": 26.09,
+            "quantity_estimate": 40.25,
             "text": "banane"
         },
         {
@@ -1271,9 +1276,10 @@
             "ciqual_food_code": "2028",
             "ciqual_food_code_used": "2028",
             "ciqual_proxy_food_code": null,
-            "difference": 0.21,
+            "difference": 1.27,
             "id": "en:concentrated-lemon-juice",
             "index": 5,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1510,9 +1516,9 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 0.33,
+            "percent_estimate": 1.81,
             "percent_hidden": 0.54,
-            "quantity_estimate": 0.69,
+            "quantity_estimate": 3.27,
             "text": "jus concentré de citron"
         },
         {
@@ -1522,6 +1528,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:les-ingredients-ne-sont-pas-francais",
             "index": 6,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1764,15 +1771,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.15,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.02,
+            "quantity_estimate": 0.04,
             "text": "Les ingrédients ne sont pas francais"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.536,
-        "total_difference": 43.9,
+        "relative_difference": 0.869,
+        "total_difference": 71.1,
         "total_specified_input_percent": 81.9
     },
     "ingredients_text": "purées (peche, abricot) 64,46%, jus de pomme concentré 18,1%., jus de pomme à base de concentré 11,9%, purée de banane 5%, jus concentré de citron 0,54%. Traces éventuelles de lait. *Les ingrédients ne sont pas francais.",
@@ -2089,7 +2096,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 928.0992121285728,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 56075.23340102136,
+            "nutrient_penalty": 42594.291830092465,
+            "total": 99597.6244432424
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

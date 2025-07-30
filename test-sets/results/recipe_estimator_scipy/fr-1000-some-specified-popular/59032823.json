@@ -29,6 +29,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -266,8 +267,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 51.2,
-            "quantity_estimate": 52.2,
+            "percent_estimate": 50.4,
+            "quantity_estimate": 51.3,
             "text": "Sucre"
         },
         {
@@ -278,6 +279,7 @@
             "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -515,8 +517,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 17.3,
-            "quantity_estimate": 17.59,
+            "percent_estimate": 17.2,
+            "quantity_estimate": 17.57,
             "text": "huile de palme"
         },
         {
@@ -524,10 +526,11 @@
             "ciqual_food_code": "15004",
             "ciqual_food_code_used": "15004",
             "ciqual_proxy_food_code": null,
-            "difference": 3.98,
+            "difference": 2.62,
             "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -765,9 +768,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 17.0,
+            "percent_estimate": 15.6,
             "percent_hidden": 13,
-            "quantity_estimate": 17.3,
+            "quantity_estimate": 15.92,
             "text": "NOISETTES"
         },
         {
@@ -775,10 +778,11 @@
             "ciqual_food_code": "19054",
             "ciqual_food_code_used": "19054",
             "ciqual_proxy_food_code": null,
-            "difference": 2.73,
+            "difference": 1.02,
             "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1016,9 +1020,9 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 5.97,
+            "percent_estimate": 7.68,
             "percent_hidden": 8.7,
-            "quantity_estimate": 6.08,
+            "quantity_estimate": 7.82,
             "text": "LAIT écrémé en poudre"
         },
         {
@@ -1026,9 +1030,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": "18100",
-            "difference": 1.6,
+            "difference": 1.93,
             "id": "en:fat-reduced-cocoa",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1266,9 +1271,9 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 5.8,
+            "percent_estimate": 5.47,
             "percent_hidden": 7.4,
-            "quantity_estimate": 5.91,
+            "quantity_estimate": 5.57,
             "text": "cacao maigre"
         },
         {
@@ -1284,6 +1289,7 @@
                             "ciqual_proxy_food_code": null,
                             "id": "en:soya-lecithin",
                             "index": 5,
+                            "initial_estimate": 1.0582010582010581,
                             "is_in_taxonomy": 1,
                             "nutrients": {
                                 "alcohol": {
@@ -1521,13 +1527,13 @@
                                     "percent_nom": 0.0
                                 }
                             },
-                            "percent_estimate": 2.74,
-                            "quantity_estimate": 2.79,
+                            "percent_estimate": 3.64,
+                            "quantity_estimate": 3.7,
                             "text": "lécithines de SOJA"
                         }
                     ],
                     "is_in_taxonomy": 1,
-                    "percent_estimate": 2.74,
+                    "percent_estimate": 3.64,
                     "text": "lécithines"
                 },
                 {
@@ -1537,6 +1543,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:vanillin",
                     "index": 6,
+                    "initial_estimate": 0.5291005291005291,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1780,21 +1787,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.02,
-                    "quantity_estimate": 0.02,
+                    "percent_estimate": 0.01,
+                    "quantity_estimate": 0.01,
                     "text": "vanilline"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 2.76,
+            "percent_estimate": 3.65,
             "text": "émulsifiants"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.286,
-        "total_difference": 8.31,
+        "relative_difference": 0.191,
+        "total_difference": 5.57,
         "total_specified_input_percent": 29.1
     },
     "ingredients_text": "Sucre, huile de palme, NOISETTES 13%, LAIT écrémé en poudre 8,7%, cacao maigre 7,4%, émulsifiants : lécithines [ SOJA ] vanilline.",
@@ -2131,7 +2138,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 197.8604290079749,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1318.269341351693,
+            "nutrient_penalty": 10275.556413062179,
+            "total": 11791.686183421847
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

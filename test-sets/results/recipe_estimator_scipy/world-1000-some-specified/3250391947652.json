@@ -19,9 +19,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 43.9,
+            "difference": 42.6,
             "id": "en:rosemary",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -264,9 +265,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 93.9,
+            "percent_estimate": 92.6,
             "percent_hidden": 50,
-            "quantity_estimate": 93.88,
+            "quantity_estimate": 92.62,
             "text": "romarin"
         },
         {
@@ -277,6 +278,7 @@
             "difference": 13.3,
             "id": "en:dandelion",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -513,9 +515,9 @@
                     "percent_nom": 0.00020999999999999998
                 }
             },
-            "percent_estimate": 3.41,
+            "percent_estimate": 3.43,
             "percent_hidden": 16.7,
-            "quantity_estimate": 3.41,
+            "quantity_estimate": 3.44,
             "text": "pissenlit"
         },
         {
@@ -523,9 +525,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 14.9,
+            "difference": 14.3,
             "id": "en:nettle",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -768,9 +771,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.81,
+            "percent_estimate": 2.41,
             "percent_hidden": 16.7,
-            "quantity_estimate": 1.81,
+            "quantity_estimate": 2.41,
             "text": "ortie"
         },
         {
@@ -778,9 +781,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 15.7,
+            "difference": 15.0,
             "id": "en:aniseed",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1023,16 +1027,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.91,
+            "percent_estimate": 1.57,
             "percent_hidden": 16.6,
-            "quantity_estimate": 0.91,
+            "quantity_estimate": 1.57,
             "text": "anis"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.877,
-        "total_difference": 87.7,
+        "relative_difference": 0.852,
+        "total_difference": 85.2,
         "total_specified_input_percent": 100.0
     },
     "ingredients_text": "romarin* 50%, pissenlit* 16.7%, ortie* 16.7%, anis* 16.6%",
@@ -1297,7 +1301,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 439.3449360124154,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 16.231467971260827,
+            "nutrient_penalty": 243317.08974334615,
+            "total": 243772.66614732982
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

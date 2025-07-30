@@ -19,6 +19,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -255,8 +256,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 85.3,
-            "quantity_estimate": 85.42,
+            "percent_estimate": 89.6,
+            "quantity_estimate": 89.65,
             "text": "Eau"
         },
         {
@@ -264,9 +265,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 23.5,
+            "difference": 25.1,
             "id": "fr:jus-et-pulpe-d-aloe-vera",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -509,9 +511,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 6.47,
+            "percent_estimate": 4.94,
             "percent_hidden": 30,
-            "quantity_estimate": 6.48,
+            "quantity_estimate": 4.94,
             "text": "jus et pulpe d'aloe vera"
         },
         {
@@ -521,6 +523,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -757,8 +760,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 4.32,
-            "quantity_estimate": 4.32,
+            "percent_estimate": 4.91,
+            "quantity_estimate": 4.91,
             "text": "sucre"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e330",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1010,8 +1014,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.39,
-            "quantity_estimate": 1.39,
+            "percent_estimate": 0.19,
+            "quantity_estimate": 0.19,
             "text": "acide citrique"
         },
         {
@@ -1021,6 +1025,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:arome-raisin",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1263,8 +1268,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.11,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 0.16,
+            "quantity_estimate": 0.16,
             "text": "arôme raisin"
         },
         {
@@ -1274,6 +1279,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e327",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1516,8 +1522,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.92,
-            "quantity_estimate": 0.93,
+            "percent_estimate": 0.1,
+            "quantity_estimate": 0.1,
             "text": "lactate de calcium"
         },
         {
@@ -1527,6 +1533,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e418",
             "index": 6,
+            "initial_estimate": 0.7843137254901961,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1769,8 +1776,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.26,
-            "quantity_estimate": 0.26,
+            "percent_estimate": 0.06,
+            "quantity_estimate": 0.06,
             "text": "gomme gellane"
         },
         {
@@ -1780,6 +1787,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e955",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -2022,16 +2030,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.23,
-            "quantity_estimate": 0.23,
+            "percent_estimate": 0.01,
+            "quantity_estimate": 0.01,
             "text": "sucralose"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 6,
-        "relative_difference": 0.784,
-        "total_difference": 23.5,
+        "relative_difference": 0.835,
+        "total_difference": 25.1,
         "total_specified_input_percent": 30
     },
     "ingredients_text": "Eau, 30% jus et pulpe d'aloe vera, sucre, acide citrique, arôme raisin, lactate de calcium, gomme gellane, sucralose,",
@@ -2344,7 +2352,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 447.025359394113,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 25.6137610748965,
+            "nutrient_penalty": 157420.64040655413,
+            "total": 157893.27952702314
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

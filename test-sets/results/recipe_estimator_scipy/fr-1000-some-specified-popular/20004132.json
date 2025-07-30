@@ -32,10 +32,11 @@
             "ciqual_food_code": "20047",
             "ciqual_food_code_used": "20047",
             "ciqual_proxy_food_code": null,
-            "difference": 10.7,
+            "difference": 7.16,
             "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:chopped-tomatoes",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -273,9 +274,9 @@
                     "percent_nom": 8.7e-05
                 }
             },
-            "percent_estimate": 70.7,
+            "percent_estimate": 67.2,
             "percent_hidden": 60,
-            "quantity_estimate": 134.14,
+            "quantity_estimate": 127.27,
             "text": "chopped tomatoes"
         },
         {
@@ -283,10 +284,11 @@
             "ciqual_food_code": "20047",
             "ciqual_food_code_used": "20047",
             "ciqual_proxy_food_code": null,
-            "difference": 10.7,
+            "difference": 7.07,
             "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato-juice",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -524,9 +526,9 @@
                     "percent_nom": 8.7e-05
                 }
             },
-            "percent_estimate": 29.2,
+            "percent_estimate": 32.8,
             "percent_hidden": 39.9,
-            "quantity_estimate": 55.37,
+            "quantity_estimate": 62.2,
             "text": "tomato juice"
         },
         {
@@ -539,6 +541,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 2,
+                    "initial_estimate": 14.285714285714286,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -782,21 +785,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.11,
-                    "quantity_estimate": 0.21,
+                    "percent_estimate": 0.01,
+                    "quantity_estimate": 0.02,
                     "text": "citric acid"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.11,
+            "percent_estimate": 0.01,
             "text": "acidity regulator"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.214,
-        "total_difference": 21.4,
+        "relative_difference": 0.142,
+        "total_difference": 14.2,
         "total_specified_input_percent": 99.9
     },
     "ingredients_text": "60% chopped tomatoes, 39.9% tomato juice, acidity regulator: citric acid",
@@ -1125,7 +1128,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 325.12675096668517,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 26846.36485718441,
+            "nutrient_penalty": 198732.89403903944,
+            "total": 225904.38564719053
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

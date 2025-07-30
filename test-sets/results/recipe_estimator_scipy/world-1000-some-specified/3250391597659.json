@@ -23,6 +23,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,8 +260,8 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 87.2,
-            "quantity_estimate": 89.51,
+            "percent_estimate": 85.3,
+            "quantity_estimate": 85.7,
             "text": "Pommes de terre"
         },
         {
@@ -268,9 +269,10 @@
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
             "ciqual_proxy_food_code": null,
-            "difference": 22.3,
+            "difference": 22.1,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -507,9 +509,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 8.72,
+            "percent_estimate": 8.86,
             "percent_hidden": 31,
-            "quantity_estimate": 8.95,
+            "quantity_estimate": 8.91,
             "text": "huile de tournesol"
         },
         {
@@ -522,6 +524,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:whey-powder",
                     "index": 2,
+                    "initial_estimate": 7.111111111111112,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -764,8 +767,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.8,
-                    "quantity_estimate": 1.85,
+                    "percent_estimate": 2.7,
+                    "quantity_estimate": 2.71,
                     "text": "petit lait en poudre"
                 },
                 {
@@ -775,6 +778,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:chapelure-de-ble",
                     "index": 3,
+                    "initial_estimate": 3.555555555555556,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1011,8 +1015,8 @@
                             "percent_nom": 0.0015
                         }
                     },
-                    "percent_estimate": 1.77,
-                    "quantity_estimate": 1.82,
+                    "percent_estimate": 2.68,
+                    "quantity_estimate": 2.7,
                     "text": "chapelure de blé"
                 },
                 {
@@ -1022,6 +1026,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:flavouring",
                     "index": 4,
+                    "initial_estimate": 1.777777777777778,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1264,8 +1269,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.07,
-                    "quantity_estimate": 0.07,
+                    "percent_estimate": 0.05,
+                    "quantity_estimate": 0.05,
                     "text": "arôme"
                 },
                 {
@@ -1275,6 +1280,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:smoke-flavouring",
                     "index": 5,
+                    "initial_estimate": 0.888888888888889,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1522,7 +1528,7 @@
                     "text": "arôme de fumé"
                 }
             ],
-            "percent_estimate": 3.69,
+            "percent_estimate": 5.48,
             "text": "base aromatisante jambon fumé"
         },
         {
@@ -1532,6 +1538,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 6,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1768,15 +1775,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.45,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.37,
+            "quantity_estimate": 0.37,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.719,
-        "total_difference": 22.3,
+        "relative_difference": 0.714,
+        "total_difference": 22.1,
         "total_specified_input_percent": 31
     },
     "ingredients_text": "Pommes de terre, huile de tournesol (31%), base aromatisante jambon fumé (petit lait en poudre, chapelure de blé, arôme et arôme de fumé), sel.",
@@ -2088,7 +2095,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 400.5067395751474,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 343.6393375942714,
+            "nutrient_penalty": 271499.70723435824,
+            "total": 272243.85331152764
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

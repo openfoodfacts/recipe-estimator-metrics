@@ -25,10 +25,11 @@
             "ciqual_food_code": "20034",
             "ciqual_food_code_used": "20034",
             "ciqual_proxy_food_code": null,
-            "difference": 5.4,
+            "difference": 5.33,
             "ecobalyse_code": "onion-non-eu",
             "id": "en:onion",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -266,9 +267,9 @@
                     "percent_nom": 0.00023
                 }
             },
-            "percent_estimate": 69.6,
+            "percent_estimate": 69.7,
             "percent_hidden": 75,
-            "quantity_estimate": 180.84,
+            "quantity_estimate": 181.16,
             "text": "oignons"
         },
         {
@@ -282,6 +283,7 @@
                     "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
                     "index": 1,
+                    "initial_estimate": 17.77777777777778,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -519,8 +521,8 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 16.0,
-                    "quantity_estimate": 41.46,
+                    "percent_estimate": 15.9,
+                    "quantity_estimate": 41.47,
                     "text": "huile de palme"
                 },
                 {
@@ -531,6 +533,7 @@
                     "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
                     "index": 2,
+                    "initial_estimate": 8.88888888888889,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -768,8 +771,8 @@
                             "percent_nom": 5e-05
                         }
                     },
-                    "percent_estimate": 0.38,
-                    "quantity_estimate": 0.98,
+                    "percent_estimate": 0.33,
+                    "quantity_estimate": 0.87,
                     "text": "huile de tournesol"
                 }
             ],
@@ -785,6 +788,7 @@
             "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
             "index": 3,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1023,7 +1027,7 @@
                 }
             },
             "percent_estimate": 13.7,
-            "quantity_estimate": 35.46,
+            "quantity_estimate": 35.54,
             "text": "farine de _blé_"
         },
         {
@@ -1033,6 +1037,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1270,16 +1275,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.42,
-            "quantity_estimate": 1.08,
+            "percent_estimate": 0.38,
+            "quantity_estimate": 1.0,
             "text": "sel de table"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.072,
-        "total_difference": 5.4,
+        "relative_difference": 0.0711,
+        "total_difference": 5.33,
         "total_specified_input_percent": 75
     },
     "ingredients_text": "75% oignons, huiles végétales (palme, tournesol), farine de _blé_, sel de table.",
@@ -1616,7 +1621,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 992.427047783334,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 80014.88157555263,
+            "nutrient_penalty": 452872.7399191029,
+            "total": 533880.0485424389
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -22,9 +22,10 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": null,
                     "ciqual_proxy_food_code": null,
-                    "difference": 26.6,
+                    "difference": 48.4,
                     "id": "en:fat",
                     "index": 0,
+                    "initial_estimate": 50.39370078740158,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -267,13 +268,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 28.6,
+                    "percent_estimate": 50.4,
                     "percent_hidden": 2,
-                    "quantity_estimate": 28.57,
+                    "quantity_estimate": 50.39,
                     "text": "fett"
                 }
             ],
-            "percent_estimate": 28.6,
+            "percent_estimate": 50.4,
             "text": "Melk"
         },
         {
@@ -283,6 +284,7 @@
             "ciqual_proxy_food_code": null,
             "id": "nb:eplepurèkonsentrat",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -525,8 +527,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 25.0,
-            "quantity_estimate": 25.0,
+            "percent_estimate": 25.2,
+            "quantity_estimate": 25.2,
             "text": "eplepurèkonsentrat"
         },
         {
@@ -536,6 +538,7 @@
             "ciqual_proxy_food_code": null,
             "id": "nb:aroniakonsentrat",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -778,8 +781,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 16.7,
-            "quantity_estimate": 16.67,
+            "percent_estimate": 12.6,
+            "quantity_estimate": 12.6,
             "text": "aroniakonsentrat"
         },
         {
@@ -789,6 +792,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1031,8 +1035,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 12.5,
-            "quantity_estimate": 12.5,
+            "percent_estimate": 6.3,
+            "quantity_estimate": 6.3,
             "text": "naturlig aroma"
         },
         {
@@ -1042,6 +1046,7 @@
             "ciqual_proxy_food_code": null,
             "id": "nb:kefirkultur",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1284,8 +1289,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 10.0,
-            "quantity_estimate": 10.0,
+            "percent_estimate": 3.15,
+            "quantity_estimate": 3.15,
             "text": "kefirkultur"
         },
         {
@@ -1295,6 +1300,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vitamin-d",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1537,8 +1543,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 6.48,
-            "quantity_estimate": 6.48,
+            "percent_estimate": 1.57,
+            "quantity_estimate": 1.57,
             "text": "vitamin D"
         },
         {
@@ -1548,6 +1554,7 @@
             "ciqual_proxy_food_code": null,
             "id": "nb:fra-konsentrat",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1797,8 +1804,8 @@
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 7,
-        "relative_difference": 13.3,
-        "total_difference": 26.6,
+        "relative_difference": 24.2,
+        "total_difference": 48.4,
         "total_specified_input_percent": 2
     },
     "ingredients_text": "Melk (2 % fett), 4,5 % sukker 2,5 % blåbærpuré, 2,5 % solbærjuice², eplepurèkonsentrat, aroniakonsentrat, naturlig aroma, kefirkultur, vitamin D. ²Fra konsentrat.",
@@ -1908,8 +1915,16 @@
     "recipe_estimator": {
         "ingredient_count": 7,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 1.2434497875801753e-13,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 9.947598300641403e-12,
+            "nutrient_penalty": 0,
+            "total": 1.007194327939942e-11
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     },
     "specific_ingredients": [
         {

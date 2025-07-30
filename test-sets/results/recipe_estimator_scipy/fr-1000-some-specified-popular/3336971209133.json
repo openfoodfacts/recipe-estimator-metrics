@@ -24,9 +24,10 @@
             "ciqual_food_code": "9615",
             "ciqual_food_code_used": "9615",
             "ciqual_proxy_food_code": null,
-            "difference": 19.5,
+            "difference": 19.6,
             "id": "en:cornmeal",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -264,9 +265,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 78.5,
+            "percent_estimate": 78.6,
             "percent_hidden": 59,
-            "quantity_estimate": 166.23,
+            "quantity_estimate": 166.53,
             "text": "cornmeal"
         },
         {
@@ -278,6 +279,7 @@
             "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -518,7 +520,7 @@
             "percent_estimate": 20.4,
             "percent_hidden": 30,
             "processing": "en:ground",
-            "quantity_estimate": 43.13,
+            "quantity_estimate": 43.16,
             "text": "roasted peanuts"
         },
         {
@@ -529,6 +531,7 @@
             "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -766,8 +769,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.42,
-            "quantity_estimate": 0.89,
+            "percent_estimate": 0.34,
+            "quantity_estimate": 0.72,
             "text": "sunflower oil"
         },
         {
@@ -777,6 +780,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1014,8 +1018,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.36,
-            "quantity_estimate": 0.77,
+            "percent_estimate": 0.34,
+            "quantity_estimate": 0.72,
             "text": "salt"
         },
         {
@@ -1028,6 +1032,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:natural-flavouring",
                     "index": 4,
+                    "initial_estimate": 2.150537634408602,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1271,8 +1276,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.17,
-                    "quantity_estimate": 0.37,
+                    "percent_estimate": 0.29,
+                    "quantity_estimate": 0.62,
                     "text": "natural flavour"
                 },
                 {
@@ -1283,6 +1288,7 @@
                     "ecobalyse_code": "tomato-heated-greenhouse-eu",
                     "id": "en:tomato",
                     "index": 5,
+                    "initial_estimate": 1.075268817204301,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1520,8 +1526,8 @@
                             "percent_nom": 8.7e-05
                         }
                     },
-                    "percent_estimate": 0.17,
-                    "quantity_estimate": 0.35,
+                    "percent_estimate": 0.05,
+                    "quantity_estimate": 0.1,
                     "text": "tomato"
                 }
             ],
@@ -1533,8 +1539,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.327,
-        "total_difference": 29.1,
+        "relative_difference": 0.328,
+        "total_difference": 29.2,
         "total_specified_input_percent": 89
     },
     "ingredients_text": "cornmeal 59%, ground roasted peanuts 30%, sunflower oil, salt, spice flavouring base (natural flavour, tomato),",
@@ -1874,7 +1880,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 269.5737035890702,
+            "ingredient_not_half_previous_penalty": 615.2269035157462,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 67112.97522786376,
+            "nutrient_penalty": 2101486.8163102777,
+            "total": 2169484.5921452465
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

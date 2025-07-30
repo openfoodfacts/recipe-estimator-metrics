@@ -24,6 +24,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -261,8 +262,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 47.0,
-            "quantity_estimate": 49.08,
+            "percent_estimate": 48.8,
+            "quantity_estimate": 49.94,
             "text": "sugar"
         },
         {
@@ -272,6 +273,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -509,8 +511,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 16.8,
-            "quantity_estimate": 17.59,
+            "percent_estimate": 12.4,
+            "quantity_estimate": 12.67,
             "text": "cocoa paste"
         },
         {
@@ -520,6 +522,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -757,8 +760,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 8.07,
-            "quantity_estimate": 8.44,
+            "percent_estimate": 12.4,
+            "quantity_estimate": 12.67,
             "text": "cocoa butter"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:fat-reduced-cocoa-powder",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1005,8 +1009,8 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 8.07,
-            "quantity_estimate": 8.43,
+            "percent_estimate": 12.4,
+            "quantity_estimate": 12.67,
             "text": "lean cocoa powder"
         },
         {
@@ -1019,6 +1023,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 4,
+                    "initial_estimate": 3.1372549019607843,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1256,13 +1261,13 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 5.11,
-                    "quantity_estimate": 5.34,
+                    "percent_estimate": 3.5,
+                    "quantity_estimate": 3.58,
                     "text": "soy lecithin"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 5.11,
+            "percent_estimate": 3.5,
             "text": "emulsifier"
         },
         {
@@ -1272,6 +1277,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1515,8 +1521,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 5.02,
-            "quantity_estimate": 5.25,
+            "percent_estimate": 3.5,
+            "quantity_estimate": 3.58,
             "text": "flavouring"
         },
         {
@@ -1527,6 +1533,7 @@
             "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
             "index": 6,
+            "initial_estimate": 0.7843137254901961,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1764,8 +1771,8 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 5.03,
-            "quantity_estimate": 5.25,
+            "percent_estimate": 3.5,
+            "quantity_estimate": 3.58,
             "text": "skimmed milk powder"
         },
         {
@@ -1773,9 +1780,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": "18100",
-            "difference": 42.1,
+            "difference": 43.5,
             "id": "en:cocoa",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -2013,17 +2021,17 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 4.89,
+            "percent_estimate": 3.5,
             "percent_hidden": 47,
-            "quantity_estimate": 5.1,
+            "quantity_estimate": 3.58,
             "text": "cocoa"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.896,
-        "total_difference": 42.1,
+        "relative_difference": 0.926,
+        "total_difference": 43.5,
         "total_specified_input_percent": 47
     },
     "ingredients_text": "sugar, cocoa paste, cocoa butter, lean cocoa powder, emulsifier (soy lecithin), flavouring, skimmed milk powder, cocoa: 47% minimum, may contain wheat, barley and nuts,",
@@ -2364,7 +2372,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 330.80106469893093,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1805.9801087627648,
+            "nutrient_penalty": 584466.9334980291,
+            "total": 586603.7146714908
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

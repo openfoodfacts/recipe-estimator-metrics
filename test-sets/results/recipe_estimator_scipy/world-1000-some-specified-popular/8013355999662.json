@@ -19,6 +19,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flour",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -255,9 +256,9 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 78.0,
+            "percent_estimate": 82.6,
             "quantity": "94 g",
-            "quantity_estimate": 91.22,
+            "quantity_estimate": 94.09,
             "quantity_g": 94,
             "text": "farina di frumento"
         },
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:soya-oil",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -504,8 +506,8 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 10.7,
-            "quantity_estimate": 12.45,
+            "percent_estimate": 11.0,
+            "quantity_estimate": 12.51,
             "text": "olio di soia"
         },
         {
@@ -515,6 +517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:barley-malt-extract",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -757,8 +760,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 4.28,
-            "quantity_estimate": 5.01,
+            "percent_estimate": 2.15,
+            "quantity_estimate": 2.45,
             "text": "estratto di malto d'orzo"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:corn",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 4.11,
-            "quantity_estimate": 4.8,
+            "percent_estimate": 2.07,
+            "quantity_estimate": 2.36,
             "text": "mais"
         },
         {
@@ -1013,9 +1017,10 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "ciqual_proxy_food_code": null,
-            "difference": 0.17,
+            "difference": 0.19,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1252,9 +1257,9 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.87,
+            "percent_estimate": 1.89,
             "percent_hidden": 1.7,
-            "quantity_estimate": 2.18,
+            "quantity_estimate": 2.15,
             "text": "sale"
         },
         {
@@ -1267,6 +1272,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e500ii",
                     "index": 5,
+                    "initial_estimate": 1.5748031496062993,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1509,12 +1515,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.56,
-                    "quantity_estimate": 0.65,
+                    "percent_estimate": 0.27,
+                    "quantity_estimate": 0.3,
                     "text": "carbonato acido di sodio"
                 }
             ],
-            "percent_estimate": 0.56,
+            "percent_estimate": 0.27,
             "text": "correttore di acidita"
         },
         {
@@ -1524,6 +1530,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:barley-malt-flour",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1760,16 +1767,16 @@
                     "percent_nom": 0.0024
                 }
             },
-            "percent_estimate": 0.51,
-            "quantity_estimate": 0.6,
+            "percent_estimate": 0.09,
+            "quantity_estimate": 0.1,
             "text": "farina d'orzo maltato"
         }
     ],
     "ingredients_lc": "it",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.1,
-        "total_difference": 0.17,
+        "relative_difference": 0.112,
+        "total_difference": 0.19,
         "total_specified_input_percent": 1.7
     },
     "ingredients_text": "farina di frumento 94 g, olio di soia, estratto di malto d'orzo e mais, sale (1,7%), correttore di acidita: carbonato acido di sodio, farina d'orzo maltato.",
@@ -2075,7 +2082,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 412.6265176840307,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 9780.838906031371,
+            "nutrient_penalty": 950310.4130642589,
+            "total": 960503.8784879743
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

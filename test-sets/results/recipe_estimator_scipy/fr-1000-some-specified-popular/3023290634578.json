@@ -30,10 +30,11 @@
             "ciqual_food_code": "19023",
             "ciqual_food_code_used": "19023",
             "ciqual_proxy_food_code": null,
-            "difference": 8.25,
+            "difference": 8.35,
             "ecobalyse_code": "milk",
             "id": "en:whole-milk",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -273,7 +274,7 @@
             },
             "percent_estimate": 81.2,
             "percent_hidden": 89.5,
-            "quantity_estimate": 81.62,
+            "quantity_estimate": 81.15,
             "text": "Lait entier"
         },
         {
@@ -283,6 +284,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cream",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -520,8 +522,8 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 18.7,
-            "quantity_estimate": 18.83,
+            "percent_estimate": 18.9,
+            "quantity_estimate": 18.85,
             "text": "crème"
         },
         {
@@ -532,6 +534,7 @@
             "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -769,8 +772,8 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 0.01,
-            "quantity_estimate": 0.01,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "poudre de lait écrémé"
         },
         {
@@ -780,6 +783,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1023,16 +1027,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.01,
-            "quantity_estimate": 0.01,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "ferments lactiques"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0922,
-        "total_difference": 8.25,
+        "relative_difference": 0.0933,
+        "total_difference": 8.35,
         "total_specified_input_percent": 89.5
     },
     "ingredients_text": "Lait entier (89,50%), crème (lait) (10,45%), poudre de lait écrémé, ferments lactiques (lait).",
@@ -1362,7 +1366,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 311.5342604326156,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.30137494894688643,
+            "nutrient_penalty": 504210.08814643905,
+            "total": 504521.92378182063
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

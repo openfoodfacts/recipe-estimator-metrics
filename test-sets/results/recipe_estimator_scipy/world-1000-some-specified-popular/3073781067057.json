@@ -16,9 +16,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "19051",
             "ciqual_proxy_food_code": "19051",
-            "difference": 27.9,
+            "difference": 27.2,
             "id": "en:milk",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -256,9 +257,9 @@
                 }
             },
             "origins": "en:france",
-            "percent_estimate": 64.1,
+            "percent_estimate": 64.8,
             "percent_hidden": 92,
-            "quantity_estimate": 180.13,
+            "quantity_estimate": 183.01,
             "text": "LAIT"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -504,8 +506,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 34.9,
-            "quantity_estimate": 98.15,
+            "percent_estimate": 34.5,
+            "quantity_estimate": 97.37,
             "text": "eau"
         },
         {
@@ -515,6 +517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -751,8 +754,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.66,
-            "quantity_estimate": 1.85,
+            "percent_estimate": 0.47,
+            "quantity_estimate": 1.32,
             "text": "sel"
         },
         {
@@ -762,6 +765,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.16,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.19,
+            "quantity_estimate": 0.55,
             "text": "ferments LACTIQUES"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:microbial-coagulating-enzyme",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1257,16 +1262,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.13,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.1,
+            "quantity_estimate": 0.29,
             "text": "coagulant microbien"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.303,
-        "total_difference": 27.9,
+        "relative_difference": 0.296,
+        "total_difference": 27.2,
         "total_specified_input_percent": 92
     },
     "ingredients_text": "LAIT 92% (origine : France), eau, sel, ferments LACTIQUES, coagulant microbien.",
@@ -1597,7 +1602,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 533.5386207203321,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 91268.65807650656,
+            "nutrient_penalty": 26868067.831144784,
+            "total": 26959870.02784201
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

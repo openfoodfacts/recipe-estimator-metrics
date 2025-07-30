@@ -21,9 +21,10 @@
             "ciqual_food_code": "13000",
             "ciqual_food_code_used": "13000",
             "ciqual_proxy_food_code": null,
-            "difference": 3.28,
+            "difference": 6.6,
             "id": "en:apricot",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -261,9 +262,9 @@
                 }
             },
             "origins": "en:roussillon",
-            "percent_estimate": 68.3,
+            "percent_estimate": 58.4,
             "percent_hidden": 65,
-            "quantity_estimate": 90.81,
+            "quantity_estimate": 61.66,
             "text": "Abricots"
         },
         {
@@ -273,6 +274,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:cane-sugar",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -509,8 +511,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 31.4,
-            "quantity_estimate": 41.7,
+            "percent_estimate": 41.4,
+            "quantity_estimate": 43.76,
             "text": "sucre de canne"
         },
         {
@@ -523,6 +525,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e440a",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -766,7 +769,7 @@
                         }
                     },
                     "percent_estimate": 0.15,
-                    "quantity_estimate": 0.21,
+                    "quantity_estimate": 0.16,
                     "text": "pectine"
                 }
             ],
@@ -783,6 +786,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 3,
+                    "initial_estimate": 6.451612903225806,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1025,12 +1029,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.12,
-                    "quantity_estimate": 0.15,
+                    "percent_estimate": 0.01,
+                    "quantity_estimate": 0.01,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 0.12,
+            "percent_estimate": 0.01,
             "text": "acidifiant"
         },
         {
@@ -1043,6 +1047,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e300",
                     "index": 4,
+                    "initial_estimate": 3.225806451612903,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1285,19 +1290,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.09,
-                    "quantity_estimate": 0.12,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 0.09,
+            "percent_estimate": 0.0,
             "text": "antioxydant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.0505,
-        "total_difference": 3.28,
+        "relative_difference": 0.102,
+        "total_difference": 6.6,
         "total_specified_input_percent": 65
     },
     "ingredients_text": "Abricots du Roussillon 65%, sucre de canne, gélifiant : pectine, acidifiant : acide citrique, antioxydant : acide ascorbique.",
@@ -1619,7 +1624,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 347.2092514093949,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2790.255530441108,
+            "nutrient_penalty": 357570.4517617686,
+            "total": 360707.9165436191
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

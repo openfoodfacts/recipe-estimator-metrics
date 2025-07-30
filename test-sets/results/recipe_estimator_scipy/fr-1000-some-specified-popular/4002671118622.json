@@ -20,6 +20,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:almette-natural-fluffy-cheese-with-cream-cream-fresh-cheese-cream-with-sour-cream",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -263,8 +264,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 30.4,
-            "quantity_estimate": 45.99,
+            "percent_estimate": 24.8,
+            "quantity_estimate": 34.22,
             "text": "almette natural fluffy cheese with cream cream fresh cheese cream with sour cream"
         },
         {
@@ -274,6 +275,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:v-without-preservatives-v-without-dyes-heat-treated-product",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -517,8 +519,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 22.6,
-            "quantity_estimate": 34.26,
+            "percent_estimate": 20.4,
+            "quantity_estimate": 28.1,
             "text": "v without preservatives v without dyes heat-treated product"
         },
         {
@@ -526,9 +528,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 54.1,
+            "difference": 51.9,
             "id": "en:fat-relative-to-dry-matter",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -772,9 +775,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 15.9,
+            "percent_estimate": 18.1,
             "percent_hidden": 70,
-            "quantity_estimate": 24.07,
+            "quantity_estimate": 25.0,
             "text": "fat relative to dry matter"
         },
         {
@@ -787,6 +790,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:fresh-cow-s-cheese",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -1030,13 +1034,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 15.6,
-                    "quantity_estimate": 23.61,
+                    "percent_estimate": 18.1,
+                    "quantity_estimate": 24.99,
                     "text": "fresh cow's cheese"
                 }
             ],
             "is_in_taxonomy": 0,
-            "percent_estimate": 15.6,
+            "percent_estimate": 18.1,
             "text": "ingredients"
         },
         {
@@ -1044,9 +1048,10 @@
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
             "ciqual_proxy_food_code": null,
-            "difference": 14.8,
+            "difference": 11.9,
             "id": "en:sour-cream",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1284,9 +1289,9 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 15.2,
+            "percent_estimate": 18.1,
             "percent_hidden": 30,
-            "quantity_estimate": 23.01,
+            "quantity_estimate": 24.97,
             "text": "sour cream"
         },
         {
@@ -1296,6 +1301,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1533,16 +1539,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.2,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.43,
+            "quantity_estimate": 0.59,
             "text": "salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.689,
-        "total_difference": 68.9,
+        "relative_difference": 0.637,
+        "total_difference": 63.8,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "almette natural fluffy cheese with cream cream fresh cheese cream with sour cream, v without preservatives v without dyes heat-treated product, fat relative to dry matter: 70%, ingredients: fresh cow's cheese, sour cream 30%, salt,",
@@ -1857,7 +1863,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 587.9328165115164,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 22722.076338081963,
+            "nutrient_penalty": 12472463.117227482,
+            "total": 12495773.126382075
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

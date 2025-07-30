@@ -17,9 +17,10 @@
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
             "ciqual_proxy_food_code": null,
-            "difference": 28.5,
+            "difference": 28.6,
             "id": "fr:eau-de-source-st-benoit",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -256,9 +257,9 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 83.5,
+            "percent_estimate": 83.6,
             "percent_hidden": 55,
-            "quantity_estimate": 98.1,
+            "quantity_estimate": 98.47,
             "text": "Eau de source St Benoît"
         },
         {
@@ -269,6 +270,7 @@
             "difference": 23.6,
             "id": "en:apricot-puree",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -507,7 +509,7 @@
             },
             "percent_estimate": 16.4,
             "percent_hidden": 40,
-            "quantity_estimate": 19.32,
+            "quantity_estimate": 19.34,
             "text": "purée d'abricot"
         },
         {
@@ -517,6 +519,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -753,8 +756,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 0.06,
-            "quantity_estimate": 0.07,
+            "percent_estimate": 0.01,
+            "quantity_estimate": 0.01,
             "text": "sucre"
         },
         {
@@ -767,6 +770,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e300",
                     "index": 3,
+                    "initial_estimate": 6.666666666666667,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1009,19 +1013,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.05,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 0.04,
+            "percent_estimate": 0.0,
             "text": "antioxydant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.548,
-        "total_difference": 52.0,
+        "relative_difference": 0.549,
+        "total_difference": 52.2,
         "total_specified_input_percent": 95
     },
     "ingredients_text": "Eau de source St Benoît (55 %), purée d'abricot (40 %), sucre, antioxydant : acide ascorbique.",
@@ -1342,7 +1346,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 395.58015117624274,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 7128.573545210878,
+            "nutrient_penalty": 359070.31585470634,
+            "total": 366594.46955109347
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

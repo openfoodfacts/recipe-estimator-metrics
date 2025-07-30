@@ -21,6 +21,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -258,8 +259,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 52.5,
-            "quantity_estimate": 52.6,
+            "percent_estimate": 43.4,
+            "quantity_estimate": 49.33,
             "text": "Sucre"
         },
         {
@@ -269,6 +270,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -506,8 +508,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 18.8,
-            "quantity_estimate": 18.83,
+            "percent_estimate": 11.3,
+            "quantity_estimate": 12.81,
             "text": "pâte de cacao"
         },
         {
@@ -517,6 +519,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -754,8 +757,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 8.55,
-            "quantity_estimate": 8.57,
+            "percent_estimate": 9.19,
+            "quantity_estimate": 10.44,
             "text": "beurre de cacao"
         },
         {
@@ -768,6 +771,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 3,
+                    "initial_estimate": 6.299212598425197,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1005,13 +1009,13 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 5.62,
-                    "quantity_estimate": 5.64,
+                    "percent_estimate": 9.03,
+                    "quantity_estimate": 10.26,
                     "text": "lécithine de _soja_"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 5.62,
+            "percent_estimate": 9.03,
             "text": "émulsifiants"
         },
         {
@@ -1021,6 +1025,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1264,8 +1269,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 4.97,
-            "quantity_estimate": 4.98,
+            "percent_estimate": 9.03,
+            "quantity_estimate": 10.25,
             "text": "arôme"
         },
         {
@@ -1276,6 +1281,7 @@
             "ecobalyse_code": "milk-powder",
             "id": "en:whole-milk-powder",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1513,8 +1519,8 @@
                     "percent_nom": 0.00391
                 }
             },
-            "percent_estimate": 4.81,
-            "quantity_estimate": 4.82,
+            "percent_estimate": 9.02,
+            "quantity_estimate": 10.24,
             "text": "_lait_ entier en poudre"
         },
         {
@@ -1522,9 +1528,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": "18100",
-            "difference": 41.2,
+            "difference": 37.0,
             "id": "en:cocoa",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1762,17 +1769,17 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 4.8,
+            "percent_estimate": 9.01,
             "percent_hidden": 46,
-            "quantity_estimate": 4.82,
+            "quantity_estimate": 10.23,
             "text": "Cacao"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.896,
-        "total_difference": 41.2,
+        "relative_difference": 0.804,
+        "total_difference": 37.0,
         "total_specified_input_percent": 46
     },
     "ingredients_text": "Sucre, pâte de cacao, beurre de cacao, émulsifiants (lécithine de _soja_), arôme, _lait_ entier en poudre, Cacao : 46% minimum,",
@@ -2105,7 +2112,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 362.78711574954986,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 9488.399640705842,
+            "nutrient_penalty": 1175637.6233772163,
+            "total": 1185488.8101336716
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

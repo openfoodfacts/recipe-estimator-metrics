@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -259,8 +260,8 @@
                 }
             },
             "origins": "en:west-africa,en:south-america",
-            "percent_estimate": 27.4,
-            "quantity_estimate": 27.47,
+            "percent_estimate": 26.6,
+            "quantity_estimate": 26.55,
             "text": "Pâte de cacao"
         },
         {
@@ -271,6 +272,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -508,8 +510,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 26.9,
-            "quantity_estimate": 26.87,
+            "percent_estimate": 26.5,
+            "quantity_estimate": 26.55,
             "text": "sucre"
         },
         {
@@ -519,6 +521,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -756,8 +759,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 11.3,
-            "quantity_estimate": 11.32,
+            "percent_estimate": 11.7,
+            "quantity_estimate": 11.73,
             "text": "beurre de cacao"
         },
         {
@@ -767,6 +770,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:butterfat",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1004,8 +1008,8 @@
                     "percent_nom": 1e-05
                 }
             },
-            "percent_estimate": 11.3,
-            "quantity_estimate": 11.35,
+            "percent_estimate": 11.7,
+            "quantity_estimate": 11.73,
             "text": "BEURRE pâtissier"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:arome-naturel-de-vanille-de-madagascar",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1258,13 +1263,13 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 11.5,
-            "quantity_estimate": 11.48,
+            "percent_estimate": 11.7,
+            "quantity_estimate": 11.73,
             "text": "arôme naturel de vanille de Madagascar"
         },
         {
             "ciqual_proxy_food_code": "18100",
-            "difference": 58.4,
+            "difference": 58.3,
             "id": "en:cocoa",
             "ingredients": [
                 {
@@ -1274,6 +1279,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:bilan-massique-certifie-rainforest-alliance-www-ra-org",
                     "index": 5,
+                    "initial_estimate": 1.0582010582010581,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -1517,8 +1523,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 7.3,
-                    "quantity_estimate": 7.3,
+                    "percent_estimate": 11.6,
+                    "quantity_estimate": 11.56,
                     "text": "Bilan massique certifié rainforest Alliance www.ra.org"
                 },
                 {
@@ -1528,6 +1534,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:fr",
                     "index": 6,
+                    "initial_estimate": 0.5291005291005291,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -1771,13 +1778,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 4.27,
-                    "quantity_estimate": 4.27,
+                    "percent_estimate": 0.17,
+                    "quantity_estimate": 0.17,
                     "text": "fr"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 11.6,
+            "percent_estimate": 11.7,
             "percent_hidden": 70,
             "text": "Cacao"
         }
@@ -1785,8 +1792,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.835,
-        "total_difference": 58.4,
+        "relative_difference": 0.833,
+        "total_difference": 58.3,
         "total_specified_input_percent": 70
     },
     "ingredients_text": "Pâte de cacao* (Afrique de l'Ouest, Amérique du Sud), sucre, beurre de cacao*, BEURRE pâtissier, arôme naturel de vanille de Madagascar. Cacao : 70% minimum. * Bilan massique certifié rainforest Alliance www.ra.org/fr. Peut contenir : LAIT, FRUITS A COQUE.",
@@ -2132,7 +2139,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 380.11073066057986,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 13.236556313026426,
+            "nutrient_penalty": 8650504.129788006,
+            "total": 8650897.47707498
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -13,7 +13,7 @@
     "ingredients": [
         {
             "ciqual_food_code": "26006",
-            "difference": 30.6,
+            "difference": 28.6,
             "id": "en:alaskan-pollock-fillet",
             "ingredients": [
                 {
@@ -23,6 +23,7 @@
                     "ciqual_proxy_food_code": "26140",
                     "id": "en:fish",
                     "index": 0,
+                    "initial_estimate": 50.39370078740158,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -253,12 +254,12 @@
                             "percent_nom": 0.00061
                         }
                     },
-                    "percent_estimate": 37.4,
-                    "quantity_estimate": 37.41,
+                    "percent_estimate": 39.4,
+                    "quantity_estimate": 39.45,
                     "text": "poisson"
                 }
             ],
-            "percent_estimate": 37.4,
+            "percent_estimate": 39.4,
             "percent_hidden": 68,
             "text": "Filet de Colin d'Alaska"
         },
@@ -269,6 +270,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flour",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -505,8 +507,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 31.2,
-            "quantity_estimate": 31.26,
+            "percent_estimate": 29.4,
+            "quantity_estimate": 29.44,
             "text": "farine de blé"
         },
         {
@@ -516,6 +518,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -752,8 +755,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 30.0,
-            "quantity_estimate": 30.04,
+            "percent_estimate": 29.4,
+            "quantity_estimate": 29.44,
             "text": "eau"
         },
         {
@@ -763,6 +766,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -999,8 +1003,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.46,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.45,
+            "quantity_estimate": 0.45,
             "text": "sel"
         },
         {
@@ -1010,6 +1014,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:spice",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1252,8 +1257,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.37,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.42,
+            "quantity_estimate": 0.42,
             "text": "épices"
         },
         {
@@ -1263,6 +1268,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:levure-theragra-chalcogramma",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1505,8 +1511,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.31,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.41,
+            "quantity_estimate": 0.41,
             "text": "levure *Theragra chalcogramma"
         },
         {
@@ -1519,6 +1525,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:fao-61-67",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1761,19 +1768,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.26,
-                    "quantity_estimate": 0.26,
+                    "percent_estimate": 0.41,
+                    "quantity_estimate": 0.41,
                     "text": "FAO 61‚67"
                 }
             ],
-            "percent_estimate": 0.26,
+            "percent_estimate": 0.41,
             "text": "pêché en Océan Pacifique"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.45,
-        "total_difference": 30.6,
+        "relative_difference": 0.42,
+        "total_difference": 28.6,
         "total_specified_input_percent": 68
     },
     "ingredients_text": "Filet de Colin d'Alaska  (poisson)68%, farine de blé, eau, sel, épices, levure *Theragra chalcogramma, pêché en Océan Pacifique (FAO 61,67)",
@@ -2080,7 +2087,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 393.0836144082261,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 14.548072834249126,
+            "nutrient_penalty": 3715207.636641766,
+            "total": 3715615.268329008
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

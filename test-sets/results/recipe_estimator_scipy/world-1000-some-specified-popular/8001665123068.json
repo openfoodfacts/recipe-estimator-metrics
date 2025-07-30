@@ -28,6 +28,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:soft-wheat-flour",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -264,8 +265,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 38.6,
-            "quantity_estimate": 38.6,
+            "percent_estimate": 37.7,
+            "quantity_estimate": 37.78,
             "text": "Farine de _blé_ tendre"
         },
         {
@@ -275,6 +276,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:durum-wheat-semolina",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -511,8 +513,8 @@
                     "percent_nom": 0.00218
                 }
             },
-            "percent_estimate": 36.9,
-            "quantity_estimate": 36.9,
+            "percent_estimate": 37.7,
+            "quantity_estimate": 37.75,
             "text": "semoule de _blé_ dur"
         },
         {
@@ -520,9 +522,10 @@
             "ciqual_food_code": "22000",
             "ciqual_food_code_used": "22000",
             "ciqual_proxy_food_code": null,
-            "difference": 2.07,
+            "difference": 1.93,
             "id": "en:egg",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -759,9 +762,9 @@
                     "percent_nom": 0.00101
                 }
             },
-            "percent_estimate": 20.1,
+            "percent_estimate": 19.9,
             "percent_hidden": 18,
-            "quantity_estimate": 20.07,
+            "quantity_estimate": 19.96,
             "text": "_œufs_"
         },
         {
@@ -771,6 +774,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1007,16 +1011,16 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 4.42,
-            "quantity_estimate": 4.42,
+            "percent_estimate": 4.63,
+            "quantity_estimate": 4.63,
             "text": "eau"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.115,
-        "total_difference": 2.07,
+        "relative_difference": 0.107,
+        "total_difference": 1.93,
         "total_specified_input_percent": 18
     },
     "ingredients_text": "Farine de _blé_ tendre, semoule de _blé_ dur, _œufs_ 18%, eau.",
@@ -1334,7 +1338,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 252.82797299562657,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 48.47914664836708,
+            "nutrient_penalty": 310748.0539626088,
+            "total": 311049.3610822528
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

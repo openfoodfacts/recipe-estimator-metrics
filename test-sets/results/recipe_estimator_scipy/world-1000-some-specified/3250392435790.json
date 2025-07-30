@@ -13,7 +13,7 @@
     "ingredients": [
         {
             "ciqual_food_code": "26043",
-            "difference": 23.6,
+            "difference": 24.8,
             "id": "fr:filet-de-cabillaud",
             "ingredients": [
                 {
@@ -23,6 +23,7 @@
                     "ciqual_proxy_food_code": "26140",
                     "id": "en:fish",
                     "index": 0,
+                    "initial_estimate": 51.61290322580645,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -253,12 +254,12 @@
                             "percent_nom": 0.00061
                         }
                     },
-                    "percent_estimate": 76.4,
-                    "quantity_estimate": 76.66,
+                    "percent_estimate": 75.2,
+                    "quantity_estimate": 75.32,
                     "text": "poisson"
                 }
             ],
-            "percent_estimate": 76.4,
+            "percent_estimate": 75.2,
             "percent_hidden": 100,
             "text": "Filets de cabillaud"
         },
@@ -269,6 +270,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:oualite-sans-aretes",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -511,8 +513,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 12.0,
-            "quantity_estimate": 12.04,
+            "percent_estimate": 11.8,
+            "quantity_estimate": 11.81,
             "text": "Oualité sans arêtes"
         },
         {
@@ -522,6 +524,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:bien-qu-un-soin-tout-particulier-ait-ete-pris-pour-enlever-toutes-les-aretes",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -764,8 +767,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 8.0,
-            "quantity_estimate": 8.02,
+            "percent_estimate": 5.1,
+            "quantity_estimate": 5.11,
             "text": "Bien qu'un soin tout particulier ait été pris pour enlever toutes les arêtes"
         },
         {
@@ -775,6 +778,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:quelques-unes",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1017,8 +1021,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 3.23,
-            "quantity_estimate": 3.24,
+            "percent_estimate": 4.48,
+            "quantity_estimate": 4.48,
             "text": "quelques-unes"
         },
         {
@@ -1028,6 +1032,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:peuvent-exceptionnellement-se-retrouver-dans-ce-produit",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1270,15 +1275,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.37,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 3.39,
+            "quantity_estimate": 3.39,
             "text": "peuvent exceptionnellement se retrouver dans ce produit"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.236,
-        "total_difference": 23.6,
+        "relative_difference": 0.248,
+        "total_difference": 24.8,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Filets de cabillaud 100% (poisson). Oualité sans arêtes*. Bien qu'un soin tout particulier ait été pris pour enlever toutes les arêtes. quelques-unes. peuvent exceptionnellement se retrouver dans ce produit.",
@@ -1573,7 +1578,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 297.22843479527353,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 56.152515612254206,
+            "nutrient_penalty": 1508316.7675664802,
+            "total": 1508670.1485168878
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

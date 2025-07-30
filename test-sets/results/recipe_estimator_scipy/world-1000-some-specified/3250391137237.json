@@ -19,9 +19,10 @@
             "ciqual_food_code": "26065",
             "ciqual_food_code_used": "26065",
             "ciqual_proxy_food_code": null,
-            "difference": 21.4,
+            "difference": 22.9,
             "id": "en:sardine",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -258,10 +259,10 @@
                     "percent_nom": 0.0015
                 }
             },
-            "percent_estimate": 58.6,
+            "percent_estimate": 57.1,
             "percent_hidden": 80,
             "processing": "en:selected",
-            "quantity_estimate": 58.61,
+            "quantity_estimate": 57.14,
             "text": "Sardines"
         },
         {
@@ -271,6 +272,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:peanut-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -507,8 +509,8 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 27.8,
-            "quantity_estimate": 27.81,
+            "percent_estimate": 28.6,
+            "quantity_estimate": 28.57,
             "text": "huile d'arachide"
         },
         {
@@ -518,6 +520,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -754,15 +757,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 13.6,
-            "quantity_estimate": 13.58,
+            "percent_estimate": 14.3,
+            "quantity_estimate": 14.29,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.267,
-        "total_difference": 21.4,
+        "relative_difference": 0.286,
+        "total_difference": 22.9,
         "total_specified_input_percent": 80
     },
     "ingredients_text": "Sardines sélectionnées 80 %, huile d'arachide, sel,",
@@ -1025,7 +1028,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 3.552713678800501e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.0,
+            "nutrient_penalty": 0,
+            "total": 3.552713678800501e-14
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

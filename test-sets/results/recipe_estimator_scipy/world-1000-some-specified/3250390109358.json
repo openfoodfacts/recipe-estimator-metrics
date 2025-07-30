@@ -17,6 +17,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -253,8 +254,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 61.7,
-            "quantity_estimate": 64.2,
+            "percent_estimate": 63.8,
+            "quantity_estimate": 66.14,
             "text": "Huile de tournesol"
         },
         {
@@ -264,6 +265,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:grape-seed-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -500,12 +502,12 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 34.3,
-            "quantity_estimate": 35.7,
+            "percent_estimate": 32.6,
+            "quantity_estimate": 33.75,
             "text": "huile de pépins de raisin"
         },
         {
-            "difference": 3.05,
+            "difference": 2.58,
             "id": "en:spice",
             "ingredients": [
                 {
@@ -515,6 +517,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:thyme",
                     "index": 2,
+                    "initial_estimate": 8.16326530612245,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -751,8 +754,8 @@
                             "percent_nom": 0.00181
                         }
                     },
-                    "percent_estimate": 1.86,
-                    "quantity_estimate": 1.93,
+                    "percent_estimate": 1.58,
+                    "quantity_estimate": 1.64,
                     "text": "thym"
                 },
                 {
@@ -762,6 +765,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:rosemary",
                     "index": 3,
+                    "initial_estimate": 4.081632653061225,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1004,8 +1008,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.22,
-                    "quantity_estimate": 1.27,
+                    "percent_estimate": 1.01,
+                    "quantity_estimate": 1.05,
                     "text": "romarin"
                 },
                 {
@@ -1015,6 +1019,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:bay-leaf",
                     "index": 4,
+                    "initial_estimate": 2.0408163265306123,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1251,20 +1256,20 @@
                             "percent_nom": 0.0037
                         }
                     },
-                    "percent_estimate": 0.97,
-                    "quantity_estimate": 1.01,
+                    "percent_estimate": 0.99,
+                    "quantity_estimate": 1.03,
                     "text": "laurier"
                 }
             ],
-            "percent_estimate": 4.05,
+            "percent_estimate": 3.58,
             "percent_hidden": 1,
             "text": "aromates"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 3.05,
-        "total_difference": 3.05,
+        "relative_difference": 2.58,
+        "total_difference": 2.58,
         "total_specified_input_percent": 1
     },
     "ingredients_text": "Huile de tournesol, huile de pépins de raisin, aromates (1% ) (thym, romarin, laurier).",
@@ -1577,7 +1582,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 145.68053949856983,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1800.3672885650772,
+            "nutrient_penalty": 157856.41276963436,
+            "total": 159802.46059769802
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

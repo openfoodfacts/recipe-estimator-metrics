@@ -18,6 +18,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flour",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -254,8 +255,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 95.5,
-            "quantity_estimate": 106.55,
+            "percent_estimate": 94.8,
+            "quantity_estimate": 106.61,
             "text": "Farine de _blé_"
         },
         {
@@ -263,9 +264,10 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "ciqual_proxy_food_code": null,
-            "difference": 0.33,
+            "difference": 0.4,
             "id": "en:salt",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -502,9 +504,9 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 2.67,
+            "percent_estimate": 2.6,
             "percent_hidden": 3,
-            "quantity_estimate": 2.98,
+            "quantity_estimate": 2.92,
             "text": "sel"
         },
         {
@@ -514,6 +516,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -750,8 +753,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.84,
-            "quantity_estimate": 0.94,
+            "percent_estimate": 0.83,
+            "quantity_estimate": 0.93,
             "text": "huile de tournesol"
         },
         {
@@ -761,6 +764,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:malted-wheat-flour",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -997,8 +1001,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 0.77,
-            "quantity_estimate": 0.86,
+            "percent_estimate": 0.83,
+            "quantity_estimate": 0.93,
             "text": "farine de _blé_ malté"
         },
         {
@@ -1008,6 +1012,7 @@
             "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1244,8 +1249,8 @@
                     "percent_nom": 0.008400000000000001
                 }
             },
-            "percent_estimate": 0.21,
-            "quantity_estimate": 0.24,
+            "percent_estimate": 0.83,
+            "quantity_estimate": 0.93,
             "text": "levure"
         },
         {
@@ -1258,6 +1263,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e524",
                     "index": 5,
+                    "initial_estimate": 1.5873015873015872,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1500,19 +1506,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.03,
-                    "quantity_estimate": 0.03,
+                    "percent_estimate": 0.14,
+                    "quantity_estimate": 0.16,
                     "text": "hydroxyde de sodium"
                 }
             ],
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.14,
             "text": "correcteur d'acidité"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.11,
-        "total_difference": 0.33,
+        "relative_difference": 0.133,
+        "total_difference": 0.4,
         "total_specified_input_percent": 3
     },
     "ingredients_text": "Farine de _blé_, sel 3%, huile de tournesol, farine de _blé_ malté, levure, correcteur d'acidité : hydroxyde de sodium.",
@@ -1840,7 +1846,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 521.511880886676,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 7485.270905571321,
+            "nutrient_penalty": 778233.5775042453,
+            "total": 786240.3602907032
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

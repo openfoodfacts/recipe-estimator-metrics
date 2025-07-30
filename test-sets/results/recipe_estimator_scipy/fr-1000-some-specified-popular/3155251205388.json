@@ -21,9 +21,10 @@
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
             "ciqual_proxy_food_code": null,
-            "difference": 28.5,
+            "difference": 30.6,
             "id": "en:light-cream",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -261,9 +262,9 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 69.5,
+            "percent_estimate": 67.4,
             "percent_hidden": 98,
-            "quantity_estimate": 69.52,
+            "quantity_estimate": 67.44,
             "text": "light cream"
         },
         {
@@ -273,6 +274,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:modified-corn-starch",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -510,8 +512,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 8.09,
-            "quantity_estimate": 8.09,
+            "percent_estimate": 8.15,
+            "quantity_estimate": 8.15,
             "text": "modified corn starch"
         },
         {
@@ -524,6 +526,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e440a",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -767,13 +770,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 8.02,
-                    "quantity_estimate": 8.02,
+                    "percent_estimate": 8.15,
+                    "quantity_estimate": 8.15,
                     "text": "pectin"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 8.02,
+            "percent_estimate": 8.15,
             "text": "stabilizers"
         },
         {
@@ -783,6 +786,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:caragonanes",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1026,8 +1030,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 7.87,
-            "quantity_estimate": 7.87,
+            "percent_estimate": 8.15,
+            "quantity_estimate": 8.15,
             "text": "caragonanes"
         },
         {
@@ -1040,6 +1044,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e472e",
                     "index": 4,
+                    "initial_estimate": 3.225806451612903,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1283,21 +1288,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 6.54,
-                    "quantity_estimate": 6.54,
+                    "percent_estimate": 8.13,
+                    "quantity_estimate": 8.13,
                     "text": "e472e"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 6.54,
+            "percent_estimate": 8.13,
             "text": "emulsifier"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.291,
-        "total_difference": 28.5,
+        "relative_difference": 0.312,
+        "total_difference": 30.6,
         "total_specified_input_percent": 98
     },
     "ingredients_text": "light cream 98% (milk) (origin france), modified corn starch, stabilizers: pectin, caragonanes, emulsifier: e472e",
@@ -1632,7 +1637,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 77.12246695231111,
+            "ingredient_not_half_previous_penalty": 336.9480109916282,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3.1143583998058944,
+            "nutrient_penalty": 1935005.803832807,
+            "total": 1935422.9886691507
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

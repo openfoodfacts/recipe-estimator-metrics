@@ -22,10 +22,11 @@
             "ciqual_food_code": "15011",
             "ciqual_food_code_used": "15011",
             "ciqual_proxy_food_code": null,
-            "difference": 5.28,
+            "difference": 5.31,
             "ecobalyse_code": "sunflower-non-eu",
             "id": "en:sunflower-seed",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -265,7 +266,7 @@
             },
             "percent_estimate": 95.3,
             "percent_hidden": 90,
-            "quantity_estimate": 101.67,
+            "quantity_estimate": 101.72,
             "text": "slunečnicová semínka"
         },
         {
@@ -276,6 +277,7 @@
             "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -513,8 +515,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 3.76,
-            "quantity_estimate": 4.01,
+            "percent_estimate": 3.74,
+            "quantity_estimate": 3.99,
             "text": "palmový olej"
         },
         {
@@ -522,9 +524,10 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "ciqual_proxy_food_code": null,
-            "difference": 0.04,
+            "difference": 0.06,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -762,17 +765,17 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.96,
+            "percent_estimate": 0.94,
             "percent_hidden": 1,
-            "quantity_estimate": 1.03,
+            "quantity_estimate": 1.01,
             "text": "jedlá sůl"
         }
     ],
     "ingredients_lc": "cs",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0585,
-        "total_difference": 5.32,
+        "relative_difference": 0.059,
+        "total_difference": 5.37,
         "total_specified_input_percent": 91
     },
     "ingredients_text": "90% slunečnicová semínka, palmový olej, 1% jedlá sůl",
@@ -1052,7 +1055,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 478.5396269620898,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2016.2713258180686,
+            "nutrient_penalty": 1217124.2527311123,
+            "total": 1219619.0636838924
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -257,8 +258,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 45.8,
-            "quantity_estimate": 48.72,
+            "percent_estimate": 40.6,
+            "quantity_estimate": 47.24,
             "text": "sugar"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -504,8 +506,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 18.9,
-            "quantity_estimate": 20.06,
+            "percent_estimate": 13.4,
+            "quantity_estimate": 15.56,
             "text": "cocoa paste"
         },
         {
@@ -515,6 +517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -751,8 +754,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 7.16,
-            "quantity_estimate": 7.61,
+            "percent_estimate": 9.44,
+            "quantity_estimate": 10.98,
             "text": "cocoa butter"
         },
         {
@@ -762,6 +765,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lean-cocoa-powder",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 6.24,
-            "quantity_estimate": 6.64,
+            "percent_estimate": 7.37,
+            "quantity_estimate": 8.57,
             "text": "lean cocoa powder"
         },
         {
@@ -1018,6 +1022,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 4,
+                    "initial_estimate": 3.1372549019607843,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -1254,12 +1259,12 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 5.72,
-                    "quantity_estimate": 6.08,
+                    "percent_estimate": 7.3,
+                    "quantity_estimate": 8.5,
                     "text": "soy lecithin"
                 }
             ],
-            "percent_estimate": 5.72,
+            "percent_estimate": 7.3,
             "text": "emulsifier"
         },
         {
@@ -1269,6 +1274,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1511,8 +1517,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 5.51,
-            "quantity_estimate": 5.86,
+            "percent_estimate": 7.3,
+            "quantity_estimate": 8.49,
             "text": "flavouring"
         },
         {
@@ -1522,6 +1528,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:skimmed-milk-powder",
             "index": 6,
+            "initial_estimate": 0.7843137254901961,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1758,8 +1765,8 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 5.44,
-            "quantity_estimate": 5.79,
+            "percent_estimate": 7.3,
+            "quantity_estimate": 8.49,
             "text": "skimmed milk powder"
         },
         {
@@ -1767,9 +1774,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": "18100",
-            "difference": 41.8,
+            "difference": 39.7,
             "id": "en:cocoa",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -2006,17 +2014,17 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 5.24,
+            "percent_estimate": 7.3,
             "percent_hidden": 47,
-            "quantity_estimate": 5.58,
+            "quantity_estimate": 8.49,
             "text": "cocoa"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.889,
-        "total_difference": 41.8,
+        "relative_difference": 0.845,
+        "total_difference": 39.7,
         "total_specified_input_percent": 47
     },
     "ingredients_text": "sugar, cocoa paste, cocoa butter, lean cocoa powder, emulsifier (soy lecithin), flavouring, skimmed milk powder, cocoa: 47% minimum, may contain wheat, barley and nuts,",
@@ -2347,7 +2355,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 312.8993141431417,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 13058.252223616022,
+            "nutrient_penalty": 1295220.6270121934,
+            "total": 1308591.7785499527
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

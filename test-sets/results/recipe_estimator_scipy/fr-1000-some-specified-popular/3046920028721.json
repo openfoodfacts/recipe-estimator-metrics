@@ -29,9 +29,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": "18100",
-            "difference": 51.3,
+            "difference": 56.3,
             "id": "en:cocoa-solids",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -269,9 +270,9 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 47.7,
+            "percent_estimate": 42.7,
             "percent_hidden": 99,
-            "quantity_estimate": 47.77,
+            "quantity_estimate": 42.69,
             "text": "Cocoa solids"
         },
         {
@@ -281,6 +282,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -518,8 +520,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 32.4,
-            "quantity_estimate": 32.41,
+            "percent_estimate": 25.0,
+            "quantity_estimate": 25.03,
             "text": "Cocoa paste"
         },
         {
@@ -529,6 +531,7 @@
             "ciqual_proxy_food_code": "18100",
             "id": "en:fat-reduced-cocoa",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -766,8 +769,8 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 12.3,
-            "quantity_estimate": 12.36,
+            "percent_estimate": 17.4,
+            "quantity_estimate": 17.4,
             "text": "fat-reduced cocoa"
         },
         {
@@ -777,6 +780,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1014,8 +1018,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 6.94,
-            "quantity_estimate": 6.94,
+            "percent_estimate": 14.4,
+            "quantity_estimate": 14.43,
             "text": "cocoa butter"
         },
         {
@@ -1026,6 +1030,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:demerara-sugar",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1263,16 +1268,16 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 0.62,
-            "quantity_estimate": 0.62,
+            "percent_estimate": 0.46,
+            "quantity_estimate": 0.46,
             "text": "demerara sugar"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.518,
-        "total_difference": 51.3,
+        "relative_difference": 0.569,
+        "total_difference": 56.3,
         "total_specified_input_percent": 99
     },
     "ingredients_text": "Cocoa solids 99%, Cocoa paste, fat-reduced cocoa, cocoa butter, demerara sugar. May contain nuts, milk and soya.",
@@ -1604,7 +1609,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 210.60858130380063,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 5.269207608336046,
+            "nutrient_penalty": 1543418.1969036504,
+            "total": 1543634.0746925627
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

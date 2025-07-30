@@ -28,9 +28,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "16400",
             "ciqual_proxy_food_code": "16400",
-            "difference": 1.95,
+            "difference": 1.69,
             "id": "en:butter",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -267,9 +268,9 @@
                     "percent_nom": 8.3e-05
                 }
             },
-            "percent_estimate": 61.0,
+            "percent_estimate": 61.3,
             "percent_hidden": 63,
-            "quantity_estimate": 61.27,
+            "quantity_estimate": 61.32,
             "text": "Butter"
         },
         {
@@ -279,6 +280,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -515,8 +517,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 24.8,
-            "quantity_estimate": 24.9,
+            "percent_estimate": 24.5,
+            "quantity_estimate": 24.52,
             "text": "Wasser"
         },
         {
@@ -524,9 +526,10 @@
             "ciqual_food_code": "17130",
             "ciqual_food_code_used": "17130",
             "ciqual_proxy_food_code": null,
-            "difference": 1.15,
+            "difference": 1.18,
             "id": "en:rapeseed-oil",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -765,15 +768,15 @@
             },
             "percent_estimate": 14.2,
             "percent_hidden": 13,
-            "quantity_estimate": 14.2,
+            "quantity_estimate": 14.18,
             "text": "Rapsöl"
         }
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0408,
-        "total_difference": 3.1,
+        "relative_difference": 0.0378,
+        "total_difference": 2.87,
         "total_specified_input_percent": 76
     },
     "ingredients_text": "Butter (63%), Wasser, Rapsöl (13%)",
@@ -1080,7 +1083,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 80.5679340514236,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 6.4737482632693855,
+            "nutrient_penalty": 118318.24496497374,
+            "total": 118405.28664728842
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

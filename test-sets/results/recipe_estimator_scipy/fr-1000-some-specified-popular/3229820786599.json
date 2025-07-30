@@ -22,9 +22,10 @@
             "ciqual_food_code": "9311",
             "ciqual_food_code_used": "9311",
             "ciqual_proxy_food_code": null,
-            "difference": 18.9,
+            "difference": 17.7,
             "id": "en:oat-flakes",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -262,14 +263,14 @@
                     "percent_nom": 0.00333
                 }
             },
-            "percent_estimate": 49.1,
+            "percent_estimate": 50.3,
             "percent_hidden": 68,
-            "quantity_estimate": 69.33,
+            "quantity_estimate": 72.39,
             "text": "Flocons d'avoine"
         },
         {
             "ciqual_food_code": "13046",
-            "difference": 17.0,
+            "difference": 15.8,
             "id": "en:raisin",
             "ingredients": [
                 {
@@ -279,6 +280,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:grape",
                     "index": 1,
+                    "initial_estimate": 19.047619047619047,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -516,8 +518,8 @@
                             "percent_nom": 7.000000000000001e-05
                         }
                     },
-                    "percent_estimate": 28.9,
-                    "quantity_estimate": 40.81,
+                    "percent_estimate": 27.8,
+                    "quantity_estimate": 40.1,
                     "text": "raisins"
                 },
                 {
@@ -528,6 +530,7 @@
                     "ecobalyse_code": "sunflower-oil",
                     "id": "en:sunflower-oil",
                     "index": 2,
+                    "initial_estimate": 9.523809523809524,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -765,18 +768,18 @@
                             "percent_nom": 5e-05
                         }
                     },
-                    "percent_estimate": 0.11,
-                    "quantity_estimate": 0.15,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "huile de tournesol"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 29.0,
+            "percent_estimate": 27.8,
             "percent_hidden": 12,
             "text": "raisins secs"
         },
         {
-            "difference": 1.87,
+            "difference": 1.89,
             "id": "en:seed",
             "ingredients": [
                 {
@@ -786,6 +789,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:flax-seed",
                     "index": 3,
+                    "initial_estimate": 7.6190476190476195,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1023,8 +1027,8 @@
                             "percent_nom": 0.00605
                         }
                     },
-                    "percent_estimate": 10.7,
-                    "quantity_estimate": 15.06,
+                    "percent_estimate": 8.1,
+                    "quantity_estimate": 11.67,
                     "text": "graines de lin"
                 },
                 {
@@ -1035,6 +1039,7 @@
                     "ecobalyse_code": "pumpkin-fr",
                     "id": "en:pumpkin-seed",
                     "index": 4,
+                    "initial_estimate": 3.8095238095238098,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1272,8 +1277,8 @@
                             "percent_nom": 0.00026000000000000003
                         }
                     },
-                    "percent_estimate": 5.01,
-                    "quantity_estimate": 7.07,
+                    "percent_estimate": 8.06,
+                    "quantity_estimate": 11.61,
                     "text": "graines de courges"
                 },
                 {
@@ -1284,6 +1289,7 @@
                     "ecobalyse_code": "sunflower-non-eu",
                     "id": "en:sunflower-seed",
                     "index": 5,
+                    "initial_estimate": 1.9047619047619049,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1521,8 +1527,8 @@
                             "percent_nom": 0.0038
                         }
                     },
-                    "percent_estimate": 4.4,
-                    "quantity_estimate": 6.21,
+                    "percent_estimate": 5.73,
+                    "quantity_estimate": 8.25,
                     "text": "graines de tournesol"
                 },
                 {
@@ -1532,6 +1538,7 @@
                     "ciqual_proxy_food_code": "9380",
                     "id": "en:buckwheat-grain",
                     "index": 6,
+                    "initial_estimate": 0.9523809523809524,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1769,8 +1776,8 @@
                             "percent_nom": 0.0024
                         }
                     },
-                    "percent_estimate": 1.8,
-                    "quantity_estimate": 2.55,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "graines de sarrasin"
                 }
             ],
@@ -1783,8 +1790,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.378,
-        "total_difference": 37.8,
+        "relative_difference": 0.355,
+        "total_difference": 35.5,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Flocons d'avoine* 68%, raisins secs* 12% (raisins*, huile de tournesol*), graines* 20% (graines de lin*, graines de courges*, graines de tournesol*, graines de sarrasin*).",
@@ -2131,7 +2138,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 477.62726057465034,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 30809.346516741847,
+            "nutrient_penalty": 147625.92385027907,
+            "total": 178912.89762759558
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

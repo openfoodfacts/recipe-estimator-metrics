@@ -22,6 +22,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,7 +260,7 @@
                 }
             },
             "percent_estimate": 83.2,
-            "quantity_estimate": 164.07,
+            "quantity_estimate": 164.32,
             "text": "Pommes de terre"
         },
         {
@@ -270,6 +271,7 @@
             "difference": 16.5,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -508,7 +510,7 @@
             },
             "percent_estimate": 16.4,
             "percent_hidden": 32.9,
-            "quantity_estimate": 32.41,
+            "quantity_estimate": 32.45,
             "text": "huile de tournesol"
         },
         {
@@ -518,6 +520,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -754,8 +757,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.38,
-            "quantity_estimate": 0.75,
+            "percent_estimate": 0.37,
+            "quantity_estimate": 0.72,
             "text": "sel"
         }
     ],
@@ -1073,7 +1076,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 652.0807184570004,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 29247.69153354982,
+            "nutrient_penalty": 4800387.282184894,
+            "total": 4830287.054436901
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -26,6 +26,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -263,8 +264,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 63.7,
-            "quantity_estimate": 72.9,
+            "percent_estimate": 72.1,
+            "quantity_estimate": 72.89,
             "text": "Sugar"
         },
         {
@@ -274,6 +275,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-powder",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -511,8 +513,8 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 26.4,
-            "quantity_estimate": 30.26,
+            "percent_estimate": 27.9,
+            "quantity_estimate": 28.15,
             "text": "cocoa powder"
         },
         {
@@ -525,6 +527,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e501",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -768,13 +771,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 9.77,
-                    "quantity_estimate": 11.18,
+                    "percent_estimate": 0.03,
+                    "quantity_estimate": 0.03,
                     "text": "potassium carbonates"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 9.77,
+            "percent_estimate": 0.03,
             "text": "acidity regulator"
         },
         {
@@ -784,6 +787,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1027,8 +1031,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.04,
-            "quantity_estimate": 0.05,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "flavouring"
         },
         {
@@ -1039,6 +1043,7 @@
             "difference": 25.0,
             "id": "en:cocoa-solids",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1276,16 +1281,16 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 0.04,
+            "percent_estimate": 0.0,
             "percent_hidden": 25,
-            "quantity_estimate": 0.04,
+            "quantity_estimate": 0.0,
             "text": "Cocoa solids"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.998,
+        "relative_difference": 1.0,
         "total_difference": 25.0,
         "total_specified_input_percent": 25
     },
@@ -1681,7 +1686,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 223.5649432660762,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 536.4107308830199,
+            "nutrient_penalty": 71800.55771908401,
+            "total": 72560.5333932331
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

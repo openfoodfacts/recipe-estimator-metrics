@@ -14,7 +14,7 @@
     ],
     "ingredients": [
         {
-            "difference": 7.23,
+            "difference": 18.3,
             "id": "en:vegetable",
             "ingredients": [
                 {
@@ -24,6 +24,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:carrot",
                     "index": 0,
+                    "initial_estimate": 29.493087557603687,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -260,8 +261,8 @@
                             "percent_nom": 0.00017999999999999998
                         }
                     },
-                    "percent_estimate": 23.1,
-                    "quantity_estimate": 26.85,
+                    "percent_estimate": 18.0,
+                    "quantity_estimate": 18.0,
                     "text": "carottes"
                 },
                 {
@@ -271,6 +272,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:turnip",
                     "index": 1,
+                    "initial_estimate": 14.746543778801843,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -507,8 +509,8 @@
                             "percent_nom": 0.00025
                         }
                     },
-                    "percent_estimate": 18.2,
-                    "quantity_estimate": 21.13,
+                    "percent_estimate": 18.0,
+                    "quantity_estimate": 17.99,
                     "text": "navets"
                 },
                 {
@@ -518,6 +520,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:green-bean",
                     "index": 2,
+                    "initial_estimate": 7.373271889400922,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -754,8 +757,8 @@
                             "percent_nom": 0.00032
                         }
                     },
-                    "percent_estimate": 17.1,
-                    "quantity_estimate": 19.9,
+                    "percent_estimate": 18.0,
+                    "quantity_estimate": 17.98,
                     "text": "haricots verts"
                 },
                 {
@@ -765,6 +768,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:garden-peas",
                     "index": 3,
+                    "initial_estimate": 3.686635944700461,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1001,8 +1005,8 @@
                             "percent_nom": 0.001
                         }
                     },
-                    "percent_estimate": 11.7,
-                    "quantity_estimate": 13.54,
+                    "percent_estimate": 17.9,
+                    "quantity_estimate": 17.94,
                     "text": "petits pois"
                 },
                 {
@@ -1012,6 +1016,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:green-flageolets",
                     "index": 4,
+                    "initial_estimate": 1.8433179723502304,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1254,12 +1259,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.11,
-                    "quantity_estimate": 0.12,
+                    "percent_estimate": 9.43,
+                    "quantity_estimate": 9.44,
                     "text": "flageolets verts"
                 }
             ],
-            "percent_estimate": 70.2,
+            "percent_estimate": 81.3,
             "percent_hidden": 63,
             "text": "Légumes"
         },
@@ -1270,6 +1275,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 5,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1506,8 +1512,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 29.2,
-            "quantity_estimate": 33.95,
+            "percent_estimate": 18.1,
+            "quantity_estimate": 18.1,
             "text": "eau"
         },
         {
@@ -1517,6 +1523,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 6,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1753,15 +1760,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.53,
-            "quantity_estimate": 0.62,
+            "percent_estimate": 0.67,
+            "quantity_estimate": 0.67,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.115,
-        "total_difference": 7.23,
+        "relative_difference": 0.29,
+        "total_difference": 18.3,
         "total_specified_input_percent": 63
     },
     "ingredients_text": "Légumes 63% (carottes, navets, haricots verts, petits pois, flageolets verts), eau, sel.",
@@ -2077,7 +2084,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 583.5208704911724,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 79.71249788166404,
+            "nutrient_penalty": 1291815.793402385,
+            "total": 1292479.0267707577
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

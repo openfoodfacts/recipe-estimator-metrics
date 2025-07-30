@@ -26,6 +26,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:pasteurized-milk-and-cream",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -263,8 +264,8 @@
                 }
             },
             "origins": "en:france",
-            "percent_estimate": 60.8,
-            "quantity_estimate": 144.02,
+            "percent_estimate": 58.3,
+            "quantity_estimate": 145.85,
             "text": "pasteurized milk and cream"
         },
         {
@@ -274,6 +275,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -516,8 +518,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 19.2,
-            "quantity_estimate": 45.37,
+            "percent_estimate": 20.0,
+            "quantity_estimate": 50.0,
             "text": "lactic ferments"
         },
         {
@@ -527,6 +529,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:garlic",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -763,8 +766,8 @@
                     "percent_nom": 0.00075
                 }
             },
-            "percent_estimate": 18.5,
-            "quantity_estimate": 43.89,
+            "percent_estimate": 20.0,
+            "quantity_estimate": 49.97,
             "text": "garlic"
         },
         {
@@ -772,9 +775,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 1.71,
+            "difference": 1.45,
             "id": "en:herb",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1017,9 +1021,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.59,
+            "percent_estimate": 0.85,
             "percent_hidden": 2.3,
-            "quantity_estimate": 1.39,
+            "quantity_estimate": 2.12,
             "text": "herbs"
         },
         {
@@ -1029,6 +1033,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.47,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 0.45,
+            "quantity_estimate": 1.13,
             "text": "salt"
         },
         {
@@ -1276,6 +1281,7 @@
             "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1512,16 +1518,16 @@
                     "percent_nom": 0.00099
                 }
             },
-            "percent_estimate": 0.41,
-            "quantity_estimate": 0.97,
+            "percent_estimate": 0.44,
+            "quantity_estimate": 1.1,
             "text": "pepper"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.743,
-        "total_difference": 1.71,
+        "relative_difference": 0.63,
+        "total_difference": 1.45,
         "total_specified_input_percent": 2.3
     },
     "ingredients_text": "pasteurized milk and cream (origin: france), lactic ferments, garlic and herbs 2,3%, salt, pepper,",
@@ -1842,7 +1848,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 713.8142146236257,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 90099.59334982588,
+            "nutrient_penalty": 2660786.14899069,
+            "total": 2751599.5565551394
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -24,9 +24,10 @@
             "ciqual_food_code": "20010",
             "ciqual_food_code_used": "20010",
             "ciqual_proxy_food_code": null,
-            "difference": 26.6,
+            "difference": 38.3,
             "id": "en:golden-chanterelle",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -263,9 +264,9 @@
                     "percent_nom": 0.00065
                 }
             },
-            "percent_estimate": 86.6,
+            "percent_estimate": 98.3,
             "percent_hidden": 60,
-            "quantity_estimate": 133.48,
+            "quantity_estimate": 133.25,
             "text": "Kantarell"
         },
         {
@@ -275,6 +276,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -511,8 +513,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 12.8,
-            "quantity_estimate": 19.68,
+            "percent_estimate": 0.76,
+            "quantity_estimate": 1.03,
             "text": "vann"
         },
         {
@@ -522,6 +524,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -758,8 +761,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.58,
-            "quantity_estimate": 0.89,
+            "percent_estimate": 0.67,
+            "quantity_estimate": 0.9,
             "text": "salt"
         },
         {
@@ -772,6 +775,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 3,
+                    "initial_estimate": 6.666666666666667,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1014,19 +1018,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.01,
-                    "quantity_estimate": 0.02,
+                    "percent_estimate": 0.28,
+                    "quantity_estimate": 0.38,
                     "text": "e330"
                 }
             ],
-            "percent_estimate": 0.01,
+            "percent_estimate": 0.28,
             "text": "surhetsregulerende middel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.444,
-        "total_difference": 26.6,
+        "relative_difference": 0.638,
+        "total_difference": 38.3,
         "total_specified_input_percent": 60
     },
     "ingredients_text": "Kantarell 60 %, vann, salt, surhetsregulerende middel E330",
@@ -1336,7 +1340,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 660.5694734020856,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 14224.711417448145,
+            "nutrient_penalty": 305675.00355744205,
+            "total": 320560.2844482923
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

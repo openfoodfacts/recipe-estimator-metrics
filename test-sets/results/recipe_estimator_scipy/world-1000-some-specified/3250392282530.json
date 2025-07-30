@@ -30,6 +30,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e968",
                     "index": 0,
+                    "initial_estimate": 57.142857142857146,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -272,12 +273,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 56.8,
-                    "quantity_estimate": 56.79,
+                    "percent_estimate": 57.1,
+                    "quantity_estimate": 57.14,
                     "text": "érythritol"
                 }
             ],
-            "percent_estimate": 56.8,
+            "percent_estimate": 57.1,
             "text": "Edulcorants"
         },
         {
@@ -285,9 +286,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 27.3,
+            "difference": 27.5,
             "id": "en:e960",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -530,9 +532,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 28.4,
+            "percent_estimate": 28.6,
             "percent_hidden": 1.1,
-            "quantity_estimate": 28.4,
+            "quantity_estimate": 28.57,
             "text": "glycosides de stéviol"
         },
         {
@@ -542,6 +544,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-vanilla-flavouring",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -784,15 +787,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 14.8,
-            "quantity_estimate": 14.82,
+            "percent_estimate": 14.3,
+            "quantity_estimate": 14.29,
             "text": "arôme naturel de vanille"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 24.8,
-        "total_difference": 27.3,
+        "relative_difference": 25.0,
+        "total_difference": 27.5,
         "total_specified_input_percent": 1.1
     },
     "ingredients_text": "Edulcorants : érythritol - glycosides de stéviol (1,1%), arôme naturel de vanille.",
@@ -866,7 +869,15 @@
     "recipe_estimator": {
         "ingredient_count": 3,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 5.3290705182007514e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4.263256414560601e-12,
+            "nutrient_penalty": 0,
+            "total": 4.316547119742609e-12
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

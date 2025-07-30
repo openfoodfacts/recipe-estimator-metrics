@@ -16,9 +16,10 @@
             "ciqual_food_code": "2074",
             "ciqual_food_code_used": "2074",
             "ciqual_proxy_food_code": null,
-            "difference": 50.8,
+            "difference": 51.2,
             "id": "en:apple-juice",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -255,9 +256,9 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 99.3,
+            "percent_estimate": 99.7,
             "percent_hidden": 48.5,
-            "quantity_estimate": 99.57,
+            "quantity_estimate": 99.69,
             "text": "Jus de pomme"
         },
         {
@@ -265,9 +266,10 @@
             "ciqual_food_code": "13716",
             "ciqual_food_code_used": "13716",
             "ciqual_proxy_food_code": null,
-            "difference": 31.5,
+            "difference": 31.7,
             "id": "en:pineapple-juice",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -504,9 +506,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 0.53,
+            "percent_estimate": 0.28,
             "percent_hidden": 32,
-            "quantity_estimate": 0.53,
+            "quantity_estimate": 0.28,
             "text": "jus d'ananas"
         },
         {
@@ -514,9 +516,10 @@
             "ciqual_food_code": "13025",
             "ciqual_food_code_used": "13025",
             "ciqual_proxy_food_code": null,
-            "difference": 16.9,
+            "difference": 17.0,
             "id": "en:mango-puree",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -753,9 +756,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 0.12,
+            "percent_estimate": 0.03,
             "percent_hidden": 17,
-            "quantity_estimate": 0.12,
+            "quantity_estimate": 0.03,
             "text": "purée de mangue"
         },
         {
@@ -763,9 +766,10 @@
             "ciqual_food_code": "13016",
             "ciqual_food_code_used": "13016",
             "ciqual_proxy_food_code": null,
-            "difference": 2.42,
+            "difference": 2.5,
             "id": "en:passionfruit",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1002,10 +1006,10 @@
                     "percent_nom": 0.00076
                 }
             },
-            "percent_estimate": 0.08,
+            "percent_estimate": 0.0,
             "percent_hidden": 2.5,
             "processing": "en:juice",
-            "quantity_estimate": 0.08,
+            "quantity_estimate": 0.0,
             "text": "fruits de la passion"
         }
     ],
@@ -1311,7 +1315,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 496.84831590937097,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.11155682417438584,
+            "nutrient_penalty": 261357.5533119311,
+            "total": 261854.51318466463
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

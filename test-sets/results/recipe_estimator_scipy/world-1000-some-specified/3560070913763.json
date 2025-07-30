@@ -23,9 +23,10 @@
             "ciqual_food_code": "20170",
             "ciqual_food_code_used": "20170",
             "ciqual_proxy_food_code": null,
-            "difference": 15.7,
+            "difference": 16.0,
             "id": "en:tomato-puree",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -262,9 +263,9 @@
                     "percent_nom": 0.0002
                 }
             },
-            "percent_estimate": 84.2,
+            "percent_estimate": 83.9,
             "percent_hidden": 99.9,
-            "quantity_estimate": 84.86,
+            "quantity_estimate": 84.0,
             "text": "Purée de tomates"
         },
         {
@@ -274,6 +275,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-basil-flavouring",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -516,8 +518,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 13.2,
-            "quantity_estimate": 13.27,
+            "percent_estimate": 10.8,
+            "quantity_estimate": 10.81,
             "text": "arôme naturel de basilic"
         },
         {
@@ -530,6 +532,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 2,
+                    "initial_estimate": 14.285714285714286,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -772,19 +775,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 2.65,
-                    "quantity_estimate": 2.67,
+                    "percent_estimate": 5.28,
+                    "quantity_estimate": 5.28,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 2.65,
+            "percent_estimate": 5.28,
             "text": "correcteur d'acidité"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.157,
-        "total_difference": 15.7,
+        "relative_difference": 0.16,
+        "total_difference": 16.0,
         "total_specified_input_percent": 99.9
     },
     "ingredients_text": "Purée de tomates 99,9%, arôme naturel de basilic, correcteur d'acidité : acide citrique.",
@@ -1088,7 +1091,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 313.1238721026975,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 29.3706801921914,
+            "nutrient_penalty": 447613.3720288484,
+            "total": 447955.8665811433
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

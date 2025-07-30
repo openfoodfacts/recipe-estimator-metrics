@@ -13,7 +13,7 @@
     "ingredients": [
         {
             "ciqual_food_code": "4003",
-            "difference": 5.99,
+            "difference": 7.11,
             "id": "en:potato",
             "ingredients": [
                 {
@@ -23,6 +23,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sulfite",
                     "index": 0,
+                    "initial_estimate": 50.39370078740158,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -265,12 +266,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 43.0,
-                    "quantity_estimate": 44.44,
+                    "percent_estimate": 41.9,
+                    "quantity_estimate": 42.35,
                     "text": "dont _sulfites_"
                 }
             ],
-            "percent_estimate": 43.0,
+            "percent_estimate": 41.9,
             "percent_hidden": 49,
             "processing": "en:dehydrated",
             "text": "Pomme de terre"
@@ -280,9 +281,10 @@
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
             "ciqual_proxy_food_code": null,
-            "difference": 1.01,
+            "difference": 0.81,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -519,9 +521,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 26.0,
+            "percent_estimate": 26.2,
             "percent_hidden": 27,
-            "quantity_estimate": 26.86,
+            "quantity_estimate": 26.47,
             "text": "huile de tournesol"
         },
         {
@@ -531,6 +533,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "fr:amidons-de-ble-et-de-pomme-de-terre",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -767,8 +770,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 24.4,
-            "quantity_estimate": 25.24,
+            "percent_estimate": 26.2,
+            "quantity_estimate": 26.46,
             "text": "amidons de _blé_ et de pomme de terre"
         },
         {
@@ -778,6 +781,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:glucose-syrup",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1014,8 +1018,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 4.93,
-            "quantity_estimate": 5.1,
+            "percent_estimate": 4.66,
+            "quantity_estimate": 4.71,
             "text": "sirop de glucose"
         },
         {
@@ -1025,6 +1029,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1261,8 +1266,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.08,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 1.02,
+            "quantity_estimate": 1.03,
             "text": "sel"
         },
         {
@@ -1272,6 +1277,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:colza-oil",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1508,8 +1514,8 @@
                     "percent_nom": 2.6e-05
                 }
             },
-            "percent_estimate": 0.3,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.05,
+            "quantity_estimate": 0.05,
             "text": "huile de colza"
         },
         {
@@ -1522,6 +1528,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e471",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1764,19 +1771,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.26,
-                    "quantity_estimate": 0.26,
+                    "percent_estimate": 0.02,
+                    "quantity_estimate": 0.02,
                     "text": "mono- et diglycérides d'acides gras"
                 }
             ],
-            "percent_estimate": 0.26,
+            "percent_estimate": 0.02,
             "text": "émulsifiant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.0921,
-        "total_difference": 7.0,
+        "relative_difference": 0.104,
+        "total_difference": 7.92,
         "total_specified_input_percent": 76
     },
     "ingredients_text": "Pomme de terre déshydratée 49% (dont _sulfites_ ), huile de tournesol 27%, amidons de  _blé_ et de pomme de terre, sirop de glucose, sel, huile de colza, émulsifiant : mono - et diglycérides d'acides gras,",
@@ -2098,7 +2105,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 288.4450132192377,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 768.7012539614869,
+            "nutrient_penalty": 5705215.332415806,
+            "total": 5706272.478682987
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

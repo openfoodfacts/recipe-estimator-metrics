@@ -27,6 +27,7 @@
             "ecobalyse_code": "peanut-organic",
             "id": "en:roasted-peanuts",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -267,7 +268,7 @@
             },
             "percent_estimate": 86.8,
             "percent_hidden": 91,
-            "quantity_estimate": 94.56,
+            "quantity_estimate": 94.46,
             "text": "roasted peanuts"
         },
         {
@@ -278,6 +279,7 @@
             "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -517,7 +519,7 @@
                 }
             },
             "percent_estimate": 13.2,
-            "quantity_estimate": 14.37,
+            "quantity_estimate": 14.38,
             "text": "sustainable palm oil"
         },
         {
@@ -527,6 +529,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -764,8 +767,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.02,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "sea salt"
         }
     ],
@@ -1068,7 +1071,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 400.3931511335172,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2653.423886385994,
+            "nutrient_penalty": 1284315.9097192788,
+            "total": 1287369.7267567983
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

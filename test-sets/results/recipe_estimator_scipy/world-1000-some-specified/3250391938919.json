@@ -17,9 +17,10 @@
             "ciqual_food_code": "13050",
             "ciqual_food_code_used": "13050",
             "ciqual_proxy_food_code": null,
-            "difference": 19.2,
+            "difference": 18.9,
             "id": "en:apple",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -257,9 +258,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 88.9,
+            "percent_estimate": 88.6,
             "percent_hidden": 69.7,
-            "quantity_estimate": 102.63,
+            "quantity_estimate": 102.14,
             "text": "Pomme"
         },
         {
@@ -267,9 +268,10 @@
             "ciqual_food_code": "13014",
             "ciqual_food_code_used": "13014",
             "ciqual_proxy_food_code": null,
-            "difference": 13.7,
+            "difference": 14.4,
             "id": "en:strawberry",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -507,9 +509,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 6.34,
+            "percent_estimate": 5.6,
             "percent_hidden": 20,
-            "quantity_estimate": 7.32,
+            "quantity_estimate": 6.45,
             "text": "Fraise"
         },
         {
@@ -517,9 +519,10 @@
             "ciqual_food_code": "13028",
             "ciqual_food_code_used": "13028",
             "ciqual_proxy_food_code": null,
-            "difference": 5.38,
+            "difference": 4.42,
             "id": "en:blueberry",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -757,9 +760,9 @@
                     "percent_nom": 0.00016
                 }
             },
-            "percent_estimate": 4.62,
+            "percent_estimate": 5.58,
             "percent_hidden": 10,
-            "quantity_estimate": 5.33,
+            "quantity_estimate": 6.43,
             "text": "Myrtille"
         },
         {
@@ -772,6 +775,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e300",
                     "index": 3,
+                    "initial_estimate": 6.666666666666667,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1014,19 +1018,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.13,
-                    "quantity_estimate": 0.15,
+                    "percent_estimate": 0.19,
+                    "quantity_estimate": 0.22,
                     "text": "acide ascorbique"
                 }
             ],
-            "percent_estimate": 0.13,
+            "percent_estimate": 0.19,
             "text": "antioxydant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.384,
-        "total_difference": 38.2,
+        "relative_difference": 0.379,
+        "total_difference": 37.7,
         "total_specified_input_percent": 99.7
     },
     "ingredients_text": "Pomme** 69,7%, Fraise** 20%, Myrtille** 10%, antioxydant: acide ascorbique. **Ingrédients issus de l'agriculture biologique.",
@@ -1347,7 +1351,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 508.10039616232405,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 6100.1656488603485,
+            "nutrient_penalty": 203982.81763690454,
+            "total": 210591.08368192724
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

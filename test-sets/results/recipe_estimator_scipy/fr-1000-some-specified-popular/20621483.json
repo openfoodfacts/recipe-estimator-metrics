@@ -30,9 +30,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 32.8,
+            "difference": 34.5,
             "id": "en:wholegrain-wheat-meal",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -276,9 +277,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 45.2,
+            "percent_estimate": 43.5,
             "percent_hidden": 78,
-            "quantity_estimate": 53.97,
+            "quantity_estimate": 52.38,
             "text": "Wholegrain Wheat Meal"
         },
         {
@@ -286,9 +287,10 @@
             "ciqual_food_code": "9621",
             "ciqual_food_code_used": "9621",
             "ciqual_proxy_food_code": null,
-            "difference": 28.0,
+            "difference": 28.5,
             "id": "en:wheat-bran",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -526,9 +528,9 @@
                     "percent_nom": 0.00749
                 }
             },
-            "percent_estimate": 43.0,
+            "percent_estimate": 43.5,
             "percent_hidden": 15,
-            "quantity_estimate": 51.4,
+            "quantity_estimate": 52.34,
             "text": "Wheat Bran"
         },
         {
@@ -539,6 +541,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -776,8 +779,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 9.83,
-            "quantity_estimate": 11.74,
+            "percent_estimate": 10.6,
+            "quantity_estimate": 12.81,
             "text": "Sugar"
         },
         {
@@ -787,6 +790,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:barley-malt-extract",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1030,8 +1034,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.16,
-            "quantity_estimate": 1.39,
+            "percent_estimate": 1.29,
+            "quantity_estimate": 1.56,
             "text": "Barley Malt Extract"
         },
         {
@@ -1041,6 +1045,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1278,8 +1283,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.31,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.52,
+            "quantity_estimate": 0.63,
             "text": "Salt"
         },
         {
@@ -1292,6 +1297,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e471",
                     "index": 5,
+                    "initial_estimate": 1.5748031496062993,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1535,13 +1541,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.26,
-                    "quantity_estimate": 0.31,
+                    "percent_estimate": 0.32,
+                    "quantity_estimate": 0.38,
                     "text": "mono- and Diglycerides of Fatty Acids"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.26,
+            "percent_estimate": 0.32,
             "text": "Emulsifier"
         },
         {
@@ -1551,6 +1557,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:honey",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1788,16 +1795,16 @@
                     "percent_nom": 9.800000000000001e-05
                 }
             },
-            "percent_estimate": 0.24,
-            "quantity_estimate": 0.29,
+            "percent_estimate": 0.18,
+            "quantity_estimate": 0.22,
             "text": "Honey"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.654,
-        "total_difference": 60.9,
+        "relative_difference": 0.677,
+        "total_difference": 63.0,
         "total_specified_input_percent": 93
     },
     "ingredients_text": "78% Wholegrain Wheat Meal, 15% Wheat Bran, Sugar, Barley Malt Extract, Salt, Emulsifier: Mono - and Diglycerides of Fatty Acids, Honey.",
@@ -2164,7 +2171,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 446.149263641166,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 14220.457360436103,
+            "nutrient_penalty": 7973085.555292746,
+            "total": 7987752.161916823
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

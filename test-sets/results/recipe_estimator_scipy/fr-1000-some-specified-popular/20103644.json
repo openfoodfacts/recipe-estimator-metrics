@@ -25,9 +25,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 40.0,
+            "difference": 39.5,
             "id": "cs:extrakt-z-kokosového-ořechu",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -271,9 +272,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 51.0,
+            "percent_estimate": 51.5,
             "percent_hidden": 91,
-            "quantity_estimate": 51.03,
+            "quantity_estimate": 52.66,
             "text": "extrakt z kokosového ořechu"
         },
         {
@@ -284,6 +285,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -521,8 +523,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 48.8,
-            "quantity_estimate": 48.77,
+            "percent_estimate": 38.2,
+            "quantity_estimate": 39.12,
             "text": "pitná voda"
         },
         {
@@ -535,6 +537,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e412",
                     "index": 2,
+                    "initial_estimate": 14.285714285714286,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -778,21 +781,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.21,
-                    "quantity_estimate": 0.21,
+                    "percent_estimate": 10.3,
+                    "quantity_estimate": 10.56,
                     "text": "guma guar"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.21,
+            "percent_estimate": 10.3,
             "text": "stabilizátor"
         }
     ],
     "ingredients_lc": "cs",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.439,
-        "total_difference": 40.0,
+        "relative_difference": 0.435,
+        "total_difference": 39.5,
         "total_specified_input_percent": 91
     },
     "ingredients_text": "91% extrakt z kokosového ořechu, pitná voda, stabilizátor: guma guar.",
@@ -1114,7 +1117,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 217.8372090750339,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 701.9243210541816,
+            "nutrient_penalty": 12773350.165306095,
+            "total": 12774269.926836224
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

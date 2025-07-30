@@ -11,7 +11,7 @@
     ],
     "ingredients": [
         {
-            "difference": 21.8,
+            "difference": 22.0,
             "id": "en:vegetable",
             "ingredients": [
                 {
@@ -21,6 +21,7 @@
                     "ciqual_proxy_food_code": "20091",
                     "id": "en:beetroot",
                     "index": 0,
+                    "initial_estimate": 30.476190476190478,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -257,8 +258,8 @@
                             "percent_nom": 0.00054
                         }
                     },
-                    "percent_estimate": 44.7,
-                    "quantity_estimate": 175.48,
+                    "percent_estimate": 44.8,
+                    "quantity_estimate": 176.49,
                     "text": "betterave"
                 },
                 {
@@ -268,6 +269,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:carrot",
                     "index": 1,
+                    "initial_estimate": 15.238095238095239,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -504,8 +506,8 @@
                             "percent_nom": 0.00017999999999999998
                         }
                     },
-                    "percent_estimate": 22.6,
-                    "quantity_estimate": 88.81,
+                    "percent_estimate": 22.7,
+                    "quantity_estimate": 89.36,
                     "text": "carotte"
                 },
                 {
@@ -515,6 +517,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:parsnip",
                     "index": 2,
+                    "initial_estimate": 7.6190476190476195,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -751,8 +754,8 @@
                             "percent_nom": 0.0007199999999999999
                         }
                     },
-                    "percent_estimate": 14.1,
-                    "quantity_estimate": 55.49,
+                    "percent_estimate": 14.2,
+                    "quantity_estimate": 55.8,
                     "text": "panais"
                 },
                 {
@@ -762,6 +765,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sweet-potato",
                     "index": 3,
+                    "initial_estimate": 3.8095238095238098,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -998,12 +1002,12 @@
                             "percent_nom": 0.00025
                         }
                     },
-                    "percent_estimate": 10.4,
-                    "quantity_estimate": 41.0,
+                    "percent_estimate": 10.5,
+                    "quantity_estimate": 41.23,
                     "text": "patate douce"
                 }
             ],
-            "percent_estimate": 91.9,
+            "percent_estimate": 92.1,
             "percent_hidden": 70.1,
             "text": "Légumes"
         },
@@ -1014,6 +1018,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 4,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1250,8 +1255,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 7.94,
-            "quantity_estimate": 31.18,
+            "percent_estimate": 7.82,
+            "quantity_estimate": 30.8,
             "text": "huile de tournesol"
         },
         {
@@ -1261,6 +1266,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1497,15 +1503,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.16,
-            "quantity_estimate": 0.62,
+            "percent_estimate": 0.11,
+            "quantity_estimate": 0.43,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.311,
-        "total_difference": 21.8,
+        "relative_difference": 0.313,
+        "total_difference": 22.0,
         "total_specified_input_percent": 70.1
     },
     "ingredients_text": "Légumes 70,1% (betterave, carotte, panais, patate douce, en proportion variable), huile de tournesol, sel,",
@@ -1820,7 +1826,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 1911.7460354656973,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 176466.15801414396,
+            "nutrient_penalty": 6635291.380801249,
+            "total": 6813669.284850859
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

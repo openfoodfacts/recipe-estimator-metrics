@@ -18,6 +18,7 @@
             "ciqual_proxy_food_code": "12999",
             "id": "en:soft-white-cheese",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -254,8 +255,8 @@
                     "percent_nom": 0.00287
                 }
             },
-            "percent_estimate": 43.5,
-            "quantity_estimate": 43.49,
+            "percent_estimate": 43.0,
+            "quantity_estimate": 43.0,
             "text": "_Frischkäse_"
         },
         {
@@ -265,6 +266,7 @@
             "ciqual_proxy_food_code": null,
             "id": "de:crème-fraiche",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -507,8 +509,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 42.9,
-            "quantity_estimate": 42.9,
+            "percent_estimate": 43.0,
+            "quantity_estimate": 43.0,
             "text": "_Crème Fraiche_"
         },
         {
@@ -518,6 +520,7 @@
             "ciqual_proxy_food_code": "16400",
             "id": "en:butter",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -754,8 +757,8 @@
                     "percent_nom": 8.3e-05
                 }
             },
-            "percent_estimate": 12.1,
-            "quantity_estimate": 12.11,
+            "percent_estimate": 12.0,
+            "quantity_estimate": 11.96,
             "text": "_Butter_"
         },
         {
@@ -770,6 +773,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:fleur-de-sel",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -1022,6 +1026,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:starch",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1258,8 +1263,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 0.65,
-            "quantity_estimate": 0.65,
+            "percent_estimate": 0.68,
+            "quantity_estimate": 0.68,
             "text": "Stärke"
         },
         {
@@ -1269,6 +1274,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e941",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1511,8 +1517,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.17,
-            "quantity_estimate": 0.17,
+            "percent_estimate": 0.68,
+            "quantity_estimate": 0.68,
             "text": "Stickstoff zum Aufschlagen"
         }
     ],
@@ -1838,7 +1844,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 3234.4070300725516,
+            "ingredient_not_half_previous_penalty": 363.38647734616796,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3.5846773887243444,
+            "nutrient_penalty": 2762465.3939223345,
+            "total": 2766066.772107142
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

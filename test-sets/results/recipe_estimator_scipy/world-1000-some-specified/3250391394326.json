@@ -15,9 +15,10 @@
             "ciqual_food_code": "36301",
             "ciqual_food_code_used": "36301",
             "ciqual_proxy_food_code": null,
-            "difference": 0.46,
+            "difference": 6.46,
             "id": "en:turkey-breast",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -254,9 +255,9 @@
                     "percent_nom": 0.00222
                 }
             },
-            "percent_estimate": 85.5,
+            "percent_estimate": 91.5,
             "percent_hidden": 85,
-            "quantity_estimate": 91.01,
+            "quantity_estimate": 91.52,
             "text": "Filet de dinde"
         },
         {
@@ -266,6 +267,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -502,8 +504,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 10.6,
-            "quantity_estimate": 11.32,
+            "percent_estimate": 2.8,
+            "quantity_estimate": 2.81,
             "text": "eau"
         },
         {
@@ -513,6 +515,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -749,8 +752,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 2.51,
-            "quantity_estimate": 2.68,
+            "percent_estimate": 2.65,
+            "quantity_estimate": 2.65,
             "text": "sel"
         },
         {
@@ -760,6 +763,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:dextrose",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -996,8 +1000,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 1.31,
-            "quantity_estimate": 1.39,
+            "percent_estimate": 1.37,
+            "quantity_estimate": 1.37,
             "text": "dextrose"
         },
         {
@@ -1010,6 +1014,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e452",
                     "index": 4,
+                    "initial_estimate": 3.1496062992125986,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1252,12 +1257,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.04,
+                    "percent_estimate": 1.32,
+                    "quantity_estimate": 1.32,
                     "text": "polyphosphates"
                 }
             ],
-            "percent_estimate": 0.04,
+            "percent_estimate": 1.32,
             "text": "stabilisants"
         },
         {
@@ -1267,6 +1272,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1509,8 +1515,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.03,
-            "quantity_estimate": 0.03,
+            "percent_estimate": 0.32,
+            "quantity_estimate": 0.32,
             "text": "arômes"
         },
         {
@@ -1523,6 +1529,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e250",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1765,19 +1772,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.03,
-                    "quantity_estimate": 0.03,
+                    "percent_estimate": 0.07,
+                    "quantity_estimate": 0.07,
                     "text": "nitrite de sodium"
                 }
             ],
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.07,
             "text": "conservateur"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.00541,
-        "total_difference": 0.46,
+        "relative_difference": 0.076,
+        "total_difference": 6.46,
         "total_specified_input_percent": 85
     },
     "ingredients_text": "Filet de dinde 85%, eau, sel, dextrose, stabilisants : polyphosphates, arômes, conservateur : nitrite de sodium.",
@@ -2082,7 +2089,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 453.15114382047216,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 45.93858802342652,
+            "nutrient_penalty": 147750.20564507248,
+            "total": 148249.29537691636
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

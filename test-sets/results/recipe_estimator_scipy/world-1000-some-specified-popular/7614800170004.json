@@ -20,6 +20,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flour",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -256,8 +257,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 43.9,
-            "quantity_estimate": 46.77,
+            "percent_estimate": 38.7,
+            "quantity_estimate": 40.99,
             "text": "FARINE DE BLE"
         },
         {
@@ -267,6 +268,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -503,8 +505,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 29.8,
-            "quantity_estimate": 31.82,
+            "percent_estimate": 30.1,
+            "quantity_estimate": 31.86,
             "text": "SUCRE"
         },
         {
@@ -512,9 +514,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "16400",
             "ciqual_proxy_food_code": "16400",
-            "difference": 1.11,
+            "difference": 0.93,
             "id": "en:butter",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -751,9 +754,9 @@
                     "percent_nom": 8.3e-05
                 }
             },
-            "percent_estimate": 12.9,
+            "percent_estimate": 13.1,
             "percent_hidden": 14,
-            "quantity_estimate": 13.75,
+            "quantity_estimate": 13.84,
             "text": "BEURRE"
         },
         {
@@ -761,9 +764,10 @@
             "ciqual_food_code": "15041",
             "ciqual_food_code_used": "15041",
             "ciqual_proxy_food_code": null,
-            "difference": 2.16,
+            "difference": 1.36,
             "id": "en:almond",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1000,9 +1004,9 @@
                     "percent_nom": 0.00297
                 }
             },
-            "percent_estimate": 7.84,
+            "percent_estimate": 8.64,
             "percent_hidden": 10,
-            "quantity_estimate": 8.37,
+            "quantity_estimate": 9.15,
             "text": "AMANDES"
         },
         {
@@ -1012,6 +1016,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:potato-starch",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1248,8 +1253,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 4.49,
-            "quantity_estimate": 4.79,
+            "percent_estimate": 8.63,
+            "quantity_estimate": 9.14,
             "text": "FECULE DE POMME DE TERRE"
         },
         {
@@ -1259,6 +1264,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cream",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -1495,8 +1501,8 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 0.63,
-            "quantity_estimate": 0.68,
+            "percent_estimate": 0.32,
+            "quantity_estimate": 0.34,
             "text": "CREME"
         },
         {
@@ -1509,6 +1515,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e500ii",
                     "index": 6,
+                    "initial_estimate": 0.7843137254901961,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1751,12 +1758,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.25,
-                    "quantity_estimate": 0.26,
+                    "percent_estimate": 0.29,
+                    "quantity_estimate": 0.3,
                     "text": "CARBONATE ACIDE DE SODIUM"
                 }
             ],
-            "percent_estimate": 0.25,
+            "percent_estimate": 0.29,
             "text": "POUDRE A LEVER"
         },
         {
@@ -1766,6 +1773,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -2002,16 +2010,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.22,
-            "quantity_estimate": 0.23,
+            "percent_estimate": 0.25,
+            "quantity_estimate": 0.27,
             "text": "SEL"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.136,
-        "total_difference": 3.27,
+        "relative_difference": 0.0954,
+        "total_difference": 2.29,
         "total_specified_input_percent": 24
     },
     "ingredients_text": "FARINE DE BLE, SUCRE, BEURRE 14%, AMANDES 10%, FECULE DE POMME DE TERRE, CREME, POUDRE A LEVER (CARBONATE ACIDE DE SODIUM), SEL.",
@@ -2336,7 +2344,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 247.2071851518932,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4703.242561263061,
+            "nutrient_penalty": 100069.24817938346,
+            "total": 105019.69792579842
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

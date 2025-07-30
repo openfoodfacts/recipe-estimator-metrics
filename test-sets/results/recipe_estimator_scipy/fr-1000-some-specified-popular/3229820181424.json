@@ -31,6 +31,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -268,8 +269,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 91.5,
-            "quantity_estimate": 198.85,
+            "percent_estimate": 91.8,
+            "quantity_estimate": 198.94,
             "text": "Eau"
         },
         {
@@ -277,10 +278,11 @@
             "ciqual_food_code": "15004",
             "ciqual_food_code_used": "15004",
             "ciqual_proxy_food_code": null,
-            "difference": 3.4,
+            "difference": 3.34,
             "ecobalyse_code": "hazelnut-unshelled-non-eu",
             "id": "en:hazelnut-paste",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -519,9 +521,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 3.1,
+            "percent_estimate": 3.16,
             "percent_hidden": 6.5,
-            "quantity_estimate": 6.73,
+            "quantity_estimate": 6.86,
             "text": "pâte de _noisettes_"
         },
         {
@@ -532,6 +534,7 @@
             "ecobalyse_code": "sugar-beet-organic",
             "id": "en:cane-sugar",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -770,8 +773,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 1.8,
-            "quantity_estimate": 3.91,
+            "percent_estimate": 1.69,
+            "quantity_estimate": 3.67,
             "text": "sucre de canne"
         },
         {
@@ -781,6 +784,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:corn-maltodextrin",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -1025,8 +1029,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.78,
-            "quantity_estimate": 3.86,
+            "percent_estimate": 1.69,
+            "quantity_estimate": 3.67,
             "text": "maltodextrine de maïs"
         },
         {
@@ -1034,9 +1038,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "20984",
             "ciqual_proxy_food_code": "20984",
-            "difference": 1.32,
+            "difference": 1.29,
             "id": "en:lithothamnium-calcareum",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1274,9 +1279,9 @@
                     "percent_nom": 0.0020299999999999997
                 }
             },
-            "percent_estimate": 1.72,
+            "percent_estimate": 1.69,
             "percent_hidden": 0.4,
-            "quantity_estimate": 3.74,
+            "quantity_estimate": 3.67,
             "text": "algue marine Lithothamnium calcareum"
         },
         {
@@ -1286,6 +1291,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1523,8 +1529,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.05,
-            "quantity_estimate": 0.1,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "sel marin"
         },
         {
@@ -1537,6 +1543,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e418",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1780,21 +1787,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.09,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "gomme gellane"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.04,
+            "percent_estimate": 0.0,
             "text": "épaississant"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.684,
-        "total_difference": 4.72,
+        "relative_difference": 0.671,
+        "total_difference": 4.63,
         "total_specified_input_percent": 6.9
     },
     "ingredients_text": "Eau, pâte de _noisettes_* 6.5 %, sucre de canne*, maltodextrine de maïs*, algue marine Lithothamnium calcareum 0.4 %, sel marin, épaississant : gomme gellane.\r\n\r\n* Ingrédients biologiques.",
@@ -2133,7 +2140,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 261.4006831406962,
+            "ingredient_not_half_previous_penalty": 965.274257593585,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 81770.47336987792,
+            "nutrient_penalty": 1735876.6343714893,
+            "total": 1818873.7826821015
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

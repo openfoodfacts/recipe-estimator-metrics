@@ -36,6 +36,7 @@
             "ecobalyse_code": "flour",
             "id": "en:wholemeal-rye-flour",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -274,7 +275,7 @@
                 }
             },
             "percent_estimate": 49.1,
-            "quantity_estimate": 52.07,
+            "quantity_estimate": 52.79,
             "text": "Whole grain rye flour"
         },
         {
@@ -286,6 +287,7 @@
             "ecobalyse_code": "flour",
             "id": "en:rye-flour",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -525,7 +527,7 @@
             },
             "percent_estimate": 49.0,
             "percent_hidden": 29,
-            "quantity_estimate": 51.99,
+            "quantity_estimate": 52.78,
             "text": "rye flour"
         },
         {
@@ -535,6 +537,7 @@
             "ciqual_proxy_food_code": "11009",
             "id": "en:yeast",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -772,8 +775,8 @@
                     "percent_nom": 0.008400000000000001
                 }
             },
-            "percent_estimate": 0.99,
-            "quantity_estimate": 1.06,
+            "percent_estimate": 0.94,
+            "quantity_estimate": 1.02,
             "text": "yeast"
         },
         {
@@ -783,6 +786,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1020,15 +1024,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.92,
-            "quantity_estimate": 0.98,
+            "percent_estimate": 0.94,
+            "quantity_estimate": 1.01,
             "text": "salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.69,
+        "relative_difference": 0.691,
         "total_difference": 20.0,
         "total_specified_input_percent": 29
     },
@@ -1357,7 +1361,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 522.699361476853,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3040.124206784213,
+            "nutrient_penalty": 1582019.3047945,
+            "total": 1585582.128362761
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

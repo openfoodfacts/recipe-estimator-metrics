@@ -29,6 +29,7 @@
                     "difference": 51.0,
                     "id": "fr:pour-info",
                     "index": 0,
+                    "initial_estimate": 57.142857142857146,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -273,7 +274,7 @@
                     },
                     "percent_estimate": 37.5,
                     "percent_hidden": 88.6,
-                    "quantity_estimate": 91.63,
+                    "quantity_estimate": 91.84,
                     "text": "pour info"
                 }
             ],
@@ -287,6 +288,7 @@
             "ciqual_proxy_food_code": "19051",
             "id": "en:condensed-skimmed-milk",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -523,8 +525,8 @@
                     "percent_nom": 0.00041999999999999996
                 }
             },
-            "percent_estimate": 37.5,
-            "quantity_estimate": 91.39,
+            "percent_estimate": 37.4,
+            "quantity_estimate": 91.57,
             "text": "LAIT écrémé concentré"
         },
         {
@@ -537,6 +539,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:bifidus-actiregularis-r",
                     "index": 2,
+                    "initial_estimate": 9.523809523809524,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -780,7 +783,7 @@
                         }
                     },
                     "percent_estimate": 12.5,
-                    "quantity_estimate": 30.52,
+                    "quantity_estimate": 30.63,
                     "text": "Bifidus ActiRegularis R"
                 },
                 {
@@ -790,6 +793,7 @@
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
                     "index": 3,
+                    "initial_estimate": 4.761904761904762,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1027,7 +1031,7 @@
                         }
                     },
                     "percent_estimate": 12.5,
-                    "quantity_estimate": 30.46,
+                    "quantity_estimate": 30.52,
                     "text": "LAIT"
                 }
             ],
@@ -1367,7 +1371,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 762.3256431419262,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 57829.14203188277,
+            "nutrient_penalty": 624725.9241688759,
+            "total": 683317.3918439006
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

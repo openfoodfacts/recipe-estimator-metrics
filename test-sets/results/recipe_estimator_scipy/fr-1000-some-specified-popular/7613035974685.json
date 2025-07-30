@@ -24,6 +24,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:calcium",
                     "index": 0,
+                    "initial_estimate": 50.19607843137255,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -267,9 +268,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 56.2,
+                    "percent_estimate": 50.2,
                     "quantity": "549 mg",
-                    "quantity_estimate": 56.25,
+                    "quantity_estimate": 50.2,
                     "quantity_g": 0.549,
                     "text": "Calcium ="
                 },
@@ -280,6 +281,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:magnesium",
                     "index": 1,
+                    "initial_estimate": 25.098039215686274,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -523,9 +525,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 25.0,
+                    "percent_estimate": 25.1,
                     "quantity": "119 mg",
-                    "quantity_estimate": 25.0,
+                    "quantity_estimate": 25.1,
                     "quantity_g": 0.119,
                     "text": "Magnésium ="
                 },
@@ -536,6 +538,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sodium",
                     "index": 2,
+                    "initial_estimate": 12.549019607843137,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -779,9 +782,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 5.55,
+                    "percent_estimate": 12.6,
                     "quantity": "14.2 mg",
-                    "quantity_estimate": 5.56,
+                    "quantity_estimate": 12.55,
                     "quantity_g": 0.0142,
                     "text": "Sodium ="
                 },
@@ -792,6 +795,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sulfates",
                     "index": 3,
+                    "initial_estimate": 6.2745098039215685,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1035,9 +1039,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 4.17,
+                    "percent_estimate": 6.27,
                     "quantity": "1530 mg",
-                    "quantity_estimate": 4.17,
+                    "quantity_estimate": 6.27,
                     "quantity_g": 1.53,
                     "text": "Sulfate ="
                 },
@@ -1048,6 +1052,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:hydrogenocarbonate",
                     "index": 4,
+                    "initial_estimate": 3.1372549019607843,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -1291,9 +1296,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 3.25,
+                    "percent_estimate": 3.14,
                     "quantity": "387.3 mg",
-                    "quantity_estimate": 3.25,
+                    "quantity_estimate": 3.14,
                     "quantity_g": 0.3873,
                     "text": "Hydrogénocarbonate ="
                 },
@@ -1304,6 +1309,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:nitrate",
                     "index": 5,
+                    "initial_estimate": 1.5686274509803921,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -1547,9 +1553,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 2.78,
+                    "percent_estimate": 1.57,
                     "quantity": "4.3 mg",
-                    "quantity_estimate": 2.78,
+                    "quantity_estimate": 1.57,
                     "quantity_g": 0.0043,
                     "text": "Nitrate ="
                 },
@@ -1560,6 +1566,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:residu-sec-a-180-c",
                     "index": 6,
+                    "initial_estimate": 0.7843137254901961,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -1803,9 +1810,9 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.85,
+                    "percent_estimate": 0.78,
                     "quantity": "2513 mg",
-                    "quantity_estimate": 1.85,
+                    "quantity_estimate": 0.78,
                     "quantity_g": 2.513,
                     "text": "Résidu sec à 180°C ="
                 },
@@ -1816,6 +1823,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:ph-7-2",
                     "index": 7,
+                    "initial_estimate": 0.39215686274509803,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -2059,8 +2067,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.16,
-                    "quantity_estimate": 1.16,
+                    "percent_estimate": 0.39,
+                    "quantity_estimate": 0.39,
                     "text": "pH 7.2"
                 }
             ],
@@ -2225,7 +2233,15 @@
     "recipe_estimator": {
         "ingredient_count": 8,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 5.773159728050814e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.0,
+            "nutrient_penalty": 0,
+            "total": 5.773159728050814e-14
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

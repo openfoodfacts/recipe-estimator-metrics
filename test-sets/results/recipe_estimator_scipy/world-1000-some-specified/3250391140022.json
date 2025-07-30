@@ -27,6 +27,7 @@
                     "ciqual_proxy_food_code": "26140",
                     "id": "en:fish",
                     "index": 0,
+                    "initial_estimate": 33.86243386243386,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -257,8 +258,8 @@
                             "percent_nom": 0.00061
                         }
                     },
-                    "percent_estimate": 60.4,
-                    "quantity_estimate": 67.58,
+                    "percent_estimate": 41.3,
+                    "quantity_estimate": 47.86,
                     "text": "_poissons_"
                 },
                 {
@@ -268,6 +269,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sardine",
                     "index": 1,
+                    "initial_estimate": 16.93121693121693,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -504,12 +506,12 @@
                             "percent_nom": 0.0015
                         }
                     },
-                    "percent_estimate": 21.8,
-                    "quantity_estimate": 24.36,
+                    "percent_estimate": 41.3,
+                    "quantity_estimate": 47.85,
                     "text": "Sardina pilchardus"
                 }
             ],
-            "percent_estimate": 82.2,
+            "percent_estimate": 82.6,
             "text": "Sardines"
         },
         {
@@ -517,9 +519,10 @@
             "ciqual_food_code": "17270",
             "ciqual_food_code_used": "17270",
             "ciqual_proxy_food_code": null,
-            "difference": 4.68,
+            "difference": 5.14,
             "id": "en:extra-virgin-olive-oil",
             "index": 2,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -756,9 +759,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 11.7,
+            "percent_estimate": 12.1,
             "percent_hidden": 7,
-            "quantity_estimate": 13.07,
+            "quantity_estimate": 14.07,
             "text": "huile d'olive vierge extra"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:red-bell-pepper",
             "index": 3,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0.00014000000000000001
                 }
             },
-            "percent_estimate": 3.01,
-            "quantity_estimate": 3.37,
+            "percent_estimate": 2.28,
+            "quantity_estimate": 2.64,
             "text": "poivrons rouges"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:tomato-concentrate",
             "index": 4,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1251,8 +1256,8 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 1.94,
-            "quantity_estimate": 2.17,
+            "percent_estimate": 2.27,
+            "quantity_estimate": 2.63,
             "text": "concentré de tomate"
         },
         {
@@ -1260,9 +1265,10 @@
             "ciqual_food_code": "20151",
             "ciqual_food_code_used": "20151",
             "ciqual_proxy_food_code": null,
-            "difference": 0.35,
+            "difference": 0.13,
             "id": "en:espelette-chili-pepper",
             "index": 5,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1499,9 +1505,9 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 0.85,
+            "percent_estimate": 0.37,
             "percent_hidden": 0.5,
-            "quantity_estimate": 0.95,
+            "quantity_estimate": 0.43,
             "text": "piment d'Espelette"
         },
         {
@@ -1511,6 +1517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 6,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1747,15 +1754,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.34,
-            "quantity_estimate": 0.38,
+            "percent_estimate": 0.37,
+            "quantity_estimate": 0.43,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.671,
-        "total_difference": 5.03,
+        "relative_difference": 0.703,
+        "total_difference": 5.27,
         "total_specified_input_percent": 7.5
     },
     "ingredients_text": "Sardines (_poissons_) (Sardina pilchardus) 80 %, huile d'olive vierge extra 7 %, poivrons rouges, concentré de tomate, piment d'Espelette 0,5 %, sel.",
@@ -2059,7 +2066,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 644.9924739387263,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 11138.649063929708,
+            "nutrient_penalty": 65699.39016372104,
+            "total": 77483.03170158947
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -19,9 +19,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 43.1,
+            "difference": 35.3,
             "id": "fr:lait-pasteurise-a-2-2-de-matiere-grasse",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -265,9 +266,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 42.9,
+            "percent_estimate": 50.7,
             "percent_hidden": 86,
-            "quantity_estimate": 43.29,
+            "quantity_estimate": 53.15,
             "text": "Lait pasteurisé à 2.2% de matière grasse"
         },
         {
@@ -278,6 +279,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -515,8 +517,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 38.5,
-            "quantity_estimate": 38.89,
+            "percent_estimate": 35.2,
+            "quantity_estimate": 36.93,
             "text": "eau"
         },
         {
@@ -524,9 +526,10 @@
             "ciqual_food_code": "31089",
             "ciqual_food_code_used": "31089",
             "ciqual_proxy_food_code": null,
-            "difference": 4.39,
+            "difference": 4.21,
             "id": "en:agave-syrup",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -764,9 +767,9 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 10.3,
+            "percent_estimate": 10.1,
             "percent_hidden": 5.9,
-            "quantity_estimate": 10.39,
+            "quantity_estimate": 10.6,
             "text": "sirop d'agave"
         },
         {
@@ -776,6 +779,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vanilla-extract",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1013,8 +1017,8 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 4.73,
-            "quantity_estimate": 4.78,
+            "percent_estimate": 2.14,
+            "quantity_estimate": 2.24,
             "text": "extrait de vanille"
         },
         {
@@ -1024,6 +1028,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:grains-de-vanille",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1267,8 +1272,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 2.57,
-            "quantity_estimate": 2.59,
+            "percent_estimate": 1.33,
+            "quantity_estimate": 1.4,
             "text": "grains de vanille"
         },
         {
@@ -1278,6 +1283,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:concentrated-lemon-juice",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1515,8 +1521,8 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 0.57,
-            "quantity_estimate": 0.57,
+            "percent_estimate": 0.54,
+            "quantity_estimate": 0.56,
             "text": "jus de citron concentré"
         },
         {
@@ -1526,6 +1532,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:corn-starch",
             "index": 6,
+            "initial_estimate": 0.7843137254901961,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1763,8 +1770,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 0.27,
-            "quantity_estimate": 0.28,
+            "percent_estimate": 0.03,
+            "quantity_estimate": 0.03,
             "text": "amidon de maïs"
         },
         {
@@ -1774,6 +1781,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -2017,16 +2025,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.23,
-            "quantity_estimate": 0.23,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "ferments lactiques"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.517,
-        "total_difference": 47.5,
+        "relative_difference": 0.43,
+        "total_difference": 39.6,
         "total_specified_input_percent": 91.9
     },
     "ingredients_text": "Lait pasteurisé à 2,2% de matière grasse (86%), eau, sirop d'agave (5,9%), extrait de vanille, grains de vanille, jus de citron concentré, amidon de maïs, ferments lactiques.",
@@ -2338,7 +2346,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 219.4384062200531,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3943.5101309484253,
+            "nutrient_penalty": 5520052.443002176,
+            "total": 5524215.391539344
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

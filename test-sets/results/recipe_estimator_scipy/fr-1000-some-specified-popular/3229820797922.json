@@ -26,6 +26,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -263,8 +264,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 94.0,
-            "quantity_estimate": 97.21,
+            "percent_estimate": 93.5,
+            "quantity_estimate": 93.55,
             "text": "Eau"
         },
         {
@@ -272,9 +273,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "15006",
             "ciqual_proxy_food_code": "15006",
-            "difference": 0.77,
+            "difference": 0.76,
             "id": "en:coconut",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -512,9 +514,9 @@
                     "percent_nom": 0.0011
                 }
             },
-            "percent_estimate": 4.03,
+            "percent_estimate": 4.04,
             "percent_hidden": 4.8,
-            "quantity_estimate": 4.17,
+            "quantity_estimate": 4.04,
             "text": "noix de coco"
         },
         {
@@ -524,6 +526,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:rice-starch",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -762,8 +765,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 1.6,
-            "quantity_estimate": 1.65,
+            "percent_estimate": 1.62,
+            "quantity_estimate": 1.62,
             "text": "amidon de riz"
         },
         {
@@ -773,6 +776,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-coconut-flavouring",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -1017,8 +1021,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.15,
-            "quantity_estimate": 0.15,
+            "percent_estimate": 0.66,
+            "quantity_estimate": 0.66,
             "text": "arôme de naturel de coco"
         },
         {
@@ -1028,6 +1032,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.12,
-            "quantity_estimate": 0.13,
+            "percent_estimate": 0.1,
+            "quantity_estimate": 0.1,
             "text": "sel marin"
         },
         {
@@ -1279,6 +1284,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e412",
                     "index": 5,
+                    "initial_estimate": 1.5748031496062993,
                     "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "nutrients": {
@@ -1523,13 +1529,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.03,
-                    "quantity_estimate": 0.03,
+                    "percent_estimate": 0.04,
+                    "quantity_estimate": 0.04,
                     "text": "gomme guar"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.04,
             "text": "stabilisants"
         },
         {
@@ -1539,6 +1545,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e415",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1782,16 +1789,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.03,
-            "quantity_estimate": 0.03,
+            "percent_estimate": 0.02,
+            "quantity_estimate": 0.02,
             "text": "gomme xanthane"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.16,
-        "total_difference": 0.77,
+        "relative_difference": 0.158,
+        "total_difference": 0.76,
         "total_specified_input_percent": 4.8
     },
     "ingredients_text": "Eau, noix de coco 4,8%, amidon de riz*, arôme de naturel de coco*, sel marin, stabilisants: gomme guar*, gomme xanthane *Ingrédients biologiques",
@@ -2118,7 +2125,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 435.22127920263483,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 25.220030670486437,
+            "nutrient_penalty": 507742.6030328558,
+            "total": 508203.04434272886
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -23,6 +23,7 @@
             "ecobalyse_code": "milk",
             "id": "en:milk",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -261,8 +262,8 @@
                 }
             },
             "origins": "en:france",
-            "percent_estimate": 41.8,
-            "quantity_estimate": 75.24,
+            "percent_estimate": 41.7,
+            "quantity_estimate": 75.82,
             "text": "Lait"
         },
         {
@@ -272,6 +273,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cream",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -510,9 +512,9 @@
                 }
             },
             "origins": "en:france",
-            "percent_estimate": 41.3,
+            "percent_estimate": 41.6,
             "processing": "en:pasteurised",
-            "quantity_estimate": 74.35,
+            "quantity_estimate": 75.76,
             "text": "crème"
         },
         {
@@ -520,9 +522,10 @@
             "ciqual_food_code": "11000",
             "ciqual_food_code_used": "11000",
             "ciqual_proxy_food_code": null,
-            "difference": 12.4,
+            "difference": 11.6,
             "id": "en:garlic",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -760,9 +763,9 @@
                     "percent_nom": 0.00075
                 }
             },
-            "percent_estimate": 15.0,
+            "percent_estimate": 14.2,
             "percent_hidden": 2.6,
-            "quantity_estimate": 27.08,
+            "quantity_estimate": 25.91,
             "text": "ail"
         },
         {
@@ -770,9 +773,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 1.83,
+            "difference": 1.15,
             "id": "en:herb",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1016,9 +1020,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.77,
+            "percent_estimate": 1.45,
             "percent_hidden": 2.6,
-            "quantity_estimate": 1.39,
+            "quantity_estimate": 2.64,
             "text": "fines herbes"
         },
         {
@@ -1028,6 +1032,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.62,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 0.53,
+            "quantity_estimate": 0.97,
             "text": "sel"
         },
         {
@@ -1276,6 +1281,7 @@
             "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1513,16 +1519,16 @@
                     "percent_nom": 0.00099
                 }
             },
-            "percent_estimate": 0.54,
-            "quantity_estimate": 0.97,
+            "percent_estimate": 0.48,
+            "quantity_estimate": 0.87,
             "text": "poivre"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 2.74,
-        "total_difference": 14.3,
+        "relative_difference": 2.46,
+        "total_difference": 12.8,
         "total_specified_input_percent": 5.2
     },
     "ingredients_text": "Lait et crème pasteurisés (origine : France), ail et fines herbes (2,6%), sel, poivre. Peut contenir des fruits à coque.",
@@ -1852,7 +1858,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 608.6353044926734,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 49182.48996984979,
+            "nutrient_penalty": 9681234.08132572,
+            "total": 9731025.20660006
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

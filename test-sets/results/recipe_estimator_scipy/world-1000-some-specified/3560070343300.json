@@ -22,6 +22,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sardine",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -259,7 +260,7 @@
                 }
             },
             "percent_estimate": 93.5,
-            "quantity_estimate": 128.0,
+            "quantity_estimate": 127.99,
             "text": "_Sardines_"
         },
         {
@@ -270,6 +271,7 @@
             "difference": 22.9,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -518,6 +520,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1084,7 +1087,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 593.3901929745116,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 11047.928423117592,
+            "nutrient_penalty": 4735.154273670421,
+            "total": 16376.472889762525
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

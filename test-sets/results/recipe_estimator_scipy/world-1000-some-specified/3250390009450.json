@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:superior-quality-durum-wheat-semolina",
             "index": 0,
+            "initial_estimate": 66.66666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -257,8 +258,8 @@
                     "percent_nom": 0.00218
                 }
             },
-            "percent_estimate": 50.1,
-            "quantity_estimate": 50.12,
+            "percent_estimate": 50.0,
+            "quantity_estimate": 50.0,
             "text": "Semoule de blé dur de qualité supérieure"
         },
         {
@@ -266,10 +267,11 @@
             "ciqual_food_code": "22000",
             "ciqual_food_code_used": "22000",
             "ciqual_proxy_food_code": null,
-            "difference": 19.9,
+            "difference": 20.0,
             "id": "en:fresh-egg",
             "index": 1,
             "ingredients": [],
+            "initial_estimate": 33.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -506,16 +508,16 @@
                     "percent_nom": 0.00101
                 }
             },
-            "percent_estimate": 49.9,
+            "percent_estimate": 50.0,
             "percent_hidden": 30,
-            "quantity_estimate": 49.96,
+            "quantity_estimate": 50.0,
             "text": "œufs frais"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.664,
-        "total_difference": 19.9,
+        "relative_difference": 0.667,
+        "total_difference": 20.0,
         "total_specified_input_percent": 30
     },
     "ingredients_text": "Semoule de blé dur de qualité supérieure, œufs frais 30% (soit 320g par kilo de semoule).",
@@ -820,7 +822,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 250.00521458029183,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.48197864239227783,
+            "nutrient_penalty": 4036565.200383884,
+            "total": 4036815.6875771065
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=20000"
+        "status_message": "Optimization terminated successfully."
     }
 }

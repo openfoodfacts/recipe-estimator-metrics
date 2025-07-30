@@ -20,9 +20,10 @@
             "ciqual_food_code": "13716",
             "ciqual_food_code_used": "13716",
             "ciqual_proxy_food_code": null,
-            "difference": 39.2,
+            "difference": 37.3,
             "id": "en:pineapple-juice",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -259,9 +260,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 30.8,
+            "percent_estimate": 32.7,
             "percent_hidden": 70,
-            "quantity_estimate": 30.79,
+            "quantity_estimate": 32.71,
             "text": "Jus d'ananas"
         },
         {
@@ -269,9 +270,10 @@
             "ciqual_food_code": "13025",
             "ciqual_food_code_used": "13025",
             "ciqual_proxy_food_code": null,
-            "difference": 12.3,
+            "difference": 14.7,
             "id": "en:mango-puree",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -508,9 +510,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 30.3,
+            "percent_estimate": 32.7,
             "percent_hidden": 18,
-            "quantity_estimate": 30.28,
+            "quantity_estimate": 32.7,
             "text": "purée de mangue"
         },
         {
@@ -518,9 +520,10 @@
             "ciqual_food_code": "13050",
             "ciqual_food_code_used": "13050",
             "ciqual_proxy_food_code": null,
-            "difference": 14.9,
+            "difference": 25.6,
             "id": "en:apple-puree",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -757,9 +760,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 21.9,
+            "percent_estimate": 32.6,
             "percent_hidden": 7,
-            "quantity_estimate": 21.91,
+            "quantity_estimate": 32.56,
             "text": "purée de pomme"
         },
         {
@@ -767,9 +770,10 @@
             "ciqual_food_code": "13016",
             "ciqual_food_code_used": "13016",
             "ciqual_proxy_food_code": null,
-            "difference": 12.0,
+            "difference": 2.97,
             "id": "en:passionfruit",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1006,17 +1010,17 @@
                     "percent_nom": 0.00076
                 }
             },
-            "percent_estimate": 17.0,
+            "percent_estimate": 2.03,
             "percent_hidden": 5,
             "processing": "en:pureed",
-            "quantity_estimate": 17.01,
+            "quantity_estimate": 2.03,
             "text": "fruit de la passion"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.784,
-        "total_difference": 78.4,
+        "relative_difference": 0.805,
+        "total_difference": 80.5,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Jus d'ananas (70%), purée de mangue (18%), purée de pomme (7%), purée de fruit de la passion (5%)",
@@ -1340,7 +1344,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 468.0204633436221,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.8217367558415845,
+            "nutrient_penalty": 322937.23208825465,
+            "total": 323406.0742883541
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

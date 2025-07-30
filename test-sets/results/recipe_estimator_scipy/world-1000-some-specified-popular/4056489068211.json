@@ -17,9 +17,10 @@
             "ciqual_food_code": "20901",
             "ciqual_food_code_used": "20901",
             "ciqual_proxy_food_code": null,
-            "difference": 8.48,
+            "difference": 8.51,
             "id": "en:soya-bean",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -259,7 +260,7 @@
             },
             "percent_estimate": 48.5,
             "percent_hidden": 57,
-            "quantity_estimate": 48.53,
+            "quantity_estimate": 48.49,
             "text": "fèves de soja"
         },
         {
@@ -269,6 +270,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -505,8 +507,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 48.3,
-            "quantity_estimate": 48.35,
+            "percent_estimate": 48.5,
+            "quantity_estimate": 48.49,
             "text": "eau"
         },
         {
@@ -516,6 +518,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -752,8 +755,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.03,
-            "quantity_estimate": 1.03,
+            "percent_estimate": 1.01,
+            "quantity_estimate": 1.02,
             "text": "sel"
         },
         {
@@ -766,6 +769,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e509",
                     "index": 3,
+                    "initial_estimate": 6.451612903225806,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1008,12 +1012,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.08,
-                    "quantity_estimate": 1.08,
+                    "percent_estimate": 1.01,
+                    "quantity_estimate": 1.01,
                     "text": "chlorure de calcium"
                 }
             ],
-            "percent_estimate": 1.08,
+            "percent_estimate": 1.01,
             "text": "épaississants"
         },
         {
@@ -1023,6 +1027,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e511",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1265,8 +1270,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.03,
-            "quantity_estimate": 1.03,
+            "percent_estimate": 1.0,
+            "quantity_estimate": 1.0,
             "text": "chlorure de magnésium"
         }
     ],
@@ -1274,7 +1279,7 @@
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
         "relative_difference": 0.149,
-        "total_difference": 8.48,
+        "total_difference": 8.51,
         "total_specified_input_percent": 57
     },
     "ingredients_text": "57% fèves de soja*, eau, sel, épaississants : chlorure de calcium, chlorure de magnésium. *Ingrédient issu de l'agriculture biologique",
@@ -1588,7 +1593,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 484.68037375400365,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2.0589879544772316,
+            "nutrient_penalty": 4989554.166151162,
+            "total": 4990040.905512871
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -17,7 +17,7 @@
     ],
     "ingredients": [
         {
-            "difference": 7.65,
+            "difference": 6.6,
             "id": "fr:lait-de-coco-allege",
             "ingredients": [
                 {
@@ -28,6 +28,7 @@
                     "ecobalyse_code": "tap-water",
                     "id": "en:water",
                     "index": 0,
+                    "initial_estimate": 33.86243386243386,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -265,8 +266,8 @@
                             "percent_nom": 1.1e-05
                         }
                     },
-                    "percent_estimate": 90.2,
-                    "quantity_estimate": 198.82,
+                    "percent_estimate": 89.4,
+                    "quantity_estimate": 199.38,
                     "text": "eau"
                 },
                 {
@@ -276,6 +277,7 @@
                     "ciqual_proxy_food_code": "15006",
                     "id": "en:coconut",
                     "index": 1,
+                    "initial_estimate": 16.93121693121693,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -513,14 +515,14 @@
                             "percent_nom": 0.0011
                         }
                     },
-                    "percent_estimate": 6.41,
+                    "percent_estimate": 6.19,
                     "processing": "en:extract",
-                    "quantity_estimate": 14.12,
+                    "quantity_estimate": 13.8,
                     "text": "noix de coco"
                 }
             ],
             "is_in_taxonomy": 0,
-            "percent_estimate": 96.6,
+            "percent_estimate": 95.6,
             "percent_hidden": 89,
             "text": "Lait de coco allégé"
         },
@@ -531,6 +533,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-starch",
             "index": 2,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -768,8 +771,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 3.08,
-            "quantity_estimate": 6.8,
+            "percent_estimate": 3.09,
+            "quantity_estimate": 6.88,
             "text": "amidon modifié"
         },
         {
@@ -779,6 +782,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:pea-protein",
             "index": 3,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1022,8 +1026,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.09,
-            "quantity_estimate": 0.21,
+            "percent_estimate": 1.16,
+            "quantity_estimate": 2.58,
             "text": "protéines de pois"
         },
         {
@@ -1033,6 +1037,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e333",
             "index": 4,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1276,8 +1281,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.07,
-            "quantity_estimate": 0.15,
+            "percent_estimate": 0.11,
+            "quantity_estimate": 0.25,
             "text": "citrates de calcium"
         },
         {
@@ -1287,6 +1292,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1524,8 +1530,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.06,
-            "quantity_estimate": 0.12,
+            "percent_estimate": 0.03,
+            "quantity_estimate": 0.07,
             "text": "sel"
         },
         {
@@ -1535,6 +1541,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:ferment",
             "index": 6,
+            "initial_estimate": 1.5873015873015872,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1778,16 +1785,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.05,
-            "quantity_estimate": 0.1,
+            "percent_estimate": 0.01,
+            "quantity_estimate": 0.02,
             "text": "ferments"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.086,
-        "total_difference": 7.65,
+        "relative_difference": 0.0742,
+        "total_difference": 6.6,
         "total_specified_input_percent": 89
     },
     "ingredients_text": "Lait de coco allégé 89% (eau, extrait de noix de coco), amidon modifié, protéines de pois, citrates de calcium, sel, ferments.",
@@ -2138,7 +2145,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 1875.6248497892047,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 86091.73442737195,
+            "nutrient_penalty": 2394005.130140131,
+            "total": 2481972.489417292
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

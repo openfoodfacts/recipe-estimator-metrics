@@ -18,6 +18,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -254,8 +255,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 51.0,
-            "quantity_estimate": 51.14,
+            "percent_estimate": 49.2,
+            "quantity_estimate": 49.34,
             "text": "Zucker"
         },
         {
@@ -263,9 +264,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 4.29,
+            "difference": 6.11,
             "id": "en:dextrose",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -502,9 +504,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 24.8,
+            "percent_estimate": 26.6,
             "percent_hidden": 20.5,
-            "quantity_estimate": 24.88,
+            "quantity_estimate": 26.69,
             "text": "Dextrose"
         },
         {
@@ -512,9 +514,10 @@
             "ciqual_food_code": "18100",
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": null,
-            "difference": 4.09,
+            "difference": 4.03,
             "id": "en:fat-reduced-cocoa-powder",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -751,9 +754,9 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 24.1,
+            "percent_estimate": 24.0,
             "percent_hidden": 20,
-            "quantity_estimate": 24.18,
+            "quantity_estimate": 24.11,
             "text": "stark entöltes Kakaopulver"
         },
         {
@@ -766,6 +769,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e322",
                     "index": 3,
+                    "initial_estimate": 6.451612903225806,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1023,6 +1027,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1259,16 +1264,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.07,
-            "quantity_estimate": 0.07,
+            "percent_estimate": 0.08,
+            "quantity_estimate": 0.08,
             "text": "Salz"
         }
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.207,
-        "total_difference": 8.38,
+        "relative_difference": 0.25,
+        "total_difference": 10.1,
         "total_specified_input_percent": 40.5
     },
     "ingredients_text": "Zucker, Dextrose (20,5 %), stark entöltes Kakaopulver (20%), Emulgator Lecithine, Salz.",
@@ -1594,7 +1599,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 247.81627882787527,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 158.98786516716257,
+            "nutrient_penalty": 131005.95259658927,
+            "total": 131412.75674058433
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

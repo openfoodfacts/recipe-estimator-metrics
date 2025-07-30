@@ -21,9 +21,10 @@
             "ciqual_food_code": "20031",
             "ciqual_food_code_used": "20031",
             "ciqual_proxy_food_code": null,
-            "difference": 38.8,
+            "difference": 40.0,
             "id": "fr:jeunes-pousses-de-laitue-rouge",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -260,9 +261,9 @@
                     "percent_nom": 0.0002
                 }
             },
-            "percent_estimate": 63.8,
+            "percent_estimate": 65.0,
             "percent_hidden": 25,
-            "quantity_estimate": 85.46,
+            "quantity_estimate": 85.79,
             "text": "Jeunes pousses de laitue rouge"
         },
         {
@@ -270,9 +271,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 1.79,
+            "difference": 2.53,
             "id": "fr:de-batavia-verte",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -515,9 +517,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 18.2,
+            "percent_estimate": 17.5,
             "percent_hidden": 20,
-            "quantity_estimate": 24.38,
+            "quantity_estimate": 23.04,
             "text": "de batavia verte"
         },
         {
@@ -525,9 +527,10 @@
             "ciqual_food_code": "20059",
             "ciqual_food_code_used": "20059",
             "ciqual_proxy_food_code": null,
-            "difference": 7.86,
+            "difference": 7.44,
             "id": "en:spinach",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -764,9 +767,9 @@
                     "percent_nom": 0.00082
                 }
             },
-            "percent_estimate": 17.9,
+            "percent_estimate": 17.4,
             "percent_hidden": 10,
-            "quantity_estimate": 23.92,
+            "quantity_estimate": 23.0,
             "text": "d'épinard"
         },
         {
@@ -774,9 +777,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 9.88,
+            "difference": 9.96,
             "id": "fr:feuille-de-chene-verte",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1019,16 +1023,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.12,
+            "percent_estimate": 0.04,
             "percent_hidden": 10,
-            "quantity_estimate": 0.15,
+            "quantity_estimate": 0.05,
             "text": "de feuille de chêne verte"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.898,
-        "total_difference": 58.4,
+        "relative_difference": 0.923,
+        "total_difference": 60.0,
         "total_specified_input_percent": 65
     },
     "ingredients_text": "Jeunes pousses de laitue rouge (25 % mini), de batavia verte (20 % mini), d'épinard (10 % mini) et de feuille de chêne verte (10 % mini).",
@@ -1327,7 +1331,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 427.8993664883337,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 12753.46526215111,
+            "nutrient_penalty": 119669.96525658818,
+            "total": 132851.32988522763
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

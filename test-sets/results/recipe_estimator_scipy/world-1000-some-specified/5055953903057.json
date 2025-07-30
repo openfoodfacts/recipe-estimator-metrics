@@ -18,6 +18,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:green-tea",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -254,8 +255,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 40.7,
-            "quantity_estimate": 40.76,
+            "percent_estimate": 41.0,
+            "quantity_estimate": 40.97,
             "text": "Thé vert"
         },
         {
@@ -265,6 +266,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lemongrass",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -507,8 +509,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 39.2,
-            "quantity_estimate": 39.2,
+            "percent_estimate": 41.0,
+            "quantity_estimate": 40.96,
             "text": "citronnelle"
         },
         {
@@ -516,9 +518,10 @@
             "ciqual_food_code": "11074",
             "ciqual_food_code_used": "11074",
             "ciqual_proxy_food_code": null,
-            "difference": 7.84,
+            "difference": 8.95,
             "id": "en:ginger",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -755,9 +758,9 @@
                     "percent_nom": 0.00023999999999999998
                 }
             },
-            "percent_estimate": 7.16,
+            "percent_estimate": 6.05,
             "percent_hidden": 15,
-            "quantity_estimate": 7.17,
+            "quantity_estimate": 6.05,
             "text": "gingembre"
         },
         {
@@ -767,6 +770,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1009,8 +1013,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 6.63,
-            "quantity_estimate": 6.64,
+            "percent_estimate": 6.03,
+            "quantity_estimate": 6.03,
             "text": "arômes naturels"
         },
         {
@@ -1018,9 +1022,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 1.71,
+            "difference": 1.98,
             "id": "en:natural-lime-flavouring",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1263,16 +1268,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 6.29,
+            "percent_estimate": 6.02,
             "percent_hidden": 8,
-            "quantity_estimate": 6.3,
+            "quantity_estimate": 6.02,
             "text": "dont arôme naturel de citron vert"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.415,
-        "total_difference": 9.55,
+        "relative_difference": 0.475,
+        "total_difference": 10.9,
         "total_specified_input_percent": 23
     },
     "ingredients_text": "Thé vert, citronnelle, gingembre (15%), arômes naturels (dont arôme naturel de citron vert (8%).",
@@ -1572,7 +1577,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 409.13503818502386,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 20.669942554953025,
+            "nutrient_penalty": 346283.459641717,
+            "total": 346713.26462245703
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

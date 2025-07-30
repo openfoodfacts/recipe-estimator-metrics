@@ -18,6 +18,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flour",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -254,8 +255,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 51.9,
-            "quantity_estimate": 59.55,
+            "percent_estimate": 52.2,
+            "quantity_estimate": 59.67,
             "text": "Farine de _blé_"
         },
         {
@@ -265,6 +266,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -501,8 +503,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 25.0,
-            "quantity_estimate": 28.73,
+            "percent_estimate": 25.3,
+            "quantity_estimate": 28.91,
             "text": "sucre"
         },
         {
@@ -510,9 +512,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "16400",
             "ciqual_proxy_food_code": "16400",
-            "difference": 3.87,
+            "difference": 3.79,
             "id": "en:fresh-butter",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -749,7 +752,7 @@
                     "percent_nom": 8.3e-05
                 }
             },
-            "percent_estimate": 20.1,
+            "percent_estimate": 20.2,
             "percent_hidden": 24,
             "quantity_estimate": 23.11,
             "text": "_beurre_ frais"
@@ -761,6 +764,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:egg",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -997,8 +1001,8 @@
                     "percent_nom": 0.00101
                 }
             },
-            "percent_estimate": 1.38,
-            "quantity_estimate": 1.58,
+            "percent_estimate": 1.17,
+            "quantity_estimate": 1.33,
             "text": "_oeufs_"
         },
         {
@@ -1008,6 +1012,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1244,8 +1249,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.18,
-            "quantity_estimate": 1.36,
+            "percent_estimate": 1.16,
+            "quantity_estimate": 1.33,
             "text": "sel"
         },
         {
@@ -1255,6 +1260,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:skimmed-milk-powder",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1491,8 +1497,8 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 0.27,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "_lait_ écrémé en poudre"
         },
         {
@@ -1505,6 +1511,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e503",
                     "index": 6,
+                    "initial_estimate": 0.7843137254901961,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1747,12 +1754,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.08,
-                    "quantity_estimate": 0.09,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "carbonates d`ammonium"
                 }
             ],
-            "percent_estimate": 0.08,
+            "percent_estimate": 0.0,
             "text": "poudre à lever"
         },
         {
@@ -1762,6 +1769,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-vanilla-flavouring",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -2004,16 +2012,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.07,
-            "quantity_estimate": 0.08,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "arôme naturel de vanille"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.161,
-        "total_difference": 3.87,
+        "relative_difference": 0.158,
+        "total_difference": 3.79,
         "total_specified_input_percent": 24
     },
     "ingredients_text": "Farine de _blé_, sucre, _beurre_ frais 24%, _oeufs_, sel, _lait_ écrémé en poudre, poudre à lever : carbonates d`ammonium, arôme naturel de vanille.",
@@ -2320,7 +2328,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 211.23325650421594,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 11488.029422237469,
+            "nutrient_penalty": 232272.79595647144,
+            "total": 243972.05863521312
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

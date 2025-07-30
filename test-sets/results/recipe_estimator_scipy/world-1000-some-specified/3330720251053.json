@@ -22,9 +22,10 @@
             "ciqual_food_code": "13012",
             "ciqual_food_code_used": "13012",
             "ciqual_proxy_food_code": null,
-            "difference": 20.6,
+            "difference": 27.7,
             "id": "en:fig",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -261,9 +262,9 @@
                     "percent_nom": 0.00016
                 }
             },
-            "percent_estimate": 70.6,
+            "percent_estimate": 77.7,
             "percent_hidden": 50,
-            "quantity_estimate": 94.22,
+            "quantity_estimate": 100.12,
             "text": "Figues"
         },
         {
@@ -273,6 +274,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -509,8 +511,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 21.5,
-            "quantity_estimate": 28.73,
+            "percent_estimate": 22.1,
+            "quantity_estimate": 28.53,
             "text": "sucre"
         },
         {
@@ -520,6 +522,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:concentrated-lemon-juice",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -756,8 +759,8 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 7.75,
-            "quantity_estimate": 10.34,
+            "percent_estimate": 0.12,
+            "quantity_estimate": 0.16,
             "text": "jus de citron concentré"
         },
         {
@@ -770,6 +773,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e440a",
                     "index": 3,
+                    "initial_estimate": 6.666666666666667,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1012,19 +1016,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.12,
-                    "quantity_estimate": 0.15,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "pectines"
                 }
             ],
-            "percent_estimate": 0.12,
+            "percent_estimate": 0.0,
             "text": "gélifiant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.412,
-        "total_difference": 20.6,
+        "relative_difference": 0.555,
+        "total_difference": 27.7,
         "total_specified_input_percent": 50
     },
     "ingredients_text": "Figues 50%, sucre, jus de citron concentré, gélifiant : pectines.",
@@ -1338,7 +1342,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 357.1435544397517,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 11524.87205006022,
+            "nutrient_penalty": 234436.0730992153,
+            "total": 246318.08870371527
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

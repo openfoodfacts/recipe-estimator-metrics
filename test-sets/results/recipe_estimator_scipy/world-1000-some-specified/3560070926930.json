@@ -25,6 +25,7 @@
             "difference": 1.72,
             "id": "en:corn-flour",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -263,7 +264,7 @@
             },
             "percent_estimate": 81.0,
             "percent_hidden": 79.3,
-            "quantity_estimate": 82.02,
+            "quantity_estimate": 81.95,
             "text": "Farine de maïs"
         },
         {
@@ -273,6 +274,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -518,9 +520,10 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "ciqual_proxy_food_code": null,
-            "difference": 0.23,
+            "difference": 0.2,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -757,16 +760,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.93,
+            "percent_estimate": 0.9,
             "percent_hidden": 0.7,
-            "quantity_estimate": 0.94,
+            "quantity_estimate": 0.91,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0244,
-        "total_difference": 1.95,
+        "relative_difference": 0.024,
+        "total_difference": 1.92,
         "total_specified_input_percent": 80.0
     },
     "ingredients_text": "Farine de maïs 79,3%, huile de tournesol, sel 0,7%.",
@@ -1087,7 +1090,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 309.21521533660547,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 343.24439710012484,
+            "nutrient_penalty": 865843.0404533378,
+            "total": 866495.5000657747
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

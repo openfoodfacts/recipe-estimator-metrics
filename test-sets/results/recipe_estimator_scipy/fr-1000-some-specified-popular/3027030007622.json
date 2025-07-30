@@ -20,6 +20,7 @@
             "ecobalyse_code": "flour",
             "id": "en:wheat-flour",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -257,8 +258,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 96.1,
-            "quantity_estimate": 106.08,
+            "percent_estimate": 94.7,
+            "quantity_estimate": 106.6,
             "text": "Farine de BLÉ"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:barley-malt-extract",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -511,8 +513,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.96,
-            "quantity_estimate": 2.16,
+            "percent_estimate": 1.77,
+            "quantity_estimate": 1.99,
             "text": "extrait de malt d'ORGE"
         },
         {
@@ -520,10 +522,11 @@
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
             "ciqual_proxy_food_code": null,
-            "difference": 1.52,
+            "difference": 1.51,
             "ecobalyse_code": "sunflower-oil",
             "id": "en:sunflower-oil",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -761,9 +764,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 1.68,
+            "percent_estimate": 1.69,
             "percent_hidden": 3.2,
-            "quantity_estimate": 1.85,
+            "quantity_estimate": 1.91,
             "text": "huile de tournesol"
         },
         {
@@ -773,6 +776,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:sel-levure",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1016,8 +1020,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.14,
-            "quantity_estimate": 0.15,
+            "percent_estimate": 1.54,
+            "quantity_estimate": 1.73,
             "text": "sel levure"
         },
         {
@@ -1030,6 +1034,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e524",
                     "index": 4,
+                    "initial_estimate": 3.225806451612903,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1273,21 +1278,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.11,
-                    "quantity_estimate": 0.12,
+                    "percent_estimate": 0.3,
+                    "quantity_estimate": 0.34,
                     "text": "hydroxyde de sodium"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.11,
+            "percent_estimate": 0.3,
             "text": "correcteur d'acidité"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.475,
-        "total_difference": 1.52,
+        "relative_difference": 0.472,
+        "total_difference": 1.51,
         "total_specified_input_percent": 3.2
     },
     "ingredients_text": "Farine de BLÉ, extrait de malt d'ORGE, 3,2% huile de tournesol, sel levure, correcteur d'acidité (hydroxyde de sodium),",
@@ -1618,7 +1623,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 535.3614346693638,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 6284.699234922414,
+            "nutrient_penalty": 4508068.239469249,
+            "total": 4514888.30013884
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

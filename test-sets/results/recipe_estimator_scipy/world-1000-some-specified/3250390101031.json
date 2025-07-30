@@ -16,9 +16,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "18003",
             "ciqual_proxy_food_code": "18003",
-            "difference": 43.0,
+            "difference": 42.9,
             "id": "en:coffee",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -255,9 +256,9 @@
                     "percent_nom": 0.00079
                 }
             },
-            "percent_estimate": 57.0,
+            "percent_estimate": 57.1,
             "percent_hidden": 100,
-            "quantity_estimate": 56.99,
+            "quantity_estimate": 57.14,
             "text": "Café"
         },
         {
@@ -267,6 +268,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:moulu",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -510,7 +512,7 @@
                 }
             },
             "percent_estimate": 28.6,
-            "quantity_estimate": 28.6,
+            "quantity_estimate": 28.57,
             "text": "moulu"
         },
         {
@@ -520,6 +522,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:non-ue",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -762,15 +765,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 14.4,
-            "quantity_estimate": 14.41,
+            "percent_estimate": 14.3,
+            "quantity_estimate": 14.29,
             "text": "non UE"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.43,
-        "total_difference": 43.0,
+        "relative_difference": 0.429,
+        "total_difference": 42.9,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Café 100%, moulu, non UE",
@@ -970,7 +973,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 5.3290705182007514e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4.263256414560601e-12,
+            "nutrient_penalty": 0,
+            "total": 4.316547119742609e-12
+        },
         "status": 0,
-        "status_message": "The side length measure of the hyperrectangle containing the lowest function value found is below len_tol=1e-05"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -11,9 +11,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 30.8,
+            "difference": 36.8,
             "id": "fr:acqua",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -256,9 +257,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 56.2,
+            "percent_estimate": 50.2,
             "percent_hidden": 87,
-            "quantity_estimate": 56.25,
+            "quantity_estimate": 50.2,
             "text": "Acqua"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:zucchero",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -510,8 +512,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 25.0,
-            "quantity_estimate": 25.0,
+            "percent_estimate": 25.1,
+            "quantity_estimate": 25.1,
             "text": "zucchero"
         },
         {
@@ -521,6 +523,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:isoglucosio",
             "index": 2,
+            "initial_estimate": 12.549019607843137,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -763,8 +766,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 5.55,
-            "quantity_estimate": 5.56,
+            "percent_estimate": 12.6,
+            "quantity_estimate": 12.55,
             "text": "isoglucosio"
         },
         {
@@ -774,6 +777,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:regolatori-dell-aciditae290",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1016,8 +1020,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 4.17,
-            "quantity_estimate": 4.17,
+            "percent_estimate": 6.27,
+            "quantity_estimate": 6.27,
             "text": "regolatori dell'aciditàE290"
         },
         {
@@ -1027,6 +1031,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:acidificanti-e330",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1269,8 +1274,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 3.25,
-            "quantity_estimate": 3.25,
+            "percent_estimate": 3.14,
+            "quantity_estimate": 3.14,
             "text": "acidificanti e330"
         },
         {
@@ -1280,6 +1285,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:aroma",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1522,8 +1528,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 2.78,
-            "quantity_estimate": 2.78,
+            "percent_estimate": 1.57,
+            "quantity_estimate": 1.57,
             "text": "aroma"
         },
         {
@@ -1533,6 +1539,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:coloranti-e120",
             "index": 6,
+            "initial_estimate": 0.7843137254901961,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1775,8 +1782,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.85,
-            "quantity_estimate": 1.85,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 0.78,
             "text": "coloranti e120"
         },
         {
@@ -1786,6 +1793,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e129",
             "index": 7,
+            "initial_estimate": 0.39215686274509803,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -2028,15 +2036,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.16,
-            "quantity_estimate": 1.16,
+            "percent_estimate": 0.39,
+            "quantity_estimate": 0.39,
             "text": "e129"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 8,
-        "relative_difference": 0.354,
-        "total_difference": 30.8,
+        "relative_difference": 0.423,
+        "total_difference": 36.8,
         "total_specified_input_percent": 87
     },
     "ingredients_text": "Acqua 87%, zucchero, isoglucosio, regolatori dell'aciditàE290, acidificanti E330, aroma, coloranti E120 E129",
@@ -2106,7 +2114,15 @@
     "recipe_estimator": {
         "ingredient_count": 8,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 5.773159728050814e-14,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.0,
+            "nutrient_penalty": 0,
+            "total": 5.773159728050814e-14
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

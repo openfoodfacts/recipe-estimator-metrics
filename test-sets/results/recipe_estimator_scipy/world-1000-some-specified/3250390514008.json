@@ -15,9 +15,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 10.4,
+            "difference": 11.8,
             "id": "fr:eau-de-source-lisbeth-avec-adjonction-de-gaz-carbonique",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -260,9 +261,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 82.0,
+            "percent_estimate": 80.7,
             "percent_hidden": 92.4,
-            "quantity_estimate": 82.0,
+            "quantity_estimate": 80.66,
             "text": "Eau de source Lisbeth avec adjonction de gaz carbonique"
         },
         {
@@ -270,9 +271,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 66.7,
+            "difference": 66.6,
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -509,9 +511,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 7.31,
+            "percent_estimate": 7.41,
             "percent_hidden": 74,
-            "quantity_estimate": 7.31,
+            "quantity_estimate": 7.41,
             "text": "sucre"
         },
         {
@@ -524,6 +526,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 2,
+                    "initial_estimate": 12.698412698412698,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -766,12 +769,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 4.6,
-                    "quantity_estimate": 4.6,
+                    "percent_estimate": 5.58,
+                    "quantity_estimate": 5.58,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 4.6,
+            "percent_estimate": 5.58,
             "text": "acidifiant"
         },
         {
@@ -781,6 +784,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-lemon-flavouring",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1023,8 +1027,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 4.06,
-            "quantity_estimate": 4.06,
+            "percent_estimate": 4.29,
+            "quantity_estimate": 4.29,
             "text": "arômes naturels de citron"
         },
         {
@@ -1034,6 +1038,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-lime-flavouring",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1276,8 +1281,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.11,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 1.72,
+            "quantity_estimate": 1.72,
             "text": "arômes naturels de citron vert"
         },
         {
@@ -1287,6 +1292,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-citrus-flavouring",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1529,15 +1535,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.93,
-            "quantity_estimate": 0.93,
+            "percent_estimate": 0.34,
+            "quantity_estimate": 0.34,
             "text": "arômes naturels d'agrumes"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.463,
-        "total_difference": 77.1,
+        "relative_difference": 0.471,
+        "total_difference": 78.3,
         "total_specified_input_percent": 166.0
     },
     "ingredients_text": "Eau de source Lisbeth avec adjonction de gaz carbonique (92,4%), sucre (74%), acidifiant: acide citrique, arômes naturels de citron-citron vert et d'autres agrumes",
@@ -1860,7 +1866,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 372.35527581295173,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3.449937645231671,
+            "nutrient_penalty": 639483.4956988449,
+            "total": 639859.300912303
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

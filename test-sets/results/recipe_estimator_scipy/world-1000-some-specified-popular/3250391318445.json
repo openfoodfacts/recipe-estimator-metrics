@@ -12,7 +12,7 @@
     ],
     "ingredients": [
         {
-            "difference": 1.65,
+            "difference": 1.19,
             "id": "en:soy-base",
             "ingredients": [
                 {
@@ -22,6 +22,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:water",
                     "index": 0,
+                    "initial_estimate": 33.86243386243386,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -258,8 +259,8 @@
                             "percent_nom": 1.1e-05
                         }
                     },
-                    "percent_estimate": 75.6,
-                    "quantity_estimate": 75.77,
+                    "percent_estimate": 74.7,
+                    "quantity_estimate": 74.79,
                     "text": "eau"
                 },
                 {
@@ -267,9 +268,10 @@
                     "ciqual_food_code": "20901",
                     "ciqual_food_code_used": "20901",
                     "ciqual_proxy_food_code": null,
-                    "difference": 1.01,
+                    "difference": 1.5,
                     "id": "en:soya-bean",
                     "index": 1,
+                    "initial_estimate": 16.93121693121693,
                     "labels": "en:organic",
                     "nutrients": {
                         "alcohol": {
@@ -507,14 +509,14 @@
                             "percent_nom": 0.0029500000000000004
                         }
                     },
-                    "percent_estimate": 8.01,
+                    "percent_estimate": 8.5,
                     "percent_hidden": 7,
-                    "quantity_estimate": 8.03,
+                    "quantity_estimate": 8.51,
                     "text": "graines de _soja_"
                 }
             ],
             "labels": "en:organic",
-            "percent_estimate": 83.7,
+            "percent_estimate": 83.2,
             "percent_hidden": 82,
             "text": "Jus de soja"
         },
@@ -525,6 +527,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 2,
+            "initial_estimate": 25.396825396825395,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -762,8 +765,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 13.2,
-            "quantity_estimate": 13.27,
+            "percent_estimate": 12.5,
+            "quantity_estimate": 12.56,
             "text": "huile de tournesol"
         },
         {
@@ -773,6 +776,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:cane-sugar",
             "index": 3,
+            "initial_estimate": 12.698412698412698,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1010,8 +1014,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 1.85,
-            "quantity_estimate": 1.85,
+            "percent_estimate": 1.73,
+            "quantity_estimate": 1.73,
             "text": "sucre de canne"
         },
         {
@@ -1024,6 +1028,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 4,
+                    "initial_estimate": 6.349206349206349,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -1260,12 +1265,12 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 0.77,
-                    "quantity_estimate": 0.78,
+                    "percent_estimate": 1.39,
+                    "quantity_estimate": 1.39,
                     "text": "lécithine de _soja_"
                 }
             ],
-            "percent_estimate": 0.77,
+            "percent_estimate": 1.39,
             "text": "émulsifiant"
         },
         {
@@ -1278,6 +1283,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e415",
                     "index": 5,
+                    "initial_estimate": 3.1746031746031744,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1520,12 +1526,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.37,
-                    "quantity_estimate": 0.37,
+                    "percent_estimate": 1.14,
+                    "quantity_estimate": 1.14,
                     "text": "gomme xanthane"
                 }
             ],
-            "percent_estimate": 0.37,
+            "percent_estimate": 1.14,
             "text": "épaississants"
         },
         {
@@ -1535,6 +1541,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e407",
             "index": 6,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1777,16 +1784,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.1,
-            "quantity_estimate": 0.1,
+            "percent_estimate": 0.02,
+            "quantity_estimate": 0.02,
             "text": "carraghénanes"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0299,
-        "total_difference": 2.66,
+        "relative_difference": 0.0302,
+        "total_difference": 2.69,
         "total_specified_input_percent": 89
     },
     "ingredients_text": "Jus de soja* 82 % (eau, graines de _soja_* 7 %), huile de tournesol*, sucre de canne*, émulsifiant : lécithine de _soja_, épaississants : gomme xanthane - carraghénanes,\r\n\r\n*Issus de l'agriculture biologique,",
@@ -2127,7 +2134,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 640.3699414431092,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 97.47781178495529,
+            "nutrient_penalty": 357422.8768156546,
+            "total": 358160.72456888267
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

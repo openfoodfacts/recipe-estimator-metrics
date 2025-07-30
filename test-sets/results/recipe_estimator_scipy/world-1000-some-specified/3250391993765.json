@@ -14,7 +14,7 @@
     ],
     "ingredients": [
         {
-            "difference": 27.3,
+            "difference": 24.8,
             "id": "fr:filet-de-colin-d-alaska-theragra-chalcogramma",
             "ingredients": [
                 {
@@ -24,6 +24,7 @@
                     "ciqual_proxy_food_code": "26140",
                     "id": "en:fish",
                     "index": 0,
+                    "initial_estimate": 50.79365079365079,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -254,12 +255,12 @@
                             "percent_nom": 0.00061
                         }
                     },
-                    "percent_estimate": 37.7,
-                    "quantity_estimate": 37.71,
+                    "percent_estimate": 40.2,
+                    "quantity_estimate": 40.23,
                     "text": "_poisson_"
                 }
             ],
-            "percent_estimate": 37.7,
+            "percent_estimate": 40.2,
             "percent_hidden": 65,
             "text": "Filet de Colin d'Alaska Theragra chalcogramma"
         },
@@ -270,6 +271,7 @@
             "ciqual_proxy_food_code": "9410",
             "id": "en:wheat-flour",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -506,8 +508,8 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 27.8,
-            "quantity_estimate": 27.75,
+            "percent_estimate": 26.5,
+            "quantity_estimate": 26.49,
             "text": "farine de _blé_"
         },
         {
@@ -517,6 +519,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -753,8 +756,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 27.6,
-            "quantity_estimate": 27.57,
+            "percent_estimate": 26.5,
+            "quantity_estimate": 26.49,
             "text": "eau"
         },
         {
@@ -764,6 +767,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:colza-oil",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1000,8 +1004,8 @@
                     "percent_nom": 2.6e-05
                 }
             },
-            "percent_estimate": 5.61,
-            "quantity_estimate": 5.61,
+            "percent_estimate": 5.28,
+            "quantity_estimate": 5.28,
             "text": "huile de colza"
         },
         {
@@ -1011,6 +1015,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1247,8 +1252,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.78,
-            "quantity_estimate": 0.78,
+            "percent_estimate": 0.76,
+            "quantity_estimate": 0.76,
             "text": "sel"
         },
         {
@@ -1258,6 +1263,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:spice",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1500,15 +1506,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.58,
-            "quantity_estimate": 0.58,
+            "percent_estimate": 0.76,
+            "quantity_estimate": 0.76,
             "text": "épices"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.42,
-        "total_difference": 27.3,
+        "relative_difference": 0.381,
+        "total_difference": 24.8,
         "total_specified_input_percent": 65
     },
     "ingredients_text": "Filet de Colin d'Alaska Theragra chalcogramma 65% (_poisson_), farine de _blé_, eau, huile de colza, sel, épices",
@@ -1817,7 +1823,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 298.375705683133,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1.8452097590852645,
+            "nutrient_penalty": 799126.4309191506,
+            "total": 799426.6518345928
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

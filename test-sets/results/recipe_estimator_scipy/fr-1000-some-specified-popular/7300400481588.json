@@ -27,6 +27,7 @@
             "ecobalyse_code": "flour",
             "id": "en:wholemeal-rye-flour",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -264,9 +265,9 @@
                     "percent_nom": 0.00504
                 }
             },
-            "percent_estimate": 80.5,
+            "percent_estimate": 78.6,
             "quantity": "57 g",
-            "quantity_estimate": 80.61,
+            "quantity_estimate": 78.57,
             "quantity_g": 57,
             "text": "Farine complète de _seigle_"
         },
@@ -277,6 +278,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:wheat-bran",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -514,9 +516,9 @@
                     "percent_nom": 0.00749
                 }
             },
-            "percent_estimate": 6.13,
+            "percent_estimate": 7.6,
             "quantity": "27 g",
-            "quantity_estimate": 6.14,
+            "quantity_estimate": 7.6,
             "quantity_g": 27,
             "text": "son de _blé_"
         },
@@ -527,6 +529,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:oat-flakes",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -764,9 +767,9 @@
                     "percent_nom": 0.00333
                 }
             },
-            "percent_estimate": 5.99,
+            "percent_estimate": 7.6,
             "quantity": "13 g",
-            "quantity_estimate": 6.0,
+            "quantity_estimate": 7.6,
             "quantity_g": 13,
             "text": "flocons d'_avoine_"
         },
@@ -775,9 +778,10 @@
             "ciqual_food_code": "15010",
             "ciqual_food_code_used": "15010",
             "ciqual_proxy_food_code": null,
-            "difference": 2.93,
+            "difference": 4.11,
             "id": "en:sesame-seeds",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1015,9 +1019,9 @@
                     "percent_nom": 0.00574
                 }
             },
-            "percent_estimate": 4.97,
+            "percent_estimate": 3.79,
             "percent_hidden": 7.9,
-            "quantity_estimate": 4.97,
+            "quantity_estimate": 3.79,
             "text": "graines de _sésame_"
         },
         {
@@ -1027,6 +1031,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:wheat-germ",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1264,8 +1269,8 @@
                     "percent_nom": 0.014
                 }
             },
-            "percent_estimate": 1.24,
-            "quantity_estimate": 1.24,
+            "percent_estimate": 1.22,
+            "quantity_estimate": 1.22,
             "text": "germe de _blé_"
         },
         {
@@ -1275,6 +1280,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1512,16 +1518,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.2,
-            "quantity_estimate": 1.2,
+            "percent_estimate": 1.22,
+            "quantity_estimate": 1.22,
             "text": "sel"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.371,
-        "total_difference": 2.93,
+        "relative_difference": 0.52,
+        "total_difference": 4.11,
         "total_specified_input_percent": 7.9
     },
     "ingredients_text": "Farine complète de _seigle_ (57 g*), son de _blé_ (27 g*), flocons d'_avoine_ (13 g*), graines de _sésame_ (7,9 g*), germe de _blé_, sel. *en g pour 100 g de produit.",
@@ -1888,7 +1894,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 367.7574623728154,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.2606286003867808,
+            "nutrient_penalty": 1438163.7232318793,
+            "total": 1438531.7413228524
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

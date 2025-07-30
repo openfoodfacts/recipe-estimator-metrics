@@ -27,6 +27,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -264,8 +265,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 93.7,
-            "quantity_estimate": 103.32,
+            "percent_estimate": 93.9,
+            "quantity_estimate": 93.95,
             "text": "water"
         },
         {
@@ -273,9 +274,10 @@
             "ciqual_food_code": "15041",
             "ciqual_food_code_used": "15041",
             "ciqual_proxy_food_code": null,
-            "difference": 0.22,
+            "difference": 0.4,
             "id": "en:almond",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -513,9 +515,9 @@
                     "percent_nom": 0.00297
                 }
             },
-            "percent_estimate": 2.58,
+            "percent_estimate": 3.2,
             "percent_hidden": 2.8,
-            "quantity_estimate": 2.84,
+            "quantity_estimate": 3.2,
             "text": "almond"
         },
         {
@@ -525,6 +527,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:tapioca",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -762,8 +765,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 1.24,
-            "quantity_estimate": 1.37,
+            "percent_estimate": 1.52,
+            "quantity_estimate": 1.52,
             "text": "cassava starch"
         },
         {
@@ -773,6 +776,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lithothamnium-calcareum-seaweed",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1016,8 +1020,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.89,
-            "quantity_estimate": 0.98,
+            "percent_estimate": 1.1,
+            "quantity_estimate": 1.1,
             "text": "lithothamnium calcareum seaweed"
         },
         {
@@ -1027,6 +1031,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1270,8 +1275,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.78,
-            "quantity_estimate": 0.86,
+            "percent_estimate": 0.15,
+            "quantity_estimate": 0.15,
             "text": "natural"
         },
         {
@@ -1285,6 +1290,7 @@
                     "ecobalyse_code": "flour",
                     "id": "en:carob-seed-flour",
                     "index": 5,
+                    "initial_estimate": 1.5748031496062993,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1522,13 +1528,13 @@
                             "percent_nom": 0.0019
                         }
                     },
-                    "percent_estimate": 0.76,
-                    "quantity_estimate": 0.84,
+                    "percent_estimate": 0.09,
+                    "quantity_estimate": 0.09,
                     "text": "carob seed flour"
                 }
             ],
             "is_in_taxonomy": 0,
-            "percent_estimate": 0.76,
+            "percent_estimate": 0.09,
             "text": "thickening aroma"
         },
         {
@@ -1538,6 +1544,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1775,7 +1782,7 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.08,
+            "percent_estimate": 0.09,
             "quantity_estimate": 0.09,
             "text": "salt"
         }
@@ -1783,8 +1790,8 @@
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0786,
-        "total_difference": 0.22,
+        "relative_difference": 0.143,
+        "total_difference": 0.4,
         "total_specified_input_percent": 2.8
     },
     "ingredients_text": "water, almond 2,8%, cassava starch, lithothamnium calcareum seaweed, natural, thickening aroma: carob seed flour, salt,\r\ningredients from organic farming,",
@@ -2123,7 +2130,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 446.56682586297393,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 73.59870938563091,
+            "nutrient_penalty": 342248.1504064465,
+            "total": 342768.31594169507
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

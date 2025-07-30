@@ -13,7 +13,7 @@
     ],
     "ingredients": [
         {
-            "difference": 24.1,
+            "difference": 25.6,
             "id": "es:cereal",
             "ingredients": [
                 {
@@ -23,6 +23,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:corn-flour",
                     "index": 0,
+                    "initial_estimate": 34.40860215053763,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -259,8 +260,8 @@
                             "percent_nom": 0.00044
                         }
                     },
-                    "percent_estimate": 52.3,
-                    "quantity_estimate": 57.77,
+                    "percent_estimate": 61.7,
+                    "quantity_estimate": 67.09,
                     "text": "Harina de maíz"
                 },
                 {
@@ -270,6 +271,7 @@
                     "ciqual_proxy_food_code": "9100",
                     "id": "en:rice",
                     "index": 1,
+                    "initial_estimate": 17.204301075268816,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -506,12 +508,12 @@
                             "percent_nom": 0.00141
                         }
                     },
-                    "percent_estimate": 43.8,
-                    "quantity_estimate": 48.4,
+                    "percent_estimate": 35.9,
+                    "quantity_estimate": 39.11,
                     "text": "de arroz"
                 }
             ],
-            "percent_estimate": 96.1,
+            "percent_estimate": 97.6,
             "percent_hidden": 72,
             "text": "Cereal"
         },
@@ -523,6 +525,7 @@
             "id": "en:sweetener",
             "index": 2,
             "ingredients": [],
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -765,8 +768,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.77,
-            "quantity_estimate": 1.95,
+            "percent_estimate": 0.82,
+            "quantity_estimate": 0.89,
             "text": "edulcorante"
         },
         {
@@ -776,6 +779,7 @@
             "ciqual_proxy_food_code": "18100",
             "id": "en:cocoa",
             "index": 3,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1012,8 +1016,8 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 1.2,
-            "quantity_estimate": 1.33,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 0.85,
             "text": "cacao"
         },
         {
@@ -1023,6 +1027,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:high-oleic-sunflower-oil",
             "index": 4,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1259,8 +1264,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.88,
-            "quantity_estimate": 0.98,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 0.85,
             "text": "aceite de girasol alto oléico"
         },
         {
@@ -1273,6 +1278,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 5,
+                    "initial_estimate": 2.150537634408602,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -1509,8 +1515,8 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.04,
+                    "percent_estimate": 0.01,
+                    "quantity_estimate": 0.01,
                     "text": "lecitina de soja"
                 },
                 {
@@ -1520,6 +1526,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:flavouring",
                     "index": 6,
+                    "initial_estimate": 1.075268817204301,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1762,20 +1769,20 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.02,
-                    "quantity_estimate": 0.02,
+                    "percent_estimate": 0.01,
+                    "quantity_estimate": 0.01,
                     "text": "aromas"
                 }
             ],
-            "percent_estimate": 0.06,
+            "percent_estimate": 0.02,
             "text": "emulgente"
         }
     ],
     "ingredients_lc": "es",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.335,
-        "total_difference": 24.1,
+        "relative_difference": 0.356,
+        "total_difference": 25.6,
         "total_specified_input_percent": 72
     },
     "ingredients_text": "Cereal 72 % (Harina de maíz y de arroz), edulcorante: (isomalt y sucralosa), cacao, aceite de girasol alto oléico, emulgente: lecitina de soja y aromas.",
@@ -2091,7 +2098,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 590.0208571067335,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 6164.927624086229,
+            "nutrient_penalty": 108663.55538467379,
+            "total": 115418.50386586675
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

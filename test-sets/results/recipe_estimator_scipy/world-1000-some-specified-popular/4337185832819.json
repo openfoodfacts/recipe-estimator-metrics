@@ -27,6 +27,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -263,8 +264,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 97.2,
-            "quantity_estimate": 98.53,
+            "percent_estimate": 96.1,
+            "quantity_estimate": 96.17,
             "text": "Wasser"
         },
         {
@@ -272,9 +273,10 @@
             "ciqual_food_code": "15041",
             "ciqual_food_code_used": "15041",
             "ciqual_proxy_food_code": null,
-            "difference": 0.11,
+            "difference": 0.16,
             "id": "en:almond",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -512,9 +514,9 @@
                     "percent_nom": 0.00297
                 }
             },
-            "percent_estimate": 2.39,
+            "percent_estimate": 2.34,
             "percent_hidden": 2.5,
-            "quantity_estimate": 2.42,
+            "quantity_estimate": 2.34,
             "text": "Mandeln"
         },
         {
@@ -524,6 +526,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:maltodextrin",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -767,8 +770,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.2,
-            "quantity_estimate": 0.21,
+            "percent_estimate": 1.29,
+            "quantity_estimate": 1.29,
             "text": "Maltodextrin"
         },
         {
@@ -778,6 +781,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1014,8 +1018,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.16,
-            "quantity_estimate": 0.16,
+            "percent_estimate": 0.12,
+            "quantity_estimate": 0.12,
             "text": "Meersalz"
         },
         {
@@ -1028,6 +1032,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sunflower-lecithin",
                     "index": 4,
+                    "initial_estimate": 3.1746031746031744,
                     "labels": "en:organic",
                     "nutrients": {
                         "alcohol": {
@@ -1271,12 +1276,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.04,
+                    "percent_estimate": 0.11,
+                    "quantity_estimate": 0.11,
                     "text": "Sonnenblumenlecithine"
                 }
             ],
-            "percent_estimate": 0.04,
+            "percent_estimate": 0.11,
             "text": "Emulgator"
         },
         {
@@ -1289,6 +1294,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e418",
                     "index": 5,
+                    "initial_estimate": 1.5873015873015872,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1531,20 +1537,20 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.03,
-                    "quantity_estimate": 0.03,
+                    "percent_estimate": 0.02,
+                    "quantity_estimate": 0.02,
                     "text": "Gellan"
                 }
             ],
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.02,
             "text": "Stabilisator"
         }
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.044,
-        "total_difference": 0.11,
+        "relative_difference": 0.064,
+        "total_difference": 0.16,
         "total_specified_input_percent": 2.5
     },
     "ingredients_text": "Wasser, Mandeln* (2,5%), \nMaltodextrin*, Meersalz, \nEmulgator: Sonnenblumenlecithine*, \nStabilisator: Gellan\n\n*aus kontrolliert biologischer Landwirtschaft",
@@ -1881,7 +1887,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 464.80400540460806,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 29.217317356642525,
+            "nutrient_penalty": 235803.7415518598,
+            "total": 236297.76287462105
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=60000"
+        "status_message": "Optimization terminated successfully."
     }
 }

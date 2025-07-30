@@ -25,10 +25,11 @@
             "ciqual_food_code": "19023",
             "ciqual_food_code_used": "19023",
             "ciqual_proxy_food_code": null,
-            "difference": 2.0,
+            "difference": 1.98,
             "ecobalyse_code": "milk",
             "id": "en:whole-milk",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -268,7 +269,7 @@
             },
             "percent_estimate": 81.1,
             "percent_hidden": 83.1,
-            "quantity_estimate": 81.14,
+            "quantity_estimate": 81.12,
             "text": "Lait entier"
         },
         {
@@ -276,9 +277,10 @@
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
             "ciqual_proxy_food_code": null,
-            "difference": 6.85,
+            "difference": 6.88,
             "id": "en:cream",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -518,7 +520,7 @@
             },
             "percent_estimate": 18.9,
             "percent_hidden": 12.0,
-            "quantity_estimate": 18.86,
+            "quantity_estimate": 18.88,
             "text": "crème"
         },
         {
@@ -529,6 +531,7 @@
             "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -766,8 +769,8 @@
                     "percent_nom": 0.00447
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.02,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "poudre de lait écrémé"
         },
         {
@@ -777,6 +780,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1020,8 +1024,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.02,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "ferments lactiques"
         },
         {
@@ -1031,6 +1035,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:fabrique-en-france-avec-du-lait-francais",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1274,16 +1279,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.01,
-            "quantity_estimate": 0.01,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "Fabriqué en France avec du lait français"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0931,
-        "total_difference": 8.85,
+        "relative_difference": 0.0932,
+        "total_difference": 8.86,
         "total_specified_input_percent": 95.1
     },
     "ingredients_text": "Lait entier (83,1%), crème (12,0%) (lait), poudre de lait écrémé, ferments lactiques. Fabriqué en France avec du lait français.",
@@ -1613,7 +1618,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 115.4315714338644,
+            "ingredient_not_half_previous_penalty": 311.1771357394301,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1.0685371499334906,
+            "nutrient_penalty": 504239.1710506619,
+            "total": 504666.8482949851
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

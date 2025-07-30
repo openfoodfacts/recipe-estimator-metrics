@@ -18,7 +18,7 @@
     ],
     "ingredients": [
         {
-            "difference": 22.7,
+            "difference": 4.87,
             "id": "en:non-hydrogenated-vegetable-oils",
             "ingredients": [
                 {
@@ -28,6 +28,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:colza-vegetable-oils",
                     "index": 0,
+                    "initial_estimate": 33.86243386243386,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -271,8 +272,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 48.5,
-                    "quantity_estimate": 48.51,
+                    "percent_estimate": 31.1,
+                    "quantity_estimate": 31.17,
                     "text": "colza vegetable oils"
                 },
                 {
@@ -283,6 +284,7 @@
                     "ecobalyse_code": "refined-palm-oil",
                     "id": "en:palm-oil",
                     "index": 1,
+                    "initial_estimate": 16.93121693121693,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -520,14 +522,14 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 28.7,
-                    "quantity_estimate": 28.7,
+                    "percent_estimate": 28.3,
+                    "quantity_estimate": 28.41,
                     "text": "palm vegetable oils"
                 }
             ],
             "is_in_taxonomy": 1,
             "labels": "en:organic",
-            "percent_estimate": 77.2,
+            "percent_estimate": 59.4,
             "percent_hidden": 54.5,
             "text": "non-hydrogenated vegetable oils"
         },
@@ -539,6 +541,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 2,
+            "initial_estimate": 25.396825396825395,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -776,8 +779,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 15.4,
-            "quantity_estimate": 15.43,
+            "percent_estimate": 38.2,
+            "quantity_estimate": 38.31,
             "text": "water"
         },
         {
@@ -790,6 +793,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sunflower-lecithin",
                     "index": 3,
+                    "initial_estimate": 12.698412698412698,
                     "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "nutrients": {
@@ -1034,13 +1038,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 6.38,
-                    "quantity_estimate": 6.38,
+                    "percent_estimate": 1.63,
+                    "quantity_estimate": 1.63,
                     "text": "sunflower lecithin"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 6.38,
+            "percent_estimate": 1.63,
             "text": "emulsifier"
         },
         {
@@ -1050,6 +1054,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1287,8 +1292,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.46,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.4,
+            "quantity_estimate": 0.41,
             "text": "salt"
         },
         {
@@ -1298,6 +1303,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 5,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1541,8 +1547,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.37,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.34,
+            "quantity_estimate": 0.34,
             "text": "natural aromas"
         },
         {
@@ -1552,6 +1558,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:concentrated-lemon-juice",
             "index": 6,
+            "initial_estimate": 1.5873015873015872,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -1790,16 +1797,16 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 0.19,
-            "quantity_estimate": 0.19,
+            "percent_estimate": 0.07,
+            "quantity_estimate": 0.07,
             "text": "concentrated lemon juice"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.416,
-        "total_difference": 22.7,
+        "relative_difference": 0.0894,
+        "total_difference": 4.87,
         "total_specified_input_percent": 54.5
     },
     "ingredients_text": "organic non-hydrogenated vegetable oils 54,5% (colza, palm)', water, emulsifier: organic sunflower lecithin, salt, natural aromas, organic concentrated lemon juice,",
@@ -2164,7 +2171,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 395.2201638643276,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 237.83166896640893,
+            "nutrient_penalty": 5647940.58819022,
+            "total": 5648573.640023051
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

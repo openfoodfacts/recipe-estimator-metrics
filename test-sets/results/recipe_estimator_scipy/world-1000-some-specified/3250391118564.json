@@ -24,6 +24,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sardine",
                     "index": 0,
+                    "initial_estimate": 51.61290322580645,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "D",
@@ -260,12 +261,12 @@
                             "percent_nom": 0.0015
                         }
                     },
-                    "percent_estimate": 77.6,
-                    "quantity_estimate": 87.19,
+                    "percent_estimate": 78.9,
+                    "quantity_estimate": 87.45,
                     "text": "_Sardina pilchardus"
                 }
             ],
-            "percent_estimate": 77.6,
+            "percent_estimate": 78.9,
             "text": "_Sardines_"
         },
         {
@@ -275,6 +276,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -511,8 +513,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 10.1,
-            "quantity_estimate": 11.32,
+            "percent_estimate": 8.82,
+            "quantity_estimate": 9.78,
             "text": "eau"
         },
         {
@@ -520,9 +522,10 @@
             "ciqual_food_code": "20068",
             "ciqual_food_code_used": "20068",
             "ciqual_proxy_food_code": null,
-            "difference": 0.37,
+            "difference": 0.32,
             "id": "en:tomato-concentrate",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -759,9 +762,9 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 8.87,
+            "percent_estimate": 8.82,
             "percent_hidden": 8.5,
-            "quantity_estimate": 9.97,
+            "quantity_estimate": 9.77,
             "text": "concentré de tomate"
         },
         {
@@ -771,6 +774,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1007,8 +1011,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 3.16,
-            "quantity_estimate": 3.55,
+            "percent_estimate": 3.15,
+            "quantity_estimate": 3.5,
             "text": "huile de tournesol"
         },
         {
@@ -1018,6 +1022,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1254,15 +1259,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.33,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.32,
+            "quantity_estimate": 0.36,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0435,
-        "total_difference": 0.37,
+        "relative_difference": 0.0376,
+        "total_difference": 0.32,
         "total_specified_input_percent": 8.5
     },
     "ingredients_text": "_Sardines_ (_Sardina pilchardus), eau, concentré de tomate (8,5%), huile de tournesol, sel.",
@@ -1588,7 +1593,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 416.1713231792799,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 5426.356699022449,
+            "nutrient_penalty": 24888.354524439575,
+            "total": 30730.882546641304
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

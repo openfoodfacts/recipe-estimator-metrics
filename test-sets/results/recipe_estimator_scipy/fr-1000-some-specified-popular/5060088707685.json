@@ -25,9 +25,10 @@
             "ciqual_food_code": "13011",
             "ciqual_food_code_used": "13011",
             "ciqual_proxy_food_code": null,
-            "difference": 5.97,
+            "difference": 6.73,
             "id": "en:date",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -265,9 +266,9 @@
                     "percent_nom": 0.00023
                 }
             },
-            "percent_estimate": 52.0,
+            "percent_estimate": 51.3,
             "percent_hidden": 58,
-            "quantity_estimate": 56.14,
+            "quantity_estimate": 55.88,
             "text": "dates"
         },
         {
@@ -275,9 +276,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "15055",
             "ciqual_proxy_food_code": "15055",
-            "difference": 0.64,
+            "difference": 0.46,
             "id": "en:cashew-nuts",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -515,9 +517,9 @@
                     "percent_nom": 0.0056
                 }
             },
-            "percent_estimate": 15.6,
+            "percent_estimate": 15.5,
             "percent_hidden": 15,
-            "quantity_estimate": 16.88,
+            "quantity_estimate": 16.85,
             "text": "_cashew nuts_"
         },
         {
@@ -525,9 +527,10 @@
             "ciqual_food_code": "13046",
             "ciqual_food_code_used": "13046",
             "ciqual_proxy_food_code": null,
-            "difference": 0.54,
+            "difference": 0.43,
             "id": "en:raisin",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -765,9 +768,9 @@
                     "percent_nom": 0.00023999999999999998
                 }
             },
-            "percent_estimate": 15.5,
+            "percent_estimate": 15.4,
             "percent_hidden": 15,
-            "quantity_estimate": 16.77,
+            "quantity_estimate": 16.82,
             "text": "raisins"
         },
         {
@@ -775,9 +778,10 @@
             "ciqual_food_code": "15041",
             "ciqual_food_code_used": "15041",
             "ciqual_proxy_food_code": null,
-            "difference": 0.39,
+            "difference": 0.49,
             "id": "en:almond",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1015,9 +1019,9 @@
                     "percent_nom": 0.00297
                 }
             },
-            "percent_estimate": 9.61,
+            "percent_estimate": 9.51,
             "percent_hidden": 10,
-            "quantity_estimate": 10.37,
+            "quantity_estimate": 10.36,
             "text": "_almonds_"
         },
         {
@@ -1025,10 +1029,11 @@
             "ciqual_food_code": "13028",
             "ciqual_food_code_used": "13028",
             "ciqual_proxy_food_code": null,
-            "difference": 5.18,
+            "difference": 6.33,
             "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1266,17 +1271,17 @@
                     "percent_nom": 0.00016
                 }
             },
-            "percent_estimate": 7.18,
+            "percent_estimate": 8.33,
             "percent_hidden": 2,
-            "quantity_estimate": 7.75,
+            "quantity_estimate": 9.08,
             "text": "blueberries"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.127,
-        "total_difference": 12.7,
+        "relative_difference": 0.144,
+        "total_difference": 14.4,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "dates 58%,\r\n_cashew nuts_ 15%,\r\nraisins 15%,\r\n_almonds_ 10%,\r\nblueberries 2%,",
@@ -1624,7 +1629,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 253.4405745916664,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4497.334732268108,
+            "nutrient_penalty": 403591.74100040295,
+            "total": 408342.51630726276
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

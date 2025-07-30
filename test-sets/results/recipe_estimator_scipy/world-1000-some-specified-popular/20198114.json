@@ -27,9 +27,10 @@
             "ciqual_food_code": "20047",
             "ciqual_food_code_used": "20047",
             "ciqual_proxy_food_code": null,
-            "difference": 0.72,
+            "difference": 0.53,
             "id": "en:tomato",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -266,9 +267,9 @@
                     "percent_nom": 8.7e-05
                 }
             },
-            "percent_estimate": 99.7,
+            "percent_estimate": 99.5,
             "percent_hidden": 99,
-            "quantity_estimate": 188.75,
+            "quantity_estimate": 188.79,
             "text": "tomatoes"
         },
         {
@@ -278,6 +279,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -514,8 +516,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.27,
-            "quantity_estimate": 0.51,
+            "percent_estimate": 0.28,
+            "quantity_estimate": 0.54,
             "text": "salt"
         },
         {
@@ -528,6 +530,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 2,
+                    "initial_estimate": 14.285714285714286,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -770,20 +773,20 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.01,
-                    "quantity_estimate": 0.02,
+                    "percent_estimate": 0.19,
+                    "quantity_estimate": 0.35,
                     "text": "citric acid"
                 }
             ],
-            "percent_estimate": 0.01,
+            "percent_estimate": 0.19,
             "text": "acidifier"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.00727,
-        "total_difference": 0.72,
+        "relative_difference": 0.00535,
+        "total_difference": 0.53,
         "total_specified_input_percent": 99
     },
     "ingredients_text": "tomatoes (99%), salt, acidifier: citric acid,",
@@ -1108,7 +1111,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 939.4247959304058,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 26903.44866653537,
+            "nutrient_penalty": 5742199.635054378,
+            "total": 5770042.508516843
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

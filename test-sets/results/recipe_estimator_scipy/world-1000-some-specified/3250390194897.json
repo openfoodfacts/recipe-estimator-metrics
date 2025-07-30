@@ -21,9 +21,10 @@
             "ciqual_food_code": "20072",
             "ciqual_food_code_used": "20072",
             "ciqual_proxy_food_code": null,
-            "difference": 8.65,
+            "difference": 8.05,
             "id": "en:garden-peas",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -260,9 +261,9 @@
                     "percent_nom": 0.001
                 }
             },
-            "percent_estimate": 41.4,
+            "percent_estimate": 42.0,
             "percent_hidden": 50,
-            "quantity_estimate": 41.48,
+            "quantity_estimate": 41.96,
             "text": "Petits pois"
         },
         {
@@ -270,9 +271,10 @@
             "ciqual_food_code": "20009",
             "ciqual_food_code_used": "20009",
             "ciqual_proxy_food_code": null,
-            "difference": 0.24,
+            "difference": 1.75,
             "id": "en:carrot",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -509,9 +511,9 @@
                     "percent_nom": 0.00017999999999999998
                 }
             },
-            "percent_estimate": 30.2,
+            "percent_estimate": 28.2,
             "percent_hidden": 30,
-            "quantity_estimate": 30.34,
+            "quantity_estimate": 28.26,
             "text": "carottes"
         },
         {
@@ -521,6 +523,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -757,8 +760,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 27.5,
-            "quantity_estimate": 27.57,
+            "percent_estimate": 28.2,
+            "quantity_estimate": 28.21,
             "text": "eau"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 0.46,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.55,
+            "quantity_estimate": 0.55,
             "text": "sucre"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1251,8 +1256,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.37,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.54,
+            "quantity_estimate": 0.54,
             "text": "sel"
         },
         {
@@ -1262,6 +1267,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-pepper-flavouring",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1504,15 +1510,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.1,
-            "quantity_estimate": 0.1,
+            "percent_estimate": 0.51,
+            "quantity_estimate": 0.51,
             "text": "arôme naturel de poivre"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.111,
-        "total_difference": 8.89,
+        "relative_difference": 0.122,
+        "total_difference": 9.8,
         "total_specified_input_percent": 80
     },
     "ingredients_text": "Petits pois 50% min., carottes 30% min., eau, sucre, sel, arôme naturel de poivre.",
@@ -1837,7 +1843,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 354.2604705080294,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 17.427101359260178,
+            "nutrient_penalty": 1429667.0872216795,
+            "total": 1430038.7747935469
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

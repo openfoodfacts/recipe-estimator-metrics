@@ -23,6 +23,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -260,7 +261,7 @@
                 }
             },
             "percent_estimate": 86.3,
-            "quantity_estimate": 163.41,
+            "quantity_estimate": 164.33,
             "text": "Pommes de terre"
         },
         {
@@ -268,9 +269,10 @@
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
             "ciqual_proxy_food_code": null,
-            "difference": 11.8,
+            "difference": 11.9,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -507,9 +509,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 11.9,
+            "percent_estimate": 11.8,
             "percent_hidden": 23.7,
-            "quantity_estimate": 22.53,
+            "quantity_estimate": 22.38,
             "text": "huile de tournesol"
         },
         {
@@ -519,6 +521,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -755,8 +758,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.54,
-            "quantity_estimate": 1.03,
+            "percent_estimate": 0.41,
+            "quantity_estimate": 0.78,
             "text": "sel"
         },
         {
@@ -766,6 +769,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cereals-containing-gluten",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1008,8 +1012,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.41,
-            "quantity_estimate": 0.77,
+            "percent_estimate": 0.4,
+            "quantity_estimate": 0.76,
             "text": "céréales contenant du gluten"
         },
         {
@@ -1019,6 +1023,7 @@
             "ciqual_proxy_food_code": "19051",
             "id": "en:milk",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1255,8 +1260,8 @@
                     "percent_nom": 0.00041999999999999996
                 }
             },
-            "percent_estimate": 0.36,
-            "quantity_estimate": 0.68,
+            "percent_estimate": 0.4,
+            "quantity_estimate": 0.76,
             "text": "lait"
         },
         {
@@ -1266,6 +1271,7 @@
             "ciqual_proxy_food_code": "20055",
             "id": "en:celery",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1502,8 +1508,8 @@
                     "percent_nom": 0.00033
                 }
             },
-            "percent_estimate": 0.29,
-            "quantity_estimate": 0.56,
+            "percent_estimate": 0.39,
+            "quantity_estimate": 0.75,
             "text": "céleri"
         },
         {
@@ -1513,6 +1519,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:mustard",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1749,15 +1756,15 @@
                     "percent_nom": 0.00067
                 }
             },
-            "percent_estimate": 0.21,
-            "quantity_estimate": 0.4,
+            "percent_estimate": 0.38,
+            "quantity_estimate": 0.73,
             "text": "moutarde"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.498,
-        "total_difference": 11.8,
+        "relative_difference": 0.504,
+        "total_difference": 11.9,
         "total_specified_input_percent": 23.7
     },
     "ingredients_text": "Pommes de terre, huile de tournesol (23,7%), sel, céréales contenant du gluten, lait, céleri, moutarde",
@@ -2088,7 +2095,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 716.6133720331334,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 63336.21567941293,
+            "nutrient_penalty": 6025889.415929364,
+            "total": 6089942.24498081
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

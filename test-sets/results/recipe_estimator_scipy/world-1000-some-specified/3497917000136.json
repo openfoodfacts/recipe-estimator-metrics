@@ -33,6 +33,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -271,7 +272,7 @@
             },
             "origins": "en:france",
             "percent_estimate": 82.7,
-            "quantity_estimate": 164.07,
+            "quantity_estimate": 164.26,
             "text": "potatoes"
         },
         {
@@ -279,9 +280,10 @@
             "ciqual_food_code": "17440",
             "ciqual_food_code_used": "17440",
             "ciqual_proxy_food_code": null,
-            "difference": 18.1,
+            "difference": 18.2,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -518,9 +520,9 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 16.9,
+            "percent_estimate": 16.8,
             "percent_hidden": 35,
-            "quantity_estimate": 33.44,
+            "quantity_estimate": 33.45,
             "text": "sunflower oil"
         },
         {
@@ -528,9 +530,10 @@
             "ciqual_food_code": "11058",
             "ciqual_food_code_used": "11058",
             "ciqual_proxy_food_code": null,
-            "difference": 0.55,
+            "difference": 0.53,
             "id": "en:salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -768,9 +771,9 @@
                 }
             },
             "origins": "en:guerande",
-            "percent_estimate": 0.45,
+            "percent_estimate": 0.47,
             "percent_hidden": 1,
-            "quantity_estimate": 0.89,
+            "quantity_estimate": 0.93,
             "text": "salt"
         }
     ],
@@ -1087,7 +1090,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 644.8164038397447,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 29590.642019799296,
+            "nutrient_penalty": 4810670.309889033,
+            "total": 4840905.768312672
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

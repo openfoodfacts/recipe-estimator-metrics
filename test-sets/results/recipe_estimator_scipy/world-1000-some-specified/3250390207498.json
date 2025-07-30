@@ -15,7 +15,7 @@
     "ingredients": [
         {
             "ciqual_food_code": "15001",
-            "difference": 21.1,
+            "difference": 17.8,
             "id": "en:peanut",
             "ingredients": [
                 {
@@ -25,6 +25,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:peanut",
                     "index": 0,
+                    "initial_estimate": 50.79365079365079,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -261,12 +262,12 @@
                             "percent_nom": 0.003
                         }
                     },
-                    "percent_estimate": 73.1,
-                    "quantity_estimate": 73.14,
+                    "percent_estimate": 69.8,
+                    "quantity_estimate": 69.86,
                     "text": "_arachides_"
                 }
             ],
-            "percent_estimate": 73.1,
+            "percent_estimate": 69.8,
             "percent_hidden": 52,
             "text": "Cacahuètes"
         },
@@ -275,9 +276,10 @@
             "ciqual_food_code": "15004",
             "ciqual_food_code_used": "15004",
             "ciqual_proxy_food_code": null,
-            "difference": 1.37,
+            "difference": 1.77,
             "id": "en:hazelnut",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -514,9 +516,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 14.6,
+            "percent_estimate": 14.2,
             "percent_hidden": 16,
-            "quantity_estimate": 14.63,
+            "quantity_estimate": 14.24,
             "text": "_noisettes_"
         },
         {
@@ -524,9 +526,10 @@
             "ciqual_food_code": "15041",
             "ciqual_food_code_used": "15041",
             "ciqual_proxy_food_code": null,
-            "difference": 5.83,
+            "difference": 1.78,
             "id": "en:almond",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -763,9 +766,9 @@
                     "percent_nom": 0.00297
                 }
             },
-            "percent_estimate": 10.2,
+            "percent_estimate": 14.2,
             "percent_hidden": 16,
-            "quantity_estimate": 10.17,
+            "quantity_estimate": 14.23,
             "text": "_amandes_"
         },
         {
@@ -773,9 +776,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "15055",
             "ciqual_proxy_food_code": "15055",
-            "difference": 15.2,
+            "difference": 15.4,
             "id": "en:cashew-nuts",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1012,9 +1016,9 @@
                     "percent_nom": 0.0056
                 }
             },
-            "percent_estimate": 0.78,
+            "percent_estimate": 0.57,
             "percent_hidden": 16,
-            "quantity_estimate": 0.78,
+            "quantity_estimate": 0.57,
             "text": "_noix de cajou_"
         },
         {
@@ -1024,6 +1028,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1260,8 +1265,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.7,
-            "quantity_estimate": 0.7,
+            "percent_estimate": 0.57,
+            "quantity_estimate": 0.57,
             "text": "huile de tournesol"
         },
         {
@@ -1271,6 +1276,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1507,15 +1513,15 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.58,
-            "quantity_estimate": 0.58,
+            "percent_estimate": 0.57,
+            "quantity_estimate": 0.57,
             "text": "sel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.436,
-        "total_difference": 43.6,
+        "relative_difference": 0.368,
+        "total_difference": 36.8,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Cacahuètes (_arachides_) 52%, _noisettes_ 16%, _amandes_ 16%, _noix de cajou_ 16%, huile de tournesol, sel",
@@ -1828,7 +1834,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 349.16547287187404,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 24.647990248112706,
+            "nutrient_penalty": 462454.1200126838,
+            "total": 462827.93347580376
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

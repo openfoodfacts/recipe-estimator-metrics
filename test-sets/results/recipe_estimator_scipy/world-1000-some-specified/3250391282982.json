@@ -17,6 +17,7 @@
             "id": "en:tomato",
             "index": 0,
             "ingredients": [],
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -253,8 +254,8 @@
                     "percent_nom": 8.7e-05
                 }
             },
-            "percent_estimate": 87.8,
-            "quantity_estimate": 110.91,
+            "percent_estimate": 91.7,
+            "quantity_estimate": 141.48,
             "text": "Tomates"
         },
         {
@@ -262,9 +263,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 0.71,
+            "difference": 2.34,
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -501,9 +503,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 6.44,
+            "percent_estimate": 4.81,
             "percent_hidden": 7.15,
-            "quantity_estimate": 8.13,
+            "quantity_estimate": 7.42,
             "text": "sucre"
         },
         {
@@ -513,6 +515,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:alcohol-vinegar",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -749,8 +752,8 @@
                     "percent_nom": 1.4999999999999999e-05
                 }
             },
-            "percent_estimate": 3.34,
-            "quantity_estimate": 4.23,
+            "percent_estimate": 0.8,
+            "quantity_estimate": 1.23,
             "text": "vinaigre d'alcool"
         },
         {
@@ -760,6 +763,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -996,8 +1000,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.94,
-            "quantity_estimate": 1.18,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 1.21,
             "text": "sel"
         },
         {
@@ -1007,6 +1011,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:onion",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1243,8 +1248,8 @@
                     "percent_nom": 0.00023
                 }
             },
-            "percent_estimate": 0.65,
-            "quantity_estimate": 0.82,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 1.21,
             "text": "oignon"
         },
         {
@@ -1254,6 +1259,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:garlic",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1490,8 +1496,8 @@
                     "percent_nom": 0.00075
                 }
             },
-            "percent_estimate": 0.45,
-            "quantity_estimate": 0.57,
+            "percent_estimate": 0.78,
+            "quantity_estimate": 1.21,
             "text": "ail"
         },
         {
@@ -1501,6 +1507,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:clove",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1737,15 +1744,15 @@
                     "percent_nom": 0.00232
                 }
             },
-            "percent_estimate": 0.42,
-            "quantity_estimate": 0.53,
+            "percent_estimate": 0.3,
+            "quantity_estimate": 0.46,
             "text": "clou de girofle"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0993,
-        "total_difference": 0.71,
+        "relative_difference": 0.327,
+        "total_difference": 2.34,
         "total_specified_input_percent": 7.15
     },
     "ingredients_text": "Tomates (176 g pour 100 g de ketchup), sucre (7,15%), vinaigre d'alcool, sel, oignon, ail, clou de girofle.",
@@ -2074,7 +2081,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 677.4108414075193,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 37951.717147459996,
+            "nutrient_penalty": 25607.68965844686,
+            "total": 64236.817647314376
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -19,9 +19,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 67.6,
+            "difference": 69.5,
             "id": "fr:lait-partiellement-ecreme-a-1-matieres-grasses",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -264,9 +265,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 27.1,
+            "percent_estimate": 25.2,
             "percent_hidden": 94.7,
-            "quantity_estimate": 43.06,
+            "quantity_estimate": 38.97,
             "text": "LAIT partiellement écrémé à 1 % Matières Grasses"
         },
         {
@@ -274,9 +275,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "19051",
             "ciqual_proxy_food_code": "19051",
-            "difference": 21.5,
+            "difference": 19.9,
             "id": "en:condensed-skimmed-milk",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -513,10 +515,10 @@
                     "percent_nom": 0.00041999999999999996
                 }
             },
-            "percent_estimate": 26.7,
+            "percent_estimate": 25.1,
             "percent_hidden": 5.2,
             "processing": "en:powder",
-            "quantity_estimate": 42.4,
+            "quantity_estimate": 38.81,
             "text": "LAIT écrémé concentré"
         },
         {
@@ -529,6 +531,7 @@
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
                     "index": 2,
+                    "initial_estimate": 13.333333333333334,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -765,12 +768,12 @@
                             "percent_nom": 0.00041999999999999996
                         }
                     },
-                    "percent_estimate": 26.4,
-                    "quantity_estimate": 41.83,
+                    "percent_estimate": 25.0,
+                    "quantity_estimate": 38.6,
                     "text": "LAIT"
                 }
             ],
-            "percent_estimate": 26.4,
+            "percent_estimate": 25.0,
             "text": "ferments lactiques"
         },
         {
@@ -780,6 +783,7 @@
             "ciqual_proxy_food_code": "19051",
             "id": "en:milk",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1017,16 +1021,16 @@
                 }
             },
             "origins": "en:france",
-            "percent_estimate": 19.8,
-            "quantity_estimate": 31.37,
+            "percent_estimate": 24.6,
+            "quantity_estimate": 38.03,
             "text": "LAIT"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.892,
-        "total_difference": 89.1,
+        "relative_difference": 0.895,
+        "total_difference": 89.4,
         "total_specified_input_percent": 99.9
     },
     "ingredients_text": "LAIT partiellement écrémé à 1 % Mat. Gr. (94,7%) LAIT écrémé concentré ou en poudre (5,2%) ferments lactiques (LAIT) \nLAIT : Origine France",
@@ -1355,7 +1359,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 572.5302175588641,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 21767.94570032022,
+            "nutrient_penalty": 583927.8513292725,
+            "total": 606268.3272471515
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

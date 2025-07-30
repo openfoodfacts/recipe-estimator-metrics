@@ -28,9 +28,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 38.1,
+            "difference": 36.8,
             "id": "en:peanut-kernels",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -274,9 +275,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 55.9,
+            "percent_estimate": 57.2,
             "percent_hidden": 94,
-            "quantity_estimate": 57.04,
+            "quantity_estimate": 59.51,
             "text": "peanut kernels"
         },
         {
@@ -287,6 +288,7 @@
             "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -524,8 +526,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 19.1,
-            "quantity_estimate": 19.44,
+            "percent_estimate": 18.2,
+            "quantity_estimate": 18.96,
             "text": "palm oil"
         },
         {
@@ -533,10 +535,11 @@
             "ciqual_food_code": "17040",
             "ciqual_food_code_used": "17040",
             "ciqual_proxy_food_code": null,
-            "difference": 17.6,
+            "difference": 17.0,
             "ecobalyse_code": "refined-peanut-oil",
             "id": "en:peanut-oil",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -774,9 +777,9 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 18.8,
+            "percent_estimate": 18.2,
             "percent_hidden": 1.2,
-            "quantity_estimate": 19.14,
+            "quantity_estimate": 18.94,
             "text": "peanut oil"
         },
         {
@@ -787,6 +790,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1024,8 +1028,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 5.9,
-            "quantity_estimate": 6.02,
+            "percent_estimate": 5.87,
+            "quantity_estimate": 6.11,
             "text": "cane sugar"
         },
         {
@@ -1035,6 +1039,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1272,16 +1277,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.36,
-            "quantity_estimate": 0.37,
+            "percent_estimate": 0.54,
+            "quantity_estimate": 0.56,
             "text": "table salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.585,
-        "total_difference": 55.7,
+        "relative_difference": 0.565,
+        "total_difference": 53.8,
         "total_specified_input_percent": 95.2
     },
     "ingredients_text": "94% peanut kernels, palm oil, 1,2% peanut oil, cane sugar, table salt",
@@ -1593,7 +1598,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 261.00748891761714,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2037.800938410321,
+            "nutrient_penalty": 16068555.930051733,
+            "total": 16070854.738479061
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

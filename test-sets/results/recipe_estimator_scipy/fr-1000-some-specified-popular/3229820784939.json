@@ -21,6 +21,7 @@
             "difference": 9.25,
             "id": "en:coconut",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -261,7 +262,7 @@
             },
             "percent_estimate": 50.4,
             "percent_hidden": 59.6,
-            "quantity_estimate": 50.37,
+            "quantity_estimate": 50.5,
             "text": "Noix de coco"
         },
         {
@@ -272,6 +273,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -509,8 +511,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 49.6,
-            "quantity_estimate": 49.59,
+            "percent_estimate": 42.9,
+            "quantity_estimate": 43.06,
             "text": "eau"
         },
         {
@@ -523,6 +525,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e412",
                     "index": 2,
+                    "initial_estimate": 14.285714285714286,
                     "is_in_taxonomy": 1,
                     "labels": "en:organic",
                     "nutrients": {
@@ -767,13 +770,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.07,
-                    "quantity_estimate": 0.07,
+                    "percent_estimate": 6.72,
+                    "quantity_estimate": 6.74,
                     "text": "gomme guar"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.07,
+            "percent_estimate": 6.72,
             "text": "épaississant"
         }
     ],
@@ -1119,7 +1122,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 325.90244241480053,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 90.13564426058878,
+            "nutrient_penalty": 1735851.9561690697,
+            "total": 1736267.994255745
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

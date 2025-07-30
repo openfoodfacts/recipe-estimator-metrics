@@ -18,9 +18,10 @@
             "ciqual_food_code": "20068",
             "ciqual_food_code_used": "20068",
             "ciqual_proxy_food_code": null,
-            "difference": 0.34,
+            "difference": 0.33,
             "id": "en:double-concentrated-tomato",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,7 +260,7 @@
             },
             "percent_estimate": 99.3,
             "percent_hidden": 99,
-            "quantity_estimate": 109.07,
+            "quantity_estimate": 109.02,
             "text": "Purée de tomates double concentrée"
         },
         {
@@ -270,6 +271,7 @@
             "difference": 0.34,
             "id": "en:salt",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -521,6 +523,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 2,
+                    "initial_estimate": 14.285714285714286,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -763,19 +766,19 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.01,
-                    "quantity_estimate": 0.01,
+                    "percent_estimate": 0.02,
+                    "quantity_estimate": 0.02,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 0.01,
+            "percent_estimate": 0.02,
             "text": "acidifiant"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0068,
-        "total_difference": 0.68,
+        "relative_difference": 0.0067,
+        "total_difference": 0.67,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "Purée de tomates double concentrée (99%), sel (1%), acidifiant : acide citrique",
@@ -1087,7 +1090,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 541.340887683063,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2928.220864599827,
+            "nutrient_penalty": 260698.19514706955,
+            "total": 264167.7568993524
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

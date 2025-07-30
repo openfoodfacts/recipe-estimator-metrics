@@ -15,9 +15,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 0.88,
+            "difference": 0.05,
             "id": "nb:potetstaver",
             "index": 0,
+            "initial_estimate": 66.66666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -260,9 +261,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 94.6,
+            "percent_estimate": 95.5,
             "percent_hidden": 95.5,
-            "quantity_estimate": 94.62,
+            "quantity_estimate": 96.65,
             "text": "Potetstaver"
         },
         {
@@ -272,6 +273,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 33.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -508,15 +510,15 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 5.38,
-            "quantity_estimate": 5.38,
+            "percent_estimate": 4.45,
+            "quantity_estimate": 4.5,
             "text": "solsikkeolje"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.00921,
-        "total_difference": 0.88,
+        "relative_difference": 0.000524,
+        "total_difference": 0.05,
         "total_specified_input_percent": 95.5
     },
     "ingredients_text": "Potetstaver 95,5 %, solsikkeolje.",
@@ -823,7 +825,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 438.2432209160187,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 229.46359070528217,
+            "nutrient_penalty": 4260070.732249457,
+            "total": 4260738.439061078
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=20000"
+        "status_message": "Optimization terminated successfully."
     }
 }

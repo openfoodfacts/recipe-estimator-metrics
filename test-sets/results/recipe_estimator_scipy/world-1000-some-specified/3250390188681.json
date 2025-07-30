@@ -10,6 +10,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:milk-chocolate",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -246,9 +247,9 @@
                     "percent_nom": 0.0011
                 }
             },
-            "percent_estimate": 94.6,
+            "percent_estimate": 95.7,
             "processing": "en:sugared",
-            "quantity_estimate": 99.82,
+            "quantity_estimate": 100.35,
             "text": "Chocolat au lait extra fin"
         },
         {
@@ -258,6 +259,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:cocoa-butter",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -494,8 +496,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 2.05,
-            "quantity_estimate": 2.16,
+            "percent_estimate": 2.93,
+            "quantity_estimate": 3.07,
             "text": "beurre de cacao"
         },
         {
@@ -505,6 +507,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:whole-milk-powder",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -741,8 +744,8 @@
                     "percent_nom": 0.00391
                 }
             },
-            "percent_estimate": 1.25,
-            "quantity_estimate": 1.32,
+            "percent_estimate": 0.43,
+            "quantity_estimate": 0.45,
             "text": "poudre de _ lait_ entier"
         },
         {
@@ -752,6 +755,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -988,8 +992,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.12,
-            "quantity_estimate": 1.18,
+            "percent_estimate": 0.43,
+            "quantity_estimate": 0.45,
             "text": "pâte de cacao"
         },
         {
@@ -1002,6 +1006,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:soya-lecithin",
                     "index": 4,
+                    "initial_estimate": 3.1496062992125986,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -1238,12 +1243,12 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 0.74,
-                    "quantity_estimate": 0.79,
+                    "percent_estimate": 0.42,
+                    "quantity_estimate": 0.44,
                     "text": "lécithines de _soja_"
                 }
             ],
-            "percent_estimate": 0.74,
+            "percent_estimate": 0.42,
             "text": "émulsifiant"
         },
         {
@@ -1253,6 +1258,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1495,8 +1501,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.23,
-            "quantity_estimate": 0.24,
+            "percent_estimate": 0.05,
+            "quantity_estimate": 0.05,
             "text": "arôme"
         },
         {
@@ -1507,6 +1513,7 @@
             "difference": 31.0,
             "id": "en:cocoa",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1743,9 +1750,9 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.02,
             "percent_hidden": 31,
-            "quantity_estimate": 0.03,
+            "quantity_estimate": 0.02,
             "text": "cacao"
         }
     ],
@@ -2052,7 +2059,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 488.0299279169057,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 3379.0240658671933,
+            "nutrient_penalty": 118258.39478627591,
+            "total": 122125.44878006002
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

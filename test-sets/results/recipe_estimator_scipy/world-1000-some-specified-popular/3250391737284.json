@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": "16030",
             "id": "en:cocoa-paste",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -259,7 +260,7 @@
                 }
             },
             "percent_estimate": 28.8,
-            "quantity_estimate": 39.26,
+            "quantity_estimate": 39.34,
             "text": "Pâte de cacao"
         },
         {
@@ -269,6 +270,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -507,7 +509,7 @@
                 }
             },
             "percent_estimate": 19.0,
-            "quantity_estimate": 25.85,
+            "quantity_estimate": 25.87,
             "text": "sucre"
         },
         {
@@ -520,6 +522,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sunflower-lecithin",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "labels": "en:organic",
                     "nutrients": {
                         "alcohol": {
@@ -763,12 +766,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 18.7,
-                    "quantity_estimate": 25.45,
+                    "percent_estimate": 18.9,
+                    "quantity_estimate": 25.75,
                     "text": "lécithines de tournesol"
                 }
             ],
-            "percent_estimate": 18.7,
+            "percent_estimate": 18.9,
             "text": "émulsifiant"
         },
         {
@@ -778,6 +781,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vanilla-extract",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1015,8 +1019,8 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 18.7,
-            "quantity_estimate": 25.44,
+            "percent_estimate": 18.4,
+            "quantity_estimate": 25.15,
             "text": "extrait de vanille"
         },
         {
@@ -1027,6 +1031,7 @@
             "difference": 55.1,
             "id": "en:cocoa",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1265,7 +1270,7 @@
             },
             "percent_estimate": 14.9,
             "percent_hidden": 70,
-            "quantity_estimate": 20.31,
+            "quantity_estimate": 20.36,
             "text": "Cacao"
         }
     ],
@@ -1612,7 +1617,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 390.7121226052681,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 18229.562953778353,
+            "nutrient_penalty": 2865912.992373034,
+            "total": 2884533.2674494176
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

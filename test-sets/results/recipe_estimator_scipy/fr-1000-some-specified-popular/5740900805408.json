@@ -22,10 +22,11 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "16400",
             "ciqual_proxy_food_code": "16400",
-            "difference": 4.56,
+            "difference": 4.6,
             "ecobalyse_code": "butter",
             "id": "en:butter",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -265,7 +266,7 @@
             },
             "percent_estimate": 59.4,
             "percent_hidden": 64,
-            "quantity_estimate": 59.45,
+            "quantity_estimate": 59.41,
             "text": "butter"
         },
         {
@@ -276,6 +277,7 @@
             "ecobalyse_code": "rapeseed-oil",
             "id": "en:rapeseed-oil",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -514,7 +516,7 @@
                 }
             },
             "percent_estimate": 28.7,
-            "quantity_estimate": 28.7,
+            "quantity_estimate": 28.75,
             "text": "rapeseed oil"
         },
         {
@@ -525,6 +527,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -762,8 +765,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 10.0,
-            "quantity_estimate": 10.01,
+            "percent_estimate": 5.97,
+            "quantity_estimate": 5.97,
             "text": "water"
         },
         {
@@ -773,6 +776,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1016,8 +1020,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.98,
-            "quantity_estimate": 0.98,
+            "percent_estimate": 5.01,
+            "quantity_estimate": 5.01,
             "text": "lactic culture"
         },
         {
@@ -1027,6 +1031,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1264,16 +1269,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.86,
-            "quantity_estimate": 0.86,
+            "percent_estimate": 0.88,
+            "quantity_estimate": 0.88,
             "text": "salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.0713,
-        "total_difference": 4.56,
+        "relative_difference": 0.0719,
+        "total_difference": 4.6,
         "total_specified_input_percent": 64
     },
     "ingredients_text": "butter (64%) (milk), rapeseed oil, water, lactic culture (milk), salt, for allergens, see ingredients in bold,",
@@ -1580,7 +1585,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 130.0376062492536,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 7.63221852069762,
+            "nutrient_penalty": 17132.743667598057,
+            "total": 17270.41349236801
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

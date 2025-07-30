@@ -23,6 +23,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,8 +260,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 49.0,
-            "quantity_estimate": 76.57,
+            "percent_estimate": 49.2,
+            "quantity_estimate": 77.14,
             "text": "Eau"
         },
         {
@@ -268,9 +269,10 @@
             "ciqual_food_code": "20505",
             "ciqual_food_code_used": "20505",
             "ciqual_proxy_food_code": null,
-            "difference": 17.0,
+            "difference": 16.9,
             "id": "en:green-lentils",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -508,9 +510,9 @@
                     "percent_nom": 0.00098
                 }
             },
-            "percent_estimate": 49.0,
+            "percent_estimate": 48.9,
             "percent_hidden": 32,
-            "quantity_estimate": 76.53,
+            "quantity_estimate": 76.67,
             "text": "lentilles vertes"
         },
         {
@@ -520,6 +522,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -757,8 +760,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.66,
-            "quantity_estimate": 1.03,
+            "percent_estimate": 0.48,
+            "quantity_estimate": 0.75,
             "text": "huile de tournesol"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.5,
-            "quantity_estimate": 0.79,
+            "percent_estimate": 0.47,
+            "quantity_estimate": 0.73,
             "text": "sel marin"
         },
         {
@@ -1015,6 +1019,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:garlic-puree",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1252,8 +1257,8 @@
                     "percent_nom": 0.00075
                 }
             },
-            "percent_estimate": 0.44,
-            "quantity_estimate": 0.68,
+            "percent_estimate": 0.46,
+            "quantity_estimate": 0.72,
             "text": "purée d'ail"
         },
         {
@@ -1263,6 +1268,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:extra-virgin-olive-oil",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1500,8 +1506,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.2,
-            "quantity_estimate": 0.31,
+            "percent_estimate": 0.27,
+            "quantity_estimate": 0.42,
             "text": "huile d'olive vierge extra"
         },
         {
@@ -1511,6 +1517,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:black-pepper",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1748,16 +1755,16 @@
                     "percent_nom": 0.00099
                 }
             },
-            "percent_estimate": 0.18,
-            "quantity_estimate": 0.28,
+            "percent_estimate": 0.27,
+            "quantity_estimate": 0.42,
             "text": "poivre noir"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.531,
-        "total_difference": 17.0,
+        "relative_difference": 0.528,
+        "total_difference": 16.9,
         "total_specified_input_percent": 32
     },
     "ingredients_text": "Eau, lentilles vertes* 32%, huile de tournesol*, sel marin, purée d'ail*, huile d'olive* vierge extra, poivre noir*. *Produits issus de l'agriculture biologique.",
@@ -2091,7 +2098,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 766.6115587381393,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 39799.562087664126,
+            "nutrient_penalty": 1671677.1895120745,
+            "total": 1712243.3631584768
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

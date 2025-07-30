@@ -16,6 +16,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -252,8 +253,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 77.3,
-            "quantity_estimate": 77.34,
+            "percent_estimate": 62.7,
+            "quantity_estimate": 62.72,
             "text": "Wasser"
         },
         {
@@ -261,9 +262,10 @@
             "ciqual_food_code": "2012",
             "ciqual_food_code_used": "2012",
             "ciqual_proxy_food_code": null,
-            "difference": 4.01,
+            "difference": 9.23,
             "id": "en:orange-juice-from-concentrate",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -500,9 +502,9 @@
                     "percent_nom": 2.2e-05
                 }
             },
-            "percent_estimate": 14.0,
+            "percent_estimate": 8.77,
             "percent_hidden": 18,
-            "quantity_estimate": 13.99,
+            "quantity_estimate": 8.77,
             "text": "Orangensaft aus Orangensaftkonzentrat"
         },
         {
@@ -512,6 +514,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -748,8 +751,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 5.56,
-            "quantity_estimate": 5.56,
+            "percent_estimate": 6.07,
+            "quantity_estimate": 6.07,
             "text": "Zucker"
         },
         {
@@ -759,6 +762,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e290",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1001,8 +1005,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 2.31,
-            "quantity_estimate": 2.31,
+            "percent_estimate": 6.0,
+            "quantity_estimate": 6.0,
             "text": "Kohlensäure"
         },
         {
@@ -1012,6 +1016,7 @@
             "ciqual_proxy_food_code": null,
             "id": "de:natürliches-orangenöl",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1254,8 +1259,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.62,
-            "quantity_estimate": 0.62,
+            "percent_estimate": 5.64,
+            "quantity_estimate": 5.64,
             "text": "natürliches Orangenöl"
         },
         {
@@ -1265,6 +1270,7 @@
             "ciqual_proxy_food_code": null,
             "id": "de:",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1508,8 +1514,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.1,
-            "quantity_estimate": 0.1,
+            "percent_estimate": 5.61,
+            "quantity_estimate": 5.61,
             "text": "\""
         },
         {
@@ -1519,6 +1525,7 @@
             "ciqual_proxy_food_code": null,
             "id": "de:aus-eu-und-nicht-eu-landwirtschaft-b-2",
             "index": 6,
+            "initial_estimate": 0.7874015748031497,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1761,15 +1768,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.09,
-            "quantity_estimate": 0.09,
+            "percent_estimate": 5.2,
+            "quantity_estimate": 5.2,
             "text": "aus EU-und Nicht-EU-Landwirtschaft B 2"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.223,
-        "total_difference": 4.01,
+        "relative_difference": 0.513,
+        "total_difference": 9.23,
         "total_specified_input_percent": 18
     },
     "ingredients_text": "Wasser, Orangensaft aus Orangensaftkonzentrat* (18%), Zucker*, Kohlensäure, natürliches Orangenöl*. &quot;Aus kontrolliert biologischem Anbau, aus EU-und Nicht-EU-Landwirtschaft B 2",
@@ -2082,7 +2089,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 350.7469671724262,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 7.230673942882504,
+            "nutrient_penalty": 236949.47601514476,
+            "total": 237307.45365626007
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

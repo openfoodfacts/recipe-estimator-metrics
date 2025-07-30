@@ -32,6 +32,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:pasteurized-milk-and-cream",
             "index": 0,
+            "initial_estimate": 50.39370078740158,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -269,8 +270,8 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 60.7,
-            "quantity_estimate": 143.89,
+            "percent_estimate": 58.4,
+            "quantity_estimate": 145.86,
             "text": "pasteurized milk and cream"
         },
         {
@@ -280,6 +281,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 1,
+            "initial_estimate": 25.19685039370079,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -523,8 +525,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 19.1,
-            "quantity_estimate": 45.37,
+            "percent_estimate": 20.0,
+            "quantity_estimate": 49.93,
             "text": "lactic ferments"
         },
         {
@@ -534,6 +536,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:garlic",
             "index": 2,
+            "initial_estimate": 12.598425196850394,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -771,8 +774,8 @@
                     "percent_nom": 0.00075
                 }
             },
-            "percent_estimate": 18.5,
-            "quantity_estimate": 43.89,
+            "percent_estimate": 19.9,
+            "quantity_estimate": 49.83,
             "text": "garlic"
         },
         {
@@ -780,9 +783,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 1.21,
+            "difference": 1.22,
             "id": "en:herb",
             "index": 3,
+            "initial_estimate": 6.299212598425197,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1026,9 +1030,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.59,
+            "percent_estimate": 0.58,
             "percent_hidden": 1.8,
-            "quantity_estimate": 1.39,
+            "quantity_estimate": 1.44,
             "text": "herbs"
         },
         {
@@ -1038,6 +1042,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 3.1496062992125986,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1275,8 +1280,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.47,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 0.45,
+            "quantity_estimate": 1.13,
             "text": "salt"
         },
         {
@@ -1286,6 +1291,7 @@
             "ciqual_proxy_food_code": "11015",
             "id": "en:pepper",
             "index": 5,
+            "initial_estimate": 1.5748031496062993,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1523,8 +1529,8 @@
                     "percent_nom": 0.00099
                 }
             },
-            "percent_estimate": 0.41,
-            "quantity_estimate": 0.97,
+            "percent_estimate": 0.44,
+            "quantity_estimate": 1.1,
             "text": "pepper"
         },
         {
@@ -1537,6 +1543,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e202",
                     "index": 6,
+                    "initial_estimate": 0.7874015748031497,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -1780,21 +1787,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.11,
-                    "quantity_estimate": 0.26,
+                    "percent_estimate": 0.22,
+                    "quantity_estimate": 0.54,
                     "text": "potassium sorbate"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 0.11,
+            "percent_estimate": 0.22,
             "text": "preservative"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.672,
-        "total_difference": 1.21,
+        "relative_difference": 0.678,
+        "total_difference": 1.22,
         "total_specified_input_percent": 1.8
     },
     "ingredients_text": "pasteurized milk and cream, lactic ferments, garlic and herbs 1,8%, salt, pepper, may contain traces of nuts, preservative (potassium sorbate)",
@@ -2133,7 +2140,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 722.894027514359,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 104879.25956406572,
+            "nutrient_penalty": 3001273.0159266237,
+            "total": 3106875.169518204
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

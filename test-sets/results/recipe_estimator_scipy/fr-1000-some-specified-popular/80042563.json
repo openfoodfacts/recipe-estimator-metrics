@@ -34,6 +34,7 @@
             "ecobalyse_code": "tomato-heated-greenhouse-eu",
             "id": "en:tomato",
             "index": 0,
+            "initial_estimate": 66.66666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -283,6 +284,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 1,
+            "initial_estimate": 33.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -521,7 +523,7 @@
                 }
             },
             "percent_estimate": 0.27,
-            "quantity_estimate": 0.49,
+            "quantity_estimate": 0.5,
             "text": "sale"
         }
     ],
@@ -858,7 +860,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 902.287358755239,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 16389.224921866138,
+            "nutrient_penalty": 5589.738755277564,
+            "total": 22881.251035898942
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=20000"
+        "status_message": "Optimization terminated successfully."
     }
 }

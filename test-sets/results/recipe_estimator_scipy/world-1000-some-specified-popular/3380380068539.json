@@ -19,9 +19,10 @@
             "ciqual_food_code": "9520",
             "ciqual_food_code_used": "9520",
             "ciqual_proxy_food_code": null,
-            "difference": 5.97,
+            "difference": 4.24,
             "id": "en:semi-wholemeal-rice-flour",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -258,9 +259,9 @@
                     "percent_nom": 0.0014
                 }
             },
-            "percent_estimate": 53.5,
+            "percent_estimate": 55.3,
             "percent_hidden": 59.5,
-            "quantity_estimate": 56.52,
+            "quantity_estimate": 58.25,
             "text": "farine de riz demi-complète"
         },
         {
@@ -268,9 +269,10 @@
             "ciqual_food_code": "9540",
             "ciqual_food_code_used": "9540",
             "ciqual_proxy_food_code": null,
-            "difference": 20.1,
+            "difference": 18.8,
             "id": "en:buckwheat-flour",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -507,9 +509,9 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 45.1,
+            "percent_estimate": 43.8,
             "percent_hidden": 25,
-            "quantity_estimate": 47.64,
+            "quantity_estimate": 46.21,
             "text": "farine de sarrasin"
         },
         {
@@ -517,9 +519,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "9410",
             "ciqual_proxy_food_code": "9410",
-            "difference": 24.1,
+            "difference": 24.5,
             "id": "en:sorghum-flour",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -756,9 +759,9 @@
                     "percent_nom": 0.0019
                 }
             },
-            "percent_estimate": 0.9,
+            "percent_estimate": 0.48,
             "percent_hidden": 25,
-            "quantity_estimate": 0.95,
+            "quantity_estimate": 0.51,
             "text": "farine de sorgho"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1004,16 +1008,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.45,
-            "quantity_estimate": 0.47,
+            "percent_estimate": 0.43,
+            "quantity_estimate": 0.45,
             "text": "sel marin"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.458,
-        "total_difference": 50.2,
+        "relative_difference": 0.435,
+        "total_difference": 47.6,
         "total_specified_input_percent": 110.0
     },
     "ingredients_text": "farine de riz demi-complète (59,5%), farine de sarrasin (25%), farine de sorgho (25%), sel marin.",
@@ -1334,7 +1338,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 398.6890990878951,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2165.648439575591,
+            "nutrient_penalty": 80289.89626779222,
+            "total": 82854.23380645571
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=40000"
+        "status_message": "Optimization terminated successfully."
     }
 }

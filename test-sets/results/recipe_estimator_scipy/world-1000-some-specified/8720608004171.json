@@ -18,9 +18,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 8.21,
+            "difference": 12.1,
             "id": "en:dog-rose",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -263,9 +264,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 53.2,
+            "percent_estimate": 57.1,
             "percent_hidden": 45,
-            "quantity_estimate": 53.21,
+            "quantity_estimate": 57.14,
             "text": "églantier"
         },
         {
@@ -273,9 +274,10 @@
             "ciqual_food_code": "20028",
             "ciqual_food_code_used": "20028",
             "ciqual_proxy_food_code": null,
-            "difference": 8.81,
+            "difference": 11.4,
             "id": "en:fennel",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -512,9 +514,9 @@
                     "percent_nom": 0.00019
                 }
             },
-            "percent_estimate": 31.2,
+            "percent_estimate": 28.6,
             "percent_hidden": 40,
-            "quantity_estimate": 31.19,
+            "quantity_estimate": 28.57,
             "text": "fenouil"
         },
         {
@@ -522,9 +524,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 0.6,
+            "difference": 0.71,
             "id": "en:aniseed",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -767,16 +770,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 15.6,
+            "percent_estimate": 14.3,
             "percent_hidden": 15,
-            "quantity_estimate": 15.6,
+            "quantity_estimate": 14.29,
             "text": "anis"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.176,
-        "total_difference": 17.6,
+        "relative_difference": 0.243,
+        "total_difference": 24.3,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "églantier (45%), fenouil (40%), anis (15%)",
@@ -1076,7 +1079,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 0.0,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4.263256414560601e-12,
+            "nutrient_penalty": 0,
+            "total": 4.263256414560601e-12
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

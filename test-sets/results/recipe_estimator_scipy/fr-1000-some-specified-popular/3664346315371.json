@@ -20,6 +20,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -257,8 +258,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 20.5,
-            "quantity_estimate": 20.49,
+            "percent_estimate": 20.0,
+            "quantity_estimate": 20.01,
             "text": "sugar"
         },
         {
@@ -270,9 +271,10 @@
                     "ciqual_food_code": "16030",
                     "ciqual_food_code_used": "16030",
                     "ciqual_proxy_food_code": null,
-                    "difference": 9.05,
+                    "difference": 9.01,
                     "id": "en:cocoa-butter",
                     "index": 1,
+                    "initial_estimate": 25.806451612903224,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -510,14 +512,14 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 20.1,
+                    "percent_estimate": 20.0,
                     "percent_hidden": 11,
-                    "quantity_estimate": 20.06,
+                    "quantity_estimate": 20.01,
                     "text": "cocoa butter"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 20.1,
+            "percent_estimate": 20.0,
             "text": "lean cocoa"
         },
         {
@@ -527,6 +529,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:powder",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -770,8 +773,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 19.9,
-            "quantity_estimate": 19.96,
+            "percent_estimate": 20.0,
+            "quantity_estimate": 20.01,
             "text": "powder"
         },
         {
@@ -781,6 +784,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:flavouring",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1024,8 +1028,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 19.9,
-            "quantity_estimate": 19.91,
+            "percent_estimate": 20.0,
+            "quantity_estimate": 19.99,
             "text": "aroma"
         },
         {
@@ -1033,9 +1037,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 27.4,
+            "difference": 27.0,
             "id": "en:cacas",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -1279,17 +1284,17 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 19.6,
+            "percent_estimate": 20.0,
             "percent_hidden": 47,
-            "quantity_estimate": 19.63,
+            "quantity_estimate": 19.99,
             "text": "cacas"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.628,
-        "total_difference": 36.4,
+        "relative_difference": 0.621,
+        "total_difference": 36.0,
         "total_specified_input_percent": 58
     },
     "ingredients_text": "sugar, lean cocoa (11% cocoa butter) powder, aroma, cacas 47% minimum, may contain milk and soy,",
@@ -1642,7 +1647,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 5906.650215220025,
+            "ingredient_not_half_previous_penalty": 99.86475762222648,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2.8841080703472244,
+            "nutrient_penalty": 18753012.869534288,
+            "total": 18759022.2686152
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

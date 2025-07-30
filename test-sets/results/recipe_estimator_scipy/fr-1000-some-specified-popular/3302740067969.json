@@ -18,9 +18,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "26140",
             "ciqual_proxy_food_code": "26140",
-            "difference": 14.0,
+            "difference": 3.77,
             "id": "en:fish-meat",
             "index": 0,
+            "initial_estimate": 50.19607843137255,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -252,9 +253,9 @@
                     "percent_nom": 0.00061
                 }
             },
-            "percent_estimate": 29.0,
+            "percent_estimate": 39.2,
             "percent_hidden": 43,
-            "quantity_estimate": 28.98,
+            "quantity_estimate": 39.23,
             "text": "Chair de poisson"
         },
         {
@@ -265,6 +266,7 @@
             "ecobalyse_code": "tap-water",
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.098039215686274,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -502,8 +504,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 29.0,
-            "quantity_estimate": 29.01,
+            "percent_estimate": 39.2,
+            "quantity_estimate": 39.23,
             "text": "eau"
         },
         {
@@ -517,6 +519,7 @@
                     "ciqual_proxy_food_code": "9410",
                     "id": "en:wheat",
                     "index": 2,
+                    "initial_estimate": 12.549019607843137,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -754,13 +757,13 @@
                             "percent_nom": 0.0019
                         }
                     },
-                    "percent_estimate": 18.2,
-                    "quantity_estimate": 18.21,
+                    "percent_estimate": 12.5,
+                    "quantity_estimate": 12.53,
                     "text": "dont blé"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 18.2,
+            "percent_estimate": 12.5,
             "text": "amidons"
         },
         {
@@ -771,6 +774,7 @@
             "ecobalyse_code": "rapeseed-oil",
             "id": "en:colza-oil",
             "index": 3,
+            "initial_estimate": 6.2745098039215685,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1008,8 +1012,8 @@
                     "percent_nom": 2.6e-05
                 }
             },
-            "percent_estimate": 17.1,
-            "quantity_estimate": 17.13,
+            "percent_estimate": 2.41,
+            "quantity_estimate": 2.41,
             "text": "huile de colza"
         },
         {
@@ -1020,6 +1024,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 4,
+            "initial_estimate": 3.1372549019607843,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1257,8 +1262,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 2.35,
-            "quantity_estimate": 2.35,
+            "percent_estimate": 2.41,
+            "quantity_estimate": 2.41,
             "text": "sucre"
         },
         {
@@ -1268,6 +1273,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 5,
+            "initial_estimate": 1.5686274509803921,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1505,8 +1511,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.54,
-            "quantity_estimate": 1.54,
+            "percent_estimate": 1.4,
+            "quantity_estimate": 1.4,
             "text": "sel"
         },
         {
@@ -1517,6 +1523,7 @@
             "id": "en:natural-flavouring",
             "index": 6,
             "ingredients": [],
+            "initial_estimate": 0.7843137254901961,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1760,8 +1767,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.5,
-            "quantity_estimate": 1.5,
+            "percent_estimate": 1.4,
+            "quantity_estimate": 1.4,
             "text": "arômes naturels"
         },
         {
@@ -1774,6 +1781,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e160c",
                     "index": 7,
+                    "initial_estimate": 0.39215686274509803,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -2017,21 +2025,21 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 1.31,
-                    "quantity_estimate": 1.31,
+                    "percent_estimate": 1.4,
+                    "quantity_estimate": 1.4,
                     "text": "extrait de paprika"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 1.31,
+            "percent_estimate": 1.4,
             "text": "colorant"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.326,
-        "total_difference": 14.0,
+        "relative_difference": 0.0877,
+        "total_difference": 3.77,
         "total_specified_input_percent": 43
     },
     "ingredients_text": "Chair de poisson* 43%, eau, amidons (dont blé) huile de colza, sucre, sel, arômes naturels (contient crustacés, mollusques, poissons), colorant: extrait de paprika, Traces éventuelles de lait,",
@@ -2358,7 +2366,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 333.45436334573805,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 6.21696746844691,
+            "nutrient_penalty": 2056378.4243904985,
+            "total": 2056718.0957213126
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

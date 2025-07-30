@@ -16,9 +16,10 @@
             "ciqual_food_code": "19402",
             "ciqual_food_code_used": "19402",
             "ciqual_proxy_food_code": null,
-            "difference": 37.2,
+            "difference": 39.5,
             "id": "en:light-cream",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "D",
@@ -255,9 +256,9 @@
                     "percent_nom": 0.00027
                 }
             },
-            "percent_estimate": 59.8,
+            "percent_estimate": 57.5,
             "percent_hidden": 97,
-            "quantity_estimate": 59.84,
+            "quantity_estimate": 57.49,
             "text": "Crème légère"
         },
         {
@@ -267,6 +268,7 @@
             "ciqual_proxy_food_code": "9510",
             "id": "en:modified-tapioca-starch",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -503,8 +505,8 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 20.1,
-            "quantity_estimate": 20.17,
+            "percent_estimate": 21.3,
+            "quantity_estimate": 21.28,
             "text": "amidon de tapioca modifié"
         },
         {
@@ -514,6 +516,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:lactic-ferments",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -756,15 +759,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 20.1,
-            "quantity_estimate": 20.1,
+            "percent_estimate": 21.3,
+            "quantity_estimate": 21.27,
             "text": "ferments lactiques"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.384,
-        "total_difference": 37.2,
+        "relative_difference": 0.408,
+        "total_difference": 39.5,
         "total_specified_input_percent": 97
     },
     "ingredients_text": "Crème légère 97%, amidon de tapioca modifié, ferments lactiques.",
@@ -1083,7 +1086,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 180.95899573152366,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 10.843211737650904,
+            "nutrient_penalty": 3507497.3892118204,
+            "total": 3507689.1914192894
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

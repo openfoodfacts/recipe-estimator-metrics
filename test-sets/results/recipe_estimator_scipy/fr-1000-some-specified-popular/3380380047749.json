@@ -25,6 +25,7 @@
             "ecobalyse_code": "flour-organic",
             "id": "en:buckwheat-flour",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "nutrients": {
@@ -263,8 +264,8 @@
                     "percent_nom": 0.0023
                 }
             },
-            "percent_estimate": 98.7,
-            "quantity_estimate": 106.39,
+            "percent_estimate": 97.4,
+            "quantity_estimate": 106.44,
             "text": "buckwheat flour"
         },
         {
@@ -275,9 +276,10 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": null,
                     "ciqual_proxy_food_code": null,
-                    "difference": 1.33,
+                    "difference": 0.0,
                     "id": "en:lt",
                     "index": 1,
+                    "initial_estimate": 28.571428571428573,
                     "is_in_taxonomy": 0,
                     "nutrients": {
                         "alcohol": {
@@ -521,15 +523,15 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.67,
+                    "percent_estimate": 2.0,
                     "percent_hidden": 2,
-                    "quantity_estimate": 0.72,
+                    "quantity_estimate": 2.18,
                     "text": "lt"
                 }
             ],
             "is_in_taxonomy": 0,
             "labels": "en:organic",
-            "percent_estimate": 0.67,
+            "percent_estimate": 2.0,
             "text": "cane sugar complete"
         },
         {
@@ -539,6 +541,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -776,16 +779,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.63,
-            "quantity_estimate": 0.68,
+            "percent_estimate": 0.62,
+            "quantity_estimate": 0.67,
             "text": "sea salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.665,
-        "total_difference": 1.33,
+        "relative_difference": 0.0,
+        "total_difference": 0.0,
         "total_specified_input_percent": 2
     },
     "ingredients_text": "buckwheat flour*, cane sugar* complete (,lt,2%), sea salt - *from organic farming,",
@@ -1104,7 +1107,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 514.5395546465999,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2789.159574419969,
+            "nutrient_penalty": 1033476.3064745882,
+            "total": 1036780.0056036548
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

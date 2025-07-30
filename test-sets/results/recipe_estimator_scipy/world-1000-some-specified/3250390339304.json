@@ -19,9 +19,10 @@
             "ciqual_food_code": "20012",
             "ciqual_food_code_used": "20012",
             "ciqual_proxy_food_code": null,
-            "difference": 74.2,
+            "difference": 75.0,
             "id": "en:curly-endive",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -258,9 +259,9 @@
                     "percent_nom": 0.00061
                 }
             },
-            "percent_estimate": 99.2,
+            "percent_estimate": 100.0,
             "percent_hidden": 25,
-            "quantity_estimate": 119.85,
+            "quantity_estimate": 120.03,
             "text": "Frisée"
         },
         {
@@ -268,9 +269,10 @@
             "ciqual_food_code": "20099",
             "ciqual_food_code_used": "20099",
             "ciqual_proxy_food_code": null,
-            "difference": 6.52,
+            "difference": 6.99,
             "id": "en:corn-salad",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -507,9 +509,9 @@
                     "percent_nom": 0.00014000000000000001
                 }
             },
-            "percent_estimate": 0.48,
+            "percent_estimate": 0.01,
             "percent_hidden": 7,
-            "quantity_estimate": 0.58,
+            "quantity_estimate": 0.01,
             "text": "Mâche"
         },
         {
@@ -517,9 +519,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 4.83,
+            "difference": 5.0,
             "id": "en:radicchio",
             "index": 2,
+            "initial_estimate": 13.333333333333334,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -762,9 +765,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.17,
+            "percent_estimate": 0.0,
             "percent_hidden": 5,
-            "quantity_estimate": 0.21,
+            "quantity_estimate": 0.0,
             "text": "Chicorée Rouge"
         },
         {
@@ -774,6 +777,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:sans-conservateur-conformement-a-la-reglementation",
             "index": 3,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1016,15 +1020,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.13,
-            "quantity_estimate": 0.15,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "Sans conservateur conformément à la réglementation"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 2.31,
-        "total_difference": 85.6,
+        "relative_difference": 2.35,
+        "total_difference": 87.0,
         "total_specified_input_percent": 37
     },
     "ingredients_text": "Frisée (mini 25%) Mâche (mini 7%) Chicorée Rouge (mini 5%) Sans conservateur conformément à la réglementation",
@@ -1327,7 +1331,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 600.0970739817898,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 8019.328617884377,
+            "nutrient_penalty": 509218.5307939447,
+            "total": 517837.95648581086
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

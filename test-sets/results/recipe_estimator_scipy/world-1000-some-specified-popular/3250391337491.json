@@ -24,9 +24,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 1.04,
+            "difference": 2.4,
             "id": "en:cane-sugar",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -263,9 +264,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 55.4,
+            "percent_estimate": 56.8,
             "percent_hidden": 54.4,
-            "quantity_estimate": 57.35,
+            "quantity_estimate": 56.8,
             "text": "Sucre de canne"
         },
         {
@@ -273,9 +274,10 @@
             "ciqual_food_code": "13014",
             "ciqual_food_code_used": "13014",
             "ciqual_proxy_food_code": null,
-            "difference": 21.0,
+            "difference": 3.07,
             "id": "en:strawberry",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -512,9 +514,9 @@
                     "percent_nom": 0.00011
                 }
             },
-            "percent_estimate": 39.0,
+            "percent_estimate": 21.1,
             "percent_hidden": 18,
-            "quantity_estimate": 40.33,
+            "quantity_estimate": 21.07,
             "text": "fraises"
         },
         {
@@ -522,9 +524,10 @@
             "ciqual_food_code": "13008",
             "ciqual_food_code_used": "13008",
             "ciqual_proxy_food_code": null,
-            "difference": 11.9,
+            "difference": 5.04,
             "id": "en:cherry",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -761,9 +764,9 @@
                     "percent_nom": 5.9999999999999995e-05
                 }
             },
-            "percent_estimate": 4.06,
+            "percent_estimate": 21.0,
             "percent_hidden": 16,
-            "quantity_estimate": 4.2,
+            "quantity_estimate": 21.04,
             "text": "cerises"
         },
         {
@@ -771,9 +774,10 @@
             "ciqual_food_code": "13019",
             "ciqual_food_code_used": "13019",
             "ciqual_proxy_food_code": null,
-            "difference": 14.6,
+            "difference": 15.6,
             "id": "en:redcurrant",
             "index": 3,
+            "initial_estimate": 6.349206349206349,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1010,9 +1014,9 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 1.43,
+            "percent_estimate": 0.41,
             "percent_hidden": 16,
-            "quantity_estimate": 1.48,
+            "quantity_estimate": 0.41,
             "text": "groseilles"
         },
         {
@@ -1025,6 +1029,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e440a",
                     "index": 4,
+                    "initial_estimate": 3.1746031746031744,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1267,12 +1272,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.04,
+                    "percent_estimate": 0.38,
+                    "quantity_estimate": 0.38,
                     "text": "pectines"
                 }
             ],
-            "percent_estimate": 0.04,
+            "percent_estimate": 0.38,
             "text": "gélifiant"
         },
         {
@@ -1285,6 +1290,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:acide-citrique-ingredients-issus-de-l-agriculture-biologiquepreparee-avec-50-g-de-fruits-pour",
                     "index": 5,
+                    "initial_estimate": 1.5873015873015872,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1527,22 +1533,22 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.03,
+                    "percent_estimate": 0.31,
                     "quantity": "100 g",
-                    "quantity_estimate": 0.03,
+                    "quantity_estimate": 0.31,
                     "quantity_g": 100,
                     "text": "acide citrique**Ingrédients issus de l'agriculture biologiquePréparée avec 50 g de fruits pour"
                 }
             ],
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.31,
             "text": "acidifiant"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.465,
-        "total_difference": 48.5,
+        "relative_difference": 0.25,
+        "total_difference": 26.1,
         "total_specified_input_percent": 104.0
     },
     "ingredients_text": "Sucre de canne** (54,4%), fraises** 18%, cerises ** 16%, groseilles** 16%, gélifiant : pectines, acidifiant : acide citrique**Ingrédients issus de l'agriculture biologiquePréparée avec 50 g de fruits pour 100 g",
@@ -1871,7 +1877,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 282.47261480643334,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4.067369974742974,
+            "nutrient_penalty": 207137.72249657864,
+            "total": 207424.26248135982
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

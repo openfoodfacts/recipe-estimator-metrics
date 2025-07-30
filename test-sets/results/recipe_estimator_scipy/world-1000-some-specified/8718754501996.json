@@ -21,6 +21,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -257,8 +258,8 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 81.8,
-            "quantity_estimate": 164.03,
+            "percent_estimate": 81.7,
+            "quantity_estimate": 164.32,
             "text": "Pommes de terre"
         },
         {
@@ -268,6 +269,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -504,8 +506,8 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 17.7,
-            "quantity_estimate": 35.5,
+            "percent_estimate": 17.6,
+            "quantity_estimate": 35.44,
             "text": "huile de tournesol"
         },
         {
@@ -513,9 +515,10 @@
             "ciqual_food_code": "11082",
             "ciqual_food_code_used": "11082",
             "ciqual_proxy_food_code": null,
-            "difference": 0.45,
+            "difference": 0.47,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -752,9 +755,9 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.45,
+            "percent_estimate": 0.43,
             "percent_hidden": 0.9,
-            "quantity_estimate": 0.91,
+            "quantity_estimate": 0.86,
             "text": "sel marin"
         },
         {
@@ -767,6 +770,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e392",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1009,12 +1013,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.03,
-                    "quantity_estimate": 0.05,
+                    "percent_estimate": 0.19,
+                    "quantity_estimate": 0.38,
                     "text": "extrait de romarin"
                 }
             ],
-            "percent_estimate": 0.03,
+            "percent_estimate": 0.19,
             "text": "antioxydants"
         },
         {
@@ -1024,6 +1028,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:e300",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1266,8 +1271,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.04,
+            "percent_estimate": 0.13,
+            "quantity_estimate": 0.26,
             "text": "acide ascorbique"
         },
         {
@@ -1277,6 +1282,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:culture-controlee",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -1520,15 +1526,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.03,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "culture contrôlée"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.5,
-        "total_difference": 0.45,
+        "relative_difference": 0.522,
+        "total_difference": 0.47,
         "total_specified_input_percent": 0.9
     },
     "ingredients_text": "Pommes de terre*, huile de tournesol*, sel marin (0,9%), antioxydants: extrait de romarin*, acide ascorbique. *Issu de culture biologique contrôlée.",
@@ -1838,7 +1844,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 638.258176375385,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 60757.61541092297,
+            "nutrient_penalty": 3379915.221641575,
+            "total": 3441311.095228873
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

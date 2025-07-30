@@ -23,6 +23,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,8 +260,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 94.7,
-            "quantity_estimate": 95.4,
+            "percent_estimate": 94.1,
+            "quantity_estimate": 94.79,
             "text": "Wasser"
         },
         {
@@ -268,9 +269,10 @@
             "ciqual_food_code": "9310",
             "ciqual_food_code_used": "9310",
             "ciqual_proxy_food_code": null,
-            "difference": 6.71,
+            "difference": 6.84,
             "id": "en:wholemeal-oat",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -507,9 +509,9 @@
                     "percent_nom": 0.0039700000000000004
                 }
             },
-            "percent_estimate": 4.79,
+            "percent_estimate": 4.66,
             "percent_hidden": 11.5,
-            "quantity_estimate": 4.83,
+            "quantity_estimate": 4.7,
             "text": "Vollkornhafer"
         },
         {
@@ -519,6 +521,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sunflower-oil",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -755,16 +758,16 @@
                     "percent_nom": 5e-05
                 }
             },
-            "percent_estimate": 0.48,
-            "quantity_estimate": 0.48,
+            "percent_estimate": 1.28,
+            "quantity_estimate": 1.29,
             "text": "Sonnenblumenöl"
         }
     ],
     "ingredients_lc": "de",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.583,
-        "total_difference": 6.71,
+        "relative_difference": 0.595,
+        "total_difference": 6.84,
         "total_specified_input_percent": 11.5
     },
     "ingredients_text": "Wasser, Vollkornhafer (11,5 %), Sonnenblumenöl.",
@@ -1090,7 +1093,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 437.58785305659376,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 232.10475679292983,
+            "nutrient_penalty": 3655785.1694114194,
+            "total": 3656454.862021269
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

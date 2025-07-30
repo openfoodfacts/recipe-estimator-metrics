@@ -10,6 +10,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:unknown-a",
                     "index": 0,
+                    "initial_estimate": 51.61290322580645,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -252,8 +253,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 51.1,
-                    "quantity_estimate": 51.11,
+                    "percent_estimate": 51.6,
+                    "quantity_estimate": 51.61,
                     "text": "unknown a"
                 },
                 {
@@ -263,6 +264,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:unknown-b",
                     "index": 1,
+                    "initial_estimate": 25.806451612903224,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -505,8 +507,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 25.0,
-                    "quantity_estimate": 25.0,
+                    "percent_estimate": 25.8,
+                    "quantity_estimate": 25.81,
                     "text": "unknown b"
                 },
                 {
@@ -516,6 +518,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:unknown-c",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -758,8 +761,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 11.7,
-                    "quantity_estimate": 11.73,
+                    "percent_estimate": 12.9,
+                    "quantity_estimate": 12.9,
                     "text": "unknown c"
                 },
                 {
@@ -769,6 +772,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:unknown-d",
                     "index": 3,
+                    "initial_estimate": 6.451612903225806,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1011,8 +1015,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 6.91,
-                    "quantity_estimate": 6.91,
+                    "percent_estimate": 6.45,
+                    "quantity_estimate": 6.45,
                     "text": "unknown d"
                 },
                 {
@@ -1022,6 +1026,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:unknown-e",
                     "index": 4,
+                    "initial_estimate": 3.225806451612903,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1264,8 +1269,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 5.25,
-                    "quantity_estimate": 5.25,
+                    "percent_estimate": 3.23,
+                    "quantity_estimate": 3.23,
                     "text": "unknown e"
                 }
             ],
@@ -1305,7 +1310,15 @@
     "recipe_estimator": {
         "ingredient_count": 5,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 8.881784197001252e-15,
+            "mass_less_than_100_penalty": 7.105427357601002e-07,
+            "mass_more_than_100_penalty": 0,
+            "nutrient_penalty": 0,
+            "total": 7.105427446418844e-07
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

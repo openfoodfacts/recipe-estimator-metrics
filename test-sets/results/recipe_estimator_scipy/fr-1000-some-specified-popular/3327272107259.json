@@ -26,9 +26,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 39.2,
+            "difference": 39.3,
             "id": "fr:cacahuetes-des-ameriques-grillees",
             "index": 0,
+            "initial_estimate": 53.333333333333336,
             "is_in_taxonomy": 0,
             "nutrients": {
                 "alcohol": {
@@ -272,9 +273,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 46.8,
+            "percent_estimate": 46.7,
             "percent_hidden": 86,
-            "quantity_estimate": 51.39,
+            "quantity_estimate": 60.36,
             "text": "CACAHUETES des Amériques grillées"
         },
         {
@@ -289,6 +290,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:sal-tree",
                     "index": 1,
+                    "initial_estimate": 17.77777777777778,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -532,8 +534,8 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 22.8,
-                    "quantity_estimate": 25.0,
+                    "percent_estimate": 26.4,
+                    "quantity_estimate": 34.03,
                     "text": "sal"
                 },
                 {
@@ -543,6 +545,7 @@
                     "ciqual_proxy_food_code": "18100",
                     "id": "en:cocoa",
                     "index": 2,
+                    "initial_estimate": 8.88888888888889,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -780,14 +783,14 @@
                             "percent_nom": 0.0064
                         }
                     },
-                    "percent_estimate": 22.7,
-                    "quantity_estimate": 24.97,
+                    "percent_estimate": 19.7,
+                    "quantity_estimate": 25.43,
                     "text": "cacao"
                 }
             ],
             "is_in_taxonomy": 1,
             "labels": "en:vegan",
-            "percent_estimate": 45.5,
+            "percent_estimate": 46.0,
             "text": "beurre",
             "vegan": "en:yes",
             "vegetarian": "en:yes"
@@ -800,6 +803,7 @@
             "ecobalyse_code": "sugar",
             "id": "en:sugar",
             "index": 3,
+            "initial_estimate": 13.333333333333334,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1037,8 +1041,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 7.31,
-            "quantity_estimate": 8.03,
+            "percent_estimate": 6.57,
+            "quantity_estimate": 8.49,
             "text": "sucre"
         },
         {
@@ -1048,6 +1052,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 4,
+            "initial_estimate": 6.666666666666667,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1285,16 +1290,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.42,
-            "quantity_estimate": 0.46,
+            "percent_estimate": 0.66,
+            "quantity_estimate": 0.85,
             "text": "sel"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.456,
-        "total_difference": 39.2,
+        "relative_difference": 0.457,
+        "total_difference": 39.3,
         "total_specified_input_percent": 86
     },
     "ingredients_text": "CACAHUETES des Amériques grillées (86%), beurre végétal (sal, cacao), sucre, sel.",
@@ -1623,7 +1628,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 623.4341144100498,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 14581.78271736091,
+            "nutrient_penalty": 16960226.323404685,
+            "total": 16975431.54023646
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

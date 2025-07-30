@@ -25,6 +25,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:colza-oil",
                     "index": 0,
+                    "initial_estimate": 44.44444444444445,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -261,8 +262,8 @@
                             "percent_nom": 2.6e-05
                         }
                     },
-                    "percent_estimate": 31.6,
-                    "quantity_estimate": 32.36,
+                    "percent_estimate": 31.2,
+                    "quantity_estimate": 32.33,
                     "text": "colza"
                 },
                 {
@@ -272,6 +273,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:palm",
                     "index": 1,
+                    "initial_estimate": 22.222222222222225,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -508,16 +510,16 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 25.1,
-                    "quantity_estimate": 25.69,
+                    "percent_estimate": 24.7,
+                    "quantity_estimate": 25.67,
                     "text": "palme"
                 }
             ],
-            "percent_estimate": 56.6,
+            "percent_estimate": 55.9,
             "text": "Huiles et graisses végétales non hydrogénées"
         },
         {
-            "difference": 14.3,
+            "difference": 13.6,
             "id": "fr:eau-sel-0-4-emulsifiant",
             "ingredients": [
                 {
@@ -527,6 +529,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:lecithine-de-tournesol-arome-naturel-de-noix-de-coco-jus-de-citron-concentre",
                     "index": 2,
+                    "initial_estimate": 33.333333333333336,
                     "labels": "en:organic, en:organic, en:organic",
                     "nutrients": {
                         "alcohol": {
@@ -770,13 +773,13 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 43.4,
-                    "quantity_estimate": 44.48,
+                    "percent_estimate": 44.1,
+                    "quantity_estimate": 45.73,
                     "text": "lécithine de tournesol arôme naturel de noix de coco jus de citron concentré"
                 }
             ],
             "labels": "en:organic",
-            "percent_estimate": 43.4,
+            "percent_estimate": 44.1,
             "percent_hidden": 57.65,
             "text": "eau sel 0.4% émulsifiant"
         }
@@ -784,8 +787,8 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.247,
-        "total_difference": 14.3,
+        "relative_difference": 0.235,
+        "total_difference": 13.6,
         "total_specified_input_percent": 57.6
     },
     "ingredients_text": "Huiles et graisses végétales non hydrogénées (colza, palme)* 57,65% eau sel 0,4% émulsifiant : lécithine de tournesol* arôme naturel de noix de coco* jus de citron concentré*. *biologique.",
@@ -1124,7 +1127,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 262.2649581481278,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1118.727159795219,
+            "nutrient_penalty": 1280161.80740715,
+            "total": 1281542.7995250933
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

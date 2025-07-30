@@ -22,9 +22,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 4.06,
+            "difference": 3.5,
             "id": "en:cane-sugar",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -262,9 +263,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 49.2,
+            "percent_estimate": 49.8,
             "percent_hidden": 53.3,
-            "quantity_estimate": 51.14,
+            "quantity_estimate": 51.65,
             "text": "Sucre de canne"
         },
         {
@@ -274,6 +275,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:apricot",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -511,8 +513,8 @@
                     "percent_nom": 8.999999999999999e-05
                 }
             },
-            "percent_estimate": 45.8,
-            "quantity_estimate": 47.57,
+            "percent_estimate": 49.8,
+            "quantity_estimate": 51.61,
             "text": "abricots"
         },
         {
@@ -525,6 +527,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e440a",
                     "index": 2,
+                    "initial_estimate": 12.903225806451612,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -767,12 +770,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 4.16,
-                    "quantity_estimate": 4.32,
+                    "percent_estimate": 0.29,
+                    "quantity_estimate": 0.3,
                     "text": "pectines"
                 }
             ],
-            "percent_estimate": 4.16,
+            "percent_estimate": 0.29,
             "text": "gélifiant"
         },
         {
@@ -785,6 +788,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e330",
                     "index": 3,
+                    "initial_estimate": 6.451612903225806,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1027,12 +1031,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.45,
-                    "quantity_estimate": 0.46,
+                    "percent_estimate": 0.12,
+                    "quantity_estimate": 0.12,
                     "text": "acide citrique"
                 }
             ],
-            "percent_estimate": 0.45,
+            "percent_estimate": 0.12,
             "text": "acidifiant"
         },
         {
@@ -1045,6 +1049,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:acide-ascorbique-preparee-avec-50-g-de-fruits-pour",
                     "index": 4,
+                    "initial_estimate": 3.225806451612903,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1287,22 +1292,22 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.36,
+                    "percent_estimate": 0.02,
                     "quantity": "100 g",
-                    "quantity_estimate": 0.37,
+                    "quantity_estimate": 0.02,
                     "quantity_g": 100,
                     "text": "acide ascorbique Préparée avec 50 g de fruits pour"
                 }
             ],
-            "percent_estimate": 0.36,
+            "percent_estimate": 0.02,
             "text": "antioxydant"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.0762,
-        "total_difference": 4.06,
+        "relative_difference": 0.0657,
+        "total_difference": 3.5,
         "total_specified_input_percent": 53.3
     },
     "ingredients_text": "Sucre de canne** (53,3%), abricots**, gélifiant : pectines, acidifiant : acide citrique, antioxydant : acide ascorbique**Ingrédients issus de l'agriculture biologique. Préparée avec 50 g de fruits pour 100 g",
@@ -1634,7 +1639,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 513.6866697877592,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1851.4302021255985,
+            "nutrient_penalty": 664943.3811706086,
+            "total": 667308.4980425219
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

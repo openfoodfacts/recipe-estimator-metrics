@@ -22,9 +22,10 @@
             "ciqual_food_code": "19042",
             "ciqual_food_code_used": "19042",
             "ciqual_proxy_food_code": null,
-            "difference": 0.07,
+            "difference": 13.8,
             "id": "en:pasteurized-semi-skimmed-milk",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "labels": "en:fair-trade",
             "nutrients": {
                 "alcohol": {
@@ -262,9 +263,9 @@
                     "percent_nom": 0.00041
                 }
             },
-            "percent_estimate": 81.0,
+            "percent_estimate": 67.1,
             "percent_hidden": 80.9,
-            "quantity_estimate": 82.54,
+            "quantity_estimate": 67.09,
             "text": "Lait demi-écrémé pasteurisé et"
         },
         {
@@ -272,9 +273,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "31016",
             "ciqual_proxy_food_code": "31016",
-            "difference": 0.18,
+            "difference": 0.6,
             "id": "en:cane-sugar",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "labels": "en:fair-trade, en:organic",
             "nutrients": {
                 "alcohol": {
@@ -512,9 +514,9 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 11.8,
+            "percent_estimate": 12.6,
             "percent_hidden": 12,
-            "quantity_estimate": 12.05,
+            "quantity_estimate": 12.6,
             "text": "sucre de canne"
         },
         {
@@ -522,9 +524,10 @@
             "ciqual_food_code": "18100",
             "ciqual_food_code_used": "18100",
             "ciqual_proxy_food_code": null,
-            "difference": 45.1,
+            "difference": 42.2,
             "id": "en:cocoa-powder",
             "index": 2,
+            "initial_estimate": 12.698412698412698,
             "labels": "en:fair-trade, en:organic",
             "nutrients": {
                 "alcohol": {
@@ -762,9 +765,9 @@
                     "percent_nom": 0.0064
                 }
             },
-            "percent_estimate": 3.9,
+            "percent_estimate": 6.79,
             "percent_hidden": 49,
-            "quantity_estimate": 3.98,
+            "quantity_estimate": 6.8,
             "text": "cacao en poudre"
         },
         {
@@ -778,6 +781,7 @@
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1014,13 +1018,13 @@
                             "percent_nom": 0.00041999999999999996
                         }
                     },
-                    "percent_estimate": 3.23,
-                    "quantity_estimate": 3.3,
+                    "percent_estimate": 6.76,
+                    "quantity_estimate": 6.76,
                     "text": "lait"
                 }
             ],
             "labels": "en:fair-trade",
-            "percent_estimate": 3.23,
+            "percent_estimate": 6.76,
             "text": "crème"
         },
         {
@@ -1033,6 +1037,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e407",
                     "index": 4,
+                    "initial_estimate": 3.1746031746031744,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1275,12 +1280,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.04,
+                    "percent_estimate": 6.76,
+                    "quantity_estimate": 6.76,
                     "text": "carraghénanes"
                 }
             ],
-            "percent_estimate": 0.04,
+            "percent_estimate": 6.76,
             "text": "stabilisant"
         },
         {
@@ -1290,6 +1295,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:corn-starch",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1526,16 +1532,16 @@
                     "percent_nom": 0.00028000000000000003
                 }
             },
-            "percent_estimate": 0.04,
-            "quantity_estimate": 0.04,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "amidon de mais"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.32,
-        "total_difference": 45.3,
+        "relative_difference": 0.399,
+        "total_difference": 56.6,
         "total_specified_input_percent": 142.0
     },
     "ingredients_text": "Lait demi-écrémé pasteurisé et équitable (80,9%), sucre de canne* équitable (12%), cacao* en poudre équitable (49%), crème équitable (lait), stabilisant (carraghénanes), amidon de mais. *=Issu de l'Agriculture Biologique.",
@@ -1861,7 +1867,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 315.53801910917355,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 4.975262559807447,
+            "nutrient_penalty": 402292.5267117683,
+            "total": 402613.0399934373
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -27,6 +27,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:haricots-blancs-secs-trempes",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -269,8 +270,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 74.3,
-            "quantity_estimate": 74.81,
+            "percent_estimate": 50.0,
+            "quantity_estimate": 50.16,
             "text": "Haricots blancs secs trempés"
         },
         {
@@ -280,6 +281,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:water",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -516,8 +518,8 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 16.6,
-            "quantity_estimate": 16.67,
+            "percent_estimate": 43.6,
+            "quantity_estimate": 43.72,
             "text": "eau"
         },
         {
@@ -525,9 +527,10 @@
             "ciqual_food_code": "20068",
             "ciqual_food_code_used": "20068",
             "ciqual_proxy_food_code": null,
-            "difference": 5.3,
+            "difference": 3.86,
             "id": "en:double-concentrated-tomato",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -764,9 +767,9 @@
                     "percent_nom": 0.0001
                 }
             },
-            "percent_estimate": 6.7,
+            "percent_estimate": 5.26,
             "percent_hidden": 1.4,
-            "quantity_estimate": 6.75,
+            "quantity_estimate": 5.28,
             "text": "purée de tomates double concentrée"
         },
         {
@@ -776,6 +779,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1012,8 +1016,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 1.38,
-            "quantity_estimate": 1.39,
+            "percent_estimate": 0.94,
+            "quantity_estimate": 0.94,
             "text": "sel"
         },
         {
@@ -1023,6 +1027,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1265,15 +1270,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.1,
-            "quantity_estimate": 1.11,
+            "percent_estimate": 0.18,
+            "quantity_estimate": 0.18,
             "text": "arôme naturel"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 3.79,
-        "total_difference": 5.3,
+        "relative_difference": 2.76,
+        "total_difference": 3.86,
         "total_specified_input_percent": 1.4
     },
     "ingredients_text": "Haricots blancs secs trempés, eau, purée de tomates double concentrée 1,4%, sel, arôme naturel.",
@@ -1602,7 +1607,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 372.1037669070387,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 144.57804624358062,
+            "nutrient_penalty": 4483058.747370159,
+            "total": 4483575.42918331
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

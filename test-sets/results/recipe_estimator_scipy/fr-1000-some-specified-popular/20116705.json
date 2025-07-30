@@ -23,7 +23,7 @@
     "ingredients": [
         {
             "ciqual_proxy_food_code": "31074",
-            "difference": 7.91,
+            "difference": 8.45,
             "ecobalyse_code": "dark-chocolate",
             "id": "en:dark-chocolate",
             "ingredients": [
@@ -35,6 +35,7 @@
                     "ecobalyse_code": "sugar",
                     "id": "en:cane-sugar",
                     "index": 0,
+                    "initial_estimate": 35.55555555555556,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -272,8 +273,8 @@
                             "percent_nom": 2e-05
                         }
                     },
-                    "percent_estimate": 27.8,
-                    "quantity_estimate": 27.82,
+                    "percent_estimate": 27.9,
+                    "quantity_estimate": 27.89,
                     "text": "sucre de canne"
                 },
                 {
@@ -283,6 +284,7 @@
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
                     "index": 1,
+                    "initial_estimate": 17.77777777777778,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -520,8 +522,8 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 16.9,
-                    "quantity_estimate": 16.98,
+                    "percent_estimate": 14.4,
+                    "quantity_estimate": 14.39,
                     "text": "pâte de cacao"
                 },
                 {
@@ -531,6 +533,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:cocoa-butter",
                     "index": 2,
+                    "initial_estimate": 8.88888888888889,
                     "is_in_taxonomy": 1,
                     "nutrients": {
                         "alcohol": {
@@ -768,8 +771,8 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 3.9,
-                    "quantity_estimate": 3.91,
+                    "percent_estimate": 6.68,
+                    "quantity_estimate": 6.68,
                     "text": "beurre de cacao"
                 },
                 {
@@ -785,6 +788,7 @@
                                     "ciqual_proxy_food_code": null,
                                     "id": "en:soya-lecithin",
                                     "index": 3,
+                                    "initial_estimate": 4.444444444444445,
                                     "is_in_taxonomy": 1,
                                     "nutrients": {
                                         "alcohol": {
@@ -1022,23 +1026,23 @@
                                             "percent_nom": 0.0
                                         }
                                     },
-                                    "percent_estimate": 3.46,
-                                    "quantity_estimate": 3.46,
+                                    "percent_estimate": 2.59,
+                                    "quantity_estimate": 2.59,
                                     "text": "lécithines de soja"
                                 }
                             ],
                             "is_in_taxonomy": 1,
-                            "percent_estimate": 3.46,
+                            "percent_estimate": 2.59,
                             "text": "lécithines"
                         }
                     ],
                     "is_in_taxonomy": 1,
-                    "percent_estimate": 3.46,
+                    "percent_estimate": 2.59,
                     "text": "émulsifiant"
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 52.1,
+            "percent_estimate": 51.5,
             "percent_hidden": 60,
             "text": "chocolat noir"
         },
@@ -1047,9 +1051,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "9100",
             "ciqual_proxy_food_code": "9100",
-            "difference": 7.9,
+            "difference": 8.46,
             "id": "en:rice",
             "index": 4,
+            "initial_estimate": 33.333333333333336,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -1287,17 +1292,17 @@
                     "percent_nom": 0.00141
                 }
             },
-            "percent_estimate": 47.9,
+            "percent_estimate": 48.5,
             "percent_hidden": 40,
-            "quantity_estimate": 47.96,
+            "quantity_estimate": 48.46,
             "text": "riz"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.158,
-        "total_difference": 15.8,
+        "relative_difference": 0.169,
+        "total_difference": 16.9,
         "total_specified_input_percent": 100
     },
     "ingredients_text": "60% chocolat noir (sucre de canne, pâte de cacao, beurre de cacao, émulsifiant : lécithines (soja)), 40% riz,",
@@ -1640,7 +1645,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 244.07732761482401,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 5.1970525115905275,
+            "nutrient_penalty": 1793667.2111579196,
+            "total": 1793916.485538046
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     }
 }

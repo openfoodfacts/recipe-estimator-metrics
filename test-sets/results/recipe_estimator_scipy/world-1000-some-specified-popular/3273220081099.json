@@ -18,9 +18,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": null,
             "ciqual_proxy_food_code": null,
-            "difference": 46.9,
+            "difference": 46.4,
             "id": "en:soy-base",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -263,9 +264,9 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 51.1,
+            "percent_estimate": 51.6,
             "percent_hidden": 98,
-            "quantity_estimate": 51.11,
+            "quantity_estimate": 51.61,
             "text": "Jus de soja"
         },
         {
@@ -275,6 +276,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:sels-de-calcium",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -517,8 +519,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 25.0,
-            "quantity_estimate": 25.0,
+            "percent_estimate": 25.8,
+            "quantity_estimate": 25.81,
             "text": "sels de calcium"
         },
         {
@@ -528,6 +530,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -770,8 +773,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 11.7,
-            "quantity_estimate": 11.73,
+            "percent_estimate": 12.9,
+            "quantity_estimate": 12.9,
             "text": "arôme naturel"
         },
         {
@@ -781,6 +784,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:vitamin-d",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1023,8 +1027,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 6.91,
-            "quantity_estimate": 6.91,
+            "percent_estimate": 6.45,
+            "quantity_estimate": 6.45,
             "text": "vitamine D"
         },
         {
@@ -1034,6 +1038,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:ferments-selectionnes-dont-bifidus-et-acidophilus",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1276,16 +1281,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 5.25,
-            "quantity_estimate": 5.25,
+            "percent_estimate": 3.23,
+            "quantity_estimate": 3.23,
             "text": "ferments sélectionnés dont Bifidus et Acidophilus"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 5,
-        "relative_difference": 0.478,
-        "total_difference": 46.9,
+        "relative_difference": 0.473,
+        "total_difference": 46.4,
         "total_specified_input_percent": 98
     },
     "ingredients_text": "Jus de soja 98%, sels de calcium, arôme naturel, vitamine D, ferments sélectionnés dont Bifidus et Acidophilus.",
@@ -1354,7 +1359,15 @@
     "recipe_estimator": {
         "ingredient_count": 5,
         "nutrients": {},
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 8.881784197001252e-15,
+            "mass_less_than_100_penalty": 7.105427357601002e-07,
+            "mass_more_than_100_penalty": 0,
+            "nutrient_penalty": 0,
+            "total": 7.105427446418844e-07
+        },
         "status": 0,
-        "status_message": "The volume of the hyperrectangle containing the lowest function value found is below vol_tol=1e-16"
+        "status_message": "Optimization terminated successfully."
     }
 }

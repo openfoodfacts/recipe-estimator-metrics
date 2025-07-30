@@ -23,9 +23,10 @@
                     "ciqual_food_code": "13014",
                     "ciqual_food_code_used": "13014",
                     "ciqual_proxy_food_code": null,
-                    "difference": 28.3,
+                    "difference": 26.2,
                     "id": "en:strawberry",
                     "index": 0,
+                    "initial_estimate": 53.333333333333336,
                     "labels": "en:organic",
                     "nutrients": {
                         "alcohol": {
@@ -263,14 +264,14 @@
                             "percent_nom": 0.00011
                         }
                     },
-                    "percent_estimate": 78.3,
+                    "percent_estimate": 76.2,
                     "percent_hidden": 50,
-                    "quantity_estimate": 179.4,
+                    "quantity_estimate": 161.74,
                     "text": "Fraise"
                 }
             ],
             "labels": "en:organic",
-            "percent_estimate": 78.3,
+            "percent_estimate": 76.2,
             "text": "Fraise gedents"
         },
         {
@@ -280,6 +281,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:cane-sugar",
             "index": 1,
+            "initial_estimate": 26.666666666666668,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -517,8 +519,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 21.4,
-            "quantity_estimate": 49.12,
+            "percent_estimate": 23.6,
+            "quantity_estimate": 50.04,
             "text": "sucre de canne"
         },
         {
@@ -531,6 +533,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:pectine-de-fu-concentre-de-citron",
                     "index": 2,
+                    "initial_estimate": 8.88888888888889,
                     "labels": "en:organic",
                     "nutrients": {
                         "alcohol": {
@@ -775,7 +778,7 @@
                         }
                     },
                     "percent_estimate": 0.09,
-                    "quantity_estimate": 0.21,
+                    "quantity_estimate": 0.19,
                     "text": "pectine de fu concentre de citron"
                 },
                 {
@@ -785,6 +788,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "fr:diant",
                     "index": 3,
+                    "initial_estimate": 4.444444444444445,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1027,12 +1031,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.04,
-                    "quantity_estimate": 0.1,
+                    "percent_estimate": 0.03,
+                    "quantity_estimate": 0.05,
                     "text": "diant"
                 }
             ],
-            "percent_estimate": 0.13,
+            "percent_estimate": 0.12,
             "text": "gélifiant"
         },
         {
@@ -1042,6 +1046,7 @@
             "ciqual_proxy_food_code": null,
             "id": "fr:jus-es-eventuelles-de-fruits-a-coque",
             "index": 4,
+            "initial_estimate": 6.666666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1284,16 +1289,16 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 0.07,
-            "quantity_estimate": 0.15,
+            "percent_estimate": 0.06,
+            "quantity_estimate": 0.13,
             "text": "jus es éventuelles de fruits à coque"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 3,
-        "relative_difference": 0.567,
-        "total_difference": 28.3,
+        "relative_difference": 0.525,
+        "total_difference": 26.2,
         "total_specified_input_percent": 50
     },
     "ingredients_text": "• Fraise Bio gedents: Fraise biologique 50%, sucre de canne biologique, gélifiant: pectine de fu concentre de citron biologique. diant: jus es éventuelles de fruits à coque. Prepare avec 55g de fruits pour 100g.",
@@ -1618,8 +1623,16 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 556.5324625713542,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 56083.63464919097,
+            "nutrient_penalty": 289500.93594780203,
+            "total": 346141.10305956437
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=50000"
+        "status_message": "Optimization terminated successfully."
     },
     "specific_ingredients": [
         {

@@ -22,6 +22,7 @@
             "difference": 0.0,
             "id": "en:virgin-sesame-oil",
             "index": 0,
+            "initial_estimate": 100.0,
             "labels": "en:organic",
             "nutrients": {
                 "alcohol": {
@@ -261,7 +262,7 @@
             },
             "percent_estimate": 100.0,
             "percent_hidden": 100,
-            "quantity_estimate": 100.76,
+            "quantity_estimate": 100.0,
             "text": "sesame oil virgin"
         }
     ],
@@ -546,7 +547,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 0,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 0.0,
+            "nutrient_penalty": 1244000.0000000005,
+            "total": 1244000.0000000005
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

@@ -24,10 +24,11 @@
             "ciqual_food_code": "15037",
             "ciqual_food_code_used": "15037",
             "ciqual_proxy_food_code": null,
-            "difference": 0.59,
+            "difference": 0.56,
             "ecobalyse_code": "peanut-non-eu",
             "id": "en:roasted-peanuts",
             "index": 0,
+            "initial_estimate": 57.142857142857146,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -267,7 +268,7 @@
             },
             "percent_estimate": 96.4,
             "percent_hidden": 97,
-            "quantity_estimate": 100.96,
+            "quantity_estimate": 101.0,
             "text": "roasted peanuts"
         },
         {
@@ -278,6 +279,7 @@
             "ecobalyse_code": "refined-palm-oil",
             "id": "en:palm-oil",
             "index": 1,
+            "initial_estimate": 28.571428571428573,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -515,8 +517,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 3.57,
-            "quantity_estimate": 3.74,
+            "percent_estimate": 3.56,
+            "quantity_estimate": 3.72,
             "text": "sustainable palm oil"
         },
         {
@@ -526,6 +528,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:sea-salt",
             "index": 2,
+            "initial_estimate": 14.285714285714286,
             "is_in_taxonomy": 1,
             "nutrients": {
                 "alcohol": {
@@ -763,16 +766,16 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.02,
-            "quantity_estimate": 0.02,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "sea salt"
         }
     ],
     "ingredients_lc": "en",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.00608,
-        "total_difference": 0.59,
+        "relative_difference": 0.00577,
+        "total_difference": 0.56,
         "total_specified_input_percent": 97
     },
     "ingredients_text": "roasted  peanuts  97%, sustainable palm oil, sea salt",
@@ -1069,7 +1072,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 486.34920133760636,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1416.7922540528507,
+            "nutrient_penalty": 7333446.358311109,
+            "total": 7335349.4997665
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=30000"
+        "status_message": "Optimization terminated successfully."
     }
 }

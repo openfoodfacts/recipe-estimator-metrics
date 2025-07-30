@@ -20,9 +20,10 @@
             "ciqual_food_code": "4003",
             "ciqual_food_code_used": "4003",
             "ciqual_proxy_food_code": null,
-            "difference": 4.64,
+            "difference": 5.56,
             "id": "en:potato",
             "index": 0,
+            "initial_estimate": 51.61290322580645,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -259,9 +260,9 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 92.6,
+            "percent_estimate": 93.6,
             "percent_hidden": 88,
-            "quantity_estimate": 149.79,
+            "quantity_estimate": 151.22,
             "text": "Pommes de terre"
         },
         {
@@ -272,6 +273,7 @@
             "difference": 3.23,
             "id": "en:sunflower-oil",
             "index": 1,
+            "initial_estimate": 25.806451612903224,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -520,6 +522,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:potato",
             "index": 2,
+            "initial_estimate": 12.903225806451612,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -756,9 +759,9 @@
                     "percent_nom": 0.00015
                 }
             },
-            "percent_estimate": 1.74,
+            "percent_estimate": 0.89,
             "processing": "en:dehydrated",
-            "quantity_estimate": 2.82,
+            "quantity_estimate": 1.45,
             "text": "pommes de terre"
         },
         {
@@ -768,6 +771,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:salt",
             "index": 3,
+            "initial_estimate": 6.451612903225806,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -1004,8 +1008,8 @@
                     "percent_nom": 0.0
                 }
             },
-            "percent_estimate": 0.8,
-            "quantity_estimate": 1.29,
+            "percent_estimate": 0.77,
+            "quantity_estimate": 1.25,
             "text": "sel"
         },
         {
@@ -1013,9 +1017,10 @@
             "ciqual_food_code": "20034",
             "ciqual_food_code_used": "20034",
             "ciqual_proxy_food_code": null,
-            "difference": 0.55,
+            "difference": 0.6,
             "id": "en:onion",
             "index": 4,
+            "initial_estimate": 3.225806451612903,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -1252,18 +1257,18 @@
                     "percent_nom": 0.00023
                 }
             },
-            "percent_estimate": 0.05,
+            "percent_estimate": 0.0,
             "percent_hidden": 0.6,
             "processing": "en:powder",
-            "quantity_estimate": 0.07,
+            "quantity_estimate": 0.0,
             "text": "oignons"
         }
     ],
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 0,
-        "relative_difference": 0.0872,
-        "total_difference": 8.42,
+        "relative_difference": 0.0972,
+        "total_difference": 9.39,
         "total_specified_input_percent": 96.6
     },
     "ingredients_text": "Pommes de terre (88%), huile de tournesol (8%), pommes de terre déshydratées, sel, oignons en poudre (0,6%),",
@@ -1586,7 +1591,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 714.5185853248325,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 30817.651749500896,
+            "nutrient_penalty": 864388.1981210082,
+            "total": 895920.368455834
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }

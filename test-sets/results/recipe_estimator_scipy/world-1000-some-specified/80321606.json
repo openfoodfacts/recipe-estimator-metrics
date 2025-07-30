@@ -17,9 +17,10 @@
             "ciqual_food_code": null,
             "ciqual_food_code_used": "19593",
             "ciqual_proxy_food_code": "19593",
-            "difference": 1.29,
+            "difference": 1.18,
             "id": "en:yogurt",
             "index": 0,
+            "initial_estimate": 66.66666666666667,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -256,13 +257,13 @@
                     "percent_nom": 0.00039
                 }
             },
-            "percent_estimate": 89.3,
+            "percent_estimate": 89.2,
             "percent_hidden": 88,
-            "quantity_estimate": 93.44,
+            "quantity_estimate": 92.0,
             "text": "Joghurt"
         },
         {
-            "difference": 1.29,
+            "difference": 1.17,
             "id": "de:kaffeezubereitung",
             "ingredients": [
                 {
@@ -272,6 +273,7 @@
                     "ciqual_proxy_food_code": "31016",
                     "id": "en:sugar",
                     "index": 1,
+                    "initial_estimate": 17.20430107526882,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -508,8 +510,8 @@
                             "percent_nom": 2e-05
                         }
                     },
-                    "percent_estimate": 8.56,
-                    "quantity_estimate": 8.96,
+                    "percent_estimate": 8.66,
+                    "quantity_estimate": 8.93,
                     "text": "Zucker"
                 },
                 {
@@ -517,9 +519,10 @@
                     "ciqual_food_code": "18005",
                     "ciqual_food_code_used": "18005",
                     "ciqual_proxy_food_code": null,
-                    "difference": 0.46,
+                    "difference": 0.24,
                     "id": "en:instant-coffee",
                     "index": 2,
+                    "initial_estimate": 8.60215053763441,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -756,9 +759,9 @@
                             "percent_nom": 0.00046
                         }
                     },
-                    "percent_estimate": 0.96,
+                    "percent_estimate": 0.74,
                     "percent_hidden": 0.5,
-                    "quantity_estimate": 1.0,
+                    "quantity_estimate": 0.76,
                     "text": "löslicher Kaffee"
                 },
                 {
@@ -768,6 +771,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:modified-corn-starch",
                     "index": 3,
+                    "initial_estimate": 4.301075268817205,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1004,8 +1008,8 @@
                             "percent_nom": 0.00028000000000000003
                         }
                     },
-                    "percent_estimate": 0.65,
-                    "quantity_estimate": 0.68,
+                    "percent_estimate": 0.74,
+                    "quantity_estimate": 0.76,
                     "text": "modifizierte Maisstärke"
                 },
                 {
@@ -1015,6 +1019,7 @@
                     "ciqual_proxy_food_code": "31016",
                     "id": "en:caramelised-sugar",
                     "index": 4,
+                    "initial_estimate": 2.1505376344086025,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1251,8 +1256,8 @@
                             "percent_nom": 2e-05
                         }
                     },
-                    "percent_estimate": 0.52,
-                    "quantity_estimate": 0.54,
+                    "percent_estimate": 0.63,
+                    "quantity_estimate": 0.65,
                     "text": "Karamellzucker"
                 },
                 {
@@ -1262,6 +1267,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:flavouring",
                     "index": 5,
+                    "initial_estimate": 1.0752688172043012,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1504,20 +1510,20 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 0.02,
-                    "quantity_estimate": 0.02,
+                    "percent_estimate": 0.06,
+                    "quantity_estimate": 0.06,
                     "text": "Aromen"
                 }
             ],
-            "percent_estimate": 10.7,
+            "percent_estimate": 10.8,
             "percent_hidden": 12,
             "text": "Kaffeezubereitung"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 2,
-        "relative_difference": 0.0302,
-        "total_difference": 3.04,
+        "relative_difference": 0.0258,
+        "total_difference": 2.59,
         "total_specified_input_percent": 100.0
     },
     "ingredients_text": "Joghurt 88%, Kaffeezubereitung 12% (Zucker, löslicher Kaffee 0,5%, modifizierte Maisstärke, Karamellzucker, Aromen). Glutenfrei",
@@ -1841,7 +1847,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 394.63077872799425,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1893.2243492894058,
+            "nutrient_penalty": 116037.10998343275,
+            "total": 118324.96511145015
+        },
         "status": 0,
-        "status_message": "Number of function evaluations done is larger than maxfun=60000"
+        "status_message": "Optimization terminated successfully."
     }
 }

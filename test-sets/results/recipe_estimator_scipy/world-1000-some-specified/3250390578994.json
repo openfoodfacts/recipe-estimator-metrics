@@ -15,9 +15,10 @@
             "ciqual_food_code": "18066",
             "ciqual_food_code_used": "18066",
             "ciqual_proxy_food_code": null,
-            "difference": 6.84,
+            "difference": 27.6,
             "id": "fr:eau-de-source-st-benoit-gazeifiee",
             "index": 0,
+            "initial_estimate": 50.79365079365079,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -254,9 +255,9 @@
                     "percent_nom": 1.1e-05
                 }
             },
-            "percent_estimate": 81.2,
+            "percent_estimate": 60.4,
             "percent_hidden": 88,
-            "quantity_estimate": 81.17,
+            "quantity_estimate": 60.44,
             "text": "Eau de source St Benoît gazéifiée"
         },
         {
@@ -266,6 +267,7 @@
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "index": 1,
+            "initial_estimate": 25.396825396825395,
             "nutrients": {
                 "alcohol": {
                     "confidence": "C",
@@ -502,8 +504,8 @@
                     "percent_nom": 2e-05
                 }
             },
-            "percent_estimate": 8.34,
-            "quantity_estimate": 8.34,
+            "percent_estimate": 8.52,
+            "quantity_estimate": 8.52,
             "text": "sucre"
         },
         {
@@ -516,6 +518,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e150d",
                     "index": 2,
+                    "initial_estimate": 12.698412698412698,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -758,12 +761,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 5.14,
-                    "quantity_estimate": 5.14,
+                    "percent_estimate": 8.43,
+                    "quantity_estimate": 8.43,
                     "text": "e150d"
                 }
             ],
-            "percent_estimate": 5.14,
+            "percent_estimate": 8.43,
             "text": "colorant"
         },
         {
@@ -776,6 +779,7 @@
                     "ciqual_proxy_food_code": null,
                     "id": "en:e338",
                     "index": 3,
+                    "initial_estimate": 6.349206349206349,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "-",
@@ -1018,12 +1022,12 @@
                             "percent_nom": 0
                         }
                     },
-                    "percent_estimate": 2.62,
-                    "quantity_estimate": 2.62,
+                    "percent_estimate": 8.23,
+                    "quantity_estimate": 8.24,
                     "text": "e338"
                 }
             ],
-            "percent_estimate": 2.62,
+            "percent_estimate": 8.23,
             "text": "acidifiant"
         },
         {
@@ -1033,6 +1037,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:natural-flavouring",
             "index": 4,
+            "initial_estimate": 3.1746031746031744,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1275,8 +1280,8 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.6,
-            "quantity_estimate": 1.6,
+            "percent_estimate": 8.03,
+            "quantity_estimate": 8.03,
             "text": "arôme naturel"
         },
         {
@@ -1286,6 +1291,7 @@
             "ciqual_proxy_food_code": null,
             "id": "en:caffeine",
             "index": 5,
+            "initial_estimate": 1.5873015873015872,
             "nutrients": {
                 "alcohol": {
                     "confidence": "-",
@@ -1528,15 +1534,15 @@
                     "percent_nom": 0
                 }
             },
-            "percent_estimate": 1.13,
-            "quantity_estimate": 1.13,
+            "percent_estimate": 6.35,
+            "quantity_estimate": 6.35,
             "text": "caféine"
         }
     ],
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 4,
-        "relative_difference": 0.0777,
-        "total_difference": 6.84,
+        "relative_difference": 0.313,
+        "total_difference": 27.6,
         "total_specified_input_percent": 88
     },
     "ingredients_text": "Eau de source St Benoît gazéifiée (88%), sucre, colorant : E150d; acidifiant : E338; arôme naturel, caféine.",
@@ -1854,7 +1860,15 @@
                 "weighting": 0
             }
         },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 361.43546343181436,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 2.0222530672356243,
+            "nutrient_penalty": 572071.0931542651,
+            "total": 572434.5508707641
+        },
         "status": 0,
-        "status_message": "Number of iterations is larger than maxiter=5000"
+        "status_message": "Optimization terminated successfully."
     }
 }
