@@ -46,6 +46,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
         input_percent_is_specified = False
         resulting_percent_estimate = 0
         rounded_resulting_percent_estimate = 0
+        resulting_quantity_estimate = 0
         difference = 0
 
         # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
@@ -55,13 +56,19 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             rounded_resulting_percent_estimate = round_to_n(resulting_percent_estimate, 3)
             resulting_ingredient['percent_estimate'] = rounded_resulting_percent_estimate        
 
+        if "quantity_estimate" in resulting_ingredient:
+            # Round the computed percent to 3 significant figures so diffs aren't excessive
+            resulting_quantity_estimate = round_to_n(resulting_ingredient["quantity_estimate"], 3)
+            resulting_ingredient['quantity_estimate'] = resulting_quantity_estimate
+
         # We compute metrics for known percent in the input product
         if "percent" in input_ingredient:
             input_percent = input_ingredient["percent"]
             input_percent_is_specified = True
             total_specified_input_percent += input_percent
 
-            difference = abs(resulting_percent_estimate - input_percent)
+            # Use rounded estimate here so results don't change if metrics are recalculated
+            difference = abs(rounded_resulting_percent_estimate - input_percent)
             rounded_difference = round_to_n(difference, 3)
             # Store the difference at the ingredient level. 
             resulting_ingredient["difference"] = rounded_difference
