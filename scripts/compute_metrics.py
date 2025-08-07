@@ -44,16 +44,14 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
         input_ingredient_id = input_ingredient['id']
         input_percent = 0
         input_percent_is_specified = False
-        resulting_percent_estimate = 0
         rounded_resulting_percent_estimate = 0
         resulting_quantity_estimate = 0
         difference = 0
 
         # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
         if "percent_estimate" in resulting_ingredient:
-            resulting_percent_estimate = resulting_ingredient["percent_estimate"]
             # Round the computed percent to 3 significant figures so diffs aren't excessive
-            rounded_resulting_percent_estimate = round_to_n(resulting_percent_estimate, 3)
+            rounded_resulting_percent_estimate = round_to_n(resulting_ingredient["percent_estimate"], 3)
             resulting_ingredient['percent_estimate'] = rounded_resulting_percent_estimate        
 
         if "quantity_estimate" in resulting_ingredient:
@@ -109,7 +107,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
                     "ciqual_proxy_food_code": ciqual_proxy_food_code
                 }
                 
-            ingredients_stats[input_ingredient_id]["total_percent_estimate"] += resulting_percent_estimate
+            ingredients_stats[input_ingredient_id]["total_percent_estimate"] += rounded_resulting_percent_estimate
             ingredients_stats[input_ingredient_id]["total_difference"] += difference
             ingredients_stats[input_ingredient_id]["number_of_products"] += 1
             if input_percent_is_specified:
