@@ -30,6 +30,8 @@
             "difference": 0.0,
             "ecobalyse_code": "tap-water",
             "id": "en:carbonated-water",
+            "index": 0,
+            "initial_estimate": 100.0,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -452,10 +454,9 @@
             },
             "calcium": {
                 "ingredient_count": 1,
-                "penalty_factor": 100.0,
                 "product_total": 0.164,
                 "unweighted_total": 0.00713,
-                "weighting": 1.0
+                "weighting": 100.0
             },
             "carbohydrates": {
                 "ingredient_count": 1,
@@ -479,7 +480,6 @@
             "energy": {
                 "ingredient_count": 1,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 0.0001,
                 "unweighted_total": 0.0,
                 "weighting": 0
@@ -509,12 +509,6 @@
                 "unweighted_total": 0.0,
                 "weighting": 0
             },
-            "galactose_100g": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
             "glucose": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
@@ -536,7 +530,6 @@
             "magnesium": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.0495,
                 "unweighted_total": 0.00099,
                 "weighting": 0
@@ -586,7 +579,6 @@
             "potassium": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.0022,
                 "unweighted_total": 0.00073,
                 "weighting": 0
@@ -600,10 +592,9 @@
             },
             "salt": {
                 "ingredient_count": 1,
-                "penalty_factor": 10.0,
                 "product_total": 0,
                 "unweighted_total": 0.0076,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 1,
@@ -615,7 +606,6 @@
             "sodium": {
                 "ingredient_count": 1,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0,
                 "unweighted_total": 0.0024,
                 "weighting": 0
@@ -693,6 +683,14 @@
                 "unweighted_total": 1.1e-05,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 0,
+            "mass_less_than_100_penalty": 100000.00000019326,
+            "mass_more_than_100_penalty": 0,
+            "nutrient_penalty": 319984.5407458197,
+            "total": 419984.54074601294
         },
         "status": 0
     }

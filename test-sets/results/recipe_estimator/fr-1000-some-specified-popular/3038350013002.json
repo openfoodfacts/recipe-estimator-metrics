@@ -23,6 +23,8 @@
             "difference": 0.0,
             "ecobalyse_code": "durum-wheat-semolina",
             "id": "en:superior-quality-durum-wheat-semolina",
+            "index": 0,
+            "initial_estimate": 100.0,
             "is_in_taxonomy": 1,
             "lost_water": 0.5486592178770717,
             "nutrients": {
@@ -385,7 +387,6 @@
             },
             "carbohydrates": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 72,
                 "unweighted_total": 71.6,
                 "weighting": 1.0
@@ -405,21 +406,18 @@
             "energy": {
                 "ingredient_count": 1,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 1531,
                 "unweighted_total": 1490.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 2,
                 "unweighted_total": 1.25,
                 "weighting": 1.0
             },
             "fiber": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 3.6,
                 "unweighted_total": 3.37,
                 "weighting": 1.0
@@ -430,46 +428,16 @@
                 "unweighted_total": 5.7e-05,
                 "weighting": 0
             },
-            "fructose": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
-            "galactose_100g": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
-            "glucose": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
             "iron": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.00092,
                 "weighting": 0
             },
-            "lactose": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
             "magnesium": {
                 "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0265,
-                "weighting": 0
-            },
-            "maltose": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
                 "weighting": 0
             },
             "manganese": {
@@ -493,7 +461,6 @@
             "phosphorus": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.177,
                 "unweighted_total": 0.102,
                 "weighting": 0
@@ -518,45 +485,34 @@
             },
             "proteins": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 12,
                 "unweighted_total": 10.9,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "salt": {
                 "ingredient_count": 1,
-                "penalty_factor": 10.0,
                 "product_total": 0,
                 "unweighted_total": 0.003,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 0.4,
                 "unweighted_total": 0.21,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "sodium": {
                 "ingredient_count": 1,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0,
                 "unweighted_total": 0.0012,
                 "weighting": 0
             },
-            "sucrose": {
-                "ingredient_count": 1,
-                "notes": "Not listed on product",
-                "unweighted_total": 0.0,
-                "weighting": 0
-            },
             "sugars": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 3.7,
                 "unweighted_total": 1.0,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "vitamin-b1": {
                 "ingredient_count": 1,
@@ -603,7 +559,6 @@
             "vitamin-pp": {
                 "ingredient_count": 1,
                 "notes": "A component of B3?",
-                "penalty_factor": 0,
                 "product_total": 0.0029,
                 "unweighted_total": 0.00216,
                 "weighting": 0
@@ -620,6 +575,14 @@
                 "unweighted_total": 0.00218,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 0,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 55.86592178770786,
+            "nutrient_penalty": 5521498.167348088,
+            "total": 5521554.033269876
         },
         "status": 0
     }

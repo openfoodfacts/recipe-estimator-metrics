@@ -25,6 +25,8 @@
             "ciqual_proxy_food_code": null,
             "difference": 0.0,
             "id": "en:whole-grain-oat-flakes",
+            "index": 0,
+            "initial_estimate": 100.0,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 10.525405872193428,
@@ -379,7 +381,6 @@
             },
             "carbohydrates": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 64,
                 "unweighted_total": 57.9,
                 "weighting": 1.0
@@ -399,21 +400,18 @@
             "energy": {
                 "ingredient_count": 1,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 1556,
                 "unweighted_total": 1550.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 5.8,
                 "unweighted_total": 6.51,
                 "weighting": 1.0
             },
             "fiber": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 8.3,
                 "unweighted_total": 10.2,
                 "weighting": 1.0
@@ -444,10 +442,9 @@
             },
             "iron": {
                 "ingredient_count": 1,
-                "penalty_factor": 100.0,
                 "product_total": 0.0036,
                 "unweighted_total": 0.00405,
-                "weighting": 1.0
+                "weighting": 100.0
             },
             "lactose": {
                 "ingredient_count": 1,
@@ -511,29 +508,25 @@
             },
             "proteins": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 11,
                 "unweighted_total": 13.3,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "salt": {
                 "ingredient_count": 1,
-                "penalty_factor": 10.0,
                 "product_total": 0.01,
                 "unweighted_total": 0.014,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 1,
                 "unweighted_total": 1.13,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "sodium": {
                 "ingredient_count": 1,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0.004,
                 "unweighted_total": 0.005679999999999999,
                 "weighting": 0
@@ -546,15 +539,13 @@
             },
             "sugars": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 0.9,
                 "unweighted_total": 0.97,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "vitamin-b1": {
                 "ingredient_count": 1,
                 "notes": null,
-                "penalty_factor": 0,
                 "product_total": 0.00036,
                 "unweighted_total": 0.00043,
                 "weighting": 0
@@ -613,6 +604,14 @@
                 "unweighted_total": 0.00333,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 0,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 1053.5405872193437,
+            "nutrient_penalty": 10367528.96131702,
+            "total": 10368582.501904238
         },
         "status": 0
     }

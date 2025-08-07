@@ -23,6 +23,8 @@
             "difference": 0.375,
             "ecobalyse_code": "milk-organic",
             "id": "en:whole-milk",
+            "index": 0,
+            "initial_estimate": 50.79365079365079,
             "is_in_taxonomy": 1,
             "labels": "en:organic",
             "lost_water": 0.0,
@@ -279,6 +281,8 @@
                     "ciqual_proxy_food_code": "31016",
                     "ecobalyse_code": "sugar",
                     "id": "en:sugar",
+                    "index": 1,
+                    "initial_estimate": 16.93121693121693,
                     "is_in_taxonomy": 1,
                     "labels": "en:fair-trade",
                     "lost_water": 0.0,
@@ -529,6 +533,8 @@
                     "ciqual_proxy_food_code": null,
                     "difference": 1.51,
                     "id": "en:cocoa-powder",
+                    "index": 2,
+                    "initial_estimate": 8.465608465608465,
                     "is_in_taxonomy": 1,
                     "labels": "en:fair-trade",
                     "lost_water": 0.0,
@@ -787,6 +793,8 @@
             "ciqual_food_code_used": "19402",
             "ciqual_proxy_food_code": null,
             "id": "en:cream",
+            "index": 3,
+            "initial_estimate": 12.698412698412698,
             "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
             "lost_water": 0.0,
@@ -1037,6 +1045,8 @@
             "ciqual_proxy_food_code": "31016",
             "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "index": 4,
+            "initial_estimate": 6.349206349206349,
             "is_in_taxonomy": 1,
             "labels": "en:fair-trade",
             "lost_water": 0.0,
@@ -1287,6 +1297,8 @@
             "ciqual_proxy_food_code": null,
             "ecobalyse_code": "milk-powder",
             "id": "en:skimmed-milk-powder",
+            "index": 5,
+            "initial_estimate": 3.1746031746031744,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -1535,6 +1547,8 @@
             "ciqual_food_code_used": "9510",
             "ciqual_proxy_food_code": null,
             "id": "en:corn-starch",
+            "index": 6,
+            "initial_estimate": 1.5873015873015872,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -1885,7 +1899,6 @@
             },
             "carbohydrates": {
                 "ingredient_count": 7,
-                "penalty_factor": 1.0,
                 "product_total": 20,
                 "unweighted_total": 362.11999999999995,
                 "weighting": 1.0
@@ -1903,16 +1916,14 @@
                 "weighting": 0
             },
             "energy": {
-                "ingredient_count": 7,
+                "ingredient_count": 5,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 620,
                 "unweighted_total": 6062.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 7,
-                "penalty_factor": 1.0,
                 "product_total": 5,
                 "unweighted_total": 51.18000000000001,
                 "weighting": 1.0
@@ -1936,7 +1947,7 @@
                 "weighting": 0
             },
             "galactose_100g": {
-                "ingredient_count": 7,
+                "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.052000000000000005,
                 "weighting": 0
@@ -1996,7 +2007,7 @@
                 "weighting": 0
             },
             "polyols": {
-                "ingredient_count": 7,
+                "ingredient_count": 5,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.5,
                 "weighting": 0
@@ -2015,29 +2026,25 @@
             },
             "proteins": {
                 "ingredient_count": 7,
-                "penalty_factor": 1.0,
                 "product_total": 4,
                 "unweighted_total": 64.33,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "salt": {
                 "ingredient_count": 7,
-                "penalty_factor": 10.0,
                 "product_total": 0.29,
                 "unweighted_total": 1.5397999999999998,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 7,
-                "penalty_factor": 1.0,
                 "product_total": 3,
                 "unweighted_total": 32.949000000000005,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "sodium": {
                 "ingredient_count": 7,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0.116,
                 "unweighted_total": 0.61764,
                 "weighting": 0
@@ -2050,10 +2057,9 @@
             },
             "sugars": {
                 "ingredient_count": 7,
-                "penalty_factor": 1.0,
                 "product_total": 17,
                 "unweighted_total": 260.57,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "vitamin-b1": {
                 "ingredient_count": 7,
@@ -2115,6 +2121,14 @@
                 "unweighted_total": 0.011830000000000002,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 12.787279846214734,
+            "ingredient_not_half_previous_penalty": 315.3787969909092,
+            "mass_less_than_100_penalty": 699999.9999993633,
+            "mass_more_than_100_penalty": 0,
+            "nutrient_penalty": 103509.14039098509,
+            "total": 803837.3064671855
         },
         "status": 0
     }

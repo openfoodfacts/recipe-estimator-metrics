@@ -27,6 +27,8 @@
             "ciqual_proxy_food_code": null,
             "difference": 4.79,
             "id": "en:date",
+            "index": 0,
+            "initial_estimate": 51.61290322580645,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -277,6 +279,8 @@
             "ciqual_proxy_food_code": "15055",
             "difference": 2.6,
             "id": "en:cashew-nuts",
+            "index": 1,
+            "initial_estimate": 25.806451612903224,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -527,6 +531,8 @@
             "ciqual_proxy_food_code": null,
             "difference": 2.6,
             "id": "en:raisin",
+            "index": 2,
+            "initial_estimate": 12.903225806451612,
             "is_in_taxonomy": 1,
             "lost_water": 1.1162424656174799,
             "nutrients": {
@@ -777,6 +783,8 @@
             "ciqual_proxy_food_code": null,
             "difference": 2.4,
             "id": "en:almond",
+            "index": 3,
+            "initial_estimate": 6.451612903225806,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -1028,6 +1036,8 @@
             "difference": 2.0,
             "ecobalyse_code": "blueberry-non-eu",
             "id": "en:blueberry",
+            "index": 4,
+            "initial_estimate": 3.225806451612903,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -1402,13 +1412,12 @@
             },
             "carbohydrates": {
                 "ingredient_count": 5,
-                "penalty_factor": 1.0,
                 "product_total": 54.3,
                 "unweighted_total": 180.76,
                 "weighting": 1.0
             },
             "cholesterol": {
-                "ingredient_count": 5,
+                "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
@@ -1420,23 +1429,20 @@
                 "weighting": 0
             },
             "energy": {
-                "ingredient_count": 5,
+                "ingredient_count": 3,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 1558,
                 "unweighted_total": 4214.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 5,
-                "penalty_factor": 1.0,
                 "product_total": 13,
                 "unweighted_total": 102.98,
                 "weighting": 1.0
             },
             "fiber": {
                 "ingredient_count": 5,
-                "penalty_factor": 1.0,
                 "product_total": 4.1,
                 "unweighted_total": 29.5,
                 "weighting": 1.0
@@ -1514,7 +1520,7 @@
                 "weighting": 0
             },
             "polyols": {
-                "ingredient_count": 5,
+                "ingredient_count": 3,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.514,
                 "weighting": 0
@@ -1533,29 +1539,25 @@
             },
             "proteins": {
                 "ingredient_count": 5,
-                "penalty_factor": 1.0,
                 "product_total": 7.1,
                 "unweighted_total": 44.48,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "salt": {
                 "ingredient_count": 5,
-                "penalty_factor": 10.0,
                 "product_total": 0.02,
                 "unweighted_total": 0.1815,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 5,
-                "penalty_factor": 1.0,
                 "product_total": 2,
                 "unweighted_total": 13.232999999999999,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "sodium": {
                 "ingredient_count": 5,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0.008,
                 "unweighted_total": 0.072,
                 "weighting": 0
@@ -1568,10 +1570,9 @@
             },
             "sugars": {
                 "ingredient_count": 5,
-                "penalty_factor": 1.0,
                 "product_total": 52,
                 "unweighted_total": 156.22,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "vitamin-b1": {
                 "ingredient_count": 5,
@@ -1580,7 +1581,7 @@
                 "weighting": 0
             },
             "vitamin-b12": {
-                "ingredient_count": 5,
+                "ingredient_count": 4,
                 "notes": "Not listed on product",
                 "unweighted_total": 1.2e-08,
                 "weighting": 0
@@ -1633,6 +1634,14 @@
                 "unweighted_total": 0.0092,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 125.40319128397955,
+            "ingredient_not_half_previous_penalty": 254.7248297636809,
+            "mass_less_than_100_penalty": 0,
+            "mass_more_than_100_penalty": 553.1212328087279,
+            "nutrient_penalty": 1890684.884686097,
+            "total": 1891618.1339399535
         },
         "status": 0
     }

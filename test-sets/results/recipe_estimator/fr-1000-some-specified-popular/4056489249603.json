@@ -30,6 +30,8 @@
             "difference": 0.0,
             "ecobalyse_code": "apple-fr",
             "id": "en:apple-juice",
+            "index": 0,
+            "initial_estimate": 100.0,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -366,7 +368,6 @@
             },
             "carbohydrates": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 10,
                 "unweighted_total": 11.4,
                 "weighting": 1.0
@@ -386,21 +387,18 @@
             "energy": {
                 "ingredient_count": 1,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 192,
                 "unweighted_total": 208.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 0.1,
                 "unweighted_total": 0.14,
                 "weighting": 1.0
             },
             "fiber": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 0,
                 "unweighted_total": 0.23,
                 "weighting": 1.0
@@ -497,29 +495,25 @@
             },
             "proteins": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 0.5,
                 "unweighted_total": 0.17,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "salt": {
                 "ingredient_count": 1,
-                "penalty_factor": 10.0,
                 "product_total": 0.01,
                 "unweighted_total": 0.022,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 0,
                 "unweighted_total": 0.046,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "sodium": {
                 "ingredient_count": 1,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0.004,
                 "unweighted_total": 0.013300000000000001,
                 "weighting": 0
@@ -532,10 +526,9 @@
             },
             "sugars": {
                 "ingredient_count": 1,
-                "penalty_factor": 1.0,
                 "product_total": 10,
                 "unweighted_total": 10.9,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "vitamin-b1": {
                 "ingredient_count": 1,
@@ -597,6 +590,14 @@
                 "unweighted_total": 0.0001,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 0,
+            "mass_less_than_100_penalty": 100000.00000019326,
+            "mass_more_than_100_penalty": 0,
+            "nutrient_penalty": 859048.7097951417,
+            "total": 959048.709795335
         },
         "status": 0
     }

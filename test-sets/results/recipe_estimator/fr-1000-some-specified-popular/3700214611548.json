@@ -26,6 +26,8 @@
                     "ciqual_food_code_used": "16030",
                     "ciqual_proxy_food_code": "16030",
                     "id": "en:cocoa-paste",
+                    "index": 0,
+                    "initial_estimate": 44.44444444444445,
                     "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
@@ -275,6 +277,8 @@
                     "ciqual_food_code_used": "16030",
                     "ciqual_proxy_food_code": null,
                     "id": "en:cocoa-butter",
+                    "index": 1,
+                    "initial_estimate": 22.222222222222225,
                     "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {
@@ -531,6 +535,8 @@
             "ciqual_proxy_food_code": "31016",
             "ecobalyse_code": "sugar",
             "id": "en:cane-sugar",
+            "index": 2,
+            "initial_estimate": 33.333333333333336,
             "is_in_taxonomy": 1,
             "lost_water": 0.0,
             "nutrients": {
@@ -896,7 +902,6 @@
             },
             "carbohydrates": {
                 "ingredient_count": 3,
-                "penalty_factor": 1.0,
                 "product_total": 24,
                 "unweighted_total": 99.8,
                 "weighting": 1.0
@@ -914,23 +919,20 @@
                 "weighting": 0
             },
             "energy": {
-                "ingredient_count": 3,
+                "ingredient_count": 2,
                 "notes": "Energy is derived",
-                "penalty_factor": 0,
                 "product_total": 2635,
                 "unweighted_total": 7400.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 3,
-                "penalty_factor": 1.0,
                 "product_total": 54,
                 "unweighted_total": 200.0,
                 "weighting": 1.0
             },
             "fiber": {
                 "ingredient_count": 3,
-                "penalty_factor": 1.0,
                 "product_total": 12,
                 "unweighted_total": 0.0,
                 "weighting": 1.0
@@ -942,19 +944,19 @@
                 "weighting": 0
             },
             "fructose": {
-                "ingredient_count": 3,
+                "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
             },
             "galactose_100g": {
-                "ingredient_count": 3,
+                "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
             },
             "glucose": {
-                "ingredient_count": 3,
+                "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
@@ -966,7 +968,7 @@
                 "weighting": 0
             },
             "lactose": {
-                "ingredient_count": 3,
+                "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
@@ -978,7 +980,7 @@
                 "weighting": 0
             },
             "maltose": {
-                "ingredient_count": 3,
+                "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
@@ -1008,7 +1010,7 @@
                 "weighting": 0
             },
             "polyols": {
-                "ingredient_count": 3,
+                "ingredient_count": 2,
                 "notes": "Not listed on product",
                 "unweighted_total": 0.0,
                 "weighting": 0
@@ -1027,45 +1029,40 @@
             },
             "proteins": {
                 "ingredient_count": 3,
-                "penalty_factor": 1.0,
                 "product_total": 7.8,
                 "unweighted_total": 0.0,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "salt": {
                 "ingredient_count": 3,
-                "penalty_factor": 10.0,
                 "product_total": 0,
                 "unweighted_total": 0.0054,
-                "weighting": 1.0
+                "weighting": 10.0
             },
             "saturated-fat": {
                 "ingredient_count": 3,
-                "penalty_factor": 1.0,
                 "product_total": 33,
                 "unweighted_total": 119.4,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "sodium": {
                 "ingredient_count": 3,
                 "notes": "Salt is used instead",
-                "penalty_factor": 0,
                 "product_total": 0,
                 "unweighted_total": 0.00217,
                 "weighting": 0
             },
             "sucrose": {
-                "ingredient_count": 3,
+                "ingredient_count": 1,
                 "notes": "Not listed on product",
                 "unweighted_total": 99.8,
                 "weighting": 0
             },
             "sugars": {
                 "ingredient_count": 3,
-                "penalty_factor": 1.0,
                 "product_total": 14,
                 "unweighted_total": 99.8,
-                "weighting": 1.0
+                "weighting": 5.0
             },
             "vitamin-b1": {
                 "ingredient_count": 3,
@@ -1127,6 +1124,14 @@
                 "unweighted_total": 2e-05,
                 "weighting": 0
             }
+        },
+        "penalties": {
+            "ingredient_more_than_previous_penalty": 0,
+            "ingredient_not_half_previous_penalty": 289.9500000000001,
+            "mass_less_than_100_penalty": 299999.9999997271,
+            "mass_more_than_100_penalty": 0,
+            "nutrient_penalty": 422912722.7675819,
+            "total": 423213012.71758157
         },
         "status": 0
     }
