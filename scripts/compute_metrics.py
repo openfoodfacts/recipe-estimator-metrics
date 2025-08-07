@@ -174,12 +174,12 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
             # Read the corresponding resulting product
             result_path = result_set_path + '/' + test_name
+            print("Computing metrics for " + result_path)
             with open(result_path, "r") as f:
                 resulting_product = json.load(f)
 
             # Compute accuracy metrics comparing the estimated "percent_estimate" field in the resulting product
             # to the "percent" field in the input product
-            print("Computing metrics for " + result_path)
             compare_input_product_to_resulting_product(input_product, resulting_product, ingredients_stats, products_ingredients_csv_writer, test_name)
 
             # Remove fields that change between runs

@@ -30,29 +30,40 @@
                 {
                     "ciqual_food_code": "18066",
                     "id": "en:water",
-                    "percent_estimate": 25,
+                    "percent_estimate": 30,
+                    "percent_max": 100,
+                    "percent_min": 5,
                     "text": "water"
                 },
                 {
                     "ciqual_food_code": "9310",
+                    "difference": 15.2,
                     "id": "en:oat",
-                    "percent": 9.8,
                     "percent_estimate": 25,
+                    "percent_hidden": 9.8,
+                    "percent_max": 50,
+                    "percent_min": 0,
                     "text": "oat"
                 }
             ],
-            "percent_estimate": 50,
+            "percent_estimate": 55,
+            "percent_max": 100,
+            "percent_min": 10,
             "text": "oat base"
         },
         {
             "id": "en:soluble-corn-fiber",
-            "percent_estimate": 25,
+            "percent_estimate": 22.5,
+            "percent_max": 50,
+            "percent_min": 0,
             "text": "soluble corn fibre"
         },
         {
             "ciqual_food_code": "17440",
             "id": "en:sunflower-oil",
-            "percent_estimate": 12.5,
+            "percent_estimate": 11.2,
+            "percent_max": 33.3333333333333,
+            "percent_min": 0,
             "text": "sunflower oil"
         },
         {
@@ -60,17 +71,23 @@
             "ingredients": [
                 {
                     "id": "en:e341iii",
-                    "percent_estimate": 6.25,
+                    "percent_estimate": 5.62,
+                    "percent_max": 25,
+                    "percent_min": 0,
                     "text": "tri-calcium phosphate"
                 }
             ],
-            "percent_estimate": 6.25,
+            "percent_estimate": 5.62,
+            "percent_max": 25,
+            "percent_min": 0,
             "text": "calcium"
         },
         {
             "ciqual_food_code": "11082",
             "id": "en:sea-salt",
-            "percent_estimate": 3.125,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "sea salt"
         },
         {
@@ -78,39 +95,53 @@
             "ingredients": [
                 {
                     "id": "en:e418",
-                    "percent_estimate": 1.5625,
+                    "percent_estimate": 0.05,
+                    "percent_max": 0.1,
+                    "percent_min": 0,
                     "text": "gellan gum"
                 }
             ],
-            "percent_estimate": 1.5625,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "stabiliser"
         },
         {
             "id": "en:vitamins",
-            "percent_estimate": 0.78125,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamins"
         },
         {
             "id": "en:e101",
-            "percent_estimate": 0.390625,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamin b2"
         },
         {
             "id": "en:vitamin-b12",
-            "percent_estimate": 0.1953125,
+            "percent_estimate": 0.05,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamin b12"
         },
         {
             "id": "en:ergocalciferol",
-            "percent_estimate": 0.1953125,
+            "percent_estimate": 5.38,
+            "percent_max": 0.1,
+            "percent_min": 0,
             "text": "vitamin d2"
         }
     ],
     "ingredients_metrics": {
-        "total_difference": 0,
-        "total_specified_input_percent": 0
+        "number_of_ingredients_without_ciqual_code": 7,
+        "relative_difference": 1.55,
+        "total_difference": 15.2,
+        "total_specified_input_percent": 9.8
     },
-    "ingredients_percent_analysis": -1,
+    "ingredients_percent_analysis": 1,
     "ingredients_text": "oat  base (water,  oat  9,8%), soluble corn fibre, sunflower oil, calcium (tri-calcium phosphate), sea salt, stabiliser (gellan gum), vitamins (b2, b12, d2),",
     "ingredients_without_ciqual_codes": [
         "en:calcium",
@@ -155,10 +186,8 @@
         "fr:triman",
         "it:vegan-cert"
     ],
+    "lang": "en",
     "lc": "en",
-    "misc_tags": [
-        "en:some-ingredients-with-specified-percent"
-    ],
     "nutriments": {
         "calcium": 0.12,
         "calcium_100g": 0.12,
@@ -236,5 +265,6 @@
         "vitamin-d_label": "0",
         "vitamin-d_unit": "µg",
         "vitamin-d_value": 0.75
-    }
+    },
+    "schema_version": 999
 }
