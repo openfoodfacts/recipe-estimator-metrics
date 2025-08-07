@@ -45,7 +45,6 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
         input_percent = 0
         input_percent_is_specified = False
         rounded_resulting_percent_estimate = 0
-        resulting_quantity_estimate = 0
         difference = 0
 
         # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
@@ -54,10 +53,12 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             rounded_resulting_percent_estimate = round_to_n(resulting_ingredient["percent_estimate"], 3)
             resulting_ingredient['percent_estimate'] = rounded_resulting_percent_estimate        
 
+        # If there is a quantity_estimate then use this for comparisons as this is equivalent to what is stated on packaging
+        # See: https://bryantresearch.co.uk/foodlaw/label/quid-ex3-prepared-with.htm
         if "quantity_estimate" in resulting_ingredient:
             # Round the computed percent to 3 significant figures so diffs aren't excessive
-            resulting_quantity_estimate = round_to_n(resulting_ingredient["quantity_estimate"], 3)
-            resulting_ingredient['quantity_estimate'] = resulting_quantity_estimate
+            rounded_resulting_percent_estimate = round_to_n(resulting_ingredient["quantity_estimate"], 3)
+            resulting_ingredient['quantity_estimate'] = rounded_resulting_percent_estimate
 
         # We compute metrics for known percent in the input product
         if "percent" in input_ingredient:
