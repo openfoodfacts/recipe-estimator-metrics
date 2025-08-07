@@ -21,10 +21,10 @@ from compute_metrics import compute_metrics_for_test_set
 results = [sys.argv[1]] if (len(sys.argv) > 1) else os.listdir('test-sets/results')
 for result in results:
     results_path = 'test-sets/results/' + result
-
-    test_sets = sys.argv[2:] if (len(sys.argv) > 2) else os.listdir(results_path)
-    # Go through each result test set directory
-    for test_set_name in test_sets:
-        
-        # Compute average metrics for the test set
-        compute_metrics_for_test_set(results_path, test_set_name)
+    if os.path.isdir(results_path):
+        test_sets = sys.argv[2:] if (len(sys.argv) > 2) else os.listdir(results_path)
+        # Go through each result test set directory
+        for test_set_name in test_sets:
+            if os.path.isdir(f"{results_path}/{test_set_name}"):
+                # Compute average metrics for the test set
+                compute_metrics_for_test_set(results_path, test_set_name)
