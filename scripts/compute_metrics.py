@@ -27,6 +27,10 @@ def add_missing_estimates_for_parent_ingredients(ingredients):
             add_missing_estimates_for_parent_ingredients(ingredient["ingredients"])
             if "percent_estimate" not in ingredient:
                 ingredient["percent_estimate"] = sum([sub_ingredient["percent_estimate"] for sub_ingredient in ingredient["ingredients"]])
+            if "quantity_estimate" not in ingredient:
+                sub_ingredient_quantity = sum([sub_ingredient.get("quantity_estimate", 0) for sub_ingredient in ingredient["ingredients"]])
+                if sub_ingredient_quantity > 0:
+                    ingredient["quantity_estimate"] = sub_ingredient_quantity
 
 def compare_input_ingredients_to_resulting_ingredients(input_ingredients, resulting_ingredients, ingredients_stats, products_ingredients_csv_writer, test_name):
     # Compute difference metrics for each ingredient and nested sub ingredient comparing the input percent to the resulting percent_estimate
