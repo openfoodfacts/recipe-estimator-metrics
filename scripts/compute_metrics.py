@@ -36,6 +36,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
     # Compute difference metrics for each ingredient and nested sub ingredient comparing the input percent to the resulting percent_estimate
 
     total_difference = 0
+    total_variance = 0
     total_specified_input_percent = 0
     number_of_ingredients_without_ciqual_code = 0
 
@@ -43,6 +44,9 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
     add_missing_estimates_for_parent_ingredients(resulting_ingredients)
 
     for i, input_ingredient in enumerate(input_ingredients):
+        if i >= len(resulting_ingredients):
+            # Deal with PEFAP
+            continue
         resulting_ingredient = resulting_ingredients[i]
 
         input_ingredient_id = input_ingredient['id']
@@ -50,6 +54,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
         input_percent_is_specified = False
         rounded_resulting_percent_estimate = 0
         difference = 0
+        variance = 0
 
         # If the resulting ingredient does not have a percent_estimate, we set it to 0 for metrics computation
         if "percent_estimate" in resulting_ingredient:
@@ -76,8 +81,10 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             # Store the difference at the ingredient level. 
             resulting_ingredient["difference"] = rounded_difference
             total_difference += difference
+            variance = difference ** 2
+            total_variance += variance
             # Write to summary CSV file.
-            products_ingredients_csv_writer.writerow([test_name, input_ingredient['id'], input_percent, rounded_resulting_percent_estimate, rounded_difference])
+            products_ingredients_csv_writer.writerow([test_name, input_ingredient['id'], input_percent, rounded_resulting_percent_estimate, rounded_difference, round_to_n(variance, 3)])
         
         # Compare sub ingredients if any
         if "ingredients" in input_ingredient and len(input_ingredient["ingredients"]) > 0:
@@ -86,10 +93,12 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
             if "ingredients" not in resulting_ingredient:
                 print(f"Error: missing sub ingredients in resulting ingredient for {input_ingredient['id']}")
                 # seems to happen with PEFAP. The metrics comparison is not valid in this case.
-                #continue
-            resulting_sub_ingredients = resulting_ingredient["ingredients"]
-            (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code) = [x + y for x, y in zip(
-                [total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code],
+                continue
+            else:
+                resulting_sub_ingredients = resulting_ingredient["ingredients"]
+
+            (total_specified_input_percent, total_difference, total_variance, number_of_ingredients_without_ciqual_code) = [x + y for x, y in zip(
+                [total_specified_input_percent, total_difference, total_variance, number_of_ingredients_without_ciqual_code],
                 compare_input_ingredients_to_resulting_ingredients(input_sub_ingredients, resulting_sub_ingredients, ingredients_stats, products_ingredients_csv_writer, test_name))]
         else:
             # Aggregate stats for the ingredient
@@ -105,6 +114,7 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
                     'total_input_percent': 0,
                     "total_percent_estimate": 0,
                     "total_difference": 0,
+                    "total_variance": 0,
                     "number_of_products": 0,
                     "number_of_products_where_specified": 0,
                     'is_in_taxonomy': input_ingredient.get('is_in_taxonomy'),
@@ -114,12 +124,13 @@ def compare_input_ingredients_to_resulting_ingredients(input_ingredients, result
                 
             ingredients_stats[input_ingredient_id]["total_percent_estimate"] += rounded_resulting_percent_estimate
             ingredients_stats[input_ingredient_id]["total_difference"] += difference
+            ingredients_stats[input_ingredient_id]["total_variance"] += variance
             ingredients_stats[input_ingredient_id]["number_of_products"] += 1
             if input_percent_is_specified:
                 ingredients_stats[input_ingredient_id]["number_of_products_where_specified"] += 1
                 ingredients_stats[input_ingredient_id]["total_input_percent"] += input_percent
 
-    return (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code)
+    return (total_specified_input_percent, total_difference, total_variance, number_of_ingredients_without_ciqual_code)
 
 def compare_input_product_to_resulting_product(input_product, resulting_product, ingredients_stats, products_ingredients_csv_writer, test_name):
     
@@ -132,11 +143,12 @@ def compare_input_product_to_resulting_product(input_product, resulting_product,
     if "ingredients" not in resulting_product:
         raise ValueError("Resulting product must have an 'ingredients' field")
         
-    (total_specified_input_percent, total_difference, number_of_ingredients_without_ciqual_code) = compare_input_ingredients_to_resulting_ingredients(input_product["ingredients"], resulting_product["ingredients"], ingredients_stats, products_ingredients_csv_writer, test_name)
+    (total_specified_input_percent, total_difference, total_variance, number_of_ingredients_without_ciqual_code) = compare_input_ingredients_to_resulting_ingredients(input_product["ingredients"], resulting_product["ingredients"], ingredients_stats, products_ingredients_csv_writer, test_name)
 
     resulting_product["ingredients_metrics"] = {
         "total_specified_input_percent": round_to_n(total_specified_input_percent,3),
         "total_difference": round_to_n(total_difference,3),
+        "total_variance": round_to_n(total_variance,3),
         "number_of_ingredients_without_ciqual_code": number_of_ingredients_without_ciqual_code,
     }
     # If we have some specified input percent, compute the relative difference
@@ -148,9 +160,11 @@ def compare_input_product_to_resulting_product(input_product, resulting_product,
 def compute_metrics_for_test_set(results_path, test_set_name):
     # Compute average metrics for the test set
     test_set_total_difference = 0
+    test_set_total_variance = 0
     test_set_number_of_products = 0
     # and for products that have ciqual food codes or proxy food codes for all ingredients
     all_ciqual_test_set_total_difference = 0
+    all_ciqual_test_set_total_variance = 0
     all_ciqual_test_set_number_of_products = 0
 
     # Compute aggregated stats (number of products and total difference) for each ingredient
@@ -161,9 +175,9 @@ def compute_metrics_for_test_set(results_path, test_set_name):
     with open(result_set_path + "/products_stats.csv", "w", newline="") as products_csv, \
          open(result_set_path + "/products_ingredients_stats.csv", "w", newline="") as products_ingredients_csv:
         products_csv_writer = csv.writer(products_csv)
-        products_csv_writer.writerow(['test_name', 'total_difference','number_of_ingredients_without_ciqual_code','ingredients_text'])
+        products_csv_writer.writerow(['test_name', 'total_difference','total_variance','number_of_ingredients_without_ciqual_code','ingredients_text'])
         products_ingredients_csv_writer = csv.writer(products_ingredients_csv)
-        products_ingredients_csv_writer.writerow(['test_name','ingredient','percent','percent_estimate','difference'])
+        products_ingredients_csv_writer.writerow(['test_name','ingredient','percent','percent_estimate','difference','variance'])
 
         # Go through each JSON file in the input test set directory. Sort so that summary results order is consistent
 
@@ -180,8 +194,12 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             # Read the corresponding resulting product
             result_path = result_set_path + '/' + test_name
             print("Computing metrics for " + result_path)
-            with open(result_path, "r") as f:
-                resulting_product = json.load(f)
+            try:
+                with open(result_path, "r") as f:
+                    resulting_product = json.load(f)
+            except:
+                with open(result_path, "r", encoding = 'cp1252') as f:
+                    resulting_product = json.load(f)
 
             # Compute accuracy metrics comparing the estimated "percent_estimate" field in the resulting product
             # to the "percent" field in the input product
@@ -198,18 +216,22 @@ def compute_metrics_for_test_set(results_path, test_set_name):
                 json.dump(resulting_product, f,  indent=4, ensure_ascii=False, sort_keys=True)
 
             # Write to the products summary CSV file
-            products_csv_writer.writerow([test_name, resulting_product["ingredients_metrics"]["total_difference"],
+            products_csv_writer.writerow([test_name,
+                                          resulting_product["ingredients_metrics"]["total_difference"],
+                                          resulting_product["ingredients_metrics"]["total_variance"],
                                           resulting_product["ingredients_metrics"]["number_of_ingredients_without_ciqual_code"],
                                            resulting_product["ingredients_text"]])
 
             # Aggregate metrics by test set
             test_set_total_difference += resulting_product["ingredients_metrics"]["total_difference"]
+            test_set_total_variance += resulting_product["ingredients_metrics"]["total_variance"]
             test_set_number_of_products += 1
 
             # Also compute metrics that consider only products which have ciqual food codes or proxy food codes for all ingredients
             # This is useful to see how well the model performs when all ingredients are known
             if resulting_product["ingredients_metrics"]["number_of_ingredients_without_ciqual_code"] == 0:
                 all_ciqual_test_set_total_difference += resulting_product["ingredients_metrics"]["total_difference"]
+                all_ciqual_test_set_total_variance += resulting_product["ingredients_metrics"]["total_variance"]
                 all_ciqual_test_set_number_of_products += 1
 
 
@@ -219,7 +241,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         # Save the ingredients stats as a CSV file in the test set directory
         with open(results_path + "/" + test_set_name + "/ingredients_stats.csv", "w", newline="") as ingredients_stats_csv:
             ingredients_stats_csv_writer = csv.writer(ingredients_stats_csv)
-            ingredients_stats_csv_writer.writerow(['ingredient','is_in_taxonomy','ciqual_food_code','ciqual_proxy_food_code', 'total_input_percent', 'total_percent_estimate','total_difference','relative_difference','number_of_products','number_of_products_where_specified'])
+            ingredients_stats_csv_writer.writerow(['ingredient','is_in_taxonomy','ciqual_food_code','ciqual_proxy_food_code', 'total_input_percent', 'total_percent_estimate','total_difference','total_variance','relative_difference','number_of_products','number_of_products_where_specified'])
             # sort ingredients by id for easy diffs
             for ingredient_id in sorted(ingredients_stats.keys()):
                 ingredient_stats = ingredients_stats[ingredient_id]
@@ -233,6 +255,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
                                                        round_to_n(ingredient_stats["total_input_percent"], 3),
                                                        round_to_n(ingredient_stats["total_percent_estimate"], 3),
                         round_to_n(ingredient_stats["total_difference"], 3),
+                        round_to_n(ingredient_stats["total_variance"], 3),
                         ingredient_stats.get("relative_difference", ""),
                           ingredient_stats["number_of_products"], 
                           ingredient_stats["number_of_products_where_specified"]])
@@ -260,17 +283,23 @@ def compute_metrics_for_test_set(results_path, test_set_name):
 
         # Save a summary of the results in the test set directory        
         test_set_average_difference = test_set_total_difference / test_set_number_of_products
+        test_set_average_variance = test_set_total_variance / test_set_number_of_products
         try:
             all_ciqual_test_set_average_difference = all_ciqual_test_set_total_difference / all_ciqual_test_set_number_of_products
+            all_ciqual_test_set_average_variance = all_ciqual_test_set_total_variance / all_ciqual_test_set_number_of_products
         except: 
             all_ciqual_test_set_average_difference = 0
+            all_ciqual_test_set_average_variance = 0
 
         results_summary = {
             "test_set_name": test_set_name,
             "total_difference": round_to_n(test_set_total_difference,8),
+            "total_variance": round_to_n(test_set_total_variance,8),
             "number_of_products": test_set_number_of_products,
             "average_difference": round_to_n(test_set_average_difference,4),
+            "average_variance": round_to_n(test_set_average_variance,4),
             "all_ciqual_test_set_total_difference": round_to_n(all_ciqual_test_set_total_difference,8),
+            "all_ciqual_test_set_total_variance": round_to_n(all_ciqual_test_set_total_variance,8),
             "all_ciqual_test_set_number_of_products": all_ciqual_test_set_number_of_products,
             "all_ciqual_test_set_average_difference": round_to_n(all_ciqual_test_set_average_difference,4),
             "percent_estimate_with_ciqual_food_code": percent_estimate_with_ciqual_food_code,
@@ -286,11 +315,15 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         # Print the results summary
         print("Results summary for test set " + test_set_name + ":")
         print("Total difference: " + str(round_to_n(test_set_total_difference,8)))
+        print("Total variance: " + str(round_to_n(test_set_total_variance,8)))
         print("Number of products: " + str(test_set_number_of_products))
         print("Average difference: " + str(round_to_n(test_set_average_difference,4)))
+        print("Average variance: " + str(round_to_n(test_set_average_variance,4)))
         print("All ciqual test set total difference: " + str(round_to_n(all_ciqual_test_set_total_difference,8)))
+        print("All ciqual test set total variance: " + str(round_to_n(all_ciqual_test_set_total_variance,8)))
         print("All ciqual test set number of products: " + str(all_ciqual_test_set_number_of_products))
         print("All ciqual test set average difference: " + str(round_to_n(all_ciqual_test_set_average_difference,4)))
+        print("All ciqual test set average variance: " + str(round_to_n(all_ciqual_test_set_average_variance,4)))
         print("Percent estimate with ciqual_food_code: " + str(percent_estimate_with_ciqual_food_code))
         print("Percent estimate with ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_proxy_food_code))
         print("Percent estimate with ciqual or ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_or_ciqual_proxy_food_code))
