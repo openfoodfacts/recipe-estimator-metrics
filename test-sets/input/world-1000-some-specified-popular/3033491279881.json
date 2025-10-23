@@ -14,14 +14,16 @@
             "ciqual_proxy_food_code": "19041",
             "id": "en:semi-skimmed-milk",
             "percent": 78.5,
-            "text": "LAIT demi \u00e9cr\u00e9m\u00e9"
+            "percent_estimate": 78.5,
+            "text": "LAIT demi écrémé"
         },
         {
             "ciqual_proxy_food_code": "19051",
             "id": "en:condensed-skimmed-milk",
             "percent": 78.5,
+            "percent_estimate": 21.5,
             "processing": "en:powder",
-            "text": "LAIT \u00e9cr\u00e9m\u00e9 concentr\u00e9"
+            "text": "LAIT écrémé concentré"
         },
         {
             "ciqual_food_code": "19402",
@@ -30,11 +32,13 @@
                 {
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
+                    "percent_estimate": 0,
                     "text": "LAIT"
                 }
             ],
+            "percent_estimate": 0.0,
             "processing": "en:sugared",
-            "text": "cr\u00e8me"
+            "text": "crème"
         },
         {
             "id": "en:thickener",
@@ -44,31 +48,38 @@
                     "ingredients": [
                         {
                             "id": "en:modified-starch",
-                            "text": "amidon transform\u00e9"
+                            "percent_estimate": 0,
+                            "text": "amidon transformé"
                         }
                     ],
+                    "percent_estimate": 0,
                     "text": "e1442"
                 }
             ],
-            "text": "\u00e9paississants"
+            "percent_estimate": 0,
+            "text": "épaississants"
         },
         {
             "id": "en:e407",
             "ingredients": [
                 {
                     "id": "en:e407",
-                    "text": "carragh\u00e9nanes"
+                    "percent_estimate": 0,
+                    "text": "carraghénanes"
                 }
             ],
+            "percent_estimate": 0,
             "text": "e407"
         },
         {
             "id": "fr:extrait-de-cafe-1-6-amidon",
+            "percent_estimate": 0,
             "text": "extrait de cafe 1.6% amidon"
         }
     ],
     "ingredients_lc": "fr",
-    "ingredients_text": "LAIT demi \u00e9cr\u00e9m\u00e9 et LAIT \u00e9cr\u00e9m\u00e9 concentr\u00e9 ou en poudre (78,5%) sucre cr\u00e8me (LAIT) \u00e9paississants: E 1442 (amidon transform\u00e9), E 407 (carragh\u00e9nanes) extrait de cafe 1,6% amidon",
+    "ingredients_percent_analysis": -1,
+    "ingredients_text": "LAIT demi écrémé et LAIT écrémé concentré ou en poudre (78,5%) sucre crème (LAIT) épaississants: E 1442 (amidon transformé), E 407 (carraghénanes) extrait de cafe 1,6% amidon",
     "ingredients_without_ciqual_codes": [
         "en:e1442",
         "en:e407",
@@ -83,7 +94,11 @@
         "en:nutriscore",
         "en:nutriscore-grade-c"
     ],
+    "lang": "fr",
     "lc": "fr",
+    "misc_tags": [
+        "en:some-ingredients-with-specified-percent"
+    ],
     "nutriments": {
         "carbohydrates": 20.2,
         "carbohydrates_100g": 20.2,
@@ -149,5 +164,8 @@
         "sugars_serving": 21.8,
         "sugars_unit": "g",
         "sugars_value": 17.4
-    }
+    },
+    "percent_ingredients_with_ciqual_code": 0,
+    "percent_ingredients_with_ciqual_or_proxy_code": 100.0,
+    "schema_version": 999
 }

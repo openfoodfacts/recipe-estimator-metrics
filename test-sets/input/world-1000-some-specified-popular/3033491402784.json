@@ -18,11 +18,12 @@
             "ingredients": [
                 {
                     "id": "fr:pour-info",
-                    "percent": 80.3,
+                    "percent_estimate": 50,
                     "text": "pour info"
                 }
             ],
-            "text": "LAIT demi-\u00e9cr\u00e9m\u00e9"
+            "percent_estimate": 50,
+            "text": "LAIT demi-écrémé"
         },
         {
             "id": "fr:lait-ecreme-enpoudre",
@@ -30,15 +31,18 @@
                 {
                     "id": "fr:pour-info",
                     "percent": 4.4,
+                    "percent_estimate": 25,
                     "text": "pour info"
                 }
             ],
-            "text": "LAIT \u00e9cr\u00e9m\u00e9 enpoudre"
+            "percent_estimate": 25,
+            "text": "LAIT écrémé enpoudre"
         },
         {
             "ciqual_proxy_food_code": "31016",
             "id": "en:sugar",
             "percent": 3.1,
+            "percent_estimate": 3.1,
             "text": "sucre"
         },
         {
@@ -46,40 +50,48 @@
             "ingredients": [
                 {
                     "id": "en:bifidus-actiregularis",
+                    "percent_estimate": 5.475,
                     "text": "Bifidus ActiRegularis"
                 },
                 {
                     "ciqual_proxy_food_code": "19051",
                     "id": "en:milk",
+                    "percent_estimate": 5.475,
                     "text": "LAIT"
                 }
             ],
-            "text": "prot\u00e9ines deLAIT ferments lactiques dont bifidobacterium"
+            "percent_estimate": 10.95,
+            "text": "protéines deLAIT ferments lactiques dont bifidobacterium"
         },
         {
             "ciqual_food_code": "9311",
             "id": "en:oat-flakes",
             "percent": 6.8,
+            "percent_estimate": 6.8,
             "text": "flocons d'AVOINE"
         },
         {
             "id": "fr:fructo-oligosaccharide-amandes-grillees",
             "percent": 1,
-            "text": "fructo-oligosaccharide AMANDES grill\u00e9es"
+            "percent_estimate": 1,
+            "text": "fructo-oligosaccharide AMANDES grillées"
         },
         {
             "id": "en:flour",
             "ingredients": [
                 {
                     "id": "en:wheat",
-                    "text": "BL\u00c9"
+                    "percent_estimate": 0.787500000000001,
+                    "text": "BLÉ"
                 },
                 {
                     "ciqual_food_code": "9390",
                     "id": "en:rye",
+                    "percent_estimate": 0.787500000000001,
                     "text": "SEIGLE"
                 }
             ],
+            "percent_estimate": 1.575,
             "processing": "en:sugared",
             "text": "farine"
         },
@@ -87,21 +99,25 @@
             "ciqual_food_code": "9340",
             "id": "en:quinoa",
             "percent": 0.4,
+            "percent_estimate": 0.4,
             "processing": "en:puffed",
             "text": "quinoa"
         },
         {
             "id": "fr:riz-graines-de-chia",
             "percent": 0.2,
+            "percent_estimate": 0.2,
             "text": "riz graines de chia"
         },
         {
             "id": "fr:dextrose-huile-de-tournesol-farine-d-avoine-extrudee-sel-germe-de-ble-malt-d-orge",
-            "text": "dextrose huile de tournesol farine d'AVOINE extrud\u00e9e sel germe de BL\u00c9 malt d'ORGE"
+            "percent_estimate": 0.974999999999994,
+            "text": "dextrose huile de tournesol farine d'AVOINE extrudée sel germe de BLÉ malt d'ORGE"
         }
     ],
     "ingredients_lc": "fr",
-    "ingredients_text": "LAIT demi-\u00e9cr\u00e9m\u00e9 (pour info 80,3%) (pour info Origine UE) LAIT \u00e9cr\u00e9m\u00e9 enpoudre (pour info 4,4%) (pour info Origine UE) sucre (3,1%) prot\u00e9ines deLAIT ferments lactiques dont bifidobacterium (Bifidus ActiRegularis)(LAIT) flocons d'AVOINE (6,8%) fructo-oligosaccharide AMANDES grill\u00e9es (1%) sucre farine (BL\u00c9, SEIGLE) quinoa souffl\u00e9 (0,4%) riz graines de chia (0,2%) dextrose huile de tournesol farine d'AVOINE extrud\u00e9e sel germe de BL\u00c9 malt d'ORGE",
+    "ingredients_percent_analysis": -1,
+    "ingredients_text": "LAIT demi-écrémé (pour info 80,3%) (pour info Origine UE) LAIT écrémé enpoudre (pour info 4,4%) (pour info Origine UE) sucre (3,1%) protéines deLAIT ferments lactiques dont bifidobacterium (Bifidus ActiRegularis)(LAIT) flocons d'AVOINE (6,8%) fructo-oligosaccharide AMANDES grillées (1%) sucre farine (BLÉ, SEIGLE) quinoa soufflé (0,4%) riz graines de chia (0,2%) dextrose huile de tournesol farine d'AVOINE extrudée sel germe de BLÉ malt d'ORGE",
     "ingredients_without_ciqual_codes": [
         "en:bifidus-actiregularis",
         "en:flour",
@@ -118,7 +134,12 @@
         "en:nutriscore",
         "en:nutriscore-grade-a"
     ],
+    "lang": "fr",
     "lc": "fr",
+    "misc_tags": [
+        "en:some-ingredients-with-specified-percent",
+        "en:at-least-5-ingredients-with-specified-percent"
+    ],
     "nutriments": {
         "calcium": 0.158,
         "calcium_100g": 0.158,
@@ -194,5 +215,8 @@
         "sugars_serving": 17.2,
         "sugars_unit": "g",
         "sugars_value": 10
-    }
+    },
+    "percent_ingredients_with_ciqual_code": 7.987500000000001,
+    "percent_ingredients_with_ciqual_or_proxy_code": 16.5625,
+    "schema_version": 999
 }

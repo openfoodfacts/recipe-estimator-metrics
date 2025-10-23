@@ -38,6 +38,9 @@
             "id": "en:whole-milk",
             "origins": "en:france",
             "percent": 50,
+            "percent_estimate": 50,
+            "percent_max": 50,
+            "percent_min": 50,
             "text": "LAIT entier"
         },
         {
@@ -45,50 +48,80 @@
             "id": "en:cream",
             "origins": "en:france",
             "percent": 39,
-            "text": "CR\u00c8ME"
+            "percent_estimate": 39,
+            "percent_max": 39,
+            "percent_min": 39,
+            "text": "CRÈME"
         },
         {
             "id": "en:lactic-ferments",
+            "percent_estimate": 4.6,
+            "percent_max": 7.4,
+            "percent_min": 1.8,
             "text": "ferments LACTIQUES"
         },
         {
             "ciqual_food_code": "11000",
             "id": "en:garlic",
             "percent": 1.8,
+            "percent_estimate": 1.8,
+            "percent_max": 1.8,
+            "percent_min": 1.8,
             "text": "ail"
         },
         {
             "id": "en:herb",
             "percent": 1.8,
+            "percent_estimate": 1.8,
+            "percent_max": 1.8,
+            "percent_min": 1.8,
             "text": "fines herbes"
         },
         {
             "ciqual_food_code": "11058",
             "id": "en:salt",
+            "percent_estimate": 0.6,
+            "percent_max": 1.2,
+            "percent_min": 0,
             "text": "sel"
         },
         {
             "ciqual_food_code": "19054",
             "id": "en:skimmed-milk-powder",
             "origins": "en:france",
-            "text": "LAIT \u00e9cr\u00e9m\u00e9 en poudre"
+            "percent_estimate": 0.6,
+            "percent_max": 1.2,
+            "percent_min": 0,
+            "text": "LAIT écrémé en poudre"
         },
         {
             "id": "en:thickener",
             "ingredients": [
                 {
                     "id": "en:e407",
-                    "text": "carragh\u00e9nanes"
+                    "percent_estimate": 0.3,
+                    "percent_max": 1.2,
+                    "percent_min": 0,
+                    "text": "carraghénanes"
                 },
                 {
                     "id": "en:carob-seed-flour",
+                    "percent_estimate": 0.3,
+                    "percent_max": 0.6,
+                    "percent_min": 0,
                     "text": "farine de graines de caroube"
                 }
             ],
-            "text": "\u00e9paississants"
+            "percent_estimate": 0.6,
+            "percent_max": 1.2,
+            "percent_min": 0,
+            "text": "épaississants"
         },
         {
             "id": "en:pepper",
+            "percent_estimate": 0.500000000000014,
+            "percent_max": 1.05714285714286,
+            "percent_min": 0,
             "text": "poivre"
         },
         {
@@ -96,14 +129,21 @@
             "ingredients": [
                 {
                     "id": "en:e202",
+                    "percent_estimate": 0.500000000000014,
+                    "percent_max": 0.925000000000001,
+                    "percent_min": 0,
                     "text": "sorbate de potassium"
                 }
             ],
+            "percent_estimate": 0.500000000000014,
+            "percent_max": 0.925000000000001,
+            "percent_min": 0,
             "text": "conservateur"
         }
     ],
     "ingredients_lc": "fr",
-    "ingredients_text": "LAIT entier 50% (Origine : France), CR\u00c8ME 39% (Origine: France), ferments LACTIQUES, ail et fines herbes (1,8%), sel, LAIT \u00e9cr\u00e9m\u00e9 en poudre (Origine : France), \u00e9paississants (carragh\u00e9nanes, farine de graines de caroube), poivre, conservateur (sorbate de potassium).",
+    "ingredients_percent_analysis": 1,
+    "ingredients_text": "LAIT entier 50% (Origine : France), CRÈME 39% (Origine: France), ferments LACTIQUES, ail et fines herbes (1,8%), sel, LAIT écrémé en poudre (Origine : France), épaississants (carraghénanes, farine de graines de caroube), poivre, conservateur (sorbate de potassium).",
     "ingredients_without_ciqual_codes": [
         "en:carob-seed-flour",
         "en:e202",
@@ -120,7 +160,11 @@
         "en:halal",
         "fr:eco-emballages"
     ],
+    "lang": "fr",
     "lc": "fr",
+    "misc_tags": [
+        "en:some-ingredients-with-specified-percent"
+    ],
     "nutriments": {
         "carbohydrates": 5,
         "carbohydrates_100g": 5,
@@ -175,5 +219,8 @@
         "sugars_100g": 4.5,
         "sugars_unit": "g",
         "sugars_value": 4.5
-    }
+    },
+    "percent_ingredients_with_ciqual_code": 91.99999999999999,
+    "percent_ingredients_with_ciqual_or_proxy_code": 91.99999999999999,
+    "schema_version": 999
 }
