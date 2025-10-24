@@ -117,8 +117,8 @@ for test_set_name in test_sets:
             
             # Calculate the percentage of ingredients with CIQUAL codes
             (ciqual_total, ciqual_or_proxy_total) = calculate_ciqual_percentages(result["ingredients"])
-            result["percent_ingredients_with_ciqual_code"] = ciqual_total
-            result["percent_ingredients_with_ciqual_or_proxy_code"] = ciqual_or_proxy_total
+            result["percent_ingredients_with_ciqual_code"] = round(ciqual_total, 2)
+            result["percent_ingredients_with_ciqual_or_proxy_code"] = round(ciqual_or_proxy_total, 2)
 
             print("Saving output to " + path)
             with open(path, "w") as f:

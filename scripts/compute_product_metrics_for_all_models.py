@@ -19,7 +19,7 @@ def count_ingredients(ingredients):
             count += 1
     return count
 
-        
+
 with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
     with open(results_path + "model_stats.csv", "w", newline="") as models_csv:
         products_csv_writer = csv.writer(products_csv)
@@ -31,7 +31,7 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
         for model_name in model_names:
             models.append(model_name)
 
-        products_csv_writer.writerow(['test_set','product','ingredients_n','without_ciqual_n'] + models)
+        products_csv_writer.writerow(['test_set','product','ingredients_n','without_ciqual_n','with_ciqual_percent','with_ciqual_or_proxy_percent'] + models)
         models_csv_writer.writerow(['test_set'] + models)
 
         test_set_names = [f for f in sorted(os.listdir(test_sets_path))if '.' not in f]
@@ -47,7 +47,14 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                 except:
                     continue
 
-                row = [test_set_name, product_name, count_ingredients(input_product['ingredients']),input_product['ingredients_without_ciqual_codes_n']]
+                row = [
+                    test_set_name,
+                    product_name,
+                    count_ingredients(input_product["ingredients"]),
+                    input_product["ingredients_without_ciqual_codes_n"],
+                    input_product["percent_ingredients_with_ciqual_code"],
+                    input_product["percent_ingredients_with_ciqual_or_proxy_code"],
+                ]
                 for model_name in models:
                     # Read the corresponding resulting product
                     result_path = results_path + model_name + '/' + test_set_name + '/' + product_name + '.json'
@@ -71,8 +78,3 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                 except:
                     summary_row.append('NA')
             models_csv_writer.writerow(summary_row)
-                    
-                
-            
-            
-        
