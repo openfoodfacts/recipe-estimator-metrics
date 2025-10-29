@@ -28,7 +28,23 @@ if len(sys.argv) < 2:
 def filter_fields(data):
     # Note: we keep the ingredients structure as-is if it exists
     # if it doesn't exit, we will also need to run analyze_ingredients_for_input_test_sets
-    whitelist = ['code', 'product_name', 'brands', 'lang', 'ingredients', 'ingredients_text', 'ingredients_lc', 'lc', 'nutriments', 'categories_tags', 'labels_tags', 'countries_tags']
+    whitelist = [
+        "code",
+        "product_name",
+        "brands",
+        "lang",
+        "ingredients",
+        "ingredients_text",
+        "ingredients_lc",
+        "lc",
+        "nutriments",
+        "categories_tags",
+        "labels_tags",
+        "countries_tags",
+        "ingredients_without_ciqual_codes_n",
+        "percent_ingredients_with_ciqual_code",
+        "percent_ingredients_with_ciqual_or_proxy_code",
+    ]
     return {k: v for k, v in data.items() if k in whitelist}
 
 # Go through each input test set directory

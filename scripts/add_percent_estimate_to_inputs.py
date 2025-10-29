@@ -123,7 +123,8 @@ for test_set_name in test_sets:
             (ciqual_total, ciqual_or_proxy_total, no_ciqual_count) = calculate_ciqual_percentages(result["ingredients"])
             result["percent_ingredients_with_ciqual_code"] = round(ciqual_total, 2)
             result["percent_ingredients_with_ciqual_or_proxy_code"] = round(ciqual_or_proxy_total, 2)
-            result["ingredients_without_ciqual_codes_n"] = no_ciqual_count
+            if "ingredients_without_ciqual_codes_n" not in result:
+                result["ingredients_without_ciqual_codes_n"] = no_ciqual_count
 
             print("Saving output to " + path)
             with open(path, "w") as f:
