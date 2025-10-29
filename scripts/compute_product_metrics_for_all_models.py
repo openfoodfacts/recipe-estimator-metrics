@@ -50,10 +50,10 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                 row = [
                     test_set_name,
                     product_name,
-                    count_ingredients(input_product["ingredients"]),
-                    input_product["ingredients_without_ciqual_codes_n"],
-                    input_product["percent_ingredients_with_ciqual_code"],
-                    input_product["percent_ingredients_with_ciqual_or_proxy_code"],
+                    count_ingredients(input_product.get("ingredients", [])),
+                    input_product.get("ingredients_without_ciqual_codes_n"),
+                    input_product.get("percent_ingredients_with_ciqual_code"),
+                    input_product.get("percent_ingredients_with_ciqual_or_proxy_code"),
                 ]
                 for model_name in models:
                     # Read the corresponding resulting product

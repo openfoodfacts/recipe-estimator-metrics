@@ -31,11 +31,13 @@ from compute_metrics import compute_metrics_for_test_set
 def calculate_ciqual_percentages(ingredients):
     ciqual_total = 0
     ciqual_or_proxy_total = 0
+    no_ciqual_count = 0
     for ingredient in ingredients:
         if "ingredients" in ingredient:
-            (child_ciqual, child_proxy) = calculate_ciqual_percentages(ingredient["ingredients"])
+            (child_ciqual, child_proxy, child_count) = calculate_ciqual_percentages(ingredient["ingredients"])
             ciqual_total += child_ciqual
             ciqual_or_proxy_total += child_proxy
+            no_ciqual_count += child_count
         else:
             percent_estimate = ingredient.get("percent_estimate", 0)
             if "ciqual_food_code" in ingredient:
@@ -43,8 +45,10 @@ def calculate_ciqual_percentages(ingredients):
                 ciqual_or_proxy_total += percent_estimate
             elif "ciqual_proxy_food_code" in ingredient:
                 ciqual_or_proxy_total += percent_estimate
+            else:
+                no_ciqual_count += 1
 
-    return (ciqual_total, ciqual_or_proxy_total)
+    return (ciqual_total, ciqual_or_proxy_total, no_ciqual_count)
 
 # Check input parameters (existing model executable, input test set), otherwise print usage
 if len(sys.argv) < 2:
@@ -116,9 +120,10 @@ for test_set_name in test_sets:
             result = json.loads(result_json)
             
             # Calculate the percentage of ingredients with CIQUAL codes
-            (ciqual_total, ciqual_or_proxy_total) = calculate_ciqual_percentages(result["ingredients"])
+            (ciqual_total, ciqual_or_proxy_total, no_ciqual_count) = calculate_ciqual_percentages(result["ingredients"])
             result["percent_ingredients_with_ciqual_code"] = round(ciqual_total, 2)
             result["percent_ingredients_with_ciqual_or_proxy_code"] = round(ciqual_or_proxy_total, 2)
+            result["ingredients_without_ciqual_codes_n"] = no_ciqual_count
 
             print("Saving output to " + path)
             with open(path, "w") as f:
