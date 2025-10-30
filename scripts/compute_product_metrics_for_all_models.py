@@ -11,13 +11,16 @@ test_sets_path = 'test-sets/input/'
 
 def count_ingredients(ingredients):
     count = 0
+    compound_count = 0
     for ingredient in ingredients:
         sub_ingredients = ingredient.get('ingredients', [])
         if len(sub_ingredients) > 0:
-            count += count_ingredients(sub_ingredients)
+            (sub_count, sub_compound) = count_ingredients(sub_ingredients)
+            count += sub_count
+            compound_count += (sub_compound + 1)
         else:
             count += 1
-    return count
+    return (count, compound_count)
 
 
 with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
@@ -36,6 +39,7 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                 "test_set",
                 "product",
                 "ingredients_n",
+                "compound_n",
                 "without_ciqual_n",
                 "with_ciqual_percent",
                 "with_ciqual_or_proxy_percent",
@@ -58,10 +62,12 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                 except:
                     continue
 
+                (count, compound_count) = count_ingredients(input_product.get("ingredients", []))
                 row = [
                     test_set_name,
                     product_name,
-                    count_ingredients(input_product.get("ingredients", [])),
+                    count,
+                    compound_count,
                     input_product.get("ingredients_without_ciqual_codes_n"),
                     input_product.get("percent_ingredients_with_ciqual_code"),
                     input_product.get("percent_ingredients_with_ciqual_or_proxy_code"),
