@@ -31,8 +31,19 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
         for model_name in model_names:
             models.append(model_name)
 
-        products_csv_writer.writerow(['test_set','product','ingredients_n','without_ciqual_n','with_ciqual_percent','with_ciqual_or_proxy_percent'] + models)
-        models_csv_writer.writerow(['test_set'] + models)
+        products_csv_writer.writerow(
+            [
+                "test_set",
+                "product",
+                "ingredients_n",
+                "without_ciqual_n",
+                "with_ciqual_percent",
+                "with_ciqual_or_proxy_percent",
+            ]
+            + models
+            + ["categories"]
+        )
+        models_csv_writer.writerow(["test_set"] + models)
 
         test_set_names = [f for f in sorted(os.listdir(test_sets_path))if '.' not in f]
         for test_set_name in test_set_names:
@@ -55,6 +66,7 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                     input_product.get("percent_ingredients_with_ciqual_code"),
                     input_product.get("percent_ingredients_with_ciqual_or_proxy_code"),
                 ]
+
                 for model_name in models:
                     # Read the corresponding resulting product
                     result_path = results_path + model_name + '/' + test_set_name + '/' + product_name + '.json'
@@ -64,6 +76,8 @@ with open(results_path + "products_stats.csv", "w", newline="") as products_csv:
                             row.append(resulting_product["ingredients_metrics"]["total_variance"])
                     except:
                         row.append('NA')
+
+                row.append("|".join(input_product.get("categories_tags", [])))
 
                 products_csv_writer.writerow(row)
 
