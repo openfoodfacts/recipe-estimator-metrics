@@ -74,7 +74,7 @@ for element in command:
 start_time = time.time()
 
 # Go through each input test set directory
-test_sets = sys.argv[3:] if len(sys.argv) > 3 else os.listdir('test-sets/input')
+test_sets = sys.argv[3:] if len(sys.argv) > 3 else sorted(os.listdir('test-sets/input'))
 for test_set_name in test_sets:
     # If we have a test set path instead of a test set name, use the last component of the path as the test set name
     if "test-sets/input/" in test_set_name:
@@ -93,7 +93,7 @@ for test_set_name in test_sets:
         os.makedirs(results_path + "/" + test_set_name)
 
     # Go through each JSON file in the input test set directory
-    for path in [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]:
+    for path in [test_set_path + "/" + f for f in sorted(os.listdir(test_set_path)) if f.endswith(".json")]:
 
         # test name is the last component of the path
         test_name = path.split("/")[-1]
