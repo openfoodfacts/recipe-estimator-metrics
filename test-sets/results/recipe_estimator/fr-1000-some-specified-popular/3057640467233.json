@@ -1,5 +1,9 @@
 {
     "brands": "Volvic,Danone",
+    "brands_tags": [
+        "danone",
+        "volvic"
+    ],
     "categories_tags": [
         "en:beverages",
         "en:waters",
@@ -274,7 +278,6 @@
                     "ciqual_food_code": "13014",
                     "ciqual_food_code_used": "13014",
                     "ciqual_proxy_food_code": null,
-                    "difference": 3.43,
                     "ecobalyse_code": "strawberry-non-eu",
                     "id": "en:strawberry",
                     "index": 1,
@@ -518,7 +521,6 @@
                         }
                     },
                     "percent_estimate": 1.87,
-                    "percent_hidden": 5.3,
                     "quantity_estimate": 1.87,
                     "text": "Fraise"
                 },
@@ -527,7 +529,6 @@
                     "ciqual_food_code": null,
                     "ciqual_food_code_used": "13009",
                     "ciqual_proxy_food_code": "13009",
-                    "difference": 0.73,
                     "ecobalyse_code": "lemon-eu",
                     "id": "en:lemon",
                     "index": 2,
@@ -771,7 +772,6 @@
                         }
                     },
                     "percent_estimate": 1.87,
-                    "percent_hidden": 2.6,
                     "quantity_estimate": 1.87,
                     "text": "citron"
                 },
@@ -780,7 +780,6 @@
                     "ciqual_food_code": "13050",
                     "ciqual_food_code_used": "13050",
                     "ciqual_proxy_food_code": null,
-                    "difference": 1.67,
                     "ecobalyse_code": "apple-fr",
                     "id": "en:apple",
                     "index": 3,
@@ -1024,7 +1023,6 @@
                         }
                     },
                     "percent_estimate": 0.934,
-                    "percent_hidden": 2.6,
                     "quantity_estimate": 0.934,
                     "text": "pomme"
                 }
@@ -1558,11 +1556,12 @@
     "ingredients_lc": "fr",
     "ingredients_metrics": {
         "number_of_ingredients_without_ciqual_code": 1,
-        "relative_difference": 0.158,
-        "total_difference": 17.4,
-        "total_specified_input_percent": 111.0,
-        "total_variance": 76.4
+        "relative_difference": 0.116,
+        "total_difference": 11.6,
+        "total_specified_input_percent": 100.0,
+        "total_variance": 61.4
     },
+    "ingredients_percent_analysis": 1,
     "ingredients_text": "Eau minérale naturelle Volvic (85,5%), jus de fruits à base de concentrés 10,5% (Fraise 5,3%, citron 2,6 %, pomme 2,6%), sucre 4,1%, concentré de carotte pourpre, arômes naturels.",
     "ingredients_without_ciqual_codes": [
         "en:fruit-juice-from-concentrate",
@@ -1582,6 +1581,9 @@
     ],
     "lang": "fr",
     "lc": "fr",
+    "misc_tags": [
+        "en:some-ingredients-with-specified-percent"
+    ],
     "nutriments": {
         "carbohydrates": 4.9,
         "carbohydrates_100g": 4.9,
@@ -1657,6 +1659,8 @@
         "sugars_unit": "g",
         "sugars_value": 4.9
     },
+    "percent_ingredients_with_ciqual_code": 94.22,
+    "percent_ingredients_with_ciqual_or_proxy_code": 100.0,
     "product_name": "Volvic Juicy fraise",
     "recipe_estimator": {
         "ingredient_count": 7,
@@ -1695,7 +1699,7 @@
             "energy": {
                 "ingredient_count": 4,
                 "notes": "Energy is derived",
-                "product_total": 83,
+                "product_total": 83.0,
                 "unweighted_total": 449.0,
                 "weighting": 0
             },
@@ -1707,7 +1711,7 @@
             },
             "fiber": {
                 "ingredient_count": 6,
-                "product_total": 0,
+                "product_total": 0.0,
                 "unweighted_total": 8.3,
                 "weighting": 1.0
             },
@@ -1815,7 +1819,7 @@
             },
             "saturated-fat": {
                 "ingredient_count": 6,
-                "product_total": 0,
+                "product_total": 0.0,
                 "unweighted_total": 0.051000000000000004,
                 "weighting": 5.0
             },
@@ -1908,5 +1912,6 @@
             "total": 879560.4458534854
         },
         "status": 0
-    }
+    },
+    "schema_version": 999
 }

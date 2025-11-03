@@ -1,5 +1,8 @@
 {
     "brands": "N/A",
+    "brands_tags": [
+        "n-a"
+    ],
     "categories_tags": [
         "en:snacks",
         "en:salty-snacks",
@@ -306,7 +309,7 @@
             "index": 3,
             "initial_estimate": 6.262230919765166,
             "is_in_taxonomy": 1,
-            "lost_water": 0.016518188046213675,
+            "lost_water": 0.016518188046213713,
             "nutrients": {
                 "alcohol": {
                     "confidence": "B",
@@ -560,7 +563,7 @@
                     "index": 4,
                     "initial_estimate": 3.131115459882583,
                     "is_in_taxonomy": 1,
-                    "lost_water": 0.004404850145656982,
+                    "lost_water": 0.004404850145656992,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "B",
@@ -822,8 +825,8 @@
                     "is_in_taxonomy": 1,
                     "lost_water": 0.0,
                     "nutrients": {},
-                    "percent_estimate": 3.21e-16,
-                    "quantity_estimate": 3.62e-16,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "soy"
                 },
                 {
@@ -836,7 +839,7 @@
                     "index": 6,
                     "initial_estimate": 0.41748206131767773,
                     "is_in_taxonomy": 1,
-                    "lost_water": 4.127546044817623e-17,
+                    "lost_water": 0.0,
                     "nutrients": {
                         "alcohol": {
                             "confidence": "C",
@@ -1073,8 +1076,8 @@
                             "percent_nom": 0.0014
                         }
                     },
-                    "percent_estimate": 3.21e-16,
-                    "quantity_estimate": 3.62e-16,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "rice flour"
                 },
                 {
@@ -1323,8 +1326,8 @@
                             "percent_nom": 0.0
                         }
                     },
-                    "percent_estimate": 7.88e-16,
-                    "quantity_estimate": 8.88e-16,
+                    "percent_estimate": 0.0,
+                    "quantity_estimate": 0.0,
                     "text": "sea salt"
                 },
                 {
@@ -1580,8 +1583,8 @@
                 }
             ],
             "is_in_taxonomy": 1,
-            "percent_estimate": 1.43e-15,
-            "quantity_estimate": 1.61e-15,
+            "percent_estimate": 0.0,
+            "quantity_estimate": 0.0,
             "text": "soy sauce"
         },
         {
@@ -2346,6 +2349,7 @@
         "total_specified_input_percent": 93,
         "total_variance": 719.0
     },
+    "ingredients_percent_analysis": 1,
     "ingredients_text": "rice flour (85%), rice bran oil (7%), corn maltodextrin, sea salt (1%), emulsifier: soy lecithins, soy sauce (soy, rice flour, sea salt, sugar), onion powder, cane sugar, yeast extract,",
     "ingredients_without_ciqual_codes": [
         "en:corn-maltodextrin",
@@ -2370,6 +2374,9 @@
     ],
     "lang": "en",
     "lc": "en",
+    "misc_tags": [
+        "en:some-ingredients-with-specified-percent"
+    ],
     "nutriments": {
         "carbohydrates": 82,
         "carbohydrates_100g": 82,
@@ -2432,10 +2439,12 @@
         "sugars_unit": "g",
         "sugars_value": 0.8
     },
+    "percent_ingredients_with_ciqual_code": 87.19,
+    "percent_ingredients_with_ciqual_or_proxy_code": 88.05,
     "product_name": "Rice Crackers Finement Salé",
     "recipe_estimator": {
         "ingredient_count": 12,
-        "iterations": 27,
+        "iterations": 40,
         "nutrients": {
             "alcohol": {
                 "ingredient_count": 9,
@@ -2451,7 +2460,7 @@
             },
             "carbohydrates": {
                 "ingredient_count": 9,
-                "product_total": 82,
+                "product_total": 82.0,
                 "unweighted_total": 383.45000000000005,
                 "weighting": 1.0
             },
@@ -2470,13 +2479,13 @@
             "energy": {
                 "ingredient_count": 6,
                 "notes": "Energy is derived",
-                "product_total": 1795,
+                "product_total": 1795.0,
                 "unweighted_total": 7630.0,
                 "weighting": 0
             },
             "fat": {
                 "ingredient_count": 9,
-                "product_total": 8,
+                "product_total": 8.0,
                 "unweighted_total": 93.12,
                 "weighting": 1.0
             },
@@ -2590,7 +2599,7 @@
             },
             "saturated-fat": {
                 "ingredient_count": 7,
-                "product_total": 2,
+                "product_total": 2.0,
                 "unweighted_total": 14.42,
                 "weighting": 5.0
             },
@@ -2675,13 +2684,14 @@
             }
         },
         "penalties": {
-            "ingredient_more_than_previous_penalty": 4.404850149180701,
-            "ingredient_not_half_previous_penalty": 554.5653667038887,
+            "ingredient_more_than_previous_penalty": 6.607275220594907,
+            "ingredient_not_half_previous_penalty": 552.3629416310603,
             "mass_less_than_100_penalty": 0,
             "mass_more_than_100_penalty": 15210.01607884861,
-            "nutrient_penalty": 7446848.085033916,
-            "total": 7462617.071329618
+            "nutrient_penalty": 7446848.085033914,
+            "total": 7462617.071329614
         },
         "status": 0
-    }
+    },
+    "schema_version": 999
 }
