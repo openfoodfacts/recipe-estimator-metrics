@@ -72,6 +72,7 @@ for element in command:
         sys.exit(1)
 
 start_time = time.time()
+count = 0
 
 # Go through each input test set directory
 test_sets = sys.argv[3:] if len(sys.argv) > 3 else sorted(os.listdir('test-sets/input'))
@@ -141,9 +142,10 @@ for test_set_name in test_sets:
             print("An issue occurred: " + str(e), file=sys.stderr)
 
         elapsed_time = time.time() - start_time
-        print(f"\n -- Test set {test_set_name} completed in {elapsed_time:.2f} seconds. -- \n")
+        count += 1
+        print(f"\n -- Test set {test_set_name} completed {count} products in {elapsed_time:.2f} seconds. -- \n")
 
     compute_metrics_for_test_set(results_path, test_set_name)
 
     elapsed_time = time.time() - start_time
-    print(f"\n -- Compute_metrics_for_test_set completed in {elapsed_time:.2f} seconds. -- \n")
+    print(f"\n -- Compute_metrics_for_test_set completed {count} products in {elapsed_time:.2f} seconds. -- \n")
