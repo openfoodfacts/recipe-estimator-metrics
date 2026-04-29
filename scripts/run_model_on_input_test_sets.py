@@ -22,6 +22,7 @@ import json
 import sys
 import os
 import subprocess
+import importlib
 
 import time
 
@@ -50,13 +51,24 @@ if len(sys.argv) < 3:
     print("Usage: run_model_input_test_sets.py [full path or name of model executable] [full path or name for results] [full paths or names of one or more input test sets]")
     sys.exit(1)
 
-# If we were passed a model name (no path), assume it is in the models directory, and if there is no extension, assume it is a .py file
-if "/" not in sys.argv[1]:
-    if "." not in sys.argv[1]:
-        sys.argv[1] += ".py"
-    sys.argv[1] = "models/" + sys.argv[1]
-
 model = sys.argv[1]
+model_module = None
+if model == "cvxpy":
+    # Much faster if we call the module directly
+    model_module = importlib.import_module(f"models.{model}")
+else:
+    # If we were passed a model name (no path), assume it is in the models directory, and if there is no extension, assume it is a .py file
+    if "/" not in model:
+        if "." not in model:
+            model += ".py"
+        model = "models/" + model
+
+    command = model.split(";")
+    for element in command:
+        if not os.path.exists(element):
+            print(f"{element} does not exist")
+            sys.exit(1)
+
 
 # If we were passed a results name (no path), assume it is in the test-sets/results directory
 if "/" not in sys.argv[2]:
@@ -64,12 +76,6 @@ if "/" not in sys.argv[2]:
 
 
 results_path = sys.argv[2]
-
-command = model.split(";")
-for element in command:
-    if not os.path.exists(element):
-        print(f"{element} does not exist")
-        sys.exit(1)
 
 start_time = time.time()
 count = 0
@@ -112,31 +118,40 @@ for test_set_name in test_sets:
 
         print("Running model on product " + path)
 
-        # Define the command to be executed
-        command = model.split(";")
-        #print(command)
-
-        # Create a Popen object
-        p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
-
-        # Pass the input to the command
-        stdout, stderr = p.communicate(input=json.dumps(input_product))
-
-        # Handle errors if any
-        if stderr:
-            print(stderr.strip(), file=sys.stderr)
-
-        # Get the output
-        result_json = stdout.strip()
-
         try:
-            result = json.loads(result_json)
+            if model_module:
+                result, error_response = model_module.estimate_recipe(input_product)
+                # Handle errors if any
+                if error_response:
+                    print(error_response, file=sys.stderr)
 
-            # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
-            result_path = results_path + "/" + test_set_name + "/" + test_name
-            print("Saving output to " + result_path)
-            with open(result_path, "w") as f:
-                json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
+            else:
+                # Define the command to be executed
+                command = model.split(";")
+                #print(command)
+
+                # Create a Popen object
+                p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+
+                # Pass the input to the command
+                stdout, stderr = p.communicate(input=json.dumps(input_product))
+                
+                # Handle errors if any
+                if stderr:
+                    print(stderr.strip(), file=sys.stderr)
+
+                # Get the output
+                result_json = stdout.strip()
+                result = json.loads(result_json)
+
+            # Get the output
+            if result:
+                # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
+                result_path = results_path + "/" + test_set_name + "/" + test_name
+                print("Saving output to " + result_path)
+                with open(result_path, "w") as f:
+                    json.dump(result, f,  indent=4, ensure_ascii=False, sort_keys=True)
+
         except Exception as e:
             #print(result_json, file=sys.stderr)
             print("An issue occurred: " + str(e), file=sys.stderr)
