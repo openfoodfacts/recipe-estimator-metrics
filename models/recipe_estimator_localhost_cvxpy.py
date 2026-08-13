@@ -17,16 +17,17 @@ except ValueError:
 
 # Call API v3 recipe_estimator service
 recipe_estimator_api_url = "http://localhost:5521/api/v3/estimate_recipe_cvxpy"
-request_data = product
+request_data = {"product": product}
 response = requests.post(recipe_estimator_api_url, json=request_data)
 
 try:
     response_json = response.json()
+    product_data = response_json.get("product", {})
 
-    if response_json["recipe_estimator"]["status"] != 0:
-        print(response_json, file=sys.stderr)
+    if product_data.get("recipe_estimator", {}).get("status", 0) != 0:
+        print(json.dumps(response_json, indent=4), file=sys.stderr)
     else:
-        # Pretty print the resulting JSON structure over the input file for easy inspection of diffs
-        print(json.dumps(response_json, indent=4))
-except:
+        print(json.dumps(product_data, indent=4))
+except Exception as e:
+    print(f"Error processing response: {e}", file=sys.stderr)
     print(response, file=sys.stderr)
