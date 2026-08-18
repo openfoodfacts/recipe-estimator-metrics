@@ -161,6 +161,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
     test_set_total_difference = 0
     test_set_total_variance = 0
     test_set_number_of_products = 0
+    skipped_products = 0
     # and for products that have ciqual food codes or proxy food codes for all ingredients
     all_ciqual_test_set_total_difference = 0
     all_ciqual_test_set_total_variance = 0
@@ -199,6 +200,16 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             except:
                 with open(result_path, "r", encoding = 'cp1252') as f:
                     resulting_product = json.load(f)
+
+            # Skip products that according to Product Opener's internal percent estimate algorithm
+            # have impossible constraints. Those are most likely data errors or ingredient parsing errors.
+            # We remove them as they often result in huge differences that are in fact meaningless.
+            # e.g. "Cacao maigre (beurre de cacao 11%), en poudre, sucre, arôme, Cacao 70%"
+            # -> the last Cacao 70% is counted as an actual ingredient with a known 70%, while it indicates the cocoa % of the first ingredient.
+            if resulting_product.get("ingredients_percent_analysis") == -1:
+                skipped_products += 1
+                print("Skipping product with impossible percent: " + result_path)
+                continue
 
             # Compute accuracy metrics comparing the estimated "percent_estimate" field in the resulting product
             # to the "percent" field in the input product
@@ -295,6 +306,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             "total_difference": round_to_n(test_set_total_difference,8),
             "total_variance": round_to_n(test_set_total_variance,8),
             "number_of_products": test_set_number_of_products,
+            "skipped_products": skipped_products,
             "average_difference": round_to_n(test_set_average_difference,4),
             "average_variance": round_to_n(test_set_average_variance,4),
             "all_ciqual_test_set_total_difference": round_to_n(all_ciqual_test_set_total_difference,8),
@@ -316,13 +328,14 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         print("Total difference: " + str(round_to_n(test_set_total_difference,8)))
         print("Total variance: " + str(round_to_n(test_set_total_variance,8)))
         print("Number of products: " + str(test_set_number_of_products))
+        print("Skipped products: " + str(skipped_products))
         print("Average difference: " + str(round_to_n(test_set_average_difference,4)))
         print("Average variance: " + str(round_to_n(test_set_average_variance,4)))
         print("All ciqual test set total difference: " + str(round_to_n(all_ciqual_test_set_total_difference,8)))
         print("All ciqual test set total variance: " + str(round_to_n(all_ciqual_test_set_total_variance,8)))
         print("All ciqual test set number of products: " + str(all_ciqual_test_set_number_of_products))
         print("All ciqual test set average difference: " + str(round_to_n(all_ciqual_test_set_average_difference,4)))
-        print("All ciqual test set average variance: " + str(round_to_n(all_ciqual_test_set_average_variance,4)))
+	print("All ciqual test set average variance: " + str(round_to_n(all_ciqual_test_set_average_variance,4)))
         print("Percent estimate with ciqual_food_code: " + str(percent_estimate_with_ciqual_food_code))
         print("Percent estimate with ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_proxy_food_code))
         print("Percent estimate with ciqual or ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_or_ciqual_proxy_food_code))
