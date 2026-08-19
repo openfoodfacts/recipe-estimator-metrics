@@ -335,7 +335,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         print("All ciqual test set total variance: " + str(round_to_n(all_ciqual_test_set_total_variance,8)))
         print("All ciqual test set number of products: " + str(all_ciqual_test_set_number_of_products))
         print("All ciqual test set average difference: " + str(round_to_n(all_ciqual_test_set_average_difference,4)))
-	print("All ciqual test set average variance: " + str(round_to_n(all_ciqual_test_set_average_variance,4)))
+        print("All ciqual test set average variance: " + str(round_to_n(all_ciqual_test_set_average_variance,4)))
         print("Percent estimate with ciqual_food_code: " + str(percent_estimate_with_ciqual_food_code))
         print("Percent estimate with ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_proxy_food_code))
         print("Percent estimate with ciqual or ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_or_ciqual_proxy_food_code))
