@@ -18,8 +18,8 @@ def main():
         print("Usage: python compare_metrics.py <path_to_result_set_A> <path_to_result_set_B>")
         sys.exit(1)
 
-    path_a = sys.argv[1]
-    path_b = sys.argv[2]
+    path_a = sys.argv[1].rstrip('/')
+    path_b = sys.argv[2].rstrip('/')
 
     # Extract test_set_name from path_a (assuming same for both)
     test_set_name = os.path.basename(path_a)
@@ -35,6 +35,7 @@ def main():
     count_a_better = 0
     count_b_better = 0
     count_equal = 0
+    skipped_products = 0
 
     # Category stats: category -> dict
     category_stats = {}
@@ -72,6 +73,10 @@ def main():
         except:
             continue
         diff_b = result_b.get('ingredients_metrics', {}).get('total_difference', float('inf'))
+
+        if result_a.get('ingredients_percent_analysis') == -1 or result_b.get('ingredients_percent_analysis') == -1:
+            skipped_products += 1
+            continue
 
         # Determine which is better (lower difference is better)
         if diff_a < diff_b:
@@ -119,6 +124,7 @@ def main():
 
     # Output summary
     print(f"Total products compared: {len(common_products)}")
+    print(f"Skipped products (impossible percent): {skipped_products}")
     print(f"Set A better: {count_a_better}")
     print(f"Set B better: {count_b_better}")
     print(f"Equal: {count_equal}")
