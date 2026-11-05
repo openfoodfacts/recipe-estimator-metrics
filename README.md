@@ -49,6 +49,31 @@ And we will globaly report:
 * category_groups: the same averages for groups of categories (cheeses, processed meats, crisps etc., see scripts/category_groups.py)
 and some more data
 
+## Basis of the specified percents (main metric)
+
+Labels do not all express percents on the same basis (EU regulation 1169/2011 Annex VIII, and Commission Notice on QUID 2017/C 393/05):
+- general rule: the percent is the share of the ingredient in the recipe when the ingredients are added (mixing bowl), so percents sum to 100%
+- foods that lost moisture following heat treatment or other treatment (cakes, biscuits, pies, dry cured meats...): the percent is the quantity of the ingredient used related to the finished product (e.g. 50 g of butter in a recipe of 200 g that gives 170 g of cookies: 50/170 = 29,4 % butter), and above 100 % it is expressed as the weight used for 100 g of finished product ("120 g of pork meat has been used for the production of 100 g of salami")
+
+In practice, many labels of products that lose moisture still indicate recipe shares (e.g. crisps: "pommes de terre 62%, huile de tournesol 37%").
+
+scripts/label_basis.py classifies each specified percent:
+- `recipe_share`: products that are not in a category of products that lose moisture (see `moisture_loss_categories`). Compared to the recipe share of the model (percent_estimate, rescaled so that top level ingredients sum to 100%).
+- `per_100g`: products that lose moisture and whose specified percents sum to more than 100 % (only possible with the moisture loss rule). Compared to quantity_estimate.
+- `ambiguous`: other specified percents of products that lose moisture. Compared to both, and reported separately.
+- `unknown_relative`: percents of sub ingredients that are relative to their parent ingredient (e.g. "chocolate (cocoa 70%)") when the parent percent is unknown. Not compared.
+
+Percents of sub ingredients are converted to absolute percents when they are relative to a parent ingredient with a known percent
+(e.g. "fruits rouges 9% (framboises 33%, ...)" -> 2.97 % of raspberries).
+
+The main metric is `average_recipe_share_difference` (average over products of the sum of differences for recipe share percents).
+`label_basis` in results_summary.json has the number of products, number of values and average differences for each basis,
+and `category_groups` has the recipe share and ambiguous averages for each group of categories.
+
+```bash
+./scripts/label_basis.py test-sets/input/fr-2026-specified
+```
+
 ## Specified quantities
 
 Some labels specify the quantity of an ingredient used for 100 g of finished product, which can be more than 100 g
@@ -89,7 +114,7 @@ The check is done on the input product by scripts/specified_percent_check.py, so
 - ingredients are listed by decreasing weight, so the ingredients before an ingredient with p% weigh at least p% each, and the sum of those minimums must not exceed 100% (ingredients under 2% can be listed in any order)
 - sub ingredients percents can be relative to the parent or absolute
 
-Test sets of products that lost water can accept sums over 100% with `"allow_sum_over_100": true` in their `test_set_config.conf` file (JSON).
+Sums over 100% are accepted for products in a category of products that lose moisture (see label_basis.py), and for test sets of products that lost water with `"allow_sum_over_100": true` in their `test_set_config.conf` file (JSON).
 
 To list the inconsistent products of a test set:
 

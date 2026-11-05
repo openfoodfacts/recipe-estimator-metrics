@@ -13,7 +13,7 @@ import os
 import json
 import csv
 
-from specified_percent_check import check_specified_percents
+from label_basis import get_problems
 
 def main():
     if len(sys.argv) != 3:
@@ -83,7 +83,7 @@ def main():
         diff_b = result_b.get('ingredients_metrics', {}).get('total_difference', float('inf'))
 
         # Skip products with inconsistent specified percents in the input product (same criteria as compute_metrics.py)
-        if check_specified_percents(input_data.get('ingredients'), allow_sum_over_100=test_set_config.get('allow_sum_over_100', False)):
+        if get_problems(input_data, test_set_config):
             skipped_products += 1
             continue
 

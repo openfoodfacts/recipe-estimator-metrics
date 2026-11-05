@@ -18,11 +18,15 @@ import os
 import csv
 import math
 
-from specified_percent_check import check_specified_percents, problem_type
+from specified_percent_check import problem_type
+from label_basis import get_problems, get_specified_values
 from category_groups import get_category_groups
 from specified_quantities import get_specified_quantities, get_ingredient_by_path
 
 round_to_n = lambda x, n: x if x == 0 else round(x, -int(math.floor(math.log10(abs(x)))) + (n - 1))
+
+def average(total, count):
+    return round_to_n(total / count, 4) if count else 0
 
 def add_missing_estimates_for_parent_ingredients(ingredients):
     # Add missing percent_estimate to parent ingredients by summing the percent_estimate of their children
@@ -214,6 +218,49 @@ def compare_specified_quantities(input_product, resulting_product):
     resulting_product["ingredients_metrics"]["total_specified_quantity_difference"] = round_to_n(sum(metrics["difference"] for metrics in specified_quantities_metrics), 3)
 
 
+label_bases = ["recipe_share", "per_100g", "ambiguous"]
+
+
+def compare_label_basis(input_product, resulting_product, test_set_config):
+    # Compare each specified percent to the estimate that corresponds to the basis of the label (see label_basis.py):
+    # - recipe_share: share of the ingredient in the recipe, computed from the percent_estimate of the model
+    #   rescaled so that top level ingredients sum to 100% (some models return percents that sum to more than 100%)
+    # - per_100g: quantity used for 100 g of finished product: quantity_estimate (or percent_estimate if the model
+    #   does not estimate quantities)
+    # - ambiguous: both differences are computed
+    # Must be called after compare_input_product_to_resulting_product, which adds missing estimates to parent ingredients.
+    top_level_sum = sum(ingredient.get("percent_estimate", 0) for ingredient in resulting_product["ingredients"])
+    recipe_share_factor = 100 / top_level_sum if top_level_sum > 0 else 1
+
+    metrics = {basis: {"number_of_values": 0, "total_difference": 0} for basis in label_bases}
+    metrics["ambiguous"]["total_difference_as_per_100g"] = 0
+    metrics["unknown_relative"] = {"number_of_values": 0}
+    for value in get_specified_values(input_product, test_set_config):
+        basis = value["basis"]
+        if basis == "unknown_relative":
+            metrics[basis]["number_of_values"] += 1
+            continue
+        resulting_ingredient = get_ingredient_by_path(resulting_product["ingredients"], value["path"])
+        if resulting_ingredient is None:
+            continue
+        percent_estimate = resulting_ingredient.get("percent_estimate", 0)
+        recipe_share_estimate = percent_estimate * recipe_share_factor
+        quantity_estimate = resulting_ingredient.get("quantity_estimate", percent_estimate)
+        metrics[basis]["number_of_values"] += 1
+        if basis == "per_100g":
+            metrics[basis]["total_difference"] += abs(quantity_estimate - value["value"])
+        else:
+            metrics[basis]["total_difference"] += abs(recipe_share_estimate - value["value"])
+        if basis == "ambiguous":
+            metrics[basis]["total_difference_as_per_100g"] += abs(quantity_estimate - value["value"])
+
+    for basis_metrics in metrics.values():
+        for key in basis_metrics:
+            if key.startswith("total_"):
+                basis_metrics[key] = round_to_n(basis_metrics[key], 3)
+    resulting_product["ingredients_metrics"]["label_basis"] = metrics
+
+
 def compute_metrics_for_test_set(results_path, test_set_name):
     # Compute average metrics for the test set
     test_set_total_difference = 0
@@ -235,6 +282,10 @@ def compute_metrics_for_test_set(results_path, test_set_name):
     test_set_number_of_unmatched_specified_quantities = 0
     test_set_total_specified_quantity_difference = 0
     test_set_number_of_specified_quantities_with_specified_percent = 0
+    # Differences by basis of the specified percents (see label_basis.py)
+    label_basis_stats = {basis: {"number_of_products": 0, "number_of_values": 0, "total_difference": 0} for basis in label_bases}
+    label_basis_stats["ambiguous"]["total_difference_as_per_100g"] = 0
+    label_basis_stats["unknown_relative"] = {"number_of_values": 0}
     # and for products that have ciqual food codes or proxy food codes for all ingredients
     all_ciqual_test_set_total_difference = 0
     all_ciqual_test_set_total_variance = 0
@@ -288,7 +339,8 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             # -> the last Cacao 70% is counted as an actual ingredient with a known 70%, while it indicates the cocoa % of the first ingredient.
             # The check is done on the input product so that all models are evaluated on the same products
             # (the ingredients_percent_analysis field of the result depends on the model).
-            problems = check_specified_percents(input_product["ingredients"], allow_sum_over_100=test_set_config.get("allow_sum_over_100", False))
+            # Products that lose moisture can have specified percents that sum to more than 100% (see label_basis.py)
+            problems = get_problems(input_product, test_set_config)
             if problems:
                 skipped_products += 1
                 for problem in set(problem_type(problem) for problem in problems):
@@ -300,6 +352,7 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             # to the "percent" field in the input product
             compare_input_product_to_resulting_product(input_product, resulting_product, ingredients_stats, products_ingredients_csv_writer, test_name)
             compare_specified_quantities(input_product, resulting_product)
+            compare_label_basis(input_product, resulting_product, test_set_config)
 
             # Remove fields that change between runs
             if "recipe_estimator" in resulting_product:
@@ -330,6 +383,29 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             test_set_total_specified_quantity_difference += resulting_product["ingredients_metrics"]["total_specified_quantity_difference"]
             test_set_number_of_specified_quantities_with_specified_percent += sum(1 for metrics in resulting_product["ingredients_metrics"]["specified_quantities"] if "specified_percent" in metrics)
 
+            # Aggregate differences by basis of the specified percents
+            label_basis_metrics = resulting_product["ingredients_metrics"]["label_basis"]
+            for basis, basis_metrics in label_basis_metrics.items():
+                basis_stats = label_basis_stats[basis]
+                if basis_metrics["number_of_values"] > 0 and "number_of_products" in basis_stats:
+                    basis_stats["number_of_products"] += 1
+                for key, value in basis_metrics.items():
+                    basis_stats[key] += value
+
+            for group in get_category_groups(input_product.get("categories_tags")):
+                if group not in category_groups_stats:
+                    category_groups_stats[group] = {"number_of_products": 0, "total_difference": 0, "total_difference_per_specified_ingredient": 0, "total_quantity_difference": 0,
+                                                    "recipe_share_number_of_products": 0, "recipe_share_total_difference": 0,
+                                                    "ambiguous_number_of_products": 0, "ambiguous_total_difference": 0, "ambiguous_total_difference_as_per_100g": 0}
+                group_stats = category_groups_stats[group]
+                if label_basis_metrics["recipe_share"]["number_of_values"] > 0:
+                    group_stats["recipe_share_number_of_products"] += 1
+                    group_stats["recipe_share_total_difference"] += label_basis_metrics["recipe_share"]["total_difference"]
+                if label_basis_metrics["ambiguous"]["number_of_values"] > 0:
+                    group_stats["ambiguous_number_of_products"] += 1
+                    group_stats["ambiguous_total_difference"] += label_basis_metrics["ambiguous"]["total_difference"]
+                    group_stats["ambiguous_total_difference_as_per_100g"] += label_basis_metrics["ambiguous"]["total_difference_as_per_100g"]
+
             # Products with only specified quantities (and no specified percent) are not counted in the percent metrics
             if resulting_product["ingredients_metrics"]["number_of_specified_ingredients"] == 0:
                 continue
@@ -344,8 +420,6 @@ def compute_metrics_for_test_set(results_path, test_set_name):
                 test_set_number_of_products_with_specified_ingredients += 1
 
             for group in get_category_groups(input_product.get("categories_tags")):
-                if group not in category_groups_stats:
-                    category_groups_stats[group] = {"number_of_products": 0, "total_difference": 0, "total_difference_per_specified_ingredient": 0, "total_quantity_difference": 0}
                 group_stats = category_groups_stats[group]
                 group_stats["number_of_products"] += 1
                 group_stats["total_difference"] += resulting_product["ingredients_metrics"]["total_difference"]
@@ -418,14 +492,33 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         if test_set_number_of_specified_quantities > 0:
             average_specified_quantity_difference = test_set_total_specified_quantity_difference / test_set_number_of_specified_quantities
 
+        label_basis_summary = {}
+        for basis, basis_stats in label_basis_stats.items():
+            if basis == "unknown_relative":
+                label_basis_summary[basis] = basis_stats
+                continue
+            label_basis_summary[basis] = {
+                "number_of_products": basis_stats["number_of_products"],
+                "number_of_values": basis_stats["number_of_values"],
+                "average_difference": average(basis_stats["total_difference"], basis_stats["number_of_products"]),
+                "average_difference_per_value": average(basis_stats["total_difference"], basis_stats["number_of_values"]),
+            }
+        label_basis_summary["ambiguous"]["average_difference_as_per_100g"] = average(label_basis_stats["ambiguous"]["total_difference_as_per_100g"], label_basis_stats["ambiguous"]["number_of_products"])
+        label_basis_summary["ambiguous"]["average_difference_per_value_as_per_100g"] = average(label_basis_stats["ambiguous"]["total_difference_as_per_100g"], label_basis_stats["ambiguous"]["number_of_values"])
+
         category_groups_summary = {}
         for group in sorted(category_groups_stats):
             group_stats = category_groups_stats[group]
             category_groups_summary[group] = {
                 "number_of_products": group_stats["number_of_products"],
-                "average_difference": round_to_n(group_stats["total_difference"] / group_stats["number_of_products"], 4),
-                "average_difference_per_specified_ingredient": round_to_n(group_stats["total_difference_per_specified_ingredient"] / group_stats["number_of_products"], 4),
-                "average_quantity_difference": round_to_n(group_stats["total_quantity_difference"] / group_stats["number_of_products"], 4),
+                "average_difference": average(group_stats["total_difference"], group_stats["number_of_products"]),
+                "average_difference_per_specified_ingredient": average(group_stats["total_difference_per_specified_ingredient"], group_stats["number_of_products"]),
+                "average_quantity_difference": average(group_stats["total_quantity_difference"], group_stats["number_of_products"]),
+                "recipe_share_number_of_products": group_stats["recipe_share_number_of_products"],
+                "recipe_share_average_difference": average(group_stats["recipe_share_total_difference"], group_stats["recipe_share_number_of_products"]),
+                "ambiguous_number_of_products": group_stats["ambiguous_number_of_products"],
+                "ambiguous_average_difference_as_recipe_share": average(group_stats["ambiguous_total_difference"], group_stats["ambiguous_number_of_products"]),
+                "ambiguous_average_difference_as_per_100g": average(group_stats["ambiguous_total_difference_as_per_100g"], group_stats["ambiguous_number_of_products"]),
             }
         try:
             all_ciqual_test_set_average_difference = all_ciqual_test_set_total_difference / all_ciqual_test_set_number_of_products
@@ -444,6 +537,9 @@ def compute_metrics_for_test_set(results_path, test_set_name):
             "average_difference_per_specified_ingredient": round_to_n(test_set_average_difference_per_specified_ingredient,4),
             "average_quantity_difference": round_to_n(test_set_average_quantity_difference,4),
             "category_groups": category_groups_summary,
+            # Main metric: average difference for specified percents that are recipe shares (see label_basis.py)
+            "average_recipe_share_difference": label_basis_summary["recipe_share"]["average_difference"],
+            "label_basis": label_basis_summary,
             "number_of_products_with_specified_quantities": test_set_number_of_products_with_specified_quantities,
             "number_of_specified_quantities": test_set_number_of_specified_quantities,
             "number_of_unmatched_specified_quantities": test_set_number_of_unmatched_specified_quantities,
@@ -487,6 +583,10 @@ def compute_metrics_for_test_set(results_path, test_set_name):
         print("Percent estimate with ciqual_food_code: " + str(percent_estimate_with_ciqual_food_code))
         print("Percent estimate with ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_proxy_food_code))
         print("Percent estimate with ciqual or ciqual_proxy_food_code: " + str(percent_estimate_with_ciqual_or_ciqual_proxy_food_code))
+        print("Average recipe share difference (main metric, " + str(label_basis_summary["recipe_share"]["number_of_products"]) + " products): " + str(label_basis_summary["recipe_share"]["average_difference"]))
+        print("Per 100 g of finished product (" + str(label_basis_summary["per_100g"]["number_of_products"]) + " products): " + str(label_basis_summary["per_100g"]["average_difference"]))
+        print("Ambiguous, products that lose moisture (" + str(label_basis_summary["ambiguous"]["number_of_products"]) + " products): " + str(label_basis_summary["ambiguous"]["average_difference"]) + " as recipe share, "
+              + str(label_basis_summary["ambiguous"]["average_difference_as_per_100g"]) + " as per 100 g")
         print("Category groups (number of products, average difference, average difference per specified ingredient):")
         for group, group_summary in category_groups_summary.items():
             print(f"  {group}: {group_summary['number_of_products']}, {group_summary['average_difference']}, {group_summary['average_difference_per_specified_ingredient']}")
