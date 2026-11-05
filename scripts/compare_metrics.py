@@ -13,6 +13,8 @@ import os
 import json
 import csv
 
+from specified_percent_check import check_specified_percents
+
 def main():
     if len(sys.argv) != 3:
         print("Usage: python compare_metrics.py <path_to_result_set_A> <path_to_result_set_B>")
@@ -24,6 +26,12 @@ def main():
     # Extract test_set_name from path_a (assuming same for both)
     test_set_name = os.path.basename(path_a)
     input_path = f"test-sets/input/{test_set_name}"
+
+    # Optional test set configuration written by build_test_set.py
+    test_set_config = {}
+    if os.path.exists(f"{input_path}/test_set_config.conf"):
+        with open(f"{input_path}/test_set_config.conf", 'r') as f:
+            test_set_config = json.load(f)
 
     # Get list of product files in both (excluding CSV and JSON summary files)
     exclude_files = {'products_stats.csv', 'products_ingredients_stats.csv', 'ingredients_stats.csv', 'results_summary.json'}
@@ -74,7 +82,8 @@ def main():
             continue
         diff_b = result_b.get('ingredients_metrics', {}).get('total_difference', float('inf'))
 
-        if result_a.get('ingredients_percent_analysis') == -1 or result_b.get('ingredients_percent_analysis') == -1:
+        # Skip products with inconsistent specified percents in the input product (same criteria as compute_metrics.py)
+        if check_specified_percents(input_data.get('ingredients'), allow_sum_over_100=test_set_config.get('allow_sum_over_100', False)):
             skipped_products += 1
             continue
 
