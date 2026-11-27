@@ -27,6 +27,9 @@ On each product:
   * `total_difference` (float): sum of difference
   * `total_specified_input_percent` (float): the sum of the percentage for known ingredients (given on the packaging)
   * `relative_difference` (float): sum(difference) / total_specified_input_percent (only if total_specified_input_percent is not 0) 
+  * `number_of_specified_ingredients`
+  * `difference_per_specified_ingredient` (float): total_difference / number_of_specified_ingredients
+  * `total_quantity_difference` (float): sum of abs(quantity_estimate - real percent), using percent_estimate when the model does not return a quantity_estimate
   * `number_of_ingredients_without_ciqual_code`
 
 On each ingredient, in the product:
@@ -40,7 +43,87 @@ And we will globaly report:
 * total_difference
 * number_of_products
 * average_difference
+* skipped_products and skipped_products_problems (see below)
+* average_difference_per_specified_ingredient: products with many specified percents weigh as much as products with few
+* average_quantity_difference: for products that lost water (e.g. dried meats, crisps), the label percent can be the quantity of ingredient used for 100g of finished product (EU regulation 1169/2011 Annex VIII), which corresponds to quantity_estimate and not to percent_estimate
+* category_groups: the same averages for groups of categories (cheeses, processed meats, crisps etc., see scripts/category_groups.py)
 and some more data
+
+## Basis of the specified percents (main metric)
+
+Labels do not all express percents on the same basis (EU regulation 1169/2011 Annex VIII, and Commission Notice on QUID 2017/C 393/05):
+- general rule: the percent is the share of the ingredient in the recipe when the ingredients are added (mixing bowl), so percents sum to 100%
+- foods that lost moisture following heat treatment or other treatment (cakes, biscuits, pies, dry cured meats...): the percent is the quantity of the ingredient used related to the finished product (e.g. 50 g of butter in a recipe of 200 g that gives 170 g of cookies: 50/170 = 29,4 % butter), and above 100 % it is expressed as the weight used for 100 g of finished product ("120 g of pork meat has been used for the production of 100 g of salami")
+
+In practice, many labels of products that lose moisture still indicate recipe shares (e.g. crisps: "pommes de terre 62%, huile de tournesol 37%").
+
+scripts/label_basis.py classifies each specified percent:
+- `recipe_share`: products that are not in a category of products that lose moisture (see `moisture_loss_categories`). Compared to the recipe share of the model (percent_estimate, rescaled so that top level ingredients sum to 100%).
+- `per_100g`: products that lose moisture and whose specified percents sum to more than 100 % (only possible with the moisture loss rule). Compared to quantity_estimate.
+- `ambiguous`: other specified percents of products that lose moisture. Compared to both, and reported separately.
+- `unknown_relative`: percents of sub ingredients that are relative to their parent ingredient (e.g. "chocolate (cocoa 70%)") when the parent percent is unknown. Not compared.
+
+Percents of sub ingredients are converted to absolute percents when they are relative to a parent ingredient with a known percent
+(e.g. "fruits rouges 9% (framboises 33%, ...)" -> 2.97 % of raspberries).
+
+The main metric is `average_recipe_share_difference` (average over products of the sum of differences for recipe share percents).
+`label_basis` in results_summary.json has the number of products, number of values and average differences for each basis,
+and `category_groups` has the recipe share and ambiguous averages for each group of categories.
+
+```bash
+./scripts/label_basis.py test-sets/input/fr-2026-specified
+```
+
+## Specified quantities
+
+Some labels specify the quantity of an ingredient used for 100 g of finished product, which can be more than 100 g
+for products that lost water (e.g. "Viande de porc (140g pour 100g de produit)", "Préparé avec 76g de fruits pour 100g de produit fini").
+Those specified quantities are compared to the quantity_estimate of the models (quantity before water loss), separately from the specified percents.
+
+scripts/specified_quantities.py gets them from the quantity_g field of ingredients (only when the ingredients text contains the quantity followed by "per 100 g")
+and from the specific_ingredients field (mentions after the ingredients list), and matches them to the ingredients of the list,
+with the ingredients taxonomy (a specified quantity of "fruits" corresponds to all the fruits of the list) or with the ingredients text.
+
+The ingredients taxonomy is read from taxonomies/ingredients.json (not committed), which can be copied from a local Product Opener:
+
+```bash
+mkdir -p taxonomies
+docker cp po_off-backend-1:/mnt/podata/build-cache/taxonomies/ingredients.[hash].json taxonomies/ingredients.json
+```
+
+Specified quantities are hidden from the models (moved to quantity_g_hidden and specific_ingredients_hidden fields) when running them.
+
+We report:
+* in `ingredients_metrics` of each product: `specified_quantities` (with the specified quantity, the quantity_estimate of the matched ingredients and the difference, and the specified percent if the same ingredient also has one), `total_specified_quantity_difference`
+* for the test set: `number_of_products_with_specified_quantities`, `number_of_specified_quantities`, `number_of_unmatched_specified_quantities`, `number_of_specified_quantities_with_specified_percent`, `average_specified_quantity_difference` (per specified quantity)
+
+Products with specified quantities but no specified percent are not counted in the percent metrics.
+
+To list the specified quantities of a test set:
+
+```bash
+./scripts/specified_quantities.py test-sets/input/water-loss-processed-meat
+```
+
+## Skipped products
+
+Products whose specified percents are inconsistent are skipped, as they are most likely data errors or parsing errors
+(e.g. "Cacao : 53% minimum" at the end of a chocolate ingredients list is parsed as an ingredient with 53%).
+The check is done on the input product by scripts/specified_percent_check.py, so that all models are evaluated on the same products:
+- specified percents must be greater than 0
+- ingredients are listed by decreasing weight, so the ingredients before an ingredient with p% weigh at least p% each, and the sum of those minimums must not exceed 100% (ingredients under 2% can be listed in any order)
+- sub ingredients percents can be relative to the parent or absolute
+
+Sums over 100% are accepted for products in a category of products that lose moisture (see label_basis.py), and for test sets of products that lost water with `"allow_sum_over_100": true` in their `test_set_config.conf` file (JSON).
+
+To list the inconsistent products of a test set:
+
+```bash
+./scripts/specified_percent_check.py test-sets/input/fr-1000-some-specified-popular
+```
+
+Note: we used to skip products with `ingredients_percent_analysis == -1` in the resulting product, but this field depends on the model
+(Product Opener recomputes it, other models copy the one of the input), and Product Opener flags some valid products.
 
 
 ## Metrics for subsets of the test sets
@@ -143,6 +226,28 @@ This script is used to create a new test set by querying the Open Food Facts pro
 ```bash
 ./scripts/add_products_from_search_query_to_test_set.py 'http://fr.openfoodfacts.localhost/misc/en:all-ingredients-with-specified-percent/owner/org-les-mousquetaires.json?no_cache=1&page_size=100' test-sets/input/fr-les-mousquetaires-all-specified 
 ```
+
+## Build a test set from an Open Food Facts JSONL export
+
+First, extract products with specified percents from the JSONL export (one pass on the full export, takes about 10 minutes):
+
+```bash
+./scripts/extract_candidates_from_jsonl.py ~/recipe-estimator/ingredients_distributions/openfoodfacts-products-20261005.jsonl.gz candidates/candidates-20261005.jsonl.gz
+```
+
+Then build test sets from the candidates. Presets define the selection criteria (language, countries, date of last modification, categories etc.):
+
+```bash
+./scripts/build_test_set.py --list-presets
+./scripts/build_test_set.py --preset fr-2026-specified --candidates candidates/candidates-20261005.jsonl.gz --dry-run
+./scripts/build_test_set.py --preset fr-2026-specified --candidates candidates/candidates-20261005.jsonl.gz
+```
+
+The script needs a local Product Opener to re-parse the ingredients, so that the percent fields are the values on the label
+(the percent fields in the export are set by the percent estimation, and can be rescaled).
+Products with incomplete nutrition facts and products with inconsistent specified percents are excluded,
+and products are spread across categories (the most scanned products of each category first).
+A README.md with the selection criteria and statistics is generated in the test set directory.
 
 ## Clean a test set
 

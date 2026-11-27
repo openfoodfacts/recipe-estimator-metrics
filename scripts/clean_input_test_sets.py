@@ -17,11 +17,6 @@ import json
 import sys
 import os
 
-# Print usage
-if len(sys.argv) < 1:
-    print("Usage: clean_input_test_sets.py [paths of one or more input test sets]")
-    sys.exit(1)
-
 # Whitelist approach to keep only fields that may be relevant to recipe calculations
 # If we need to add a field later on, we can always fetch it back with its barcode
 # use * as wildcard
@@ -53,30 +48,38 @@ def filter_fields(data):
         "percent_ingredients_with_ciqual_or_proxy_code",
         "schema_version",
         "specific_ingredients",
+        "last_modified_t",
+        "unique_scans_n",
     ]
     return {k: v for k, v in data.items() if k in whitelist}
 
-# Go through each input test set directory
-for test_set_name in sys.argv[1:] if len(sys.argv) > 1 else sorted(os.listdir('test-sets/input')) :
-    # If we have a test set path instead of a test set name, use the last component of the path as the test set name
-    if "test-sets/input/" in test_set_name:
-        test_set_name = test_set_name.split("test-sets/input/")[-1]
-    print(f"Cleaning: {test_set_name}")
-    test_set_path = 'test-sets/input/' + test_set_name 
+if __name__ == "__main__":
+    # Print usage
+    if len(sys.argv) < 1:
+        print("Usage: clean_input_test_sets.py [paths of one or more input test sets]")
+        sys.exit(1)
 
-    # Go through each JSON file in the input test set directory
-    for path in [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]:
+    # Go through each input test set directory
+    for test_set_name in sys.argv[1:] if len(sys.argv) > 1 else sorted(os.listdir('test-sets/input')) :
+        # If we have a test set path instead of a test set name, use the last component of the path as the test set name
+        if "test-sets/input/" in test_set_name:
+            test_set_name = test_set_name.split("test-sets/input/")[-1]
+        print(f"Cleaning: {test_set_name}")
+        test_set_path = 'test-sets/input/' + test_set_name 
 
-        with open(path, "r") as f:
-            data = json.load(f)
+        # Go through each JSON file in the input test set directory
+        for path in [test_set_path + "/" + f for f in os.listdir(test_set_path) if f.endswith(".json")]:
 
-        # Remove the API v3 wrapping structure around the product data, if present
-        if "product" in data:
-            data = data["product"]
+            with open(path, "r") as f:
+                data = json.load(f)
 
-        # Remove fields that are not relevant to the recipe calculation
-        data = filter_fields(data)
+            # Remove the API v3 wrapping structure around the product data, if present
+            if "product" in data:
+                data = data["product"]
 
-        # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
-        with open(path, "w") as f:
-            json.dump(data, f,  indent=4, ensure_ascii=False, sort_keys=True)
+            # Remove fields that are not relevant to the recipe calculation
+            data = filter_fields(data)
+
+            # Pretty save the resulting JSON structure over the input file for easy inspection of diffs
+            with open(path, "w") as f:
+                json.dump(data, f,  indent=4, ensure_ascii=False, sort_keys=True)

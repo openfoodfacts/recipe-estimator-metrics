@@ -29,6 +29,7 @@ import time
 import concurrent.futures
 
 from compute_metrics import compute_metrics_for_test_set
+from specified_quantities import hide_specified_quantities
 
 # Remove percent fields from ingredients, but keep a copy of percent in percent_hidden
 def remove_percent_fields(ingredients):
@@ -115,6 +116,8 @@ for test_set_name in test_sets:
         
         # Remove any specified "percent" fields from the ingredients
         input_product["ingredients"] = remove_percent_fields(input_product["ingredients"])
+        # Also hide specified quantities (e.g. "140 g de porc pour 100 g")
+        hide_specified_quantities(input_product)
 
         print("Running model on product " + path)
 
